@@ -1,6 +1,8 @@
 ---
 title: Hacky Hour
+subtitle: Hacking together
+location: Elysium Bar
 link: http://www.mozillascience.org
-date: 2016-01-01
+date: 2016-08-01
 
 ---

@@ -1,5 +1,7 @@
 ---
 title: Hacky Hour
+subtitle: Hacking together
+location: Tharsis Pub
 link: http://www.mozillascience.org
 date: 2016-01-01
 

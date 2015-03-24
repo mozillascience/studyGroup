@@ -1,6 +1,8 @@
 ---
-title: Hacky Hour
+title: Study Group Meetup
+subtitle: Open work-along
+location: Lunae Palus Hall
 link: http://www.mozillascience.org
-date: 2016-01-01
+date: 2015-12-15
 
 ---
