@@ -57,14 +57,11 @@ h6 {
     font-weight: 700;
 }
 
-ul {
-  list-style-type: none;
-}
-
 ul.events{
+  list-style-type: none;
   display: block;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
 }
 
 .img-centered {
