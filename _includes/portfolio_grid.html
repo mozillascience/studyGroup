@@ -11,7 +11,7 @@
             {% for post in site.posts %}
                 <div class="col-lg-12 text-center">
                   <a href="{{ post.link }}">{{ post.title }}</a>
-                  <div>{{ post.subtitle }}, {{ page.date | date_to_long_string }}</div>
+                  <div>{{ post.subtitle }}, {{ post.date | date: "%-d %B %Y"}}</div>
                 </div>
             {% endfor %}
             </div>
