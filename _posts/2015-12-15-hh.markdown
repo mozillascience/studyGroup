@@ -2,7 +2,7 @@
 title: Study Group Meetup
 text: Tofu Pinterest Kickstarter street art aesthetic Truffaut Tumblr.
 location: Lunae Palus Hall
-link: http://www.mozillascience.org
+link: https://github.com/BillMills/studyGroupTemplate/issues/2
 date: 2015-12-15
 
 ---
