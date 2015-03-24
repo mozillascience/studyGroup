@@ -1,11 +1,15 @@
-#url: https://y7kim.github.io
+#Setup ~~~
+#Follow these steps to set up your site.
+
+#Step 1: change YourUserName to your username on GitHub:
 baseurl: http://billmills.github.io/studyGroupTemplate/
 
-# Site settings
+#Step 2: give your study group a name and a short description:
 title: MMCU Python Study Group
 description: "A Python Study Group at MMCU."
 
-
+#Step 3: cut and paste the address of the repository you forked here:
+repourl: https://github.com/BillMills/studyGroupTemplate
 
 
 
