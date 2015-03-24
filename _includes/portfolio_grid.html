@@ -11,7 +11,7 @@
             {% for post in site.posts %}
                 <div class="col-lg-12 text-center">
                   <a href="{{ post.link }}">{{ post.title }}</a>
-                  <span>{{ post.subtitle }}, {{ post.date }}</span>
+                  <div>{{ post.subtitle }}, {{ page.date | date: "%-d %B %Y" }}</div>
                 </div>
             {% endfor %}
             </div>
