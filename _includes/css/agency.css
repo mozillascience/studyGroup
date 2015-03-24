@@ -61,6 +61,11 @@ ul.events{
   list-style-type: none;
 }
 
+span.eventSub{
+  color: #553982;
+  margin-left:2em;
+}
+
 .img-centered {
     margin: 0 auto;
 }
