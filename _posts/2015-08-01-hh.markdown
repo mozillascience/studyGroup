@@ -1,8 +1,0 @@
----
-title: Hacky Hour
-text: Photo booth sustainable trust fund fanny pack Schlitz Odd Future pork belly listicle, ugh freegan narwhal iPhone seitan shabby chic.
-location: Elysium Bar
-link: https://github.com/BillMills/studyGroupTemplate/issues/4
-date: 2015-08-01
-
----

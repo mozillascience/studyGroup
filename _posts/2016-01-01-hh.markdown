@@ -1,8 +1,0 @@
----
-title: Hacky Hour
-text: Etsy fingerstache street art cliche bitters farm-to-table. Polaroid skateboard pug flexitarian, YOLO drinking vinegar Williamsburg viral aesthetic American Apparel mumblecore bicycle rights cold-pressed iPhone.
-location: Tharsis Pub
-link: https://github.com/BillMills/studyGroupTemplate/issues/1
-date: 2016-01-01
-
----

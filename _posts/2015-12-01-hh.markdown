@@ -1,8 +1,0 @@
----
-title: Study Group
-text: Ugh viral fixie, cronut bitters bicycle rights church-key flexitarian Vice literally.
-location: Syrtis Major Theater
-link: https://github.com/BillMills/studyGroupTemplate/issues/3
-date: 2015-12-01
-
----

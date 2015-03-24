@@ -1,5 +1,5 @@
 #Setup ~~~
-#Follow these steps to set up your site.
+#Follow these 3 steps to set up your site.
 
 #Step 1: change YourUserName to your username on GitHub:
 baseurl: http://billmills.github.io/studyGroupTemplate/
@@ -12,7 +12,10 @@ description: "A Python Study Group at MMCU."
 repourl: https://github.com/BillMills/studyGroupTemplate
 
 
-
+# That's it, your website is all set up! You can see it at the address in Step 1 above.
+# No need to change anything below this line.
+# To make your first event, check out the instructions <here>
+# Having trouble? Open a new issue <here> and we'll help you out ASAP!
 
 
 
@@ -30,11 +33,11 @@ color:
   secondary-dark: 333
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: https://twitter.com/billdoesphysics
-  - title: github
-    url: https://github.com/BillMills/studyGroupTemplate
+# social:
+#   - title: twitter
+#     url: https://twitter.com/billdoesphysics
+#   - title: github
+#     url: https://github.com/BillMills/studyGroupTemplate
 
 # Postal address (add as many lines as necessary)
 #address:

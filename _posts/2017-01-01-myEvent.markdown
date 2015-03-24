@@ -1,0 +1,8 @@
+---
+title: Make Your First Event!
+text: In order to make your first event, follow the instructions here.
+location: Your Location
+link: https://github.com/BillMills/studyGroupTemplate/issues/1
+date: 2017-01-01
+
+---
