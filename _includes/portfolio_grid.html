@@ -11,8 +11,8 @@
               <ul class='events'>
               {% for post in site.posts %}
                   <li>
-                    <a href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}</a>
-                    <div class='eventSub'>{{ post.subtitle }}</div>
+                    <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}</a>
+                    <div class='eventSub'>{{ post.text }}</div>
                   </li>
               {% endfor %}
               </ul>

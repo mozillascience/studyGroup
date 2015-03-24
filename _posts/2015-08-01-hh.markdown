@@ -1,6 +1,6 @@
 ---
 title: Hacky Hour
-subtitle: Hacking together
+text: Photo booth sustainable trust fund fanny pack Schlitz Odd Future pork belly listicle, ugh freegan narwhal iPhone seitan shabby chic.
 location: Elysium Bar
 link: http://www.mozillascience.org
 date: 2015-08-01

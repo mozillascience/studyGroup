@@ -1,6 +1,6 @@
 ---
 title: Hacky Hour
-subtitle: Hacking together
+text: Etsy fingerstache street art cliche bitters farm-to-table. Polaroid skateboard pug flexitarian, YOLO drinking vinegar Williamsburg viral aesthetic American Apparel mumblecore bicycle rights cold-pressed iPhone.
 location: Tharsis Pub
 link: http://www.mozillascience.org
 date: 2016-01-01

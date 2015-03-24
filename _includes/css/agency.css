@@ -68,6 +68,10 @@ ul.events{
   margin-bottom: 1em;
 }
 
+.eventTitle{
+  font-size:150%;
+}
+
 .img-centered {
     margin: 0 auto;
 }
