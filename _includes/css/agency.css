@@ -759,11 +759,11 @@ ul.social-buttons {
 
 ul.social-buttons li a {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 400px;
+    height: 400px;
     border-radius: 100%;
-    font-size: 2000%;
-    line-height: 40px;
+    font-size: 200px;
+    line-height: 400px;
     outline: 0;
     color: #fff;
     background-color: #222;
