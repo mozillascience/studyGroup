@@ -7,7 +7,7 @@
                     <h3 class="section-subheading text-muted">Our upcoming and recent events.</h3>
                 </div>
             </div>
-            <ul.events>
+            <ul class='events'>
             {% for post in site.posts %}
                 <li>
                   <a href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}</a>
