@@ -1,5 +1,5 @@
 url: https://y7kim.github.io
-baseurl: /agency-jekyll-theme/
+baseurl: /
 
 # Site settings
 title: Awesome Title
@@ -9,7 +9,7 @@ description: "Write an awesome description for your new site here. You can edit 
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary: fed136
-  secondary: fec503  
+  secondary: fec503
   secondary-dark: 333
 
 # Team names, titles and social links
@@ -55,7 +55,7 @@ social:
     url:
   - title: stack-overflow
     url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
+  - title: bitbucket
     url: http://bitbucket.org/jekyll
   - title: github
     url: http://github.com/jekyll
