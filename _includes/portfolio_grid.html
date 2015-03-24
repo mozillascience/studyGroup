@@ -9,7 +9,7 @@
             </div>
             <ul>
             {% for post in site.posts %}
-                <li>
+                <li class='text-center'>
                   <a href="{{ post.link }}">{{ post.title }}, {{ post.location }}</a>
                   <div>{{ post.subtitle }}, {{ post.date | date: "%-d %B %Y"}}</div>
                 </li>
