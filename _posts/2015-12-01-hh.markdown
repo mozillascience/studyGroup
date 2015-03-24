@@ -1,6 +1,6 @@
 ---
 title: Study Group
-subtitle: Guest Speaker: H.R. Watson
+subtitle: Guest Speaker H.R. Watson
 location: Syrtis Major Theater
 link: http://www.mozillascience.org
 date: 2015-12-01
