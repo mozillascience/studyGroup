@@ -766,6 +766,7 @@ ul.social-buttons li a {
     line-height: 400px;
     outline: 0;
     color: #fff;
+    border: 5px solid rgba(0,0,0,0);
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
