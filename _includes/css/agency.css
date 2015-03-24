@@ -766,7 +766,6 @@ ul.social-buttons li a {
     line-height: 400px;
     outline: 0;
     color: #fff;
-    background-color: #222;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -775,7 +774,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #{{ site.color.primary }};
+    border-color: #{{ site.color.primary }};
 }
 
 .btn:focus,
