@@ -1,8 +1,0 @@
----
-title: Hacky Hour
-text: My great hacky hour
-location: Hacky Hour Stadium
-link: https://github.com/BillMills/studyGroupTemplate/issues/1
-date: 2016-12-12
-
----
