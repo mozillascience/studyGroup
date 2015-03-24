@@ -36,7 +36,7 @@ a.active {
 }
 
 a {
-    color: #{{ site.color.primary }};
+    color: #{{ site.color.secondary-dark }};
 }
 
 a:hover,
