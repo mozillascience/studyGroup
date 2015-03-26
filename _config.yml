@@ -1,5 +1,5 @@
 #Setup ~~~
-#Follow these 3 steps to set up your site.
+#Follow these 4 steps to set up your site.
 
 #Step 1: change YourUserName to your username on GitHub:
 baseurl: http://YourUserName.github.io/studyGroup/
@@ -8,9 +8,12 @@ baseurl: http://YourUserName.github.io/studyGroup/
 title: Our Study Group
 description: "A study group."
 
-#Step 3: press the green 'Commit Changes' button at the bottom of this page.
+#Step 3: change YourUserName to your username on GitHub here, too:
+repourl: https://github.com/YourUserName/studyGroup
 
-# That's it, your website is all set up! 
+#Step 4: press the green 'Commit Changes' button at the bottom of this page.
+
+# That's it, your website is all set up!
 # You can see it at the address in Step 1 above.
 # No need to change anything below this line.
 # To make your first event, check out the instructions <here>
@@ -30,9 +33,6 @@ color:
   primary: fed136
   secondary: fec503
   secondary-dark: 333
-
-# link to parent repo for centralized issue tracker conversation
-repourl: https://github.com/billsTestOrg/studyGroup
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 # social:
