@@ -8,11 +8,10 @@ baseurl: http://YourUserName.github.io/studyGroup/
 title: Our Study Group
 description: "A study group."
 
-#Step 3: cut and paste the address of the repository you forked here:
-repourl: repository url
+#Step 3: press the green 'Commit Changes' button at the bottom of this page.
 
-
-# That's it, your website is all set up! You can see it at the address in Step 1 above.
+# That's it, your website is all set up! 
+# You can see it at the address in Step 1 above.
 # No need to change anything below this line.
 # To make your first event, check out the instructions <here>
 # Having trouble? Open a new issue <here> and we'll help you out ASAP!
@@ -31,6 +30,9 @@ color:
   primary: fed136
   secondary: fec503
   secondary-dark: 333
+
+# link to parent repo for centralized issue tracker conversation
+repourl: https://github.com/billsTestOrg/studyGroup
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 # social:
