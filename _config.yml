@@ -1,7 +1,8 @@
 #Setup ~~~
 #Follow these 4 steps to set up your site.
 
-#Step 1: change YourUserName to your username on GitHub:
+#Step 1: change YourUserName to the user name you chose on GitHub:
+user: YourUserName
 baseurl: http://YourUserName.github.io/studyGroup/
 
 #Step 2: give your study group a name and a short description:
