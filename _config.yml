@@ -1,5 +1,5 @@
 #Setup ~~~
-#Follow these 4 steps to set up your site.
+#Follow these 3 steps to set up your site.
 
 #Step 1: change YourUserName to the user name you chose on GitHub:
 user: YourUserName
@@ -8,10 +8,7 @@ user: YourUserName
 title: Our Study Group
 description: "A study group."
 
-#Step 3: change YourUserName to your username on GitHub here, too:
-repourl: https://github.com/YourUserName/studyGroup
-
-#Step 4: press the green 'Commit Changes' button at the bottom of this page.
+#Step 3: press the green 'Commit Changes' button at the bottom of this page.
 
 # That's it, your website is all set up!
 # You can see it at the address in Step 1 above.
