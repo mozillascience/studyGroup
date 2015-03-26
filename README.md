@@ -7,6 +7,10 @@ Welcome to [Mozilla Science Lab](http://www.mozillascience.org/)'s Study Group p
 
 Study groups are fun, informal meetups of your friends and colleagues from around your local institution or town to share skills, stories and ideas on using code for research. The goal is to create a friendly, no-pressure environment where people can share their work, ask for help on a coding problem, and learn and work together with their peers.
 
+### It's Broken, I Need Help
+
+If anything in these instructions doesn't work or doesn't make sense, open an issue [here](https://github.com/billsTestOrg/studyGroup/issues) or email bill@mozillafoundation.org.
+
 ## How to Set Up Your Own Study Group Website
 
 Everything you need to set up your own study group website for organizing events is right here - follow the following steps and you'll be up and running soon:
