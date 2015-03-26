@@ -25,9 +25,11 @@ When you're ready to list a new event for your study group, follow these steps:
  1. **Make a new Issue to describe your event.** Click on 'Issues' over on the right sidebar, then the green 'New Issue' button. You'll then see a form where you can give your event a title and a description - fill these out with all the relevant information; this is how your attendees will know when and where to go and what's going on, so make sure to add all the details!
  2. **Go to the `_posts` directory**. It'll be at `https://github.com/yourUserName/studyGroup/tree/gh-pages/_posts` - or you can click on `_posts` in your repo.
  3. **Make a new file** by clicking on the `+` sign beside `_posts/` Name it like the following:
+ 
     ```
     YYYY-MM-DD-word.markdown
     ```
+    
     where `YYYY-MM-DD` is the date of your event, and `word` is anything you want.
  4. **Cut and paste the following into your new file:**
     ```
