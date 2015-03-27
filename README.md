@@ -26,7 +26,7 @@ Everything you need to set up your own study group website for organizing events
  4. **Turn on the Issue Tracker.** An issue tracker is a message board GitHub sets up for every repository; you'll use it to post information about your event and talk to your participants. To turn it on, click on 'Settings' in the right sidebar of your repo, and then click the checkbox beside 'Issues'. 
  5. **Edit the `_config.yml` file** in your new repository. To do this, click on `_config.yml`, then click on the little pencil near the top right. There are instructions right in the file on how to edit it. When you're done, press the green 'Commit Changes' button at the bottom of the page.
 
-That's it, you're done! You can see your new website at `http://yourOrganizationName.github.io/studyGroup/`, where `yourOrgnaizationName` is the same username you used above. If this is your first time making a webpage on GitHub, it might take 30 minutes for things to percolate through their computers - don't worry, it's all good, check back later and your website should be up and running.
+That's it, you're done! You can see your new website at `http://yourOrganizationName.github.io/studyGroup/`, where `yourOrgnaizationName` is the Organization name you made above. If this is your first time making a webpage on GitHub, it might take 30 minutes for things to percolate through their computers - don't worry, it's all good, check back later and your website should be up and running.
 
 ## How to Launch a New Event
 
