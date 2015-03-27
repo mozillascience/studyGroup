@@ -16,9 +16,15 @@ If anything in these instructions doesn't work or doesn't make sense, open an is
 Everything you need to set up your own study group website for organizing events is right here - follow the following steps and you'll be up and running soon:
 
  1. **Make yourself an account on GitHub.** The free one is just fine - we're not going to do anything fancy.
- 2. **Fork this repository.** Up in the top right corner, there's a button that says 'Fork'; press it! This makes your very own copy of all this stuff in your own space on GitHub; you can go visit your new repo at `https://github.com/yourUserName/studyGroup`, where `yourUserName` is whatever user name you chose when you signed up for GitHub.
- 3. **Turn on the Issue Tracker.** An issue tracker is a message board GitHub sets up for every repository; you'll use it to post information about your event and talk to your participants. To turn it on, click on 'Settings' in the right sidebar of your repo, and then click the checkbox beside 'Issues'. 
- 4. **Edit the `_config.yml` file** in your new repository. To do this, click on `_config.yml`, then click on the little pencil near the top right. There are instructions right in the file on how to edit it. When you're done, press the big green 'Commit Changes' button at the bottom of the page.
+ 2. **Make an Organization for your study group.** This will help you communicate with your members. To do this:
+   - On GitHub, click on the gear in the top right hand corner.
+   - Click on 'Organizations' in the list on the left.
+   - Click 'New Organization' near the top right.
+   - Name your organziation `yourInstitutionOrCity-study-group`, where `yourInstitutionOrCity` is the place you're organizing your study group from.
+   - Put your email in the 'Billing Address' field; don't worry, you're going to stick with the free plan, so you'll never actually get a bill.
+ 3. **Fork this repository.** Up in the top right corner, there's a button that says 'Fork'; press it! It'll ask you where you want to fork to - choose the new Organization you just made. This makes your very own copy of all this stuff in your Organization space on GitHub; go visit it now at `https://github.com/yourOrganizationName/studyGroup`, where `yourOrganizationName` is whatever user name you gave to your organization.
+ 4. **Turn on the Issue Tracker.** An issue tracker is a message board GitHub sets up for every repository; you'll use it to post information about your event and talk to your participants. To turn it on, click on 'Settings' in the right sidebar of your repo, and then click the checkbox beside 'Issues'. 
+ 5. **Edit the `_config.yml` file** in your new repository. To do this, click on `_config.yml`, then click on the little pencil near the top right. There are instructions right in the file on how to edit it. When you're done, press the green 'Commit Changes' button at the bottom of the page.
 
 That's it, you're done! You can see your new website at `http://yourUserName.github.io/studyGroup/`, where `yourUserName` is the same username you used above. If this is your first time making a webpage on GitHub, it might take 30 minutes for things to percolate through their computers - don't worry, it's all good, check back later and your website should be up and running.
 
