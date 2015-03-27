@@ -16,7 +16,7 @@ If anything in these instructions doesn't work or doesn't make sense, open an is
 Everything you need to set up your own study group website for organizing events is right here - follow the following steps and you'll be up and running soon:
 
  1. **Make yourself an account on GitHub.** The free one is just fine - we're not going to do anything fancy.
- 2. **Make an Organization for your study group.** This will help you communicate with your members. To do this:
+ 2. **Make an Organization for your study group.** This is like making a club on GitHub. To do this:
    - On GitHub, click on the gear in the top right hand corner.
    - Click on 'Organizations' in the list on the left.
    - Click 'New Organization' near the top right.
