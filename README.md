@@ -56,9 +56,9 @@ When you're ready to list a new event for your study group, follow these steps:
 
 That's it! Your event is now listed on your webpage, and there's a discussion thread where people can ask questions and discuss the details.
     
- ## How to Stay in Touch With Your Members
+## How to Stay in Touch With Your Members
  
- Now that you're all set up, GitHub provides several ways to stay in touch with the people involved in your study group.
+Now that you're all set up, GitHub provides several ways to stay in touch with the people involved in your study group.
  
   - **Create a Team for your participants.**. On your Organization page (`https://github.com/yourOrganziationName`), click 'Create a New Team'. Name your team something like `Members`, and keep the default 'Read Access' option.
   - **Invite members.** Every time someone participates in one of your study groups, ask them their GitHub user name, and invite them to join your team by visiting your Organziation page (`https://github.com/yourOrganizationName`) and clicking on 'Invite someone'.
