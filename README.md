@@ -15,7 +15,7 @@ If anything in these instructions doesn't work or doesn't make sense, open an is
 
 Everything you need to set up your own study group website for organizing events is right here - follow the following steps and you'll be up and running soon:
 
- 1. **Make yourself an account on GitHub.** The free one is just fine - we're not going to do anything fancy.
+ 1. **Make yourself an account on GitHub.** The free one is just fine.
  2. **Make an Organization for your study group.** This is like making a club on GitHub. To do this:
    - On GitHub, click on the gear in the top right hand corner.
    - Click on 'Organizations' in the list on the left.
@@ -53,6 +53,16 @@ When you're ready to list a new event for your study group, follow these steps:
     ---
     ```
     Change all the fields to describe your event; make sure the `link` is the address of the issue you created above. When you're done, remember to click 'Commit Changes' at the bottom.
- 
-    
+
 That's it! Your event is now listed on your webpage, and there's a discussion thread where people can ask questions and discuss the details.
+    
+ ## How to Stay in Touch With Your Members
+ 
+ Now that you're all set up, GitHub provides several ways to stay in touch with the people involved in your study group.
+ 
+  - **Create a Team for your participants.**. On your Organization page (`https://github.com/yourOrganziationName`), click 'Create a New Team'. Name your team something like `Members`, and keep the default 'Read Access' option.
+  - **Invite members.** Every time someone participates in one of your study groups, ask them their GitHub user name, and invite them to join your team by visiting your Organziation page (`https://github.com/yourOrganizationName`) and clicking on 'Invite someone'.
+  - **Use the Issue Tracker.** The Issue Tracker is your public message board to make announcements, ask questions and start conversations with your members. You can find yours at `https://github.com/yourOrganziationName/studyGroup/issues`.
+  - **Use the Mozilla Science Forum** to chat with study groups worldwide. Find the [forum here](http://forum.mozillascience.org/category/events/study-groups); every study group gets a link back to this global forum maintained by the Mozilla Science Lab to share their stories, ask questions to the wider community, and find out who's out there. 
+ 
+
