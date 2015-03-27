@@ -1,8 +1,8 @@
 #Setup ~~~
 #Follow these 3 steps to set up your site.
 
-#Step 1: change YourUserName to the user name you chose on GitHub:
-user: YourUserName
+#Step 1: change YourOrganizationName to the organization name you chose on GitHub:
+user: YourOrganizationName
 
 #Step 2: give your study group a name and a short description:
 title: Our Study Group
@@ -11,7 +11,7 @@ description: "A study group."
 #Step 3: press the green 'Commit Changes' button at the bottom of this page.
 
 # That's it, your website is all set up!
-# You can see it at http://YourUserName.github.io/studyGroup/
+# You can see it at http://YourOrganizationName.github.io/studyGroup/
 # No need to change anything below this line.
 # To make your first event, check out the instructions at https://github.com/billsTestOrg/studyGroup#how-to-launch-a-new-event
 # Having trouble? Open a new issue at https://github.com/billsTestOrg/studyGroup/issues and we'll help you out ASAP!
