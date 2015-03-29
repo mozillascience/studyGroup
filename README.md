@@ -21,24 +21,24 @@ Everything you need to set up your own study group website for organizing events
    - where your study group is going to be based (institution or town)
    - what sort of coding you're interested in
    - how you heard about our Study Group program
-
-  Once you open an issue, we'll set you up your own space at Mozilla Science Lab's GitHub organization that you can use to promote your events and communicate with your users. Once we send you the link to your new repo...
+ 
+  Once you open an issue, we'll set you up your own space at Mozilla Science Lab's GitHub organization that you can use to promote your events and communicate with your users. Once we send you the link to your new repo... 
  3. **Edit the `_config.yml` file** in your new repository. To do this, click on `_config.yml`, then click on the little pencil near the top right. There are instructions right in the file on how to edit it. When you're done, press the green 'Commit Changes' button at the bottom of the page.
 
-That's it, you're done! You can see your new website at `http://billstestorg.github.io/yourRepoName/`, where `yourRepoName` is the name of the repository we made for you.
+That's it, you're done! You can see your new website at `http://yourOrganizationName.github.io/studyGroup/`, where `yourOrgnaizationName` is the Organization name you made above.
 
 ## How to Launch a New Event
 
 When you're ready to list a new event for your study group, follow these steps:
 
  1. **Make a new Issue to describe your event.** Click on 'Issues' over on the right sidebar, then the green 'New Issue' button. You'll then see a form where you can give your event a title and a description - fill these out with all the relevant information; this is how your attendees will know when and where to go and what's going on, so make sure to add all the details!
- 2. **Go to the `_posts` directory**. It'll be at `https://github.com/billsTestOrg/yourRepo/tree/gh-pages/_posts` - or you can click on `_posts` in your repo.
+ 2. **Go to the `_posts` directory**. It'll be at `https://github.com/yourOrganizationName/studyGroup/tree/gh-pages/_posts` - or you can click on `_posts` in your repo.
  3. **Make a new file** by clicking on the `+` sign beside `_posts/` Name it like the following:
-
+ 
     ```
     YYYY-MM-DD-word.markdown
     ```
-
+    
     where `YYYY-MM-DD` is the date of your event, and `word` is anything you want.
  4. **Cut and paste the following into your new file:**
     ```
@@ -46,7 +46,7 @@ When you're ready to list a new event for your study group, follow these steps:
     title: Study Group Meetup
     text: a one sentence description of your event
     location: Hacky Hour Stadium
-    link: https://github.com/billsTestOrg/MMC-study-group/issues/1234
+    link: https://github.com/yourOrganizationName/studyGroup/issues/1234
     date: 2016-01-04
 
     ---
@@ -54,12 +54,15 @@ When you're ready to list a new event for your study group, follow these steps:
     Change all the fields to describe your event; make sure the `link` is the address of the issue you created above. When you're done, remember to click 'Commit Changes' at the bottom.
 
 That's it! Your event is now listed on your webpage, and there's a discussion thread where people can ask questions and discuss the details.
-
+    
 ## How to Stay in Touch With Your Members
-
+ 
 Now that you're all set up, GitHub provides several ways to stay in touch with the people involved in your study group.
-
-  - **Invite members to your Team.** Every time someone participates in one of your study groups, ask them their GitHub user name, and invite them to join your team by [going here](https://github.com/billsTestOrg) and clicking on 'Invite someone'.
-  - **Use the Issue Tracker.** The Issue Tracker is your public message board to make announcements, ask questions and start conversations with your members. You can find yours at `https://github.com/billsTestOrg/yourRepo/issues/`.
+ 
+  - **Create a Team for your participants.**. On your Organization page (`https://github.com/yourOrganziationName`), click 'Create a New Team'. Name your team something like `Members`, and keep the default 'Read Access' option.
+  - **Invite members.** Every time someone participates in one of your study groups, ask them their GitHub user name, and invite them to join your team by visiting your Organziation page (`https://github.com/yourOrganizationName`) and clicking on 'Invite someone'.
+  - **Use the Issue Tracker.** The Issue Tracker is your public message board to make announcements, ask questions and start conversations with your members. You can find yours at `https://github.com/yourOrganziationName/studyGroup/issues`.
   - **Gitter** TBD
-  - **Use the Mozilla Science Forum** to chat with study groups worldwide. Find the [forum here](http://forum.mozillascience.org/category/events/study-groups); every study group gets a link back to this global forum maintained by the Mozilla Science Lab to share their stories, ask questions to the wider community, and find out who's out there.
+  - **Use the Mozilla Science Forum** to chat with study groups worldwide. Find the [forum here](http://forum.mozillascience.org/category/events/study-groups); every study group gets a link back to this global forum maintained by the Mozilla Science Lab to share their stories, ask questions to the wider community, and find out who's out there. 
+ 
+
