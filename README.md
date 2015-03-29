@@ -54,7 +54,7 @@ That's it! Your event is now listed on your webpage, and there's a discussion th
 
 Now that you're all set up, GitHub provides several ways to stay in touch with the people involved in your study group.
 
-  - **Ask users to star your repo.** At every event, ask your users to click 'Star' on your repo - this is like a 'favorite' button.
+  - **Ask users to star your repo.** At every event, ask your users to click 'Star' on your repo - this is like a 'favorite' button, and it makes a list of all the people that have liked your group.
   - **Use the Issue Tracker.** The Issue Tracker is your public message board to make announcements, ask questions and start conversations with your members. You can find yours at `https://github.com/yourUserName/studyGroup/issues`.
   - **Gitter** TBD
   - **Use the Mozilla Science Forum** to chat with study groups worldwide. Find the [forum here](http://forum.mozillascience.org/category/events/study-groups); every study group gets a link back to this global forum maintained by the Mozilla Science Lab to share their stories, ask questions to the wider community, and find out who's out there. 
