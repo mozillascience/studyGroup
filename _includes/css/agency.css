@@ -881,7 +881,7 @@ img::-moz-selection {
 }
 
 .eventSubinstructions{
-  margin-bottom: 1em;
+  margin-bottom: 1em !important;
 }
 
 figcaption{
