@@ -880,6 +880,14 @@ img::-moz-selection {
   border-top: 1px solid #CCCCCC;
 }
 
+.eventSubinstructions{
+  margin-bottom: 1em;
+}
+
+figcaption{
+  margin-top:1em;
+}
+
 body {
     webkit-tap-highlight-color: #{{ site.color.primary }};
 }
