@@ -9,7 +9,7 @@ Study groups are fun, informal meetups of your friends and colleagues from aroun
 
 ### It's Broken, I Need Help
 
-If anything in these instructions doesn't work or doesn't make sense, open an issue [here](https://github.com/billsTestOrg/studyGroup/issues) or email bill@mozillafoundation.org.
+If anything in these instructions doesn't work or doesn't make sense, open an issue [here](https://github.com/mozillascience/studyGroup/issues) or email bill@mozillafoundation.org.
 
 ## How to Set Up Your Own Study Group Website
 
