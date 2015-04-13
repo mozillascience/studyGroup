@@ -15,8 +15,8 @@
                 {% capture nowday %}{{'now' | date: '%j'}}{% endcapture %}
                 {% capture postday %}{{post.date | date: '%j'}}{% endcapture %}
                 {% assign postday = postday | plus: 0 %}
-                {% assign nowday = nowday | plus: 0 %}
-                {% if postyear > nowyear or postday >= nowday-7 and postyear >= nowyear %}
+                {% assign nowday = nowday | minus: 7 %}
+                {% if postyear > nowyear or postday >= nowday and postyear >= nowyear %}
                   <li>
                     <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}</a>
                     <div class='eventSub'>{{ post.text }}</div>
