@@ -12,7 +12,7 @@
               {% for post in site.posts %}
                 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
                 {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-                {% if posttime > nowunix %}
+                {% if posttime >= nowunix %}
                   <li>
                     <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}</a>
                     <div class='eventSub'>{{ post.text }}</div>
