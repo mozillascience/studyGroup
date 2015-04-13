@@ -14,7 +14,7 @@
                 {% capture postyear %}{{post.date | date: '%Y'}}{% endcapture %}
                 {% capture nowday %}{{'now' | date: '%j'}}{% endcapture %}
                 {% capture postday %}{{post.date | date: '%j'}}{% endcapture %}
-                {% if postyear > nowyear or postday >= nowday and postyear >= nowyear %}
+                {% if postyear > nowyear or postday >= nowday-7 and postyear >= nowyear %}
                   <li>
                     <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}</a>
                     <div class='eventSub'>{{ post.text }}</div>
