@@ -17,8 +17,15 @@ Everything you need to set up your own study group website for organizing events
 
  1. **Make yourself an account on GitHub.** The free one is just fine.
  2. **Fork this repository.** Up in the top right corner of this page, there's a button that says 'Fork'; press it! This makes your very own copy of all this stuff in your space on GitHub; when the copy is done, GitHub will automatically take you there.
- 3. **Turn on the Issue Tracker.** An issue tracker is a message board GitHub sets up for every repository; you'll use it to post information about your event and talk to your participants. To turn it on, click on 'Settings' in the right sidebar of your repo, and then click the checkbox beside 'Issues'. Now head back to your repo by clicking on the big `studyGroup` at the top of the page.
- 4. **Edit the `_config.yml` file** in your new repository. To do this, click on `_config.yml`, then click on the little pencil near the top right. There are instructions right in the file on how to edit it. When you're done, press the green 'Commit Changes' button at the bottom of the page.
+ 3. **Turn on the Issue Tracker.** An issue tracker is a message board GitHub sets up for every repository; you'll use it to post information about your event and talk to your participants. To turn it on: 
+   - click on 'Settings' in the right sidebar of your repo;
+   - click the checkbox beside 'Issues'; 
+   - head back to your repo by clicking on the big `studyGroup` at the top of the page.
+ 4. **Edit the `_config.yml` file** in your new repository:
+   - click on `_config.yml`;
+   - click on the little pencil near the top right;
+   - follow the instructions in the file on how to edit it; 
+   - when you're done, press the green 'Commit Changes' button at the bottom of the page.
 
 That's it, you're done! You can see your new website at `http://yourUserName.github.io/studyGroup/`, where `yourUserName` is the user name you signed up for GitHub with. If this is your first time making a webpage on GitHub, it might take 30 minutes for things to percolate through their computers - don't worry, it's all good, check back later and your website should be up and running.
 
