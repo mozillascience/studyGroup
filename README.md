@@ -67,7 +67,7 @@ Now that you're all set up, GitHub provides several ways to stay in touch with t
   - **Ask users to Watch your repo.** Make sure all your users click 'Watch' at the top of your repository. This way, they'll be automatically notified of all the events you post in your issue tracker. 
   - **Use the Issue Tracker.** The Issue Tracker is your public message board to make announcements, ask questions and start conversations with your members. You can find yours at `https://github.com/yourUserName/studyGroup/issues`.
   - **Gitter** is a free chat room you can set up and share with your community to go with your website. To set it up, try the following:
-   - Visit `https://gitter.im`. You may have to sign in with your GitHub credentials.
+   - Visit [their web site](https://gitter.im). You may have to sign in with your GitHub credentials.
    - Click 'create a room' in the bottom left;
    - Choose 'Channel' from the options presented;
    - Make the room name `studyGroup`, and select the 'public' option.
