@@ -7,6 +7,16 @@ Welcome to [Mozilla Science Lab](http://www.mozillascience.org/)'s Study Group p
 
 Study groups are fun, informal meetups of your friends and colleagues from around your local institution or town to share skills, stories and ideas on using code for research. The goal is to create a friendly, no-pressure environment where people can share their work, ask for help on a coding problem, and learn and work together with their peers.
 
+## For Participants
+
+Welcome to our Study Group! A few things to do & know now that you're here:
+
+ - **Watch this repo:** up in the top right, there's a button that says 'Watch'; click it, and set yourself to 'Watching'. This will send you email notifications of new discussions; if you don't want email, but would like an alert just on GitHub, change the setting in Settings -> Notification Center (Settings is the little cog in the top right).
+ - **Check out the issue tracker:** click on 'issues' in the sidebar on the right; this is where all the conversations this study groups is having live. Use this space to ask questions, request events, make suggestions, or just say hi.
+ - **Read the code of conduct:** this Study Group is for everyone - we abide by a [set of rules](http://www.mozillascience.org/code-of-conduct/) that require everyone be treated with respect. Help us make a space where everyone feels welcome, and we'll all have a better time!
+
+## For Organizers
+
 ### It's Broken, I Need Help
 
 If anything in these instructions doesn't work or doesn't make sense, open an issue [here](https://github.com/mozillascience/studyGroup/issues) or email bill@mozillafoundation.org.
@@ -17,8 +27,15 @@ Everything you need to set up your own study group website for organizing events
 
  1. **Make yourself an account on GitHub.** The free one is just fine.
  2. **Fork this repository.** Up in the top right corner of this page, there's a button that says 'Fork'; press it! This makes your very own copy of all this stuff in your space on GitHub; when the copy is done, GitHub will automatically take you there.
- 3. **Turn on the Issue Tracker.** An issue tracker is a message board GitHub sets up for every repository; you'll use it to post information about your event and talk to your participants. To turn it on, click on 'Settings' in the right sidebar of your repo, and then click the checkbox beside 'Issues'. Now head back to your repo by clicking on the big `studyGroup` at the top of the page.
- 4. **Edit the `_config.yml` file** in your new repository. To do this, click on `_config.yml`, then click on the little pencil near the top right. There are instructions right in the file on how to edit it. When you're done, press the green 'Commit Changes' button at the bottom of the page.
+ 3. **Turn on the Issue Tracker.** An issue tracker is a message board GitHub sets up for every repository; you'll use it to post information about your event and talk to your participants. To turn it on: 
+   - click on 'Settings' in the right sidebar of your repo;
+   - click the checkbox beside 'Issues'; 
+   - head back to your repo by clicking on the big `studyGroup` at the top of the page.
+ 4. **Edit the `_config.yml` file** in your new repository:
+   - click on `_config.yml`;
+   - click on the little pencil near the top right;
+   - follow the instructions in the file on how to edit it; 
+   - when you're done, press the green 'Commit Changes' button at the bottom of the page.
 
 That's it, you're done! You can see your new website at `http://yourUserName.github.io/studyGroup/`, where `yourUserName` is the user name you signed up for GitHub with. If this is your first time making a webpage on GitHub, it might take 30 minutes for things to percolate through their computers - don't worry, it's all good, check back later and your website should be up and running.
 
@@ -26,7 +43,10 @@ That's it, you're done! You can see your new website at `http://yourUserName.git
 
 When you're ready to list a new event for your study group, follow these steps:
 
- 1. **Make a new Issue to describe your event.** Click on 'Issues' over on the right sidebar, then the green 'New Issue' button. You'll then see a form where you can give your event a title and a description - fill these out with all the relevant information; this is how your attendees will know when and where to go and what's going on, so make sure to add all the details!
+ 1. **Make a new Issue to describe your event.** 
+   - Click on 'Issues' over on the right sidebar of your repo, 
+   - click the green 'New Issue' button near the top right. 
+   - You'll then see a form where you can give your event a title and a description - fill these out with all the relevant information; this is how your attendees will know when and where to go and what's going on, so make sure to add all the details!
  2. **Go to the `_posts` directory**. It'll be at `https://github.com/yourUserName/studyGroup/tree/gh-pages/_posts` - or you can click on `_posts` in your repo.
  3. **Make a new file** by clicking on the `+` sign beside `_posts/` Name it like the following:
 
@@ -48,7 +68,7 @@ When you're ready to list a new event for your study group, follow these steps:
     ```
     Change all the fields to describe your event; make sure the `link` is the address of the issue you created above. When you're done, remember to click 'Commit Changes' at the bottom.
 
-That's it! Your event is now listed on your webpage, and there's a discussion thread where people can ask questions and discuss the details.
+That's it! Your event is now listed on your webpage, and there's a discussion thread where people can ask questions and discuss the details. Events will be automatically removed from the schedule on the webpage when they're more than a week in the past - but the issue you created will always be there as a record of what you've done.
 
 ## How to Stay in Touch With Your Members
 
@@ -56,5 +76,11 @@ Now that you're all set up, GitHub provides several ways to stay in touch with t
 
   - **Ask users to Watch your repo.** Make sure all your users click 'Watch' at the top of your repository. This way, they'll be automatically notified of all the events you post in your issue tracker. 
   - **Use the Issue Tracker.** The Issue Tracker is your public message board to make announcements, ask questions and start conversations with your members. You can find yours at `https://github.com/yourUserName/studyGroup/issues`.
-  - **Gitter** TBD
-  - **Use the Mozilla Science Forum** to chat with study groups worldwide. Find the [forum here](http://forum.mozillascience.org/category/events/study-groups); every study group gets a link back to this global forum maintained by the Mozilla Science Lab to share their stories, ask questions to the wider community, and find out who's out there. 
+  - **Gitter** is a free chat room you can set up and share with your community to go with your website. To set it up, try the following:
+   - Visit [their web site](https://gitter.im). You may have to sign in with your GitHub credentials.
+   - Click 'create a room' in the bottom left;
+   - Choose 'Channel' from the options presented;
+   - Make the room name `studyGroup`, and select the 'public' option.
+ 
+  That's it! Share the URL with your participants and you can chat live with them as they join the room.
+  - **Use the Mozilla Science Forum** to chat with study groups worldwide. Find the [forum here](http://forum.mozillascience.org/category/events/study-groups); use this to share your stories, ask questions to the wider community, and find out who's out there.
