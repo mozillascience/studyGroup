@@ -28,7 +28,11 @@
               {% if isEvent == 0 %}
                 <a class='eventTitle' href="{{ '/studyGroup' | prepend: site.user | prepend: 'https://github.com/' }}/issues">Nothing yet! Propose an event here.</a>
               {% else %}
-              <a class='eventTitle' href="{{ '/studyGroup' | prepend: site.user | prepend: 'https://github.com/' }}/issues">Propose an event.</a>
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h3><a class='eventTitle' href="{{ '/studyGroup' | prepend: site.user | prepend: 'https://github.com/' }}/issues">Propose an event.</a></h3>
+                  </div>
+              </div>
               {% endif %}
               </ul>
             </div>
