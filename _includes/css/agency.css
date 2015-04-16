@@ -884,6 +884,10 @@ img::-moz-selection {
   margin-bottom: 1em !important;
 }
 
+.eventSuggest{
+  margin-top: 3em;
+}
+
 figcaption{
   margin-top:1em;
 }

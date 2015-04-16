@@ -29,9 +29,9 @@
                 <a class='eventTitle' href="{{ '/studyGroup' | prepend: site.user | prepend: 'https://github.com/' }}/issues">Nothing yet! Propose an event here.</a>
               {% else %}
               <div class="row">
-                  <div class="col-lg-12 text-center">
-                      <h3><a class='eventTitle' href="{{ '/studyGroup' | prepend: site.user | prepend: 'https://github.com/' }}/issues">Propose an event.</a></h3>
-                  </div>
+                    <div class="col-lg-12 text-center">
+                        <a href="{{ '/studyGroup' | prepend: site.user | prepend: 'https://github.com/' }}/issues" class="btn btn-xl">Propose an Event</a>
+                    </div>
               </div>
               {% endif %}
               </ul>
