@@ -20,8 +20,8 @@ description: "A study group."
 # None of these things need to be changed - but feel free!
 
 titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
-headline: "Welcome To Our Study Group!"
-title: "Let's Work Together"
+headlineSmall: "Welcome To Our Study Group!"
+headlineMain: "Let's Work Together"
 
 
 #========================================
