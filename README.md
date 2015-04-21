@@ -21,7 +21,7 @@ Welcome to our Study Group! A few things to do & know now that you're here:
 
 If anything in these instructions doesn't work or doesn't make sense, open an issue [here](https://github.com/mozillascience/studyGroup/issues) or email bill@mozillafoundation.org.
 
-### Check out the Handbook!
+### Check out the Handbook
 
 The instructions below will help you set up the online tools for your Study Group - but if you're looking for organziation strategies, event plans and lesson ideas, check out the [Study Group Handbook](http://mozillascience.github.io/studyGroupHandbook/)! 
 
