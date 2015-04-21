@@ -23,7 +23,7 @@ If anything in these instructions doesn't work or doesn't make sense, open an is
 
 ## How to Set Up Your Own Study Group Website
 
-Everything you need to set up your own study group website for organizing events is right here - follow the following steps and you'll be up and running soon:
+Everything you need to set up your own study group website for organizing events is right here - follow the following steps and you'll be up and running soon, or [watch this video](https://youtu.be/bUJTxWXc6XY) where we walk you through setup.
 
  1. **Make yourself an account on GitHub.** The free one is just fine.
  2. **Fork this repository.** Up in the top right corner of this page, there's a button that says 'Fork'; press it! This makes your very own copy of all this stuff in your space on GitHub; when the copy is done, GitHub will automatically take you there.
@@ -41,7 +41,7 @@ That's it, you're done! You can see your new website at `http://yourUserName.git
 
 ## How to Launch a New Event
 
-When you're ready to list a new event for your study group, follow these steps:
+When you're ready to list a new event for your study group, follow these steps, or [watch this video](https://youtu.be/abglQgEIccw) where we walk you through event listing.
 
  1. **Make a new Issue to describe your event.** 
    - Click on 'Issues' over on the right sidebar of your repo, 
