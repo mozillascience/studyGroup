@@ -1,15 +1,15 @@
-Study Groups
+Mozilla Study Groups
 ============
 
 Welcome to [Mozilla Science Lab](http://www.mozillascience.org/)'s Study Group project! From here, we'll set you up with everything you need to start your own study group.
 
-### Wait What's a 'Study Group'
+### Wait What's a 'Mozilla Study Group'?
 
-Study groups are fun, informal meetups of your friends and colleagues from around your local institution or town to share skills, stories and ideas on using code for research. The goal is to create a friendly, no-pressure environment where people can share their work, ask for help on a coding problem, and learn and work together with their peers.
+Mozilla Study Groups are fun, informal meetups of your friends and colleagues from around your local institution or town to share skills, stories and ideas on using code for research. The goal is to create a friendly, no-pressure environment where people can share their work, ask for help on a coding problem, and learn and work together with their peers.
 
 ## For Participants
 
-Welcome to our Study Group! A few things to do & know now that you're here:
+Welcome to our Mozilla Study Group! A few things to do & know now that you're here:
 
  - **Watch this repo:** up in the top right, there's a button that says 'Watch'; click it, and set yourself to 'Watching'. This will send you email notifications of new discussions; if you don't want email, but would like an alert just on GitHub, change the setting in Settings -> Notification Center (Settings is the little cog in the top right).
  - **Check out the issue tracker:** click on 'issues' in the sidebar on the right; this is where all the conversations this study groups is having live. Use this space to ask questions, request events, make suggestions, or just say hi.
@@ -23,11 +23,11 @@ If anything in these instructions doesn't work or doesn't make sense, open an is
 
 ### Check out the Handbook
 
-The instructions below will help you set up the online tools for your Study Group - but if you're looking for organziation strategies, event plans and lesson ideas, check out the [Study Group Handbook](http://mozillascience.github.io/studyGroupHandbook/)! 
+The instructions below will help you set up the online tools for your Mozilla Study Group - but if you're looking for organziation strategies, event plans and lesson ideas, check out the [Mozilla Study Group Handbook](http://mozillascience.github.io/studyGroupHandbook/)! 
 
-## How to Set Up Your Own Study Group Website
+## How to Set Up Your Own Mozilla Study Group Website
 
-Everything you need to set up your own study group website for organizing events is right here - follow the following steps and you'll be up and running soon, or [watch this video](https://youtu.be/bUJTxWXc6XY) where we walk you through setup.
+Everything you need to set up your own Mozilla Study Group website for organizing events is right here - follow the following steps and you'll be up and running soon, or [watch this video](https://youtu.be/bUJTxWXc6XY) where we walk you through setup.
 
  1. **Make yourself an account on GitHub.** The free one is just fine.
  2. **Fork this repository.** Up in the top right corner of this page, there's a button that says 'Fork'; press it! This makes your very own copy of all this stuff in your space on GitHub; when the copy is done, GitHub will automatically take you there.
@@ -45,7 +45,7 @@ That's it, you're done! You can see your new website at `http://yourUserName.git
 
 ## How to Launch a New Event
 
-When you're ready to list a new event for your study group, follow these steps, or [watch this video](https://youtu.be/abglQgEIccw) where we walk you through event listing.
+When you're ready to list a new event for your Study Group, follow these steps, or [watch this video](https://youtu.be/abglQgEIccw) where we walk you through event listing.
 
  1. **Make a new Issue to describe your event.** 
    - Click on 'Issues' over on the right sidebar of your repo, 
@@ -76,7 +76,7 @@ That's it! Your event is now listed on your webpage, and there's a discussion th
 
 ## How to Stay in Touch With Your Members
 
-Now that you're all set up, GitHub provides several ways to stay in touch with the people involved in your study group.
+Now that you're all set up, GitHub provides several ways to stay in touch with the people involved in your Study Group.
 
   - **Ask users to Watch your repo.** Make sure all your users click 'Watch' at the top of your repository. This way, they'll be automatically notified of all the events you post in your issue tracker. 
   - **Use the Issue Tracker.** The Issue Tracker is your public message board to make announcements, ask questions and start conversations with your members. You can find yours at `https://github.com/yourUserName/studyGroup/issues`.
