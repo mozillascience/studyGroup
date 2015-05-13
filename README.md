@@ -73,7 +73,7 @@ When you're ready to list a new event for your Study Group, follow these steps, 
 
     ---
     ```
-    Change all the fields to describe your event; make sure the `link` is the address of the issue you created above. When you're done, remember to click 'Commit Changes' at the bottom.
+    Change all the fields to describe your event; make sure the `link` is the address of the issue you created above. Make sure to include the `---` above and below the fields, too, and when you're done, click 'Commit Changes' at the bottom.
 
 That's it! Your event is now listed on your webpage, and there's a discussion thread where people can ask questions and discuss the details. Events will be automatically removed from the schedule on the webpage when they're more than a week in the past - but the issue you created will always be there as a record of what you've done.
 
