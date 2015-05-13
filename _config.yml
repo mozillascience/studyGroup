@@ -36,4 +36,3 @@ color:
 # Build settings
 markdown: kramdown
 permalink: pretty
-regeneration: true
