@@ -10,11 +10,11 @@ layout: default
     {% for post in site.posts %}
       <li>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: '.github.io/studyGroup/' | prepend: site.user | prepend: 'http://' }}">{{ post.title }}</a>
+        <a class="post-link" href="{{ post.url | prepend: '.github.io/studyGroup/' | prepend: site.user | prepend: 'https://' }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: '.github.io/studyGroup/' | prepend: site.user | prepend: 'http://' }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: '.github.io/studyGroup/' | prepend: site.user | prepend: 'https://' }}">via RSS</a></p>
 
 </div>
