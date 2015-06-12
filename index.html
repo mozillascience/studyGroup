@@ -10,11 +10,11 @@ layout: default
     {% for post in site.posts %}
       <li>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="https://{{ site.user }}.github.io/studyGroup/{{ post.url }}">{{ post.title }}</a>
+        <a class="post-link" href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="https://{{ site.user }}.github.io/studyGroup/feed.xml">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ site.github.url }}/feed.xml">via RSS</a></p>
 
 </div>
