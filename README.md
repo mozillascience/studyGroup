@@ -1,7 +1,7 @@
 Mozilla Study Groups
 ============
 
-Welcome to [Mozilla Science Lab](http://www.mozillascience.org/)'s Study Group project! From here, we'll set you up with everything you need to start your own study group.
+Welcome to [Mozilla Science Lab](https://www.mozillascience.org/)'s Study Group project! From here, we'll set you up with everything you need to start your own study group.
 
 ### Wait What's a 'Mozilla Study Group'?
 
@@ -13,7 +13,7 @@ Welcome to our Mozilla Study Group! A few things to do & know now that you're he
 
  - **Watch this repo:** up in the top right, there's a button that says 'Watch'; click it, and set yourself to 'Watching'. This will send you email notifications of new discussions; if you don't want email, but would like an alert just on GitHub, change the setting in Settings -> Notification Center (Settings is the little cog in the top right).
  - **Check out the issue tracker:** click on 'issues' in the sidebar on the right; this is where all the conversations this study groups is having live. Use this space to ask questions, request events, make suggestions, or just say hi.
- - **Read the code of conduct:** this Study Group is for everyone - we abide by a [set of rules](http://www.mozillascience.org/code-of-conduct/) that require everyone be treated with respect. Help us make a space where everyone feels welcome, and we'll all have a better time!
+ - **Read the code of conduct:** this Study Group is for everyone - we abide by a [set of rules](https://www.mozillascience.org/code-of-conduct/) that require everyone be treated with respect. Help us make a space where everyone feels welcome, and we'll all have a better time!
 
 ## For Organizers
 
@@ -23,7 +23,7 @@ If anything in these instructions doesn't work or doesn't make sense, open an is
 
 ### Check out the Handbook
 
-The instructions below will help you set up the online tools for your Mozilla Study Group - but if you're looking for organziation strategies, event plans and lesson ideas, check out the [Mozilla Study Group Handbook](http://mozillascience.github.io/studyGroupHandbook/)! 
+The instructions below will help you set up the online tools for your Mozilla Study Group - but if you're looking for organziation strategies, event plans and lesson ideas, check out the [Mozilla Study Group Handbook](https://mozillascience.github.io/studyGroupHandbook/)!
 
 ## How to Set Up Your Own Mozilla Study Group Website
 
@@ -41,7 +41,7 @@ Everything you need to set up your own Mozilla Study Group website for organizin
    - follow the instructions in the file on how to edit it; 
    - when you're done, press the green 'Commit Changes' button at the bottom of the page.
 
-That's it, you're done! You can see your new website at `http://yourUserName.github.io/studyGroup/`, where `yourUserName` is the user name you signed up for GitHub with. If this is your first time making a webpage on GitHub, it might take 30 minutes for things to percolate through their computers - don't worry, it's all good, check back later and your website should be up and running.
+That's it, you're done! You can see your new website at `https://yourUserName.github.io/studyGroup/`, where `yourUserName` is the user name you signed up for GitHub with. If this is your first time making a webpage on GitHub, it might take 30 minutes for things to percolate through their computers - don't worry, it's all good, check back later and your website should be up and running.
 
 ## How to Launch a New Event
 
@@ -90,4 +90,4 @@ Now that you're all set up, GitHub provides several ways to stay in touch with t
    - Make the room name `studyGroup`, and select the 'public' option.
  
   That's it! Share the URL with your participants and you can chat live with them as they join the room.
-  - **Use the Mozilla Science Forum** to chat with study groups worldwide. Find the [forum here](http://forum.mozillascience.org/category/events/study-groups); use this to share your stories, ask questions to the wider community, and find out who's out there.
+  - **Use the Mozilla Science Forum** to chat with study groups worldwide. Find the [forum here](https://forum.mozillascience.org/category/events/study-groups); use this to share your stories, ask questions to the wider community, and find out who's out there.
