@@ -3,8 +3,8 @@
   <channel>
     <title>{{ site.title | xml_escape }}</title>
     <description>{{ site.description | xml_escape }}</description>
-    <link>https://{{ site.user }}.github.io/studyGroup/</link>
-    <atom:link href="https://{{ site.user }}.github.io/studyGroup/feed.xml" rel="self" type="application/rss+xml" />
+    <link>{{ site.github.url | replace:'http:','https:' }}</link>
+    <atom:link href="{{ site.github.url | replace:'http:','https:' }}/feed.xml" rel="self" type="application/rss+xml" />
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
@@ -13,8 +13,8 @@
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.content | xml_escape }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>https://{{ site.user }}.github.io/studyGroup/{{ post.url }}</link>
-        <guid isPermaLink="true">https://{{ site.user }}.github.io/studyGroup/{{ post.url }}</guid>
+        <link>{{ site.github.url | replace:'http:','https:' }}/{{ post.url }}</link>
+        <guid isPermaLink="true">{{ site.github.url | replace:'http:','https:' }}/{{ post.url }}</guid>
         {% for tag in post.tags %}
         <category>{{ tag | xml_escape }}</category>
         {% endfor %}

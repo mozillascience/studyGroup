@@ -27,7 +27,7 @@ The instructions below will help you set up the online tools for your Mozilla St
 
 ## How to Set Up Your Own Mozilla Study Group Website
 
-Everything you need to set up your own Mozilla Study Group website for organizing events is right here - follow the following steps and you'll be up and running soon, or [watch this video](https://youtu.be/bUJTxWXc6XY) where we walk you through setup.
+Everything you need to set up your own Mozilla Study Group website for organizing events is right here - follow the following steps and you'll be up and running soon, and if you have trouble, [open an issue](https://github.com/mozillascience/studyGroup/issues) and we'll help you out!
 
  1. **Make yourself an account on GitHub.** The free one is just fine.
  2. **Fork this repository.** Up in the top right corner of this page, there's a button that says 'Fork'; press it! This makes your very own copy of all this stuff in your space on GitHub; when the copy is done, GitHub will automatically take you there.
@@ -73,9 +73,14 @@ When you're ready to list a new event for your Study Group, follow these steps, 
 
     ---
     ```
-    Change all the fields to describe your event; make sure the `link` is the address of the issue you created above. Make sure to include the `---` above and below the fields, too, and when you're done, click 'Commit Changes' at the bottom.
+    Change all the fields to describe your event; make sure the `link` is the address of the issue you created When you're done, click 'Commit Changes' at the bottom.
 
 That's it! Your event is now listed on your webpage, and there's a discussion thread where people can ask questions and discuss the details. Events will be automatically removed from the schedule on the webpage when they're more than a week in the past - but the issue you created will always be there as a record of what you've done.
+
+> **Event Listing Gotchas:** here are a few things to look out for when listing an event:
+>  - Did you remember to include the `---` above and below? The website builder needs those.
+>  - Can't find the issue tracker? Remember to turn it on under the 'Settings' menu on the right.
+>  - Did your text editor insert linebreaks in long lines that aren't supposed to be there? You can tell by looking at the line numbers of the file in your repo; the five fields need to be on exactly one line each.
 
 ## How to Stay in Touch With Your Members
 
