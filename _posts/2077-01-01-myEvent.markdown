@@ -1,9 +1,7 @@
 ---
 title: Make Your First Event
 text: In order to make your first event, follow the instructions here.
-location: Your, Location, Twee pop-up fanny pack single-origin coffee fixie. Dreamcatcher you probably haven't heard
-of them freegan four loko fixie, deep v Marfa fanny pack heirloom hoodie. Pork belly mustache cred, fashion axe 
-link: https://github.com/mozillascience/studyGroup#how-to-launch-a-new-event
+location: Your Location
 date: 2077-01-01
 
 ---
