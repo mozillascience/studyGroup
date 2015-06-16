@@ -27,7 +27,7 @@ The instructions below will help you set up the online tools for your Mozilla St
 
 ## How to Set Up Your Own Mozilla Study Group Website
 
-Everything you need to set up your own Mozilla Study Group website for organizing events is right here - follow the following steps and you'll be up and running soon, or [watch this video](https://youtu.be/bUJTxWXc6XY) where we walk you through setup.
+Everything you need to set up your own Mozilla Study Group website for organizing events is right here - follow the following steps and you'll be up and running soon, and if you have trouble, [open an issue](https://github.com/mozillascience/studyGroup/issues) and we'll help you out!
 
  1. **Make yourself an account on GitHub.** The free one is just fine.
  2. **Fork this repository.** Up in the top right corner of this page, there's a button that says 'Fork'; press it! This makes your very own copy of all this stuff in your space on GitHub; when the copy is done, GitHub will automatically take you there.
