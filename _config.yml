@@ -1,14 +1,11 @@
 #Setup ~~~
-#Follow these 3 steps to set up your site.
+#Follow these 2 steps to set up your site.
 
-#Step 1: change mozillascience to the user name you chose on GitHub:
-user: mozillascience
-
-#Step 2: give your study group a name and a short description:
+#Step 1: give your study group a name and a short description:
 title: Our Study Group
 description: "A study group."
 
-#Step 3: press the green 'Commit Changes' button at the bottom of this page.
+#Step 2: press the green 'Commit Changes' button at the bottom of this page.
 
 # That's it, your website is all set up!
 # You can see it at https://YourUserName.github.io/studyGroup/
