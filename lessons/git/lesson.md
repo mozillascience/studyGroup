@@ -39,7 +39,7 @@ together:
 Commands:
 
     cd ~/Desktop
-    git clone https://github.com/lwjohnst86/studyGroup.git
+    git clone https://github.com/your-accout-name/studyGroup.git
     cd studyGroup
     ls
     git log
