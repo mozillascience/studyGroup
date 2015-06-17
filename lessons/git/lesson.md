@@ -36,11 +36,11 @@ together:
 
 * http://codeasmanuscript.github.io/workshops/lessons/git/cheatsheet/
 
-Then, fork @mbonsma's repository into your own GitHub account. After
-wards do these commands:
+Then, fork @mbonsma's repository into your own GitHub
+account. Afterwards do these commands:
 
     cd ~/Desktop
-    git clone https://github.com/your-accout-name/studyGroup.git
+    git clone https://github.com/your-account-name/studyGroup.git
     cd studyGroup
     ls
     git log
