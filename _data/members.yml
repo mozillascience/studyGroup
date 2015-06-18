@@ -1,0 +1,49 @@
+- name: Madeleine Bonsma
+  degree: PhD, Physics
+  github: mbonsma
+
+- name: Deepak Chandan
+  degree: PhD, Physics
+  github: dchandan
+
+- name: Melanie Cooke
+  degree: PhD, Physics
+  github: melaniecooke
+
+- name: Luke W Johnston
+  degree: PhD, Nutritional Sciences
+  github: lwjohnst86
+  interests:
+    - R
+    - SAS
+
+- name: Aaron Liblong
+  github: aliblong
+
+- name: Junjiang Lin
+  github: junjianglin
+
+- name: Abigail Cabunoc Mayes
+  degree: Mozilla Science Lab
+  github: acabunoc
+
+- name: Elliott Sales de Andrade
+  degree: PhD, Physics
+  github: QuLogic
+  interests:
+    - Fortran
+    - Python
+    - Visualization
+
+- name: Matt Stata
+  github: MattStata
+
+- name: Alex Tavasoli
+  github: atavasoli
+
+- name: Eric Zhu
+  degree: MSc, Computer Science
+  github: ekzhu
+
+- name: Charles Zhu
+  github: cczhu
