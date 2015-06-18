@@ -16,7 +16,7 @@ workflow too!  Minus the Pull Requests, though.
 ## Checklist: ##
 
 * Config your git
-* Fork the Study Group (via @mbonsma)
+* Fork the sandbox (via @UofTCoders)
 * Clone your fork down into your computer
 * Check the log and status
 * Create a new file (your bio)
@@ -40,12 +40,12 @@ Then, fork @mbonsma's repository into your own GitHub
 account. Afterwards do these commands:
 
     cd ~/Desktop
-    git clone https://github.com/your-account-name/studyGroup.git
-    cd studyGroup
+    git clone https://github.com/your-account-name/sandbox.git
+    cd sandbox
     ls
     git log
     git status
-    cd lessons/git/bios
+    cd bios
     touch your-name-bio.txt
 
 Open the bio.txt file and add:
@@ -78,8 +78,8 @@ The Pull Request should already be updated after pushing.  I'll accept
 some of the Pull Requests, then you need to update your local and
 forked versions to match the master version:
 
-    git remote add upstream https://github.com/mbonsma/studyGroup.git
-    git pull upstream gh-pages
+    git remote add upstream https://github.com/UofTCoders/sandbox.git
+    git pull upstream master
     git push
 
 Now you know about a typical workflow!  There are **lots** of commands
