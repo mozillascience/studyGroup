@@ -3,31 +3,44 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Who We Are</h2>
+                    <h3 class="section-subheading text-muted">
+                        Lorem ipsum dolor sit amet consectetur.
+                    </h3>
                 </div>
             </div>
             <div class="row">
-                {% for member in site.people %}
-                <div class="col-sm-4">
+                {% for member in site.data.members %}
+                {% assign loopindex = forloop.index0 | modulo: 4 %}
+                {% if loopindex == 0 %}
+                {% if forloop.first == false %}
+            </div>
+                {% if forloop.last == false %}
+            <div class="row">
+                {% endif %}
+                {% endif %}
+                {% endif %}
+                <div class="col-sm-3">
                     <div class="team-member">
-                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                        {% if member.github %}
+                        <img src="https://avatars.githubusercontent.com/{{ member.github }}?s=96" class="img-responsive img-circle" alt="">
+                        <h4><a href="https://github.com/{{ member.github }}">{{ member.name }}</a></h4>
+                        {% else %}
+                        <i class="fa fa-user"></i>
                         <h4>{{ member.name }}</h4>
-                        <p class="text-muted">{{ member.position }}</p>
-                        <ul class="list-inline social-buttons">
-                            {% for network in member.social %}
-                            <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                        {% endif %}
+                        <p class="text-muted"><i>{{ member.degree }}</i></p>
+                        {% if member.interests %}
+                        Interests:
+                        <ul class="list-inline text-muted">
+                            {% for interest in member.interests %}
+                            <li class="fa fa-angle-right">&nbsp;{{ interest }}</li>
                             {% endfor %}
-
                         </ul>
+                        {% endif %}
                     </div>
                 </div>
                 {% endfor %}
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
             </div>
         </div>
     </section>
