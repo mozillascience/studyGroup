@@ -16,9 +16,10 @@ description: "An R user group for the University of Maryland community."
 # Optional Configuration
 # None of these things need to be changed - but feel free!
 
-titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
-headlineSmall: "Welcome To Our Study Group!"
-headlineMain: "Let's Work Together"
+# titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
+titleBackground: "https://upload.wikimedia.org/wikipedia/commons/f/f1/McKeldin_Library%2C_front_view%2C_mid-afternoon_light%2C_August_21%2C_2006.jpg"
+headlineSmall: "Welcome To The UMD R User Group!"
+headlineMain: "Let's Hack Together"
 
 
 #========================================
