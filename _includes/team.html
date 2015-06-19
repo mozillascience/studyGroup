@@ -11,6 +11,15 @@
             </div>
             <div class="row">
                 {% for member in site.data.members %}
+                {% assign loopindex = forloop.index0 | modulo: 4 %}
+                {% if loopindex == 0 %}
+                {% if forloop.first == false %}
+            </div>
+                {% if forloop.last == false %}
+            <div class="row">
+                {% endif %}
+                {% endif %}
+                {% endif %}
                 <div class="col-sm-3">
                     <div class="team-member">
                         {% if member.github %}
