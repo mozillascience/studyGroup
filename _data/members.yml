@@ -1,14 +1,41 @@
 - name: Madeleine Bonsma
-  degree: PhD, Physics
+  degree: MSc, Physics
   github: mbonsma
+  interests:
+    - Python
 
 - name: Deepak Chandan
   degree: PhD, Physics
   github: dchandan
 
-- name: Melanie Cooke
+- name: Melanie A Cooke
   degree: PhD, Physics
   github: melaniecooke
+  interests:
+    - Python
+
+- name: Andre R Erler
+  degree: PhD, Physics
+  github: aerler
+
+- name: Chris Granstrom
+  degree: PhD, Physics
+  github: cgranstrom
+  interests:
+    - C/C++
+    - Python
+
+- name: Ciaran J Hickey
+  github: hickeyc
+  interests:
+    - C++
+    - Fortran90
+
+- name: Lanna S Jin
+  degree: PhD, Ecology &amp; Evolutionary Biology
+  github: lannajin
+  interests:
+    - R
 
 - name: Luke W Johnston
   degree: PhD, Nutritional Sciences
@@ -19,6 +46,13 @@
 
 - name: Aaron Liblong
   github: aliblong
+
+- name: Chuangxin Lin
+  degree: PhD, Physics
+  github: Chancylin
+  interests:
+    - Fortran
+    - Python
 
 - name: Junjiang Lin
   github: junjianglin
@@ -38,6 +72,12 @@
 - name: Matt Stata
   github: MattStata
 
+- name: Stefanie D Sultmanis
+  github: stefsult
+  interests:
+    - Python
+    - R
+
 - name: Alex Tavasoli
   github: atavasoli
 
@@ -45,5 +85,7 @@
   degree: MSc, Computer Science
   github: ekzhu
 
-- name: Charles Zhu
+- name: Charles Chenchong Zhu
   github: cczhu
+  interests:
+    - Python
