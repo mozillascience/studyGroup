@@ -2,8 +2,8 @@
 #Follow these 2 steps to set up your site.
 
 #Step 1: give your study group a name and a short description:
-title: UMD R User Group
-description: "An R user group for the University of Maryland community."
+title: UMD R Users Group
+description: "An R user group for the University of Maryland, College Park, community."
 
 #Step 2: press the green 'Commit Changes' button at the bottom of this page.
 
@@ -18,7 +18,7 @@ description: "An R user group for the University of Maryland community."
 
 # titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
 titleBackground: "https://upload.wikimedia.org/wikipedia/commons/f/f1/McKeldin_Library%2C_front_view%2C_mid-afternoon_light%2C_August_21%2C_2006.jpg"
-headlineSmall: "Welcome To The UMD R User Group!"
+headlineSmall: "Welcome To The UMD R Users Group!"
 headlineMain: "Let's Hack Together"
 
 
