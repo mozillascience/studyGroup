@@ -1,0 +1,8 @@
+---
+title: Summer Hack & Help Session - June 26
+text: Join us on Friday afternoon
+location: Engineering & Physical Sciences Library - Multi-Purpose Room
+link: https://github.com/yourUserName/studyGroup/issues/1234
+date: 2015-06-26
+
+---
