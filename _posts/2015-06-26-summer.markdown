@@ -1,8 +1,8 @@
 ---
-title: Summer Hack & Help Session - June 26
-text: Join us on Friday afternoon
-location: Engineering & Physical Sciences Library - Multi-Purpose Room
-link: https://github.com/yourUserName/studyGroup/issues/1234
+title: Summer Hack & Help Session
+text: Join us on Friday afternoon 12-3pm
+location: Engineering & Physical Sciences Library
+link: https://github.com/UMD-R-users/studyGroup/issues/1
 date: 2015-06-26
 
 ---
