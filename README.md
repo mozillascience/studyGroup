@@ -11,7 +11,7 @@ Mozilla Study Groups are fun, informal meetups of your friends and colleagues fr
 
 Welcome to our Mozilla Study Group! A few things to do & know now that you're here:
 
- - **Watch this repo:** up in the top right, there's a button that says 'Watch'; click it, and set yourself to 'Watching'. This will send you email notifications of new discussions; if you don't want email, but would like an alert just on GitHub, change the setting in Settings -> Notification Center (Settings is the little cog in the top right).
+ - **Watch the [Events](https://github.com/UofTCoders/Events) repo and/or this repo:** up in the top right, there's a button that says 'Watch'; click it, and set yourself to 'Watching'. This will send you email notifications of new discussions. If you only want to be notified about events (and not any other discussion topics), watch just the [Events](https://github.com/UofTCoders/Events) repo. If you want to stay updated on all group doings, watch this repo AND the Events repo. If you don't want email, but would like an alert just on GitHub, change the setting in Settings -> Notification Center (Settings is the little cog in the top right).
  - **Check out the issue tracker:** click on 'issues' in the sidebar on the right; this is where all the conversations this study groups is having live. Use this space to ask questions, request events, make suggestions, or just say hi.
  - **Read the code of conduct:** this Study Group is for everyone - we abide by a [set of rules](https://www.mozillascience.org/code-of-conduct/) that require everyone be treated with respect. Help us make a space where everyone feels welcome, and we'll all have a better time!
 
