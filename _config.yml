@@ -2,7 +2,7 @@
 #Follow these 2 steps to set up your site.
 
 #Step 1: give your study group a name and a short description:
-title: Our Study Group
+title: Mozilla Science Study Group
 description: "A study group."
 
 #Step 2: press the green 'Commit Changes' button at the bottom of this page.
@@ -17,8 +17,8 @@ description: "A study group."
 # None of these things need to be changed - but feel free!
 
 titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
-headlineSmall: "Welcome To Our Study Group!"
-headlineMain: "Let's Work Together"
+headlineSmall: "Welcome To Mozilla Science Study Group!"
+headlineMain: "Let's Work Together, and Create Something Out of Nothing."
 
 
 #========================================
