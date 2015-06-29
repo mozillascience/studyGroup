@@ -80,7 +80,7 @@ That's it! Your event is now listed on your webpage, and there's a discussion th
 > **Event Listing Gotchas:** here are a few things to look out for when listing an event:
 >  - Did you remember to include the `---` above and below? The website builder needs those.
 >  - Can't find the issue tracker? Remember to turn it on under the 'Settings' menu on the right.
->  - Did your text editor insert linebreaks in long lines that aren't supposed to be there? You can tell by looking at the line numbers of the file in your repo; the five fields need to be on exactly one line each.
+>  - The five fields need to be on exactly one line each; some text editors will insert line breaks into lines that are too long; remove these if so.
 
 ## How to Stay in Touch With Your Members
 
