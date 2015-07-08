@@ -2,5 +2,5 @@
 #Comments are denoted by "#"
 
 #We're working within an interpreter (similar to Matlab),
-#so we can freely type anything
+#so we can freely type any
 print "Hello World"	#Python3: print("Hello World")
