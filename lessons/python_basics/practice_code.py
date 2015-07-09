@@ -18,8 +18,8 @@ print("Hello World")
 ########## DATA TYPES: NUMBERS & STRINGS ##########
 
 # Python has five standard data types: numbers, string, lists,
-# tuples, and dictionaries.  Let's deal with numbers and 
-# strings first.  Numbers can be ints (and longs in older 
+# tuples, and dictionaries.  Let's deal with numbers and
+# strings first.  Numbers can be ints (and longs in older
 # versions), floats or complex.
 
 # One advantage of the interpreter is we can solve math
@@ -27,7 +27,7 @@ print("Hello World")
 
 2 + 2
 12.*3				# The int gets typecast to float automatically
-(1.+1j)/2.**0.5	
+(1.+1j)/2.**0.5
 1/2					# Be warned - this returns zero in Python 2.x!
 
 # Note that running this .py as a script will not print those
@@ -50,7 +50,7 @@ help(type)
 
 # We can also use the magic function "type?" in IPython.
 
-# Print is intelligent, and we can pass it all sorts of weird 
+# Print is intelligent, and we can pass it all sorts of weird
 # things.
 
 x = 42
@@ -73,8 +73,8 @@ print(s*10)			# Or multiplied...
 
 print(s.replace('a test','the bestest')) # print a string with a replaced word
 
-# Above, replace is a method, a function that is a part of an 
-# object (in this case, s).  Tab-completion can be used to determine 
+# Above, replace is a method, a function that is a part of an
+# object (in this case, s).  Tab-completion can be used to determine
 # what methods exist for a given object.
 
 # Perform equality tests on strings; the output is a boolean.
@@ -86,7 +86,7 @@ print(s == 'This is a test string')
 
 ########## DATA TYPES: LISTS, TUPLES & DICTS ##########
 
-# Python has two array-like things.  The first is called a "list", 
+# Python has two array-like things.  The first is called a "list",
 # which can hold any data types:
 
 mylist = [1, "2", 3, 4.000, "five"]
@@ -95,13 +95,13 @@ print(mylist[2:])						# Indexing is the same as for strings
 print(mylist + mylist)					# Adding lists combines them
 print(mylist.index(4.))					# Return the index of a list element
 
-# The second is called a "tuple", which is an immutable list (nothing 
-# can be added or subtracted) whose elements also can't be reassigned.  
+# The second is called a "tuple", which is an immutable list (nothing
+# can be added or subtracted) whose elements also can't be reassigned.
 # They're easier on memory and processor than lists.
 
 mytuple = (1, "2", 3j, 4.000, "five")
 
-# Python also has dictionaries, which are unordered sets of values accessible 
+# Python also has dictionaries, which are unordered sets of values accessible
 # by hashable keys (generally strings and numbers, but more exotic things
 # are also possible).
 
@@ -110,7 +110,7 @@ mydict["dognames"] = ["spot", "rover", "agamemnon"]	# Can add dictionary entries
 print(mydict)										# Print is versatile, and will give you a summary of your dict
 del mydict["dogs"]									# Delete a key and its associated value
 
-# Note that passing an "immutable type" of object, like a float, tuple 
+# Note that passing an "immutable type" of object, like a float, tuple
 # or int, using "=" will make a copy of the value.
 
 x = 4
@@ -119,7 +119,7 @@ print(x, y)
 y = 7
 print(x, y)
 
-# Lists and dicts, however, are "mutable", and 
+# Lists and dicts, however, are "mutable", and
 
 x = ["alpha", "beta"]
 y = x
@@ -138,8 +138,8 @@ print(x, y)
 
 ########## IMPORTING LIBRARIES ##########
 
-# If you want Matlab-style arrays, you'll need to install the 
-# numpy library.  Here, "try/except/else" means try <try code>, and 
+# If you want Matlab-style arrays, you'll need to install the
+# numpy library.  Here, "try/except/else" means try <try code>, and
 # if Python throws up an exception, do <except code>. If not, do
 # <else code>.
 
@@ -155,10 +155,10 @@ else:
 
 ########## LOOPS & CONDITIONALS ##########
 
-# Like the try/except above, conditional statements and loops in 
+# Like the try/except above, conditional statements and loops in
 # Python are demarcated using indents.
 
-# For loop that cycles over range(starting number, end number, 
+# For loop that cycles over range(starting number, end number,
 # stepsize).
 
 for i in range(3,10,2):
@@ -197,15 +197,15 @@ def myf(x,y):
 
 myf(13,17)
 
-# Functions don't have to be declared in a header, and arguments 
+# Functions don't have to be declared in a header, and arguments
 # don't need to have a pre-declared data type.
 
 def printtype(x="dummy"):
-    """Functions don't have to be declared in a header, and arguments 
-    don't need to have a pre-declared data type.  
+    """Functions don't have to be declared in a header, and arguments
+    don't need to have a pre-declared data type.
 
-    Here I've also given argument "x" a default value; if x is not 
-    user-defined, its value is set to "dummy".  This function also returns 
+    Here I've also given argument "x" a default value; if x is not
+    user-defined, its value is set to "dummy".  This function also returns
     a value (to return multiple values, you can use lists).
     """
     print("You've entered a ", type(x), "whose value is", x)
@@ -221,7 +221,7 @@ print(rt)
 
 help(printtype)
 
-# Immutable types passed as an argument into a function can't be changed 
+# Immutable types passed as an argument into a function can't be changed
 # by the function:
 
 def trytochange(x):
@@ -247,7 +247,7 @@ print(changethis)
 
 # IPython has a set of "magic functions", including ? above.
 # Another is %paste, which pastes commands onto the command
-# line, properly interpreting indentations (just pasting 
+# line, properly interpreting indentations (just pasting
 # often doesn't).
 
 # Try to %paste this block of code into IPython.
@@ -287,7 +287,7 @@ badfunction(10)
 #   def __init__(self, name, dept):			# class constructor
 #       self.name = name						# store values
 #       self.dept = dept
-# 
+#
 #    def sayHello(self):						# class method
 #        print("Hello, my name is " + self.name + " from the " + self.dept)
 

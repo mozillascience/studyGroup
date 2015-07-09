@@ -1,4 +1,4 @@
-# (Very, Very Brief) Introduction to Python
+# Overview of Python
 
  - **Authors**: Charles Zhu
  - **Research field**: Astronomy & astrophysics
@@ -12,9 +12,9 @@ in particular the [Learn Python Tutorials](https://pythonspot.com/),
 [Crash into Python](http://stephensugden.com/crash_into_python/) and
 [Instant Python](http://hetland.org/writing/instant-python.html).
 
-Only the command line and a basic text editor are required, but quite 
-a few integrated development environments exist, however, including [IDLE](https://docs.python.org/2/library/idle.html) 
-and [PyCharm](https://www.jetbrains.com/pycharm/).  Madeleine recommends 
+Only the command line and a basic text editor are required, but quite
+a few integrated development environments exist, however, including [IDLE](https://docs.python.org/2/library/idle.html)
+and [PyCharm](https://www.jetbrains.com/pycharm/).  Madeleine recommends
 [WingIDE101](http://www.wingware.com/downloads/wingide-101/5.1.5-1).
 
 ## Lesson Overview: ##
