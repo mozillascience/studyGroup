@@ -40,8 +40,8 @@ To run scripts and programs within ipython, type within IPython
 
     run practice_code.py
 
-If you're using Python3.x rather than 2.7, use practice_code_py3.py
-instead.
+For those using Python 2.x, you'll want to remove the parentheses
+from the print commands.
 
 The lesson covers:
 
