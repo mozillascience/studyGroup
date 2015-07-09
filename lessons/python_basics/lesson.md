@@ -40,9 +40,6 @@ To run scripts and programs within ipython, type within IPython
 
     run practice_code.py
 
-For those using Python 2.x, you'll want to remove the parentheses
-from the print commands.
-
 The lesson covers:
 
 * Hello World and print statements

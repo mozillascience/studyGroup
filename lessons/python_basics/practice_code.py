@@ -1,5 +1,7 @@
 # Comments are denoted by "#"
 
+from __future__ import print_function   #Python 2.x compatibility for print function
+
 
 ########## HELLO WORLD ##########
 
@@ -9,7 +11,8 @@
 print("Hello World")
 
 # In Python 2.x, "print" is a statement and the parentheses
-# should be REMOVED.
+# should be removed.  Alternatively, you can use Python 3.x
+# syntax after importing the __future__ module, as above.
 
 
 ########## DATA TYPES: NUMBERS & STRINGS ##########
@@ -43,7 +46,7 @@ print(type(x))
 
 # As an aside, to get documentation on most things within Python:
 
-# help(type)
+help(type)
 
 # We can also use the magic function "type?" in IPython.
 
@@ -254,7 +257,7 @@ def badfunction(x):
     z = thisdoesntexist
     return y*z
 
-# badfunction(10)
+badfunction(10)
 
 # It should throw up an error message.  Now type in %debug,
 # which takes you into the interactive debugger.
