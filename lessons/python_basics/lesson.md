@@ -2,7 +2,7 @@
 
  - **Authors**: Charles Zhu
  - **Research field**: Astronomy & astrophysics
- - **Lesson Topic**: Introduction to Python functionality and syntax
+ - **Lesson Topic**: Introduction to Python syntax and functionality
 
 ## Preface: ##
 
@@ -12,22 +12,21 @@ in particular the [Learn Python Tutorials](https://pythonspot.com/),
 [Crash into Python](http://stephensugden.com/crash_into_python/) and
 [Instant Python](http://hetland.org/writing/instant-python.html).
 
-
-I tend to use only the command line and a basic text editor to do my
-programming.  Quite a few integrated development environments exist,
-however, including [IDLE](https://docs.python.org/2/library/idle.html) and [PyCharm](https://www.jetbrains.com/pycharm/).
-Madeleine recommends [WingIDE101](http://www.wingware.com/downloads/wingide-101/5.1.5-1).
+Only the command line and a basic text editor are required, but quite 
+a few integrated development environments exist, however, including [IDLE](https://docs.python.org/2/library/idle.html) 
+and [PyCharm](https://www.jetbrains.com/pycharm/).  Madeleine recommends 
+[WingIDE101](http://www.wingware.com/downloads/wingide-101/5.1.5-1).
 
 ## Lesson Overview: ##
 
-Python implementations are generally interpreted (though compilers
-also exist).  The interpreter that comes with python should be
-accessible just by typing
+Python implementations generally interpret code (though compilers
+also exist).  The interpreter that comes with python is accessible
+by typing
 
     python
 
-into the command line.  To run scripts and programs, we can instead
-type
+into the command line (or clicking the executable on your GUI).
+To run scripts and programs, we can instead type
 
     python practice_code.py
 
@@ -47,7 +46,11 @@ instead.
 The lesson covers:
 
 * Hello World and print statements
-* Update your cloned and forked repo from the upstream (original)
+* Number and string manipulation
+* Lists, tuples and dicts
+* Importing libraries
+* Function declaration
+* IPython debugging
 
 The [official Python documentation site](https://docs.python.org) goes into much more detail
 regarding all topics covered in this code-along.  Python is supported
