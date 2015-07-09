@@ -6,7 +6,7 @@
 #We're working within an interpreter (similar to Matlab),
 #so we type code directly into the interpreter
 
-print "Hello World"
+print("Hello World")
 
 
 ########## DATA TYPES: NUMBERS & STRINGS ##########
@@ -31,9 +31,9 @@ print "Hello World"
 #To figure out the data type of a variable, we can use:
 
 x = 47
-print type(x)
+print(type(x))
 x = "spam"
-print type(x)
+print(type(x))
 
 #Variables don't have pre-declared types in Python, so you can
 #assign any data type to any variable.
@@ -48,21 +48,21 @@ help(type)
 #things.
 
 x = 42
-print "This is a string, and these are numbers: ", x, 324.13, ", and another string."
+print("This is a string, and these are numbers: ", x, 324.13, ", and another string.")
 
 #String are character arrays, and their operations are an art form.
 #Here is a smattering of commands.
 
 s = "This is a test string"
-print s
-print s[0]			#Array syntax in python - to access element i of an array, we do array[i]
-print s[-3]			#Negative indicies access elements backwards from the end of the list
-print s[2:4]		#Accesses elements 2 - 3
-print s[6:]			#Accesses elements 6 and above
-print s + ' ' + s	#Strings can be concatenated
-print s*10			#Or multiplied...
+print(s)
+print(s[0])			#Array syntax in python - to access element i of an array, we do array[i]
+print(s[-3])		#Negative indicies access elements backwards from the end of the list
+print(s[2:4])		#Accesses elements 2 - 3
+print(s[6:])		#Accesses elements 6 and above
+print(s + ' ' + s)	#Strings can be concatenated
+print(s*10)			#Or multiplied...
 
-print s.replace('a test','the bestest') # print a string with a replaced word
+print(s.replace('a test','the bestest')) # print a string with a replaced word
 
 #Above, replace is a method, a function that is a part of an 
 #object (in this case, s).  Tab-completion can be used to determine 
@@ -71,7 +71,7 @@ print s.replace('a test','the bestest') # print a string with a replaced word
 #Perform equality tests on strings; the output is a boolean.
 #(Python doesn't care about using ' or " for strings.)
 
-print s == 'This is a test string'
+print(s == 'This is a test string')
 
 
 
@@ -81,10 +81,10 @@ print s == 'This is a test string'
 #which can hold any data types:
 
 mylist = [1, "2", 3, 4.000, "five"]
-print len(mylist)						#Prints number of elements in list
-print mylist[2:]						#Indexing is the same as for strings
-print mylist + mylist					#Adding lists combines them
-print mylist.index(4.)					#Return the index of a list element
+print(len(mylist))						#Prints number of elements in list
+print(mylist[2:])						#Indexing is the same as for strings
+print(mylist + mylist)					#Adding lists combines them
+print(mylist.index(4.))					#Return the index of a list element
 
 #The second is called a "tuple", which is an immutable list (nothing 
 #can be added or subtracted) whose elements also can't be reassigned.  
@@ -97,7 +97,7 @@ mytuple = (1, "2", 3j, 4.000, "five")
 
 mydict = {"dogs": "DOGS!", "dognumber": 47}			#Can also just write {} for a blank dictionary
 mydict["dognames"] = ["spot", "rover", "agamemnon"]	#Can add dictionary entries after initialization
-print mydict										#Print is versatile, and will give you a summary of your dict
+print(mydict)										#Print is versatile, and will give you a summary of your dict
 del mydict["dogs"]									#Delete a key and its associated value
 
 #Note that passing an "immutable type" of object, like a float, tuple 
@@ -105,23 +105,23 @@ del mydict["dogs"]									#Delete a key and its associated value
 
 x = 4
 y = x
-print x, y
+print(x, y)
 y = 7
-print x, y
+print(x, y)
 
 #Lists and dicts, however, are "mutable", and 
 
 x = ["alpha", "beta"]
 y = x
-print x, y
+print(x, y)
 y[1] = "gamma"
-print x, y
+print(x, y)
 
 #To make a copy of a list, do:
 
 y = list(x)		#x[:] also works
 y[1] = "delta"
-print x, y
+print(x, y)
 
 #See https://en.wikibooks.org/wiki/Python_Programming/Data_Types#Mutable_vs_Immutable_Objects
 
@@ -135,10 +135,10 @@ print x, y
 try:
     import numpy as np						#Imports numpy library
     myarray = np.array([1,43,32.1,17,216])	#Create numpy array
-    print myarray
-    print myarray*myarray/3.				#Multiplication is element by element; "3." is typecast to an array of length myarray
+    print(myarray)
+    print(myarray*myarray/3.)				#Multiplication is element by element; "3." is typecast to an array of length myarray
 except:
-    print "You don't have numpy installed!  This section of code won't run."
+    print("You don't have numpy installed!  This section of code won't run.")
 
 
 
@@ -151,21 +151,21 @@ except:
 #stepsize).
 
 for i in range(3,10,2):
-    print i
+    print(i)
 
 #For loop; cycles over all elements in mylist from previous section.
 
 for item in mylist:
-    print item
+    print(item)
 
 #For loop that searches mylist for "five".
 
 for item in mylist:
     if item == "five":
-        print "'five' found!"
+        print("'five' found!")
         break					#Exits loop
     else:
-        print "Not yet..."
+        print("Not yet...")
 
 #The standard way of indenting in Python is four spaces.  
 #Tabs also work (I use them).
@@ -173,7 +173,7 @@ for item in mylist:
 i = 0
 while i < 10:					#While loop
     if i > 5 and not i > 8:
-        print i*i
+        print(i*i)
     i += 1
 
 
@@ -182,8 +182,8 @@ while i < 10:					#While loop
 #Here's a simple function.  (str() typecasts to string.)
 
 def myf(x,y):
-    print 'You called myf(x,y) with the value x = ' + str(x) + ' and y = ' + str(y)
-    print 'x * y = ' + str(x*y)
+    print('You called myf(x,y) with the value x = ' + str(x) + ' and y = ' + str(y))
+    print('x * y = ' + str(x*y))
 
 myf(13,17)
 
@@ -191,13 +191,13 @@ myf(13,17)
 #don't need to have a pre-declared data type.
 
 def printtype(x="dummy"):
-    print "You've entered a ", type(x), "whose value is", x
+    print("You've entered a ", type(x), "whose value is", x)
     return type(x)
 
 rt = printtype(4)
 rt = printtype("eight")
 rt = printtype()
-print rt
+print(rt)
 
 #Here I've also given argument "x" a default value; if x is 
 #not user-defined, its value is set to "dummy".  This function 
@@ -210,9 +210,9 @@ def trytochange(x):
     x = 10
 
 x = 2
-print x
+print(x)
 trytochange(x)
-print x
+print(x)
 
 #Immutable types can.
 
@@ -220,9 +220,9 @@ def trytochangelist(x):
     x[1] = "CHANGED!"
 
 changethis = ["first", "second", "third"]
-print changethis
+print(changethis)
 trytochangelist(changethis)
-print changethis
+print(changethis)
 
 
 ########## IPYTHON MAGIC FUNCTIONS ##########
@@ -257,7 +257,7 @@ badfunction(10)
 #    return pwrlaw
 
 #mypowerlaw = makepwrlaw(0.5,2)
-#print mypowerlaw(2)
+#print(mypowerlaw(2))
 
 
 ########## CLASS DECLARATIONS ##########
@@ -271,7 +271,7 @@ badfunction(10)
 #		self.dept = dept
 # 
 #    def sayHello(self):						#class method
-#        print "Hello, my name is " + self.name + " from the " + self.dept
+#        print("Hello, my name is " + self.name + " from the " + self.dept)
 
 #jane = User("Jane Doe", "CompSci")
 #jane.sayHello()
