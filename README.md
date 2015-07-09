@@ -80,7 +80,7 @@ That's it! Your event is now listed on your webpage, and there's a discussion th
 > **Event Listing Gotchas:** here are a few things to look out for when listing an event:
 >  - Did you remember to include the `---` above and below? The website builder needs those.
 >  - Can't find the issue tracker? Remember to turn it on under the 'Settings' menu on the right.
->  - Did your text editor insert linebreaks in long lines that aren't supposed to be there? You can tell by looking at the line numbers of the file in your repo; the five fields need to be on exactly one line each.
+>  - The five fields need to be on exactly one line each; some text editors will insert line breaks into lines that are too long; remove these if so.
 
 ## How to Stay in Touch With Your Members
 
@@ -91,8 +91,8 @@ Now that you're all set up, GitHub provides several ways to stay in touch with t
   - **Gitter** is a free chat room you can set up and share with your community to go with your website. To set it up, try the following:
    - Visit [their web site](https://gitter.im). You may have to sign in with your GitHub credentials.
    - Click 'create a room' in the bottom left;
-   - Choose 'Channel' from the options presented;
-   - Make the room name `studyGroup`, and select the 'public' option.
+   - Choose 'Repository' from the options presented;
+   - Choose your study group repo, `yourName/studyGroup` from the list presented.
  
   That's it! Share the URL with your participants and you can chat live with them as they join the room.
   - **Use the Mozilla Science Forum** to chat with study groups worldwide. Find the [forum here](https://forum.mozillascience.org/category/events/study-groups); use this to share your stories, ask questions to the wider community, and find out who's out there.
