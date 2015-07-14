@@ -4,13 +4,13 @@ To make clear what is expected, everyone taking part in Study Group events and d
 
 ## Code of Conduct
 
-We are dedicated to providing a harassment-free learning experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of text editor. We do not tolerate harassment of participants in any form. 
+We are dedicated to providing a harassment-free learning experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of text editor. We do not tolerate harassment of participants in any form.
 
 Harassment includes offensive verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.
-Participants asked to stop any harassing behavior are expected to comply immediately.
+Participants asked to stop any harassing behaviour are expected to comply immediately.
 
 Be kind to others. Be aware of your words, and use language that is positive and community-building. All communication should be appropriate for a professional audience including people of many different backgrounds. Remember that sexist, racist, and other exclusionary jokes can be offensive to those around you.
 
-If a participant engages in behavior that violates this code of conduct, the organizers may take any action they deem appropriate, including warning the offender or expulsion from the event.
+If a participant engages in behaviour that violates this code of conduct, the organizers may take any action they deem appropriate, including warning the offender or expulsion from the event.
 
 Thank you for helping make this a welcoming, friendly event for all.
