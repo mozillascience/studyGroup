@@ -90,3 +90,16 @@ Now that you're all set up, GitHub provides several ways to stay in touch with t
   - **Ask users to Watch your repo.** Make sure all your users click 'Watch' at the top of your repository. This way, they'll be automatically notified of all the events you post in your issue tracker. 
   - **Use the Issue Tracker.** The Issue Tracker is your public message board to make announcements, ask questions and start conversations with your members. You can find yours at `https://github.com/yourUserName/studyGroup/issues`.
   - **Use the Mozilla Science Forum** to chat with study groups worldwide. Find the [forum here](https://forum.mozillascience.org/category/events/study-groups); use this to share your stories, ask questions to the wider community, and find out who's out there.
+
+## Feature Your Community in the 'Who We Are' Section
+
+Your website includes a gallery of participants in your Study Group; adding people here is a great way to show off your community and highlight your new friends and colleagues. To add someone to the list, edit the `_data/members.yml` file by adding the following section for them:
+
+```
+- name: their human name
+  affiliation: school, lab, department, business....
+  github: their GitHub handle
+  interests:
+    - list one to three
+    - different interests
+```
