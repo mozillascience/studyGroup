@@ -97,7 +97,9 @@ tutorial on the syntax.
 You'll need to import your data into R to analyze it.  I'm assuming
 the data is already cleaned and ready for analysis.  If at any time
 you need help with a command, use the `?` command, appended with the
-command of interest (eg. `?write.csv`).
+command of interest (eg. `?write.csv`).  R comes with many internal
+datasets that you can practice on.  The one I'm going to use is the
+`swiss` dataset.
 
 
 ```r
