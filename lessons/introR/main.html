@@ -90,24 +90,24 @@ img {
 </div>
 
 <p>This is a brief introduction to R, focussing on data wrangling using <code>dplyr</code> and <code>tidyr</code> packages and generating reproducible documents using <code>knitr</code> and <code>rmarkdown</code> packages.</p>
-<p>You also <strong>don’t need to read all of this</strong> for the session. It’s more of a <strong>resource/reference</strong>.</p>
+<p>You <strong>don’t need to read all of this</strong> for the session. It’s more of a <strong>resource and reference</strong>.</p>
 <p>R is a statistical computing environment to analyze data and write programs. The strength of R comes from:</p>
 <ul>
-<li>It being developed by statisticians to do statistical analysis, which is the primary reason to use R.</li>
-<li>It’s graphic capacities are top-quality</li>
+<li>It being developed by statisticians to do statistical analysis</li>
+<li>Its graphic capacities are top-quality</li>
 <li>It has excellent resources for creating reproducible documents.</li>
-<li>It’s extensive and active community of users for doing statistical work:
+<li>Its extensive and active community of users for doing statistical work:
 <ul>
 <li>R is the top tag in the <a href="stats.stackexchange.com/tags">StackExchange CrossValidated site</a> for statistical questions</li>
-<li>Has more than 6000 packages on <a href="https://cran.r-project.org/web/packages/">CRAN</a> that stores all R packages (and installing these packages is straight-forward), from the obscure and cutting-edge statistical techniques to plotting to data wrangling.</li>
+<li>There are more than 6000 packages on <a href="https://cran.r-project.org/web/packages/">CRAN</a> that stores all R packages (and installing these packages is straight-forward), from the obscure and cutting-edge statistical techniques to plotting to data wrangling.</li>
 </ul></li>
 </ul>
-<p>I should mention a quick caveat. R is a programming language… however it works very differently from other general-purpose programming languages ie. Python (it was developed by statisticians after all!). As such, programming in R can be not as intuitive, powerful, or easy as it may be in Python (though it can be done). If your work involves a lot of programming, I would recommend Python as your main tool. <em>However</em>, it never hurts to learn more than one language, especially as R is great for the data analysis and plotting.</p>
-<p>Ok, firstly, I’ve made this session with some assumptions (see the <a href="./slides.html">slides.html</a>) file. Briefly I’m assuming you want to use R for statistical analysis, plotting, and/or writing up reports. I’m using R Markdown to show how to write up documents and since getting the data into an analyzable form is the hardest part of an analysis, I’m using packages specific to that task.</p>
+<p>I should mention a quick caveat. While R is a general-purpose programming language, it works a bit differently from other languages such as Python (it was developed by statisticians after all!). As such, programming in R may not be as intuitive, powerful, or easy as it may be in Python (though it can be done), especially if you come from a computer science background. If your work involves a lot of programming, I would recommend Python as your main tool. <em>However</em>, it never hurts to learn more than one language, especially as R is great for data analysis and plotting.</p>
+<p>Ok, firstly, I’ve made this session with some assumptions (see the <a href="./slides.html">slides.html</a>) file. Briefly I’m assuming you want to use R for statistical analysis, plotting, and/or writing up reports. I’m using R Markdown to show how to write up documents with R code and since getting the data into an analyzable form is the hardest part of an analysis, I’m using packages specific to that task.</p>
 <p>While you can create functions in R, I won’t be going over them. A great resource for R functions is <a href="http://adv-r.had.co.nz/Functions.html">this page from Hadley Wickham’s ‘Advanced R’ book</a></p>
 <div id="r-markdown" class="section level1">
 <h1><span class="header-section-number">1</span> R Markdown</h1>
-<p>An <code>.Rmd</code> or <a href="http://rmarkdown.rstudio.com/">R Markdown</a> file is a <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a> file that contains R code chunks that can be processed to output the results of the R code into a generated <code>.md</code> file. This is a incredible (recent) strength of using R, as this then allows you to create html, pdf, or Word doc files from the <code>.md</code> file using the <code>rmarkdown</code> package (which relies on <a href="pandoc.org">pandoc</a>).</p>
+<p>An <code>.Rmd</code> or <a href="http://rmarkdown.rstudio.com/">R Markdown</a> file is a <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a> file that contains R code chunks that can be processed to output the results of the R code into a generated <code>.md</code> file. This is an incredible (and recent) strength of using R, as this then allows you to create html, pdf, or Word doc files from the <code>.md</code> file using the <code>rmarkdown</code> package (which relies on <a href="pandoc.org">pandoc</a>).</p>
 <p>On the top of each <code>.Rmd</code> file is the <a href="https://en.wikipedia.org/wiki/YAML">YAML</a> front matter, which looks like:</p>
 <pre><code>---
 title: &quot;Introduction to R&quot;
@@ -126,13 +126,13 @@ output:
 </div>
 <div id="importexport-your-data" class="section level1">
 <h1><span class="header-section-number">2</span> Import/export your data</h1>
-<p>You’ll need to import your data into R to be used. I’m assuming the data is already cleaned and ready for analysis. If at any time you need help with a command, use the <code>?</code> command, appended with the command of interest (eg. <code>?names</code> or <code>?write.csv</code>).</p>
+<p>You’ll need to import your data into R to analyze it. I’m assuming the data is already cleaned and ready for analysis. If at any time you need help with a command, use the <code>?</code> command, appended with the command of interest (eg. <code>?write.csv</code>).</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write.csv</span>(swiss, <span class="dt">file =</span> <span class="st">'swiss.csv'</span>) <span class="co"># Export</span>
 ds &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">'swiss.csv'</span>) <span class="co"># Import</span></code></pre>
 </div>
 <div id="viewing-your-data" class="section level1">
 <h1><span class="header-section-number">3</span> Viewing your data</h1>
-<p>R has several very useful and easy tools for quickly viewing your data. <code>head()</code> shows the first few rows of a data.frame (a structure for storing data that can include numbers, integers, factors, strings, etc). <code>names()</code> shows the column names. <code>str()</code> shows the structure, such as what the object is, and its contents. <code>summary()</code> shows a quick description of the summary statistics (means, median, frequency) of each of your columns. <code>class()</code> is like <code>str()</code> but only shows the top level name of the object, so eg. while a data.frame contains multiple columns that <code>str()</code> would show, <code>class()</code> would only show that the object is a <code>data.frame</code>.</p>
+<p>R has several very useful and easy tools for quickly viewing your data. <code>head()</code> shows the first few rows of a data.frame (a structure for storing data that can include numbers, integers, factors, strings, etc). <code>names()</code> shows the column names. <code>str()</code> shows the structure, such as what the object is, and its contents. <code>summary()</code> shows a quick description of the summary statistics (means, median, frequency) for each of your columns. <code>class()</code> is like <code>str()</code> but only shows the top level name of the object, so eg. while a data.frame contains multiple columns that <code>str()</code> would show, <code>class()</code> would only show that the object is a “data.frame”.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(ds)</code></pre>
 <pre><code>##              X Fertility Agriculture Examination Education Catholic
 ## 1   Courtelary      80.2        17.0          15        12     9.96
@@ -183,9 +183,20 @@ ds &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="s
 </div>
 <div id="wrangling-your-data" class="section level1">
 <h1><span class="header-section-number">4</span> Wrangling your data</h1>
-<p>Data wrangling is a bit tedious in base R. So I’m showing two packages designed to be this easier. Load packages by using the <code>library()</code> function. <code>dplyr</code> comes via the <code>magrittr</code> package with a <code>%&gt;%</code> pipe function, which works similar to how the Bash shell <code>|</code> pipe works. It end of each pipe takes the output from the right hand side of the pipe, just like how a plumbing pipe works for water. The four lines of code below using <code>tbl_df</code> are all the same. The <code>.</code> object represents the output from the pipe. <code>tbl_df</code> makes the object into a <code>tbl</code> class, making printing of the output nicer.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(dplyr)
-<span class="kw">tbl_df</span>(ds)</code></pre>
+<p>Data wrangling is a bit tedious in base R. So I’m using two packages designed to make this easier. Load packages by using the <code>library()</code> function. <code>dplyr</code> comes with a <code>%&gt;%</code> pipe function (via the <code>magrittr</code> package), which works similar to how the Bash shell <code>|</code> pipe works. The command on the right-hand side takes the output from the command on the left-hand side, just like how a plumbing pipe works for water.</p>
+<p>The four lines of code below using <code>tbl_df</code> are all the same. The <code>.</code> object represents the output from the pipe, but it doesn’t have to be used as using <code>%&gt;%</code> implies also using <code>.</code>. <code>tbl_df</code> makes the object into a <code>tbl</code> class, making printing of the output nicer.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(dplyr)</code></pre>
+<pre><code>## 
+## Attaching package: 'dplyr'
+## 
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+## 
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tbl_df</span>(ds)</code></pre>
 <pre><code>## Source: local data frame [47 x 7]
 ## 
 ##               X Fertility Agriculture Examination Education Catholic
@@ -251,7 +262,7 @@ ds &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="s
 ## Variables not shown: Infant.Mortality (dbl)</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r">## Let's put it into a new object
 ds2 &lt;-<span class="st"> </span><span class="kw">tbl_df</span>(ds)</code></pre>
-<p>Again, these next lines are the same. <code>select</code> does as it says it does: select the column from the dataset.</p>
+<p>Again, these next lines are the same. <code>select</code> does as it says: select the column from the dataset.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">select</span>(ds2, Education, Catholic, Fertility)</code></pre>
 <pre><code>## Source: local data frame [47 x 3]
 ## 
@@ -329,7 +340,7 @@ ds2 &lt;-<span class="st"> </span><span class="kw">tbl_df</span>(ds)</code></pre
 ## 9       Gruyere
 ## 10       Sarine
 ## ..          ...</code></pre>
-<p>You can subset the dataset using <code>filter</code>. Note the double equal sign <code>==</code> for testing if ‘Examination’ is equal to 15. A single <code>=</code> is used for something else.</p>
+<p>You can subset the dataset using <code>filter</code>. Note the double equal sign <code>==</code> for testing if ‘Examination’ is equal to 15. A single <code>=</code> is used for something else (assigning things to objects).</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">filter</span>(ds2, Catholic &lt;<span class="st"> </span><span class="dv">20</span>, Examination ==<span class="st"> </span><span class="dv">15</span>)</code></pre>
 <pre><code>## Source: local data frame [3 x 7]
 ## 
@@ -361,7 +372,7 @@ ds2 %&gt;%<span class="st"> </span><span class="kw">filter</span>(X ==<span clas
 ##       X Fertility Agriculture Examination Education Catholic
 ## 1 Aigle      64.1          62          21        12     8.52
 ## Variables not shown: Infant.Mortality (dbl)</code></pre>
-<p>We can start chaining these commands together using the <code>%&gt;%</code> command. There is no end to how long a chain can be. <code>arrange</code> below arranges (sorts, orders, rearranges, etc) the column Education in ascending order. <code>mutate</code> creates a new column.</p>
+<p>We can start chaining these commands together using the <code>%&gt;%</code> command. There is no limit to how long a chain can be. <code>arrange</code> sorts/orders/re-arranges the column Education in ascending order. <code>mutate</code> creates a new column.</p>
 <pre class="sourceCode r"><code class="sourceCode r">ds2 %&gt;%
 <span class="st">  </span><span class="kw">filter</span>(Catholic &gt;<span class="st"> </span><span class="dv">20</span>) %&gt;%
 <span class="st">  </span><span class="kw">select</span>(Education, Fertility) </code></pre>
@@ -384,7 +395,8 @@ ds2 %&gt;%<span class="st"> </span><span class="kw">filter</span>(X ==<span clas
 <span class="st">  </span><span class="kw">select</span>(<span class="dt">County =</span> X, Education, Fertility, Agriculture) %&gt;%
 <span class="st">  </span><span class="kw">arrange</span>(Education) %&gt;%
 <span class="st">  </span><span class="kw">mutate</span>(<span class="dt">infertile =</span> <span class="kw">ifelse</span>(Fertility &lt;<span class="st"> </span><span class="dv">50</span>, <span class="st">'yes'</span>, <span class="st">'no'</span>),
-         <span class="dt">testing =</span> <span class="st">'Yes'</span>)</code></pre>
+         <span class="dt">testing =</span> <span class="st">'Yes'</span> ## Create a testing column to show how mutate works.
+         )</code></pre>
 <pre><code>## Source: local data frame [21 x 6]
 ## 
 ##          County Education Fertility Agriculture infertile testing
@@ -399,7 +411,7 @@ ds2 %&gt;%<span class="st"> </span><span class="kw">filter</span>(X ==<span clas
 ## 9      Martigwy         6      70.5        78.2        no     Yes
 ## 10      Moutier         7      85.8        36.5        no     Yes
 ## ..          ...       ...       ...         ...       ...     ...</code></pre>
-<p>To get the data into a nicer/more analyable format, you can use the <code>tidyr</code> package. See what <code>gather</code> does. Then see what <code>spread</code> does. Note that you can remove a column by having a minus <code>-</code> sign infront of a variable when you use <code>select</code>.</p>
+<p>To get the data into a nicer and more analyable format, you can use the <code>tidyr</code> package. See what <code>gather</code> does in the code below. Then see what <code>spread</code> does. Note that you can remove a column by having a minus <code>-</code> sign in front of a variable when you use <code>select</code>.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyr)
 ## Compare this:
 ds2 %&gt;%
@@ -458,7 +470,7 @@ ds2 %&gt;%
 ## 9    Delemont      83.1        45.1           6         9    84.84
 ## 10  Echallens      68.3        72.6          18         2    24.20
 ## ..        ...       ...         ...         ...       ...      ...</code></pre>
-<p>Combined with <code>dplyr</code>’s <code>group_by</code> and <code>summarise</code> you can quickly summarise data or do further more complicated analyses. <code>group_by</code> makes it so futher analyses or operations work on the groups. <code>summarise</code> transforms the data to only contain the new variable(s) created, in this case the mean.</p>
+<p>Combined with <code>dplyr</code>’s <code>group_by</code> and <code>summarise</code> you can quickly summarise data or do further, more complicated analyses. <code>group_by</code> makes it so further analyses or operations work on the groups. <code>summarise</code> transforms the data to only contain the new variable(s) created, in this case the mean.</p>
 <pre class="sourceCode r"><code class="sourceCode r">ds2 %&gt;%
 <span class="st">  </span><span class="kw">select</span>(-X) %&gt;%
 <span class="st">  </span><span class="kw">gather</span>(Measure, Value) %&gt;%
@@ -518,7 +530,7 @@ ds2 %&gt;%
 </div>
 <div id="generate-this-document" class="section level1">
 <h1><span class="header-section-number">5</span> Generate this document</h1>
-<p>Check out the documentation on <a href="http://yihui.name/knitr/options/"><code>knitr</code></a> or <a href="http://rmarkdown.rstudio.com/authoring_rcodechunks.html">R Markdown</a> for R code chunk options. If you look at the raw <code>.Rmd</code> file for this <a href="./main.Rmd">document</a>, you can see that the below code chunk uses <code>eval = FALSE</code>, which means don’t run this code chunk.</p>
+<p>Check out the documentation on <a href="http://yihui.name/knitr/options/"><code>knitr</code></a> or <a href="http://rmarkdown.rstudio.com/authoring_rcodechunks.html">R Markdown</a> for R code chunk options. If you look at the raw <code>.Rmd</code> file for this <a href="./main.Rmd">document</a>, you can see that the below code chunk uses <code>eval = FALSE</code>, which tells knitr to not run this code chunk.</p>
 <p>These two commands generate either a html or a md file.</p>
 <pre class="sourceCode r"><code class="sourceCode r">## into html
 <span class="kw">library</span>(rmarkdown)

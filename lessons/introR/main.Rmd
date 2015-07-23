@@ -15,43 +15,42 @@ This is a brief introduction to R, focussing on data wrangling using
 `dplyr` and `tidyr` packages and generating reproducible documents
 using `knitr` and `rmarkdown` packages.
 
-You also **don't need to read all of this** for the session.  It's
-more of a **resource/reference**.
+You **don't need to read all of this** for the session.  It's more of
+a **resource and reference**.
 
 R is a statistical computing environment to analyze data and write
 programs.  The strength of R comes from:
 
-* It being developed by statisticians to do statistical analysis,
-  which is the primary reason to use R.
-* It's graphic capacities are top-quality
+* It being developed by statisticians to do statistical analysis
+* Its graphic capacities are top-quality
 * It has excellent resources for creating reproducible documents.
-* It's extensive and active community of users for doing statistical
+* Its extensive and active community of users for doing statistical
   work:
     - R is the top tag in the
       [StackExchange CrossValidated site](stats.stackexchange.com/tags)
       for statistical questions
-    - Has more than 6000 packages on
+    - There are more than 6000 packages on
       [CRAN](https://cran.r-project.org/web/packages/) that stores all
       R packages (and installing these packages is straight-forward),
       from the obscure and cutting-edge statistical techniques to
       plotting to data wrangling.
 
-I should mention a quick caveat.  R is a programming
-language... however it works very differently from other
-general-purpose programming languages ie. Python (it was developed by
-statisticians after all!).  As such, programming in R can be not as
-intuitive, powerful, or easy as it may be in Python (though it can be
-done).  If your work involves a lot of programming, I would recommend
-Python as your main tool.  *However*, it never hurts to learn more
-than one language, especially as R is great for the data analysis and
-plotting.
+I should mention a quick caveat.  While R is a general-purpose
+programming language, it works a bit differently from other languages
+such as Python (it was developed by statisticians after all!).  As
+such, programming in R may not be as intuitive, powerful, or easy as
+it may be in Python (though it can be done), especially if you come
+from a computer science background.  If your work involves a lot of
+programming, I would recommend Python as your main tool.  *However*,
+it never hurts to learn more than one language, especially as R is
+great for data analysis and plotting.
 
 Ok, firstly, I've made this session with some assumptions (see the
 [slides.html](./slides.html)) file.  Briefly I'm assuming you want to
 use R for statistical analysis, plotting, and/or writing up reports.
-I'm using R Markdown to show how to write up documents and since
-getting the data into an analyzable form is the hardest part of an
-analysis, I'm using packages specific to that task.
+I'm using R Markdown to show how to write up documents with R code and
+since getting the data into an analyzable form is the hardest part of
+an analysis, I'm using packages specific to that task.
 
 While you can create functions in R, I won't be going over them.  A
 great resource for R functions is
@@ -62,7 +61,7 @@ great resource for R functions is
 An `.Rmd` or [R Markdown](http://rmarkdown.rstudio.com/) file is a
 [markdown](https://en.wikipedia.org/wiki/Markdown) file that contains
 R code chunks that can be processed to output the results of the R
-code into a generated `.md` file.  This is a incredible (recent)
+code into a generated `.md` file.  This is an incredible (and recent)
 strength of using R, as this then allows you to create html, pdf, or
 Word doc files from the `.md` file using the `rmarkdown` package
 (which relies on [pandoc](pandoc.org)).
@@ -95,10 +94,10 @@ tutorial on the syntax.
 
 # Import/export your data #
 
-You'll need to import your data into R to be used.  I'm assuming the
-data is already cleaned and ready for analysis.  If at any time you
-need help with a command, use the `?` command, appended with the
-command of interest (eg. `?names` or `?write.csv`).
+You'll need to import your data into R to analyze it.  I'm assuming
+the data is already cleaned and ready for analysis.  If at any time
+you need help with a command, use the `?` command, appended with the
+command of interest (eg. `?write.csv`).
 
 ```{r importData}
 
@@ -115,10 +114,10 @@ for storing data that can include numbers, integers, factors, strings,
 etc).  `names()` shows the column names.  `str()` shows the structure,
 such as what the object is, and its contents.  `summary()` shows a
 quick description of the summary statistics (means, median, frequency)
-of each of your columns.  `class()` is like `str()` but only shows the
-top level name of the object, so eg. while a data.frame contains
+for each of your columns.  `class()` is like `str()` but only shows
+the top level name of the object, so eg. while a data.frame contains
 multiple columns that `str()` would show, `class()` would only show
-that the object is a `data.frame`.
+that the object is a "data.frame".
 
 ```{r viewData}
 head(ds)
@@ -130,14 +129,17 @@ class(ds)
 
 # Wrangling your data #
 
-Data wrangling is a bit tedious in base R.  So I'm showing two
-packages designed to be this easier.  Load packages by using the
-`library()` function.  `dplyr` comes via the `magrittr` package with a
-`%>%` pipe function, which works similar to how the Bash shell `|`
-pipe works.  It end of each pipe takes the output from the right hand
-side of the pipe, just like how a plumbing pipe works for water.  The
-four lines of code below using `tbl_df` are all the same.  The `.`
-object represents the output from the pipe.  `tbl_df` makes the object
+Data wrangling is a bit tedious in base R.  So I'm using two packages
+designed to make this easier.  Load packages by using the `library()`
+function.  `dplyr` comes with a `%>%` pipe function (via the
+`magrittr` package), which works similar to how the Bash shell `|`
+pipe works.  The command on the right-hand side takes the output from
+the command on the left-hand side, just like how a plumbing pipe works
+for water.
+
+The four lines of code below using `tbl_df` are all the same.  The `.`
+object represents the output from the pipe, but it doesn't have to be
+used as using `%>%` implies also using `.`.  `tbl_df` makes the object
 into a `tbl` class, making printing of the output nicer.
 
 ```{r wrangle}
@@ -153,8 +155,8 @@ ds2 <- tbl_df(ds)
 
 ```
 
-Again, these next lines are the same. `select` does as it says it
-does: select the column from the dataset.
+Again, these next lines are the same. `select` does as it says: select
+the column from the dataset.
 
 ```{r wrangleSelect}
 
@@ -176,7 +178,7 @@ ds2 %>% select(County = X)
 
 You can subset the dataset using `filter`.  Note the double equal sign
 `==` for testing if 'Examination' is equal to 15.  A single `=` is
-used for something else.
+used for something else (assigning things to objects).
 
 ```{r wrangleFilter}
 
@@ -188,10 +190,10 @@ ds2 %>% filter(X == 'Aigle')
 
 ```
 
-We can start chaining these commands together using the `%>%`
-command.  There is no end to how long a chain can be.  `arrange` below
-arranges (sorts, orders, rearranges, etc) the column Education in
-ascending order. `mutate` creates a new column.
+We can start chaining these commands together using the `%>%` command.
+There is no limit to how long a chain can be.  `arrange`
+sorts/orders/re-arranges the column Education in ascending
+order. `mutate` creates a new column.
 
 ```{r wrangleChain}
 
@@ -204,14 +206,15 @@ ds2 %>%
   select(County = X, Education, Fertility, Agriculture) %>%
   arrange(Education) %>%
   mutate(infertile = ifelse(Fertility < 50, 'yes', 'no'),
-         testing = 'Yes')
+         testing = 'Yes' ## Create a testing column to show how mutate works.
+         )
 
 ```
 
-To get the data into a nicer/more analyable format, you can use the
-`tidyr` package.  See what `gather` does.  Then see what `spread`
-does.  Note that you can remove a column by having a minus `-` sign
-infront of a variable when you use `select`.
+To get the data into a nicer and more analyable format, you can use
+the `tidyr` package.  See what `gather` does in the code below.  Then
+see what `spread` does.  Note that you can remove a column by having a
+minus `-` sign in front of a variable when you use `select`.
 
 ```{r reorg}
 
@@ -237,8 +240,8 @@ ds2 %>%
 ```
 
 Combined with `dplyr`'s `group_by` and `summarise` you can quickly
-summarise data or do further more complicated analyses. `group_by`
-makes it so futher analyses or operations work on the groups.
+summarise data or do further, more complicated analyses. `group_by`
+makes it so further analyses or operations work on the groups.
 `summarise` transforms the data to only contain the new variable(s)
 created, in this case the mean.
 
@@ -274,7 +277,7 @@ Check out the documentation on
 [R Markdown](http://rmarkdown.rstudio.com/authoring_rcodechunks.html)
 for R code chunk options.  If you look at the raw `.Rmd` file for this
 [document](./main.Rmd), you can see that the below code chunk uses
-`eval = FALSE`, which means don't run this code chunk.
+`eval = FALSE`, which tells knitr to not run this code chunk.
 
 These two commands generate either a html or a md file.
 
