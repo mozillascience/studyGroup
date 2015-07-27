@@ -699,7 +699,7 @@ knit('main.Rmd') ## or can use knitr::knit('main.Rmd')
 # Challenge: Try this out for yourself! #
 
 Make a table with the means of Agriculture, Examination, Education,
-and Infant.Mortality by Fertility as a factor that is split in the
-middle, when Catholic is less than 60 (hint, use `dplyr` commands +
-`gather`).  Have the Fertility groups as two columns in the new table
-(hint, use `spread` + `kable`).
+and Infant.Mortality for each category of Fertility (hint: convert it
+into a factor by values >50 vs <50), when Catholic is less than 60
+(hint, use `dplyr` commands + `gather`).  Have the Fertility groups as
+two columns in the new table (hint, use `spread` + `kable`).
