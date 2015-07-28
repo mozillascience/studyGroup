@@ -86,6 +86,7 @@ img {
 <li><a href="#viewing-your-data"><span class="toc-section-number">3</span> Viewing your data</a></li>
 <li><a href="#wrangling-your-data"><span class="toc-section-number">4</span> Wrangling your data</a></li>
 <li><a href="#generate-this-document"><span class="toc-section-number">5</span> Generate this document</a></li>
+<li><a href="#challenge-try-this-out-for-yourself"><span class="toc-section-number">6</span> Challenge: Try this out for yourself!</a></li>
 </ul>
 </div>
 
@@ -539,6 +540,10 @@ ds2 %&gt;%
 ## into md
 <span class="kw">library</span>(knitr)
 <span class="kw">knit</span>(<span class="st">'main.Rmd'</span>) ## or can use knitr::knit('main.Rmd')</code></pre>
+</div>
+<div id="challenge-try-this-out-for-yourself" class="section level1">
+<h1><span class="header-section-number">6</span> Challenge: Try this out for yourself!</h1>
+<p>Make a table with the means of Agriculture, Examination, Education, and Infant.Mortality for each category of Fertility (hint: convert it into a factor by values &gt;50 vs &lt;50), when Catholic is less than 60 (hint, use <code>dplyr</code> commands + <code>gather</code>). Have the Fertility groups as two columns in the new table (hint, use <code>spread</code> + <code>kable</code>).</p>
 </div>
 
 
