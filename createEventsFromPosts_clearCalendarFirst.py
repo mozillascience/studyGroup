@@ -47,7 +47,7 @@ DEFAULT_END_TIME = "16:30" # will be overridden by endTime in _posts
 POSTS_DIRECTORY="/home.westgrid/thea/ScientificProgrammingStudyGroupSFU/calendarGoogleAPI/studyGroup/_posts"
 REQUIRED_FIELDS = [ 'title', 'location', 'text', 'link', 'date' ]
 TIME_ZONE_HR = ':00-07:00'
-TIME_ZONE_STR = 'America/Vancouver',
+TIME_ZONE_STR = 'America/Vancouver'
 
 def main():
     """
