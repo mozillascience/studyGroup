@@ -46,8 +46,8 @@ DEFAULT_START_TIME = "15:30" # will be overridden by startTime in _posts
 DEFAULT_END_TIME = "16:30" # will be overridden by endTime in _posts
 POSTS_DIRECTORY="/home.westgrid/thea/ScientificProgrammingStudyGroupSFU/calendarGoogleAPI/studyGroup/_posts"
 REQUIRED_FIELDS = [ 'title', 'location', 'text', 'link', 'date' ]
-TIME_ZONE_HR = ':00-07:00'
 TIME_ZONE_STR = 'America/Vancouver'
+TIME_ZONE_HR = ':00-07:00'
 
 def main():
     """
@@ -131,11 +131,11 @@ def createEvent(eventDict):
         'description':  eventDict['text']+"\n"+eventDict['link'],
         'start': {
             'dateTime': makeDateTime(eventDict['date'], eventDict['startTime']),
-            'timeZone': TIME_ZONE_STR,
+            'timeZone': TIME_ZONE_STR ,
             },
         'end': {
             'dateTime':  makeDateTime(eventDict['date'], eventDict['endTime']),
-            'timeZone': TIME_ZONE_STR,
+            'timeZone': TIME_ZONE_STR ,
             },
         'reminders': {
             'useDefault': False,
