@@ -46,6 +46,7 @@ DEFAULT_START_TIME = "15:30" # will be overridden by startTime in _posts
 DEFAULT_END_TIME = "16:30" # will be overridden by endTime in _posts
 POSTS_DIRECTORY="/home.westgrid/thea/ScientificProgrammingStudyGroupSFU/calendarGoogleAPI/studyGroup/_posts"
 REQUIRED_FIELDS = [ 'title', 'location', 'text', 'link', 'date' ]
+TIMEZONESTR = ':00-07:00'
 
 def main():
     """
@@ -120,7 +121,7 @@ def isEventComplete(eventDict, sourcePath):
 def makeDateTime(dateStr, hourMinStr):
     #date like "2014-07-25"
     #hourMinStr like "15:30"
-    return dateStr +"T" + hourMinStr + ':00-07:00'
+    return dateStr +"T" + hourMinStr + TIMEZONESTR
 
 def createEvent(eventDict):
     event = {
