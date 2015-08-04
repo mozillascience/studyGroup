@@ -21,14 +21,14 @@ headlineSmall: "Welcome To Our Study Group!"
 headlineMain: "Let's Work Together"
 
 # Setup Google Calendar
-# Create Google Acount and add events to a new calendar.
-# Here are example URLs:
-# calendar_embed_url: https://www.google.com/calendar/embed?src=email@gmail.com
-# calendar_ical_url: https://www.google.com/calendar/ical/email@gmail.com/public/basic.ics
+# Usage:
+# 1. create a new google account
+# 2. change 'USER' in the example urls below to the username of the google account you made for your calendar
+# 3. set calendar_on: True.
 
-calendar_on: Yes
-calendar_embed_url: "https://www.google.com/calendar/embed?src=sciprogrammingstudygroupsfu@gmail.com"
-calendar_ical_url: "https://www.google.com/calendar/ical/sciprogrammingstudygroupsfu@gmail.com/public/basic.ics"
+calendar_on: False
+calendar_embed_url: "https://www.google.com/calendar/embed?src=USER@gmail.com"
+calendar_ical_url: "https://www.google.com/calendar/ical/USER@gmail.com/public/basic.ics"
 
 
 #========================================

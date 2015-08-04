@@ -12,8 +12,9 @@
 # To modify and use: 
 #   1. See google docs to get setup with credentials:
 #      https://developers.google.com/google-apps/calendar/quickstart/python
-#   2. Update static variables (in caps)
-#   3. run using: python createEventsFromPosts_clearCalendarFirst.py --noauth_local_webserver
+#   2. Update the variables indicated below (APPLICATION_NAME, CALENDAR_ID, POSTS_DIRECTORY, TIME_ZONE_SRT and TIME_ZONE_HR)
+#      * note you will have to update the TIME_ZONE_HR as needed if your region observes daylight savings time.
+#   3. run using: python updateCalendar.py
 #
 #
 ##################################################################################################
@@ -29,7 +30,6 @@ from oauth2client import client
 from oauth2client import tools
 
 import datetime
-import mistune
 
 try:
     import argparse
@@ -38,16 +38,20 @@ except ImportError:
     flags = None
 
 
+# Modify these variables in step 2 above ------------------- 
+APPLICATION_NAME = 'test' # app name you created in step one above
+CALENDAR_ID='USER@gmail.com' # google account name you created for your calendar
+POSTS_DIRECTORY="/path/to/your/studyGroup/_posts" # full path to your studyGroup/_posts directory.
+TIME_ZONE_STR = 'America/Vancouver' # not sure? check here: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+TIME_ZONE_HR = ':00-08:00' # remember to update this if daylight savings changes!
+#-----------------------------------------------------------
+
 SCOPES = 'https://www.googleapis.com/auth/calendar'
 CLIENT_SECRET_FILE = 'client_secret.json'
-APPLICATION_NAME = 'Google Calendar ScientificProgrammingStudyGroupSFU'
-CALENDAR_ID='sciprogrammingstudygroupsfu@gmail.com'
 DEFAULT_START_TIME = "15:30" # will be overridden by startTime in _posts
 DEFAULT_END_TIME = "16:30" # will be overridden by endTime in _posts
-POSTS_DIRECTORY="/home.westgrid/thea/ScientificProgrammingStudyGroupSFU/calendarGoogleAPI/studyGroup/_posts"
 REQUIRED_FIELDS = [ 'title', 'location', 'text', 'link', 'date' ]
-TIME_ZONE_STR = 'America/Vancouver'
-TIME_ZONE_HR = ':00-07:00'
+
 
 def main():
     """
