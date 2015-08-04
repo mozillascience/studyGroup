@@ -44,6 +44,12 @@ Everything you need to set up your own Mozilla Study Group website for organizin
 
 That's it, you're done! You can see your new website at `https://yourUserName.github.io/studyGroup/`, where `yourUserName` is the user name you signed up for GitHub with. If this is your first time making a webpage on GitHub, it might take 30 minutes for things to percolate through their computers - don't worry, it's all good, check back later and your website should be up and running.
 
+### Optional: Setting up a Google Calendar for your Study Group
+
+If you'd like to offer your community a calendar of events they can import into their own calendars, try using a Google Calendar. To set up, make a new google account, and update the variables in `_config.yml` under the heading 'Setup Google Calendar'.
+
+You can add events to your calendar by hand, but if you'd like to manage it automatically, there's a script to do so in `scripts/updateCalendar.py`; instructions for use are at the top of that file.
+
 ## How to Launch a New Event
 
 When you're ready to list a new event for your Study Group, follow these steps, or [watch this video](https://youtu.be/abglQgEIccw) where we walk you through event listing.
@@ -71,7 +77,8 @@ When you're ready to list a new event for your Study Group, follow these steps, 
     location: Hacky Hour Stadium
     link: https://github.com/yourUserName/studyGroup/issues/1234
     date: 2016-01-04
-
+    startTime: 15:00
+    endTime: 16:00
     ---
     ```
     Change all the fields to describe your event; make sure the `link` is the address of the issue you created When you're done, click 'Commit Changes' at the bottom.
