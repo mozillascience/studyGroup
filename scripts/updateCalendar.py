@@ -12,8 +12,7 @@
 # To modify and use: 
 #   1. See google docs to get setup with credentials:
 #      https://developers.google.com/google-apps/calendar/quickstart/python
-#   2. Update the variables indicated below (APPLICATION_NAME, CALENDAR_ID, POSTS_DIRECTORY, TIME_ZONE_SRT and TIME_ZONE_HR)
-#      * note you will have to update the TIME_ZONE_HR as needed if your region observes daylight savings time.
+#   2. Update the variables indicated below (APPLICATION_NAME, CALENDAR_ID, POSTS_DIRECTORY, TIME_ZONE_SRT
 #   3. run using: python updateCalendar.py
 #
 #
@@ -30,6 +29,7 @@ from oauth2client import client
 from oauth2client import tools
 
 import datetime
+import pytz
 
 try:
     import argparse
@@ -38,12 +38,12 @@ except ImportError:
     flags = None
 
 
+
 # Modify these variables in step 2 above ------------------- 
 APPLICATION_NAME = 'test' # app name you created in step one above
 CALENDAR_ID='USER@gmail.com' # google account name you created for your calendar
 POSTS_DIRECTORY="/path/to/your/studyGroup/_posts" # full path to your studyGroup/_posts directory.
 TIME_ZONE_STR = 'America/Vancouver' # not sure? check here: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-TIME_ZONE_HR = ':00-08:00' # remember to update this if daylight savings changes!
 #-----------------------------------------------------------
 
 SCOPES = 'https://www.googleapis.com/auth/calendar'
@@ -126,6 +126,9 @@ def isEventComplete(eventDict, sourcePath):
 def makeDateTime(dateStr, hourMinStr):
     #date like "2014-07-25"
     #hourMinStr like "15:30"
+    date = dateStr.split('-')
+    TIME_ZONE_HR = ':00'+pytz.timezone(TIME_ZONE_STR).localize(datetime.datetime(int(date[0]), int(date[1]), int(date[2]))).strftime('%z')
+    TIME_ZONE_HR = TIME_ZONE_HR[:-2] + ':' + TIME_ZONE_HR[-2:]
     return dateStr +"T" + hourMinStr + TIME_ZONE_HR
 
 def createEvent(eventDict):
