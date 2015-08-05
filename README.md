@@ -90,7 +90,7 @@ That's it! Your event is now listed on your webpage, and there's a discussion th
 > **Event Listing Gotchas:** here are a few things to look out for when listing an event:
 >  - Did you remember to include the `---` above and below? The website builder needs those.
 >  - Can't find the issue tracker? Remember to turn it on under the 'Settings' menu on the right.
->  - The five fields need to be on exactly one line each; some text editors will insert line breaks into lines that are too long; remove these if so.
+>  - The seven fields need to be on exactly one line each; some text editors will insert line breaks into lines that are too long; remove these if so.
 
 ## How to Stay in Touch With Your Members
 
