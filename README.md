@@ -70,6 +70,7 @@ When you're ready to list a new event for your Study Group, follow these steps, 
 
     where `YYYY-MM-DD` is the date of your event, and `word` is anything you want.
  4. **Cut and paste the following into your new file:**
+ 
     ```
     ---
     title: Study Group Meetup
