@@ -41,8 +41,8 @@ except ImportError:
 
 # Modify these variables in step 2 above ------------------- 
 APPLICATION_NAME = 'test' # app name you created in step one above
-CALENDAR_ID='mills.wj@gmail.com' # google account name you created for your calendar
-POSTS_DIRECTORY="/Users/bill/Desktop/projects/studyGroup/_posts" # full path to your studyGroup/_posts directory.
+CALENDAR_ID='USER@gmail.com' # google account name you created for your calendar
+POSTS_DIRECTORY="/path/to/your/studyGroup/_posts" # full path to your studyGroup/_posts directory.
 TIME_ZONE_STR = 'America/Vancouver' # not sure? check here: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 #-----------------------------------------------------------
 
@@ -126,10 +126,11 @@ def isEventComplete(eventDict, sourcePath):
 def makeDateTime(dateStr, hourMinStr):
     #date like "2014-07-25"
     #hourMinStr like "15:30"
+    timeStr = hourMinStr[1:-1]
     date = dateStr.split('-')
     TIME_ZONE_HR = ':00'+pytz.timezone(TIME_ZONE_STR).localize(datetime.datetime(int(date[0]), int(date[1]), int(date[2]))).strftime('%z')
     TIME_ZONE_HR = TIME_ZONE_HR[:-2] + ':' + TIME_ZONE_HR[-2:]
-    return dateStr +"T" + hourMinStr + TIME_ZONE_HR
+    return dateStr +"T" + timeStr + TIME_ZONE_HR
 
 def createEvent(eventDict):
     event = {
