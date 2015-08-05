@@ -60,7 +60,7 @@ into producing it?
  
 Different interactions have generally been studied individually even though
 they occur in a community. This plot shows the relationship between EFN and FN 
-production in T. ulmifolia. There is a positive correlation, which sggests that 
+production in T. ulmifolia. There is a positive correlation, which suggests that 
 plants that produce more of one also produce more of the other
 This is probably because of overall plant vigour. This was an initial figure
 for a later experiment showing interactions."""

@@ -34,8 +34,6 @@ x0=np.zeros(0)
 y0=np.zeros(0)
 
 with writer.saving(fig,'trajectory.mp4', 200):
-
-#4 is position 5 is velocity
     for i in range(202):
         x0=time[i]
         y0=position[i]

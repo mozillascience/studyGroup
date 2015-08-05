@@ -23,10 +23,9 @@ y0=np.zeros(10.0)
 
 with writer.saving(fig,'example.mp4', 200):
 
-#4 is position 5 is velocity
     for i in range(200):
-        print x0
-        print y0
+        print (x0)
+        print (y0)
         x0 += 0.1 * np.random.randn(10)
         y0 += 0.1 * np.random.randn(10)
     
