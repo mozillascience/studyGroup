@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # moviewriter.py
 import numpy as np
-import pylab as p
+import matplotlib.pyplot as plt
 import matplotlib.animation as an
 
 # Create an FFMPEG writer.
@@ -12,11 +12,11 @@ metadata=dict(title='Example',artist='Ricardo Harripaul')
 
 # Specify some features.
 writer = ffwriter(fps = 15, metadata = metadata)
-fig = p.figure()
+fig = plt.figure()
 
-l,=p.plot([],[],'ko')
+l,=plt.plot([],[],'ko')
 
-p.xlim(-3,3); p.ylim=(-3,3)
+plt.xlim(-3,3); plt.ylim=(-3,3)
 
 x0=np.zeros(10.0)
 y0=np.zeros(10.0)

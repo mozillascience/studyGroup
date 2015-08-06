@@ -1,7 +1,7 @@
 #Import necessary modules for movie animation
 from scipy.io.netcdf import *
 import numpy as np
-import pylab as p
+import matplotlib.pyplot as plt
 import matplotlib.animation as an
 
 
@@ -22,13 +22,13 @@ metadata=dict(title='Trajectory Animation',artist='Ricardo Harripaul')
 
 writer=ffwriter(fps=15, metadata=metadata)
 
-fig=p.figure()
+fig=plt.figure()
 
 #Open an empty plot to start plotting
 
-l,=p.plot([],[],'ko')
+l,=plt.plot([],[],'ko')
 
-p.xlim(0,14); p.ylim=(-20,20)
+plt.xlim(0,14); plt.ylim=(-20,20)
 
 x0=np.zeros(0)
 y0=np.zeros(0)
