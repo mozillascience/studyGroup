@@ -17,8 +17,6 @@ x=a*b
 
 #Plotting and saving
 h=plt.hist(x,bins=100,normed=True)
-#This generates a new window to place figures
-plt.figure(0)
 
 plt.savefig('hist1.pdf')
 

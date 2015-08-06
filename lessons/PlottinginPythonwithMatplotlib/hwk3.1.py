@@ -39,8 +39,6 @@ for t in a.yaxis.get_major_ticks():
 for t in a.xaxis.get_major_ticks():
     t.label.set_fontsize(6)
 
-plt.show()
-
 #Set the subplot sizing
 fig.subplots_adjust(top=0.95, right =0.89, left=0.13,bottom=0.25)
 #Set limits and labels
@@ -50,7 +48,9 @@ plt.ylabel(r'Extrafloral Nectar (mg of sugar per extrafloral nectary)',fontsize=
 plt.xlabel(r'Floral Nectar (mg of sugar per flower)',fontsize=6,horizontalalignment='center')
 
 #Save as pdf
-plt.savefig('EFNvFN.pdf',dpi=600)
+fig.savefig('EFNvFN.pdf',dpi=600)
+
+plt.show()
 
 """In ecology, animals and plants interact with one another in an ecosystem.  
 There are several types of interactions that may occur such as predation, 

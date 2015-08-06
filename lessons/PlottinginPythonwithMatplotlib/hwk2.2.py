@@ -1,6 +1,6 @@
 #import necessary modules for poly1d and arange from numpy
 from numpy import poly1d,arange
-import matplotlib
+import matplotlib.pyplot as plt
 
 #Generate an empty array for storing the roots
 roots=[]
@@ -20,8 +20,8 @@ for i in range(len(roots)-1):
     nonzeros.append(roots[i][0:3])
 
 #Plot zeros
-plot(nonzeros)
+plt.plot(nonzeros)
 
 #save figure
 
-savefig("roots.pdf")
+plt.savefig("roots.pdf")

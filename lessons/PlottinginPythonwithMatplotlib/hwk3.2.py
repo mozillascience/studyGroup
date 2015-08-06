@@ -28,7 +28,7 @@ fig=plt.figure()
 
 l,=plt.plot([],[],'ko')
 
-plt.xlim(0,14); plt.ylim=(-20,20)
+plt.xlim(-20,20); plt.ylim(-20,20)
 
 x0=np.zeros(0)
 y0=np.zeros(0)

@@ -16,7 +16,7 @@ fig = plt.figure()
 
 l,=plt.plot([],[],'ko')
 
-plt.xlim(-3,3); plt.ylim=(-3,3)
+plt.xlim(-3,3); plt.ylim(-3,3)
 
 x0=np.zeros(10.0)
 y0=np.zeros(10.0)
