@@ -16,7 +16,7 @@ for s in arange(0.0,0.65,0.01):
 #Generate empty array for storing non zero values of the roots   
 nonzeros=[]
 #This loop extracts out the non zero values of the roots and appends it to a new array
-for i in xrange(len(roots)-1):
+for i in range(len(roots)-1):
     nonzeros.append(roots[i][0:3])
 
 #Plot zeros
