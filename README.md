@@ -106,7 +106,7 @@ Your website includes a gallery of participants in your Study Group; adding peop
 
 ```
 - name: their human name
-  affiliation: school, lab, department, business....
+  degree: school, lab, department, business....
   github: their GitHub handle
   interests:
     - list one to three
