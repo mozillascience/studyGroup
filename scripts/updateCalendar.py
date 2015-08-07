@@ -13,7 +13,7 @@
 #   1. See google docs to get setup with credentials:
 #      https://developers.google.com/google-apps/calendar/quickstart/python
 #   2. Update the variables indicated below (APPLICATION_NAME, CALENDAR_ID, POSTS_DIRECTORY, TIME_ZONE_SRT
-#   3. run using: python updateCalendar.py
+#   3. run using: python updateCalendar.py --noauth_local_webserver
 #
 #
 ##################################################################################################
@@ -37,12 +37,10 @@ try:
 except ImportError:
     flags = None
 
-
-
 # Modify these variables in step 2 above ------------------- 
 APPLICATION_NAME = 'test' # app name you created in step one above
 CALENDAR_ID='USER@gmail.com' # google account name you created for your calendar
-POSTS_DIRECTORY="/path/to/your/studyGroup/_posts" # full path to your studyGroup/_posts directory.
+POSTS_DIRECTORY="/path/to/your/studyGroup/_posts" # full path to your studyGroup/_posts directory on your computer (not on github).
 TIME_ZONE_STR = 'America/Vancouver' # not sure? check here: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 #-----------------------------------------------------------
 
@@ -51,7 +49,6 @@ CLIENT_SECRET_FILE = 'client_secret.json'
 DEFAULT_START_TIME = "15:30" # will be overridden by startTime in _posts
 DEFAULT_END_TIME = "16:30" # will be overridden by endTime in _posts
 REQUIRED_FIELDS = [ 'title', 'location', 'text', 'link', 'date' ]
-
 
 def main():
     """
