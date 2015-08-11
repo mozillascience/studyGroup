@@ -1,3 +1,9 @@
+---
+layout: page
+title: 'Intro to Git'
+visible: true
+---
+
 # (Brief) Introduction to Git + GitHub
 
  - **Authors**: Luke Johnston

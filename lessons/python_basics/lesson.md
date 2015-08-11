@@ -1,3 +1,9 @@
+---
+layout: page
+title: 'Intro to Python'
+visible: true
+---
+
 # Overview of Python
 
  - **Authors**: Charles Zhu
