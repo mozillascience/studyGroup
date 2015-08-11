@@ -4,6 +4,13 @@
 .team-member i.fa {
  font-size: 110px;
 }
+/* Ensure body is below navbar */
+body.no-header {
+ padding-top: 100px;
+}
+body.no-header nav.navbar {
+ background-color: #222;
+}
 /* Sticky footer: http://getbootstrap.com/examples/sticky-footer-navbar/ */
 html.sticky-footer {
  position: relative;

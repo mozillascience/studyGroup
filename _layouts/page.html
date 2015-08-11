@@ -3,7 +3,9 @@
 
   {% include head.html %}
 
-  <body id="page-top" class="index sticky-footer">
+  <body id="page-top" class="index no-header sticky-footer">
+    {% include navbar.html %}
+
     <div class="content container">
       <div class="page">
         <h1 class="page-title">{{ page.title }}</h1>
