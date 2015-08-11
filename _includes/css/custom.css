@@ -4,3 +4,19 @@
 .team-member i.fa {
  font-size: 110px;
 }
+/* Sticky footer: http://getbootstrap.com/examples/sticky-footer-navbar/ */
+html.sticky-footer {
+ position: relative;
+ min-height: 100%;
+}
+body.sticky-footer {
+ /* Margin bottom by footer height */
+ margin-bottom: 100px;
+}
+body.sticky-footer footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ /* Set the fixed height of the footer here */
+ height: 100px;
+}
