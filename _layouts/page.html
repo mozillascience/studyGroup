@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html class="sticky-footer">
 
   {% include head.html %}
 
-  <body class="theme-base-0d">
+  <body id="page-top" class="index no-header sticky-footer">
+    {% include navbar.html %}
 
     <div class="content container">
       <div class="page">
@@ -13,6 +14,8 @@
 
         {{ content }}
       </div>
-
+    </div>
+    {% include footer.html %}
+    {% include js.html %}
   </body>
 </html>
