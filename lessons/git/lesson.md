@@ -42,7 +42,7 @@ together:
 
 * http://codeasmanuscript.github.io/workshops/lessons/git/cheatsheet/
 
-Then, fork @mbonsma's repository into your own GitHub
+Then, fork @UofTCoders's repository into your own GitHub
 account. Afterwards do these commands:
 
     cd ~/Desktop
