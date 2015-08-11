@@ -216,6 +216,22 @@ into a `tbl` class, making printing of the output nicer.
 
 ```r
 library(dplyr)
+```
+
+```
+## 
+## Attaching package: 'dplyr'
+## 
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+## 
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+```
+
+```r
 tbl_df(ds)
 ```
 
@@ -689,11 +705,11 @@ These two commands generate either a html or a md file.
 ```r
 ## into html
 library(rmarkdown)
-render('main.Rmd') ## or can use rmarkdown::render('main.Rmd')
+render('lesson.Rmd') ## or can use rmarkdown::render('main.Rmd')
 
 ## into md
 library(knitr)
-knit('main.Rmd') ## or can use knitr::knit('main.Rmd')
+knit('lesson.Rmd') ## or can use knitr::knit('main.Rmd')
 ```
 
 # Challenge: Try this out for yourself! #

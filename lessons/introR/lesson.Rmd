@@ -287,11 +287,11 @@ These two commands generate either a html or a md file.
 
 ## into html
 library(rmarkdown)
-render('main.Rmd') ## or can use rmarkdown::render('main.Rmd')
+render('lesson.Rmd') ## or can use rmarkdown::render('main.Rmd')
 
 ## into md
 library(knitr)
-knit('main.Rmd') ## or can use knitr::knit('main.Rmd')
+knit('lesson.Rmd') ## or can use knitr::knit('main.Rmd')
 
 ```
 
