@@ -43,7 +43,7 @@ except ImportError:
 # APPLICATION_NAME: app name you created in step one above:
 APPLICATION_NAME = 'test'
 # CALENDAR_ID: google account name you created for your calendar:
-CALENDAR_ID = 'mills.wj@gmail.com'
+CALENDAR_ID = 'USER@gmail.com'
 # TIME_ZONE_STR: check here:
 # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 TIME_ZONE_STR = 'America/Vancouver'
