@@ -15,7 +15,7 @@
 #   1. See google docs to get setup with credentials:
 #      https://developers.google.com/google-apps/calendar/quickstart/python
 #   2. Update the variables indicated below (APPLICATION_NAME,
-#      CALENDAR_ID, POSTS_DIRECTORY, TIME_ZONE_SRT
+#      CALENDAR_ID, TIME_ZONE_SRT
 #   3. run from scripts/ using:
 #      python updateCalendar.py --noauth_local_webserver
 ########################################################################
