@@ -15,7 +15,8 @@ output:
 
  - **Authors**: Luke W. Johnston
  - **Research field**: Nutritional Sciences (epidemiology)
- - **Lesson Topic**: Intro to R and data wrangling
+ - **Lesson topic**: Intro to R and data wrangling
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/introR>
 
 This is a brief introduction to R, focussing on data wrangling using
 `dplyr` and `tidyr` packages and generating reproducible documents

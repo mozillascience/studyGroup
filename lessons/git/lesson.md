@@ -8,7 +8,8 @@ visible: true
 
  - **Authors**: Luke Johnston
  - **Research field**: Nutritional and diabetes epidemiology
- - **Lesson Topic**: Version control (Git)
+ - **Lesson topic**: Version control (Git)
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git>
 
 ## Preface: ##
 
