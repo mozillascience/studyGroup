@@ -13,6 +13,10 @@ output:
     
 ---
 
+ - **Authors**: Luke W. Johnston
+ - **Research field**: Nutritional Sciences (epidemiology)
+ - **Lesson Topic**: Intro to R and data wrangling
+
 This is a brief introduction to R, focussing on data wrangling using
 `dplyr` and `tidyr` packages and generating reproducible documents
 using `knitr` and `rmarkdown` packages.
