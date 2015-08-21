@@ -9,7 +9,8 @@ visible: false
 
  - **Authors**: My Name
  - **Research field**: My field of study
- - **Lesson Topic**: What computing topics does this lesson cover?
+ - **Lesson topic**: What computing topics does this lesson cover?
+ - **Lesson content URL**: <link>
 
 Write up your lesson here! If you're unsure of markdown, feel free to cut and paste your notes verbatim, and we'll help you format them.
 

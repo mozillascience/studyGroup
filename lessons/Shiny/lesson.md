@@ -8,7 +8,8 @@ visible: true
 
  - **Authors**: Lanna Jin
  - **Research field**: Ecology & Evolutionary Biology
- - **Lesson Topic**: Interactive Visualizations with the Shiny library in R
+ - **Lesson topic**: Interactive Visualizations with the Shiny library in R
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/Shiny>
 
 <h1>Introduction</h1>
 Introduction to Data Set
