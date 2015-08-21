@@ -1,8 +1,15 @@
+---
+layout: page
+title: 'Intro to Git'
+visible: true
+---
+
 # (Brief) Introduction to Git + GitHub
 
  - **Authors**: Luke Johnston
  - **Research field**: Nutritional and diabetes epidemiology
- - **Lesson Topic**: Version control (Git)
+ - **Lesson topic**: Version control (Git)
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git>
 
 ## Preface: ##
 
@@ -36,7 +43,7 @@ together:
 
 * http://codeasmanuscript.github.io/workshops/lessons/git/cheatsheet/
 
-Then, fork @mbonsma's repository into your own GitHub
+Then, fork @UofTCoders's repository into your own GitHub
 account. Afterwards do these commands:
 
     cd ~/Desktop

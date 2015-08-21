@@ -11,6 +11,11 @@ output:
     
 ---
 
+ - **Authors**: Luke W. Johnston
+ - **Research field**: Nutritional Sciences (epidemiology)
+ - **Lesson topic**: Intro to R and data wrangling
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/introR>
+
 This is a brief introduction to R, focussing on data wrangling using
 `dplyr` and `tidyr` packages and generating reproducible documents
 using `knitr` and `rmarkdown` packages.
@@ -287,11 +292,11 @@ These two commands generate either a html or a md file.
 
 ## into html
 library(rmarkdown)
-render('main.Rmd') ## or can use rmarkdown::render('main.Rmd')
+render('lesson.Rmd') ## or can use rmarkdown::render('main.Rmd')
 
 ## into md
 library(knitr)
-knit('main.Rmd') ## or can use knitr::knit('main.Rmd')
+knit('lesson.Rmd') ## or can use knitr::knit('main.Rmd')
 
 ```
 
