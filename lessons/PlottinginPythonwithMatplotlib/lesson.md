@@ -4,6 +4,11 @@ title: 'Plotting in Python'
 visible: true
 ---
 
+ - **Authors**: Ricardo Harripaul
+ - **Research field**: 
+ - **Lesson topic**: Plotting with Matplotlib
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/PlottinginPythonwithMatplotlib>
+
 Matplotlib in Python
 ====================
 
