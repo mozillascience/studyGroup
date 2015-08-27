@@ -1,6 +1,31 @@
-- name: Bill Mills
-  affiliation: Mozilla Science Lab
-  github: BillMills
+- name: James Boocock
+  affiliation: University of Otago, Department of Biochemistry
+  github: smilefreak
   interests:
     - Programming
+    - Genomics
     - Open Science
+    
+- name: Tom Kelly
+  affiliation: University of Otago, Department of Biochemistry
+  github: TomKellyGenetics
+  interests:
+    - Programming
+    - Cancer Genomics
+    - Evolutionary Biology
+
+- name: Murray Cadzow
+  affiliation: University of Otago, Department of Biochemistry
+  github: murraycadzow
+  interests:
+    - Programming
+    - Genomics
+    - Human Health and Disease
+
+- name: Nick Wong
+  affiliation: Pacific Edge
+  github: methylnick
+  interests:
+    - Epigenetics
+    - Cancer Genomics
+    - Community Building
