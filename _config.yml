@@ -17,8 +17,8 @@ description: "A study group for post graduate students and researchers working o
 # None of these things need to be changed - but feel free!
 
 titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
-headlineSmall: "Welcome To Our Study Group!"
-headlineMain: "Let's Work Together"
+headlineSmall: "Welcome To The Genomics Hacky Hour!"
+headlineMain: "Sharing our knowledge to improve our science"
 
 # Setup Google Calendar
 # Usage:
