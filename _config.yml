@@ -2,8 +2,8 @@
 #Follow these 2 steps to set up your site.
 
 #Step 1: give your study group a name and a short description:
-title: Our Study Group
-description: "A study group."
+title: Genommics Hacky Hour
+description: "A study group for post graduate students and researchers working on Next Generation Sequencing data."
 
 #Step 2: press the green 'Commit Changes' button at the bottom of this page.
 
@@ -26,9 +26,9 @@ headlineMain: "Let's Work Together"
 # 2. change 'USER' in the example urls below to the username of the google account you made for your calendar
 # 3. set calendar_on: True.
 
-calendar_on: False
-calendar_embed_url: "https://www.google.com/calendar/embed?src=USER@gmail.com"
-calendar_ical_url: "https://www.google.com/calendar/ical/USER@gmail.com/public/basic.ics"
+calendar_on: True
+calendar_embed_url: "<iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=61it8bc3844p6e01ihgmpvr1hg%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=Africa%2FJohannesburg" style=" border:solid 1px #777 " width="800" height="600" frameborder="0" scrolling="no"></iframe>"
+calendar_ical_url: "https://www.google.com/calendar/ical/61it8bc3844p6e01ihgmpvr1hg%40group.calendar.google.com/public/basic.ics"
 
 
 #========================================
