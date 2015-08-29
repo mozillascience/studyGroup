@@ -1,6 +1,7 @@
-- name: Bill Mills
-  affiliation: Mozilla Science Lab
-  github: BillMills
+- name: Anelda van der Walt
+  affiliation: Talarify
+  github: anelda
   interests:
-    - Programming
-    - Open Science
+    - Genomics
+    - Computational training
+    - eResearch
