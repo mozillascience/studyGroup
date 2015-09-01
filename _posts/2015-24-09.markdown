@@ -1,0 +1,10 @@
+---
+title: Work along. 
+text: Introduction to python. 
+location: Leith room, Staff Club
+link: https://github.com/smilefreak/studyGroup/issues/3 
+date: 2015-24-09
+startTime: '15:30'
+endTime: '16:30'
+---
+
