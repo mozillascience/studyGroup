@@ -1,10 +1,10 @@
 ---
--title: Work-Along 
--text: Introduction to ggplot2 in R
--location: Leith room, Staff Club 
--link: https://github.com/smilefreak/studyGroup/issues/2 
--date: 2015-10-09
--startTime: '15:30'
--endTime: '16:30'
+title: Work-Along 
+text: Introduction to ggplot2 in R
+location: Leith room, Staff Club 
+link: https://github.com/smilefreak/studyGroup/issues/2 
+date: 2015-10-09
+startTime: '15:30'
+endTime: '16:30'
 
 ---
