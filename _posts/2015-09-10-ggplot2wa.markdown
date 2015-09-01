@@ -1,6 +1,6 @@
 ---
-title: Work-Along 
-text: Introduction to ggplot2 in R
+title: Introduction to ggplot2 in R
+text: Murray will introduce ggplot2, suitable for R novices.
 location: Leith room, Staff Club 
 link: https://github.com/smilefreak/studyGroup/issues/2 
 date: 2015-09-10
