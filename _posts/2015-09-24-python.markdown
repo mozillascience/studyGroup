@@ -1,6 +1,6 @@
 ---
-title: Work along. 
-text: Introduction to python. 
+title: Introduction to python. 
+text: James will introduce python, suitable for complete begineers.
 location: Leith room, Staff Club
 link: https://github.com/smilefreak/studyGroup/issues/3 
 date: 2015-09-24
