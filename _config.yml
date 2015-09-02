@@ -16,7 +16,7 @@ description: "A study group for post graduate students and researchers working o
 # Optional Configuration
 # None of these things need to be changed - but feel free!
 
-titleBackground: "https://pixabay.com/get/d9a5ac7d2725ec54eb1f/1440839746/binary-503586_1280.jpg?direct"
+titleBackground: "https://raw.githubusercontent.com/anelda/GenomicsHackyHour/gh-pages/img/startup-593341_1280.jpg"
 headlineSmall: "Welcome To The Genomics Hacky Hour!"
 headlineMain: "Sharing our knowledge to improve our science"
 
