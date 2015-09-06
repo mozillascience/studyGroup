@@ -1,10 +1,11 @@
 ---
-title: Work along. 
-text: Introduction to python. 
-location: Leith room, Staff Club
+title: Introduction to python. 
+text: James will introduce Python, suitable for complete beginners.
+location: Leith Room, Staff Club
 link: https://github.com/smilefreak/studyGroup/issues/3 
-date: 2015-24-09
+date: 2015-09-24
 startTime: '15:30'
 endTime: '16:30'
+
 ---
 
