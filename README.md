@@ -1,6 +1,8 @@
 Mozilla Study Groups
 ============
 
+[![Join the chat at https://gitter.im/smilefreak/studyGroup](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/smilefreak/studyGroup?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Welcome to [Mozilla Science Lab](https://www.mozillascience.org/)'s Study Group project! From here, we'll set you up with everything you need to start your own study group.
 
 ### Wait What's a 'Mozilla Study Group'?
