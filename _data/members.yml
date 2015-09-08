@@ -17,6 +17,9 @@
 - name: Andre R Erler
   degree: PhD, Physics
   github: aerler
+  interests:
+    - Python
+    - Geospatial analysis
 
 - name: Chris Granstrom
   degree: PhD, Physics
