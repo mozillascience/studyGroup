@@ -26,9 +26,9 @@ class Var(object):
     if not isinstance(other, Var): return NotImplemented
     # handle more specific errors and print useful info
     if self.axes != other.axes: 
-      raise ValueError, "Axes mismatch: {:s} != {:s}".format(self.axes,other.axes)
+      raise ValueError("Axes mismatch: {:s} != {:s}".format(self.axes,other.axes))
     if self.units != other.units: 
-      raise ValueError, "Units mismatch: {:s} != {:s}".format(self.units,other.units)
+      raise ValueError("Units mismatch: {:s} != {:s}".format(self.units,other.units))
     # add arrays
     data = self.data + other.data
     # create new variable object
