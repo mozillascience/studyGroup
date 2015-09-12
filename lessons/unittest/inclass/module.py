@@ -1,5 +1,5 @@
 ''' 
-  A class we can use to test unittesting
+  A class we can use to test unit testing
 '''
 
 import numpy as np

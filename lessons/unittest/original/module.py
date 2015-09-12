@@ -1,5 +1,5 @@
 ''' 
-  A class we can use to test unittesting
+  A class we can use to test unit testing
 '''
 
 import numpy as np
@@ -23,9 +23,12 @@ class Var(object):
   def __add__(self, other):
     ''' overload addition function: add arrays and create new variable '''
     # check input
-    if not isinstance(other, Var): raise Exception
-    if self.axes != other.axes: raise Exception
-    if self.units != other.units: raise Exception
+    if not isinstance(other, Var): return NotImplemented
+    # handle more specific errors and print useful info
+    if self.axes != other.axes: 
+      raise ValueError, "Axes mismatch: {:s} != {:s}".format(self.axes,other.axes)
+    if self.units != other.units: 
+      raise ValueError, "Units mismatch: {:s} != {:s}".format(self.units,other.units)
     # add arrays
     data = self.data + other.data
     # create new variable object
