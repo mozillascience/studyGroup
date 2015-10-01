@@ -22,4 +22,4 @@ visible: true
 * Compare a file with the one in the history (`git diff`)
 * Look into your history (`git log`)
 
-Please follow along in the [slides](slides.pdf) for the remaining information.
+Please follow along in the [slides](../slides.pdf) for the remaining information.
