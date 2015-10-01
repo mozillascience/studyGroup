@@ -231,6 +231,53 @@
 
 \section{Branching}
 
+\begin{frame}
+ \frametitle{Branches}
+
+ What are branches?
+ \begin{itemize}[<+->]
+  \item Divergent commits (two commits with the same parent) could be
+        considered ``virtual'' branches
+  \item Branches are simply a \alert{named pointer} to a commit
+  \item Branches automatically \emph{move forward} as commits are made
+ \end{itemize}
+ \pause[\thebeamerpauses]
+ Why use them?
+ \pause
+ \begin{itemize}[<+->]
+  \item They're cheap!
+  \item To keep experimental work apart
+  \item To separate trials
+  \item To ease collaboration
+ \end{itemize}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Branches}
+
+ Managing branches:
+ \begin{itemize}
+  \item \texttt{git branch <name> [commit]}
+  \item \texttt{git branch -d <name>}
+  \item \texttt{git branch [-l]}
+ \end{itemize}
+
+ \pause
+ Switching branches:
+ \begin{itemize}
+  \item \texttt{git checkout <branch name>}
+  \item \texttt{git checkout -b <branch name> [commit]} (Create and switch in one go)
+ \end{itemize}
+
+ \pause
+ Merging branches:
+ \begin{itemize}
+  \item \texttt{git merge <other branch name>}
+  \item \texttt{git merge \alert{-{}-ff-only} <other branch name>}
+  \item \texttt{git merge \alert{-{}-no-ff} <other branch name>}
+ \end{itemize}
+\end{frame}
+
 \section{Collaborating with Others}
 
 \part{Advanced Topics}
