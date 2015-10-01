@@ -245,7 +245,8 @@
  Why use them?
  \pause
  \begin{itemize}[<+->]
-  \item They're cheap!
+  \item They're cheap! Just pointers. No heavy changes, e.g., an extra
+        directory in svn.
   \item To keep experimental work apart
   \item To separate trials
   \item To ease collaboration
@@ -266,7 +267,8 @@
  Switching branches:
  \begin{itemize}
   \item \texttt{git checkout <branch name>}
-  \item \texttt{git checkout -b <branch name> [commit]} (Create and switch in one go)
+  \item \texttt{git checkout -b <branch name> [commit]} --- Create and switch
+        in one go
  \end{itemize}
 
  \pause
@@ -279,6 +281,44 @@
 \end{frame}
 
 \section{Collaborating with Others}
+
+\begin{frame}
+ \frametitle{Clones and Remotes}
+
+ Clones are complete copies of a repository's history (i.e., excluding the
+ index and working directory)
+ \pause
+ \begin{itemize}
+  \item \texttt{git clone <URI>}
+ \end{itemize}
+
+ \pause
+ Remotes are \emph{pointers} to other clones
+ \pause
+ \begin{itemize}
+  \item \texttt{git remote [-v]}
+  \item \texttt{git remote add <name> <URI>}
+  \item \texttt{git remote rm <name>}
+  \item Local branches can \emph{track} remote branches\\
+        \texttt{git branch -u <remote branch> <local branch>}
+ \end{itemize}
+
+ \pause
+ \emph{You} are responsible for syncing
+ \begin{itemize}
+  \item \texttt{git push [<remote>] [<branch>]}
+  \item \texttt{git fetch [<remote>]}
+  \item \texttt{git pull [<remote>]} --- \texttt{fetch} + \texttt{merge}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+ \vfill
+ \begin{center}
+  \LARGE \color{solarizedAccent} GitHub Example
+ \end{center}
+ \vfill
+\end{frame}
 
 \part{Advanced Topics}
 
