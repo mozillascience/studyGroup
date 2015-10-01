@@ -14,17 +14,12 @@ visible: true
 
 ## Recap: ##
 
-* Configure your git
-* Create a folder and create a git repository (`git init`; the saved
-  history of the folder and files) in that folder
-* Create a file and track it with git (`git add`), saving it to the
-  history (`git commit`)
-* Write a short bio in the file
-* Check what's going on in the folder (`git status`)
-* Compare the file with the one in the history (`git diff`)
-* Add the tracked file to the 'staging' area (`git add`; this is an
-  area *before* going into the history)
-* Save the file in the history (`git commit`)
+* Configure your git client (`git config user.name` + `user.email`)
+* Create a git repository (`git init`)
+* Start tracking a file with git (`git add`)
+* Commit changes to the history (`git commit`)
+* Check what's going on (`git status`)
+* Compare a file with the one in the history (`git diff`)
 * Look into your history (`git log`)
 
-
+Please follow along in the [slides](slides.pdf) for the remaining information.

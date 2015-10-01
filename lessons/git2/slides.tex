@@ -5,7 +5,7 @@
 \usepackage{lmodern,tgadventor}
 \usepackage{textcomp}
 \usepackage{tikz}
-\usetikzlibrary{backgrounds,decorations.text,fadings,trees}
+\usetikzlibrary{backgrounds,decorations.pathreplacing,decorations.text,fadings,trees}
 
 \useinnertheme{rectangles}
 \usecolortheme[accent=blue]{solarized}
@@ -111,14 +111,95 @@
  \frametitle{Review}
 
  \begin{itemize}
-  \item Configure your git client (\texttt{git config user.name/email})
+  \item Configure your git client (\texttt{git config user.name} + \texttt{user.email})
   \item Create a git repository (\texttt{git init})
   \pause
-  \item Start tracking a file with git (\texttt{git add})
-  \item Committing changes to the history (\texttt{git commit})
+  \begin{tikzpicture}[%
+    remember picture,
+    show background rectangle,
+    background rectangle/.style={draw, visible on=<2->},
+    visible on=<2->
+   ]
+   \begin{scope}[
+     every node/.style={anchor=west, minimum height=1em,
+                        font={\tiny\ttfamily}, inner sep=2.5pt},
+     every edge/.style={thick},
+     root/.style={},
+     grow via three points={one child at (0.25,-0.75em) and
+                            two children at (0.25,-0.75em) and (0.25,-1.25em)},
+     edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}
+    ]
+    \node[anchor=west, font={\scriptsize}, align=center]
+     at (0,0) (work) {Working\\Directory};
+    \node [root, anchor=north] at (work.south) (work root) {my\_project/}
+     child { node (git folder) {.git/} }
+     child { node (first folder) {foo/} }
+     child { node {bar/} }
+     child { node {baz.txt} }
+     child { node {qux.txt} }
+     child { node (last folder) {\dots} };
+   \end{scope}
+   \node[anchor=north west, font={\scriptsize}, xshift=4em]
+    at (work.north east) (repository) {Repository};
+   \begin{scope}[
+     every node/.style={anchor=west, minimum height=1em,
+                        font={\tiny\ttfamily}, inner sep=2.5pt},
+     every edge/.style={thick},
+     root/.style={},
+     grow via three points={one child at (0.25,-0.75em) and
+                            two children at (0.25,-0.75em) and (0.25,-1.25em)},
+     edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}
+    ]
+    \node[anchor=north, font={\scriptsize}, align=center]
+     at (repository.south) (index) {Index/\\Staging Area};
+    \node<3->[root, anchor=north, align=center]
+     at (index.south) (snapshot) {\color{solarizedAccent} (Snapshot)}
+     child { node {foo/} }
+     child { node {baz.txt} }
+     child { node {\dots} };
+   \end{scope}
+   \begin{scope}[
+     commit/.style={draw, rectangle, rounded corners, fill=solarizedRebase02,
+                    inner sep=1pt, minimum height=0.75em, minimum width=1em,
+                    font={\tiny\sffamily}},
+     connections/.style={draw}
+    ]
+    \node[anchor=west, font={\scriptsize}, align=center, xshift=1em] at (index.east)
+     (history) {History};
+    \matrix at (history.south)
+      [column sep={1em,between origins}, row sep={1em,between origins},
+       ampersand replacement=\&, yshift=-2.5em]%
+    {
+     \node[commit,visible on=<4->] (10) {\color{solarizedAccent} 10}; \\
+     \node[commit] (9) {9}; \\
+     \node[commit] (8) {8}; \\
+     \ghost{7}; \\
+    };
+    \path[connections, visible on=<4->] (9) -- (10);
+    \connect{8}{9};
+    \path[connections, densely dotted] (7) -- (8);
+   \end{scope}
+   \begin{scope}[
+     path/.style={->},
+     label/.style={decorate, decoration={text along path, text align=center,
+                                         text color=solarizedRebase0,
+                                         raise=1pt}}
+    ]
+    \draw[path] (git folder.east) to[out=0,in=180] (repository.west);
+    \draw (index.north west) rectangle (7.south -| history.east);
+    \draw<3->[decorate, decoration={brace, raise=0.75em, aspect=0.45}]
+      (first folder.east) |- (last folder.east) node[near start] (mid selection) {};
+    \draw<3->[path] (mid selection.east) + (0.6em,0) to[out=0,in=180] (snapshot.west);
+    \draw<4->[path] (snapshot.east) to[out=0,in=180] (10.west);
+   \end{scope}
+  \end{tikzpicture}
   \pause
-  \item Check what's going on in the folder (\texttt{git status})
-  \item Compare the file with the one in the history (\texttt{git diff})
+  \item Start tracking a file with git (\texttt{git add})
+  \pause
+  \item Commit changes to the history (\texttt{git commit})
+  \pause
+  \item Check what's going on (\texttt{git status})
+  \item Compare a file with the one in the history (\texttt{git diff})
   \item Look into your history (\texttt{git log})
  \end{itemize}
 \end{frame}
