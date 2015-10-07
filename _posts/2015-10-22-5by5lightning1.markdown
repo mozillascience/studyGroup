@@ -1,0 +1,11 @@
+---
+title: 5 by 5 Lightning SYSKA
+text: 5 presentations, 5 mins each on interesting topics with a chance to ask/discuss after each
+location: Billiard Room, Staff Club
+link: https://github.com/smilefreak/studyGroup/issues/18 
+date: 2015-10-28
+startTime: '15:30'
+endTime: '16:30'
+
+---
+
