@@ -3,6 +3,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
+              <a href="{{ site.github.url | replace:'http:','https:' }}/"><img class="site-avatar" src="{{ site.avatar }}" /></a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -19,13 +20,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{ site.github.url | replace:'http:','https:' }}#services">What We Do</a>
+                        <a class="page-scroll" href="{{ site.github.url | replace:'http:','https:' }}/#services">What We Do</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{ site.github.url | replace:'http:','https:' }}#portfolio">Events</a>
+                        <a class="page-scroll" href="{{ site.github.url | replace:'http:','https:' }}/#portfolio">Events</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{ site.github.url | replace:'http:','https:' }}#contact">Contact</a>
+                        <a class="page-scroll" href="{{ site.github.url | replace:'http:','https:' }}/#contact">Contact</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="{{ site.github.url | replace:'http:','https:' }}/lessons/">Lesson Content</a>
@@ -36,3 +37,4 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+
