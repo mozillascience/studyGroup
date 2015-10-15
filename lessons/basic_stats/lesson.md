@@ -3,9 +3,9 @@ layout: page
 title: 'Intro to Stats'
 visible: true
 ---
-  
-  # Introduction to Basic Stats in R #
-  
+
+## Introduction to Basic Stats in R ##
+
 - **Authors**: Lindsay Coome
 - **Research field**: Behavioural neuroendocrinology
 - **Lesson topic**: Basic Stats using R
