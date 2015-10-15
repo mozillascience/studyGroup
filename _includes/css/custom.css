@@ -27,3 +27,20 @@ body.sticky-footer footer {
  /* Set the fixed height of the footer here */
  height: 100px;
 }
+
+.site-avatar {
+  float: left;
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+}
