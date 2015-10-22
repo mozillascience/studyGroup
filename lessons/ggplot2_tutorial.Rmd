@@ -1,0 +1,181 @@
+---
+title : "ggplot2 Tutorial"
+author  : "Murray Cadzow"
+output  : html_document
+---
+
+
+
+Much of this tutorial is comprised of information from https://github.com/DataScienceSpecialization/courses/tree/master/04_ExploratoryAnalysis
+
+and
+
+https://www.rstudio.com/wp-content/uploads/2015/05/ggplot2-cheatsheet.pdf
+
+
+
+## Background
+
+-  ggplot2 is an implementation of 'The Grammar of Graphics' by Leland Wilkinson and sits alongside the __base__ and __lattice__ graphics systems in R
+
+- The basic idea is to __map__ from data to __aesthetic__ atributes (colour, shape, size) of __geometric__ obejects (points, lines, bars)
+
+### Base:
+
+- build and add to the plot
+- can't go backwards to adjust
+
+### Lattice:
+
+- entire plot created with single call
+- margins/spacing automatically set since entire plot is specified at once
+- really good for conditioning plots
+
+### ggplot2:
+
+- ggplot2 sits between __base__ and __lattice__ models for plotting
+- lots of defaults specified but you can customise
+
+## Basic Components of a ggplot2 Plot
+- A _data frame_
+- _aesthetic mappings_: how data are mapped to color, size 
+- _geoms_: geometric objects like points, lines, shapes. 
+- _facets_: for conditional plots. 
+- _stats_: statistical transformations like binning, quantiles, smoothing. 
+- _scales_: what scale an aesthetic map uses (example: male = red, female = blue). 
+- _coordinate system_ 
+
+
+## Getting started
+
+Make sure ggplot2 is installed and if it isn't install it
+
+```{r}
+#Make sure ggplot2 is installed
+if(!require("ggplot2")) {
+    install.packages("ggplot2")
+    library(ggplot2)
+  } 
+
+```
+
+We'll use the iris dataset for the examples
+```{r}
+data(iris)
+```
+
+### qplot()
+```{r}
+qplot(Sepal.Length, Sepal.Width, data= iris)
+```
+
+Modify aesthetics
+```{r}
+qplot(Sepal.Length, Sepal.Width, data= iris, colour = Species)
+```
+
+Add a geom
+```{r}
+qplot(Sepal.Length, Sepal.Width, data= iris, geom = c("point","smooth"))
+```
+
+### Moving from qplot() to ggplot()
+
+- setup plot with ggplot() and define aesthetics
+- add geom for points
+
+```{r}
+ggplot(data = iris, aes(x=Sepal.Length, y =Sepal.Width)) + 
+  geom_point()
+
+ggplot(data = iris, aes(x=Sepal.Length, y =Sepal.Width)) + 
+  geom_point(aes(size=Petal.Width, colour = Species)) +
+  geom_hline(yintercept = mean(iris$Sepal.Width)) +
+  coord_cartesian(xlim = c(0,9), ylim=c(0,5))
+```
+
+### Histogram
+```{r}
+ggplot(data = subset(iris, Species == "setosa"), aes(x=Sepal.Length)) + geom_histogram()
+
+```
+
+### Boxplots
+```{r}
+ggplot(data = iris, aes(x=Species, y=Sepal.Length)) + 
+  geom_boxplot()
+
+ggplot(data = iris, aes(x=Species, y=Sepal.Length)) + 
+  geom_boxplot(aes(colour=Species)) + 
+  geom_jitter()
+```
+
+### Facetting
+
+- wrap
+- grid
+
+```{r}
+ggplot(data = iris, aes(x=Sepal.Length, y =Sepal.Width)) + 
+  geom_point() + 
+  facet_grid(.~Species)
+
+ggplot(data = iris, aes(x=Sepal.Length, y =Sepal.Width)) + 
+  geom_point() + 
+  facet_grid(Species~.)
+
+ggplot(data = iris, aes(x=Sepal.Length, y =Sepal.Width)) + 
+  geom_point() + 
+  facet_wrap(~Species)
+
+```
+
+
+### Labels
+- ggtitle()
+- xlab()
+- ylab()
+- labs(title= "", x = "", y = "")
+
+### Themes
+- theme_bw()
+- theme_grey()
+- theme_classic()
+- theme_minimal()
+
+or change particular elements with __theme()__ and specify which __element__ to change
+
+```{r}
+ggplot(data = iris, aes(x=Sepal.Length, y =Sepal.Width)) + 
+  geom_point() +
+  ggtitle("Iris Sepal length vs Sepal width") +
+  xlab("Sepal Length (mm)")+
+  ylab("Sepal Width (mm)") +
+  theme_bw()
+```
+
+But with power comes responsibility...
+
+```{r}
+ggplot(data = iris, aes(x=Sepal.Length, y =Sepal.Width)) + 
+  geom_point(colour="yellow", shape='*', size = 10) +
+  ggtitle("Iris Sepal length vs Sepal width") +
+  xlab("Sepal Length (mm)")+
+  ylab("Sepal Width (mm)") +
+  theme_bw() +
+  theme(axis.text.x = element_text(size=16, angle = 45), 
+        axis.text.y = element_text(size=16), 
+        axis.title.x= element_text(size=18), 
+        axis.title.y = element_text(size=18),
+        plot.title = element_text(colour = "purple", face='bold'),
+        panel.grid.major = element_line(colour="red", linetype = "dashed", size = 3),
+        panel.grid.minor = element_line(colour='blue', linetype='dotted', size=2),
+        panel.background = element_rect(fill="#00FF00")) 
+```
+
+## Resources
+
+- http://docs.ggplot2.org/current/
+- http://www.statmethods.net/advgraphs/ggplot2.html
+- http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/
+- https://www.rstudio.com/wp-content/uploads/2015/05/ggplot2-cheatsheet.pdf
