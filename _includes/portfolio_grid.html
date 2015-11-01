@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Events</h2>
-                    <h3 class="section-subheading text-muted">Our upcoming and recent events:</h3>
+                    <h2 class="section-heading">{{site.data[site.language].events}}</h2>
+                    <h3 class="section-subheading text-muted">{{site.data[site.language].eventsSubheading}}</h3>
                 </div>
             </div>
             <div class="col-lg-12">
@@ -26,12 +26,12 @@
                 {% endif %}
               {% endfor %}
               {% if isEvent == 0 %}
-                <a class='eventTitle' href="{{ site.github.issues_url }}">Nothing yet! Propose an event here.</a>
+                <a class='eventTitle' href="{{ site.github.issues_url }}">{{site.data[site.language].eventPlaceholder}}</a>
               {% else %}
               <div class="row">
                     <div class="col-lg-12 text-center">
-                        <a href="{{ site.github.issues_url }}" class="btn btn-xl eventSuggest">Suggest an Event</a>
-                        <a href="http://mozillascience.github.io/studyGroupHandbook/event-types.html#workalong" class="btn btn-xl eventSuggest">How to Lead a Study Group Session</a>
+                        <a href="{{ site.github.issues_url }}" class="btn btn-xl eventSuggest">{{site.data[site.language].suggestEvent}}</a>
+                        <a href="http://mozillascience.github.io/studyGroupHandbook/event-types.html#workalong" class="btn btn-xl eventSuggest">{{site.data[site.language].leadership}}</a>
                     </div>
               </div>
               {% endif %}
@@ -42,19 +42,19 @@
             {% else %}
             <div class="col-lg-12">
             {% endif %}
-              <h3 class="section-heading eventInstructions">Want to be notified of our upcoming events?</h3>
-              <h3 class="section-subheading text-muted eventSubinstructions">Head over to <a href="{{ site.github.repository_url }}">GitHub</a> and watch our repository, like this:</h3>
+              <h3 class="section-heading eventInstructions">{{site.data[site.language].notification}}</h3>
+              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].watching}}</h3>
               <figure>
                 <img src="https://help.github.com/assets/images/help/notifications/watcher_picker.gif"></img>
-                <figcaption>Look in the top right-hand corner of <a href="{{ site.github.repository_url }}">our repo</a>, and click 'Watching.' <br>You can undo this at any time in the same place.</figcaption>
+                <figcaption>{{site.data[site.language].watchingCaption}}</figcaption>
               </figure>
             </div>
             {% if site.calendar_on %}
             <div class="col-lg-6">
-              <h3 class="section-heading eventInstructions">Subscribe to our events calendar!</h3>
-              <h3 class="section-subheading text-muted eventSubinstructions">We also invite you to follow <a href="{{ site.calendar_embed_url }}" target="_blank">our calendar</a>, where events will be posted. </h3>
-              <h3 class="section-subheading text-muted eventSubinstructions">If you use Google calendar, you can add our calendar by pressing the "Google Calendar" button at the bottom-right of <a href="{{ site.calendar_embed_url }}" target="_blank">this page</a>.</h3>
-              <h3 class="section-subheading text-muted eventSubinstructions">If you use another calendar app, you can copy and paste <a href="{{ site.calendar_ical_url }}">this address</a> into any calendar product that supports the iCal format.</h3>
+              <h3 class="section-heading eventInstructions">{{site.data[site.language].calendar}}</h3>
+              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].calendarSubheading}}</h3>
+              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].googleCalendar}}</h3>
+              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].iCal}}</h3>
             </div>
             {% endif %}
         </div>
