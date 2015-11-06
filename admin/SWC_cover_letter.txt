@@ -1,0 +1,20 @@
+Dear SCF Mentoring Subcommittee,
+
+We are writing to express our interested to attend the two-day training course in December 2015 as one group composed of:
+
+Madeleine Bonsma (@mbonsma on GitHub),
+Lindsay Coome (@lcoome on GitHub),
+NAME_OF_3RD_STUDENT (GITHUB_ID on GitHub),
+NAME_OF_4TH_STUDENT (GITHUB_ID on GitHub),
+NAME_OF_5TH_STUDENT (GITHUB_ID on GitHub) and
+NAME_OF_6TH_STUDENT (GITHUB_ID on GitHub).
+
+Madeleine Bonsma is the organizer of a scientific progamming peer learning group at the University of Toronto (University of Toronto Scientific Coders) and is on the waitlist for instructor training. Lindsay Coome is a session leader in the University of Toronto Scientific Coders group and is on the waitlist for instructor training. 
+
+NAME_OF_2ND_STUDENT attended a SCF workshop in 2015. NAME_OF_3RD_STUDENT attended a DC workshop in 2015. NAME_OF_1ST_STUDENT was a helper at the last SCF/DC workshop organized at our university that was lead by INSTRUCTOR_NAME.
+
+If we are selected for the instructor training we will use a seminar room in the Claude T. Bissell Building. We already made reservations for that room in advance.
+
+We are planing to organize two workshops at the beginning of 2016. One will be Python based and will have NAME_OF_1ST_STUDENT, NAME_OF_2ND_STUDENT, NAME_OF_4TH_STUDENT and NSTRUCTOR_NAME as instructors. The other one will be R based and will have NAME_OF_3RD_STUDENT, NAME_OF_5TH_STUDENT, NAME_OF_6TH_STUDENT and INSTRUCTOR_NAME as instructors. We will use the same room used for the last workshop and we already talked with INSTRUCTOR_NAME about those workshops. 
+
+Thanks for your consideration.
