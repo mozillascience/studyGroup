@@ -6,10 +6,10 @@ Madeleine Bonsma (@mbonsma on GitHub),
 Lindsay Coome (@lcoome on GitHub),
 Lina Tran (@linamnt on Github),
 Sarah Meister (@thesarahmeister on GitHub),
-NAME_OF_5TH_STUDENT (GITHUB_ID on GitHub) and
+Elliott Sales de Andrade (@QuLogic on GitHub) and
 NAME_OF_6TH_STUDENT (GITHUB_ID on GitHub).
 
-Madeleine Bonsma is the organizer of a scientific progamming peer learning group at the University of Toronto (University of Toronto Scientific Coders - uoftcoders.github.io) and is on the waitlist for instructor training. Lindsay Coome is a session leader in the University of Toronto Scientific Coders group and is on the waitlist for instructor training. Lina Tran is an organizer and member of the University of Toronto Scientific Coders group. Sarah Meister is a session leader in the Scientific Coders group. 
+Madeleine Bonsma is the organizer of a scientific progamming peer learning group at the University of Toronto (University of Toronto Scientific Coders - uoftcoders.github.io) and is on the waitlist for instructor training. Lindsay Coome is a session leader in the University of Toronto Scientific Coders group and is on the waitlist for instructor training. Lina Tran is an organizer and member of the University of Toronto Scientific Coders group. Sarah Meister is a session leader in the Scientific Coders group. Elliott Sales de Andrade is an organizer and member of the University of Toronto Scientific Coders group.
 
 If we are selected for the instructor training we will use a seminar room in the Ontario Institute for Studies in Education (OI 2198 on Dec 7 and OI 8201 on Dec 8). We have confirmed reservations for these rooms. 
 
