@@ -33,6 +33,11 @@
   interests:
     - C++
     - Fortran90
+  
+- name: Derek Howard
+  github: derekhoward
+  interests:
+    - Python
 
 - name: Lanna S Jin
   degree: PhD, Ecology &amp; Evolutionary Biology
