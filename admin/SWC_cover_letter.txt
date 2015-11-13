@@ -6,10 +6,13 @@ Madeleine Bonsma (@mbonsma on GitHub),
 Lindsay Coome (@lcoome on GitHub),
 Lina Tran (@linamnt on Github),
 Sarah Meister (@thesarahmeister on GitHub),
-Elliott Sales de Andrade (@QuLogic on GitHub) and
-Ricardo Harripaul (@ricardoharripaul on GitHub).
+Elliott Sales de Andrade (@QuLogic on GitHub),
+Ricardo Harripaul (@ricardoharripaul on GitHub), and
+Derek Howard (@derekhoward on Github).
 
-Madeleine Bonsma is the organizer of a scientific progamming peer learning group at the University of Toronto (University of Toronto Scientific Coders - uoftcoders.github.io) and is on the waitlist for instructor training. Lindsay Coome is a session leader in the University of Toronto Scientific Coders group and is on the waitlist for instructor training. Lina Tran is an organizer and member of the University of Toronto Scientific Coders group. Sarah Meister is a session leader in the Scientific Coders group. Ricardo Harripaul is a session leader in the Scientific Coders group. Elliott Sales de Andrade is an organizer and member of the University of Toronto Scientific Coders group.
+Madeleine Bonsma is the organizer of a scientific progamming peer learning group at the University of Toronto (University of Toronto Scientific Coders - uoftcoders.github.io) and is on the waitlist for instructor training. Lindsay Coome is a session leader in the University of Toronto Scientific Coders group and attended a Software Carpentry workshop at SickKids Hospital in 2015. She is also on the waitlist for instructor training. Lina Tran is an organizer and member of the University of Toronto Scientific Coders group and attended a Software Carpentry workshop at SickKids Hospital in 2015. Sarah Meister is a session leader in the Scientific Coders group. Elliott Sales de Andrade is an organizer and member of the University of Toronto Scientific Coders group. Ricardo Harripaul is a session leader in the Scientific Coders group. Derek Howard is a member of the University of Toronto Scientific Coders group and previously went through SCW training but never completed his last pull request to improve the Python lesson.
+
+The University of Toronto Scientific Coders group will provide ongoing support and practice opportunities for SWC participants after-the-fact, ensuring that concepts learned can be effectively retained. 
 
 If we are selected for the instructor training we will use a seminar room in the Ontario Institute for Studies in Education (OI 2198 on Dec 7 and OI 8201 on Dec 8). We have confirmed reservations for these rooms. 
 
