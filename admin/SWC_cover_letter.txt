@@ -18,6 +18,6 @@ This group includes representatives from three programming user groups based at 
 
 If we are selected for the instructor training we will use a seminar room in the Ontario Institute for Studies in Education (OI 2198 on Dec 7 and OI 8201 on Dec 8). We have confirmed reservations for these rooms. 
 
-We are planing to organize three workshops at the beginning of 2016. One will be Python based and will have Madeleine Bonsma, Lina Tran, Elliot Sales de Andrade, Ricardo Harripaul, Derek Howard, and Dawn Walker as instructors. The second will be R based and will have Lindsay Coome, Sarah Meister, Lina Tran, and Erin Dickie as instructors. For the Python workshop, we will use the same room as used by UofT AIS for the last SWC workshop. The R workshop will be held in a room in OISE booked using the UofT Scientific Coders' status as a recognized campus group. 
+We are planning to organize three workshops at the beginning of 2016. One will be Python based and will have Madeleine Bonsma, Lina Tran, Elliott Sales de Andrade, Ricardo Harripaul, Derek Howard, and Dawn Walker as instructors. The second will be R based and will have Lindsay Coome, Sarah Meister, Lina Tran, and Erin Dickie as instructors. For the Python workshop, we will use the same room as used by UofT AIS for the last SWC workshop. The R workshop will be held in a room in OISE booked using the UofT Scientific Coders' status as a recognized campus group. 
 
 Thanks for your consideration.
