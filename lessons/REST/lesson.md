@@ -12,5 +12,5 @@ visible: false
  - **Lesson topic**: Get data from RESTful web services
  - **Lesson content URL**: <link>
 
-This lesson covers modern web 2.0 framework. I have attached a PDF file and an example code for REST.
+This lesson covers modern web 2.0 framework. I have attached a tex file and an example code for REST.
 
