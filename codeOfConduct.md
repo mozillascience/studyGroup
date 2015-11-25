@@ -1,3 +1,5 @@
+###[Leia isto em Português](https://github.com/mozillascience/studyGroup/blob/gh-pages/codeOfConduct-pt.md)
+
 # Code of Conduct
 
 Study Group events are community events intended for networking and collaboration as well as learning. We value the participation of every member of the scientific community and want all attendees to have an enjoyable and fulfilling experience. Accordingly, all attendees are expected to show respect and courtesy to other attendees throughout the event and in interactions online associated with Study Group.
