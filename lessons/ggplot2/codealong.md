@@ -45,6 +45,7 @@ Some of these geometries have their own particular aesthetics. For instance:
 
 ## R code ##
 
+```{r}
 library(ggplot2)
 
 summary(mpg)
@@ -79,5 +80,5 @@ mtcars %>%
   cor() %>%
   melt() %>%
   ggplot(aes(x=Var1, y=Var2, color=value)) + geom_point()
-
   
+```
