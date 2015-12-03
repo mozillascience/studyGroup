@@ -1,3 +1,9 @@
+---
+layout: page
+title: ggplot2
+visible: true
+---
+
 ### What is ggplot2? ###
 
 ggplot2 is meant to be an implementation of the Grammar of Graphics, hence gg-plot. The basic notion is that there is a grammar to the composition of graphical components in statistical graphics, and by direcly controlling that grammar, you can generate a large set of carefully constructed graphics tailored to your particular needs. Each component is added to the plot as a layer. 
