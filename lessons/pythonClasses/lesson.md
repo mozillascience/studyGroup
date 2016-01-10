@@ -12,31 +12,14 @@ visible: true
  - **Lesson topic**: Object Oriented Programming with Python
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pythonClasses>
 
+## Topics Covered:
+- Defining a Class
+- Creating Instances of a Class
+- Attributes
+ + Class Attributes vs. Normal Attributes
+- Methods
+ + Static Methods
+ + Class Methods
+- Inheritance
 
- 
- 
-# Use the markdown syntax:
-
-If you want to include code blocks, please with indent with **four
-spaces** (not a tab) like so:
-
-    Code here
-
-Or you can use three tilde's:
-
-~~~
-Code here
-~~~
-
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-**bolding** and *italizing*
-
-Inline `code`
-
-[links](url)
+Refer to [this iPython Notebook](http://localhost:8888/notebooks/Documents/Personal/studyGroup/lessons/pythonClasses/Classes%20in%20Python.ipynb) to follow along.
