@@ -13,6 +13,7 @@ visible: true
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pythonClasses>
 
 ## Topics Covered:
+
 - Defining a Class
 - Creating Instances of a Class
 - Attributes
@@ -23,10 +24,12 @@ visible: true
 - Inheritance
 
 ### What You Will Need
+
 - Python 2.7, or 3.3+ installed
 - Download the files for [this lesson](https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pythonClasses)
 
 If you'd like to follow along in IPython Notebook, do the following:
+
   - Install [Jupyter Notebook](http://jupyter.readthedocs.org/en/latest/install.html)
   - Run the notebook by typing `jupyter notebook` into command line.
   - In the web application that opens, navigate to the folder containing the files you downloaded, and open 'Classes in Python.ipynb' to follow along.
