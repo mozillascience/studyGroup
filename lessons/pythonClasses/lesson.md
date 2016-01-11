@@ -25,7 +25,7 @@ visible: true
 
 ### What You Will Need
 
-- Python 2.7, or 3.3+ installed
+- Python 2.7, or 3.4+ installed
 - Download the files for [this lesson](https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pythonClasses)
 
 If you'd like to follow along in IPython Notebook, do the following:
