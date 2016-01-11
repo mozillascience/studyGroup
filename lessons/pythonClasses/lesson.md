@@ -22,4 +22,9 @@ visible: true
  + Class Methods
 - Inheritance
 
-Refer to [this iPython Notebook](http://localhost:8888/notebooks/Documents/Personal/studyGroup/lessons/pythonClasses/Classes%20in%20Python.ipynb) to follow along.
+### What You Will Need
+1. Python 2.7, or 3.3+ installed
+2. [Jupyter Notebook](http://jupyter.readthedocs.org/en/latest/install.html)
+3. Download the files for [this lesson](https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pythonClasses)
+3. Run the notebook by typing `jupyter notebook` into command line.
+4. In the web application that opens, navigate to the folder containing the files you downloaded, and open the Classes in Python notebook to follow along.
