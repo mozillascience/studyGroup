@@ -23,8 +23,11 @@ visible: true
 - Inheritance
 
 ### What You Will Need
-1. Python 2.7, or 3.3+ installed
-2. [Jupyter Notebook](http://jupyter.readthedocs.org/en/latest/install.html)
-3. Download the files for [this lesson](https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pythonClasses)
-3. Run the notebook by typing `jupyter notebook` into command line.
-4. In the web application that opens, navigate to the folder containing the files you downloaded, and open the Classes in Python notebook to follow along.
+- Python 2.7, or 3.3+ installed
+- Download the files for [this lesson](https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pythonClasses)
+If you'd like to follow along in IPython Notebook, do the following:
+ + [Jupyter Notebook](http://jupyter.readthedocs.org/en/latest/install.html)
+ + Run the notebook by typing `jupyter notebook` into command line.
+ + In the web application that opens, navigate to the folder containing the files you downloaded, and open 'Classes in Python.ipynb' to follow along.
+Otherwise, you can follow along in your favourite IDE or command line. 
+
