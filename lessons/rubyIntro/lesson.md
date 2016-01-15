@@ -6,16 +6,16 @@ visible: true
 
 # Introduction to Ruby (for beginners)
 
-**Authors**: Jenna Blumenthal
-**Research field**: Mechanical & Industrial Engineering
-**Lesson topic**: Introduction to Ruby
-**Lesson content URL**: https://github.com/jennaleeb/ruby_workshop
+- **Authors**: Jenna Blumenthal
+- **Research field**: Mechanical & Industrial Engineering
+- **Lesson topic**: Introduction to Ruby
+- **Lesson content URL**: <https://github.com/jennaleeb/ruby_workshop>
 
 This is a very basic introduction to Ruby directed for those without much programming experience. It will cover using the terminal and interative ruby shell (IRB), data types, objects/classes, methods, conditional logic, and running a program from a file in the terminal.
 
 Content source:
 ---------------
-Based on the (workshop)[https://github.com/ladieslearningcode/Ruby] developed by (Dessy Deskalov)[https://twitter.com/dess_e] for (Ladies Learning Code)[http://ladieslearningcode.com/]
+Based on the [**workshop**](https://github.com/ladieslearningcode/Ruby) developed by [Dessy Deskalov](https://twitter.com/dess_e) for [Ladies Learning Code](http://ladieslearningcode.com/)
 
 Agenda
 ------
@@ -56,6 +56,7 @@ The IRB ("Interactive Ruby Shell") is an interactive command-line interpreter th
 ### Windows
 
 (C:\\windows\\system32\\cmd.exe)
+    
     Start -> All Programs -> Accessories -> Command Prompt
 
 Using IRB (Interactive Ruby)
@@ -63,31 +64,31 @@ Using IRB (Interactive Ruby)
 
 Type IRB into the console
 
-irb
+    irb
 
 Then you'll see somthing like this:
 
-ruby-1.9.2-p290 :001 >
+    ruby-1.9.2-p290 :001 >
 
 What can Ruby do?
 -----------------
 
 Try typing:
 
-irb(main):001:0>puts "Hello World"
-      Hello World
-      => nil
+    irb(main):001:0>puts "Hello World"
+        Hello World
+        => nil
 
 `puts` is the basic command to print something out in Ruby.
 `=> nill` is the result of the expression.
 
 Math:
 
-> 1 + 1
-=> 2
+    > 1 + 1
+    => 2
 
-> 462 * 86
-=> 39732
+    > 462 * 86
+    => 39732
 
 Data Types
 ==========
@@ -115,19 +116,19 @@ How do Variables Work?
 
 What if we want to remember the result of some of this math? Assign the result to a variable.
 
-        irb(main):007:0> a = 3 ** 2 
-=> 9 
-irb(main):007:0> b = 4 ** 2
-=> 16
-irb(main):007:0> Math.sqrt(a+b)
-=> 5.0
+    irb(main):007:0> a = 3 ** 2 
+    => 9 
+    irb(main):007:0> b = 4 ** 2
+    => 16
+    irb(main):007:0> Math.sqrt(a+b)
+    => 5.0
         
       
 
 We can also assign a String to a variable
 
-        irb(main):007:0> my_name = "John Doe" 
- => "John Doe" 
+    irb(main):007:0> my_name = "John Doe" 
+     => "John Doe" 
       
 
 Telling Ruby the `variable` **my\_name** points to the `string` "**John Doe**".
@@ -195,14 +196,14 @@ You can call **capitalize**, **upcase**, and **reverse** on ALL `Objects` that a
 Playing with Integers
 ---------------------
 
-> 99.zero?
-=> false
+    > 99.zero?
+    => false
 
-> 99.odd?
-=> true
+    > 99.odd?
+    => true
 
-> 99.even?
-=> false
+    > 99.even?
+    => false
 
 Another example
 ---------------
@@ -210,12 +211,12 @@ Another example
     > title = "Peter Rabbit"
     > title.reverse
 
-|                                                 |                                                                                               |
-|-------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| What am I supposed to do with this object?      | reverse                                                                                       |
-| Do I know how to do that action on this object? | Yes! The `String` class defines a method **reverse** and returns the string in reverse order. |
+ | 
+ --- | ---
+What am I supposed to do with this object? | `reverse`
+Do I know how to do that action on this object? | Yes! The `String` class defines a method **reverse** and returns the string in reverse order.
 
-=>"tibbaR reteP"
+    =>"tibbaR reteP"
 
 Fun with strings
 ----------------
@@ -238,12 +239,12 @@ Method Errors
     > myNumber = 123
     > myNumber.reverse
 
-|                                                 |                                                                 |
-|-------------------------------------------------|-----------------------------------------------------------------|
-| What am I supposed to do with this object?      | reverse                                                         |
-| Do I know how to do that action on this object? | No. The **Integer** class does not define a method **reverse**. |
+ | 
+--- | ---
+What am I supposed to do with this object? | `reverse`
+Do I know how to do that action on this object? | No. The **Integer** class does not define a method **reverse**.
 
-=> NoMethodError: undefined method `reverse' for 123:Fixnum
+    => NoMethodError: undefined method `reverse' for 123:Fixnum
         from (irb):1
         from :0
       
@@ -253,18 +254,18 @@ Methods and Objects and Classes, Oh My!
 
 How can I find the class of my object?
 
-> mysteryObject = "What am I?"
-> mysteryObject.class
-=> String
+    > mysteryObject = "What am I?"
+    > mysteryObject.class
+    => String
 
 How do I know what methods I can call on my object?
 
-> mysteryObject.methods
-=> ["upcase!", "zip", "pretty_print_cycle"....]
+    > mysteryObject.methods
+    => ["upcase!", "zip", "pretty_print_cycle"....]
 
 How do I know what those methods do?
 
-Look them up [here](http://ruby-doc.org/)
+Look them up [**here**](http://ruby-doc.org/)
 
 Built-in Classes
 ----------------
@@ -273,7 +274,7 @@ Ruby comes with many built-in classes that we can use.
 
 `String`, `Integer`, `File`, `Hash`, `Array`...
 
-You can read about all the built-in objects [here](http://www.ruby-doc.org/core-2.0/)
+You can read about all the built-in objects [**here**](http://www.ruby-doc.org/core-2.0/)
 
 Custom Classes
 --------------
@@ -282,25 +283,25 @@ What if we want to define our own class?
 
 Let's return to the `method` **hi** we wrote (and improve it)
 
-irb(main):010:0> def hi(name) 
-irb(main):011:1>   puts "Hello #{name}!" 
-irb(main):012:1> end 
-=> :hi
+    irb(main):010:0> def hi(name) 
+    irb(main):011:1>   puts "Hello #{name}!" 
+    irb(main):012:1> end 
+    => :hi
 
 The `method` **hi** takes the **name** as a `parameter`.
 
 `#{name}` is Ruby's way of inserting something into a string
 
-        irb(main):024:0> class Greeter
-irb(main):025:1>   def initialize(name)
-irb(main):026:2>     @name = name
-irb(main):027:2>   end
-
-irb(main):028:1>   def say_hi
-irb(main):029:2>     puts "Hi #{@name}!"
-irb(main):030:2>   end
-irb(main):034:1> end
-=> nil
+    irb(main):024:0> class Greeter
+    irb(main):025:1>   def initialize(name)
+    irb(main):026:2>     @name = name
+    irb(main):027:2>   end
+    
+    irb(main):028:1>   def say_hi
+    irb(main):029:2>     puts "Hi #{@name}!"
+    irb(main):030:2>   end
+    irb(main):034:1> end
+    => nil
       
 
 The new keyword here is `class`. This defines a new class called Greeter and a bunch of methods for that class. Also notice `@name`. This is an instance variable, and is available to all the methods of the class. As you can see it’s used by `say_hi`.
@@ -310,11 +311,11 @@ Custom Classes
 
 Lets create a **Greeter** object and use it:
 
-irb(main):035:0> greeter = Greeter.new("Pat")
-=> #
-irb(main):036:0> greeter.say_hi
-Hi Pat!
-=> nil
+    irb(main):035:0> greeter = Greeter.new("Pat")
+    => #
+    irb(main):036:0> greeter.say_hi
+    Hi Pat!
+    => nil
 
 The method `new` is a unique type of method, which is predefined in the Ruby library. The new method belongs to the class methods. The `initialize` method is a special type of method, which will be executed when the `new` method of the class is called with parameters.
 
@@ -323,29 +324,29 @@ Custom Classes: Exercise
 
 Let's make a class `Calculator` that has the methods `add` and `subtract`
 
-irb(main):035:0> my_calculator = Calculator.new
-=> # 
-irb(main):036:0> my_calculator.add(5,2)
-7
-=> nil
-irb(main):036:0> my_calculator.subtract(5,2)
-3
-=> nil
+    irb(main):035:0> my_calculator = Calculator.new
+    => # 
+    irb(main):036:0> my_calculator.add(5,2)
+    7
+    => nil
+    irb(main):036:0> my_calculator.subtract(5,2)
+    3
+    => nil
 
 Custom Classes: Solution
 ------------------------
 
-                    irb(main):024:0> class Calculator
-
-irb(main):025:1>   def add(x,y)
-irb(main):026:2>     puts x + y
-irb(main):027:2>   end
-
-irb(main):028:1>   def subtract(x,y)
-irb(main):029:2>     puts x - y
-irb(main):030:2>   end
-irb(main):034:1> end
-=> nil
+    irb(main):024:0> class Calculator
+    
+    irb(main):025:1>   def add(x,y)
+    irb(main):026:2>     puts x + y
+    irb(main):027:2>   end
+    
+    irb(main):028:1>   def subtract(x,y)
+    irb(main):029:2>     puts x - y
+    irb(main):030:2>   end
+    irb(main):034:1> end
+    => nil
 
 Writing a Program
 -----------------
@@ -379,9 +380,9 @@ The **puts** `method` is used for output, and the **gets** `method` is used for 
 The gets `method` warns Ruby that you're about to speak.
 
     > tweet = gets
- all-string
-I'm learning Ruby with #ladieslearningcode
-
+     all-string
+    I'm learning Ruby with #ladieslearningcode
+    
     => "I'm learning Ruby with #ladieslearningcode\n"
 
 Wait, we didn't type \\n in our tweet. What is that?
@@ -392,9 +393,9 @@ Asking for Input
 The \\n is there because you hit the enter button after you typed your tweet. It represents a new line, and counts as exactly one character. To get rid of it, do this:
 
     > tweet = gets.chomp
- all-string
-I'm learning Ruby with #ladieslearningcode
-
+     all-string
+    I'm learning Ruby with #ladieslearningcode
+    
     => "I'm learning Ruby with #ladieslearningcode"
 
 Asking for Input
@@ -403,15 +404,15 @@ Asking for Input
 Now try this:
 
     > tweet = gets.chomp
- all-string
-I'm a lady learning code with @learningcode #ladieslearningcode
+     all-string
+    I'm a lady learning code with @learningcode #ladieslearningcode
 
     => "I'm a lady learning code with @learningcode #ladieslearningcode"
 
     > puts tweet
- all-string
-I'm a lady learning code with @learningcode #ladieslearningcode
-=> nil
+     all-string
+    I'm a lady learning code with @learningcode #ladieslearningcode
+    => nil
 
 Back to your Twitter Program
 ----------------------------
@@ -477,11 +478,11 @@ Logical operators
 
     > 200 > 140
 
-=> true
-
-> 200 < 140
-
-=> false
+    => true
+    
+    > 200 < 140
+    
+    => false
 
 Conditional Logic: IF Statements
 --------------------------------
@@ -492,7 +493,7 @@ Try the code below in IRB:
     >  puts true
     >end
 
-=> true
+    => true
 
 Conditional Logic: IF/ELSE Statements
 -------------------------------------
@@ -505,7 +506,7 @@ Try the code below in IRB:
       puts false
     >end
 
-=> true
+    => true
 
 Conditional Logic in Our Simple Twitter
 ---------------------------------------
