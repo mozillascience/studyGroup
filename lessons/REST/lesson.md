@@ -1,6 +1,6 @@
 ---
 layout: page
-title: RESTful Webservices in Science
+title: RESTful Web Services in Science
 visible: true
 ---
 <!-- change visible to true if you want it on the site -->
