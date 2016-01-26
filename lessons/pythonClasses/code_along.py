@@ -65,10 +65,10 @@ Jane_Defoe.make_money_sound()
 Client.bank_location()
 
 class Savings(Client):
-    interest = 0.001       
+    interest_rate = 0.001       
     
-    def add_interest(self):
-        self.balance += self.balance*self.interest
+    def update_balance(self):
+        self.balance += self.balance*self.interest_rate
         return self.balance
 
 # create an instance the same way as a Client but this time by calling Savings 
@@ -76,7 +76,7 @@ class Savings(Client):
 Lina_Tran = Savings("Lina Tran", 50) 
 
 # it now has access to the new attributes and methods in Savings...
-Lina_Tran.add_interest()
+Lina_Tran.update_balance()
 
 # ...as well as access to attributes and methods from the Client class
 Lina_Tran.deposit(200)
