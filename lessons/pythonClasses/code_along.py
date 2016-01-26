@@ -51,9 +51,11 @@ John_Doe.email = "jdoe23@gmail.com"
 John_Doe.email = "johndoe23@gmail.com"
 del John_Doe.email
 
+# try calling these attributes at the class and instance level
 Client.bank
 Jane_Defoe.location
 
+# Try calling a method two different ways
 John_Doe.withdraw(100)
 Client.withdraw(John_Doe, 100)
 
@@ -63,18 +65,28 @@ Jane_Defoe.make_money_sound()
 Client.bank_location()
 
 class Savings(Client):
-    interest = 0.001
-
-#    def __init__(self, name, balance, email):
-#        super(Savings, self).__init__(name, balance)
-#        self.email = email        
+    interest = 0.001       
     
     def add_interest(self):
         self.balance += self.balance*self.interest
         return self.balance
-        
+
+# create an instance the same way as a Client but this time by calling Savings 
+# instead        
 Lina_Tran = Savings("Lina Tran", 50) 
 
+# it now has access to the new attributes and methods in Savings...
 Lina_Tran.add_interest()
 
+# ...as well as access to attributes and methods from the Client class
 Lina_Tran.deposit(200)
+print Lina_Tran.name
+print Lina_Tran.balance
+
+#defining a method outside the class definition
+def check_balance(self):
+    return self.balance
+
+Client.check_balance = check_balance
+
+John_Doe.check_balance()
