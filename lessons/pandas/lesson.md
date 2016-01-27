@@ -130,7 +130,7 @@ grouped = probedata.groupby(['Group']).mean()
 grouped
 ~~~
 
-~~~
+
     import matplotlib.pylab as plt
     import seaborn as sns
     
@@ -142,4 +142,4 @@ grouped
     locs, labels = plt.xticks()
     plt.setp(labels,rotation=0)
     plt.show()
-~~~
+
