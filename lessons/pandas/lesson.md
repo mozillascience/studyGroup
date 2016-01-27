@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Intro to Pandas DataFrames
-visible: true---
+visible: true
+---
 <!-- change visible to true if you want it on the site -->
 
 # Intro to Pandas DataFrames
