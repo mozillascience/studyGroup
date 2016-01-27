@@ -1,11 +1,10 @@
 ---
 layout: page
-title:
-visible: false
----
+title: Intro to Pandas DataFrames
+visible: true---
 <!-- change visible to true if you want it on the site -->
 
-# Intro to Pandas
+# Intro to Pandas DataFrames
 
  - **Authors**: Dano Morrison
  - **Research field**: Neuroscience
