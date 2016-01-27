@@ -111,9 +111,9 @@ pd.concat([movies,movies])
 Pandas.GroupBy is a great function that allows you to process your data in many different ways without having to get fancy or write any loops.
 
 Essentially, it carries out three different steps:
--Splitting: the data into different groups [eg. treatment condition].
--Applying: some function to your data [eg. mean].
--Combining: the results back into another DataFrame.
+- *Splitting*: the data into different groups [eg. treatment condition].
+- *Applying*: some function to your data [eg. mean].
+- *Combining*: the results back into another DataFrame.
 
 In my work, this function was extremely useful when I wanted to obtain the mean *time spent in target zone* for each of my treatment groups
 
