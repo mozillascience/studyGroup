@@ -3,6 +3,7 @@ layout: page
 title: Intro to Pandas DataFrames
 visible: true
 ---
+
 <!-- change visible to true if you want it on the site -->
 
 # Intro to Pandas DataFrames
@@ -10,7 +11,7 @@ visible: true
  - **Authors**: Dano Morrison
  - **Research field**: Neuroscience
  - **Lesson topic**: Usage of Pandas DataFrames for data analysis
- 
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pandas>
 
 # Intro to Pandas DataFrames
 
@@ -112,11 +113,11 @@ Pandas.GroupBy is a great function that allows you to process your data in many 
 
 Essentially, it carries out three different steps:
 
-**Splitting** the data into different groups [eg. treatment condition]
+**-Splitting** the data into different groups [eg. treatment condition]
 
-**Applying** some function to your data [eg. mean]
+**-Applying** some function to your data [eg. mean]
 
-**Combining** the results back into another DataFrame
+**-Combining** the results back into another DataFrame
 
 In my work, this function was extremely useful when I wanted to obtain the mean *time spent in target zone* for each of my treatment groups
 
