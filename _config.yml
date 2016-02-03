@@ -45,3 +45,4 @@ color:
 # Build settings
 markdown: kramdown
 permalink: pretty
+future: true
