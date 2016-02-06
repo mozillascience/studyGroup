@@ -21,6 +21,7 @@ eventsSubheading: Our upcoming and recent events
 eventPlaceholder: Nothing yet! Propose an event here.
 suggestEvent: Suggest an Event
 leadership: How to lead a Study Group session
+pastEvents: See Our Past Events
 
 notification: Want to be notified of our upcoming events?
 watching: 'Head over to <a href="{{ site.github.repository_url }}">GitHub</a> and watch our repository, like this:'

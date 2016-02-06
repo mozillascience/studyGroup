@@ -21,6 +21,7 @@ eventsSubheading: Nossos próximos eventos
 eventPlaceholder: Nada ainda! Proponha um evento aqui.
 suggestEvent: Sugira um evento
 leadership: Como mediar um Grupo de Estudos
+pastEvents: See Our Past Events
 
 notification: Quer ser notificado dos eventos?
 watching: 'Vá até <a href="{{ site.github.repository_url }}">GitHub</a> e acompanhe nosso respositório, assim:'
