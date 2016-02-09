@@ -29,6 +29,8 @@ To For Loop or not to For Loop? Learn different ways to make use of for loops as
 
 Once you have these set up, make sure to install the following packages (gapminder, dplyr, & microbenchmark) either through Tools > Install Packages in RStudio, or in the console:
 
-`install.packages('gapminder')`
-`install.packages('dplyr')`
-`install.packages('microbenchmark')`
+```
+install.packages('gapminder')
+install.packages('dplyr')
+install.packages('microbenchmark')
+```
