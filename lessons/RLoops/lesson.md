@@ -34,3 +34,5 @@ install.packages('gapminder')
 install.packages('dplyr')
 install.packages('microbenchmark')
 ```
+
+[**Here is the lesson material with the R output**](https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/RLoops/HighPerformanceLoops.html)
