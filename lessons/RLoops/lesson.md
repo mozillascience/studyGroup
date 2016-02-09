@@ -1,6 +1,6 @@
 ---
 layout: page
-title:
+title: For Loops in R
 visible: true
 ---
 <!-- change visible to true if you want it on the site -->
