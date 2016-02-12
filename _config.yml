@@ -2,8 +2,8 @@
 #Follow these 2 steps to set up your site.
 
 #Step 1: give your study group a name and a short description:
-title: Our Study Group
-description: "A study group."
+title: Genomics Hacky Hour
+description: "A study group for post graduate students and researchers working on Next Generation Sequencing data."
 
 #Step 2: press the green 'Commit Changes' button at the bottom of this page.
 
@@ -16,9 +16,9 @@ description: "A study group."
 # Optional Configuration
 # None of these things need to be changed - but feel free!
 
-titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
-headlineSmall: "Welcome To Our Study Group!"
-headlineMain: "Let's Work Together"
+titleBackground: "https://raw.githubusercontent.com/anelda/GenomicsHackyHour/gh-pages/img/technology-785742_1280.jpg"
+headlineSmall: "Welcome To The Genomics Hacky Hour!"
+headlineMain: "Sharing our knowledge to improve our science"
 
 # Setup Google Calendar
 # Usage:
@@ -26,9 +26,9 @@ headlineMain: "Let's Work Together"
 # 2. change 'USER' in the example urls below to the username of the google account you made for your calendar
 # 3. set calendar_on: True.
 
-calendar_on: False
-calendar_embed_url: "https://www.google.com/calendar/embed?src=USER@gmail.com"
-calendar_ical_url: "https://www.google.com/calendar/ical/USER@gmail.com/public/basic.ics"
+calendar_on: True
+calendar_embed_url: "https://www.google.com/calendar/embed?src=genomicshack@gmail.com"
+calendar_ical_url: "https://www.google.com/calendar/ical/genomicshack@gmail.com/public/basic.ics"
 
 
 #========================================
@@ -36,11 +36,11 @@ calendar_ical_url: "https://www.google.com/calendar/ical/USER@gmail.com/public/b
 #========================================
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: fed136
-  secondary: fec503
+  primary: 248F24
+  secondary: CF0000
   secondary-dark: 333
 
 # Build settings
 markdown: kramdown
 permalink: pretty
-future: true
+future: True

@@ -1,0 +1,9 @@
+---
+title: Genomics Hacky Hour Meeting
+text: Talking about evaluating NGS data quality from a FASTQC report as well as NGS study design
+location: Room 307, Building D1, Hoffman Street, Potchefstroom
+link: https://github.com/anelda/GenomicsHackyHour/issues/3
+date: 2015-09-22
+startTime: '10:00'
+endTime: '12:00'
+---
