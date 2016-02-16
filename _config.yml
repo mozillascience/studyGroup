@@ -1,9 +1,11 @@
 #Setup ~~~
 #Follow these 2 steps to set up your site.
 
-#Step 1: give your study group a name and a short description:
+#Step 1: give your study group a name and a short description,
+#and choose a language from the options in the _data directory:
 title: Our Study Group
 description: "A study group."
+language: en
 
 #Step 2: press the green 'Commit Changes' button at the bottom of this page.
 
@@ -22,7 +24,7 @@ headlineMain: "Let's Work Together"
 
 # Setup Google Calendar
 # Usage:
-# 1. create a new google account
+# 1. create a new google account; set the calendar to 'public'
 # 2. change 'USER' in the example urls below to the username of the google account you made for your calendar
 # 3. set calendar_on: True.
 
@@ -43,3 +45,4 @@ color:
 # Build settings
 markdown: kramdown
 permalink: pretty
+future: true

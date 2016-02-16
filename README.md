@@ -1,5 +1,6 @@
-Mozilla Study Groups
-============
+###[Leia isto em Português](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-pt.md)
+
+#Mozilla Study Groups
 
 Welcome to [Mozilla Science Lab](https://www.mozillascience.org/)'s Study Group project! From here, we'll set you up with everything you need to start your own study group.
 
@@ -20,7 +21,7 @@ Welcome to our Mozilla Study Group! A few things to do & know now that you're he
 
 ### It's Broken, I Need Help
 
-If anything in these instructions doesn't work or doesn't make sense, open an issue [here](https://github.com/mozillascience/studyGroup/issues) or email bill@mozillafoundation.org.
+If anything in these instructions doesn't work or doesn't make sense, open an issue [here](https://github.com/mozillascience/studyGroup/issues) or email sciencelab@mozillafoundation.org.
 
 ### Check out the Handbook
 
@@ -70,6 +71,7 @@ When you're ready to list a new event for your Study Group, follow these steps, 
 
     where `YYYY-MM-DD` is the date of your event, and `word` is anything you want.
  4. **Cut and paste the following into your new file:**
+ 
     ```
     ---
     title: Study Group Meetup
@@ -77,10 +79,11 @@ When you're ready to list a new event for your Study Group, follow these steps, 
     location: Hacky Hour Stadium
     link: https://github.com/yourUserName/studyGroup/issues/1234
     date: 2016-01-04
-    startTime: 15:00
-    endTime: 16:00
+    startTime: '15:00'
+    endTime: '16:00'
     ---
     ```
+
     Change all the fields to describe your event; make sure the `link` is the address of the issue you created When you're done, click 'Commit Changes' at the bottom.
 
 That's it! Your event is now listed on your webpage, and there's a discussion thread where people can ask questions and discuss the details. Events will be automatically removed from the schedule on the webpage when they're more than a week in the past - but the issue you created will always be there as a record of what you've done.
@@ -88,7 +91,7 @@ That's it! Your event is now listed on your webpage, and there's a discussion th
 > **Event Listing Gotchas:** here are a few things to look out for when listing an event:
 >  - Did you remember to include the `---` above and below? The website builder needs those.
 >  - Can't find the issue tracker? Remember to turn it on under the 'Settings' menu on the right.
->  - The five fields need to be on exactly one line each; some text editors will insert line breaks into lines that are too long; remove these if so.
+>  - The seven fields need to be on exactly one line each; some text editors will insert line breaks into lines that are too long; remove these if so.
 
 ## How to Stay in Touch With Your Members
 

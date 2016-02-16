@@ -1,3 +1,5 @@
+###[Leia isto em Português](https://github.com/mozillascience/studyGroup/blob/gh-pages/codeOfConduct-pt.md)
+
 # Code of Conduct
 
 Study Group events are community events intended for networking and collaboration as well as learning. We value the participation of every member of the scientific community and want all attendees to have an enjoyable and fulfilling experience. Accordingly, all attendees are expected to show respect and courtesy to other attendees throughout the event and in interactions online associated with Study Group.
@@ -23,3 +25,6 @@ Participants asked to stop any harassing behavior are expected to comply immedia
 Be careful in the words that you choose. Remember that sexist, racist, and other exclusionary jokes can be offensive to those around you.
 
 If a participant engages in behavior that violates this code of conduct, the organizers may take any action they deem appropriate, including warning the offender or expulsion from the event with no refund of any fee that may have been levied.
+
+Mirrored at: https://www.mozillascience.org/code-of-conduct
+License: CC BY 4.0 (http://creativecommons.org/licenses/by/4.0/)

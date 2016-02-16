@@ -3,58 +3,93 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Events</h2>
-                    <h3 class="section-subheading text-muted">Our upcoming and recent events:</h3>
+                    <h2 class="section-heading">{{site.data[site.language].events}}</h2>
+                    <h3 class="section-subheading text-muted">{{site.data[site.language].eventsSubheading}}</h3>
                 </div>
             </div>
             <div class="col-lg-12">
+              <!--current events-->
               <ul class='events'>
-              {% assign isEvent = 0 %}
-              {% for post in site.posts reversed limit:5 %}
-                {% capture nowyear %}{{'now' | date: '%Y'}}{% endcapture %}
-                {% capture postyear %}{{post.date | date: '%Y'}}{% endcapture %}
-                {% capture nowday %}{{'now' | date: '%j'}}{% endcapture %}
-                {% capture postday %}{{post.date | date: '%j'}}{% endcapture %}
-                {% assign postday = postday | plus: 0 %}
-                {% assign nowday = nowday | minus: 2 %}
-                {% if postyear > nowyear or postday >= nowday and postyear >= nowyear %}
-                  {% assign isEvent = 1 %}
-                  <li>
-                    <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{ post.startTime }}</a>
-                    <div class='eventSub'>{{ post.text }}</div>
-                  </li>
+                {% assign isEvent = 0 %}
+                {% for post in site.posts reversed %}
+                  {% capture nowyear %}{{'now' | date: '%Y'}}{% endcapture %}
+                  {% capture postyear %}{{post.date | date: '%Y'}}{% endcapture %}
+                  {% capture nowday %}{{'now' | date: '%j'}}{% endcapture %}
+                  {% capture postday %}{{post.date | date: '%j'}}{% endcapture %}
+                  {% assign postday = postday | plus: 0 %}
+                  {% assign nowday = nowday | minus: 2 %}
+                  {% if postyear > nowyear or postday >= nowday and postyear >= nowyear %}
+                    {% assign isEvent = 1 %}
+                    <li>
+                      <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
+                      <div class='eventSub'>{{ post.text }}</div>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+                {% if isEvent == 0 %}
+                  <a class='eventTitle' href="{{ site.github.issues_url }}">{{site.data[site.language].eventPlaceholder}}</a>
+                {% else %}
+                <div class="row">
+                      <div class="col-lg-12 text-center">
+                          <a href="{{ site.github.issues_url }}" class="btn btn-xl eventSuggest">{{site.data[site.language].suggestEvent}}</a>
+                          <a href="http://mozillascience.github.io/studyGroupHandbook/event-types.html#workalong" class="btn btn-xl eventSuggest">{{site.data[site.language].leadership}}</a>
+                      </div>
+                </div>
                 {% endif %}
-              {% endfor %}
-              {% if isEvent == 0 %}
-                <a class='eventTitle' href="{{ site.github.issues_url }}">Nothing yet! Propose an event here.</a>
-              {% else %}
-              <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <a href="{{ site.github.issues_url }}" class="btn btn-xl eventSuggest">Suggest an Event</a>
-                        <a href="http://mozillascience.github.io/studyGroupHandbook/event-types.html#workalong" class="btn btn-xl eventSuggest">How to Lead a Study Group Session</a>
-                    </div>
-              </div>
-              {% endif %}
               </ul>
+              <!--past events-->
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading text-center" role="tab" id="headingOne">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class='btn btn-xl'>
+                        {{site.data[site.language].pastEvents}}
+                      </a>
+                    
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <ul class='events'>
+                        {% assign isEvent = 0 %}
+                        {% for post in site.posts reversed %}
+                          {% capture nowyear %}{{'now' | date: '%Y'}}{% endcapture %}
+                          {% capture postyear %}{{post.date | date: '%Y'}}{% endcapture %}
+                          {% capture nowday %}{{'now' | date: '%j'}}{% endcapture %}
+                          {% capture postday %}{{post.date | date: '%j'}}{% endcapture %}
+                          {% assign postday = postday | plus: 0 %}
+                          {% assign nowday = nowday | minus: 2 %}
+                          {% if postyear < nowyear or postday < nowday and postyear == nowyear %}
+                            <li>
+                              <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
+                              <div class='eventSub'>{{ post.text }}</div>
+                            </li>
+                          {% endif %}
+                        {% endfor %}
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
             {% if site.calendar_on %}
             <div class="col-lg-6">
             {% else %}
             <div class="col-lg-12">
             {% endif %}
-              <h3 class="section-heading eventInstructions">Want to be notified of our upcoming events?</h3>
-              <h3 class="section-subheading text-muted eventSubinstructions">Head over to <a href="{{ site.github.repository_url }}">GitHub</a> and watch our repository, like this:</h3>
+              <h3 class="section-heading eventInstructions">{{site.data[site.language].notification}}</h3>
+              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].watching}}</h3>
               <figure>
                 <img src="https://help.github.com/assets/images/help/notifications/watcher_picker.gif"></img>
-                <figcaption>Look in the top right-hand corner of <a href="{{ site.github.repository_url }}">our repo</a>, and click 'Watching.' <br>You can undo this at any time in the same place.</figcaption>
+                <figcaption>{{site.data[site.language].watchingCaption}}</figcaption>
               </figure>
             </div>
             {% if site.calendar_on %}
             <div class="col-lg-6">
-              <h3 class="section-heading eventInstructions">Subscribe to our events calendar!</h3>
-              <h3 class="section-subheading text-muted eventSubinstructions">We also invite you to follow <a href="{{ site.calendar_embed_url }}" target="_blank">our calendar</a>, where events will be posted. </h3>
-              <h3 class="section-subheading text-muted eventSubinstructions">If you use Google calendar, you can add our calendar by pressing the "Google Calendar" button at the bottom-right of <a href="{{ site.calendar_embed_url }}" target="_blank">this page</a>.</h3>
-              <h3 class="section-subheading text-muted eventSubinstructions">If you use another calendar app, you can copy and paste <a href="{{ site.calendar_ical_url }}">this address</a> into any calendar product that supports the iCal format.</h3>
+              <h3 class="section-heading eventInstructions">{{site.data[site.language].calendar}}</h3>
+              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].calendarSubheading}}</h3>
+              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].googleCalendar}}</h3>
+              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].iCal}}</h3>
             </div>
             {% endif %}
         </div>
