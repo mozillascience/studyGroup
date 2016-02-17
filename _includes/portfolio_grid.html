@@ -78,18 +78,18 @@
             <div class="col-lg-12">
             {% endif %}
               <h3 class="section-heading eventInstructions">{{site.data[site.language].notification}}</h3>
-              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].watching}}</h3>
+              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].watching | liquify }}</h3>
               <figure>
                 <img src="https://help.github.com/assets/images/help/notifications/watcher_picker.gif"></img>
-                <figcaption>{{site.data[site.language].watchingCaption}}</figcaption>
+                <figcaption>{{site.data[site.language].watchingCaption | liquify}}</figcaption>
               </figure>
             </div>
             {% if site.calendar_on %}
             <div class="col-lg-6">
               <h3 class="section-heading eventInstructions">{{site.data[site.language].calendar}}</h3>
-              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].calendarSubheading}}</h3>
-              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].googleCalendar}}</h3>
-              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].iCal}}</h3>
+              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].calendarSubheading | liquify}}</h3>
+              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].googleCalendar | liquify}}</h3>
+              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].iCal | liquify}}</h3>
             </div>
             {% endif %}
         </div>
