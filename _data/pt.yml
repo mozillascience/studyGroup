@@ -24,13 +24,13 @@ leadership: Como mediar um Grupo de Estudos
 pastEvents: See Our Past Events
 
 notification: Quer ser notificado dos eventos?
-watching: 'Vá até <a href="{{ site.github.repository_url }}">GitHub</a> e acompanhe nosso respositório, assim:'
-watchingCaption: 'Olhe para o canto esquerdo superior do  <a href="{{ site.github.repository_url }}">nosso repositório</a>, e clique em  "Watching." <br>Você pode desfazer isso a qualquer momento, no mesmo lugar.'
+watching: 'Vá até <a href="%GITHUB_REPO_URL%">GitHub</a> e acompanhe nosso respositório, assim:'
+watchingCaption: 'Olhe para o canto esquerdo superior do  <a href="%GITHUB_REPO_URL%">nosso repositório</a>, e clique em  "Watching." <br>Você pode desfazer isso a qualquer momento, no mesmo lugar.'
 
 calendar: Inscreva-se em nosso Calendário de Eventos!
-calendarSubheading: 'Também o convidamos a se inscrever em <a href="{{ site.calendar_embed_url }}" target="_blank">nosso calendário</a>, no qual os eventos serão postados.'
-googleCalendar: 'Se você usa o Google Calendar, pode adicionar nosso calendário ao clicar no botão "Google Calendar" na parte direita inferior <a href="{{ site.calendar_embed_url }}" target="_blank">desta página</a>.'
-iCal: 'Se você utiliza outro aplicativo de calendário, você pode copiar e colar <a href="{{ site.calendar_ical_url }}">este endereço</a> em qualquer aplicativo de calendário que suporte o formato iCal.'
+calendarSubheading: 'Também o convidamos a se inscrever em <a href="%CALENDAR_EMBED_URL%" target="_blank">nosso calendário</a>, no qual os eventos serão postados.'
+googleCalendar: 'Se você usa o Google Calendar, pode adicionar nosso calendário ao clicar no botão "Google Calendar" na parte direita inferior <a href="%CALENDAR_EMBED_URL%" target="_blank">desta página</a>.'
+iCal: 'Se você utiliza outro aplicativo de calendário, você pode copiar e colar <a href="%CALENDAR_ICAL_URL%">este endereço</a> em qualquer aplicativo de calendário que suporte o formato iCal.'
 
 sayHi: Diga Olá!
 contactSubheading: 'Usamos o GitHub para obter ajuda com código, falar sobre eventos e compartilhar arquivos. Junte-se a nós!'

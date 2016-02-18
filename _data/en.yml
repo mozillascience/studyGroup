@@ -24,13 +24,13 @@ leadership: How to lead a Study Group session
 pastEvents: See Our Past Events
 
 notification: Want to be notified of our upcoming events?
-watching: 'Head over to <a href="{{ site.github.repository_url }}">GitHub</a> and watch our repository, like this:'
-watchingCaption: 'Look in the top right-hand corner of <a href="{{ site.github.repository_url }}">our repo</a>, and click "Watching." <br>You can undo this at any time in the same place.'
+watching: 'Head over to <a href="%GITHUB_REPO_URL%">GitHub</a> and watch our repository, like this:'
+watchingCaption: 'Look in the top right-hand corner of <a href="%GITHUB_REPO_URL%">our repo</a>, and click "Watching." <br>You can undo this at any time in the same place.'
 
 calendar: Subscribe to our events calendar!
-calendarSubheading: 'We also invite you to follow <a href="{{ site.calendar_embed_url }}" target="_blank">our calendar</a>, where events will be posted.'
-googleCalendar: 'If you use Google calendar, you can add our calendar by pressing the "Google Calendar" button at the bottom-right of <a href="{{ site.calendar_embed_url }}" target="_blank">this page</a>.'
-iCal: 'If you use another calendar app, you can copy and paste <a href="{{ site.calendar_ical_url }}">this address</a> into any calendar product that supports the iCal format.'
+calendarSubheading: 'We also invite you to follow <a href="%CALENDAR_EMBED_URL%" target="_blank">our calendar</a>, where events will be posted.'
+googleCalendar: 'If you use Google calendar, you can add our calendar by pressing the "Google Calendar" button at the bottom-right of <a href="%CALENDAR_EMBED_URL%" target="_blank">this page</a>.'
+iCal: 'If you use another calendar app, you can copy and paste <a href="%CALENDAR_ICAL_URL%">this address</a> into any calendar product that supports the iCal format.'
 
 sayHi: Come Say Hi
 contactSubheading: 'We use GitHub to get coding help, talk about events and share files. Join us there!'
