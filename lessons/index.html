@@ -7,7 +7,7 @@ visible: false
 <!-- Blog section -->
 
 <ul>
-  {% assign pages_list = site.pages %}
+  {% assign pages_list = site.pages | sort: 'title' %}
   {% for node in pages_list %}
     {% if node.title != null %}
       {% if node.visible == true %}
