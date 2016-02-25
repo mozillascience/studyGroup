@@ -1,9 +1,17 @@
+---
+layout: page
+title: Creating Packages in Python
+visible: true
+---
+
 # Creating Packages in Python
 
-- Presenter: John Ladan
-- Sources: [*Bill Mills*](https://github.com/BillMills/pythonPackageLesson), Elise Olson, [The Hitchhiker's Guide to Packaging](https://the-hitchhikers-guide-to-packaging.readthedocs.org/en/latest/quickstart.html)
-- Research Field: any
-- Topic: A quick introduction to creating packages in Python
+- **Presenter**: John Ladan
+- **Sources**: [*Bill Mills*](https://github.com/BillMills/pythonPackageLesson), Elise Olson, [The Hitchhiker's Guide to Packaging](https://the-hitchhikers-guide-to-packaging.readthedocs.org/en/latest/quickstart.html)
+- **Research Field**: any
+- **Topic**: A quick introduction to creating packages in Python
+- **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python_packages>
+
 
 ## Why are we doing this?
 
@@ -166,7 +174,7 @@ pip install your-package-name
 
 ## 4. Document!
 
-We've already begun the documentation by adding a short description, author/maintainer name, and version... but there's a lot more to add. At a minimum, a `README` file should be included, but so should a license text, changes between versions, and actual software documentation. 
+We've already begun the documentation by adding a short description, author/maintainer name, and version... but there's a lot more to add. At a minimum, a `README` file should be included, but so should a license text, changes between versions, and actual software documentation.
 
 ### README
 
