@@ -1,7 +1,7 @@
 # Creating Packages in Python
 
 - Presenter: John Ladan
-- Sources: Elise Olson, [The Hitchhiker's Guide to Packaging](http://the-hitchhikers-guide-to-packaging.readthedocs.org/en/latest/quickstart.html), [*Bill Mills*](https://github.com/BillMills/pythonPackageLesson)
+- Sources: [*Bill Mills*](https://github.com/BillMills/pythonPackageLesson), Elise Olson, [The Hitchhiker's Guide to Packaging](https://the-hitchhikers-guide-to-packaging.readthedocs.org/en/latest/quickstart.html)
 - Research Field: any
 - Topic: A quick introduction to creating packages in Python
 
@@ -32,8 +32,8 @@ project
 |
 |__ myPackage
      |
-     |__ somePython.py
-     |__ __init__.py
+     |_  somePython.py
+     |_  __init__.py
 ```
 
 But at the moment, we've just got some flat files.
@@ -124,7 +124,7 @@ pip install git+https://github.com/jladan/package_demo.git@v0.1#egg=measurements
 ```
 
 
-### Distributing on PyPI
+### Distributing via PyPI
 
 In my opinion, distributing on PyPI is more complicated than with git, and not much more useful.
 
@@ -160,7 +160,7 @@ python setup.py sdist upload
 Now, you and anyone else in the world can install your package using the following:
 
 ```
-sudo pip install your-package-name
+pip install your-package-name
 ```
 
 ## 4. Document!
@@ -169,7 +169,8 @@ We've already begun the documentation by adding a short description, author/main
 
 ### README
 
-A readme file summarizes the software. For Python packages, this can named `README`, `README.rst`, or `README.txt`. The recommendation is to use (reST)[http://docutils.sourceforge.net/rst.html], as this is the standard on PyPI.
+A readme file summarizes the software. For Python packages, this can named `README`, `README.rst`, or `README.txt`. The recommendation is to use [reST]
+(http://docutils.sourceforge.net/rst.html), as this is the standard on PyPI
 
 ```
 ===================
