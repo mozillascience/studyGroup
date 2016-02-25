@@ -87,7 +87,7 @@ If you were to run that file, you'd get a whole bunch of warnings, and nothing w
 from setuptools import setup
 
 setup(
-    # Needed to silence warnings
+    # Needed to silence warnings (and to be a worthwhile package)
     name='Measurements',
     url='https://github.com/jladan/package_demo',
     author='John Ladan',
@@ -98,6 +98,7 @@ setup(
     install_requires=['numpy'],
     # *strongly* suggested for sharing
     version='0.1',
+    # The license can be anything you like
     license='MIT',
     description='An example of a python package from pre-existing code',
     # We will also need a readme eventually (there will be a warning)
@@ -140,11 +141,11 @@ For those interested, to upload to PyPI, you'll need
 python setup.py sdist
 ```
 
-This creates a `dist` directory and adds an archive file of your package.
+This creates a `dist` directory and adds an archive file (a.k.a. a distribution) of your package.
 
 
 To get set up on PyPI for the first time with a
-new package, [make a new account on PyPI](https://pypi.python.org/pypi), and
+new package, [make a new account on PyPI](https://pypi.python.org/pypi) (or for trying it out, the [testing PyPI site](https://testpypi.python.org/pypi)), and
 then back in your `package` directory do
 
 ```
@@ -179,7 +180,7 @@ Measurements Module
 
 **A demo for how to create a python package from existing code**
 
-The actual software provides L1, L2, Supremum, and Manhatten metrics and norms for numpy arrays.
+The actual software provides L1, L2, Supremum, and Hamming metrics and norms for numpy arrays.
 ```
 
 ### Long Description
@@ -201,7 +202,7 @@ Changes between versions are usually tracked in `CHANGES.txt`. This is more of a
 
 A good package should also include full documentation and testing. I won't cover this here, but unit tests can be performed with the [`unittest`](https://docs.python.org/3.5/library/unittest.html) library, with the tests stored in the directory `tests`. Many people use [Sphinx](http://www.sphinx-doc.org/en/stable/) for documentation, and that can be stored in the `doc` directory.
 
-If you want to include these files in the distribution, you'll need a `MANIFEST.in` file.
+There's a further step required for distributing. If you want to include these files in the distribution (the archive file in `dist`), you'll need a `MANIFEST.in` file.
 
 ```
 # MANIFEST.in
