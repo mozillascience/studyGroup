@@ -1,6 +1,6 @@
 ---
 title: Co-Working Session
-text: Bur projects and problems and work with peers, get help with questions, and show off your progress.
+text: Bring your projects and problems and work with peers, get help with questions, and show off your progress.
 location: MP408
 link: https://github.com/UofTCoders/Events/issues/35
 date: 2016-03-03
