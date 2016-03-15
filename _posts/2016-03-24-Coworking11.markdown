@@ -1,0 +1,9 @@
+---
+title: Coworking Session
+text: Bring a project to work on alongside peers. It can be research, homework, open science, or just something fun you're working on, and it's okay if it's you're just starting out. Everyone is welcome, and bring your friends!
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/37
+date: 2016-03-24
+startTime: '18:00'
+endTime: '19:30'
+---
