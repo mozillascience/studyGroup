@@ -94,8 +94,8 @@ sequence of commands to try out:
     git init # start a repo
     git add .
     git commit -m "First commit" # make the first commit
-    git branch testBranch
-    git checkout testBranch # create and move to a new branch
+    git branch testBranch # create branch
+    git checkout testBranch # move to branch
     ## can also do git checkout -b testBranch
     echo "Some text" > file.txt 
     git add file.txt
@@ -104,9 +104,11 @@ sequence of commands to try out:
     echo "Text in another file" > new-file.txt
     git add new-file.txt
     git commit -m "Added another file"
-    git log --graph --oneline
+    git log --graph --oneline --decorate --all
+    # This command is long, so shorten it using aliases
+    git config --global alias.lg 'log --graph --oneline --decorate --all'
     git merge testBranch
-    git log --graph --oneline
+    git lg
     git branch -d testBranch # delete the branch
     
 ## Using branches for pull requests 
@@ -127,7 +129,7 @@ The steps to take would be:
 8. Once the pull request is merged, 
 [delete](https://github.com/blog/1377-create-and-delete-branches) 
 the `fixingBranch` on your forked repo on GitHub and on your computer 
-(`git pull upstream master && git branch -d fixingBranch`)
+(`git checkout master && git pull upstream master && git branch -d fixingBranch`)
 
 # Resources: #
 
@@ -142,21 +144,21 @@ more likely links to StackOverflow).
 * `mkdir` - make a directory
 * `echo` - print a message to the screen or to a file if `>` (redirect) is
 present.
-* `init` - start or initialize a git repository
-* `add` - put a file into the staging area, so that git starts
+* `git init` - start or initialize a git repository
+* `git add` - put a file into the staging area, so that git starts
   tracking it
-* `commit` - send files in the staging/index area into the history
+* `git commit` - send files in the staging/index area into the history
   (the git repository)
-* `log --graph --oneline` - view the commit history in the git repository and
-the branches, with each commit as one line.
-* `branch` - An individual line of commit history that contains files that may
+* `git log --graph --oneline --decorate --all` - view the commit history in the
+git repository and the branches, with each commit as one line.
+* `git branch` - An individual line of commit history that contains files that may
 differ from other branches.
-* `checkout` - A way to move across the git commits and branches.
-* `merge` - Combine a branch into the current checked out branch (i.e. the
+* `git checkout` - A way to move across the git commits and branches.
+* `git merge` - Combine a branch into the current checked out branch (i.e. the
 branch you are on).
 
 ## Links: ##
 
-* [Interactive, visual tutorial on branching](http://pcottle.github.io/learnGitBranching/)
+* [Interactive, visual tutorial on branching](https://pcottle.github.io/learnGitBranching/)
 * [Brief explanation of branching](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
 
