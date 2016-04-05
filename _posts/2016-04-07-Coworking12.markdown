@@ -1,0 +1,9 @@
+---
+title: Coworking Session
+text: "Come with a problem and get feedback on what tools, packages and strategies you can use to solve it! Beginners welcome and bring your friends!"
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/41
+date: 2016-04-07
+startTime: '18:10'
+endTime: '19:30'
+---
