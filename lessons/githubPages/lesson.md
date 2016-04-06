@@ -28,30 +28,38 @@ In this code-along we'll cover what Github Pages are, why you might want to use 
 
 
 <div class="alert alert-dismissible alert-info">
-  <i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;<strong>Running Jekyll on Windows</strong><br />Unfortunately Windows is not officially supported, there are instructions for <a href="https://jekyllrb.com/docs/windows/#installation" target="_blank"><!--_ -->Jekyll on Windows</a>, but it looks pretty finicky.
+  <i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;<strong>Running Jekyll on Windows</strong><br />Unfortunately Windows is not officially supported, however there are instructions for <a href="https://jekyllrb.com/docs/windows/#installation" target="_blank"><!--_ -->Jekyll on Windows</a>, but it might be finicky.
 </div>
 
 ## Lesson Overview
 The lesson will cover:
- set up requirements
 
 - What Github Pages are, why you might want to use them
 - Creating a Github Pages site
   - Online: using the Automatic Page Generator
-  - Locally
+  - Locally: using Git and Jekyll
 - Jekyll Basics
 
 
 ## Why (and What) are Github Pages
 Github Pages are a feature of Github that allows users to host static websites for individuals, projects, or organizations from a repository
 
-### Static vs. Dynamic
+### Static vs. Dynamic Websites
+
+- **Dynamic** ones have pages that are generated in real-time
+- **Static** ones have pages that are converted (or written directly) as static HTML.
+
+- What about _static vs. 'interactive'?_ doesn't have to be the case!
 
 ### Reasons to Use
 
+- Free!
+- Static sites are more secure(ish*)
+- Manage all the different content for your project(s) in the same place
+- ... others?
 
 ### Examples
-- **Github Developer**  [developer.github.com](https://developer.github.com/)  [`github.com/github/developer.github.com`](https://github.com/github/developer.github.com)
+- **Github Developer** [developer.github.com](https://developer.github.com/)  [`github.com/github/developer.github.com`](https://github.com/github/developer.github.com)
 
 - **Open Knowledge Foundation: Open Data Handbook** [opendatahandbook.org/guide](http://opendatahandbook.org/guide/en/)  [`github.com/okfn/opendatahandbook`](https://github.com/okfn/opendatahandbook)
 
@@ -115,7 +123,7 @@ Or just go to generated_pages url for your repository:
 
 5. Check out the commit history
 
-## Working Locally
+## Working Locally: Git and Jekyll
 
 1. First, we need to make sure we have everything installed
 
@@ -125,6 +133,15 @@ git version X.X.X
 $ jekyll -v
 jekyll X.X.X
 ~~~
+
+2. We'll have to create (or choose) a repo for a project
+
+~~~
+$ git init first-website
+Initialized empty Git repository in <path/to/current/directory>/first-website/.git/
+~~~
+
+_Note: There are a few extra steps if you want a project page for an existing repository! Please see: [help.github.com/articles/creating-project-pages-manually/](https://help.github.com/articles/creating-project-pages-manually/)_
 
 ### Jekyll Basics
 
@@ -149,6 +166,7 @@ So we have a project, let's check out what's there!
 ~~~
 $ cd first-website
 $ ls -lFA
+$ git status
 ~~~
 
 Lots of files. Before we dig in let's try to get our website built
@@ -164,7 +182,6 @@ Server running... press ctrl-c to stop.
 #### Front matter
 
 
-
 #### Anatomy of a Jekyll Project
 
 
@@ -177,6 +194,11 @@ If you are feeling overwhelmed <span class="label label-warning">so many</span> 
 - [jekyllthemes.org/themes/read-only/](http://jekyllthemes.org/themes/read-only/)  
 - [jekyllthemes.org/themes/end2end/](http://jekyllthemes.org/themes/end2end/)  
 
+#### And more...
+
+- [Custom Domains (help.github.com on CNAME records)](https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/)
+- Securing your Site with SSL! [Not easy unfortunately (github/issues)](https://github.com/isaacs/github/issues/156)
+- ... others?
 
 ## Resources
 
@@ -190,7 +212,11 @@ If you are feeling overwhelmed <span class="label label-warning">so many</span> 
 ### Relevant Links
 
 - [GitHub Pages](https://pages.github.com/)
+  - [Creating Pages with the automatic generator](https://help.github.com/articles/creating-pages-with-the-automatic-generator/)
+  - [Creating Project Pages manually](https://help.github.com/articles/creating-project-pages-manually/)
+
 - [Jekyll](https://jekyllrb.com/docs/installation/)
+- [jekyllthemes.org](http://jekyllthemes.org/)  
 
 ### Other fun Web Stuff
 
