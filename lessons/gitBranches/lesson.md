@@ -10,6 +10,7 @@ visible: true
  - **Research field**: Nutritional and diabetes epidemiology
  - **Lesson topic**: Git branches
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/gitBranches>
+ - **Lesson video stream**: <https://www.youtube.com/watch?v=nRUW6LLkCqQ>
 
 ## Preface: ##
 
