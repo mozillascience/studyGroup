@@ -1,23 +1,23 @@
 ---
 layout: page
-title: 'Web design with Jekyll/Github Pages'
+title: 'Web design with Jekyll/GitHub Pages'
 visible: true
 ---
 
 - **Authors**: Dawn Walker [@dcwalk](https://github.com/dcwalk)
 - **Research field**: Information Studies (Information System Design)
-- **Lesson topic**: Introduction to using Github Pages and Jekyll for website design
+- **Lesson topic**: Introduction to using GitHub Pages and Jekyll for website design
 - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/githubPages>
 
 ## Preface
 
-This is a basic introduction to using Github Pages and Jekyll to host a web page. Github Pages are a feature of Github that allows users to host websites for individuals, projects, or organizations right from their repositories! The engine Github uses to accomplish this is Jekyll, a ["simple, static, blog-aware, site generator"](https://jekyllrb.com/), but it also supports regular HTML content.
+This is a basic introduction to using GitHub Pages and Jekyll to host a web page. GitHub Pages are a feature of GitHub that allows users to host websites for individuals, projects, or organizations right from their repositories! The engine GitHub uses to accomplish this is Jekyll, a ["simple, static, blog-aware, site generator"](https://jekyllrb.com/), but it also supports regular HTML content.
 
-In this code-along we'll cover what Github Pages are, why you might want to use them, and how to do so both online and locally with some jekyll basics!
+In this code-along we'll cover what GitHub Pages are, why you might want to use them, and how to do so both online and locally with some jekyll basics!
 
 ### Pre-requisites
 
-- github account (if you don't already have one go to [github.com/join](https://github.com/join))
+- GitHub account (if you don't already have one go to [github.com/join](https://github.com/join))
 - git installed, and configured on your machine ([git-scm.com](https://git-scm.com/downloads))
 - comfort with material covered in UofT Coders lessons **[Intro to Git](https://uoftcoders.github.io/studyGroup/lessons/git/lesson/)**, **[More on Git](https://uoftcoders.github.io/studyGroup/lessons/git2/lesson/)**, and **[Using Branches in Git](https://uoftcoders.github.io/studyGroup/lessons/gitBranches/lesson/)**
 
@@ -27,7 +27,7 @@ In this code-along we'll cover what Github Pages are, why you might want to use 
   - ruby ([ruby-lang.org/en/documentation/installation](https://www.ruby-lang.org/en/documentation/installation/))
   - rubygems ([rubygems.org/pages/download](https://rubygems.org/pages/download))
 
-- some familiarity with **[markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/)** and **[html](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction)**
+- some familiarity with **[markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/)** and **[HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction)**
 
 <div class="alert alert-dismissible alert-info">
   <i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;<strong>Running Jekyll on Windows</strong><br />Unfortunately Windows is not officially supported, however there are instructions for <a href="https://jekyllrb.com/docs/windows/#installation" target="_blank"><!--_ -->Jekyll on Windows</a>, but it might be finicky.
@@ -37,15 +37,15 @@ In this code-along we'll cover what Github Pages are, why you might want to use 
 
 The lesson will cover:
 
-- What Github Pages are, why you might want to use them
-- Creating a Github Pages site
+- What GitHub Pages are, why you might want to use them
+- Creating a GitHub Pages site
   - Online: using the Automatic Page Generator
   - Locally: using Git and Jekyll
 - Jekyll Basics
 
-## Why (and What) are Github Pages
+## Why (and What) are GitHub Pages
 
-Github Pages are a feature of Github that allows users to host static websites for individuals, projects, or organizations from a repository
+Github Pages are a feature of GitHub that allows users to host static websites for individuals, projects, or organizations from a repository
 
 #### Static vs. Dynamic Websites
 
@@ -106,7 +106,7 @@ Github Pages are a feature of Github that allows users to host static websites f
 ## Online Editing: Automatic Page Generator
 
 1. Create a new repository ([github.com/new](https://github.com/new))
-  - There are 4 types of Github Pages site (in the table above and on **[GitHub](https://help.github.com/articles/user-organization-and-project-pages/)**)
+  - There are 4 types of GitHub Pages site (in the table above and on **[GitHub](https://help.github.com/articles/user-organization-and-project-pages/)**)
   - **following naming conventions is really important!** `.github.io` for user and organizations
 2. Navigate to **Settings** and click **Automatic Page Generator**  
 Or just go to generated_pages url for your repository:  
@@ -222,7 +222,7 @@ I hope that is enough to start, there are lots more fiddly bits, but the docs an
 
 Okay, we've got a great site, spent some time on the content and now we want everyone on the internet to see it too.
 
-Before we get this up on github we should make sure that the repo is set up to not commit the static version of the site. Github doesn't need that to host your stuff as they use jekyll too:
+Before we get this up on GitHub we should make sure that the repo is set up to not commit the static version of the site. GitHub does not need it to host your site, as they use jekyll to generate sites on their end too:
 
 ~~~
 $ git status
@@ -232,9 +232,11 @@ $ git status
 $ <cat/touch> .gitignore
 ~~~
 
-Github helpfully publishes all sorts of of template .gitignores, the [jekyll](https://github.com/github/gitignore/blob/master/Jekyll.gitignore) one only has three items...
+Github helpfully publishes all sorts of template .gitignores, the [jekyll](https://github.com/github/gitignore/blob/master/Jekyll.gitignore) one only has three items...
 
-While on github lets set up our repo, remember the naming conventions above... `<username/orgname>.github.io/<projectname>/`
+While on GitHub let's set up our repo, remember the naming conventions above: `<username/orgname>.github.io/<projectname>/`
+
+now, to commit our changes...
 
 ~~~
 $ git checkout -b gh-pages
@@ -242,7 +244,7 @@ $ git add .
 $ git commit -m '<some meaningful commit message>'
 ~~~
 
-and
+and push them to GitHub...
 
 ~~~
 $ git remote add origin <repo address>
