@@ -1,0 +1,9 @@
+---
+title: Intro to R
+text: Learn the basics of programming and data wrangling in R
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/49
+date: 2016-05-26
+startTime: '18:10'
+endTime: '19:00'
+---
