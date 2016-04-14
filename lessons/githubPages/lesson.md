@@ -8,6 +8,7 @@ visible: true
 - **Research field**: Information Studies (Information System Design)
 - **Lesson topic**: Introduction to using GitHub Pages and Jekyll for website design
 - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/githubPages>
+- **Lesson video stream**: <https://www.youtube.com/watch?v=44xoR-EqT_g>
 
 ## Preface
 
