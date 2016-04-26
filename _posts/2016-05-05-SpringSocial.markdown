@@ -1,9 +1,0 @@
----
-title: Hacky Hour Social
-text: Mingle and get to know your fellow coders!
-location: TBD
-link: https://github.com/UofTCoders/Events/issues/46
-date: 2016-05-05
-startTime: '18:10'
-endTime: '21:00'
----
