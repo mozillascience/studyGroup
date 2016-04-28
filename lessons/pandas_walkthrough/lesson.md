@@ -11,6 +11,7 @@ visible: true
  - **Research field**: Neuroscience
  - **Lesson topic**: Data analysis, subsetting data, plotting
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/pandas_walkthrough/>
+ - **Lesson video stream**: <https://www.youtube.com/watch?v=SihxkCtRPBs>
 
 The lesson was uploaded as a Jupyter notebook. 
 
