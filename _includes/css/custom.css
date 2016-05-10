@@ -44,3 +44,8 @@ body.sticky-footer footer {
     border-radius: 5px;
   }
 }
+
+section h3.section-subheading {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
