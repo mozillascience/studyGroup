@@ -45,7 +45,7 @@ body.sticky-footer footer {
   }
 }
 
-section h3.section-subheading {
+section#contact h3.section-subheading {
     margin-bottom: 30px;
     margin-top: 50px;
 }
