@@ -34,6 +34,12 @@
     - C/C++
     - Python
 
+- name: Ahmed Hasan
+  github: aays
+  interests:
+    - R
+    - Python
+
 - name: Ciaran J Hickey
   github: hickeyc
   interests:
