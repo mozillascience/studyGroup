@@ -4,6 +4,13 @@
   interests:
     - Python
 
+- name: Albi Celaj
+  degree: PhD, Molecular Genetics
+  github: a3cel2
+  interests:
+     - R
+     - Data Visualization
+
 - name: Deepak Chandan
   degree: PhD, Physics
   github: dchandan
