@@ -13,7 +13,7 @@
   github: melaniecooke
   interests:
     - Python
-    
+
 - name: Lindsay Coome
   degree: PhD, Psychology
   github: lcoome
@@ -45,7 +45,7 @@
   interests:
     - C++
     - Fortran90
-  
+
 - name: Derek Howard
   github: derekhoward
   interests:
@@ -107,7 +107,7 @@
   interests:
     - Python
     - R
-  
+
 - name: Eric Zhu
   degree: MSc, Computer Science
   github: ekzhu
@@ -117,11 +117,18 @@
   interests:
     - Python
 
-
-
 - name: Sara Mahallati
   degree: PhD, IBBME
   github: SaraMahallati
-  interests: 
+  interests:
     - Python
- 
+
+- name: Ian Dennis Miller
+  degree: PhD, Psychology
+  github: iandennismiller
+  interests:
+    - Python
+    - R
+    - Social Network Analysis
+    - LaTeX
+    - Flask
