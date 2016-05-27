@@ -2,9 +2,13 @@
 title: "Introduction to R"
 author: "Luke Johnston"
 date: "May 26, 2016"
-layout: page
-visible: true
-output: md_document
+output: 
+  html_document: 
+    highlight: tango
+    number_sections: yes
+    theme: readable
+    toc: yes
+    
 ---
 
  - **Authors**: Luke W. Johnston
@@ -218,13 +222,34 @@ into a `tbl` class, making printing of the output nicer.
 
 ```r
 library(dplyr)
+```
+
+```
+## 
+## Attaching package: 'dplyr'
+```
+
+```
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+```
+
+```
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+```
+
+```r
 tbl_df(ds)
 ```
 
 ```
-## # A tibble: 47 x 7
+## Source: local data frame [47 x 7]
+## 
 ##               X Fertility Agriculture Examination Education Catholic
-##          <fctr>     <dbl>       <dbl>       <int>     <int>    <dbl>
+##          (fctr)     (dbl)       (dbl)       (int)     (int)    (dbl)
 ## 1    Courtelary      80.2        17.0          15        12     9.96
 ## 2      Delemont      83.1        45.1           6         9    84.84
 ## 3  Franches-Mnt      92.5        39.7           5         5    93.40
@@ -235,7 +260,8 @@ tbl_df(ds)
 ## 8         Glane      92.4        67.8          14         8    97.16
 ## 9       Gruyere      82.4        53.3          12         7    97.67
 ## 10       Sarine      82.9        45.2          16        13    91.38
-## # ... with 37 more rows, and 1 more variables: Infant.Mortality <dbl>
+## ..          ...       ...         ...         ...       ...      ...
+## Variables not shown: Infant.Mortality (dbl)
 ```
 
 ```r
@@ -243,9 +269,10 @@ ds %>% tbl_df()
 ```
 
 ```
-## # A tibble: 47 x 7
+## Source: local data frame [47 x 7]
+## 
 ##               X Fertility Agriculture Examination Education Catholic
-##          <fctr>     <dbl>       <dbl>       <int>     <int>    <dbl>
+##          (fctr)     (dbl)       (dbl)       (int)     (int)    (dbl)
 ## 1    Courtelary      80.2        17.0          15        12     9.96
 ## 2      Delemont      83.1        45.1           6         9    84.84
 ## 3  Franches-Mnt      92.5        39.7           5         5    93.40
@@ -256,7 +283,8 @@ ds %>% tbl_df()
 ## 8         Glane      92.4        67.8          14         8    97.16
 ## 9       Gruyere      82.4        53.3          12         7    97.67
 ## 10       Sarine      82.9        45.2          16        13    91.38
-## # ... with 37 more rows, and 1 more variables: Infant.Mortality <dbl>
+## ..          ...       ...         ...         ...       ...      ...
+## Variables not shown: Infant.Mortality (dbl)
 ```
 
 ```r
@@ -264,9 +292,10 @@ ds %>% tbl_df
 ```
 
 ```
-## # A tibble: 47 x 7
+## Source: local data frame [47 x 7]
+## 
 ##               X Fertility Agriculture Examination Education Catholic
-##          <fctr>     <dbl>       <dbl>       <int>     <int>    <dbl>
+##          (fctr)     (dbl)       (dbl)       (int)     (int)    (dbl)
 ## 1    Courtelary      80.2        17.0          15        12     9.96
 ## 2      Delemont      83.1        45.1           6         9    84.84
 ## 3  Franches-Mnt      92.5        39.7           5         5    93.40
@@ -277,7 +306,8 @@ ds %>% tbl_df
 ## 8         Glane      92.4        67.8          14         8    97.16
 ## 9       Gruyere      82.4        53.3          12         7    97.67
 ## 10       Sarine      82.9        45.2          16        13    91.38
-## # ... with 37 more rows, and 1 more variables: Infant.Mortality <dbl>
+## ..          ...       ...         ...         ...       ...      ...
+## Variables not shown: Infant.Mortality (dbl)
 ```
 
 ```r
@@ -285,9 +315,10 @@ ds %>% tbl_df(.)
 ```
 
 ```
-## # A tibble: 47 x 7
+## Source: local data frame [47 x 7]
+## 
 ##               X Fertility Agriculture Examination Education Catholic
-##          <fctr>     <dbl>       <dbl>       <int>     <int>    <dbl>
+##          (fctr)     (dbl)       (dbl)       (int)     (int)    (dbl)
 ## 1    Courtelary      80.2        17.0          15        12     9.96
 ## 2      Delemont      83.1        45.1           6         9    84.84
 ## 3  Franches-Mnt      92.5        39.7           5         5    93.40
@@ -298,7 +329,8 @@ ds %>% tbl_df(.)
 ## 8         Glane      92.4        67.8          14         8    97.16
 ## 9       Gruyere      82.4        53.3          12         7    97.67
 ## 10       Sarine      82.9        45.2          16        13    91.38
-## # ... with 37 more rows, and 1 more variables: Infant.Mortality <dbl>
+## ..          ...       ...         ...         ...       ...      ...
+## Variables not shown: Infant.Mortality (dbl)
 ```
 
 ```r
@@ -315,9 +347,10 @@ select(ds2, Education, Catholic, Fertility)
 ```
 
 ```
-## # A tibble: 47 x 3
+## Source: local data frame [47 x 3]
+## 
 ##    Education Catholic Fertility
-##        <int>    <dbl>     <dbl>
+##        (int)    (dbl)     (dbl)
 ## 1         12     9.96      80.2
 ## 2          9    84.84      83.1
 ## 3          5    93.40      92.5
@@ -328,7 +361,7 @@ select(ds2, Education, Catholic, Fertility)
 ## 8          8    97.16      92.4
 ## 9          7    97.67      82.4
 ## 10        13    91.38      82.9
-## # ... with 37 more rows
+## ..       ...      ...       ...
 ```
 
 ```r
@@ -336,9 +369,10 @@ ds2 %>% select(Education, Catholic, Fertility)
 ```
 
 ```
-## # A tibble: 47 x 3
+## Source: local data frame [47 x 3]
+## 
 ##    Education Catholic Fertility
-##        <int>    <dbl>     <dbl>
+##        (int)    (dbl)     (dbl)
 ## 1         12     9.96      80.2
 ## 2          9    84.84      83.1
 ## 3          5    93.40      92.5
@@ -349,7 +383,7 @@ ds2 %>% select(Education, Catholic, Fertility)
 ## 8          8    97.16      92.4
 ## 9          7    97.67      82.4
 ## 10        13    91.38      82.9
-## # ... with 37 more rows
+## ..       ...      ...       ...
 ```
 
 ```r
@@ -357,9 +391,10 @@ ds2 %>% select(., Education, Catholic, Fertility)
 ```
 
 ```
-## # A tibble: 47 x 3
+## Source: local data frame [47 x 3]
+## 
 ##    Education Catholic Fertility
-##        <int>    <dbl>     <dbl>
+##        (int)    (dbl)     (dbl)
 ## 1         12     9.96      80.2
 ## 2          9    84.84      83.1
 ## 3          5    93.40      92.5
@@ -370,7 +405,7 @@ ds2 %>% select(., Education, Catholic, Fertility)
 ## 8          8    97.16      92.4
 ## 9          7    97.67      82.4
 ## 10        13    91.38      82.9
-## # ... with 37 more rows
+## ..       ...      ...       ...
 ```
 
 You can rename columns either using `rename` or `select` (the new name
@@ -384,9 +419,10 @@ ds2 %>% rename(County = X)
 ```
 
 ```
-## # A tibble: 47 x 7
+## Source: local data frame [47 x 7]
+## 
 ##          County Fertility Agriculture Examination Education Catholic
-##          <fctr>     <dbl>       <dbl>       <int>     <int>    <dbl>
+##          (fctr)     (dbl)       (dbl)       (int)     (int)    (dbl)
 ## 1    Courtelary      80.2        17.0          15        12     9.96
 ## 2      Delemont      83.1        45.1           6         9    84.84
 ## 3  Franches-Mnt      92.5        39.7           5         5    93.40
@@ -397,7 +433,8 @@ ds2 %>% rename(County = X)
 ## 8         Glane      92.4        67.8          14         8    97.16
 ## 9       Gruyere      82.4        53.3          12         7    97.67
 ## 10       Sarine      82.9        45.2          16        13    91.38
-## # ... with 37 more rows, and 1 more variables: Infant.Mortality <dbl>
+## ..          ...       ...         ...         ...       ...      ...
+## Variables not shown: Infant.Mortality (dbl)
 ```
 
 ```r
@@ -405,9 +442,10 @@ ds2 %>% select(County = X)
 ```
 
 ```
-## # A tibble: 47 x 1
+## Source: local data frame [47 x 1]
+## 
 ##          County
-##          <fctr>
+##          (fctr)
 ## 1    Courtelary
 ## 2      Delemont
 ## 3  Franches-Mnt
@@ -418,7 +456,7 @@ ds2 %>% select(County = X)
 ## 8         Glane
 ## 9       Gruyere
 ## 10       Sarine
-## # ... with 37 more rows
+## ..          ...
 ```
 
 You can subset the dataset using `filter`.  Note the double equal sign
@@ -431,13 +469,14 @@ filter(ds2, Catholic < 20, Examination == 15)
 ```
 
 ```
-## # A tibble: 3 x 7
+## Source: local data frame [3 x 7]
+## 
 ##            X Fertility Agriculture Examination Education Catholic
-##       <fctr>     <dbl>       <dbl>       <int>     <int>    <dbl>
+##       (fctr)     (dbl)       (dbl)       (int)     (int)    (dbl)
 ## 1 Courtelary      80.2        17.0          15        12     9.96
 ## 2    Yverdon      65.4        49.5          15         8     6.10
 ## 3 Val de Ruz      77.6        37.6          15         7     4.97
-## # ... with 1 more variables: Infant.Mortality <dbl>
+## Variables not shown: Infant.Mortality (dbl)
 ```
 
 ```r
@@ -445,13 +484,14 @@ ds2 %>% filter(Catholic < 20, Examination == 15)
 ```
 
 ```
-## # A tibble: 3 x 7
+## Source: local data frame [3 x 7]
+## 
 ##            X Fertility Agriculture Examination Education Catholic
-##       <fctr>     <dbl>       <dbl>       <int>     <int>    <dbl>
+##       (fctr)     (dbl)       (dbl)       (int)     (int)    (dbl)
 ## 1 Courtelary      80.2        17.0          15        12     9.96
 ## 2    Yverdon      65.4        49.5          15         8     6.10
 ## 3 Val de Ruz      77.6        37.6          15         7     4.97
-## # ... with 1 more variables: Infant.Mortality <dbl>
+## Variables not shown: Infant.Mortality (dbl)
 ```
 
 ```r
@@ -459,13 +499,14 @@ ds2 %>% filter(., Catholic < 20, Examination == 15)
 ```
 
 ```
-## # A tibble: 3 x 7
+## Source: local data frame [3 x 7]
+## 
 ##            X Fertility Agriculture Examination Education Catholic
-##       <fctr>     <dbl>       <dbl>       <int>     <int>    <dbl>
+##       (fctr)     (dbl)       (dbl)       (int)     (int)    (dbl)
 ## 1 Courtelary      80.2        17.0          15        12     9.96
 ## 2    Yverdon      65.4        49.5          15         8     6.10
 ## 3 Val de Ruz      77.6        37.6          15         7     4.97
-## # ... with 1 more variables: Infant.Mortality <dbl>
+## Variables not shown: Infant.Mortality (dbl)
 ```
 
 ```r
@@ -474,11 +515,12 @@ ds2 %>% filter(X == 'Aigle')
 ```
 
 ```
-## # A tibble: 1 x 7
+## Source: local data frame [1 x 7]
+## 
 ##        X Fertility Agriculture Examination Education Catholic
-##   <fctr>     <dbl>       <dbl>       <int>     <int>    <dbl>
+##   (fctr)     (dbl)       (dbl)       (int)     (int)    (dbl)
 ## 1  Aigle      64.1          62          21        12     8.52
-## # ... with 1 more variables: Infant.Mortality <dbl>
+## Variables not shown: Infant.Mortality (dbl)
 ```
 
 We can start chaining these commands together using the `%>%` command.
@@ -494,9 +536,10 @@ ds2 %>%
 ```
 
 ```
-## # A tibble: 21 x 2
+## Source: local data frame [21 x 2]
+## 
 ##    Education Fertility
-##        <int>     <dbl>
+##        (int)     (dbl)
 ## 1          9      83.1
 ## 2          5      92.5
 ## 3          7      85.8
@@ -507,7 +550,7 @@ ds2 %>%
 ## 8         13      82.9
 ## 9          6      87.1
 ## 10         2      68.3
-## # ... with 11 more rows
+## ..       ...       ...
 ```
 
 ```r
@@ -521,9 +564,10 @@ ds2 %>%
 ```
 
 ```
-## # A tibble: 21 x 6
+## Source: local data frame [21 x 6]
+## 
 ##          County Education Fertility Agriculture infertile testing
-##          <fctr>     <int>     <dbl>       <dbl>     <chr>   <chr>
+##          (fctr)     (int)     (dbl)       (dbl)     (chr)   (chr)
 ## 1     Echallens         2      68.3        72.6        no     Yes
 ## 2       Conthey         2      75.5        85.9        no     Yes
 ## 3        Herens         2      77.3        89.7        no     Yes
@@ -534,7 +578,7 @@ ds2 %>%
 ## 8     Entremont         6      69.3        84.9        no     Yes
 ## 9      Martigwy         6      70.5        78.2        no     Yes
 ## 10      Moutier         7      85.8        36.5        no     Yes
-## # ... with 11 more rows
+## ..          ...       ...       ...         ...       ...     ...
 ```
 
 To get the data into a nicer and more analyable format, you can use
@@ -552,9 +596,10 @@ ds2 %>%
 ```
 
 ```
-## # A tibble: 47 x 6
+## Source: local data frame [47 x 6]
+## 
 ##          County Fertility Agriculture Examination Education Catholic
-##          <fctr>     <dbl>       <dbl>       <int>     <int>    <dbl>
+##          (fctr)     (dbl)       (dbl)       (int)     (int)    (dbl)
 ## 1    Courtelary      80.2        17.0          15        12     9.96
 ## 2      Delemont      83.1        45.1           6         9    84.84
 ## 3  Franches-Mnt      92.5        39.7           5         5    93.40
@@ -565,7 +610,7 @@ ds2 %>%
 ## 8         Glane      92.4        67.8          14         8    97.16
 ## 9       Gruyere      82.4        53.3          12         7    97.67
 ## 10       Sarine      82.9        45.2          16        13    91.38
-## # ... with 37 more rows
+## ..          ...       ...         ...         ...       ...      ...
 ```
 
 ```r
@@ -577,9 +622,10 @@ ds2 %>%
 ```
 
 ```
-## # A tibble: 235 x 3
+## Source: local data frame [235 x 3]
+## 
 ##          County   Measure Value
-##          <fctr>     <chr> <dbl>
+##          (fctr)     (chr) (dbl)
 ## 1    Courtelary Fertility  80.2
 ## 2      Delemont Fertility  83.1
 ## 3  Franches-Mnt Fertility  92.5
@@ -590,7 +636,7 @@ ds2 %>%
 ## 8         Glane Fertility  92.4
 ## 9       Gruyere Fertility  82.4
 ## 10       Sarine Fertility  82.9
-## # ... with 225 more rows
+## ..          ...       ...   ...
 ```
 
 ```r
@@ -603,9 +649,10 @@ ds2 %>%
 ```
 
 ```
-## # A tibble: 47 x 6
+## Source: local data frame [47 x 6]
+## 
 ##        County Agriculture Catholic Education Examination Fertility
-## *      <fctr>       <dbl>    <dbl>     <dbl>       <dbl>     <dbl>
+##        (fctr)       (dbl)    (dbl)     (dbl)       (dbl)     (dbl)
 ## 1       Aigle        62.0     8.52        12          21      64.1
 ## 2     Aubonne        67.5     2.27         7          14      66.9
 ## 3    Avenches        60.7     4.43        12          19      68.9
@@ -616,7 +663,7 @@ ds2 %>%
 ## 8  Courtelary        17.0     9.96        12          15      80.2
 ## 9    Delemont        45.1    84.84         9           6      83.1
 ## 10  Echallens        72.6    24.20         2          18      68.3
-## # ... with 37 more rows
+## ..        ...         ...      ...       ...         ...       ...
 ```
 
 Combined with `dplyr`'s `group_by` and `summarise` you can quickly
@@ -635,9 +682,10 @@ ds2 %>%
 ```
 
 ```
-## # A tibble: 6 x 2
+## Source: local data frame [6 x 2]
+## 
 ##            Measure     mean
-##              <chr>    <dbl>
+##              (chr)    (dbl)
 ## 1      Agriculture 50.65957
 ## 2         Catholic 41.14383
 ## 3        Education 10.97872
