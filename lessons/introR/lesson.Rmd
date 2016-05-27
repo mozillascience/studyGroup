@@ -76,7 +76,7 @@ On the top of each `.Rmd` file is the
 [YAML](https://en.wikipedia.org/wiki/YAML) front matter, which looks
 like:
 
-```
+~~~
 ---
 title: "Introduction to R"
 author: "Luke Johnston"
@@ -89,7 +89,7 @@ output:
     toc: yes
     
 ---
-```
+~~~
 
 Note the starting and ending `---` 'tags'.  This starts the YAML
 block.

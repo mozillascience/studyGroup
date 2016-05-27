@@ -78,7 +78,7 @@ On the top of each `.Rmd` file is the
 [YAML](https://en.wikipedia.org/wiki/YAML) front matter, which looks
 like:
 
-```
+~~~
 ---
 title: "Introduction to R"
 author: "Luke Johnston"
@@ -91,7 +91,7 @@ output:
     toc: yes
     
 ---
-```
+~~~
 
 Note the starting and ending `---` 'tags'.  This starts the YAML
 block.
@@ -110,10 +110,10 @@ datasets that you can practice on.  The one I'm going to use is the
 `swiss` dataset.
 
 
-```r
+{% highlight r %}
 write.csv(swiss, file = 'swiss.csv') # Export
 ds <- read.csv('swiss.csv') # Import
-```
+{% endhighlight %}
 
 # Viewing your data #
 
@@ -129,11 +129,13 @@ multiple columns that `str()` would show, `class()` would only show
 that the object is a "data.frame".
 
 
-```r
+{% highlight r %}
 head(ds)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ##              X Fertility Agriculture Examination Education Catholic
 ## 1   Courtelary      80.2        17.0          15        12     9.96
 ## 2     Delemont      83.1        45.1           6         9    84.84
@@ -148,23 +150,31 @@ head(ds)
 ## 4             20.3
 ## 5             20.6
 ## 6             26.6
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 names(ds)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## [1] "X"                "Fertility"        "Agriculture"     
 ## [4] "Examination"      "Education"        "Catholic"        
 ## [7] "Infant.Mortality"
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 str(ds)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## 'data.frame':	47 obs. of  7 variables:
 ##  $ X               : Factor w/ 47 levels "Aigle","Aubonne",..: 8 9 12 26 28 34 5 13 15 38 ...
 ##  $ Fertility       : num  80.2 83.1 92.5 85.8 76.9 76.1 83.8 92.4 82.4 82.9 ...
@@ -173,13 +183,17 @@ str(ds)
 ##  $ Education       : int  12 9 5 7 15 7 7 8 7 13 ...
 ##  $ Catholic        : num  9.96 84.84 93.4 33.77 5.16 ...
 ##  $ Infant.Mortality: num  22.2 22.2 20.2 20.3 20.6 26.6 23.6 24.9 21 24.4 ...
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 summary(ds)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ##         X        Fertility      Agriculture     Examination   
 ##  Aigle   : 1   Min.   :35.00   Min.   : 1.20   Min.   : 3.00  
 ##  Aubonne : 1   1st Qu.:64.70   1st Qu.:35.90   1st Qu.:12.00  
@@ -196,15 +210,19 @@ summary(ds)
 ##  3rd Qu.:12.00   3rd Qu.: 93.125   3rd Qu.:21.70   
 ##  Max.   :53.00   Max.   :100.000   Max.   :26.60   
 ## 
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 class(ds)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## [1] "data.frame"
-```
+{% endhighlight %}
 
 # Wrangling your data #
 
@@ -222,32 +240,14 @@ used as using `%>%` implies also using `.`.  `tbl_df` makes the object
 into a `tbl` class, making printing of the output nicer.
 
 
-```r
+{% highlight r %}
 library(dplyr)
-```
-
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 tbl_df(ds)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [47 x 7]
 ## 
 ##               X Fertility Agriculture Examination Education Catholic
@@ -264,13 +264,17 @@ tbl_df(ds)
 ## 10       Sarine      82.9        45.2          16        13    91.38
 ## ..          ...       ...         ...         ...       ...      ...
 ## Variables not shown: Infant.Mortality (dbl)
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 ds %>% tbl_df()
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [47 x 7]
 ## 
 ##               X Fertility Agriculture Examination Education Catholic
@@ -287,13 +291,17 @@ ds %>% tbl_df()
 ## 10       Sarine      82.9        45.2          16        13    91.38
 ## ..          ...       ...         ...         ...       ...      ...
 ## Variables not shown: Infant.Mortality (dbl)
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 ds %>% tbl_df
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [47 x 7]
 ## 
 ##               X Fertility Agriculture Examination Education Catholic
@@ -310,13 +318,17 @@ ds %>% tbl_df
 ## 10       Sarine      82.9        45.2          16        13    91.38
 ## ..          ...       ...         ...         ...       ...      ...
 ## Variables not shown: Infant.Mortality (dbl)
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 ds %>% tbl_df(.)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [47 x 7]
 ## 
 ##               X Fertility Agriculture Examination Education Catholic
@@ -333,22 +345,26 @@ ds %>% tbl_df(.)
 ## 10       Sarine      82.9        45.2          16        13    91.38
 ## ..          ...       ...         ...         ...       ...      ...
 ## Variables not shown: Infant.Mortality (dbl)
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 ## Let's put it into a new object
 ds2 <- tbl_df(ds)
-```
+{% endhighlight %}
 
 Again, these next lines are the same. `select` does as it says: select
 the column from the dataset.
 
 
-```r
+{% highlight r %}
 select(ds2, Education, Catholic, Fertility)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [47 x 3]
 ## 
 ##    Education Catholic Fertility
@@ -364,13 +380,17 @@ select(ds2, Education, Catholic, Fertility)
 ## 9          7    97.67      82.4
 ## 10        13    91.38      82.9
 ## ..       ...      ...       ...
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 ds2 %>% select(Education, Catholic, Fertility)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [47 x 3]
 ## 
 ##    Education Catholic Fertility
@@ -386,13 +406,17 @@ ds2 %>% select(Education, Catholic, Fertility)
 ## 9          7    97.67      82.4
 ## 10        13    91.38      82.9
 ## ..       ...      ...       ...
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 ds2 %>% select(., Education, Catholic, Fertility)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [47 x 3]
 ## 
 ##    Education Catholic Fertility
@@ -408,7 +432,7 @@ ds2 %>% select(., Education, Catholic, Fertility)
 ## 9          7    97.67      82.4
 ## 10        13    91.38      82.9
 ## ..       ...      ...       ...
-```
+{% endhighlight %}
 
 You can rename columns either using `rename` or `select` (the new name
 is on the left hand side, so `newname = oldname`).  However, with the
@@ -416,11 +440,13 @@ is on the left hand side, so `newname = oldname`).  However, with the
 selects all columns.
 
 
-```r
+{% highlight r %}
 ds2 %>% rename(County = X)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [47 x 7]
 ## 
 ##          County Fertility Agriculture Examination Education Catholic
@@ -437,13 +463,17 @@ ds2 %>% rename(County = X)
 ## 10       Sarine      82.9        45.2          16        13    91.38
 ## ..          ...       ...         ...         ...       ...      ...
 ## Variables not shown: Infant.Mortality (dbl)
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 ds2 %>% select(County = X)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [47 x 1]
 ## 
 ##          County
@@ -459,18 +489,20 @@ ds2 %>% select(County = X)
 ## 9       Gruyere
 ## 10       Sarine
 ## ..          ...
-```
+{% endhighlight %}
 
 You can subset the dataset using `filter`.  Note the double equal sign
 `==` for testing if 'Examination' is equal to 15.  A single `=` is
 used for something else (assigning things to objects).
 
 
-```r
+{% highlight r %}
 filter(ds2, Catholic < 20, Examination == 15)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [3 x 7]
 ## 
 ##            X Fertility Agriculture Examination Education Catholic
@@ -479,13 +511,17 @@ filter(ds2, Catholic < 20, Examination == 15)
 ## 2    Yverdon      65.4        49.5          15         8     6.10
 ## 3 Val de Ruz      77.6        37.6          15         7     4.97
 ## Variables not shown: Infant.Mortality (dbl)
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 ds2 %>% filter(Catholic < 20, Examination == 15)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [3 x 7]
 ## 
 ##            X Fertility Agriculture Examination Education Catholic
@@ -494,13 +530,17 @@ ds2 %>% filter(Catholic < 20, Examination == 15)
 ## 2    Yverdon      65.4        49.5          15         8     6.10
 ## 3 Val de Ruz      77.6        37.6          15         7     4.97
 ## Variables not shown: Infant.Mortality (dbl)
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 ds2 %>% filter(., Catholic < 20, Examination == 15)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [3 x 7]
 ## 
 ##            X Fertility Agriculture Examination Education Catholic
@@ -509,21 +549,25 @@ ds2 %>% filter(., Catholic < 20, Examination == 15)
 ## 2    Yverdon      65.4        49.5          15         8     6.10
 ## 3 Val de Ruz      77.6        37.6          15         7     4.97
 ## Variables not shown: Infant.Mortality (dbl)
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 ## For string/factor variables
 ds2 %>% filter(X == 'Aigle')
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [1 x 7]
 ## 
 ##        X Fertility Agriculture Examination Education Catholic
 ##   (fctr)     (dbl)       (dbl)       (int)     (int)    (dbl)
 ## 1  Aigle      64.1          62          21        12     8.52
 ## Variables not shown: Infant.Mortality (dbl)
-```
+{% endhighlight %}
 
 We can start chaining these commands together using the `%>%` command.
 There is no limit to how long a chain can be.  `arrange`
@@ -531,13 +575,15 @@ sorts/orders/re-arranges the column Education in ascending
 order. `mutate` creates a new column.
 
 
-```r
+{% highlight r %}
 ds2 %>%
   filter(Catholic > 20) %>%
   select(Education, Fertility) 
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [21 x 2]
 ## 
 ##    Education Fertility
@@ -553,9 +599,11 @@ ds2 %>%
 ## 9          6      87.1
 ## 10         2      68.3
 ## ..       ...       ...
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 ds2 %>%
   filter(Catholic > 20) %>%
   select(County = X, Education, Fertility, Agriculture) %>%
@@ -563,9 +611,11 @@ ds2 %>%
   mutate(infertile = ifelse(Fertility < 50, 'yes', 'no'),
          testing = 'Yes' ## Create a testing column to show how mutate works.
          )
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [21 x 6]
 ## 
 ##          County Education Fertility Agriculture infertile testing
@@ -581,7 +631,7 @@ ds2 %>%
 ## 9      Martigwy         6      70.5        78.2        no     Yes
 ## 10      Moutier         7      85.8        36.5        no     Yes
 ## ..          ...       ...       ...         ...       ...     ...
-```
+{% endhighlight %}
 
 To get the data into a nicer and more analyable format, you can use
 the `tidyr` package.  See what `gather` does in the code below.  Then
@@ -589,15 +639,17 @@ see what `spread` does.  Note that you can remove a column by having a
 minus `-` sign in front of a variable when you use `select`.
 
 
-```r
+{% highlight r %}
 library(tidyr)
 ## Compare this:
 ds2 %>%
   select(-Infant.Mortality) %>%
   rename(County = X)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [47 x 6]
 ## 
 ##          County Fertility Agriculture Examination Education Catholic
@@ -613,17 +665,21 @@ ds2 %>%
 ## 9       Gruyere      82.4        53.3          12         7    97.67
 ## 10       Sarine      82.9        45.2          16        13    91.38
 ## ..          ...       ...         ...         ...       ...      ...
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 ## With this:
 ds2 %>%
   select(-Infant.Mortality) %>%
   rename(County = X) %>%
   gather(Measure, Value, -County)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [235 x 3]
 ## 
 ##          County   Measure Value
@@ -639,18 +695,22 @@ ds2 %>%
 ## 9       Gruyere Fertility  82.4
 ## 10       Sarine Fertility  82.9
 ## ..          ...       ...   ...
-```
+{% endhighlight %}
 
-```r
+
+
+{% highlight r %}
 ## And back again:
 ds2 %>%
   select(-Infant.Mortality) %>%
   rename(County = X) %>%
   gather(Measure, Value, -County) %>%
   spread(Measure, Value)
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [47 x 6]
 ## 
 ##        County Agriculture Catholic Education Examination Fertility
@@ -666,7 +726,7 @@ ds2 %>%
 ## 9    Delemont        45.1    84.84         9           6      83.1
 ## 10  Echallens        72.6    24.20         2          18      68.3
 ## ..        ...         ...      ...       ...         ...       ...
-```
+{% endhighlight %}
 
 Combined with `dplyr`'s `group_by` and `summarise` you can quickly
 summarise data or do further, more complicated analyses. `group_by`
@@ -675,15 +735,17 @@ makes it so further analyses or operations work on the groups.
 created, in this case the mean.
 
 
-```r
+{% highlight r %}
 ds2 %>%
   select(-X) %>%
   gather(Measure, Value) %>%
   group_by(Measure) %>%
   summarise(mean = mean(Value))
-```
+{% endhighlight %}
 
-```
+
+
+{% highlight text %}
 ## Source: local data frame [6 x 2]
 ## 
 ##            Measure     mean
@@ -694,13 +756,13 @@ ds2 %>%
 ## 4      Examination 16.48936
 ## 5        Fertility 70.14255
 ## 6 Infant.Mortality 19.94255
-```
+{% endhighlight %}
 
 You can extend this to be created as a table in the generated `.md` or
 `.html` file using the `kable` command (short for 'knitr table').
 
 
-```r
+{% highlight r %}
 library(knitr)
 ds2 %>%
   select(-X) %>%
@@ -708,7 +770,7 @@ ds2 %>%
   group_by(Measure) %>%
   summarise(mean = mean(Value)) %>%
   kable()
-```
+{% endhighlight %}
 
 
 
@@ -733,7 +795,7 @@ for R code chunk options.  If you look at the raw `.Rmd` file for this
 These two commands generate either a html or a md file.
 
 
-```r
+{% highlight r %}
 ## into html
 library(rmarkdown)
 render('lesson.Rmd') ## or can use rmarkdown::render('main.Rmd')
@@ -741,7 +803,7 @@ render('lesson.Rmd') ## or can use rmarkdown::render('main.Rmd')
 ## into md
 library(knitr)
 knit('lesson.Rmd') ## or can use knitr::knit('main.Rmd')
-```
+{% endhighlight %}
 
 # Challenge: Try this out for yourself! #
 
