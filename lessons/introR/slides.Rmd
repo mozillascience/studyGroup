@@ -1,35 +1,29 @@
 ---
 title: "Introduction to R: Initial comments"
 author: "Luke Johnston"
-date: "July 23, 2015"
+date: "May 26, 2016"
 output: 
   slidy_presentation
 
 ---
 
-## Disclosures/assumptions: ##
+## Learning goals/expectations
 
-* Data is clean already
-* Not planning on doing much programming
-* Want to work data into a form for statistical analysis
-* Writing a manuscript/report/document
+- How to interact with R in RStudio
+- How to import/export your data
+- How to view the structure of your data
+- How to wrangle data into analyzable format
+- How to write reproducible reports (maybe)
 
-## 5 main concepts: ##
+## 4-5 main concepts:
 
-* **Getting the data**: read.table, write.table
-* **View the data**: str, summary, names, class
-* **Working the data (dplyr):** (tbl\_df), select, filter, mutate,
+- **Getting the data**: read.table, write.table
+- **View the data**: str, summary, names, class
+- **Working the data (dplyr):** (tbl\_df), select, filter, mutate,
   summarise, arrange, rename, group\_by, `%>%` pipe
-* **(Re)Organize the data (tidyr):** gather, spread
-* **Generate a reproducible document (knitr/rmarkdown):** YAML, code
+- **(Re)Organize the data (tidyr):** gather, spread
+- (Depending on time) **Generate a reproducible document (knitr/rmarkdown):** YAML, code
   chunks, inline code, kable (pander too), render (Knit HTML button)
-
-## Expectation of learning upon leaving here ##
-
-* How to import/export your data
-* How to view the structure of your data
-* How to wrangle data into analyzable format
-* How to write reproducible reports
 
 ## Generate these slides using: ##
 

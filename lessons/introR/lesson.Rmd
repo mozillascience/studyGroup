@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R"
 author: "Luke Johnston"
-date: "July 23, 2015"
+date: "May 26, 2016"
 output: 
   html_document: 
     highlight: tango
@@ -15,6 +15,7 @@ output:
  - **Research field**: Nutritional Sciences (epidemiology)
  - **Lesson topic**: Intro to R and data wrangling
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/introR>
+ - **Lesson video stream**: <https://www.youtube.com/watch?v=pbG_3ZuNyx8>
 
 This is a brief introduction to R, focussing on data wrangling using
 `dplyr` and `tidyr` packages and generating reproducible documents
