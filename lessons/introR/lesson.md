@@ -2,6 +2,8 @@
 title: "Introduction to R"
 author: "Luke Johnston"
 date: "May 26, 2016"
+layout: page
+visible: true
 output: 
   html_document: 
     highlight: tango
