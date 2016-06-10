@@ -3,9 +3,9 @@
 
 #Step 1: give your study group a name and a short description,
 #and choose a language from the options in the _data directory:
-title: Our Study Group
-description: "A study group."
-language: en
+title: IFBA Open Science
+description: "Grupo de estudos em computação e matemática"
+language: pt-BR
 
 #Step 2: press the green 'Commit Changes' button at the bottom of this page.
 
@@ -28,9 +28,9 @@ headlineMain: "Let's Work Together"
 # 2. change 'USER' in the example urls below to the username of the google account you made for your calendar
 # 3. set calendar_on: True.
 
-calendar_on: False
-calendar_embed_url: "https://www.google.com/calendar/embed?src=USER@gmail.com"
-calendar_ical_url: "https://www.google.com/calendar/ical/USER@gmail.com/public/basic.ics"
+calendar_on: True
+calendar_embed_url: "https://www.google.com/calendar/embed?src=tecnowancer@gmail.com"
+calendar_ical_url: "https://www.google.com/calendar/ical/tecnowancer@gmail.com/public/basic.ics"
 
 
 #========================================
