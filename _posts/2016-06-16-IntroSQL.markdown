@@ -1,0 +1,9 @@
+---
+title: Intro to SQL
+text: Learn about how to use SQL to work with data and databases
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/53
+date: 2016-06-16
+startTime: '18:10'
+endTime: '19:00'
+---
