@@ -4,3 +4,15 @@
 .team-member i.fa {
  font-size: 110px;
 }
+
+@media(max-width: 991px) {
+  ul.events {
+    padding-left: 0;
+  }
+  figure img {
+    max-width: 100%;
+  }
+  .btn {
+    white-space: initial;
+  }
+}
