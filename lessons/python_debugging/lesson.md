@@ -13,30 +13,28 @@ visible: true
 
 ## Preface: ##
 
-Debugging is really an artform. In this tutorial, we'll cover some concepts and tools you can use for debugging, but the skills need time to develop.
+Debugging is really an art form. In this tutorial, we'll cover some concepts and tools you can use for debugging, but the skills need time to develop.
 
 The tutorial breaks debugging into three basic steps: testing code, finding bugs, and fixing them. Testing is a large topic on its own -- there's even a [blog/podcast about it](http://pythontesting.net/start-here/). We'll only cover some basics and the [`unittest`](https://docs.python.org/3.5/library/unittest.html) framework, so you may want to check out that blog to learn more.
 
-The bulk of this tutorial is about finding bugs. The only tool required are Python (`pdb` is included) and a text editor. However, I will give a demo using [Spyder](https://github.com/spyder-ide/spyder) to show how an IDE can help. Many other IDEs have the same (or more) features, but Spyder was convenient for me and is FOSS (free as in beer and speach).
+The bulk of this tutorial is about finding bugs. The only tool required are Python (`pdb` is included) and a text editor. However, I will give a demo using [Spyder](https://github.com/spyder-ide/spyder) to show how an IDE can help. Many other IDEs have the same (or more) features, but Spyder was convenient for me and is FOSS (free as in beer and speech).
 
 Fixing bugs is very code specific, thus not covered in detail.
 
-Sources: [wikipedia](https://en.wikipedia.org/wiki/Debugging)
-
-[Gord Strombola - The Bug](https://www.youtube.com/watch?v=0J4424OxRZo)
+Sources: [wikipedia](https://en.wikipedia.org/wiki/Debugging), [Python Testing](http://pythontesting.net/), [Python Conquers The Universe (Debugging in Python)](https://pythonconquerstheuniverse.wordpress.com/category/python-debugger/), [Python Documentation](https://docs.python.org/3.5/index.html)
 
 ## Outline: ##
 
 - What is debugging?
 - Hunting for bugs (testing)
-    - stack traces
+    - interactive testing
     - unit tests
-    - reporting (to OS projects)
 - Finding bugs (search)
+    - stack traces
     - print statements everywhere!
-    - using pdb
+    - using `pdb`
     - long-term debugging (user warnings)
-- Fixing bugs
+    - reporting (to OS projects)
 
 ## What is debugging? ##
 
@@ -55,12 +53,12 @@ There's a whole range of things that fall under testing, from running the progra
 
     # Demonstrate here
 
-The REPL has been a major feature of interpretted languages like Python for good reason: quick and dirty testing.
+The REPL has been a major feature of interpreted languages like Python for good reason: quick and dirty testing.
  - Don't know how a library function behaves? Test it in the REPL.
  - Unsure of your syntax? Check it in the REPL.
  - Not sure how to tackle a problem? Try it step by step with some test data in the REPL.
 
-Where this form of testing falls through is consistency and automation. Every time the developer makes a change, she has to remember what to test and type it into the command line. Even with tab completion, or cpy and paste, this is repetitive and tests will be missed.
+Where this form of testing falls through is consistency and automation. Every time the developer makes a change, she has to remember what to test and type it into the command line. Even with tab completion, or copy and paste, this is repetitive and tests will be missed.
 
 That's where unit tests come in. Unit tests are the smallest testable parts of a program. That smallness of them makes them easier to automate, and also (as we'll see) easier to debug. Python includes a module [`unittest`](https://docs.python.org/3.5/library/unittest.html) that can handle this work flow.
 
@@ -100,19 +98,20 @@ After discovering that a bug exists, the next challenge is finding where the bug
 
 There are a few tools for this.
 
-Fist, stack traces. These are the messages the Python interpretter gives when there's an uncaught exception. At first, they may seem cryptic, but it's pretty straight-forward. From bottom to top, the trace prints:
+Fist, stack traces. These are the messages the Python interpreter gives when there's an uncaught exception. At first, they may seem cryptic, but it's pretty straight-forward. From bottom to top, the trace prints:
 
  - the error type and message (e.g. SyntaxError, IndexError, ...)
  - [the line in which the error happened]
  - the function in which the error happened, along with the filename and line number
  - The filename, line number, and function that called the function with the error (and all the way up the stack)
 
-I'll show an example of this with a partially working `splitter` function.
+We'll see an example of this with a partially working `splitter` function.
 
 ### Print debugging ###
-Sometimes the stack trace isn't enough, like when a function returns the wrong value, or you're not sure if a loop is behaving properly. The quick fallback for this is to insert print statements wherever you're unsure of the value.
+Sometimes the stack trace isn't enough, like when a function returns the wrong value, or you're not sure if a loop is behaving properly. The quick fall-back for this is to insert print statements wherever you're unsure of the value.
 
-We'll demo this with a broken average-taking function.
+
+Let's do a little debugging of a broken average-taking function.
 
 
 ### Using `pdb` ###
@@ -138,7 +137,7 @@ Next, when the execution is interrupted, use the commands
  - `c` to continue execution
  - `!<code>` to run any line of python (including changing values)
 
-We'll repeat the demo for average using the debugger in Spyder (which just runs `pdb` for us).
+Lets repeat the demo for `average()` using the debugger in Spyder (which just runs `pdb` for us).
 
 Note: sometimes print debugging is still useful, like in a loop if you don't want to stop every iteration, but want to see the values as they come up.
 
@@ -150,7 +149,7 @@ There are a couple other problems with using `print()` for debugging:
 
 For these reasons, it's better to use the [`logging`](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial) module.
 
-using `logging.debug()` instead of `print()` lets you output the debugging statements to a file, instead of `stdout`. An example from the python docs,
+Using `logging.debug()` instead of `print()` lets you output the debugging statements to a file, instead of `stdout`. An example from the python docs,
 
     import logging
     logging.basicConfig(filename='example.log',level=logging.DEBUG)
