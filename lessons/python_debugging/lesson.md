@@ -44,8 +44,6 @@ There are two forms of finding bugs: discovering their existence (testing), and 
 
     test -> find -> fix -> test -> ...
 
-TODO: introduce some code?
-
 ## Testing ##
 
 There's a whole range of things that fall under testing, from running the program and seeing if it gives you the output you want to a full suite of unit tests run every time you commit your changes. In Python, the most common form of testing is through *interactive debugging* using the REPL.
