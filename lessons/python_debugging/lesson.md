@@ -16,7 +16,7 @@ Debugging is really an art form. In this tutorial, we'll cover some concepts and
 
 The tutorial breaks debugging into three basic steps: testing code, finding bugs, and fixing them. Testing is a large topic on its own -- there's even a [blog/podcast about it](http://pythontesting.net/start-here/). We'll only cover some basics and the [`unittest`](https://docs.python.org/3.5/library/unittest.html) framework, so you may want to check out that blog to learn more.
 
-The bulk of this tutorial is about finding bugs. The only tool required are Python (`pdb` is included) and a text editor. However, I will give a demo using [Spyder](https://github.com/spyder-ide/spyder) to show how an IDE can help. Many other IDEs have the same (or more) features, but Spyder was convenient for me and is FOSS (free as in beer and speech).
+The bulk of this tutorial is about finding bugs. The only tools required are Python (`pdb` is included) and a text editor. However, I will give a demo using [Spyder](https://github.com/spyder-ide/spyder) to show how an IDE can help. Many other IDEs have the same (or more) features, but Spyder was convenient for me and is FOSS (free as in beer and speech).
 
 Fixing bugs is very code specific, thus not covered in detail.
 
@@ -123,7 +123,7 @@ To use `pdb`, you first need to import it, and add the line `pdb.set_trace()` wh
         pdb.set_trace()
         length = len(xs)
         acc = 0
-        for i in range(1, length)
+        for i in range(1, length):
             acc = acc + xs[i]
         return acc/length
 
