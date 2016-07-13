@@ -6,8 +6,7 @@ visible: true
 
 # Overview of Python
 
- - **Authors**: John Ladan
- - **Research field**: Physics
+ - **Author**: John Ladan
  - **Lesson topic**: Introduction to Debugging in Python
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python_debugging>
 
