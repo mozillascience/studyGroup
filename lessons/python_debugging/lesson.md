@@ -51,19 +51,98 @@ TODO: introduce some code?
 
 ## Testing ##
 
-### Interactive testing/debugging (with the shell) ###
+There's a whole range of things that fall under testing, from running the program and seeing if it gives you the output you want to a full suite of unit tests run every time you commit your changes. In Python, the most common form of testing is through *interactive debugging* using the REPL.
 
-### Unit tests ###
+    # Demonstrate here
 
-### A brief mention of reporting bugs ###
+The REPL has been a major feature of interpretted languages like Python for good reason: quick and dirty testing.
+ - Don't know how a library function behaves? Test it in the REPL.
+ - Unsure of your syntax? Check it in the REPL.
+ - Not sure how to tackle a problem? Try it step by step with some test data in the REPL.
 
+Where this form of testing falls through is consistency and automation. Every time the developer makes a change, she has to remember what to test and type it into the command line. Even with tab completion, or cpy and paste, this is repetitive and tests will be missed.
+
+That's where unit tests come in. Unit tests are the smallest testable parts of a program. That smallness of them makes them easier to automate, and also (as we'll see) easier to debug. Python includes a module [`unittest`](https://docs.python.org/3.5/library/unittest.html) that can handle this work flow.
+
+As an example, let's make a function that will split a list in the middle. It will take a list of arbitrary length, and return a tuple containing (first half, middle element, last half). We'll follow a Test Driven Design (TDD) style, and create the tests first. This clearly defines the behaviour.
+
+```
+import unittest
+
+class TestSplitter(unittest.TestCase):
+
+    def test_simple_case(self):
+        self.assertTupleEqual([1, 2, 3], ([1], 2, [3]))
+
+    # TODO: More tests (hint: length of list)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+A good testing suite should include a few examples of normal/expected input as well as some edge cases you might encounter. We'll fill in more tests now.
+
+Now, run the suite (which will get us into debugging/finding mode)
+
+    python test_splitter.py
+    # or
+    python -m unittest
+    # or
+    python -m unittest -v test_splitter
+
+(The `unittest` module has *test discovery* that will search for tests in the current directory using some rules.)
+
+First, we'll suppress the errors by actually defining the function. Next, we'll come up with a solution (and hopefully make a few mistakes along the way.
+    
 ## Finding bugs ##
 
+After discovering that a bug exists, the next challenge is finding where the bug is in code. We've already seen how unit testing can help narrow it down to a function, but what if that function is more complicated, or we get an error, or the bug came up in use and not in testing?
+
+There are a few tools for this.
+
+Fist, stack traces. These are the messages the Python interpretter gives when there's an uncaught exception. At first, they may seem cryptic, but it's pretty straight-forward. From bottom to top, the trace prints:
+
+ - the error type and message (e.g. SyntaxError, IndexError, ...)
+ - [the line in which the error happened]
+ - the function in which the error happened, along with the filename and line number
+ - The filename, line number, and function that called the function with the error (and all the way up the stack)
+
+I'll show an example of this with a partially working `splitter` function.
+
 ### Print debugging ###
+Sometimes the stack trace isn't enough, like when a function returns the wrong value, or you're not sure if a loop is behaving properly. The quick fallback for this is to insert print statements wherever you're unsure of the value.
+
+We'll demo this with a broken average-taking function.
+
+
 ### Using `pdb` ###
 
-This is the more sophisticated way.
-sometimes print debugging is still useful, like in a loop if you don't want to stop every iteration.
+This is the more sophisticated way. You may have noticed that one annoyance with `print` is that you need to quit and restart python whenever the function definition is changed. Using `pdb`, the execution is interrupted, and we can check the values of variables whenever we like.
+
+To use `pdb`, you first need to import it, and add the line `pdb.set_trace()` where you'd like to start doing introspection. e.g.
+
+    import pdb
+
+    def average(xs):
+        pdb.set_trace()
+        length = len(xs)
+        acc = 0
+        for i in range(1, length)
+            acc = acc + xs[i]
+        return acc/length
+
+Next, when the execution is interrupted, use the commands
+ - `p <variable>` for printing the value of a variable
+ - `n` to execute the next line
+ - `s` to step into a function call
+ - `c` to continue execution
+ - `!<code>` to run any line of python (including changing values)
+
+We'll repeat the demo for average using the debugger in Spyder (which just runs `pdb` for us).
+
+Note: sometimes print debugging is still useful, like in a loop if you don't want to stop every iteration.
 
 ### Helping the user ###
 This includes providing good error messages and warnings. Perhaps by logging or catching and throwing exeptions.
+
+### A brief mention of reporting bugs ###
