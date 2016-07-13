@@ -75,7 +75,7 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-A good testing suite should include a few examples of normal/expected input as well as some edge cases you might encounter. We'll fill in more tests now.
+A good testing suite should include a few examples of normal/expected input as well as any edge cases you can think of. Let's fill in more tests now.
 
 Now, run the suite (which will get us into debugging/finding mode)
 
