@@ -140,9 +140,28 @@ Next, when the execution is interrupted, use the commands
 
 We'll repeat the demo for average using the debugger in Spyder (which just runs `pdb` for us).
 
-Note: sometimes print debugging is still useful, like in a loop if you don't want to stop every iteration.
+Note: sometimes print debugging is still useful, like in a loop if you don't want to stop every iteration, but want to see the values as they come up.
 
 ### Helping the user ###
-This includes providing good error messages and warnings. Perhaps by logging or catching and throwing exeptions.
+There are a couple other problems with using `print()` for debugging:
+ - you may forget to remove a print statement
+ - it messes up unit tests
+ - it corrupts the useful output to the user with debugging output
+
+For these reasons, it's better to use the [`logging`](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial) module.
+
+using `logging.debug()` instead of `print()` lets you output the debugging statements to a file, instead of `stdout`. An example from the python docs,
+
+    import logging
+    logging.basicConfig(filename='example.log',level=logging.DEBUG)
+    logging.debug('This message should go to the log file')
+    logging.info('So should this')
+    logging.warning('And this, too')
+
+Creating logs this way will also automatically format the messages (which you can customize). This is a good way to provide debugging data to your users, like warnings that their data is in the wrong format or that another function is better.
 
 ### A brief mention of reporting bugs ###
+
+It should also be mentioned that users can report bugs to developers. Each project likely has its own bug tracking system, but GitHub and other hosts provide issue trackers. It's a good idea to let users report bugs, and to report bugs in other projects that you use.
+
+With more practice in fixing bugs, you'll also have a better idea of what should be included in a bug report.
