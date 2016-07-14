@@ -129,6 +129,7 @@ To use `pdb`, you first need to import it, and add the line `pdb.set_trace()` wh
         return acc/length
 
 Next, when the execution is interrupted, use the commands
+
  - `p <variable>` for printing the value of a variable
  - `n` to execute the next line
  - `s` to step into a function call
@@ -140,7 +141,9 @@ Lets repeat the demo for `average()` using the debugger in Spyder (which just ru
 Note: sometimes print debugging is still useful, like in a loop if you don't want to stop every iteration, but want to see the values as they come up.
 
 ### Helping the user ###
+
 There are a couple other problems with using `print()` for debugging:
+
  - you may forget to remove a print statement
  - it messes up unit tests
  - it corrupts the useful output to the user with debugging output
