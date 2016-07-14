@@ -4,7 +4,7 @@ title: 'Debugging in Python'
 visible: true
 ---
 
-# Overview of Python
+# Debugging in Python
 
  - **Author**: John Ladan
  - **Lesson topic**: Introduction to Debugging in Python
