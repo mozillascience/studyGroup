@@ -139,3 +139,11 @@
     - Social Network Analysis
     - LaTeX
     - Flask
+
+- name: John Ladan
+  degree: MMath, PhD Physics
+  github: jladan
+  interests:
+    - Python
+    - Julia
+    - Javascript
