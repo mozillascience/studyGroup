@@ -71,6 +71,14 @@
     - R
     - SAS
 
+- name: John Ladan
+  degree: MMath, PhD Physics
+  github: jladan
+  interests:
+    - Python
+    - Julia
+    - Javascript
+
 - name: Aaron Liblong
   github: aliblong
 
@@ -84,9 +92,25 @@
 - name: Junjiang Lin
   github: junjianglin
 
+- name: Sara Mahallati
+  degree: PhD, IBBME
+  github: SaraMahallati
+  interests:
+    - Python
+
 - name: Abigail Cabunoc Mayes
   degree: Mozilla Science Lab
   github: acabunoc
+
+- name: Ian Dennis Miller
+  degree: PhD, Psychology
+  github: iandennismiller
+  interests:
+    - Python
+    - R
+    - Social Network Analysis
+    - LaTeX
+    - Flask
 
 - name: Elliott Sales de Andrade
   degree: PhD, Physics
@@ -124,26 +148,3 @@
   interests:
     - Python
 
-- name: Sara Mahallati
-  degree: PhD, IBBME
-  github: SaraMahallati
-  interests:
-    - Python
-
-- name: Ian Dennis Miller
-  degree: PhD, Psychology
-  github: iandennismiller
-  interests:
-    - Python
-    - R
-    - Social Network Analysis
-    - LaTeX
-    - Flask
-
-- name: John Ladan
-  degree: MMath, PhD Physics
-  github: jladan
-  interests:
-    - Python
-    - Julia
-    - Javascript
