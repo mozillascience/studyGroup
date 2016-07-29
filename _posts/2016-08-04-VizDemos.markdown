@@ -1,9 +1,9 @@
 ---
 title: Lightning Demos Data Visualization
-text: Quick demos showing how we visualize our data
+text: Quick demos showing how we visualize our data, , followed by a social at GSU Pub.
 location: MP408
 link: https://github.com/UofTCoders/Events/issues/58
 date: 2016-08-04
 startTime: '18:10'
-endTime: '19:00'
+endTime: '21:00'
 ---
