@@ -721,6 +721,6 @@ into a factor by values >50 vs <50), when Catholic is less than 60
 (hint, use `dplyr` commands + `gather`).  Have the Fertility groups as
 two columns in the new table (hint, use `spread` + `kable`).
 
-# Python-ized version (courtesy of @QuLogic)
+# Python-ized version (courtesy of [@QuLogic](https://github.com/QuLogic))
 
 <script src="https://gist.github.com/QuLogic/c65772479f6101393fc3.js"></script>
