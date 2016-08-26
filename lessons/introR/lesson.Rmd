@@ -2,13 +2,7 @@
 title: "Introduction to R"
 author: "Luke Johnston"
 date: "May 26, 2016"
-output: 
-  html_document: 
-    highlight: tango
-    number_sections: yes
-    theme: readable
-    toc: yes
-    
+output: md_document
 ---
 
  - **Authors**: Luke W. Johnston
@@ -76,7 +70,7 @@ On the top of each `.Rmd` file is the
 [YAML](https://en.wikipedia.org/wiki/YAML) front matter, which looks
 like:
 
-~~~
+```
 ---
 title: "Introduction to R"
 author: "Luke Johnston"
@@ -89,7 +83,7 @@ output:
     toc: yes
     
 ---
-~~~
+```
 
 Note the starting and ending `---` 'tags'.  This starts the YAML
 block.
