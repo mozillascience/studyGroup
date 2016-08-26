@@ -1,3 +1,19 @@
+---
+layout: page
+title: 'Intro to Stats'
+visible: false
+---
+
+## Introduction to Basic Stats in R ##
+
+- **Authors**: Lindsay Coome
+- **Research field**: Behavioural neuroendocrinology
+- **Lesson topic**: Basic Stats using R
+- **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/basic_stats>
+
+### Code from session
+
+```{r}
 #Independent-Samples T-test
 #Create variables
 Women = c(99, 85, 78, 93, 95, 87)
@@ -54,3 +70,10 @@ pairwise.t.test(pain, drug, p.adjust="bonferroni")
 
 #Supplemental: Another way to do a t-test on the migraine dataset
 with(migraine, t.test(pain[drug == "A"], pain[drug == "B"]))
+```
+
+
+
+# Python-ized version (courtesy of [@QuLogic](https://github.com/QuLogic))
+
+<script src="https://gist.github.com/QuLogic/4477f0e884ebd29ffe80.js"></script>
