@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Intro to Stats'
-visible: false
+visible: true
 ---
 
 ## Introduction to Basic Stats in R ##
