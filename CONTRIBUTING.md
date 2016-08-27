@@ -9,7 +9,7 @@ title: Contributing to UofTCoders
 
 The Mozilla Science Study Group
 handbook [**here**](https://mozillascience.github.io/studyGroupHandbook/lessons.html#reuse)
-and [**here**](http://mozillascience.github.io/studyGroupHandbook/event-types.html#workalong)
+and [**here**](https://mozillascience.github.io/studyGroupHandbook/event-types.html#workalong)
 has several very good points about making a lesson. This section summarizes bits
 of the handbook, but also adds pieces that are missing from it.
 
@@ -26,7 +26,7 @@ Instead, rely on built-in or sample datasets provided by the respective
 programming language or package.
 
 **Code**: This is the main thing that should be emphasized. How the code is
-used, it's specific applications, and it's meaning should be the entire focus of
+used, its specific applications, and its meaning should be the entire focus of
 the lesson. Here are some tips:
 
 - Keep the code as *simple* as possible while still covering the concept. The
@@ -45,10 +45,10 @@ out whether your lesson matches what is advertised in the Events repo.
 A few tips:
 
 - Start from the *very beginning*. Open the program or IDE (RStudio/Jupyter/etc)
-with everyone else and show how to do it.
+with everyone else and show how to do it (for beginner lessons).
 - Make *no assumptions* about what the audience knows. Let them know what keys
 you are using to run a particular piece of code (Ctrl-Enter for
-Jupyter/RStudio/etc).
+Jupyter/RStudio/etc) (for beginner lessons).
 - Write the code *with the audience*. Start from an empty file and write the
 code you planned. This forces you to slow down and allows the audience to follow
 along much better. If need be, print off the code you wanted to go through to
@@ -74,5 +74,7 @@ If you want to view the website before submitting a Pull Request to make sure
 your changes are as you expect, you'll need to:
 
 - Install Jekyll by following these [instructions](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/).
-- To build the site locally, run `jekyll serve`.
+- To build the site locally, run `jekyll serve`. 
+- The built site can also be viewed at your forked version
+(`https:://yourusername.github.io/studyGroup`).
 

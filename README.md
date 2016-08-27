@@ -18,7 +18,7 @@ Welcome to our Mozilla Study Group! A few things to do & know now that you're he
 
 ## For Organizers/Instructors
 
-Check out the CONTRIBUTING [file](https://github.com/UofTCoders/studyGroup/blob/gh-pages/CONTRIBUTING.md) or [page on the site](https://uoftcoders.github.io/studyGroup/CONTRIBUTING) for more details.
+Check out the [`CONTRIBUTING` file](https://github.com/UofTCoders/studyGroup/blob/gh-pages/CONTRIBUTING.md) or [the page on the site](https://uoftcoders.github.io/studyGroup/CONTRIBUTING) for more details.
 
 ### It's Broken, I Need Help
 
