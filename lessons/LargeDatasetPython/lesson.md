@@ -14,9 +14,9 @@ visible: true
 
 This lesson contains two parts: 1st, accessing and storing data from personal genomic DNA sequencing results using the pandas.DataFrame structure; 2nd, finding shared motifs in single-cell PCR sequencing results.
 
-To follow along, visit [https://github.com/gattacagithub/studyGroup/blob/gh-pages/lessons/LargeDatasetPython/LargeDatasetsPython.ipynb](here).
+To follow along, visit [the IPython notebook](https://github.com/gattacagithub/studyGroup/blob/gh-pages/lessons/LargeDatasetPython/LargeDatasetsPython.ipynb).
 
-The [https://github.com/gattacagithub/studyGroup/blob/gh-pages/lessons/LargeDatasetPython/generic_gdna.txt](generic_gDNA.txt) file is a sample personal gDNA chip sequencing output.
+The [generic_gdna.txt](https://github.com/gattacagithub/studyGroup/blob/gh-pages/lessons/LargeDatasetPython/generic_gdna.txt) file contains a sample personal gDNA chip sequencing output.
 
-The [https://github.com/gattacagithub/studyGroup/blob/gh-pages/lessons/LargeDatasetPython/generic_tcr.txt](generic_tcr.txt) file is a tab-separated plain text file containing 10 sample single-cell PCR sequencing results of the [https://en.wikipedia.org/wiki/T_cell_receptor](T cell receptor).
+The [generic_tcr.txt](https://github.com/gattacagithub/studyGroup/blob/gh-pages/lessons/LargeDatasetPython/generic_tcr.txt) file is a tab-separated plain text file containing 10 sample single-cell PCR sequencing results of the [T cell receptor](https://en.wikipedia.org/wiki/T_cell_receptor).
 
