@@ -9,7 +9,7 @@ visible: true
 
  - **Authors**: Wei Zhan
  - **Research field**: Immunology
- - **Lesson topic**: Processing gDNA chip results and single cell PCR results; Finding shared motifs.
+ - **Lesson topic**: Processing gDNA chip results and single cell PCR results; finding shared motifs.
  - **Lesson content URL**: <https://github.com/gattacagithub/studyGroup/tree/gh-pages/lessons/LargeDatasetPython>
 
 This lesson contains two parts: 1st, accessing and storing data from personal genomic DNA sequencing results using the pandas.DataFrame structure; 2nd, finding shared motifs in single-cell PCR sequencing results.
