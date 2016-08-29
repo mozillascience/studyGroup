@@ -1,45 +1,22 @@
 ---
 layout: page
 title:
-visible: false
+visible: true
 ---
 <!-- change visible to true if you want it on the site -->
 
-# My Lesson Title
+# Large Datasets in Python (Aug 25, 2016)
 
- - **Authors**: My Name
- - **Research field**: My field of study
- - **Lesson topic**: What computing topics does this lesson cover?
- - **Lesson content URL**: <link>
+ - **Authors**: Wei Zhan
+ - **Research field**: Immunology
+ - **Lesson topic**: Processing gDNA chip results and single cell PCR results; Finding shared motifs.
+ - **Lesson content URL**: <https://github.com/gattacagithub/studyGroup/tree/gh-pages/lessons/LargeDatasetPython>
 
-Write up your lesson here! If you're unsure of markdown, feel free to cut and paste your notes verbatim, and we'll help you format them.
+This lesson contains two parts: 1st, accessing and storing data from personal genomic DNA sequencing results using the pandas.DataFrame structure; 2nd, finding shared motifs in single-cell PCR sequencing results.
 
-Be sure to include any data or examples you need in this same directory.
+To follow along, visit [https://github.com/gattacagithub/studyGroup/blob/gh-pages/lessons/LargeDatasetPython/LargeDatasetsPython.ipynb](here).
 
-If you'd like to share your lesson with the wider world, consider sending a pull request or opening an issue at Mozilla Science's collection of lessons: https://github.com/mozillascience/studyGroupLessons
+The [https://github.com/gattacagithub/studyGroup/blob/gh-pages/lessons/LargeDatasetPython/generic_gdna.txt](generic_gDNA.txt) file is a sample personal gDNA chip sequencing output.
 
-# Use the markdown syntax:
+The [https://github.com/gattacagithub/studyGroup/blob/gh-pages/lessons/LargeDatasetPython/generic_tcr.txt](generic_tcr.txt) file is a tab-separated plain text file containing 10 sample single-cell PCR sequencing results of the [https://en.wikipedia.org/wiki/T_cell_receptor](T cell receptor).
 
-If you want to include code blocks, please with indent with **four
-spaces** (not a tab) like so:
-
-    Code here
-
-Or you can use three tilde's:
-
-~~~
-Code here
-~~~
-
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-**bolding** and *italizing*
-
-Inline `code`
-
-[links](url)
