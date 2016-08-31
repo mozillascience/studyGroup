@@ -24,7 +24,7 @@ headlineMain: "Let's Work Together"
 
 # Setup Google Calendar
 # Usage:
-# 1. create a new google account; set the calendar to 'public'
+# 1. create a new google account; set the calendar to 'public' (see https://support.google.com/calendar/answer/37083?hl=en on how to do this)
 # 2. change 'USER' in the example urls below to the username of the google account you made for your calendar
 # 3. set calendar_on: True.
 
