@@ -36,9 +36,20 @@ audience.
 - Keep the code *generalizable*. Our members come from diverse fields of
 research. What we share is the need to code.
 
-Lessons should be submitted as a Pull Request at least *one full day* before the
+Lessons should be submitted as a Pull Request (PR) at least *one full day* before the
 session. Submitting the lessons as a Pull Request is also a great way to find
-out whether your lesson matches what is advertised in the Events repo.
+out whether your lesson matches what is advertised in the Events repo. New lessons 
+should be created from a copy of the `lessons/template/lesson.md` file. Follow the 
+details and requests in the template lesson file and write up your lesson!
+
+Submitting a PR can be done by:
+
+1. Forking the `studyGroup` repo
+2. (Optional) `git clone` your forked version onto your computer
+3. Use the lesson template and make your lesson
+4. `git add` and `git commit` that lesson
+5. `git push` your lesson to your forked `studyGroup` repo
+6. Submit a PR using Github's Pull Request button on your forked version
 
 ### Giving the lesson
 
