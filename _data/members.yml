@@ -71,6 +71,14 @@
     - R
     - SAS
 
+- name: Taavi Kivisik
+  degree: MA, Experimental Psychology
+  github: tkivisik
+  interests:
+    - R
+    - Python
+    - Mnemonics & Memory
+
 - name: John Ladan
   degree: MMath, PhD Physics
   github: jladan
@@ -147,4 +155,3 @@
   github: cczhu
   interests:
     - Python
-
