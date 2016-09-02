@@ -1,0 +1,9 @@
+---
+title: Intro to R
+text: A brief introduction to R programming.
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/65
+date: 2016-09-21
+startTime: '18:10'
+endTime: '19:00'
+---
