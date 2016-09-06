@@ -19,8 +19,8 @@ language: en
 # None of these things need to be changed - but feel free!
 
 titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
-headlineSmall: "Welcome To Our Study Group!"
-headlineMain: "Let's Work Together"
+headlineSmall: "Welcome To The SANBI/UWC Study Group!"
+headlineMain: "Making Science Work Together"
 
 # Setup Google Calendar
 # Usage:
