@@ -29,8 +29,8 @@ headlineMain: "Making Science Work Together"
 # 3. set calendar_on: True.
 
 calendar_on: True
-calendar_embed_url: "https://www.google.com/calendar/embed?src=studygroup@sanbi.ac.za"
-calendar_ical_url: "https://www.google.com/calendar/ical/studygroup@sanbi.ac.za/public/basic.ics"
+calendar_embed_url: "https://www.google.com/calendar/embed?src=studygroup_admin@sanbi.ac.za"
+calendar_ical_url: "https://www.google.com/calendar/ical/studygroup_admin@sanbi.ac.za/public/basic.ics"
 
 
 #========================================
