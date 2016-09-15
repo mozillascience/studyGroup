@@ -6,16 +6,19 @@
 #   -arg1 The Rmd file to convert to md for Jekyll use.
 #
 # Example:
-#   Rscript knitpost.R filename.Rmd
+#   cd lesson/lesson_name/
+#   Rscript ../../knitpost.R lesson.Rmd
+#
+# Change `visible: false` to `visible: true` in the generated lesson.md file.
 #
 
 KnitPost <- function(input) {
     # this function is a modified version of an example here:
     # http://jfisher-usgs.github.com/r/2012/07/03/knitr-jekyll/
     outfile <- rename_to_post(input)
-    knitr::opts_knit$set(base.url = '{{ site.github.url }}/')
-    fig_path <- paste0("img/", sub(".Rmd$", "", input), "/")
-    knitr::opts_chunk$set(fig.path = fig_path)
+    knitr::opts_knit$set(base.url = '../')
+    #fig_path <- paste0("img/", sub(".Rmd$", "", input), "/")
+    #knitr::opts_chunk$set(fig.path = fig_path)
     knitr::opts_chunk$set(fig.cap = "center")
     knitr::render_markdown()
     knitr::knit(input, outfile, envir = parent.frame())

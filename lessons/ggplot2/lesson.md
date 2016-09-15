@@ -94,25 +94,25 @@ g <- ggplot(mpg, aes(displ, hwy))
 g + geom_point()
 ```
 
-![center]({{ site.github.url }}/img/lessons/ggplot2/lesson/unnamed-chunk-1-1.png)
+![center](../figure/unnamed-chunk-1-1.png)
 
 ```r
 g + geom_point() + geom_smooth(method="lm")
 ```
 
-![center]({{ site.github.url }}/img/lessons/ggplot2/lesson/unnamed-chunk-1-2.png)
+![center](../figure/unnamed-chunk-1-2.png)
 
 ```r
 g + geom_point() + geom_smooth(method="lm") + facet_grid(drv~.)
 ```
 
-![center]({{ site.github.url }}/img/lessons/ggplot2/lesson/unnamed-chunk-1-3.png)
+![center](../figure/unnamed-chunk-1-3.png)
 
 ```r
 g + geom_point(color="steelblue", size=4, alpha=1/2)
 ```
 
-![center]({{ site.github.url }}/img/lessons/ggplot2/lesson/unnamed-chunk-1-4.png)
+![center](../figure/unnamed-chunk-1-4.png)
 
 ```r
 g + geom_point(aes(color=drv)) + 
@@ -120,7 +120,7 @@ labs(title="Fuel ecomony...",
      x= "Engine displ", y="highway milage") + theme_bw(base_family = "Times")
 ```
 
-![center]({{ site.github.url }}/img/lessons/ggplot2/lesson/unnamed-chunk-1-5.png)
+![center](../figure/unnamed-chunk-1-5.png)
 
 ```r
 ggplot(mpg, aes(displ)) + geom_histogram(aes(color=drv)) + theme_bw()
@@ -130,7 +130,7 @@ ggplot(mpg, aes(displ)) + geom_histogram(aes(color=drv)) + theme_bw()
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![center]({{ site.github.url }}/img/lessons/ggplot2/lesson/unnamed-chunk-1-6.png)
+![center](../figure/unnamed-chunk-1-6.png)
 
 ```r
 library(reshape2)
@@ -169,7 +169,7 @@ mt3 <- melt(mt2)
 ggplot(mt3, aes(x=Var1, y=Var2, fill=value)) + geom_tile()
 ```
 
-![center]({{ site.github.url }}/img/lessons/ggplot2/lesson/unnamed-chunk-1-7.png)
+![center](../figure/unnamed-chunk-1-7.png)
 
 ```r
 mtcars %>%
@@ -179,7 +179,7 @@ mtcars %>%
   ggplot(aes(x=Var1, y=Var2, color=value)) + geom_point()
 ```
 
-![center]({{ site.github.url }}/img/lessons/ggplot2/lesson/unnamed-chunk-1-8.png)
+![center](../figure/unnamed-chunk-1-8.png)
 
 # Python-ized version (courtesy of [@QuLogic](https://github.com/QuLogic))
 

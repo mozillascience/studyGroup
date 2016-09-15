@@ -230,7 +230,7 @@ TukeyHSD(results, conf.level = 0.95)
 interaction.plot(drug, gender, pain)
 ```
 
-![center]({{ site.github.url }}/img/lessons/basic_stats/lesson/unnamed-chunk-1-1.png)
+![center](../figure/unnamed-chunk-1-1.png)
 
 ```r
 #Create bachelor dataset for correlation demo
@@ -293,7 +293,7 @@ cor.test(bachelor$weeks, bachelor$age)
 plot(bachelor$weeks, bachelor$age, xlab="Weeks Before Dumping", ylab="Age of Contestant") 
 ```
 
-![center]({{ site.github.url }}/img/lessons/basic_stats/lesson/unnamed-chunk-1-2.png)
+![center](../figure/unnamed-chunk-1-2.png)
 
 ```r
 #Supplemental: Another kind of post hoc test (pairwise t-tests with a bonferroni correction) on the migraine dataset
