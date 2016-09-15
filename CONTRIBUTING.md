@@ -11,7 +11,8 @@ The Mozilla Science Study Group
 handbook [**here**](https://mozillascience.github.io/studyGroupHandbook/lessons.html#reuse)
 and [**here**](https://mozillascience.github.io/studyGroupHandbook/event-types.html#workalong)
 has several very good points about making a lesson. This section summarizes bits
-of the handbook, but also adds pieces that are missing from it.
+of the handbook, but also adds pieces that are missing from it. Check out the 
+[lesson bank too](https://github.com/mozillascience/studyGroupLessons/issues)
 
 From the handbook:
 
@@ -125,11 +126,18 @@ git pull upstream gh-pages
 
 ### Giving the lesson
 
+**Come 10 min** early, to make sure everything is set up.
+
+Before you begin:
+
+- Introduce yourself and ask that everyone else state their name and maybe their 
+program
+
 A few tips:
 
-- Start from the *very beginning*. Open the program or IDE (RStudio/Jupyter/etc)
+- Start from the *(nearly) very beginning*. Open the program or IDE (RStudio/Jupyter/etc)
 with everyone else and show how to do it (for beginner lessons).
-- Make *no assumptions* about what the audience knows. Let them know what keys
+- Make *no/few assumptions* about what the audience knows. Let them know what keys
 you are using to run a particular piece of code (Ctrl-Enter for
 Jupyter/RStudio/etc) (for beginner lessons).
 - Write the code *with the audience*. Start from an empty file and write the
