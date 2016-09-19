@@ -1,6 +1,8 @@
-- name: Bill Mills
-  affiliation: TRIUMF
-  github: BillMills
+- name: Vigneshwer Dhinakaran
+  affiliation: Mozilla India
+  github: dvigneshwer
   interests:
     - Programming
     - Open Science
+    - IOT
+    - AI/Machine learning
