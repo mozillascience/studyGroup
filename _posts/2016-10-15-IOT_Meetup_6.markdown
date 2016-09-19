@@ -1,0 +1,9 @@
+---
+title: IOT Meetup 6
+text: Documenting the product
+location: KGISL
+link: https://github.com/FoxIOT/studyGroup/issues/4
+date: 2016-10-15
+startTime: '10:00'
+endTime: '16:00'
+---
