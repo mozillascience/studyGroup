@@ -1,6 +1,6 @@
 ---
 title: IOT Meetup 4
-text: Prototyping using pi and web api's
+text: Designing the prototype
 location: KGISL
 link: https://github.com/FoxIOT/studyGroup/issues/2
 date: 2016-10-1
