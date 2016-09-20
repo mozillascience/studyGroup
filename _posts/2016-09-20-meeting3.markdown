@@ -1,4 +1,3 @@
-
 ---
 title: Study Group Meeting #3
 text: git practice and some more loops
