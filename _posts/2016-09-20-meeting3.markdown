@@ -1,7 +1,7 @@
 ---
 title: Study Group Meeting #3
 text: git practice and some more loops
-location: Aaron Klug seminar room, SANBI, UWC
+location: Allan Cormack seminar room, SANBI, UWC
 link: https://github.com/SANBI-SA/studyGroup/issues/5
 date: 2016-09-20
 startTime: '15:00'
