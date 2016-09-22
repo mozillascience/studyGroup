@@ -218,6 +218,26 @@ into a `tbl` class, making printing of the output nicer.
 
 ```r
 library(dplyr)
+```
+
+```
+## 
+## Attaching package: 'dplyr'
+```
+
+```
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+```
+
+```
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+```
+
+```r
 tbl_df(ds)
 ```
 
@@ -700,3 +720,7 @@ and Infant.Mortality for each category of Fertility (hint: convert it
 into a factor by values >50 vs <50), when Catholic is less than 60
 (hint, use `dplyr` commands + `gather`).  Have the Fertility groups as
 two columns in the new table (hint, use `spread` + `kable`).
+
+# Python-ized version (courtesy of [@QuLogic](https://github.com/QuLogic))
+
+<script src="https://gist.github.com/QuLogic/c65772479f6101393fc3.js"></script>
