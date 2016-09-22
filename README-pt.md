@@ -87,20 +87,20 @@ Quando você estiver pronto para apresentar um novo evento para o seu Grupo de E
 
     Modifique todos os campos para descrever o seu evento; certifique-se que o `link` é o endereço do issue que você criou, depois clique em `Commit Changes` no final da página.
 
-É isso! O seu evento é está agora disponível em sua página. Além disso, existe um fórum de discussões para que as pessoas interessadas possam fazer perguntas e discutir os detalhes. Os eventos irão ser removidos automaticamente do cronograma da página uma semana depois da data do evento – mas o issue que foi criado estará sempre disponível como um registro do que você já realizou. 
+É isso! O seu evento agora está disponível em sua página. Além disso, existe um fórum de discussões para que as pessoas interessadas possam fazer perguntas e discutir os detalhes. Os eventos irão ser removidos automaticamente do cronograma da página uma semana depois da data do evento – mas o issue que foi criado estará sempre disponível como um registro do que você já realizou. 
 
 > **Dicas sobre a lista de eventos**
 >  - Você se lembrou de incluir `---` abaixo e acima? O compilador do site precisa disso.
 >  - Não consegue encontrar o monitor de issues? Lembre de ativar no menu 'Settings' no canto direito.
 >  - Os sete campos precisam estar cada um em uma linha; alguns editores de texto irão incluir quebras de linhas muito longas; remova se necessário.
 
-## Como manter contato com os membros
+## Como manter contato com os membros?
 
 Agora que vocês já se estabeleceram, o GitHub pode fornecer várias maneiras de se comunicar e manter contato com as outras pessoas envolvidas no Grupo de Estudo.
 
-  - **Peça às pessoas para que Watch o seu repositório.** Assegure-se de que todos os usuários tenham clicado no botão 'Watch' no topo do seu repositório. Desta forma eles serão automaticamente notificados de todos os eventos que você postar no seu rastreador de edições (issue tracker). 
+  - **Peça às pessoas para que cliquem em Watch no seu repositório.** Assegure-se de que todos os usuários tenham clicado no botão 'Watch' no topo do seu repositório. Desta forma eles serão automaticamente notificados de todos os eventos que você postar no seu rastreador de edições (issue tracker). 
   - **Use o Rastreador de Edições.** O rastreador de edições é o seu quadro de mensagens público para fazer anúncios,  perguntas e iniciar conversas com os membros. O seu está aqui `https://github.com/yourUserName/studyGroup/issues`.
-  - **Use o Forum do Mozilla Science** para papear com outros grupos de pesquisas ao redor do mundo. Encontre [o forum aqui](https://forum.mozillascience.org/category/events/study-groups); use-o para compartilhar suas histórias, fazer perguntas para uma comunidade mais ampla, e ver quem está por aí.
+  - **Use o Fórum do Mozilla Science** para conversar com outros grupos de pesquisas ao redor do mundo. Encontre [o fórum aqui](https://forum.mozillascience.org/category/events/study-groups); use-o para compartilhar suas histórias, fazer perguntas para uma comunidade mais ampla, e ver quem está por aí.
 
 ## Fale sobre a sua comunidade na Seção 'Quem somos nós'
 
