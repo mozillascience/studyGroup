@@ -1,7 +1,7 @@
 # FoxIOT Study Group Coimbatore
 
 ## About Us
-A set of engineers, designers, artist who meet regularly and exchange research on the field of IOT and open web, we use this repo for coordination, check out out website https://foxiot.github.io/studyGroup/
+A set of engineers, designers and artist who meet regularly and exchange research on the field of IOT and open web, we use this repo for coordination, check out our website https://foxiot.github.io/studyGroup/
 
 ## Community Support
 
