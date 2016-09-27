@@ -6,7 +6,7 @@ Study Group Members
 | Peter      | Van Heusdan      |   pvanheus  |
 | Emily | Stander      | EmilyAmor     |
 | Min-ghah | Kariem     |   mkariem |
-| put name here | put surname here      | put username here     |
+| Yamkela | Mgwatyu      | mgwatyu     |
 | put name here | put surname here      | put username here     |
 | put name here | put surname here      | put username here     |
 | put name here | put surname here      | put username here     |
