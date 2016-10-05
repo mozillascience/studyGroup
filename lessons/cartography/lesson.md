@@ -13,28 +13,34 @@ visible: true
 
 
 
-    # Default imports
-    import numpy as np
-    %matplotlib nbagg
-    import matplotlib.pyplot as plt
+```python
+# Default imports
+import numpy as np
+%matplotlib nbagg
+import matplotlib.pyplot as plt
+```
 
 ## Setup
 We will be using Cartopy for this lesson, so let's import that.
 The common convention is to import it as follows:
 
 
-    import cartopy.crs as ccrs
+```python
+import cartopy.crs as ccrs
+```
 
 Let's start with a simple plot of points:
 
 
-    np.random.seed(1)
-    x = 360 * np.random.rand(100)
-    y = 180 * np.random.rand(100) - 90
-    
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1)
-    ax.scatter(x, y)
+```python
+np.random.seed(1)
+x = 360 * np.random.rand(100)
+y = 180 * np.random.rand(100) - 90
+
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1)
+ax.scatter(x, y)
+```
 
 
 
@@ -54,8 +60,10 @@ Because that corresponds to the ranges for longitudes and latitudes!
 Let's rename them.
 
 
-    lon = x
-    lat = y
+```python
+lon = x
+lat = y
+```
 
 ## Projections
 
@@ -79,10 +87,12 @@ argument of `Figure.add_subplot` to signify the projection in which the
 resulting map will be made.
 
 
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.PlateCarree())
-    ax.scatter(lon, lat)
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.PlateCarree())
+ax.scatter(lon, lat)
+```
 
 
 
@@ -102,11 +112,13 @@ resulting map will be made.
 So far so good; let's add some coast lines:
 
 
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.PlateCarree())
-    ax.scatter(lon, lat)
-    ax.coastlines()
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.PlateCarree())
+ax.scatter(lon, lat)
+ax.coastlines()
+```
 
 
 
@@ -124,12 +136,14 @@ So far so good; let's add some coast lines:
 Or how about a land/ocean image:
 
 
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.PlateCarree())
-    ax.scatter(lon, lat)
-    ax.stock_img()
-    ax.coastlines()
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.PlateCarree())
+ax.scatter(lon, lat)
+ax.stock_img()
+ax.coastlines()
+```
 
 
 
@@ -147,13 +161,15 @@ Or how about a land/ocean image:
 And maybe some grid lines:
 
 
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.PlateCarree())
-    ax.scatter(lon, lat)
-    ax.stock_img()
-    ax.coastlines()
-    ax.gridlines()
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.PlateCarree())
+ax.scatter(lon, lat)
+ax.stock_img()
+ax.coastlines()
+ax.gridlines()
+```
 
 
 
@@ -171,16 +187,20 @@ And maybe some grid lines:
 This projection supports two arguments:
 
 
-    ccrs.PlateCarree?
+```python
+ccrs.PlateCarree?
+```
 
 
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.PlateCarree(central_longitude=-79))
-    ax.scatter(lon, lat)
-    ax.stock_img()
-    ax.coastlines()
-    ax.gridlines()
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.PlateCarree(central_longitude=-79))
+ax.scatter(lon, lat)
+ax.stock_img()
+ax.coastlines()
+ax.gridlines()
+```
 
 
 
@@ -203,17 +223,19 @@ It preserves angles and distances from the centre of the map.
 We'll centre it on this building, 43.660924°N, 79.398329°W.
 
 
-    to_lon = -79.398329  # East is positive.
-    to_lat = 43.660924
-    
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.AzimuthalEquidistant(central_longitude=to_lon,
-                                                              central_latitude=to_lat))
-    ax.scatter(lon, lat)
-    ax.stock_img()
-    ax.coastlines()
-    ax.gridlines()
+```python
+to_lon = -79.398329  # East is positive.
+to_lat = 43.660924
+
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.AzimuthalEquidistant(central_longitude=to_lon,
+                                                          central_latitude=to_lat))
+ax.scatter(lon, lat)
+ax.stock_img()
+ax.coastlines()
+ax.gridlines()
+```
 
 
 
@@ -244,15 +266,17 @@ to `ax.scatter`. In this case, we use the Geodetic projection for the points.
 This projection is basically longitude/latitude.
 
 
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.AzimuthalEquidistant(central_longitude=to_lon,
-                                                              central_latitude=to_lat))
-    # Here we add the transform argument and use the Geodetic projection.
-    ax.scatter(lon, lat, transform=ccrs.Geodetic())
-    ax.stock_img()
-    ax.coastlines()
-    ax.gridlines()
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.AzimuthalEquidistant(central_longitude=to_lon,
+                                                          central_latitude=to_lat))
+# Here we add the transform argument and use the Geodetic projection.
+ax.scatter(lon, lat, transform=ccrs.Geodetic())
+ax.stock_img()
+ax.coastlines()
+ax.gridlines()
+```
 
 
 
@@ -271,20 +295,22 @@ What's the difference between Plate Carrée and Geodetic?
 Let's look at a map:
 
 
-    ff_lon = 8 + 41 / 60
-    ff_lat = 50 + 7 / 60
-    
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.PlateCarree(central_longitude=(to_lon + ff_lon) / 2))
-    ax.plot([to_lon, ff_lon], [to_lat, ff_lat], c='b', lw=2,
-            transform=ccrs.PlateCarree())
-    ax.plot([to_lon, ff_lon], [to_lat, ff_lat], c='r', lw=2,
-            transform=ccrs.Geodetic())
-    ax.set_global()
-    ax.stock_img()
-    ax.coastlines()
-    ax.gridlines()
+```python
+ff_lon = 8 + 41 / 60
+ff_lat = 50 + 7 / 60
+
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.PlateCarree(central_longitude=(to_lon + ff_lon) / 2))
+ax.plot([to_lon, ff_lon], [to_lat, ff_lat], c='b', lw=2,
+        transform=ccrs.PlateCarree())
+ax.plot([to_lon, ff_lon], [to_lat, ff_lat], c='r', lw=2,
+        transform=ccrs.Geodetic())
+ax.set_global()
+ax.stock_img()
+ax.coastlines()
+ax.gridlines()
+```
 
 
 
@@ -314,23 +340,25 @@ We'll use their recommended standard parallels (see wiki link for explanation) o
 chosen to be 63°W to 123°W and 37°N to 75°N, and set with `ax.set_extent`.
 
 
-    # An arbitrary choice.
-    canada_east = -63
-    canada_west = -123
-    canada_north = 75
-    canada_south = 37
-    
-    standard_parallels = (49, 77)
-    central_longitude = -(91 + 52 / 60)
-    
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.LambertConformal(central_longitude=central_longitude,
-                                                          standard_parallels=standard_parallels))
-    ax.set_extent([canada_west, canada_east, canada_south, canada_north])
-    ax.stock_img()
-    ax.coastlines()
-    ax.gridlines()
+```python
+# An arbitrary choice.
+canada_east = -63
+canada_west = -123
+canada_north = 75
+canada_south = 37
+
+standard_parallels = (49, 77)
+central_longitude = -(91 + 52 / 60)
+
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.LambertConformal(central_longitude=central_longitude,
+                                                      standard_parallels=standard_parallels))
+ax.set_extent([canada_west, canada_east, canada_south, canada_north])
+ax.stock_img()
+ax.coastlines()
+ax.gridlines()
+```
 
 
 
@@ -357,21 +385,25 @@ These are downloaded and cached on the fly, so there may be some issues if the
 WiFi is being flaky in MP408.
 
 
-    import cartopy.feature as cfeature
+```python
+import cartopy.feature as cfeature
+```
 
 
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.LambertConformal(central_longitude=central_longitude,
-                                                          standard_parallels=standard_parallels))
-    ax.set_extent([canada_west, canada_east, canada_south, canada_north])
-    ax.gridlines()
-    ax.add_feature(cfeature.OCEAN)
-    ax.add_feature(cfeature.LAND)
-    ax.add_feature(cfeature.LAKES)
-    ax.add_feature(cfeature.BORDERS)
-    ax.add_feature(cfeature.COASTLINE)
-    ax.add_feature(cfeature.RIVERS)
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.LambertConformal(central_longitude=central_longitude,
+                                                      standard_parallels=standard_parallels))
+ax.set_extent([canada_west, canada_east, canada_south, canada_north])
+ax.gridlines()
+ax.add_feature(cfeature.OCEAN)
+ax.add_feature(cfeature.LAND)
+ax.add_feature(cfeature.LAKES)
+ax.add_feature(cfeature.BORDERS)
+ax.add_feature(cfeature.COASTLINE)
+ax.add_feature(cfeature.RIVERS)
+```
 
 
 
@@ -392,22 +424,24 @@ and we can use `cfeature.NaturalEarthFeature` directly with its
 `scale` argument.
 
 
-    land_50m = cfeature.NaturalEarthFeature('physical', 'land', '50m',
-                                            edgecolor='k',
-                                            facecolor=cfeature.COLORS['land'])
-    
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.LambertConformal(central_longitude=central_longitude,
-                                                          standard_parallels=standard_parallels))
-    ax.set_extent([canada_west, canada_east, canada_south, canada_north])
-    ax.gridlines()
-    ax.add_feature(land_50m)
-    ax.add_feature(cfeature.LAKES)
-    ax.add_feature(cfeature.OCEAN)
-    ax.add_feature(cfeature.BORDERS)
-    ax.add_feature(cfeature.COASTLINE)
-    ax.add_feature(cfeature.RIVERS)
+```python
+land_50m = cfeature.NaturalEarthFeature('physical', 'land', '50m',
+                                        edgecolor='k',
+                                        facecolor=cfeature.COLORS['land'])
+
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.LambertConformal(central_longitude=central_longitude,
+                                                      standard_parallels=standard_parallels))
+ax.set_extent([canada_west, canada_east, canada_south, canada_north])
+ax.gridlines()
+ax.add_feature(land_50m)
+ax.add_feature(cfeature.LAKES)
+ax.add_feature(cfeature.OCEAN)
+ax.add_feature(cfeature.BORDERS)
+ax.add_feature(cfeature.COASTLINE)
+ax.add_feature(cfeature.RIVERS)
+```
 
 
 
@@ -426,24 +460,26 @@ Now, let's add the provinces and states (the possible names as used here
 can be determined by visiting the link above):
 
 
-    provinces_50m = cfeature.NaturalEarthFeature('cultural',
-                                                 'admin_1_states_provinces_lines',
-                                                 '50m',
-                                                 facecolor='none')
-    
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.LambertConformal(central_longitude=central_longitude,
-                                                          standard_parallels=standard_parallels))
-    ax.set_extent([canada_west, canada_east, canada_south, canada_north])
-    ax.gridlines()
-    ax.add_feature(cfeature.LAND)
-    ax.add_feature(cfeature.LAKES)
-    ax.add_feature(cfeature.OCEAN)
-    ax.add_feature(cfeature.BORDERS)
-    ax.add_feature(cfeature.COASTLINE)
-    ax.add_feature(cfeature.RIVERS)
-    ax.add_feature(provinces_50m)
+```python
+provinces_50m = cfeature.NaturalEarthFeature('cultural',
+                                             'admin_1_states_provinces_lines',
+                                             '50m',
+                                             facecolor='none')
+
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.LambertConformal(central_longitude=central_longitude,
+                                                      standard_parallels=standard_parallels))
+ax.set_extent([canada_west, canada_east, canada_south, canada_north])
+ax.gridlines()
+ax.add_feature(cfeature.LAND)
+ax.add_feature(cfeature.LAKES)
+ax.add_feature(cfeature.OCEAN)
+ax.add_feature(cfeature.BORDERS)
+ax.add_feature(cfeature.COASTLINE)
+ax.add_feature(cfeature.RIVERS)
+ax.add_feature(provinces_50m)
+```
 
 
 
@@ -468,15 +504,17 @@ interface.
 These can be added by `ax.add_wms` and `ax.add_wmts`.
 
 
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.LambertConformal(central_longitude=central_longitude,
-                                                          standard_parallels=standard_parallels))
-    ax.set_extent([canada_west, canada_east, canada_south, canada_north])
-    ax.gridlines()
-    
-    ax.add_wms(wms='http://vmap0.tiles.osgeo.org/wms/vmap0',
-               layers=['basic'])
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.LambertConformal(central_longitude=central_longitude,
+                                                      standard_parallels=standard_parallels))
+ax.set_extent([canada_west, canada_east, canada_south, canada_north])
+ax.gridlines()
+
+ax.add_wms(wms='http://vmap0.tiles.osgeo.org/wms/vmap0',
+           layers=['basic'])
+```
 
 
 
@@ -495,15 +533,17 @@ Unfortunately, WMTS doesn't support reprojection in 0.14, but it will
 in the next release 0.15, so we need to use Plate Carrée for this map.
 
 
-    url = 'https://map1c.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi'
-    layer = 'VIIRS_CityLights_2012'
-    
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.PlateCarree())
-    ax.set_extent([canada_west, canada_east, canada_south, canada_north])
-    ax.gridlines()
-    ax.add_wmts(url, layer)
+```python
+url = 'https://map1c.vis.earthdata.nasa.gov/wmts-geo/wmts.cgi'
+layer = 'VIIRS_CityLights_2012'
+
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.PlateCarree())
+ax.set_extent([canada_west, canada_east, canada_south, canada_north])
+ax.gridlines()
+ax.add_wmts(url, layer)
+```
 
 
 
@@ -525,22 +565,28 @@ shapefile from somewhere outlining something. These can be read
 with `cartopy.io.shapereader.Reader`.
 
 
-    from cartopy.io.shapereader import Reader
+```python
+from cartopy.io.shapereader import Reader
+```
 
 We will use the data files provided with the lesson here:
 
 
-    data = Reader('icitw_wgs84')
+```python
+data = Reader('icitw_wgs84')
+```
 
 
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.LambertConformal(central_longitude=central_longitude,
-                                                          standard_parallels=standard_parallels))
-    ax.set_extent([-79.6, -79.2, 43.5, 43.9])
-    ax.gridlines()
-    
-    ax.add_geometries(data.geometries(), crs=ccrs.Geodetic(), edgecolor='k', facecolor='none')
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.LambertConformal(central_longitude=central_longitude,
+                                                      standard_parallels=standard_parallels))
+ax.set_extent([-79.6, -79.2, 43.5, 43.9])
+ax.gridlines()
+
+ax.add_geometries(data.geometries(), crs=ccrs.Geodetic(), edgecolor='k', facecolor='none')
+```
 
 
 
@@ -563,35 +609,43 @@ really go into any details of it here, though. The example below is just a
 quick one-off to show how it might be used.
 
 
-    import shapely.geometry as sgeom
+```python
+import shapely.geometry as sgeom
+```
 
 
-    ward = next(data.geometries())
-    
-    us = sgeom.Point(to_lon, to_lat)
-    ward.contains(us)
+```python
+ward = next(data.geometries())
+
+us = sgeom.Point(to_lon, to_lat)
+ward.contains(us)
+```
 
 
 
 
-    False
+```python
+False
+```
 
 
 
 
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.LambertConformal(central_longitude=central_longitude,
-                                                          standard_parallels=standard_parallels))
-    ax.set_extent([-79.6, -79.2, 43.5, 43.9])
-    ax.gridlines()
-    
-    for ward in data.geometries():
-        if ward.contains(us):
-            our_ward = ward
-            ax.add_geometries(our_ward, crs=ccrs.Geodetic(), edgecolor='k', facecolor='r')
-        else:
-            ax.add_geometries(ward, crs=ccrs.Geodetic(), edgecolor='k', facecolor='none')
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.LambertConformal(central_longitude=central_longitude,
+                                                      standard_parallels=standard_parallels))
+ax.set_extent([-79.6, -79.2, 43.5, 43.9])
+ax.gridlines()
+
+for ward in data.geometries():
+    if ward.contains(us):
+        our_ward = ward
+        ax.add_geometries(our_ward, crs=ccrs.Geodetic(), edgecolor='k', facecolor='r')
+    else:
+        ax.add_geometries(ward, crs=ccrs.Geodetic(), edgecolor='k', facecolor='none')
+```
 
 
 
@@ -604,48 +658,62 @@ What happened here? It turns out that the ward data is a bit buggy,
 and each ward is _not_ a closed polygon.
 
 
-    our_ward.is_closed
+```python
+our_ward.is_closed
+```
 
 
 
 
-    False
+```python
+False
+```
 
 
 
 Shapely will nicely render its contents in a notebook:
 
 
-    our_ward
+```python
+our_ward
+```
 
 
 
 
-![svg](../lesson_files/lesson_51_0.svg)
+![svg](lesson_files/lesson_51_0.svg)
 
 
 
 The type can be found from the `geom_type` property:
 
 
-    our_ward.geom_type
+```python
+our_ward.geom_type
+```
 
 
 
 
-    'MultiPolygon'
+```python
+'MultiPolygon'
+```
 
 
 
 `MultiPolygon` contains multiple polygons, but fortunately, there's just the one.
 
 
-    len(our_ward)
+```python
+len(our_ward)
+```
 
 
 
 
-    1
+```python
+1
+```
 
 
 
@@ -653,12 +721,14 @@ We'll construct a "linear ring" (basically a closed shape) from
 the data in the first polygon.
 
 
-    sgeom.LinearRing(our_ward[0].exterior.coords)
+```python
+sgeom.LinearRing(our_ward[0].exterior.coords)
+```
 
 
 
 
-![svg](../lesson_files/lesson_57_0.svg)
+![svg](lesson_files/lesson_57_0.svg)
 
 
 
@@ -666,20 +736,22 @@ And if we use that in our plot, the fill colour will no longer "spill" out
 over the rest of the map.
 
 
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1,
-                         projection=ccrs.LambertConformal(central_longitude=central_longitude,
-                                                          standard_parallels=standard_parallels))
-    ax.set_extent([-79.6, -79.2, 43.5, 43.9])
-    ax.gridlines()
-    
-    for ward in data.geometries():
-        if ward.contains(us):
-            # Close the polygon...
-            our_ward = [sgeom.LinearRing(ward.geoms[0].exterior.coords)]
-            ax.add_geometries(our_ward, crs=ccrs.Geodetic(), edgecolor='k', facecolor='r')
-        else:
-            ax.add_geometries(ward, crs=ccrs.Geodetic(), edgecolor='k', facecolor='none')
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1,
+                     projection=ccrs.LambertConformal(central_longitude=central_longitude,
+                                                      standard_parallels=standard_parallels))
+ax.set_extent([-79.6, -79.2, 43.5, 43.9])
+ax.gridlines()
+
+for ward in data.geometries():
+    if ward.contains(us):
+        # Close the polygon...
+        our_ward = [sgeom.LinearRing(ward.geoms[0].exterior.coords)]
+        ax.add_geometries(our_ward, crs=ccrs.Geodetic(), edgecolor='k', facecolor='r')
+    else:
+        ax.add_geometries(ward, crs=ccrs.Geodetic(), edgecolor='k', facecolor='none')
+```
 
 
 

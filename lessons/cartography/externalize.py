@@ -17,9 +17,11 @@ with open(args.input) as fd:
     lesson = fd.readlines()
 
 img_count = 0
+code_block = []
 with open(args.output, 'w') as fd:
     for line in lesson:
         if line.startswith('<img'):
+            # Convert embedded image to external one.
             prefix = '<img src="data:image/png;base64,'
             suffix = '">'
             img_count += 1
@@ -30,6 +32,17 @@ with open(args.output, 'w') as fd:
                 ifd.write(img)
             fd.write('![figure %d](../%s)\n' % (img_count, fig_path))
         elif line.startswith('    <') and line.endswith('>\n'):
+            # Ignore output lines that just print repr of an object.
             continue
+        elif line.startswith('   '):
+            # Group all lines that are part of a code block.
+            code_block.append(line[4:])
+        elif len(code_block):
+            # Wrap code block in back ticks instead of indent.
+            fd.write('```python\n')
+            fd.writelines(code_block)
+            fd.write('```\n')
+            code_block = []
+            fd.write(line)
         else:
             fd.write(line)
