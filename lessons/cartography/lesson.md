@@ -4,8 +4,6 @@ title: Cartography and Mapping in Python
 visible: true
 ---
 
-# Cartography and Mapping in Python
-
  - **Authors**: Elliott Sales de Andrade
  - **Research field**: Seismology
  - **Lesson topic**: cartography, maps, projections, Python
