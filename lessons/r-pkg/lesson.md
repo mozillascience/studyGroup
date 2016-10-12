@@ -32,7 +32,7 @@ devtools::create('pkg_name')
 
 ... Or by using the menu options `File -> New Project -> New Directory -> R Package` in RStudio.
 
-This creates:
+This creates a new directory called `pkg_name` (or whatever other name) along with:
 
 - An `R/` subfolder: contains all of the R code that the new R package will have.
 - A `DESCRIPTION` file: Contains the information about the package (like version
@@ -67,7 +67,7 @@ devtools::use_package('dplyr')
 
 This will output a message to the R console, telling you how to use the `dplyr`
 package functions. It also adds `dplyr` to the Import section of the DESCRIPTION
-file. You also need to append `dplyr::` to each `dplyr` function. So, if we
+file. You also need to prefix `dplyr::` to each `dplyr` function. So, if we
 create a new function:
 
 ```r
@@ -127,7 +127,7 @@ console:
 devtools::use_vignette('introduction')
 ```
 
-This will create a `vignette/` folde and an 
+This will create a `vignette/` folder and an 
 [R Markdown](http://rmarkdown.rstudio.com/) file, where you can mix text, code, and
 code output for a polished tutorial on using your package. You can access this
 vignette when the package is installed by using:
@@ -148,8 +148,8 @@ This installs the package and lets you access the functions by using `library()`
 command.
 
 There are several other bits of information for building an R package which may
-not get covered. These include unit testing and integration with Git/Github.
+not get covered. These include unit testing and integration with Git/GitHub.
 Unit testing (via the `testthat` package and `devtools::use_testthat()`) allows
 you to include tests to confirm that your functions work as intended (run 
 `Ctrl-Shift-T` to run `devtools::test()` and run the unit tests). R packages and
-RStudio integrate very well with Git and Github, so you can make use of them!
+RStudio integrate very well with Git and GitHub, so you can make use of them!
