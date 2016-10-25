@@ -66,7 +66,7 @@ There are many commands available -- any executable or built-in command. The fol
 - mv
 - mkdir
 - rm (-r)
-- head/tail (-f)
+- head/tail (-nf)
 - grep
 - man
 
@@ -82,12 +82,64 @@ Copy and move files with `cp` and `mv`. The last argument is the new filename/di
 
 Remove files with `rm`. The files cannot be recovered easily, and you won't be asked for confirmation. Directories won't be removed unless you use `-r` (for **r**ecursive.
 
+Probing contents of files with `head`, `tail`, `grep`. `head -n 10` shows the first 10 lines, and `tail` shows the last few lines in a file. To search for every line that contains a string, use `grep`. E.g. `grep pony animals.txt` finds the string "pony" in the file `animals.txt`.
 
+Finally, `man` provides manual pages for most commands that you can use from bash. Syntax: `man <command-name>`.
+
+# Files
+
+Many commands end up using files, so it's good to have an idea of how to name them. Files are specified in arguments with a *pathname*.
+
+    [directory-name/]filename
+
+Except for a few cases, the pathname is relative to the *current working directory*. So if you are in your home directory, `Desktop/my_script.py` refers to the `my_script.py` file in your own Desktop folder, not anyone else's. If you're in your `Desktop` folder, then `Desktop/my_script.py` refers to a file inside the Desktop folder inside your Desktop folder (which probably isn't there), but `my_script.py` refers to the previous file.
+
+Try it out: from your home directory, run the following commands (`touch` creates a file):
+
+```
+mkdir tmp
+touch tmp/file_a
+ls
+```
+
+In the list of files, you should see the `tmp` directory, but no `file_a`. Now execute
+
+```
+ls tmp
+```
+
+you should see the files in the `tmp` directory (`file_a`). Now try
+
+```
+cat tmp/file_a
+cd tmp
+cat tmp/file_a
+```
+
+What went wrong?
+
+
+## Absolute paths
+
+Sometimes, you'll need to access files from another location in the file hierarchy. With relative paths, you can use `..` to access the parent directory, so `../../src/include/` goes up two directories, then down through `src` and `include`. This can get cumbersome if you're not sure exactly how many times you need to go up. 
+
+Instead, there are absolute paths.
+
+TODO: talk about `/home/...` and `~/`
+
+Most of the time working with scripts, you should use relative paths, because one cannot assume the state of another's filesystem.
+
+
+# Globbing
+
+For when you want more than one file.
 
 # Pipes (stdin/out)
 
 - people with R might be familiar with the concept
 - pass grep to wc?
+
+## Multiple commands in a line
 
 # Variables
 
@@ -99,4 +151,13 @@ Remove files with `rm`. The files cannot be recovered easily, and you won't be a
 # Loops
 
 - for loop syntax
-- for fn in *.py; do echo $fn; done
+- `for fn in *.py; do echo $fn; done`
+
+# Wrapping up
+
+At first, using the command line might seem cumbersome, and like a lot to remember. But this is just like learning any language: at first you will be limited by your vocabulary, but with time and practice you'll be able to do much more.
+
+A tools you may want to look into when working with more files/strings are:
+ - Regular expressions. Used in tools like `grep` and `sed` are great for searching in strings/files.
+ - `find` can do some really powerful things when working with files.
+ - `xargs` creates/executes commands built from `stdin`
