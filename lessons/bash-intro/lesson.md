@@ -38,7 +38,10 @@ For Windows users, there are many options. Many people will use `git bash`, whic
 The basic unit for a command line interpreter (CLI) is a *command*. This is a line that starts with a *commmand name* followed (optionally) by *arguments*. Examples of commands are,
 
 ```
+ls
+ls -a
 date
+man date
 cd Documents
 rm unwanted_file
 vim hello.txt
@@ -49,5 +52,51 @@ which python
 cal
 ```
 
+Some arguments activate/deactivate options. Usually they are prefixed by a dash `-`. For example, `ls -a` lists **a**ll files, even hidden ones. Sometimes they are longer than one character, in which case they *usually* have two dashes e.g. `--help`.
+
+The command line options (aka flags or switches) can usualy be found in the man pages. Often there will be a `-h` or `--help` flag to display common usage.
+
+# Common commands/tasks
+
+There are many commands available -- any executable or built-in command. The following are some that I use more often.
+
+- ls (-alhS...)
+- cd (-)
+- cp
+- mv
+- mkdir
+- rm (-r)
+- head/tail (-f)
+- grep
+- man
+
+Many command names are the first two consonants of what they do: **c**o**p**y, **l**i**s**t, **m**o**v**e, **r**e**m**ove. Others are acronyms/abbreviations: **c**hange **d**irectory, **man**ual, **s**tream **ed**itor.
+
+## Explanations
+
+To list files, use `ls`. Common flags include `-a` for all files, `-l` for the full details (size, date, permissions...), `-h` for "human-readable" file sizes,  `-S` to sort by filesize.
+
+Change directories with `cd`. On many systems, `cd` with no arguments changes to your home directory (`cd ~`), and `cd -` changes to your previous directory.
+
+Copy and move files with `cp` and `mv`. The last argument is the new filename/directory. E.g. `cp a.py b.py c/` copies files `a.py` and `b.py` into the `c` directory. **Warning** `cp` and `mv` will overwrite files without warning you.
+
+Remove files with `rm`. The files cannot be recovered easily, and you won't be asked for confirmation. Directories won't be removed unless you use `-r` (for **r**ecursive.
+
+
+
 # Pipes (stdin/out)
 
+- people with R might be familiar with the concept
+- pass grep to wc?
+
+# Variables
+
+- No spaces around `=`!
+- path variable
+- everything's a string
+- using ${} to get the value
+
+# Loops
+
+- for loop syntax
+- for fn in *.py; do echo $fn; done
