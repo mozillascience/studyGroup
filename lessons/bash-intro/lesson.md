@@ -52,6 +52,8 @@ which python
 cal
 ```
 
+Try them out and see what they do.
+
 Some arguments activate/deactivate options. Usually they are prefixed by a dash `-`. For example, `ls -a` lists **a**ll files, even hidden ones. Sometimes they are longer than one character, in which case they *usually* have two dashes e.g. `--help`.
 
 The command line options (aka flags or switches) can usualy be found in the man pages. Often there will be a `-h` or `--help` flag to display common usage.
@@ -123,30 +125,133 @@ What went wrong?
 
 Sometimes, you'll need to access files from another location in the file hierarchy. With relative paths, you can use `..` to access the parent directory, so `../../src/include/` goes up two directories, then down through `src` and `include`. This can get cumbersome if you're not sure exactly how many times you need to go up. 
 
-Instead, there are absolute paths.
+Instead, there are absolute paths. On Unix systems, there is one root node for the file-system: `/` (compare this with `C:\` in Windows). All files are in subdirectories of root. Any pathname starting with `/` is an absolute path starting from the root.
 
-TODO: talk about `/home/...` and `~/`
+Try out `ls /`
+
+Another special location is your home directory. The short-form is `~/`. On a Mac, this would be `/Users/username/`. You can also shortform any user's home-directory with `~username/`.
+
+Try `cat ~/.bashrc`.
 
 Most of the time working with scripts, you should use relative paths, because one cannot assume the state of another's filesystem.
 
 
 # Globbing
 
-For when you want more than one file.
+If you want to pass more than one filename as an argument, you can use *globbing*. The special patterns for globbing are:
+
+- `*` Match any string of arbitrary length
+- `?` Match any single character
+- `[]` Match any of the characters within square brackets.
+
+TODO: A demo using globbing (data in a subdirectory of this lesson).
+
+# Getting more powerful
 
 # Pipes (stdin/out)
 
-- people with R might be familiar with the concept
-- pass grep to wc?
+Commands can be strung together with pipes `|`. Those of you using R may have seen the concept in the `dplyr` package. Commands typically have an input (stdin) and an output (stdout). The pipe attaches the output of one command into the input of another.
+
+This is easier to see with commands like `cat` and `head`. Try these out using our demo directory:
+
+```
+head animals
+cat animals
+cat animals | head
+ls | head -n2
+head
+grep 'fish' animals | wc -l
+```
+
+You can also redirect output into a file with `>` or `>>`. The former over-writes the file, while `>>` appends to the file if it exists. For example,
+
+```
+grep 'fish' animals > list-of-fish
+```
+
+Will create a new file with a list of fish. Files can also be used for `stdin` using the `<` character. The above command would be
+
+```
+grep fish < animals > list-of-fish
+```
+
+Or, with pipes,
+
+```
+grep fish < animals | wc -l > number-of-fish
+```
+
+Note that `<` appears after the first command, because each line must start witha  command. What would happen if you tried `animals > grep fish`?
+
+Another stream worth mentioning is `stderr`, which is how most errors or warnings are reported. This can be accessed with `2>`. For example, so save compiler errors for later, try
+
+   gcc some-code.c -o my-program 2> log-file
+
+
+## Usage examples
+
+If the output of a command is very long, use `less`:
+
+    long-output-command | less
+
+You can then scroll up and down and quit less by typing `q`.
+
+Joining (concatenating) files with `cat`.
+
+    cat file1 file2 > both-files
+
+Appending a line to a file
+
+    echo "put this at the end" >> some-file
+
+Search and replace in a file
+
+    sed -e 's/cat/dog/g' < animals > no-cats
 
 ## Multiple commands in a line
 
+You can also run multiple commands without piping their inputs/outputs together. There are a few ways characters for this:
+
+- `;` separates commands like they are on separate lines
+- `&&` does the next command if the previous one succeeds
+- `||` does the next command if the previous one fails
+- `&` runs the previous command in the "background"
+
 # Variables
 
-- No spaces around `=`!
-- path variable
-- everything's a string
-- using ${} to get the value
+Bash happens to be a full scripting language (aka bash script). As part of that are variables. They can be assigned with `=`. Try the following:
+
+    myOne=1
+    myName=John
+    mySubject = Physics
+
+What happened in the last example? In bash, there cannot be a space between the variable name and `=`. Now let's try accessing our variables.
+
+    echo myName
+
+Why doesn't that work? Bash has no way of knowing whether `myName` is a variablename or string-literal, so it always assumes a string. To access variables, we use `$varname`.
+
+    echo $myName
+    echo $myOne
+    echo $mySubject
+
+Note that if a variable isn't defined, then it simply returns an empty string. Everything in bash is a string. Even numbers are strings which are cast to ints for arithmetic.
+
+There are special variables called *environment variables* which are used by bash and other programs to affect behaviour. One of the most important ones is `$PATH`:
+
+    echo $PATH
+
+The path is a list of all directories to search for commands. To add a directory to your path,
+
+    export PATH="${HOME}/.local/bin:${PATH}"
+
+That adds the `~/.local/bin` directory to my path, so any programs installed there are now first-class commands in this bash session.
+
+All defined environment variables can be found with the `env` command. For example,
+
+    `env | sed 's/=.*$//'`
+
+will print all defined variable names.
 
 # Loops
 
