@@ -144,7 +144,7 @@ If you want to pass more than one filename as an argument, you can use *globbing
 - `?` Match any single character
 - `[]` Match any of the characters within square brackets.
 
-TODO: A demo using globbing (data in a subdirectory of this lesson).
+Try moving all python files into the `src` directory. How about copying every file with `a`?
 
 # Getting more powerful
 
