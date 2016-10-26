@@ -24,7 +24,7 @@ The command line is a very precise and powerful way to interact with a computer.
 
 Shells are particularly well suited to interacting with files and running programs -- possibly your own! Not having a graphical interface turns out to be a strength, because it makes remote computing simple and reliable.
 
-At first, typing in commands will feel a bit cumbersome, but like learning any language the only way to get better is with practice. Lucky for us, bash is based on english with a very simplified grammar.
+At first, typing in commands will feel a bit cumbersome, but like learning any language the only way to get better is with practice. Lucky for us, bash is based on English with a very simplified grammar.
 
 # Example shells
 
@@ -60,7 +60,7 @@ Try them out and see what they do.
 
 Some arguments activate/deactivate options. Usually they are prefixed by a dash `-`. For example, `ls -a` lists **a**ll files, even hidden ones. Sometimes they are longer than one character, in which case they *usually* have two dashes e.g. `--help`.
 
-The command line options (aka flags or switches) can usualy be found in the man pages. Often there will be a `-h` or `--help` flag to display common usage.
+The command line options (aka flags or switches) can usually be found in the man pages. Often there will be a `-h` or `--help` flag to display common usage.
 
 # Common commands/tasks
 
@@ -80,7 +80,7 @@ Many command names are the first two consonants of what they do: **c**o**p**y, *
 
 ## Explanations
 
-To list files, use `ls`. Common flags include `-a` for all files, `-l` for the full details (size, date, permissions...), `-h` for "human-readable" file sizes,  `-S` to sort by filesize.
+To list files, use `ls`. Common flags include `-a` for all files, `-l` for the full details (size, date, permissions...), `-h` for "human-readable" file sizes,  `-S` to sort by file size.
 
 Change directories with `cd`. On many systems, `cd` with no arguments changes to your home directory (`cd ~`), and `cd -` changes to your previous directory.
 
@@ -89,6 +89,8 @@ Copy and move files with `cp` and `mv`. The last argument is the new filename/di
 Remove files with `rm`. The files cannot be recovered easily, and you won't be asked for confirmation. Directories won't be removed unless you use `-r` (for **r**ecursive.
 
 Probing contents of files with `head`, `tail`, `grep`. `head -n 10` shows the first 10 lines, and `tail` shows the last few lines in a file. To search for every line that contains a string, use `grep`. E.g. `grep pony animals.txt` finds the string "pony" in the file `animals.txt`.
+
+Strangely enough, "pony" isn't in the Wikipedia list of animals by common name. Instead, try `grep cat animals`.
 
 Finally, `man` provides manual pages for most commands that you can use from bash. Syntax: `man <command-name>`.
 
@@ -133,11 +135,11 @@ Instead, there are absolute paths. On Unix systems, there is one root node for t
 
 Try out `ls /`
 
-Another special location is your home directory. The short-form is `~/`. On a Mac, this would be `/Users/username/`. You can also shortform any user's home-directory with `~username/`.
+Another special location is your home directory. The short-form is `~/`. On a Mac, this would be `/Users/username/`. You can also short-form any user's home-directory with `~username/`.
 
 Try `cat ~/.bashrc`.
 
-Most of the time working with scripts, you should use relative paths, because one cannot assume the state of another's filesystem.
+Most of the time working with scripts, you should use relative paths, because one cannot assume the state of another's file system.
 
 
 # Globbing
