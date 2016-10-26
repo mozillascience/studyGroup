@@ -20,18 +20,22 @@ For Windows users, there are many options. Many people will use `git bash`, whic
 
 # Why use a command line?
 
-- precise input
-- access to new, powerful tools
-- run your own programs
+The command line is a very precise and powerful way to interact with a computer. Because it is a scripting language, you can automate and perform complex tasks without much overhead. 
 
-# Available shells
+Shells are particularly well suited to interacting with files and running programs -- possibly your own! Not having a graphical interface turns out to be a strength, because it makes remote computing simple and reliable.
 
+At first, typing in commands will feel a bit cumbersome, but like learning any language the only way to get better is with practice. Lucky for us, bash is based on english with a very simplified grammar.
+
+# Example shells
+
+In this lesson, we're using bash, but most shells support all of the features covered here. Sometimes with different syntax. Some of the more modern shells include:
 - Bash
 - Zsh
 - Fish (the Friendly Interactive Shell)
 - rc   ("run commands" - the Plan 9 shell)
-- cmd.exe
 - Powershell (the better Windows shell)
+
+Of the above, Powershell is the most different. The others are all based on the *Bourne shell*, but with many additions to make it easier to work with.
 
 # Bash command syntax
 
@@ -148,6 +152,8 @@ Try moving all python files into the `src` directory. How about copying every fi
 
 # Getting more powerful
 
+Some true strengths of the command line come from combining commands. This is the "Unix philosophy" of having many small programs that perform their jobs well. These units can be combined to perform more complicated tasks.
+
 # Pipes (stdin/out)
 
 Commands can be strung together with pipes `|`. Those of you using R may have seen the concept in the `dplyr` package. Commands typically have an input (stdin) and an output (stdout). The pipe attaches the output of one command into the input of another.
@@ -162,6 +168,8 @@ ls | head -n2
 head
 grep 'fish' animals | wc -l
 ```
+
+Can you figure out how each of these commands behave from the above?
 
 You can also redirect output into a file with `>` or `>>`. The former over-writes the file, while `>>` appends to the file if it exists. For example,
 
@@ -255,8 +263,60 @@ will print all defined variable names.
 
 # Loops
 
-- for loop syntax
-- `for fn in *.py; do echo $fn; done`
+Repetitive tasks call for loops! Bash has loops:
+
+```
+for i in 1 2 3 4 5; do
+    echo The value of i is $i
+done
+```
+
+The basic syntax is 
+
+```
+for variable_name in a_list; do
+    [commands]
+done
+```
+
+The list is just like an argument list to a command: each item is a string, separated by spaces. Try using different values in the for loop, or putting quotes around different items.
+
+One common task I have is performing a command on each file in a directory. For example, consider adding a license preamble to every sourcefile in your project. If the license is in `LICENSE.txt`, then
+
+```
+for fn in *.py; do
+    cat LICENSE.txt $fn > tmpfile
+    mv tmpfile $fn
+done
+rm tmpfile
+```
+
+Unfortunately, there isn't a simple, universal way to prepend a file without a temporary file.
+
+# Running scripts
+
+Scripts are files that contain lists of commands, very much like scripts in Python, Ruby, R, Perl, etc. They can be run in much the same way.
+
+    bash myscript.sh
+
+Another trick is to use the "shebang" syntax at the beginning of a file
+
+```
+#!/bin/bash
+
+echo "The first argument is $1"
+
+echo "All of the arguments are"
+for i in $*; do
+    echo $i
+done
+```
+
+If the file is made executable (`chmod u+x myscript.sh`), then it can be executed with `./myscript.sh`. You can take it one step further and insert it in your path.
+
+The shebang syntax can be used for any interpreted language, like for Python:
+
+    #!/usr/bin/env python
 
 # Wrapping up
 
