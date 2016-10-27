@@ -20,7 +20,7 @@ What do Study Groups look like in Real Life? Check out the [Boston University St
  
 ## How to Set Up Your Own Mozilla Study Group Website
 
-Everything you need to set up your own beautiful Mozilla Study Group website (it looks like this!) for organizing events is [right here in the Orientation Guide.](https://mozillascience.github.io/study-group-orientation/3.3-get-online.html) If you are new to GitHub, don't worry, [there's an introduction to it here.](https://mozillascience.github.io/study-group-orientation/3.1-collab-vers-github.html). Take a look, and if you need any help, you can ask a question in the [Gitter chat](https://gitter.im/mozillascience/studyGroup).
+Everything you need to set up your own beautiful Mozilla Study Group website (it looks like this!) for organizing events is [right here in the Orientation Guide.](https://mozillascience.github.io/study-group-orientation/3.3-get-online.html) If you are new to GitHub, don't worry, [there's an introduction to it here](https://mozillascience.github.io/study-group-orientation/3.1-collab-vers-github.html). Take a look, and if you need any help, you can ask a question in the [Gitter chat](https://gitter.im/mozillascience/studyGroup) or email sciencelab@mozillafoundation.org.
 
 ### It's Broken, I Need Help!!!
 
