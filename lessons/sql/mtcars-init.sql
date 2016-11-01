@@ -20,8 +20,8 @@ create table results (
     name varchar(256)
     );
 
-# set sqlite3 into CSV mode
+-- set sqlite3 into CSV mode
 .mode csv
 
-# import the mtcars file and store it in the results table
+-- import the mtcars file and store it in the results table
 .import mtcars.csv results
