@@ -1,2 +1,4 @@
 .ipynb_*
 lesson.html
+mtcars.csv
+mtcars.sqlite

@@ -14,4 +14,7 @@ requirements:
 	pip install -r requirements/requirements.txt
 	R --no-save < requirements/requirements.R
 
+mtcars-init:
+	sqlite3 mtcars.sqlite < mtcars-init.sql
+
 .PHONY: lesson open requirements python-notebook r-notebook

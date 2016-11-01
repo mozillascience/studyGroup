@@ -7,7 +7,7 @@ visible: true
 ## Introduction to Basic Stats in R ##
 
 - **Authors**: Ian Dennis Miller
-- **Research field**: Social complexity
+- **Research field**: Social Psychology - Social Complexity
 - **Lesson topic**: Databases and SQL
 - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/sql>
 
