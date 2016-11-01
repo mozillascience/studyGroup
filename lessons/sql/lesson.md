@@ -4,7 +4,7 @@ title: 'Databases and SQL'
 visible: true
 ---
 
-## Introduction to Basic Stats in R ##
+## Introduction to Databases and SQL ##
 
 - **Authors**: Ian Dennis Miller
 - **Research field**: Social Psychology - Social Complexity

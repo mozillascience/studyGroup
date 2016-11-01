@@ -18,7 +18,7 @@ create table results (
     gear int,
     carb int,
     name varchar(256)
-    );
+);
 
 -- set sqlite3 into CSV mode
 .mode csv
