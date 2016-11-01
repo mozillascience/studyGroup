@@ -1,17 +1,17 @@
 lesson:
 	Rscript -e "library(rmarkdown); rmarkdown::render('lesson.md')"
 
-slides:
-	Rscript -e "library(rmarkdown); rmarkdown::render('slides.Rmd')"
-
 open:
 	open lesson.html
 
-jupyter:
-	jupyter notebook
+python-notebook:
+	jupyter notebook python-sql.ipynb
+
+r-notebook:
+	jupyter notebook r-sql.ipynb
 
 requirements:
-	R --no-save < requirements/requirements.R
 	pip install -r requirements/requirements.txt
+	R --no-save < requirements/requirements.R
 
-.PHONY: lesson slides open jupyter requirements
+.PHONY: lesson open requirements python-notebook r-notebook
