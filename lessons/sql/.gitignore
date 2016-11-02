@@ -1,0 +1,5 @@
+.ipynb_*
+lesson.html
+mtcars.csv
+mtcars.sqlite
+export-mtcars.csv
