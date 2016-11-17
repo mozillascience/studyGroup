@@ -1,6 +1,6 @@
-- name: Bill Mills
-  affiliation: TRIUMF
-  github: BillMills
+- name: Steve Van Tuyl
+  affiliation: OSU Libraries
+  github: vantuyls
   interests:
-    - Programming
-    - Open Science
+    - Community Building
+    - Yeast Wrangling
