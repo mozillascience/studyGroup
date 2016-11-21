@@ -1,9 +1,3 @@
-- name: Madeleine Bonsma
-  degree: MSc, Physics
-  github: mbonsma
-  interests:
-    - Python
-
 - name: Albi Celaj
   degree: PhD, Molecular Genetics
   github: a3cel2
@@ -20,12 +14,6 @@
   github: melaniecooke
   interests:
     - Python
-
-- name: Lindsay Coome
-  degree: PhD, Psychology
-  github: lcoome
-  interests:
-    - R
 
 - name: Andre R Erler
   degree: PhD, Physics
@@ -63,13 +51,6 @@
   github: lannajin
   interests:
     - R
-
-- name: Luke W Johnston
-  degree: PhD, Nutritional Sciences
-  github: lwjohnst86
-  interests:
-    - R
-    - SAS
 
 - name: Taavi Kivisik
   degree: MA, Experimental Psychology
@@ -120,14 +101,6 @@
     - LaTeX
     - Flask
 
-- name: Elliott Sales de Andrade
-  degree: PhD, Physics
-  github: QuLogic
-  interests:
-    - Fortran
-    - Python
-    - Visualization
-
 - name: Matt Stata
   github: MattStata
 
@@ -139,13 +112,6 @@
 
 - name: Alex Tavasoli
   github: atavasoli
-
-- name: Lina Tran
-  degree: MSc, Physiology
-  github: linamnt
-  interests:
-    - Python
-    - R
 
 - name: Eric Zhu
   degree: MSc, Computer Science

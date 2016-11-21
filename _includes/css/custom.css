@@ -4,6 +4,9 @@
 .team-member i.fa {
  font-size: 110px;
 }
+.col-xs-offset-1half,.col-sm-offset-1half,.col-md-offset-1half,.col-lg-offset-1half{
+ margin-left:12.5%
+}
 /* Ensure body is below navbar */
 body.no-header {
  padding-top: 100px;

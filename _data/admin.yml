@@ -1,0 +1,38 @@
+- name: Madeleine Bonsma
+  position: President
+  degree: MSc, Physics
+  github: mbonsma
+  interests:
+    - Python
+
+- name: Lindsay Coome
+  position: Special Events Coordinator
+  degree: PhD, Psychology
+  github: lcoome
+  interests:
+    - R
+
+- name: Luke W Johnston
+  position: Treasurer
+  degree: PhD, Nutritional Sciences
+  github: lwjohnst86
+  interests:
+    - R
+    - SAS
+
+- name: Elliott Sales de Andrade
+  position: Technical Admin
+  degree: PhD, Physics
+  github: QuLogic
+  interests:
+    - Fortran
+    - Python
+    - Visualization
+
+- name: Lina Tran
+  position: Admin
+  degree: MSc, Physiology
+  github: linamnt
+  interests:
+    - Python
+    - R
