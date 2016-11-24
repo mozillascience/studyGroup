@@ -39,4 +39,4 @@ I did my best to find appropriate links, but some things might not be accurate. 
 * Make a blog - post code, write about your research, etc.
 * Contribute to open science on GitHub - [some ideas from Mozilla Science Lab](https://science.mozilla.org/projects)
 * Recruiting firms, such as [Randstad](https://www.randstad.ca/)
-* [devhub.com](http://www.devhub.com/)?
+* [DevHub](http://www.meetup.com/Devhub/)
