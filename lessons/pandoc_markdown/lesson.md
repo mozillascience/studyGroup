@@ -110,6 +110,7 @@ Pretty *cool* stuff
 ![image](./image.jpg)
 ```
 and produce all of this
+
 ```Tex
 \documentclass[]{article}
 \usepackage{lmodern}
@@ -153,7 +154,7 @@ and produce all of this
 }{% else
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
+%}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
