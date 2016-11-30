@@ -58,11 +58,11 @@ Many great scientists have dedicated their lives to the study of globs and great
 
 and even converted into LaTeX so it looks like this:
 
-![alt text](./simplelatexsample.png)
+![alt text](../simplelatexsample.png)
 
 The real power of Pandoc, however, comes when, with style templates and a little extra formatting work, you're able to produce fully typeset and personally styled documents with a markdown file and a command line.
 
-![alt text](./complexlatexsample.png)
+![alt text](../complexlatexsample.png)
 
 Boom! Page numbers and everything!
 
