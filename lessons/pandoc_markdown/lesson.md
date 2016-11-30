@@ -56,6 +56,8 @@ If we accept the philosophical (and now scientifically incontrovertible) positio
 
 Many great scientists have dedicated their lives to the study of globs and greatly advanced the globular theory of matter. In the next decade, who knows what globular secrets will be unearthed?
 
+---
+
 and even converted into LaTeX so it looks like this:
 
 ![alt text](../simplelatexsample.png)
