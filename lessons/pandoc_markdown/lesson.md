@@ -11,7 +11,7 @@ visible: true
  - **Authors**: Dano Morrison
  - **Research field**: Neuroscience
  - **Lesson topic**: How to use Pandoc and Markdown for writing scientific manuscripts
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pandoc_markdown>
+ - **Lesson content URL**: <httpss://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pandoc_markdown>
 
 # Intro to Pandoc
 
@@ -26,7 +26,7 @@ Pandoc is a command line tool that you can use to automatically convert files fr
 
 # Intro to Markdown
 
-Markdown is the best way to write things for Pandoc, and probably the best way to write things for publishing to the web. If you haven't heard of it, it's a lightweight, shortened version of HTML that uses simplified tags like `* ~ - #` to format documents. It's mostly writing plain text, but with a little practice you can easily implement the most common types of text formatting, like headings, lists, links, images, etc. The veritable bible of Markdown is [Daring Fireball.](https://daringfireball.net/projects/markdown/)
+Markdown is the best way to write things for Pandoc, and probably the best way to write things for publishing to the web. If you haven't heard of it, it's a lightweight, shortened version of HTML that uses simplified tags like `* ~ - #` to format documents. It's mostly writing plain text, but with a little practice you can easily implement the most common types of text formatting, like headings, lists, links, images, etc. The veritable bible of Markdown is [Daring Fireball.](httpss://daringfireball.net/projects/markdown/)
 
 # The Value Proposition
 
@@ -39,6 +39,8 @@ With Markdown and Pandoc, you can write something that looks like this:
 
 ### A history of globbing
 If we accept the philosophical (and now scientifically incontrovertible) position that the movement of all rotund entities are mediated by underlying interactions between globular units, then it follows that whenever a globby is stored in the world such that it can be reglobbed at a later time (ie. a glob-memory), there must be some concurrent change that occurs in the underlying structure of globby particles.
+
+Many great scientists have dedicated their lives to the study of globs and greatly advanced the globular theory of matter. In the next decade, who knows what globular secrets will be unearthed?
 ~~~
 
 That can be converted into HTML like this:
@@ -54,7 +56,7 @@ and even converted into LaTeX so it looks like this:
 
 ![alt text](./simplelatexsample.png)
 
-The real power of Pandox, however, comes when, with style templates and a little extra formatting work, you're able to produce fully type set and personally styled documents with a markdown file and a command line.
+The real power of Pandoc, however, comes when, with style templates and a little extra formatting work, you're able to produce fully typeset and personally styled documents with a markdown file and a command line.
 
 ![alt text](./complexlatexsample.png)
 
@@ -62,11 +64,11 @@ Boom! Page numbers and everything!
 
 # Getting Started
 
-- Install [Pandoc](http://pandoc.org/installing.html)
-- Install LaTeX: [TeXLive (Linux)](http://www.tug.org/texlive/), [MacTeX (Mac)](http://www.tug.org/mactex/), [MikTeX (Windows)](https://miktex.org/)
+- Install [Pandoc](https://pandoc.org/installing.html)
+- Install LaTeX: [TeXLive (Linux)](https://www.tug.org/texlive/), [MacTeX (Mac)](https://www.tug.org/mactex/), [MikTeX (Windows)](https://miktex.org/)
 - Install XeTex?
 
-Whether you're doing something like `sudo apt-get pandoc && apt-get texlive` or `brew install pandoc && brew cask install mactex`, if you can run `pandoc -v` and `pdflatex -v` in a terminal, you're good to go.
+Whether you're doing something like `sudo apt-get install pandoc && apt-get install texlive` or `brew install pandoc && brew cask install mactex`, if you can run `pandoc -v` and `pdflatex -v` in a terminal, you're good to go.
 
 # Markdown
 
@@ -81,7 +83,7 @@ Whether you're doing something like `sudo apt-get pandoc && apt-get texlive` or 
 2. two
 3. three
 
-[example link](http://example.com/)
+[example link](https://example.com/)
 
 ![example image](/path/to/img.jpg)
 
@@ -138,25 +140,25 @@ Pretty \emph{cool} stuff
 ```
 
 That's sure better than writing all that stuff yourself! 
-You can calso go straight to pdf (if you have the right depencies installed) with
+You can also go straight to pdf (if you have the right dependencies installed) with
 `pandoc sample.md -s -o sample.pdf`
 
 You may have figured out that `-o` stands for 'output' and `-s` stands for 'standalone.' There's also a lot of other pandoc command modifiers that you can take a look at any time by running `pandoc -h`
 
-You can also combine multiple input files into one output files with the regular character `*`. 
+You can also combine multiple input files into one output files with the regular character `*` (it's not a special pandoc feature, but pandoc supports having multiple files thrown at from the terminal). 
 `-H` Will let you include other files as the header of whatever you're producing
 `-V` will let you pass variables (ie. fontsize, documentclass for LaTeX documents)
 
-[This manual](http://pandoc.org/MANUAL.pdf) will be helpful for understanding these advanced features.
+[This manual](https://pandoc.org/MANUAL.pdf) will be helpful for understanding these advanced features.
 
 # Advanced: Custom LaTeX templates for Pandoc
 Chances are, if you actually are trying to publish something in LaTeX, you're going to want to put your own style on things. It's not that hard to do with Pandoc, all it takes is:
-1. saving a {andoc LaTeX template somewhere
+1. saving a Pandoc LaTeX template somewhere
 2. edit that template the way you want
 3. tell pandoc to use that template in producing an output
 
 ## 1. Pandoc LaTeX Templates
-These aren't just regular LaTeX templates but Pandoc-specific templates that instruct Pandoc how to convert files into LaTex. Here's an [example of one](https://github.com/jgm/pandoc-templates/blob/master/default.latex)
+These aren't just regular LaTeX templates but Pandoc-specific templates that instruct Pandoc how to convert files into LaTeX. Here's an [example of one](https://github.com/jgm/pandoc-templates/blob/master/default.latex)
 
 ## 2. Editing the templates
 If you want to expand on what the template provides, you can go into it and change or add things, maybe specific fonts or packages you would like to use
