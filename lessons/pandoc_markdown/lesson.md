@@ -11,7 +11,7 @@ visible: true
  - **Authors**: Dano Morrison
  - **Research field**: Neuroscience
  - **Lesson topic**: How to use Pandoc and Markdown for writing scientific manuscripts
- - **Lesson content URL**: <httpss://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pandoc_markdown>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pandoc_markdown>
 
 # Intro to Pandoc
 
@@ -26,7 +26,7 @@ Pandoc is a command line tool that you can use to automatically convert files fr
 
 # Intro to Markdown
 
-Markdown is the best way to write things for Pandoc, and probably the best way to write things for publishing to the web. If you haven't heard of it, it's a lightweight, shortened version of HTML that uses simplified tags like `* ~ - #` to format documents. It's mostly writing plain text, but with a little practice you can easily implement the most common types of text formatting, like headings, lists, links, images, etc. The veritable bible of Markdown is [Daring Fireball.](httpss://daringfireball.net/projects/markdown/)
+Markdown is the best way to write things for Pandoc, and probably the best way to write things for publishing to the web. If you haven't heard of it, it's a lightweight, shortened version of HTML that uses simplified tags like `* ~ - #` to format documents. It's mostly writing plain text, but with a little practice you can easily implement the most common types of text formatting, like headings, lists, links, images, etc. The veritable bible of Markdown is [Daring Fireball.](https://daringfireball.net/projects/markdown/)
 
 # The Value Proposition
 
@@ -45,12 +45,16 @@ Many great scientists have dedicated their lives to the study of globs and great
 
 That can be converted into HTML like this:
 
+---
+
 # Introduction
 
 ## The globular theory of matter
 
 ### A history of globbing
 If we accept the philosophical (and now scientifically incontrovertible) position that the movement of all rotund entities are mediated by underlying interactions between globular units, then it follows that whenever a globby is stored in the world such that it can be reglobbed at a later time (ie. a glob-memory), there must be some concurrent change that occurs in the underlying structure of globby particles.
+
+Many great scientists have dedicated their lives to the study of globs and greatly advanced the globular theory of matter. In the next decade, who knows what globular secrets will be unearthed?
 
 and even converted into LaTeX so it looks like this:
 
