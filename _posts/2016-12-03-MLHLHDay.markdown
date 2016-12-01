@@ -2,7 +2,7 @@
 title: Local Hack Day
 text: Hands-on-Hackathon on Web Technologies,Github and Django.
 location: ITH Technologies Pvt. LTD., 501,502,503, 5th Floor, Ratan Esquire, Chunniganj, Kanpur, Uttar Pradesh, India
-link: https://localhackday.mlh.io/register/?id=kanpur&city_name=Kanpur%2C%20Uttar%20Pradesh%20%2F%20India
+link: https://github.com/amitkumarj441/studyGroup/issues/2
 date: 2016-12-03
 startTime: '01:00'
 endTime: '07:00'
