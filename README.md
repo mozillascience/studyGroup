@@ -21,7 +21,7 @@ This group is for all the open science champions in Aberdeen, for those who woul
 
 ### What we do
 
-We meet regularly every week ##(when and where to be decided)##. Sometimes someone will show us how to use a new tool, sometimes we just work together at our own projects asking each other questions. We always work in a collaboratively and friendly way, try to learn from each other and sometimes we just go to the pub.
+We meet regularly every week. Sometimes someone will show us how to use a new tool, sometimes we just work together at our own projects asking each other questions. We always work in a collaboratively and friendly way, try to learn from each other and sometimes we just go to the pub.
 
 
 ### For Participants
