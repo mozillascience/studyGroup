@@ -1,6 +1,7 @@
-- name: Bill Mills
-  affiliation: TRIUMF
-  github: BillMills
+- name: Francesca Mancini
+  affiliation: Zoology Buildling, University of Aberdeen
+  github: FrancescaMancini
   interests:
-    - Programming
+    - Interdisciplinary Conservation Science
     - Open Science
+  
