@@ -9,12 +9,6 @@
   degree: PhD, Physics
   github: dchandan
 
-- name: Melanie A Cooke
-  degree: PhD, Physics
-  github: melaniecooke
-  interests:
-    - Python
-
 - name: Andre R Erler
   degree: PhD, Physics
   github: aerler
@@ -35,22 +29,10 @@
     - R
     - Python
 
-- name: Ciaran J Hickey
-  github: hickeyc
-  interests:
-    - C++
-    - Fortran90
-
 - name: Derek Howard
   github: derekhoward
   interests:
     - Python
-
-- name: Lanna S Jin
-  degree: PhD, Ecology &amp; Evolutionary Biology
-  github: lannajin
-  interests:
-    - R
 
 - name: Taavi Kivisik
   degree: MA, Experimental Psychology
@@ -67,19 +49,6 @@
     - Python
     - Julia
     - Javascript
-
-- name: Aaron Liblong
-  github: aliblong
-
-- name: Chuangxin Lin
-  degree: PhD, Physics
-  github: Chancylin
-  interests:
-    - Fortran
-    - Python
-
-- name: Junjiang Lin
-  github: junjianglin
 
 - name: Sara Mahallati
   degree: PhD, IBBME
@@ -100,24 +69,9 @@
     - Social Network Analysis
     - LaTeX
     - Flask
-
-- name: Matt Stata
-  github: MattStata
-
-- name: Stefanie D Sultmanis
-  github: stefsult
-  interests:
-    - Python
-    - R
-
-- name: Alex Tavasoli
-  github: atavasoli
-
-- name: Eric Zhu
-  degree: MSc, Computer Science
-  github: ekzhu
-
-- name: Charles Chenchong Zhu
-  github: cczhu
+    
+- name: Joel Ostblom
+  degree: PhD, Biomedical Engineering
+  github: joelostblom
   interests:
     - Python
