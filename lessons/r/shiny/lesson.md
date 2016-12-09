@@ -2,6 +2,9 @@
 layout: page
 title: 'Making interactive plots using Shiny in R'
 visible: true
+tags:
+  - r
+  - advanced
 ---
 
 #R Shiny Tutorial

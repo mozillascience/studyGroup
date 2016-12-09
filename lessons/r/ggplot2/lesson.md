@@ -2,6 +2,9 @@
 layout: page
 title: 'Plotting in R: ggplot2'
 visible: true
+tags:
+	- r
+	- intermediate
 ---
 
 # Introduction to ggplot2

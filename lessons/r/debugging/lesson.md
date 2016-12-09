@@ -1,7 +1,10 @@
 ---
 layout: page
-title:
+title: RStudio Debugging
 visible: true
+tags: 
+    - r
+    - intermediate
 ---
 <!-- change visible to true if you want it on the site -->
 
