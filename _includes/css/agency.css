@@ -61,7 +61,6 @@ ul.events{
   list-style-type: none;
 }
 
-/*lindsay change*/
 .eventSub{
   color: #696969;
   margin-left:2em;
@@ -69,7 +68,6 @@ ul.events{
   margin-bottom: 1em;
 }
 
-/*lindsay change*/
 section#come-say-hi h3.section-subheading {
 color:#FFFFFF;
 }
@@ -196,11 +194,8 @@ fieldset[disabled] .btn-xl.active {
     background-color: #222;
 }
 
-/*Lindsay changes*/
 .navbar-default .navbar-brand {
     font-family: 'Pacifico', "Helvetica Neue",Helvetica,Arial,cursive;
-/*    text-transform: uppercase;
-*//*    font-style: italic;*/
     color: #{{ site.color.primary }};
 }
 
@@ -265,7 +260,6 @@ fieldset[disabled] .btn-xl.active {
         transition: padding .3s;
     }
 
-/*lindsaychange*/
     .navbar-default .navbar-brand {
         font-size: 2.5em;
         -webkit-transition: all .3s;
@@ -282,14 +276,11 @@ fieldset[disabled] .btn-xl.active {
         background-color: #222;
     }
 
-/*note here*/
-/*Lindsay Changes*/
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.75em;
     }
 }
 
-/*lindsaychange*/
 header {
     text-align: center;
     color: #fff;
@@ -675,10 +666,6 @@ section h3.section-subheading {
 
 .team-member p {
     margin-top: 0;
-}
-
-aside.clients img {
-    margin: 50px auto;
 }
 
 section#come-say-hi {
