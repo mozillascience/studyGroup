@@ -61,11 +61,17 @@ ul.events{
   list-style-type: none;
 }
 
+/*lindsay change*/
 .eventSub{
-  color: #553982;
+  color: #696969;
   margin-left:2em;
   font-style:italic;
   margin-bottom: 1em;
+}
+
+/*lindsay change*/
+section#contact h3.section-subheading {
+color:#FFFFFF;
 }
 
 .eventTitle{
@@ -190,8 +196,11 @@ fieldset[disabled] .btn-xl.active {
     background-color: #222;
 }
 
+/*Lindsay changes*/
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: 'Pacifico', "Helvetica Neue",Helvetica,Arial,cursive;
+/*    text-transform: uppercase;
+*//*    font-style: italic;*/
     color: #{{ site.color.primary }};
 }
 
@@ -256,8 +265,9 @@ fieldset[disabled] .btn-xl.active {
         transition: padding .3s;
     }
 
+/*lindsaychange*/
     .navbar-default .navbar-brand {
-        font-size: 2em;
+        font-size: 2.5em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -272,16 +282,19 @@ fieldset[disabled] .btn-xl.active {
         background-color: #222;
     }
 
+/*note here*/
+/*Lindsay Changes*/
     .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 1.75em;
     }
 }
 
+/*lindsaychange*/
 header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url({{ site.titleBackground }});
+    background-image: url(img/header1.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -668,9 +681,10 @@ aside.clients img {
     margin: 50px auto;
 }
 
+/*lindsaychange*/
 section#contact {
     background-color: #222;
-    background-image: url(img/map-image.png);
+    background-image: url(img/newbackground.png);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -701,6 +715,7 @@ section#contact .form-control:focus {
     box-shadow: none;
 }
 
+
 section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -728,6 +743,7 @@ section#contact:-ms-input-placeholder {
     font-weight: 700;
     color: #bbb;
 }
+
 
 section#contact .text-danger {
     color: #e74c3c;
