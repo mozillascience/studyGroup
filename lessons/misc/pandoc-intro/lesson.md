@@ -4,7 +4,7 @@ title: Intro to Pandoc and Markdown
 visible: true
 tag:
   - misc
-  - Intro
+  - Beginner
 ---
 
 <!-- change visible to true if you want it on the site -->

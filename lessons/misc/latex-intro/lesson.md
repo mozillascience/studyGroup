@@ -4,7 +4,7 @@ title: 'Intro to LaTeX'
 visible: true
 tag:
   - misc
-  - Intro
+  - Beginner
 ---
 
 # Overview 

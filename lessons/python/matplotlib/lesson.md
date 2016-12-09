@@ -4,7 +4,7 @@ title: 'Plotting in Python'
 visible: true
 tag:
   - Python
-  - Intro
+  - Beginner
 ---
 
  - **Authors**: Ricardo Harripaul

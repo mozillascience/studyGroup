@@ -4,7 +4,7 @@ title: Intro to Pandas DataFrames
 visible: true
 tag:
   - Python
-  - Intro
+  - Beginner
 ---
 
 <!-- change visible to true if you want it on the site -->

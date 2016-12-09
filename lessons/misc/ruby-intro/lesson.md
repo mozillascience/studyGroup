@@ -4,7 +4,7 @@ title: 'Intro to Ruby'
 visible: true
 tag:
   - misc
-  - Intro
+  - Beginner
 ---
 
 # Introduction to Ruby (for beginners)

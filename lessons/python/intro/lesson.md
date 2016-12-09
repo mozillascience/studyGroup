@@ -4,7 +4,7 @@ title: 'Intro to Python'
 visible: true
 tag:
   - Python
-  - Intro
+  - Beginner
 ---
 
 # Overview of Python

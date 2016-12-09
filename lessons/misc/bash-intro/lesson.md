@@ -4,7 +4,7 @@ title: Introduction to Bash
 visible: false
 tag:
   - misc
-  - Intro
+  - Beginner
 ---
 <!-- change visible to true if you want it on the site -->
 

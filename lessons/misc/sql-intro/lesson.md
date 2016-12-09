@@ -4,7 +4,7 @@ title: 'Databases and SQL'
 visible: true
 tag:
   - misc
-  - Intro
+  - Beginner
 ---
 
 ## Introduction to Databases and SQL ##
