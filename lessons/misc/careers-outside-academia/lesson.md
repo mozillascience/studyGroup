@@ -2,6 +2,8 @@
 layout: page
 title: Careers Outside Academia
 visible: true
+tag:
+  - misc
 ---
 <!-- change visible to true if you want it on the site -->
 

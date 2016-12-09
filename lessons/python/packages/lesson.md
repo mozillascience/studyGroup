@@ -2,6 +2,9 @@
 layout: page
 title: Creating Packages in Python
 visible: true
+tag:
+  - python
+  - advanced
 ---
 
 # Creating Packages in Python

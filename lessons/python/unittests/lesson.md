@@ -2,6 +2,9 @@
 layout: page
 title: 'Unit Testing in Python'
 visible: true
+tag:
+  - python
+  - advanced
 ---
 
 # A Brief Introduction to the Python unittest Module
