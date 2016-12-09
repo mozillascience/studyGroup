@@ -3,13 +3,13 @@ layout: page
 title:
 visible: false
 tag: 
-  - Python 
-  - R
-  - Git
-  - Misc
-  - Beginner
-  - Intermediate
-  - Advanced
+  - python 
+  - r
+  - git
+  - misc
+  - beginner
+  - intermediate
+  - advanced
 ---
 <!-- change visible to true if you want it on the site -->
 <!-- remove any tags listed above that are not relevant -->
