@@ -2,7 +2,7 @@
 layout: page
 title: 'Biopython'
 visible: true
-tag:
+tags:
   - python
   - intro
 ---

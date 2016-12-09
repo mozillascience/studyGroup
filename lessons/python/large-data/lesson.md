@@ -2,7 +2,7 @@
 layout: page
 title:
 visible: true
-tag:
+tags:
   - python
   - intermediate
 ---

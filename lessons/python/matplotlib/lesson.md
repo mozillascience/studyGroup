@@ -2,7 +2,7 @@
 layout: page
 title: 'Plotting in Python'
 visible: true
-tag:
+tags:
   - python
   - beginner
 ---

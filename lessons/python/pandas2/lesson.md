@@ -2,7 +2,7 @@
 layout: page
 title: Pandas for data analysis
 visible: true
-tag:
+tags:
   - python
   - beginner
 ---

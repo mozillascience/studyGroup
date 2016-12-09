@@ -2,7 +2,7 @@
 layout: page
 title: 'Intro to Python'
 visible: true
-tag:
+tags:
   - python
   - beginner
 ---

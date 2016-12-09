@@ -2,7 +2,7 @@
 layout: page
 title: Intro to Pandoc and Markdown
 visible: true
-tag:
+tags:
   - misc
   - beginner
 ---

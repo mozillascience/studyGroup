@@ -2,7 +2,7 @@
 layout: page
 title: 'Unit Testing in Python'
 visible: true
-tag:
+tags:
   - python
   - advanced
 ---

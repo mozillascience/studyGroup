@@ -2,7 +2,7 @@
 layout: page
 title: Cartography and Mapping in Python
 visible: true
-tag:
+tags:
   - python
   - intermediate
 ---

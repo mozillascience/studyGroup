@@ -2,7 +2,7 @@
 layout: page
 title: RESTful Web Services in Science
 visible: true
-tag:
+tags:
   - misc
   - intermediate
 ---
