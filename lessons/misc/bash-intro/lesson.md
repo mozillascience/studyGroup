@@ -2,7 +2,7 @@
 layout: page
 title: Introduction to Bash
 visible: false
-tag:
+tags:
   - misc
   - beginner
 ---

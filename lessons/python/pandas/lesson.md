@@ -2,7 +2,7 @@
 layout: page
 title: Intro to Pandas DataFrames
 visible: true
-tag:
+tags:
   - python
   - beginner
 ---

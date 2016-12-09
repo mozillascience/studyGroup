@@ -2,7 +2,7 @@
 layout: page
 title: 'Databases and SQL'
 visible: true
-tag:
+tags:
   - misc
   - beginner
 ---

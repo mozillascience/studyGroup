@@ -2,7 +2,7 @@
 layout: page
 title: Python Classes
 visible: true
-tag:
+tags:
   - python
   - intermediate
 ---
