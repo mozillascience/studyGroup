@@ -6,7 +6,7 @@ tag:
   - Python 
   - R
   - Git
-  - misc
+  - Misc
   - Beginner
   - Intermediate
   - Advanced
