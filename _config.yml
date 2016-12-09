@@ -16,7 +16,6 @@ description: "We are a group of students and researchers dedicated to learning a
 # Optional Configuration
 # None of these things need to be changed - but feel free!
 
-titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
 headlineSmall: "Welcome To The U of T Coders Group!"
 headlineMain: "Let's Work Together"
 avatar: "img/logos/logo_icon_dark.png"
