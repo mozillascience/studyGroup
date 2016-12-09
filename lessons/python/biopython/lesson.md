@@ -2,6 +2,9 @@
 layout: page
 title: 'Biopython'
 visible: true
+tag:
+  - Python
+  - Intro
 ---
 
 # Biopython 10-minute demo

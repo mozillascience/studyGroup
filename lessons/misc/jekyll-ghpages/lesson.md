@@ -2,6 +2,9 @@
 layout: page
 title: 'Web design with Jekyll/GitHub Pages'
 visible: true
+tag:
+  - misc
+  - Intro
 ---
 
 - **Authors**: Dawn Walker [@dcwalk](https://github.com/dcwalk)

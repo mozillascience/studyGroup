@@ -2,6 +2,9 @@
 layout: page
 title: Introduction to Bash
 visible: false
+tag:
+  - misc
+  - Intro
 ---
 <!-- change visible to true if you want it on the site -->
 

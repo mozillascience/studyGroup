@@ -2,6 +2,9 @@
 layout: page
 title: 'Plotting in Python'
 visible: true
+tag:
+  - Python
+  - Intro
 ---
 
  - **Authors**: Ricardo Harripaul

@@ -2,6 +2,9 @@
 layout: page
 title: Cartography and Mapping in Python
 visible: true
+tag:
+  - Python
+  - Intermediate
 ---
 
  - **Authors**: Elliott Sales de Andrade

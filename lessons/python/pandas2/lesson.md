@@ -2,6 +2,9 @@
 layout: page
 title: Pandas for data analysis
 visible: true
+tag:
+  - Python
+  - Intro
 ---
 <!-- change visible to true if you want it on the site -->
 

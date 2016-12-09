@@ -2,6 +2,9 @@
 layout: page
 title: 'Databases and SQL'
 visible: true
+tag:
+  - misc
+  - Intro
 ---
 
 ## Introduction to Databases and SQL ##

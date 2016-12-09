@@ -2,6 +2,9 @@
 layout: page
 title: 'Debugging in Python'
 visible: true
+tag:
+  - Python
+  - Intermediate
 ---
 
 # Debugging in Python

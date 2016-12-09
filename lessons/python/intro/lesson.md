@@ -2,6 +2,9 @@
 layout: page
 title: 'Intro to Python'
 visible: true
+tag:
+  - Python
+  - Intro
 ---
 
 # Overview of Python

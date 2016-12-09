@@ -2,6 +2,9 @@
 layout: page
 title: Python Classes
 visible: true
+tag:
+  - Python
+  - Intermediate
 ---
 <!-- change visible to true if you want it on the site -->
 

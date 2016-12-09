@@ -2,6 +2,9 @@
 layout: page
 title: 'Intro to Ruby'
 visible: true
+tag:
+  - misc
+  - Intro
 ---
 
 # Introduction to Ruby (for beginners)
