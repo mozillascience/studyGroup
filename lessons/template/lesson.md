@@ -2,8 +2,17 @@
 layout: page
 title:
 visible: false
+tag: 
+  - Python 
+  - R
+  - Git
+  - misc
+  - Intro
+  - Intermediate
+  - Advanced
 ---
 <!-- change visible to true if you want it on the site -->
+<!-- remove any tags listed above that are not relevant -->
 
 # My Lesson Title
 
