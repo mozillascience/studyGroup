@@ -95,8 +95,9 @@ others.
   ```
   git push origin gh-pages
   ```
-9. Submit a Pull Request *from* your GitHub account *into* the UofTCoders. Check
-[the GitHub help on Pull Requests](https://help.github.com/articles/using-pull-requests/)
+9. Submit a Pull Request *from* your GitHub account *into* the UofTCoders. 
+Make sure the **base fork** is set to `UofTCoders/studyGroup` (and not `mozillascience/studyGroup`). 
+Check [the GitHub help on Pull Requests](https://help.github.com/articles/using-pull-requests/)
 
 **Note**: For those wanting to contribute regularly or who edit their
 repositories often, it's best to create a new branch for each PR you make.  For
