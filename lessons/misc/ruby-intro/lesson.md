@@ -3,7 +3,7 @@ layout: page
 title: 'Intro to Ruby'
 visible: true
 tag:
-  - misc
+  - Misc
   - Beginner
 ---
 
