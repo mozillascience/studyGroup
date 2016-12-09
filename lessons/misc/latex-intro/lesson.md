@@ -3,8 +3,8 @@ layout: page
 title: 'Intro to LaTeX'
 visible: true
 tag:
-  - Misc
-  - Beginner
+  - misc
+  - beginner
 ---
 
 # Overview 

@@ -3,8 +3,8 @@ layout: page
 title: 'Intro to Python'
 visible: true
 tag:
-  - Python
-  - Beginner
+  - python
+  - beginner
 ---
 
 # Overview of Python

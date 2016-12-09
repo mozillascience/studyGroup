@@ -3,8 +3,8 @@ layout: page
 title: RESTful Web Services in Science
 visible: true
 tag:
-  - Misc
-  - Intermediate
+  - misc
+  - intermediate
 ---
 <!-- change visible to true if you want it on the site -->
 

@@ -3,8 +3,8 @@ layout: page
 title: 'Databases and SQL'
 visible: true
 tag:
-  - Misc
-  - Beginner
+  - misc
+  - beginner
 ---
 
 ## Introduction to Databases and SQL ##

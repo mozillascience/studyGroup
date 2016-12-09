@@ -3,8 +3,8 @@ layout: page
 title: 'Plotting in Python'
 visible: true
 tag:
-  - Python
-  - Beginner
+  - python
+  - beginner
 ---
 
  - **Authors**: Ricardo Harripaul

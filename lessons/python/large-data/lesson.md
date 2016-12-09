@@ -3,8 +3,8 @@ layout: page
 title:
 visible: true
 tag:
-  - Python
-  - Intermediate
+  - python
+  - intermediate
 ---
 <!-- change visible to true if you want it on the site -->
 

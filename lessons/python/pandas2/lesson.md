@@ -3,8 +3,8 @@ layout: page
 title: Pandas for data analysis
 visible: true
 tag:
-  - Python
-  - Beginner
+  - python
+  - beginner
 ---
 <!-- change visible to true if you want it on the site -->
 
