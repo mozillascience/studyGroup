@@ -7,7 +7,7 @@ tag:
   - R
   - Git
   - misc
-  - Intro
+  - Beginner
   - Intermediate
   - Advanced
 ---
