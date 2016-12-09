@@ -3,8 +3,8 @@ layout: page
 title: Making packages in R using devtools
 visible: true
 tags:
-	- r
-	- intermediate
+  - r
+  - intermediate
 ---
 
 <!-- change visible to true if you want it on the site -->
