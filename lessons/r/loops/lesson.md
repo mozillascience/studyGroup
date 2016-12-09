@@ -2,6 +2,9 @@
 layout: page
 title: For Loops in R
 visible: true
+tags:
+  - r
+  - beginner
 ---
 <!-- change visible to true if you want it on the site -->
 
