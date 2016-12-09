@@ -657,17 +657,17 @@ section h3.section-subheading {
     }
 }
 
-.who-we-are-member {
+.team-member {
     margin-bottom: 50px;
     text-align: center;
 }
 
-.who-we-are-member img {
+.team-member img {
     margin: 0 auto;
     border: 7px solid #fff;
 }
 
-.who-we-are-member h4 {
+.team-member h4 {
     margin-top: 25px;
     margin-bottom: 0;
     text-transform: none;
