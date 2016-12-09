@@ -2,6 +2,9 @@
 layout: page
 title: 'More on Git'
 visible: true
+tags:
+	- git
+	- advanced
 ---
 <!-- change visible to true if you want it on the site -->
 
