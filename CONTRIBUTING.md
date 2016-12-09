@@ -48,9 +48,10 @@ Submitting a PR can be done by (**brief step-by-step**):
 1. Forking the `studyGroup` repo
 2. (Optional) `git clone` your forked version onto your computer
 3. Use the lesson template and make your lesson
-4. `git add` and `git commit` that lesson
-5. `git push` your lesson to your forked `studyGroup` repo
-6. Submit a PR using Github's Pull Request button on your forked version
+4. Follow the file/folder naming rules (see below)
+5. `git add` and `git commit` that lesson
+6. `git push` your lesson to your forked `studyGroup` repo
+7. Submit a PR using Github's Pull Request button on your forked version
 
 In a more **detailed step-by-step**:
 
@@ -77,7 +78,14 @@ new repo.
 
 5. Create a new folder in the `lessons` folder of `studyGroup` on your computer,
 naming it appropriately (without spaces) to the lesson you are planning on
-teaching.
+teaching. Files and folders should be named as such:
+    - Create the lesson template under whichever programming language you are
+    teaching (e.g. under `lesson/r` or `lesson/python`.). Use the `misc/` folder
+    if you aren't sure.
+    - Name the new lesson folder, all small caps, so that it simply explains
+    what the topic is (e.g. `python/intro/`, `r/loops/`).
+    - If you need more than one word, keep all small caps and use a dash (`-`)
+    for a space (e.g. `misc/bash-intro/`, `misc/jekyll-ghpages/`).
 6. Copy the `lessons/template/lesson.md` into the new folder and write up your 
 lesson in there, filling out requested information. This is a 
 [Markdown](https://help.github.com/articles/markdown-basics/) file (`.md`).
