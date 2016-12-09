@@ -2,6 +2,9 @@
 layout: page
 title: 'Intro to Git'
 visible: true
+tags:
+  - git
+  - beginner
 ---
 
 # (Brief) Introduction to Git + GitHub #

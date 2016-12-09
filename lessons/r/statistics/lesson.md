@@ -2,6 +2,9 @@
 layout: page
 title: 'Intro to Stats'
 visible: true
+tags:
+  - r
+  - beginner
 ---
 
 ## Introduction to Basic Stats in R ##

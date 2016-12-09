@@ -5,6 +5,9 @@ date: "May 26, 2016"
 layout: page
 visible: true
 output: md_document
+tags:
+  - r
+  - beginner
 ---
 
  - **Authors**: Luke W. Johnston

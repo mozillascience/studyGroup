@@ -2,6 +2,9 @@
 layout: page
 title: 'Using branches in Git'
 visible: true
+tags:
+  - git
+  - intermediate
 ---
 
 # Why and how branches are used in Git
