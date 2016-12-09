@@ -2,11 +2,13 @@
 layout: page
 title:
 visible: false
-tag: 
+tags: 
+  # languages
   - python 
   - r
   - git
   - misc
+  # levels
   - beginner
   - intermediate
   - advanced
