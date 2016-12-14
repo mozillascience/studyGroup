@@ -1,13 +1,16 @@
 ---
 layout: page
 title: 'Lesson Material'
-visible: false
 ---
 
 <!-- Lesson section -->
 
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+<h2>By Topic</h2>
 {% for lang in site.languages %}
-<h2>{{ lang | capitalize }}</h2>
+<h3>{{ lang | capitalize }}</h3>
 
 <ul>
   {% assign pages_list = site.pages | sort: 'title' %}
@@ -22,11 +25,12 @@ visible: false
   {% endfor %}  <!-- node -->
 </ul>
 {% endfor %}  <!-- lang -->
+</div>
 
-<hr/>
-
+<div class="col-sm-6">
+<h2>By Level</h2>
 {% for level in site.levels %}
-<h2>{{ level | capitalize }}</h2>
+<h3>{{ level | capitalize }}</h3>
 
 <ul>
   {% assign pages_list = site.pages | sort: 'title' %}
@@ -41,3 +45,6 @@ visible: false
   {% endfor %}  <!-- node -->
 </ul>
 {% endfor %}  <!-- level -->
+</div>
+</div>
+</div>
