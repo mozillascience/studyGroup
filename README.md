@@ -1,3 +1,18 @@
+# FoxIOT Study Group Coimbatore
+
+## About Us
+A set of engineers, designers and artist who meet regularly and exchange research on the field of IOT and open web, we use this repo for coordination, check out our website https://foxiot.github.io/studyGroup/
+
+## Community Support
+
+* Raise an issue with community support label in https://github.com/FoxIOT/studyGroup/issues
+
+## Event Details
+
+* Keep an watch on our site https://foxiot.github.io/studyGroup/
+
+### Read below details for getting started with MozillaScience Study groups
+
 ###[Leia isto em Português](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-pt.md)
 
 #Mozilla Study Groups

@@ -1,6 +1,53 @@
-- name: Bill Mills
-  affiliation: TRIUMF
-  github: BillMills
+- name: Vigneshwer Dhinakaran
+  affiliation: Mozilla India
+  github: dvigneshwer
   interests:
     - Programming
     - Open Science
+    - IOT
+    - AI/Machine learning
+
+- name: Sudharsan Rajendran
+  affiliation: Mozilla India
+  github: Sudharsanrajendran
+  interests:
+    - Programming
+    - Open Source
+    - Big Data
+    - IOT
+    - Agile Development
+
+- name: Karthic keyan
+  affiliation: Mozilla India
+  github: hellokarthic
+  interests:
+    - Programming
+    - Community Building
+    - Open learning
+
+- name: Venkat Raman
+  affiliation: Mozilla India
+  github: GVRGowtham
+  interests:
+    - Programming
+    - IOT
+    - AI/Machine learning
+
+- name: Paarttipaabhalaji
+  affiliation: Mozilla India
+  github: paarttipaabhalaji
+  interests:
+    - Programming
+    - Open Source
+    - Big Data
+    - IOT
+    - Cloud
+    
+- name: Prasanth P
+  affiliation: Mozilla India
+  github: prasanthp96
+  interests:
+    - Programming
+    - Web development
+    - Open Source
+    - Big Data
