@@ -1,30 +1,44 @@
-###[Leia isto em Português](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-pt.md)
+# Aberdeen Study Groups
 
-#Mozilla Study Groups
+## Hello and welcome to the Aberdeen Study Group! (a [Mozilla Study Group] (https://science.mozilla.org/blog/introducing-mozilla-science-study-groups))
 
-Welcome to [Mozilla Science Lab](https://www.mozillascience.org/)'s Study Group project! From here, we'll set you up with everything you need to start your own study group.
+### What is a Mozilla Study Group?
 
-### Wait, What's a 'Mozilla Study Group'?
-
-Mozilla Study Groups are fun, informal meetups of your friends and colleagues from around your local institution or town to share skills, stories and ideas on using code for research, and explore open research practices. The goal is to create a friendly, no-pressure environment where people can share their work, ask for help on a coding problem, and learn and work together with their peers. **Anyone can start a Study Group-- you don't have to be an expert coder to do so!**
-
-What do Study Groups look like in Real Life? Check out the [Boston University Study Group's website](http://study.bu.edu/), and the [University of Tornonto Coders website](https://uoftcoders.github.io/studyGroup/). You can also watch a few short [videos from Study Group Leads in our Orientation Guide](https://mozillascience.github.io/study-group-orientation/1-about-study-groups.html). 
+Mozilla Study Groups are fun, informal meetups of friends and colleagues to share skills, stories and ideas on using code for research, and exploring open research practices. The goal is to create a friendly, no-pressure environment where people can share their work, ask for help on a coding problem, and learn and work together with their peers. Everyone is welcome, especially beginners! 
 
 
-## For New Organizers
-* **Join our Gitter Chat:** There are Study Groups all around the world. We use an online [Gitter Chat](https://gitter.im/mozillascience/studyGroup) to connect and share resources and ideas (you can sign in with GitHub, or using a Twitter ID if you're not set up on GitHub just yet). If you'd like to say hello, please introduce yourself in the chat, tell us where you are, and what you're thinking about or planning for your new Study Group. We're looking forward to meeting you. 
-* **Check out the Study Group Orientation Guide:**  If you think you might want to start your own group, [The Study Group Orientation Guide](https://mozillascience.github.io/study-group-orientation/index.html) covers running Group meetings, the super easy setup of your Study Group website, collaborating online using GitHub, an introduction to open research practice, and more. Take a look at the [About section here](https://mozillascience.github.io/study-group-orientation/1-about-study-groups.html) and the section on the [Study Group Lead role](https://mozillascience.github.io/study-group-orientation/1.1-lead-role.html)-- these should help you figure out if you'd like to start a Group.  
-* **Come to an Online Orientation Meeting:** We’ll be running an online Orientation-- a series of 4 meetings, -- for new Group Leads starting next month (November 2016!) and also in January of 2017. It’s a great opportunity to meet, network, and share ideas with other Groups.  If you’re interested in joining us, [let us know by filling out this form.](https://docs.google.com/a/mozillafoundation.org/forms/d/e/1FAIpQLSdtKqAMQnKri-0xLx4hD_fpb000n9czsQd4oo9B2JUgtuIVlg/viewform?c=0&w=1)
-* **Read the code of conduct:** this Study Group Program is for everyone - we abide by a [set of rules](https://www.mozillascience.org/code-of-conduct/) that require everyone be treated with respect. Help us make a space where everyone feels welcome, and we'll all have a better time!
-* **Watch this repo:** up in the top right, there's a button that says 'Watch'; click it, and set yourself to 'Watching'. This will send you email notifications of new discussions; if you don't want email, but would like an alert just on GitHub, change the setting in Settings -> Notification Center (Settings is the little cog in the top right).
- 
-## How to Set Up Your Own Mozilla Study Group Website
+### Who we are
 
-Everything you need to set up your own beautiful Mozilla Study Group website (it looks like this!) for organizing events is [right here in the Orientation Guide.](https://mozillascience.github.io/study-group-orientation/3.3-get-online.html) If you are new to GitHub, don't worry, [there's an introduction to it here](https://mozillascience.github.io/study-group-orientation/3.1-collab-vers-github.html). Take a look, and if you need any help, you can ask a question in the [Gitter chat](https://gitter.im/mozillascience/studyGroup) or email sciencelab@mozillafoundation.org.
+We are a group of students, researchers and academics who code. We all work in different fields, but we are all passionate about open science, reproducible research, sharing skills, cake and pub nights! 
 
-### It's Broken, I Need Help!!!
 
-If anything in these instructions doesn't work or doesn't make sense, ask a question in the [Gitter chat](https://gitter.im/mozillascience/studyGroup), open an issue [here](https://github.com/mozillascience/studyGroup/issues) or email sciencelab@mozillafoundation.org.
+### Who should join
+
+This group is for everyone who uses code in their research and for those who would like to, but don’t know how to code yet. It is a group for everyone who wants to share their skills and those who want to learn something new. 
+It is the place where you can go when you have been stuck on that coding issue for days and you need help and the place where you can share how you finally fixed it.
+This group is for all the open science champions in Aberdeen, for those who would like to become one (but learning the tools is just too time consuming on your own) and for those who are not entirely sure what open science means.
+
+
+### What we do
+
+We meet regularly every week. Sometimes someone will show us how to use a new tool, sometimes we just work together at our own projects asking each other questions. We always work in a collaboratively and friendly way, try to learn from each other and sometimes we just go to the pub.
+
+
+### For Participants
+
+A few things to do & know now that you're here:
+
+•	Watch this repo: up in the top right, there's a button that says 'Watch'; click it, and set yourself to 'Watching'. This will send you email notifications of new discussions. If you don't want email, but would like an alert just on GitHub, change the setting in Settings -> Notifications 
+
+•	Check out the issue tracker: click on 'issues' in the sidebar on the right; this is where all the conversations this study groups is having live. Use this space to ask questions, request events, make suggestions, or just say hi.
+
+•	Read the code of conduct: this Study Group is for everyone - we abide by a set of rules that require everyone be treated with respect. Help us make a space where everyone feels welcome, and we'll all have a better time!
+
+•	Add yourself to the website: If you'd like to appear on the website under the 'Who we Are' section, have a look at the _data/members.yml; send us a pull request with an entry for yourself, or open an issue and we'll do it for you.
+
+If you're interested in starting a group of your own, you can check out the [Study Group Repository] (https://github.com/mozillascience/studyGroup/blob/gh-pages/README.md) on GitHub or our [Study Group Orientation Guide] (https://mozillascience.github.io/study-group-orientation/)
+
+
 
 
 

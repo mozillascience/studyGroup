@@ -1,6 +1,24 @@
-- name: Bill Mills
-  affiliation: TRIUMF
-  github: BillMills
+- name: Francesca Mancini
+  affiliation: Zoology Buildling, University of Aberdeen
+  github: FrancescaMancini
   interests:
-    - Programming
+    - Interdisciplinary Conservation Science
     - Open Science
+
+- name: Matthew Wolak
+  affiliation: University of Aberdeen
+  github: matthewwolak
+  interests:
+    - Evolutionary Ecology & Genetics
+    - Statistics
+    
+    
+- name: Richard Hassall
+  affiliation: University of Aberdeen
+  github: rmjhassall
+  interests:
+    - Molecular Ecology & Evolution
+    - Disease Ecology
+    
+  
+
