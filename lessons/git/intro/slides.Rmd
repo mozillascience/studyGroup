@@ -30,7 +30,7 @@ git config --list # To confirm
 - **Start repository**: `git init`, `git clone` (GitHub)
 - **Check activity**: `git status`, `git log`, `git diff`
 - **Save to history**: `git add`, `git commit`
-- **Move through the history**: `git checkout`, `git branch` (maybe cover)
+- **Move through the history**: `git checkout`, `git branch` (may be covered)
 
 ## Different areas in Git
 
