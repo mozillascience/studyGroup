@@ -9,10 +9,10 @@ tags:
 
 # Overview of Python
 
- - **Authors**: Charles Zhu
+ - **Authors**: Charles Zhu, Lina Tran, Madeleine Bonsma
  - **Research field**: Astronomy & astrophysics
  - **Lesson topic**: Introduction to Python syntax and functionality
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python_basics>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/intro>
 
 ## Preface: ##
 
