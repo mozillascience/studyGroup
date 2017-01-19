@@ -1,3 +1,10 @@
+- name: CoGe
+  affiliation: CoGe
+  github: AndreinaCastillo
+  interests:
+    - Plasmodium
+    - Python
+
 - name: 
   affiliation: CoGe
   github: hclent
