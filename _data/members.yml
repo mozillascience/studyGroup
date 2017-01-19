@@ -1,6 +1,6 @@
-- name: Bill Mills
-  affiliation: TRIUMF
-  github: BillMills
+- name: 
+  affiliation: CoGe
+  github: hclent
   interests:
-    - Programming
-    - Open Science
+    - Language & NLP
+    - Russian
