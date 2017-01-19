@@ -4,7 +4,7 @@
 #Step 1: give your study group a name and a short description,
 #and choose a language from the options in the _data directory:
 title: HHU coders
-description: "A study group @ HHU"
+description: "A study group."
 language: en
 
 #Step 2: press the green 'Commit Changes' button at the bottom of this page.
@@ -38,8 +38,8 @@ calendar_ical_url: "https://www.google.com/calendar/ical/USER@gmail.com/public/b
 #========================================
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: fed136
-  secondary: fec503
+  primary: 499822
+  secondary: 229836
   secondary-dark: 333
 
 # Build settings
