@@ -1,11 +1,19 @@
-- name: CoGe
+- name: Andreina Castillo
   affiliation: CoGe
   github: AndreinaCastillo
   interests:
     - Plasmodium
     - Python
 
-- name: 
+- name: Marnee Dearman
+  affiliation: College of Medicine, University of Arizona
+  github: MarneeDear
+  interests:
+    - Functional Programming
+    - Graph Databases
+    - Python
+
+- name: Heather Lent
   affiliation: CoGe
   github: hclent
   interests:
