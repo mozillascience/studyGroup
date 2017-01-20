@@ -20,8 +20,8 @@ events: Events
 eventsSubheading: Our upcoming and recent events
 eventPlaceholder: Nothing yet! Propose an event here.
 suggestEvent: Suggest an Event
-leadership: How to lead a Study Group session
-pastEvents: See Our Past Events
+leadership: How to lead a session
+#pastEvents: See Our Past Events
 
 notification: Want to be notified of our upcoming events?
 watching: 'Head over to <a href="%GITHUB_REPO_URL%">GitHub</a> and watch our repository, like this:'
