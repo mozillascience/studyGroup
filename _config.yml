@@ -18,7 +18,7 @@ language: en
 # Optional Configuration
 # None of these things need to be changed - but feel free!
 
-titleBackground: "img/background_1.jpg"
+titleBackground: "img/background-2.jpg"
 headlineSmall: "Welcome To Our Study Group @ HHU!"
 headlineMain: "Let's Learn Together How To Code, Build & Share"
 
