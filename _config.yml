@@ -3,7 +3,7 @@
 
 #Step 1: give your study group a name and a short description,
 #and choose a language from the options in the _data directory:
-title: Coders for open science
+title: Coders for Open Science
 description: "A study group."
 language: en
 
@@ -18,7 +18,7 @@ language: en
 # Optional Configuration
 # None of these things need to be changed - but feel free!
 
-titleBackground: "img/background.jpg"
+titleBackground: "img/background_1.jpg"
 headlineSmall: "Welcome To Our Study Group @ HHU!"
 headlineMain: "Let's Learn Together How To Code, Build & Share"
 
