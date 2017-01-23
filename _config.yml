@@ -19,8 +19,8 @@ language: en
 # None of these things need to be changed - but feel free!
 
 titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
-headlineSmall: "Something to catch peopl's attention!"
-headlineMain: "Paranguaricutirimicuaro"
+headlineSmall: "Welcome to the IOF/Biodiv Informatics Study Group!"
+headlineMain: "Let's work together"
 
 # Setup Google Calendar
 # Usage:
