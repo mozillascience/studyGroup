@@ -20,7 +20,7 @@ language: en
 
 titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
 headlineSmall: "Welcome to the IOF/Biodiv Informatics Study Group!"
-headlineMain: "Let's work together"
+headlineMain: "Come to our first session and help us set a name!"
 
 # Setup Google Calendar
 # Usage:
