@@ -1,6 +1,49 @@
-- name: Bill Mills
-  affiliation: TRIUMF
-  github: BillMills
+- name: Adrian Lärkeryd
+  affiliation: School of Biological and Chemical Sciences, Queen Mary University of London, UK
+  github: adrlar
   interests:
-    - Programming
+    - Science
+    - High Performance Computing
+    - 3D printing
+- name: Bruno Costa
+  affiliation: iBET, Portugal
+  github: netbofia
+  interests:
+    - sRNAs
+    - Bioinformatics
+    - Genomics,
+    - Python
     - Open Science
+- name: Bruno Vieira
+  affiliation: WurmLab (Queen Mary U. of London) / Mozilla Science Lab, UK
+  github: bmpvieira
+  interests:
+    - Open Science
+    - Bioinformatics
+    - Genomics
+    - Programming
+    - Node.JS
+    - JavaScript
+- name: Francisco Pina-Martins
+  affiliation: CoBiG², Faculty of Sciences of the University of Lisbon, Portugal
+  github: StuntsPT
+  interests:
+    - Bioinformatics
+    - Evolutionary Biology
+    - Open Source
+    - Reproducibility
+    - Science in general
+- name: Ismail Moghul
+  affiliation: Bioinformatics PhD Candidate University College London, UK
+  github: IsmailM
+  interests:
+    - Science
+    - High Performance Computing
+    - 3D printing
+- name: Julian Mazzitelli
+  affiliation: UofT bioinformatics student, Research Collaborator at Centre for Computational Medicine, SickKids, Canada
+  github: thejmazz
+  interests:
+    - Javascript
+    - Bioinformatics
+    - Graphics
