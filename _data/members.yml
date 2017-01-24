@@ -15,7 +15,7 @@
     - Python
     - Open Science
 - name: Bruno Vieira
-  affiliation: WurmLab (Queen Mary U. of London) / Mozilla Science Lab, UK
+  affiliation: WurmLab (Queen Mary U. of London), UK / Mozilla Science Lab, Internet
   github: bmpvieira
   interests:
     - Open Science
@@ -37,9 +37,13 @@
   affiliation: Bioinformatics PhD Candidate University College London, UK
   github: IsmailM
   interests:
-    - Science
-    - High Performance Computing
-    - 3D printing
+    - Bioinformatics
+    - Genomics
+    - Epigenomics
+    - Ruby
+    - JavaScript
+    - Web & App Development
+    - Python....
 - name: Julian Mazzitelli
   affiliation: UofT bioinformatics student, Research Collaborator at Centre for Computational Medicine, SickKids, Canada
   github: thejmazz
