@@ -1,0 +1,175 @@
+---
+title: ""
+author: ""
+date: "10/02/2017"
+output:
+  ioslides_presentation:
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+runtime: shiny
+---
+
+## The "Underwater" Informatics Group
+<div align="center">
+<img src="images/UnderWater.jpg" width=650 height=450>
+</div>
+
+***
+
+**Passive / semiactive** group that supports each other trough:
+
+
+>- *Informative sessions*
+<div align="center">
+> <img src="images/Mr.Ray.jpg" width=400 height=150>
+</div>
+
+>- *Menthorship*
+<div align="center">
+> <img src="images/Yoda.jpg" width=400 height=150>
+</div>
+
+>- *Fish-to-Whale interactions*
+<div align="center">
+> <img src="images/Fish_Whale.png" width=400 height=100>
+</div>
+
+## Group Goals
+
+>- Improve general informatics skills
+>- Learn new cool stuff and keep updated on new tools (packages)
+>- Focus activities in relevant topics (e.g. marine examples, ecology, and so on)
+
+<div align="center">
+<img src="images/Learning.jpg" width=250 height=250>,
+<img src="images/r_packages.png" width=250 height=250>,
+<img src="images/Dr.Seuss.png" width=250 height=250>
+</div>
+
+
+##Mozilla Science
+<div align="center">
+<img src="images/Mozilla.png" width=400 height=100>
+</div>
+
+"Mozilla Science Lab is a community of researchers, developers, and librarians making research open and accessible. We’re empowering open science leaders through fellowships, mentorship, and project-based learning."
+
+## What's a study group?
+
+A Mozilla Study Group is a regular, in-person, informal meet-up where people get together to learn to code and to explore open research practice
+
+Mozilla Study Groups are peer-to-peer learning environments for skill-sharing, idea discovery, community support, and collaboration.
+
+>- They do everything on Github
+<div align="right">
+<img src="images/GitHub.png" width=200 height=200>
+</div>
+
+## GitHub
+
+<div align="center">
+<img src="images/GitHub2.jpg" width=600 height=400>
+</div>
+
+[GitHub](https://jepa.github.io/studyGroup/) fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.
+
+## You can learn some cool stuf....
+
+## Present your code
+
+```{r Example1, echo=T, eval=T, message=F, warning=F}
+# Where you can show your code to people
+library(dplyr)
+library(knitr)
+A_Data <- read.csv("./Data/Alaska.csv") #Original_Data
+C_Data <- A_Data %>% #Clean Dataset
+  filter(common_name == "Pink salmon", # <- filter by species
+         fishing_sector == c("Artisanal", "Industrial")) # <- filter by fishing sector
+kable(head(C_Data[1:5],5), align = "c")
+
+#mindblowing! 
+
+```
+
+##Plus the result of that code!
+```{r Example1b, echo=F, eval=T, message=F, warning=F, fig.align="center",fig.height=5,fig.width=7}
+#Where you can show your code to people
+library(ggplot2)
+library(dplyr)
+A_Data <- read.csv("./Data/Alaska.csv") #Original_Data, read dataset
+
+C_Data <- A_Data %>% #Clean Dataset
+  filter(common_name == "Pink salmon", # <- filter by species
+         fishing_sector == c("Artisanal", "Industrial")) # <- filter by fishing sector
+
+#Plus the result of that code!
+ggplot(C_Data) +
+  aes(
+    x= year,
+    y = tonnes,
+    fill = fishing_sector
+  ) +
+  geom_area(position = 'identity') + theme_classic()+
+  ggtitle("Pink Salmon Catch by Fishing Sector Using Sea Around Us Data")
+
+```
+
+
+## You can also have interactive Plots/Tables/Statistics... 
+
+```{r Example2b, echo=F, eval=T, message=F, warning=F}
+library(shiny)
+library(dplyr)
+ui <- fluidPage(
+   
+   # Application title
+   titlePanel("Fish Abundance By Fishing Sector"),
+   
+   # Sidebar with a slider input for number of bins 
+   sidebarLayout(
+      sidebarPanel(
+         selectInput("fishing_sector_type",
+                     label= "Choose the Fishing Sector",
+                     choices = c(
+                     "Artisanal",
+                     "Industrial",
+                     "Recreational",
+                     "Subsistence",
+                     selected= NULL)
+                     )
+      ),
+      
+      # Show a plot of the generated distribution
+      mainPanel(
+         plotOutput("distPlot")
+      )
+   )
+)
+
+# Define server logic required to draw a histogram
+server <- function(input, output) {
+  
+  dataInput <- reactive({
+    read.csv("./Data/Alaska.csv")
+  })
+   
+   output$distPlot <- renderPlot({
+      
+     Data <- dataInput() %>% 
+       filter(common_name == "Pink salmon", # <- filter by species
+         fishing_sector == input$fishing_sector_type)
+       
+      ggplot(Data) +
+  aes(
+    x= year,
+    y = tonnes
+  ) +
+  geom_area(position = 'identity') + theme_classic()+
+  ggtitle("Pink Salmon Catch by Fishing Sector Using Sea Around Us Data")
+   })
+}
+
+shinyApp(ui = ui, server = server)
+
+```
