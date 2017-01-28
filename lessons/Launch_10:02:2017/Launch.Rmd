@@ -4,9 +4,10 @@ author: ""
 date: "10/02/2017"
 output:
   ioslides_presentation:
-    fig_width: 7
+    fig_caption: yes
     fig_height: 6
-    fig_caption: true
+    fig_width: 7
+    keep_md: yes
 runtime: shiny
 ---
 
