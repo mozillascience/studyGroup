@@ -12,7 +12,7 @@ runtime: shiny
 
 ## The "Underwater" Informatics Group
 <div align="center">
-<img src="images/UnderWater.jpg" width=650 height=450>
+<img src="Images/UnderWater.jpg" width=650 height=450>
 </div>
 
 ***
@@ -22,17 +22,17 @@ runtime: shiny
 
 >- *Informative sessions*
 <div align="center">
-> <img src="./images/Mr.Ray.jpg" width=400 height=150>
+> <img src="Images/Mr.Ray.jpg" width=400 height=150>
 </div>
 
 >- *Menthorship*
 <div align="center">
-> <img src="images/Yoda.jpg" width=400 height=150>
+> <img src="Images/Yoda.jpg" width=400 height=150>
 </div>
 
 >- *Fish-to-Whale interactions*
 <div align="center">
-> <img src="images/Fish_Whale.png" width=400 height=100>
+> <img src="Images/Fish_Whale.png" width=400 height=100>
 </div>
 
 ## Group Goals
@@ -42,15 +42,15 @@ runtime: shiny
 >- Focus activities in relevant topics (e.g. marine examples, ecology, and so on)
 
 <div align="center">
-<img src="images/Learning.jpg" width=250 height=250>,
-<img src="images/r_packages.png" width=250 height=250>,
-<img src="images/Dr.Seuss.png" width=250 height=250>
+<img src="Images/Learning.jpg" width=250 height=250>,
+<img src="Images/r_packages.png" width=250 height=250>,
+<img src="Images/Dr.Seuss.png" width=250 height=250>
 </div>
 
 
 ##Mozilla Science
 <div align="center">
-<img src="images/Mozilla.png" width=400 height=100>
+<img src="Images/Mozilla.png" width=400 height=100>
 </div>
 
 "Mozilla Science Lab is a community of researchers, developers, and librarians making research open and accessible. We’re empowering open science leaders through fellowships, mentorship, and project-based learning."
@@ -63,13 +63,13 @@ Mozilla Study Groups are peer-to-peer learning environments for skill-sharing, i
 
 >- They do everything on Github
 <div align="right">
-<img src="images/GitHub.png" width=200 height=200>
+<img src="Images/GitHub.png" width=200 height=200>
 </div>
 
 ## GitHub
 
 <div align="center">
-<img src="images/GitHub2.jpg" width=600 height=400>
+<img src="Images/GitHub2.jpg" width=600 height=400>
 </div>
 
 [GitHub](https://jepa.github.io/studyGroup/) fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.
