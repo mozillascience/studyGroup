@@ -22,7 +22,7 @@ runtime: shiny
 
 >- *Informative sessions*
 <div align="center">
-> <img src="images/Mr.Ray.jpg" width=400 height=150>
+> <img src="./images/Mr.Ray.jpg" width=400 height=150>
 </div>
 
 >- *Menthorship*
