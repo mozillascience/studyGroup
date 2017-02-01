@@ -11,24 +11,22 @@ output:
 runtime: shiny
 ---
 
-## The "Underwater" Informatics Group
+## The "UndeRwater" IOFormatics Fish School
 <div align="center">
 <img src="Images/UnderWater.jpg" width=650 height=450>
 </div>
 
-***
+## We are/want to be...
 
 **Passive / semiactive** group that supports each other trough:
-
-
 >- *Informative sessions*
 <div align="center">
-> <img src="Images/Mr.Ray.jpg" width=400 height=150>
+> <img src="Images/Mr.Ray.jpg" width=400 height=140>
 </div>
 
->- *Menthorship*
+>- *Menthor-Fish-ship*
 <div align="center">
-> <img src="Images/Yoda.jpg" width=400 height=150>
+> <img src="Images/Yoda.jpg" width=400 height=140>
 </div>
 
 >- *Fish-to-Whale interactions*
@@ -36,11 +34,13 @@ runtime: shiny
 > <img src="Images/Fish_Whale.png" width=400 height=100>
 </div>
 
-## Group Goals
+## Fish School Goals
 
 >- Improve general informatics skills
->- Learn new cool stuff and keep updated on new tools (packages)
->- Focus activities in relevant topics (e.g. marine examples, ecology, and so on)
+>- Learn new cool tools
+>- keep updated on new tools (packages)
+>- Strengthen the community and foster collaboration
+>- **Fish-cus activities in relevant topics (e.g. marine animals, marine ecology, and marine-so on)**
 
 <div align="center">
 <img src="Images/Learning.jpg" width=250 height=250>,
@@ -56,15 +56,12 @@ runtime: shiny
 
 "Mozilla Science Lab is a community of researchers, developers, and librarians making research open and accessible. We’re empowering open science leaders through fellowships, mentorship, and project-based learning."
 
-## What's a study group?
+<div class="columns-2">
 
-A Mozilla Study Group is a regular, in-person, informal meet-up where people get together to learn to code and to explore open research practice
+> - <img src="Images/Study_Group.png" width=400 height=250>
 
-Mozilla Study Groups are peer-to-peer learning environments for skill-sharing, idea discovery, community support, and collaboration.
+> - <img src="Images/GitHub.png" width=220 height=200>
 
->- They do everything on Github
-<div align="right">
-<img src="Images/GitHub.png" width=200 height=200>
 </div>
 
 ## GitHub
@@ -77,24 +74,29 @@ Mozilla Study Groups are peer-to-peer learning environments for skill-sharing, i
 
 ## You can learn some cool stuf....
 
+<div align="center">
+<img src="Images/spongebob.jpg" width=600 height=400>
+</div>
+
 ## Present your code
 
-```{r Example1, echo=T, eval=T, message=F, warning=F}
+```{r Example1, echo=T, eval=T, message=F, warning=F, fig.height=2, fig.width=3}
 # Where you can show your code to people
 library(dplyr)
-library(knitr)
+library(pander)
 A_Data <- read.csv("./Data/Alaska.csv") #Original_Data
 C_Data <- A_Data %>% #Clean Dataset
   filter(common_name == "Pink salmon", # <- filter by species
-         fishing_sector == c("Artisanal", "Industrial")) # <- filter by fishing sector
-kable(head(C_Data[1:5],5), align = "c")
+         fishing_sector == c("Artisanal", "Industrial"))
+
+pandoc.table(head(C_Data[1:5],2), style = "simple", justify="center")
 
 #mindblowing! 
 
 ```
 
 ##Plus the result of that code!
-```{r Example1b, echo=F, eval=T, message=F, warning=F, fig.align="center",fig.height=5,fig.width=7}
+```{r Example1b, echo=F, eval=T, message=F, warning=F, fig.align="center", fig.height=5, fig.width=7}
 #Where you can show your code to people
 library(ggplot2)
 library(dplyr)
@@ -119,7 +121,7 @@ ggplot(C_Data) +
 
 ## You can also have interactive Plots/Tables/Statistics... 
 
-```{r Example2b, echo=F, eval=T, message=F, warning=F}
+```{r Example2b, echo=F, eval=T, message=F, warning=F, fig.height=4,fig.width=5}
 library(shiny)
 library(dplyr)
 ui <- fluidPage(
@@ -172,5 +174,31 @@ server <- function(input, output) {
 }
 
 shinyApp(ui = ui, server = server)
-
 ```
+
+## So... the important Stuff
+
+<div align="center">
+<img src="Images/Boaty.jpg" width=600 height=500>
+
+
+## Wellcome to the______Group
+>1. eco-informatics support
+>2. R under the C!
+>3. 'Rrrrrrrr she blows'
+>4. R says I, A pirate's life for me
+>5. R by the C
+>6. Marine Informatics Group
+>7. Deep Sea Data Squad
+>8. Fishy Informatics
+>9. Oceanomatics Group
+>10. R under the sea
+>11. Sea-R
+
+## Communication
+
+<div align="center">
+<img src="Images/Social.jpg" width=600 height=400>
+
+> Facebook
+> [<img src="Images/GitHub.jpg" width=150 height=80>](https://jepa.github.io/studyGroup/)
