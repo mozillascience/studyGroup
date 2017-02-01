@@ -44,5 +44,5 @@ Ideally you would want there to be good communication about what the standards a
 
 
 ## Resources
-https://mozillascience.github.io/codeReview/intro.html (and other links therein)
+https://mozillascience.github.io/codeReview/intro.html (and other links therein)  
 https://blog.fogcreek.com/effective-code-reviews-9-tips-from-a-converted-skeptic/
