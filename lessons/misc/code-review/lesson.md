@@ -6,7 +6,7 @@ visible: true
 
 ## Why Do Code Review? ##
 
-Code review is the process of having your code read by you or more a third party in order to:
+Code review is the process of having your code read by you or more often a third party in order to:
 - catch bugs
 - making sure it is clear to someone who might take up the project after you
 - ensure efficiency/simplicity
