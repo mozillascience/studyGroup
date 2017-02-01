@@ -39,7 +39,7 @@ Ideally you would want there to be good communication about what the standards a
 ## Ways to Code Review
 
 - Review your code yourself using your own checklist based off a general checklist including  common mistakes optimized for your project
-- Review code with one, or if possible, many people at once as you walk through the code and give context while make suggestions and context
+- Review code with one, or if possible, many people at once as you walk through the code and give context while they make suggestions and context
 - Another way to conduct code review includes distributing the code and having many people go over it on their own time or during a designated time, and then you go over the comments afterwards, making sure there is a process in place to then confirm fixes have been made
 
 
