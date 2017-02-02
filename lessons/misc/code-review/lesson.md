@@ -15,7 +15,7 @@ Code review is the process of having your code read by you or more often a third
 
 Not only do we want to catch any bugs in code, but code review aims to make sure that there is a standard set of rules for code that you want to uphold within a lab, or collaborative group, allowing for consistent and higher quality code.
 
-Ideally you would want there to be good communication about what the standards are, and whether they are being met throughout the entire process from conception of the idea to the finished code. This involves sitting down and thinking carefully about the design of the project, and defining the standards of the code along with frequent code review as it is being written. However we will focus on the latter, code review, which many studies have found to be the most effective way to find bugs (see [here](http://dl.acm.org/citation.cfm?id=314753) and [here](http://dl.acm.org/citation.cfm?id=2486882) for examples).
+Ideally you would want there to be good communication about what the standards are, and whether they are being met throughout the entire process from conception of the idea to the finished code. This involves sitting down and thinking carefully about the design of the project, and defining the standards of the code along with frequent code review as it is being written. However we will focus on the latter, code review, which many studies have found to be the most effective way to find bugs (see [here](https://dl.acm.org/citation.cfm?id=314753) and [here](https://dl.acm.org/citation.cfm?id=2486882) for examples).
 
 
 ## Tips on Conducting Code Review
