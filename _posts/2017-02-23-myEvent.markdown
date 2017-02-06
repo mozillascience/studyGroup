@@ -1,0 +1,10 @@
+---
+title: Inaugural Hacky Hour!
+text: Come to our first OSU Open Science/Open Computing Study Group Hacky Hour.
+location: McMenniman's Pub on Monroe Street, Corvallis, OR
+link: https://github.com/vantuyls/studyGroup/issues/2
+date: 2017-02-23  
+startTime: '17:30'
+endTime: '19:30'
+
+---
