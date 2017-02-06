@@ -1,0 +1,9 @@
+---
+title: Intro to SQL
+text: Learn about databases and SQL
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/88
+date: 2017-03-15
+startTime: '18:10'
+endTime: '19:00'
+---

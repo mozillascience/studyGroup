@@ -1,0 +1,9 @@
+---
+title: Intro to ggplot2 in R
+text: ggplot2 is a great plotting package in R, learn the basics in this lesson!
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/84
+date: 2017-02-15
+startTime: '18:10'
+endTime: '19:00'
+---
