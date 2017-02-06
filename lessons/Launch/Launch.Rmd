@@ -19,19 +19,17 @@ runtime: shiny
 ## We are/want to be...
 
 **Passive / semiactive** group that supports each other trough:
->- *Informative sessions*
-<div align="center">
-> <img src="Images/Mr.Ray.jpg" width=400 height=140>
+
+<div align="left">
+>- <img src="Images/Mr.Ray.jpg" width=400 height=150>
 </div>
 
->- *Menthor-Fish-ship*
 <div align="center">
-> <img src="Images/Yoda.jpg" width=400 height=140>
+>- <img src="Images/Yoda.jpg" width=400 height=150>
 </div>
 
->- *Fish-to-Whale interactions*
-<div align="center">
-> <img src="Images/Fish_Whale.png" width=400 height=100>
+<div align="right">
+>- <img src="Images/Fish_Whale.png" width=400 height=120>
 </div>
 
 ## Fish School Goals
@@ -40,11 +38,15 @@ runtime: shiny
 >- Learn new cool tools
 >- keep updated on new tools (packages)
 >- Strengthen the community and foster collaboration
->- **Fish-cus activities in relevant topics (e.g. marine animals, marine ecology, and marine-so on)**
 
 <div align="center">
-<img src="Images/Learning.jpg" width=250 height=250>,
-<img src="Images/r_packages.png" width=250 height=250>,
+<div class="blue">
+>- **Fish-cus activities in relevant topics (e.g. marine animals, marine ecology, and marine-so on)**
+</div>
+
+<div align="center">
+<img src="Images/Learning.jpg" width=250 height=250>
+<img src="Images/r_packages.png" width=250 height=250>
 <img src="Images/Dr.Seuss.png" width=250 height=250>
 </div>
 
@@ -118,8 +120,12 @@ ggplot(C_Data) +
 
 ```
 
+## Some nice maps
 
-## You can also have interactive Plots/Tables/Statistics... 
+<div align="center">
+<img src="Images/EEZ_Maps.png" width=600 height=500>
+
+## Or You can also have interactive Plots/Tables/Statistics... 
 
 ```{r Example2b, echo=F, eval=T, message=F, warning=F, fig.height=4,fig.width=5}
 library(shiny)
@@ -176,7 +182,8 @@ server <- function(input, output) {
 shinyApp(ui = ui, server = server)
 ```
 
-## So... the important Stuff
+
+## Now... The important Stuff
 
 <div align="center">
 <img src="Images/Boaty.jpg" width=600 height=500>
@@ -200,5 +207,5 @@ shinyApp(ui = ui, server = server)
 <div align="center">
 <img src="Images/Social.jpg" width=600 height=400>
 
-> Facebook
+> [Facebook](https://www.facebook.com/groups/1668725126761332/)
 > [<img src="Images/GitHub.jpg" width=150 height=80>](https://jepa.github.io/studyGroup/)
