@@ -1,0 +1,9 @@
+---
+title: Coworking Session
+text: Work together on your coding projects.
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/89
+date: 2017-03-22
+startTime: '18:10'
+endTime: '19:30'
+---
