@@ -20,16 +20,17 @@ runtime: shiny
 
 **Passive / semiactive** group that supports each other trough:
 
-<div align="left">
->- <img src="Images/Mr.Ray.jpg" width=400 height=150>
-</div>
+<div class="columns-2">
 
-<div align="center">
->- <img src="Images/Yoda.jpg" width=400 height=150>
-</div>
+>- <img src="Images/Mr.Ray.jpg" width=280 height=150>
 
-<div align="right">
->- <img src="Images/Fish_Whale.png" width=400 height=120>
+>- <img src="Images/Yoda.jpg" width=280 height=150>
+
+>- <img src="Images/Fish_Whale.png" width=280 height=120>
+
+>- <img src="Images/peer.gif" width=280 height=120>
+
+
 </div>
 
 ## Fish School Goals
@@ -50,22 +51,6 @@ runtime: shiny
 <img src="Images/Dr.Seuss.png" width=250 height=250>
 </div>
 
-
-##Mozilla Science
-<div align="center">
-<img src="Images/Mozilla.png" width=400 height=100>
-</div>
-
-"Mozilla Science Lab is a community of researchers, developers, and librarians making research open and accessible. We’re empowering open science leaders through fellowships, mentorship, and project-based learning."
-
-<div class="columns-2">
-
-> - <img src="Images/Study_Group.png" width=400 height=250>
-
-> - <img src="Images/GitHub.png" width=220 height=200>
-
-</div>
-
 ## GitHub
 
 <div align="center">
@@ -80,56 +65,34 @@ runtime: shiny
 <img src="Images/spongebob.jpg" width=600 height=400>
 </div>
 
-## Present your code
+## Present your code {.smaller}
 
 ```{r Example1, echo=T, eval=T, message=F, warning=F, fig.height=2, fig.width=3}
 # Where you can show your code to people
 library(dplyr)
-library(pander)
+
+library(knitr)
+
 A_Data <- read.csv("./Data/Alaska.csv") #Original_Data
 C_Data <- A_Data %>% #Clean Dataset
   filter(common_name == "Pink salmon", # <- filter by species
          fishing_sector == c("Artisanal", "Industrial"))
 
-pandoc.table(head(C_Data[1:5],2), style = "simple", justify="center")
-
-#mindblowing! 
+kable(head(C_Data[1:5],3), style = "simple", justify="center")
 
 ```
-
-##Plus the result of that code!
-```{r Example1b, echo=F, eval=T, message=F, warning=F, fig.align="center", fig.height=5, fig.width=7}
-#Where you can show your code to people
-library(ggplot2)
-library(dplyr)
-A_Data <- read.csv("./Data/Alaska.csv") #Original_Data, read dataset
-
-C_Data <- A_Data %>% #Clean Dataset
-  filter(common_name == "Pink salmon", # <- filter by species
-         fishing_sector == c("Artisanal", "Industrial")) # <- filter by fishing sector
-
-#Plus the result of that code!
-ggplot(C_Data) +
-  aes(
-    x= year,
-    y = tonnes,
-    fill = fishing_sector
-  ) +
-  geom_area(position = 'identity') + theme_classic()+
-  ggtitle("Pink Salmon Catch by Fishing Sector Using Sea Around Us Data")
-
-```
-
-## Some nice maps
 
 <div align="center">
-<img src="Images/EEZ_Maps.png" width=600 height=500>
+<div class="blue">
+>- mindblowing! 
+</div>
 
-## Or You can also have interactive Plots/Tables/Statistics... 
-
+## Interactive Graphs
 ```{r Example2b, echo=F, eval=T, message=F, warning=F, fig.height=4,fig.width=5}
 library(shiny)
 library(dplyr)
+library(ggplot2)
+
 ui <- fluidPage(
    
    # Application title
@@ -182,6 +145,43 @@ server <- function(input, output) {
 shinyApp(ui = ui, server = server)
 ```
 
+## Some nice maps (Interactive)
+```{r Example3ww, echo=F, eval=T, message=F, warning=F, fig.align="center", fig.height=5, fig.width=7}
+library(leaflet)
+
+df <- sp::SpatialPointsDataFrame(
+  cbind(
+    (runif(20) - .5) * 10 - 90.620130,  # lng
+    (runif(20) - .5) * 3.8 + 25.638077  # lat
+  ),
+  data.frame(Country = factor(
+    ifelse(runif(20) > 0.75, "US", "Mexico"),
+    c("US", "Mexico")
+  ))
+)
+
+pal <- colorFactor(c("navy", "darkgreen"), domain = c("US", "Mexico"))
+
+leaflet(df) %>% addTiles() %>%
+  addCircleMarkers(
+    radius = ~ifelse(Country == "ship", 6, 10),
+    color = ~pal(Country),
+    stroke = TRUE, fillOpacity = 0.5
+  ) %>% 
+  addLegend(pal=pal, values = ~Country) %>% 
+  setView(lng = -90,
+          lat = 25,
+            zoom= 3)
+
+```
+
+## Communication
+
+<div align="center">
+<img src="Images/Social.jpg" width=600 height=400>
+
+> [Facebook](https://www.facebook.com/groups/1668725126761332/)
+> [<img src="Images/GitHub.jpg" width=150 height=80>](https://jepa.github.io/studyGroup/)
 
 ## Now... The important Stuff
 
@@ -201,11 +201,3 @@ shinyApp(ui = ui, server = server)
 >9. Oceanomatics Group
 >10. R under the sea
 >11. Sea-R
-
-## Communication
-
-<div align="center">
-<img src="Images/Social.jpg" width=600 height=400>
-
-> [Facebook](https://www.facebook.com/groups/1668725126761332/)
-> [<img src="Images/GitHub.jpg" width=150 height=80>](https://jepa.github.io/studyGroup/)
