@@ -26,23 +26,24 @@ runtime: shiny
 
 >- <img src="Images/Yoda.jpg" width=280 height=150>
 
->- <img src="Images/Fish_Whale.png" width=280 height=120>
+>- <img src="Images/Fish_Whale.png" width=280 height=150>
 
->- <img src="Images/peer.gif" width=280 height=120>
+>- <img src="Images/peer.gif" width=280 height=150>
 
 
 </div>
 
 ## Fish School Goals
 
->- Improve general informatics skills
->- Learn new cool tools
->- keep updated on new tools (packages)
->- Strengthen the community and foster collaboration
+>- Improve general inFISHmatics skills
+>- Learn new & cool tools (packages)
+>- keep updated on new tools 
+>- Strengthen the ecosystem and foster trophic-interactions
 
 <div align="center">
 <div class="blue">
->- **Fish-cus activities in relevant topics (e.g. marine animals, marine ecology, and marine-so on)**
+
+>- **FISH-cus activities in relevant topics (e.g. marine animals, marine ecology, and marine-so on)**
 </div>
 
 <div align="center">
@@ -59,7 +60,7 @@ runtime: shiny
 
 [GitHub](https://jepa.github.io/studyGroup/) fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.
 
-## You can learn some cool stuf....
+## We can learn some cool stuf....
 
 <div align="center">
 <img src="Images/spongebob.jpg" width=600 height=400>
@@ -84,7 +85,7 @@ kable(head(C_Data[1:5],3), style = "simple", justify="center")
 
 <div align="center">
 <div class="blue">
->- mindblowing! 
+>- Algal-blowing! 
 </div>
 
 ## Interactive Graphs
@@ -201,3 +202,8 @@ leaflet(df) %>% addTiles() %>%
 >9. Oceanomatics Group
 >10. R under the sea
 >11. Sea-R
+
+## Thank you All! 
+
+<div align="center">
+<img src="Images/Lorax.jpg" width=600 height=300>
