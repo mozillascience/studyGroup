@@ -3,7 +3,7 @@
 
 #Step 1: give your study group a name and a short description,
 #and choose a language from the options in the _data directory:
-title: IOF Study Group
+title: Deep Sea Data Squad
 description: "An awesome study group for marine data science."
 language: en
 
@@ -19,8 +19,8 @@ language: en
 # None of these things need to be changed - but feel free!
 
 titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
-headlineSmall: "Welcome to the IOF/Biodiv Informatics Study Group!"
-headlineMain: "Come to our first session and help us set a name!"
+headlineSmall: "Welcome to our Informatics Study Group"
+headlineMain: "Come do some underwater informatics with us!"
 
 # Setup Google Calendar
 # Usage:
