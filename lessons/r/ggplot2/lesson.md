@@ -6,7 +6,6 @@ visible: true
 tags:
   - r
   - intermediate
-output: github_document
 ---
 
 # INTRODUCTION TO GGPLOT2
