@@ -41,7 +41,7 @@ If we have time:
 git clone [repo-url]
 git pull // syncs latest version from the master repo to your local repo
 // edit code
-git add [file] // stages code for commit (git remove does no unstage, it stages a deletion, we'll get to unstaging in a bit)
+git add [file] // stages code for commit (git remove does not unstage, it stages a deletion, we'll get to unstaging in a bit)
 git commit // create a record of the changes you've made
 git push // sync your local changes to the master repo
 ~~~
@@ -117,4 +117,4 @@ echo "More fancy code"
 git commit
 git pull
 ~~~
-- Resolve the merge conflict, add and commit
+- Resolve the merge conflict, delete >>> <<< lines, add and commit
