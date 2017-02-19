@@ -33,7 +33,7 @@ tags:
 
 If you'd like to follow along in IPython Notebook, do the following:
 
-  - Install [Jupyter Notebook](http://jupyter.readthedocs.org/en/latest/install.html)
+  - Install [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html)
   - Run the notebook by typing `jupyter notebook` into command line.
   - In the web application that opens, navigate to the folder containing the files you downloaded, and open 'Classes in Python.ipynb' to follow along.
 

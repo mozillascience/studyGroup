@@ -289,6 +289,6 @@ If you are feeling overwhelmed <span class="label label-warning">so many</span> 
 
 ### Glossary
 
-- a **dynamic** website "contains web pages... that are generated in real-time. These pages include Web scripting code, such as PHP..." (from [techterms](http://techterms.com/))
+- a **dynamic** website "contains web pages... that are generated in real-time. These pages include Web scripting code, such as PHP..." (from [techterms](https://techterms.com/))
 - **"static site generator"** tools that help with the creation of static websites by converting input (usually written in a markup language like **markdown**) into static HTML through the use of templates.
-- a **static** website "contains web pages with fixed content. Each page... displays the same information to every visitor" (from [techterms](http://techterms.com/))
+- a **static** website "contains web pages with fixed content. Each page... displays the same information to every visitor" (from [techterms](https://techterms.com/))

@@ -275,7 +275,7 @@ ds2 %>%
 # Generate this document #
 
 Check out the documentation on
-[`knitr`](http://yihui.name/knitr/options/) or
+[`knitr`](https://yihui.name/knitr/options/) or
 [R Markdown](http://rmarkdown.rstudio.com/authoring_rcodechunks.html)
 for R code chunk options.  If you look at the raw `.Rmd` file for this
 [document](../main.Rmd), you can see that the below code chunk uses

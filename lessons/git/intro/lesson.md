@@ -127,7 +127,7 @@ Now you know about a typical workflow!  There are **lots** of commands
 and options in git, you really can do almost anything.  *However*,
 these are the basic tools that are used most frequently.  If you have
 any questions, please check out
-[StackOverflow](http://stackoverflow.com/questions/tagged/git) for
+[StackOverflow](https://stackoverflow.com/questions/tagged/git) for
 *literally* any question on or about Git!!  Or just google it! Google
 usually shows answers from StackOverflow.
 
@@ -158,7 +158,7 @@ ever need help:
 
 * [Hands-on tutorial, with web-based terminal](https://try.github.io/levels/1/challenges/1)
 * [Official git documentation](https://git-scm.com/doc)
-* [Simpler first-steps guide](http://rogerdudler.github.io/git-guide/)
+* [Simpler first-steps guide](https://rogerdudler.github.io/git-guide/)
 * [Reference pages for all git commands](http://gitref.org/)
-* [Interactive, visual tutorial on branching](http://pcottle.github.io/learnGitBranching/)
+* [Interactive, visual tutorial on branching](https://pcottle.github.io/learnGitBranching/)
 

@@ -147,4 +147,4 @@ qplot(carat, price, data = diamonds)
 
 [ggplot2 cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
 
-[r graph gallery for inspiration (not just limited to ggplot2 graphs)](http://www.r-graph-gallery.com/all-graphs/)
+[r graph gallery for inspiration (not just limited to ggplot2 graphs)](https://www.r-graph-gallery.com/all-graphs/)

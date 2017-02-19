@@ -93,7 +93,7 @@ parse_blast(fn)
 
   * Running BLAST locally (on your machine as opposed to over the web)
 
-Note: this won't work unless you install [blast+](http://www.ncbi.nlm.nih.gov/guide/howto/run-blast-local/) and then add the blast+ directory to your PATH. 
+Note: this won't work unless you install [blast+](https://www.ncbi.nlm.nih.gov/guide/howto/run-blast-local/) and then add the blast+ directory to your PATH.
 
 ```
 from Bio.Blast.Applications import NcbiblastnCommandline

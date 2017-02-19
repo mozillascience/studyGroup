@@ -16,7 +16,7 @@ tags:
 
 ## Presentation
 
-http://iandennismiller.github.io/databases-sql
+<https://iandennismiller.github.io/databases-sql>
 
 - covers data, databases, and sql
 - contains javascript for some exercises
