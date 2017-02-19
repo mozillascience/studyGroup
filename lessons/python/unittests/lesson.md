@@ -14,7 +14,7 @@ tags:
  - **Lesson topic**: Unit Testing (software development)
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/unittests>
 
-The [unittest](https://docs.python.org/2/library/unittest.html) module primarily provides a class TestCase to facilitate the writing of tests for "units" of code inside a larger project.
+The [unittest](https://docs.python.org/3/library/unittest.html) module primarily provides a class TestCase to facilitate the writing of tests for "units" of code inside a larger project.
 Larger software projects benefit from unit tests, because smaller units of the software can be tested individually and checked for errors before they are added to the main project. After a project has grown over time, a suite of unit tests can also be very helpful in debugging, because the source of an error can quickly be located.
 
 Typically test cases are implemented as child classes of the `unittest.TestCase` class. The methods `TestCase.setUp()` can be overloaded to provide common setup procedures for all test methods; the method `TestCase.tearDown()` can be used for cleanup; both methods are executed before (after) each test. All methods of the form `TestCase.test*()` are considered test cases and will be executed by `unittest`, if `unittest.main()` is called. Alternatively, tests can be run using the `python -m unittest` command with the module name.

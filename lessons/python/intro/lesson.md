@@ -18,12 +18,10 @@ tags:
 
 This is a very basic introduction to the Python programming language,
 based largely off of the tutorials in the [Beginners' Guide to Python](https://wiki.python.org/moin/BeginnersGuide/Programmers),
-in particular the [Learn Python Tutorials](https://pythonspot.com/),
-[Crash into Python](https://stephensugden.com/crash_into_python/) and
-[Instant Python](http://hetland.org/writing/instant-python.html).
+in particular the [Learn Python Tutorials](https://pythonspot.com/).
 
 Only the command line and a basic text editor are required, but quite
-a few integrated development environments exist, however, including [IDLE](https://docs.python.org/2/library/idle.html)
+a few integrated development environments exist, however, including [IDLE](https://docs.python.org/3/library/idle.html)
 and [PyCharm](https://www.jetbrains.com/pycharm/).  Madeleine recommends
 [WingIDE101](https://www.wingware.com/downloads/wingide-101/5.1.5-1).
 
