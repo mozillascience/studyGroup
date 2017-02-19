@@ -1,13 +1,11 @@
 ---
 layout: page
-title: For Loops in R
+title: High Performance Loops in R
 visible: true
 tags:
   - r
   - beginner
 ---
-
-# High Performance Loops in R
 
  - **Authors**: Lina Tran adapted from Roz Dakin
  - **Research field**: Neuroscience

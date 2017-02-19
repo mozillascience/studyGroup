@@ -2,9 +2,9 @@
 layout: page
 title:
 visible: false
-tags: 
+tags:
   # languages
-  - python 
+  - python
   - r
   - git
   - misc
@@ -15,8 +15,6 @@ tags:
 ---
 <!-- change visible to true if you want it on the site -->
 <!-- remove any tags listed above that are not relevant -->
-
-# My Lesson Title
 
  - **Authors**: My Name
  - **Research field**: My field of study

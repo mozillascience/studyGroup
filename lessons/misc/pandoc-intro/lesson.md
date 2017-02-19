@@ -7,8 +7,6 @@ tags:
   - beginner
 ---
 
-# Intro to Pandoc and Markdown
-
  - **Authors**: Dano Morrison
  - **Research field**: Neuroscience
  - **Lesson topic**: How to use Pandoc and Markdown for writing scientific manuscripts

@@ -7,8 +7,6 @@ tags:
   - intermediate
 ---
 
-# Debugging in Python
-
  - **Author**: John Ladan
  - **Lesson topic**: Introduction to Debugging in Python
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/debugging>

@@ -1,13 +1,11 @@
 ---
 layout: page
-title: 'Biopython'
+title: 'Biopython 10-minute demo'
 visible: true
 tags:
   - python
   - intro
 ---
-
-# Biopython 10-minute demo
 
  - **Author**: Madeleine Bonsma
  - **Research field**: Microbial ecology - prokaryote-phage interactions

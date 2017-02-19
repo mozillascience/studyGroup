@@ -1,13 +1,11 @@
 ---
 layout: page
-title: 'Intro to Git'
+title: '(Brief) Introduction to Git + GitHub'
 visible: true
 tags:
   - git
   - beginner
 ---
-
-# (Brief) Introduction to Git + GitHub #
 
  - **Authors**: Luke Johnston
  - **Research field**: Nutritional and diabetes epidemiology

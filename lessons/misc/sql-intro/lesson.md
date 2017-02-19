@@ -1,13 +1,11 @@
 ---
 layout: page
-title: 'Databases and SQL'
+title: 'Introduction to Databases and SQL'
 visible: true
 tags:
   - misc
   - beginner
 ---
-
-## Introduction to Databases and SQL ##
 
 - **Authors**: Ian Dennis Miller
 - **Research field**: Social Psychology - Social Complexity

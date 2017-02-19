@@ -7,8 +7,6 @@ tags:
   - intermediate
 ---
 
-# Create your own package in R!
-
  - **Authors**: Luke Johnston
  - **Research field**: PhD in Nutritional Sciences
  - **Lesson topic**: R package development

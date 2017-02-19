@@ -1,14 +1,13 @@
 ---
 always_allow_html: yes
 layout: page
-title: 'Plotting in R: ggplot2'
+title: 'Introduction to ggplot2'
 visible: true
 tags:
   - r
   - intermediate
 ---
 
-# INTRODUCTION TO GGPLOT2
 * Author: Lindsay Coome
 * Lesson Topic: Plotting in R using ggplot2
 * [Study Materials](https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/ggplot2)

@@ -6,8 +6,6 @@ tags:
   - misc
 ---
 
-# Discussion on careers outside academia
-
  - **Authors**: UofT Coders
  - **Research field**: Science
  - **Lesson topic**: Discussion on experiences outside an academic career path

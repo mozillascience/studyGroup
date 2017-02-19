@@ -7,8 +7,6 @@ tags:
   - beginner
 ---
 
-# Overview of Python
-
  - **Authors**: Charles Zhu, Lina Tran, Madeleine Bonsma
  - **Research field**: Astronomy & astrophysics
  - **Lesson topic**: Introduction to Python syntax and functionality

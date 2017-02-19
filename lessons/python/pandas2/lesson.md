@@ -7,8 +7,6 @@ tags:
   - beginner
 ---
 
-# Pandas for data analysis
-
  - **Authors**: Derek Howard
  - **Research field**: Neuroscience
  - **Lesson topic**: Data analysis, subsetting data, plotting

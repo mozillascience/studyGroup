@@ -1,13 +1,11 @@
 ---
 layout: page
-title: Python Classes
+title: Introduction to Classes in Python
 visible: true
 tags:
   - python
   - intermediate
 ---
-
-# Introduction to Classes in Python
 
  - **Authors**: Lina Tran
  - **Research field**: Neuroscience

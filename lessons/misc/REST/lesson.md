@@ -7,8 +7,6 @@ tags:
   - intermediate
 ---
 
-# RESTful Web Services in Science
-
  - **Authors**: Asher Pasha
  - **Research field**: Bioinformatics
  - **Lesson topic**: Get data from RESTful web services

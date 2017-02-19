@@ -1,13 +1,11 @@
 ---
 layout: page
-title: 'Intro to Ruby'
+title: 'Introduction to Ruby'
 visible: true
 tags:
   - misc
   - beginner
 ---
-
-# Introduction to Ruby (for beginners)
 
 - **Authors**: Jenna Blumenthal
 - **Research field**: Mechanical & Industrial Engineering

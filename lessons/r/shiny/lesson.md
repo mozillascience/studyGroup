@@ -7,8 +7,6 @@ tags:
   - advanced
 ---
 
-#R Shiny Tutorial
-
  - **Authors**: Lanna Jin
  - **Research field**: Ecology & Evolutionary Biology
  - **Lesson topic**: Interactive Visualizations with the Shiny library in R

@@ -1,13 +1,11 @@
 ---
 layout: page
-title: 'More on Git'
+title: 'An Intermediate Look at Git + GitHub'
 visible: true
 tags:
   - git
   - advanced
 ---
-
-# An Intermediate Look at Git + GitHub #
 
  - **Authors**: Elliott Sales de Andrade
  - **Research field**: Seismology

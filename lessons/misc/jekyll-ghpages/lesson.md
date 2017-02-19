@@ -23,7 +23,7 @@ In this code-along we'll cover what GitHub Pages are, why you might want to use 
 
 - GitHub account (if you don't already have one go to [github.com/join](https://github.com/join))
 - git installed, and configured on your machine ([git-scm.com](https://git-scm.com/downloads))
-- comfort with material covered in UofT Coders lessons **[Intro to Git](https://uoftcoders.github.io/studyGroup/lessons/git/intro/lesson/)**, **[More on Git](https://uoftcoders.github.io/studyGroup/lessons/git/advanced/lesson/)**, and **[Using Branches in Git](https://uoftcoders.github.io/studyGroup/lessons/git/branches/lesson/)**
+- comfort with material covered in UofT Coders lessons **[(Brief) Introduction to Git + GitHub](https://uoftcoders.github.io/studyGroup/lessons/git/intro/lesson/)**, **[An Intermediate Look at Git + GitHub](https://uoftcoders.github.io/studyGroup/lessons/git/advanced/lesson/)**, and **[Using Branches in Git](https://uoftcoders.github.io/studyGroup/lessons/git/branches/lesson/)**
 
 ### Bluebird Conditions (AKA would be great to have!)
 

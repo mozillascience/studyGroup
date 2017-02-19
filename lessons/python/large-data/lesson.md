@@ -1,13 +1,11 @@
 ---
 layout: page
-title:
+title: Large Datasets in Python
 visible: true
 tags:
   - python
   - intermediate
 ---
-
-# Large Datasets in Python (Aug 25, 2016)
 
  - **Authors**: Wei Zhan
  - **Research field**: Immunology

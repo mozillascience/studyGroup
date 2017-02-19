@@ -7,8 +7,6 @@ tags:
   - beginner
 ---
 
-# Overview 
-
  - **Authors**: Curtis 
  - **Research field**: Democracy and Information Systems, Sustainability and Software
  - **Lesson topic**: Getting Started with LaTeX
