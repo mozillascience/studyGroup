@@ -1,14 +1,12 @@
 ---
 layout: page
 title: Introduction to Bash
-visible: false
+visible: true
 tags:
   - misc
   - beginner
 ---
 <!-- change visible to true if you want it on the site -->
-
-# My Lesson Title
 
  - **Authors**: John Ladan
  - **Research field**: Physics
