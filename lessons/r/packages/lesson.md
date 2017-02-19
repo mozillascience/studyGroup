@@ -14,7 +14,7 @@ tags:
  - **Authors**: Luke Johnston
  - **Research field**: PhD in Nutritional Sciences
  - **Lesson topic**: R package development
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r-pkg>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/packages>
  
 -----
 

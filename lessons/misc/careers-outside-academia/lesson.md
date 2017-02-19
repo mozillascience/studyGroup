@@ -12,7 +12,7 @@ tags:
  - **Authors**: UofT Coders
  - **Research field**: Science
  - **Lesson topic**: Discussion on experiences outside an academic career path
- - **Lesson content URL**: https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/careers_outside_academia
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/misc/careers-outside-academia>
 
 This is a list of notes and resources that were brought up during our discussion on careers outside academia.
 I did my best to find appropriate links, but some things might not be accurate. Feel free to add to or modify this list!

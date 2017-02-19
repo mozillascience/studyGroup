@@ -10,7 +10,7 @@ tags:
  - **Authors**: Elliott Sales de Andrade
  - **Research field**: Seismology
  - **Lesson topic**: cartography, maps, projections, Python
- - **Lesson content URL**: https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/cartography
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/cartography>
 
 
 
@@ -682,7 +682,7 @@ our_ward
 
 
 
-![svg](lesson_files/lesson_51_0.svg)
+![svg](../lesson_files/lesson_51_0.svg)
 
 
 
@@ -729,7 +729,7 @@ sgeom.LinearRing(our_ward[0].exterior.coords)
 
 
 
-![svg](lesson_files/lesson_57_0.svg)
+![svg](../lesson_files/lesson_57_0.svg)
 
 
 

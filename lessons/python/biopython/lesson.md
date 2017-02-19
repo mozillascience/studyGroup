@@ -12,7 +12,7 @@ tags:
  - **Author**: Madeleine Bonsma
  - **Research field**: Microbial ecology - prokaryote-phage interactions
  - **Lesson topic**: Biopython - examples
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/Biopython>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/biopython>
 
 ## Intro ##
 

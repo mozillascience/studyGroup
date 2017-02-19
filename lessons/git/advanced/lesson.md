@@ -13,7 +13,7 @@ tags:
  - **Authors**: Elliott Sales de Andrade
  - **Research field**: Seismology
  - **Lesson topic**: Version control (Git)
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git2>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/advanced>
 
 ## Recap: ##
 

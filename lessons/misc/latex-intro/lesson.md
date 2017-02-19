@@ -12,7 +12,7 @@ tags:
  - **Authors**: Curtis 
  - **Research field**: Democracy and Information Systems, Sustainability and Software
  - **Lesson topic**: Getting Started with LaTeX
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/latex>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/misc/latex-intro>
 
 ## Preface: ##
 

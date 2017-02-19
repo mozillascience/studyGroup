@@ -10,7 +10,7 @@ tags:
  - **Authors**: Ricardo Harripaul
  - **Research field**: 
  - **Lesson topic**: Plotting with Matplotlib
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/PlottinginPythonwithMatplotlib>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/matplotlib>
 
 Matplotlib in Python
 ====================

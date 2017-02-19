@@ -14,7 +14,7 @@ tags:
  - **Authors**: Dano Morrison
  - **Research field**: Neuroscience
  - **Lesson topic**: Usage of Pandas DataFrames for data analysis
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pandas>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/pandas>
 
 # Intro to Pandas DataFrames
 

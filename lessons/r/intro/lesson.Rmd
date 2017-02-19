@@ -8,7 +8,7 @@ output: md_document
  - **Authors**: Luke W. Johnston
  - **Research field**: Nutritional Sciences (epidemiology)
  - **Lesson topic**: Intro to R and data wrangling
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/introR>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/intro>
  - **Lesson video stream**: <https://www.youtube.com/watch?v=pbG_3ZuNyx8>
 
 This is a brief introduction to R, focussing on data wrangling using
@@ -27,7 +27,7 @@ programs.  The strength of R comes from:
 * Its extensive and active community of users for doing statistical
   work:
     - R is the top tag in the
-      [StackExchange CrossValidated site](stats.stackexchange.com/tags)
+      [StackExchange CrossValidated site](https://stats.stackexchange.com/tags)
       for statistical questions
     - There are more than 6000 packages on
       [CRAN](https://cran.r-project.org/web/packages/) that stores all
@@ -46,7 +46,7 @@ it never hurts to learn more than one language, especially as R is
 great for data analysis and plotting.
 
 Ok, firstly, I've made this session with some assumptions (see the
-[slides.html](./slides.html)) file.  Briefly I'm assuming you want to
+[slides.html](../slides.html)) file.  Briefly I'm assuming you want to
 use R for statistical analysis, plotting, and/or writing up reports.
 I'm using R Markdown to show how to write up documents with R code and
 since getting the data into an analyzable form is the hardest part of
@@ -64,7 +64,7 @@ R code chunks that can be processed to output the results of the R
 code into a generated `.md` file.  This is an incredible (and recent)
 strength of using R, as this then allows you to create html, pdf, or
 Word doc files from the `.md` file using the `rmarkdown` package
-(which relies on [pandoc](pandoc.org)).
+(which relies on [pandoc](https://pandoc.org)).
 
 On the top of each `.Rmd` file is the
 [YAML](https://en.wikipedia.org/wiki/YAML) front matter, which looks
@@ -278,7 +278,7 @@ Check out the documentation on
 [`knitr`](http://yihui.name/knitr/options/) or
 [R Markdown](http://rmarkdown.rstudio.com/authoring_rcodechunks.html)
 for R code chunk options.  If you look at the raw `.Rmd` file for this
-[document](./main.Rmd), you can see that the below code chunk uses
+[document](../main.Rmd), you can see that the below code chunk uses
 `eval = FALSE`, which tells knitr to not run this code chunk.
 
 These two commands generate either a html or a md file.

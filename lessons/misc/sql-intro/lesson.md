@@ -12,7 +12,7 @@ tags:
 - **Authors**: Ian Dennis Miller
 - **Research field**: Social Psychology - Social Complexity
 - **Lesson topic**: Databases and SQL
-- **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/sql>
+- **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/misc/sql-intro>
 
 ## Presentation
 
@@ -25,8 +25,8 @@ http://iandennismiller.github.io/databases-sql
 
 The following Jupyter notebooks contain a R and Python examples:
 
-- [r-sql.ipynb](r-sql.ipynb)
-- [python-sql.ipynb](python-sql.ipynb)
+- [r-sql.ipynb](../r-sql.ipynb)
+- [python-sql.ipynb](../python-sql.ipynb)
 
 These can be run locally:
 

@@ -13,7 +13,7 @@ tags:
  - **Authors**: Lina Tran adapted from Roz Dakin
  - **Research field**: Neuroscience
  - **Lesson topic**: For Loops 
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/RLoops>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/loops>
 
 To For Loop or not to For Loop? Learn different ways to make use of for loops as well as when it might be more efficient to use other methods in favour of looping. We will also learn how to use the Microbenchmark package to time how long it takes to execute code when deciding to use one method over another to maximize efficiency.
 

@@ -13,7 +13,7 @@ tags:
  - **Authors**: Lina Tran
  - **Research field**: Neuroscience
  - **Lesson topic**: Object Oriented Programming with Python
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pythonClasses>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/classes>
 
 ## Topics Covered:
 
@@ -29,7 +29,7 @@ tags:
 ### What You Will Need
 
 - Python 2.7, or 3.4+ installed
-- Download the files for [this lesson](https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pythonClasses)
+- Download the files for [this lesson](https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/classes)
 
 If you'd like to follow along in IPython Notebook, do the following:
 

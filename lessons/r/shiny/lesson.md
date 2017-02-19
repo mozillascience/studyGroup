@@ -12,7 +12,7 @@ tags:
  - **Authors**: Lanna Jin
  - **Research field**: Ecology & Evolutionary Biology
  - **Lesson topic**: Interactive Visualizations with the Shiny library in R
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/Shiny>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/shiny>
 
 <h1>Introduction</h1>
 Introduction to Data Set
