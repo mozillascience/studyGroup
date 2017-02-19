@@ -6,7 +6,6 @@ tags:
   - python
   - intermediate
 ---
-<!-- change visible to true if you want it on the site -->
 
 # Large Datasets in Python (Aug 25, 2016)
 

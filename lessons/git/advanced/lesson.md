@@ -6,7 +6,6 @@ tags:
   - git
   - advanced
 ---
-<!-- change visible to true if you want it on the site -->
 
 # An Intermediate Look at Git + GitHub #
 

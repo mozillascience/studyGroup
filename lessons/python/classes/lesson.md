@@ -6,7 +6,6 @@ tags:
   - python
   - intermediate
 ---
-<!-- change visible to true if you want it on the site -->
 
 # Introduction to Classes in Python
 

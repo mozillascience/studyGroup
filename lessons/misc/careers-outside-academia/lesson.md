@@ -5,7 +5,6 @@ visible: true
 tags:
   - misc
 ---
-<!-- change visible to true if you want it on the site -->
 
 # Discussion on careers outside academia
 

@@ -6,7 +6,6 @@ tags:
   - misc
   - intermediate
 ---
-<!-- change visible to true if you want it on the site -->
 
 # RESTful Web Services in Science
 

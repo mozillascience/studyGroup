@@ -6,7 +6,6 @@ tags:
   - r
   - beginner
 ---
-<!-- change visible to true if you want it on the site -->
 
 # High Performance Loops in R
 

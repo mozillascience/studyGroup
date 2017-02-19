@@ -7,8 +7,6 @@ tags:
   - beginner
 ---
 
-<!-- change visible to true if you want it on the site -->
-
 # Intro to Pandas DataFrames
 
  - **Authors**: Dano Morrison
