@@ -15,7 +15,7 @@ tags:
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/intro/>
  - **Intro to Git slides (2015)**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/intro/slides.Rmd>
  - **Philosophy of Git slides (2016)**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/intro/philosophy_of_git.pdf>
- - **Lesson video stream (2016)**: <https://www.youtube.com/watch?v=1xeVRpl-lFU>
+ - **Lesson video stream (2016)**: <https://www.youtube.com/watch?v=JbUeTXP05XQ>
 
 ## Preface: ##
 
