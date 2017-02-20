@@ -1,13 +1,11 @@
 ---
 layout: page
-title: 'Intro to Ruby'
+title: 'Introduction to Ruby'
 visible: true
 tags:
   - misc
   - beginner
 ---
-
-# Introduction to Ruby (for beginners)
 
 - **Authors**: Jenna Blumenthal
 - **Research field**: Mechanical & Industrial Engineering
@@ -150,7 +148,7 @@ An `OBJECT` is an `INSTANCE` of a `CLASS`.
 
 ### A what is a what of a what?
 
-<img src="http://i.imgur.com/U1PHT7H.gif" class="delayed" />
+<img src="https://i.imgur.com/U1PHT7H.gif" class="delayed" />
 
 Classes
 -------
@@ -268,7 +266,7 @@ How do I know what methods I can call on my object?
 
 How do I know what those methods do?
 
-Look them up [**here**](http://ruby-doc.org/)
+Look them up [**here**](https://ruby-doc.org/)
 
 Built-in Classes
 ----------------
@@ -277,7 +275,7 @@ Ruby comes with many built-in classes that we can use.
 
 `String`, `Integer`, `File`, `Hash`, `Array`...
 
-You can read about all the built-in objects [**here**](http://www.ruby-doc.org/core-2.0/)
+You can read about all the built-in objects [**here**](https://ruby-doc.org/core/)
 
 Custom Classes
 --------------
@@ -581,7 +579,7 @@ Inspired by Chris Pine's **Learn to Program**
 Resources
 ---------
 
-[Learn Ruby in 20 Minutes](http://www.ruby-lang.org/en/documentation/quickstart/)
+[Learn Ruby in 20 Minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
 
 [why's poignent guide to Ruby](http://mislav.uniqpath.com/poignant-guide/)
 
@@ -589,11 +587,11 @@ Resources
 
 [Rails](http://rubyonrails.org/screencasts)
 
-[Lots more!](http://www.ruby-lang.org/en/documentation/)
+[Lots more!](https://www.ruby-lang.org/en/documentation/)
 
 And finally...
 
 Thank you!
 ==========
 
-[![Creative Commons License](framework/img/cc-by-nc.svg)](http://creativecommons.org/licenses/by-nc/4.0/) by [Ladies Learning Code](http://ladieslearningcode.com)
+[![Creative Commons License](framework/img/cc-by-nc.svg)](https://creativecommons.org/licenses/by-nc/4.0/) by [Ladies Learning Code](http://ladieslearningcode.com)

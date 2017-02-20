@@ -86,7 +86,7 @@ abline( lm( df2$Catholic ~ df2$Education))  # add a line based on the coefficien
 ## MORE COOL STUFF THAT REQUIRED THE UNAVAILABLE PACKAGES ## 
 
 # Check out the youtube video from last year:  https://www.youtube.com/watch?v=pbG_3ZuNyx8
-# And the code-along information:  https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/introR/lesson.md
+# And the code-along information:  https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/r/intro/lesson.md
 # No really, watch the video, it will explain what the heck this following code does and how it's doing it and how you can do it. 
 
 install.packages("dplyr") 

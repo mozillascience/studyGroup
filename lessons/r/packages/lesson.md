@@ -7,14 +7,10 @@ tags:
   - intermediate
 ---
 
-<!-- change visible to true if you want it on the site -->
-
-# Create your own package in R!
-
  - **Authors**: Luke Johnston
  - **Research field**: PhD in Nutritional Sciences
  - **Lesson topic**: R package development
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r-pkg>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/packages>
  
 -----
 

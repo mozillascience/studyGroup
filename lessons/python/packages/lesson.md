@@ -7,13 +7,11 @@ tags:
   - advanced
 ---
 
-# Creating Packages in Python
-
 - **Presenter**: John Ladan
 - **Sources**: [*Bill Mills*](https://github.com/BillMills/pythonPackageLesson), Elise Olson, [The Hitchhiker's Guide to Packaging](https://the-hitchhikers-guide-to-packaging.readthedocs.org/en/latest/quickstart.html)
 - **Research Field**: any
 - **Topic**: A quick introduction to creating packages in Python
-- **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python_packages>
+- **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/packages>
 
 
 ## Why are we doing this?

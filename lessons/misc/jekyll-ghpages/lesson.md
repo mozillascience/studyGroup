@@ -10,8 +10,8 @@ tags:
 - **Authors**: Dawn Walker [@dcwalk](https://github.com/dcwalk)
 - **Research field**: Information Studies (Information System Design)
 - **Lesson topic**: Introduction to using GitHub Pages and Jekyll for website design
-- **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/githubPages>
-- **Lesson video stream**: <https://www.youtube.com/watch?v=44xoR-EqT_g>
+- **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/misc/jekyll-ghpages>
+- **Lesson video stream**: <https://www.youtube.com/watch?v=oCCwtyH3SL4>
 
 ## Preface
 
@@ -23,7 +23,7 @@ In this code-along we'll cover what GitHub Pages are, why you might want to use 
 
 - GitHub account (if you don't already have one go to [github.com/join](https://github.com/join))
 - git installed, and configured on your machine ([git-scm.com](https://git-scm.com/downloads))
-- comfort with material covered in UofT Coders lessons **[Intro to Git](https://uoftcoders.github.io/studyGroup/lessons/git/lesson/)**, **[More on Git](https://uoftcoders.github.io/studyGroup/lessons/git2/lesson/)**, and **[Using Branches in Git](https://uoftcoders.github.io/studyGroup/lessons/gitBranches/lesson/)**
+- comfort with material covered in UofT Coders lessons **[(Brief) Introduction to Git + GitHub](https://uoftcoders.github.io/studyGroup/lessons/git/intro/lesson/)**, **[An Intermediate Look at Git + GitHub](https://uoftcoders.github.io/studyGroup/lessons/git/advanced/lesson/)**, and **[Using Branches in Git](https://uoftcoders.github.io/studyGroup/lessons/git/branches/lesson/)**
 
 ### Bluebird Conditions (AKA would be great to have!)
 
@@ -69,8 +69,6 @@ Github Pages are a feature of GitHub that allows users to host static websites f
 
 - **Github Developer** [developer.github.com](https://developer.github.com/)  [`github.com/github/developer.github.com`](https://github.com/github/developer.github.com)
 - **Open Knowledge Foundation: Open Data Handbook** [opendatahandbook.org/guide](http://opendatahandbook.org/guide/en/)  [`github.com/okfn/opendatahandbook`](https://github.com/okfn/opendatahandbook)
-- **Grimoire** [ephe.github.io/grimoire/](https://ephe.github.io/grimoire/)  [`ephe.github.io/grimoire/`](https://ephe.github.io/grimoire/)   
-"Grimoire is a mobile-friendly [Dungeons & Dragons] 5e spellbook that organizes spell lists by class and level."
 - **2048** [gabrielecirulli.github.io/2048/](https://gabrielecirulli.github.io/2048/) [`github.com/gabrielecirulli/2048/`](https://github.com/gabrielecirulli/2048/)
 
 #### Naming Conventions
@@ -291,6 +289,6 @@ If you are feeling overwhelmed <span class="label label-warning">so many</span> 
 
 ### Glossary
 
-- a **dynamic** website "contains web pages... that are generated in real-time. These pages include Web scripting code, such as PHP..." (from [techterms](http://techterms.com/))
+- a **dynamic** website "contains web pages... that are generated in real-time. These pages include Web scripting code, such as PHP..." (from [techterms](https://techterms.com/))
 - **"static site generator"** tools that help with the creation of static websites by converting input (usually written in a markup language like **markdown**) into static HTML through the use of templates.
-- a **static** website "contains web pages with fixed content. Each page... displays the same information to every visitor" (from [techterms](http://techterms.com/))
+- a **static** website "contains web pages with fixed content. Each page... displays the same information to every visitor" (from [techterms](https://techterms.com/))

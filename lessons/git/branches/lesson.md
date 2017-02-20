@@ -12,8 +12,8 @@ tags:
  - **Authors**: Luke Johnston
  - **Research field**: Nutritional and diabetes epidemiology
  - **Lesson topic**: Git branches
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/gitBranches>
- - **Lesson video stream**: <https://www.youtube.com/watch?v=nRUW6LLkCqQ>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/branches>
+ - **Lesson video stream**: <https://www.youtube.com/watch?v=FwxbMxXHb0c>
 
 ## Preface: ##
 
@@ -138,7 +138,7 @@ the `fixingBranch` on your forked repo on GitHub and on your computer
 # Resources: #
 
 If you have any questions, often one of the best places to start is either  
-[StackOverflow](http://stackoverflow.com/questions/tagged/git) or Google (which
+[StackOverflow](https://stackoverflow.com/questions/tagged/git) or Google (which
 more likely links to StackOverflow).
 
 ## Glossary: ##

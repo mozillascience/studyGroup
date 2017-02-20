@@ -6,8 +6,6 @@ tags:
   - r
   - intermediate
 ---
-<!-- change visible to true if you want it on the site -->
-
 
 - **Author**: Thea Van Rossum
 - **Lesson Topic**: RStudio Debugging

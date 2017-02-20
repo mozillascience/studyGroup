@@ -1,18 +1,16 @@
 ---
 layout: page
-title: 'Biopython'
+title: 'Biopython 10-minute demo'
 visible: true
 tags:
   - python
   - intro
 ---
 
-# Biopython 10-minute demo
-
  - **Author**: Madeleine Bonsma
  - **Research field**: Microbial ecology - prokaryote-phage interactions
  - **Lesson topic**: Biopython - examples
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/Biopython>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/biopython>
 
 ## Intro ##
 
@@ -93,7 +91,7 @@ parse_blast(fn)
 
   * Running BLAST locally (on your machine as opposed to over the web)
 
-Note: this won't work unless you install [blast+](http://www.ncbi.nlm.nih.gov/guide/howto/run-blast-local/) and then add the blast+ directory to your PATH. 
+Note: this won't work unless you install [blast+](https://www.ncbi.nlm.nih.gov/guide/howto/run-blast-local/) and then add the blast+ directory to your PATH.
 
 ```
 from Bio.Blast.Applications import NcbiblastnCommandline

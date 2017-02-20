@@ -1,19 +1,16 @@
 ---
 layout: page
 title: Introduction to Bash
-visible: false
+visible: true
 tags:
   - misc
   - beginner
 ---
-<!-- change visible to true if you want it on the site -->
-
-# My Lesson Title
 
  - **Authors**: John Ladan
  - **Research field**: Physics
  - **Lesson topic**: Introduction to shells and the command-line with bash.
- - **Lesson content URL**: <link>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/misc/bash-intro/>
 
 In this tutorial, we cover the basics of interacting with a computer using Bash (the Bourne Again Shell). You may have heard the terms "command line", "terminal", "console", "shell", "interactive prompt", "git-bash", etc. To be imprecise, they all refer to using the keyboard to control your computer by typing commands.
 

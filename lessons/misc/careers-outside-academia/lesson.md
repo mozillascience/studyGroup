@@ -5,14 +5,11 @@ visible: true
 tags:
   - misc
 ---
-<!-- change visible to true if you want it on the site -->
-
-# Discussion on careers outside academia
 
  - **Authors**: UofT Coders
  - **Research field**: Science
  - **Lesson topic**: Discussion on experiences outside an academic career path
- - **Lesson content URL**: https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/careers_outside_academia
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/misc/careers-outside-academia>
 
 This is a list of notes and resources that were brought up during our discussion on careers outside academia.
 I did my best to find appropriate links, but some things might not be accurate. Feel free to add to or modify this list!
@@ -20,7 +17,7 @@ I did my best to find appropriate links, but some things might not be accurate. 
 ## Hackathons, coding groups, and places to find them
 * [Civic Tech Toronto](http://civictech.ca/)
 * [Meetup.com](https://www.meetup.com/)
-* [Hacking Health](http://hackinghealth.ca/city/toronto-canada/)
+* [Hacking Health](https://hackinghealth.ca/city/toronto-canada/)
 * Mozilla Global Sprint ([2016 website](https://science.mozilla.org/programs/events/global-sprint-2016)) - annually in June
 * [NeurotechX](http://neurotechx.com/)
 
@@ -41,4 +38,4 @@ I did my best to find appropriate links, but some things might not be accurate. 
 * Make a blog - post code, write about your research, etc.
 * Contribute to open science on GitHub - [some ideas from Mozilla Science Lab](https://science.mozilla.org/projects)
 * Recruiting firms, such as [Randstad](https://www.randstad.ca/)
-* [DevHub](http://www.meetup.com/Devhub/)
+* [DevHub](https://www.meetup.com/Devhub/)

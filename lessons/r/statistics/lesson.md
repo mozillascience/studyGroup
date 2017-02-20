@@ -12,7 +12,7 @@ tags:
 - **Authors**: Lindsay Coome
 - **Research field**: Behavioural neuroendocrinology
 - **Lesson topic**: Basic Stats using R
-- **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/basic_stats>
+- **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/statistics>
 
 ### Code from session
 

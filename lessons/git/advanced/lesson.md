@@ -1,19 +1,16 @@
 ---
 layout: page
-title: 'More on Git'
+title: 'An Intermediate Look at Git + GitHub'
 visible: true
 tags:
   - git
   - advanced
 ---
-<!-- change visible to true if you want it on the site -->
-
-# An Intermediate Look at Git + GitHub #
 
  - **Authors**: Elliott Sales de Andrade
  - **Research field**: Seismology
  - **Lesson topic**: Version control (Git)
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git2>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/advanced>
 
 ## Recap: ##
 

@@ -1,21 +1,19 @@
 ---
 layout: page
-title: 'Intro to Git'
+title: '(Brief) Introduction to Git + GitHub'
 visible: true
 tags:
   - git
   - beginner
 ---
 
-# (Brief) Introduction to Git + GitHub #
-
  - **Authors**: Luke Johnston
  - **Research field**: Nutritional and diabetes epidemiology
  - **Lesson topic**: Version control (Git)
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git>
- - **Intro to Git slides (2015)**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/slides.Rmd>
- - **Philosophy of Git slides (2016)**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/philosophy_of_git.pdf>
- - **Lesson video stream (2016)**: <https://www.youtube.com/watch?v=1xeVRpl-lFU>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/intro/>
+ - **Intro to Git slides (2015)**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/intro/slides.Rmd>
+ - **Philosophy of Git slides (2016)**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/intro/philosophy_of_git.pdf>
+ - **Lesson video stream (2016)**: <https://www.youtube.com/watch?v=JbUeTXP05XQ>
 
 ## Preface: ##
 
@@ -127,7 +125,7 @@ Now you know about a typical workflow!  There are **lots** of commands
 and options in git, you really can do almost anything.  *However*,
 these are the basic tools that are used most frequently.  If you have
 any questions, please check out
-[StackOverflow](http://stackoverflow.com/questions/tagged/git) for
+[StackOverflow](https://stackoverflow.com/questions/tagged/git) for
 *literally* any question on or about Git!!  Or just google it! Google
 usually shows answers from StackOverflow.
 
@@ -158,7 +156,7 @@ ever need help:
 
 * [Hands-on tutorial, with web-based terminal](https://try.github.io/levels/1/challenges/1)
 * [Official git documentation](https://git-scm.com/doc)
-* [Simpler first-steps guide](http://rogerdudler.github.io/git-guide/)
+* [Simpler first-steps guide](https://rogerdudler.github.io/git-guide/)
 * [Reference pages for all git commands](http://gitref.org/)
-* [Interactive, visual tutorial on branching](http://pcottle.github.io/learnGitBranching/)
+* [Interactive, visual tutorial on branching](https://pcottle.github.io/learnGitBranching/)
 

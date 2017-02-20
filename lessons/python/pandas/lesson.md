@@ -7,16 +7,12 @@ tags:
   - beginner
 ---
 
-<!-- change visible to true if you want it on the site -->
-
-# Intro to Pandas DataFrames
-
  - **Authors**: Dano Morrison
  - **Research field**: Neuroscience
  - **Lesson topic**: Usage of Pandas DataFrames for data analysis
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/pandas>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/pandas>
 
-# Intro to Pandas DataFrames
+# Introduction
 
 DataFrames are a lovely way to store data. They're essentially matrices that can store almost any type of data and are a great option for handling data where you want to keep track of rows and columns with labels. The Pandas library also comes with a handy host of functions that allow you to work with your DataFrames in very smart ways (eg. means, split-apply-combine).
 

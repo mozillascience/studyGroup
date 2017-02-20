@@ -1,5 +1,5 @@
 # We've now learned some of the basic tools for building a shiny app. Now complete the tasks to add additional bells and whistles to the shiny app.
-# After you have finished with your app, you can deploy it to the world to see. There are a number of options for this, which I won't go into detail because it depends on your personal preference for how you want the data shared (See http://shiny.rstudio.com/tutorial/lesson7/)
+# After you have finished with your app, you can deploy it to the world to see. There are a number of options for this, which I won't go into detail because it depends on your personal preference for how you want the data shared (See https://shiny.rstudio.com/tutorial/lesson7/)
 
 library(shiny)	#First load shiny library
 load("../pcas.RDATA")	#Load data
