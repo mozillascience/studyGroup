@@ -2,7 +2,7 @@
 layout: page
 title: Collaborating on GitHub
 visible: true
-tags: 
+tags:
   # languages
   - git
   # levels
@@ -14,7 +14,7 @@ tags:
  - **Authors**: Serena Jeblee
  - **Research field**: Computational Linguistics
  - **Lesson topic**: Collaborating on GitHub
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/lessons/git/collaboration/>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/collaboration>
 
 ## Overview
 - A brief review of basic git usage
