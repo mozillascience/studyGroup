@@ -14,7 +14,7 @@ tags:
  - **Authors**: Serena Jeblee
  - **Research field**: Computational Linguistics
  - **Lesson topic**: Collaborating on GitHub
- - **Lesson content URL**: https://github.com/UofTCoders/studyGroup/tree/lessons/git/collaboration/
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/lessons/git/collaboration/>
 
 ## Overview
 - A brief review of basic git usage
@@ -99,7 +99,7 @@ git pull
 ## Branches
 - Branches allow you to have different commit histories in the same repo
 - Useful for feature work
-- For more info see: https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/git/branches/lesson.md
+- For more info see: <https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/git/branches/lesson.md>
 
 ## Forking and Pull Requests
 - Used when you don't have direct push access to a repo
@@ -122,4 +122,4 @@ git pull
 ## Merging the Pull Request
 - Requires push access to the repo
 - If there are conflicts, you'll have to check out the pull request and resolve them, otherwise you can merge online
-- For more info on how to merge a pull request, see https://help.github.com/articles/merging-a-pull-request/
+- For more info on how to merge a pull request, see <https://help.github.com/articles/merging-a-pull-request/>
