@@ -15,6 +15,7 @@ tags:
  - **Research field**: Computational Linguistics
  - **Lesson topic**: Collaborating on GitHub
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/collaboration>
+ - **Lesson video stream**: <https://www.youtube.com/watch?v=vrftiQcqIYM>
 
 ## Overview
 - A brief review of basic git usage
