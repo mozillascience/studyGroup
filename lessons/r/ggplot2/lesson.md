@@ -11,6 +11,7 @@ tags:
 * Author: Lindsay Coome
 * Lesson Topic: Plotting in R using ggplot2
 * [Study Materials](https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/ggplot2)
+* Lesson video stream: <https://www.youtube.com/watch?v=EKkpflv-O_k>
 
 ## WHAT IS GGPLOT?
 ggplot2 is meant to be an implementation of the Grammar of Graphics, hence gg-plot. The basic notion is that there is a grammar to the composition of graphical components in statistical graphics, and by directly controlling that grammar, you can generate a large set of carefully constructed graphics tailored to your particular needs. Each component is added to the plot as a layer.
