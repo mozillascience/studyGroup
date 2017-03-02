@@ -2,6 +2,9 @@
 layout: page
 title: 'Code Review Overview'
 visible: true
+tags:
+  - misc
+  - beginner
 ---
 
 ## Why Do Code Review? ##
