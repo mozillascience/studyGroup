@@ -34,8 +34,13 @@ When data is open and the findings are shared in a clear and accessible way, it 
 - Ensure that data is preserved
 When data is open and widely shared, the responsibility for the long-term archiving and preservation of that data is distributed across broader group of interested users.
 
+Grant agencies care about open data:
+- Tri-agency (i.e. NSERC, CIHR, SSHRC) policy on data: [Data Management Policy](http://www.science.gc.ca/eic/site/063.nsf/eng/h_83F7624E.html?OpenDocument) and [Open Access Policy](http://www.science.gc.ca/eic/site/063.nsf/eng/h_F6765465.html?OpenDocument)
+
 ## Challenges to open data
-reference [handout](https://github.com/mozillascience/open-data-training/blob/master/Materials/Handouts/ODChallengesQI.md) from Mozilla open data training
+- reference [handout](https://github.com/mozillascience/open-data-training/blob/master/Materials/Handouts/ODChallengesQI.md) from Mozilla open data training
+- ["Differential privacy"](https://www.wired.com/2016/06/apples-differential-privacy-collecting-data/) as a way to anonymize sensitive data. More [technical/not for dummies](https://robertovitillo.com/2016/07/29/differential-privacy-for-dummies/)
+
 
 ## How to open your data
 - Metadata
