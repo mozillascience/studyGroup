@@ -15,7 +15,7 @@ tags:
 ## What is open data?
 [“Open data is data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and sharealike.”](http://opendatahandbook.org/guide/en/what-is-open-data/)
 
-More specifically, from the open data handbook and the [opendefinition.org](http://opendefinition.org/od/2.0/en/):
+More specifically, from the open data handbook and [opendefinition.org](http://opendefinition.org/od/2.1/en/):
 - Availability and Access: the data must be available as a whole and at no more than a reasonable reproduction cost, preferably by downloading over the internet. The data must also be available in a convenient and modifiable form.
 - Re-use and Redistribution: the data must be provided under terms that permit re-use and redistribution including the intermixing with other datasets.
 - Universal Participation: everyone must be able to use, re-use and redistribute - there should be no discrimination against fields of endeavour or against persons or groups. For example, ‘non-commercial’ restrictions that would prevent ‘commercial’ use, or restrictions of use for certain purposes (e.g. only in education), are not allowed.
@@ -39,7 +39,7 @@ Grant agencies care about open data:
 
 ## Challenges to open data
 - reference [handout](https://github.com/mozillascience/open-data-training/blob/master/Materials/Handouts/ODChallengesQI.md) from Mozilla open data training
-- ["Differential privacy"](https://www.wired.com/2016/06/apples-differential-privacy-collecting-data/) as a way to anonymize sensitive data. More [technical/not for dummies](https://robertovitillo.com/2016/07/29/differential-privacy-for-dummies/)
+- ["Differential privacy"](https://www.wired.com/2016/06/apples-differential-privacy-collecting-data/) as a way to anonymize sensitive data. [More technical/not for dummies](https://robertovitillo.com/2016/07/29/differential-privacy-for-dummies/)
 
 
 ## How to open your data
@@ -50,6 +50,9 @@ Grant agencies care about open data:
 
 ## Resources
 https://mozillascience.github.io/open-data-primers/
+
 https://mozillascience.github.io/open-data-guides/
+
 https://mozillascience.github.io/working-open-workshop/data_reuse/
+
 http://opendatahandbook.org/guide/en/what-is-open-data/
