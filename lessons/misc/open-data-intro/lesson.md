@@ -21,17 +21,17 @@ More specifically, from the open data handbook and [opendefinition.org](http://o
 - Universal Participation: everyone must be able to use, re-use and redistribute - there should be no discrimination against fields of endeavour or against persons or groups. For example, ‘non-commercial’ restrictions that would prevent ‘commercial’ use, or restrictions of use for certain purposes (e.g. only in education), are not allowed.
 
 ## [Why open data?](https://mozillascience.github.io/open-data-primers/1.1-what-and-why.html)
-- Maintain accountability
+- Maintain accountability:
 When data is open, the results or findings of that data can be more easily verified, increasing public trust in research institutions and governments.
-- Speed discovery
+- Speed discovery:
 When data is open, researchers working in parallel on similar problems don’t need to duplicate work and can use each other’s data to advance knowledge across their research area.
-- Encourage collaboration across disciplines
+- Encourage collaboration across disciplines:
 When data is open, researchers can more easily find those outside their subject area doing related or relevant work; these connections and collaborations may lead to new ways of approaching and solving problems.
-- Solve a broader range of problems
+- Solve a broader range of problems:
 When data is open, new users-- from academic researchers to citizen scientists to artists-- may use it to answer questions, solve problems, or create public understanding in ways that the original data collector may never have imagined.
-- Encourage public engagement with research
+- Encourage public engagement with research:
 When data is open and the findings are shared in a clear and accessible way, it increases public understanding, creates opportunities for public participation, and bolsters public support of research initiatives.
-- Ensure that data is preserved
+- Ensure that data is preserved:
 When data is open and widely shared, the responsibility for the long-term archiving and preservation of that data is distributed across broader group of interested users.
 
 Grant agencies care about open data:
@@ -50,9 +50,6 @@ Grant agencies care about open data:
 
 ## Resources
 https://mozillascience.github.io/open-data-primers/
-
 https://mozillascience.github.io/open-data-guides/
-
 https://mozillascience.github.io/working-open-workshop/data_reuse/
-
 http://opendatahandbook.org/guide/en/what-is-open-data/
