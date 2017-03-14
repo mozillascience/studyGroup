@@ -25,7 +25,7 @@ We adhere to a [Code of Conduct](https://github.com/UofTCoders/studyGroup/blob/g
 
 ### About Uoft Coders
 
-The UofT Coders group was formed to share and learn about coding techniques and best practices for computing and analysis in research. We hold weekly sessions in the format of code-alongs, coworking sessions or journal club/discussion. To see our previous and upcoming events, you can visit our [Events repo](https://github.com/UofTCoders/Events/issues). To learn more about our group, you can read our [constitution](https://github.com/UofTCoders/council/blob/master/Constitution.md). 
+The UofT Coders group was formed to share and learn about coding techniques and best practices for computing and analysis in research. We hold weekly sessions in the format of code-alongs, coworking sessions or journal clubs/discussions. To see our previous and upcoming events, you can visit our [Events repo](https://github.com/UofTCoders/Events/issues). To learn more about our group, you can read our [constitution](https://github.com/UofTCoders/council/blob/master/Constitution.md). 
 
 -----
 ## How You Can Contribute
