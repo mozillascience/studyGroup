@@ -1,7 +1,34 @@
 ---
 layout: page
-title: Contributing to UofTCoders
+title: Contributing to UofT Coders
 ---
+Welcome to the Contributing guideline for UofT Coders. Thanks for taking the time to contribute! :clap::clap:  
+
+The following is a set of guidelines for contributing to the UofT Coders community, whether it be by teaching a lesson, fixing the website, helping to plan and organize our various events, or taking on a leadership role. 
+
+### Table of Contents
+
+1. [What You Should Know](#what-you-should-know)
+    - [Code of Conduct](#code-of-conduct)
+    - [About UofT Coders](#about-uoft-coders)
+2. [How You Can Contribute](#how-you-can-contribute)
+    - [Running a Lesson](#running-a-lesson)
+    - [Fixing and Updating the Website](#fixing-and-updating-the-website)
+    - [Other Ways to Get Involved](#other-ways-to-get-involved)
+
+-----
+## What You Should Know
+
+### Code of Conduct
+
+We adhere to a [Code of Conduct](https://github.com/UofTCoders/studyGroup/blob/gh-pages/codeOfConduct.md) and by participating, you agree to also uphold this code. Please report any unacceptable behaviour to uoftcoders@gmail.com. If you feel that the exec has been violating the Code of Conduct, please email (placeholder) to report. 
+
+### About Uoft Coders
+
+The UofT Coders group was formed to share and learn about coding techniques and best practices for computing and analysis in research. We hold weekly sessions in the format of code-alongs, coworking sessions or journal club/discussion. To see our previous and upcoming events, you can visit our [Events repo](https://github.com/UofTCoders/Events/issues). To learn more about our group, you can read our [constitution](https://github.com/UofTCoders/council/blob/master/Constitution.md). 
+
+-----
+## How You Can Contribute
 
 ## Running a lesson
 
@@ -177,3 +204,18 @@ your changes are as you expect, you'll need to:
 - To build the site locally, run `jekyll serve`. 
 - The built site can also be viewed at your forked version
 (`https:://yourusername.github.io/studyGroup`).
+
+----
+
+## Other Ways to Get Involved
+
+### Helping Out at Our Events
+
+We hold various sessions that incorporate code-alongs, and having the help of more advanced users to help out the beginners is very much appreciated. 
+- If you see a session topic that is more beginner than your current level, we highly encourage you to attend anyway and help answer questions or provide more one-on-one support during lessons. 
+- You can also lend a hand at our co-working sessions to people who have come to work on their own projects. 
+- We do a call for helpers for all our Software Carpentry workshops, and we definitely wouldn't be able to run these without the help of volunteers like you!
+
+### Taking On A Leadership Role
+
+The planning and organization of our the group and our various events are done by our executive council. We hold elections every April to elect the executive council members, however, we are always open to suggestions on new roles and positions for interested members of the UofT Coders community who wish to take on more a leadership role. To read more about these positions, please see our [Council Roles](https://github.com/UofTCoders/council/blob/master/Council_Roles.md) document. 
