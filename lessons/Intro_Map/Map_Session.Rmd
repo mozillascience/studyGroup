@@ -3,7 +3,7 @@ title: "DSDS Map Session"
 author: "Juliano Palacios Abrantes & Hassen Allegue"
 date: "14/12/2016"
 output:
-  pdf_document: default
+  html_document: default
 ---
 
 ```{r Libraries, eval=T,echo=F, warning=F, message=F}
@@ -25,7 +25,7 @@ library("ggplot2") # for fortify() and plotting
 ```{r The Base map, echo =T,eval=T, fig.align="center"}
 
 # World map ####
-path.ne.coast <- ("./Data/ne_10m_coastline")
+path.ne.coast <- ("./Users/jpalacios/Desktop/Data/ne_10m_coastline")
 fnam.ne.coast <- "ne_10m_coastline.shp"
 dat.coast <- readOGR(dsn = path.ne.coast, 
                      layer = file_path_sans_ext(fnam.ne.coast))
@@ -81,7 +81,7 @@ Map_Base
 ```{r EZZ, echo =T,eval=T, fig.align="center"}
 
 #### World map of EEZ ####
-path_eez_world <- ("./Data/World_EEZ_v8_2014")
+path_eez_world <- ("./Users/jpalacios/Desktop/Data/World_EEZ_v8_2014")
 fnam_eez_world <- "World_EEZ_v8_2014_HR.shp"
 
 eez_world <- readOGR(dsn = path_eez_world,layer =file_path_sans_ext(fnam_eez_world))
