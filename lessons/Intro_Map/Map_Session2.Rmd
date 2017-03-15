@@ -1,12 +1,11 @@
 ---
-title: "Intro to maps"
-author: "Juliano Palacios Abrantes"
-date: "14/3/2017"
-output: 
-  html_document: 
-    keep_md: yes
+title: "DSDS Map Session"
+author: "Juliano Palacios Abrantes & Hassen Allegue"
+date: "14/12/2016"
+output:
+  pdf_document:
+  keep_md: yes
 ---
-
 
 ```{r Libraries, eval=T,echo=F, warning=F, message=F}
 library("rgdal") # for ogrInfo() and readOGR()

@@ -1,36 +1,31 @@
----
-title: "Intro to maps"
-author: "Juliano Palacios Abrantes"
-date: "14/3/2017"
-output: 
-  html_document: 
-    keep_md: yes
----
+# Intro to maps
+Juliano Palacios Abrantes  
+14/3/2017  
 
 
-```{r Libraries, eval=T,echo=F, warning=F, message=F}
-library("rgdal") # for ogrInfo() and readOGR()
-library("tools") # for file_path_sans_ext()
-library("dplyr") # for inner_join(), summarise() and the pipe operator (%>%)
-library("ggplot2") # for fortify() and plotting
-#library("sp") # for point.in.polygon() and spDists()
 
-#Setting the working directory for analysis (not for knit)
-#setwd("~/Documents/Box Sync/UBC/Oceans_Project/Distribution")
-
-```
 
 # Create map from scratch
 
 ## Base MAP
 
-```{r The Base map, echo =T,eval=T, fig.align="center"}
 
+```r
 # World map ####
 path.ne.coast <- ("Data/ne_10m_coastline")
 fnam.ne.coast <- "ne_10m_coastline.shp"
 dat.coast <- readOGR(dsn = path.ne.coast, 
                      layer = file_path_sans_ext(fnam.ne.coast))
+```
+
+```
+## OGR data source with driver: ESRI Shapefile 
+## Source: "Data/ne_10m_coastline", layer: "ne_10m_coastline"
+## with 4132 features
+## It has 2 fields
+```
+
+```r
 # A Large SpatialLinesDataFrame object with 4132 features and 2 fields (12.8 Mb)
 
 # Provide the function quick.subset() from Simon Goring's page:
@@ -78,16 +73,27 @@ Map_Base <- ggplot() +
 Map_Base
 ```
 
+<img src="Map_Session_files/figure-html/The Base map-1.png" style="display: block; margin: auto;" />
+
 # ADDING SOME EEZ'S
 
-```{r EZZ, echo =T,eval=T, fig.align="center"}
 
+```r
 #### World map of EEZ ####
 path_eez_world <- ("Data/World_EEZ_v8_2014")
 fnam_eez_world <- "World_EEZ_v8_2014_HR.shp"
 
 eez_world <- readOGR(dsn = path_eez_world,layer =file_path_sans_ext(fnam_eez_world))
+```
 
+```
+## OGR data source with driver: ESRI Shapefile 
+## Source: "Data/World_EEZ_v8_2014", layer: "World_EEZ_v8_2014_HR"
+## with 249 features
+## It has 14 fields
+```
+
+```r
 fortify.shape <- function(x){
   x@data$id <- rownames(x@data)
   x.f = fortify(x, region = "id")
@@ -100,7 +106,13 @@ eez_usa <- eez_world[eez_world@data$Country == "United States", ]
 
 # Fortify the shapefile data:
 eez_usa <- fortify(eez_usa)
+```
 
+```
+## Regions defined for each Polygons
+```
+
+```r
 # # Extract the USA EEZ polygon to save
 USA_EEZ <- droplevels(filter(eez_usa, piece == 2))
 
@@ -116,7 +128,13 @@ eez_Can <- eez_world[eez_world@data$Country == "Canada", ]
 
 # Fortify the shapefile data:
 eez_Can <- fortify(eez_Can)
+```
 
+```
+## Regions defined for each Polygons
+```
+
+```r
 # # Extract the USA EEZ polygon to save
 Can_EEZ <- droplevels(filter(eez_Can, piece == 4))
 
@@ -131,7 +149,13 @@ eez_Alaska <- eez_world[eez_world@data$Country == "Alaska", ]
 
 # Fortify the shapefile data:
 eez_Alaska <- fortify(eez_Alaska)
+```
 
+```
+## Regions defined for each Polygons
+```
+
+```r
 # Extract the USA EEZ polygon to save
 Alaska_EEZ <- droplevels(filter(eez_Alaska, piece == 1))
 
@@ -161,39 +185,11 @@ Map_EEZ_Names <- Map_EEZ +
 Map_EEZ_Names
 ```
 
+<img src="Map_Session_files/figure-html/EZZ-1.png" style="display: block; margin: auto;" />
+
 # Points inside EEZ
 
-```{r Habitat Suitabillity, echo=F,eval=F}
 
-#### Canada ####
-
-#First, lets see if the subsetting inside te EEZ works using the Occurance data...
-In_eez_Can_Occ <- point.in.polygon(Pink_Occ$Longitude,
-                                   Pink_Occ$Latitude,
-                                   Can_EEZ$long,
-                                   Can_EEZ$lat)
-
-# Add a column to sim.obs with this information:
-Pink_Occ$EEZ<- In_eez_Can_Occ
-
-# Extract the observations in sim.obs that occur inside the EEZ:
-Pink_Occ_EEZ <- Pink_Occ %>%
-  filter(EEZ == 1)  %>%
-  select(-EEZ)
-
-Map_EEZ_Names +
-  geom_point(data = Pink_Occ_EEZ,
-                aes(x = Longitude,
-                      y = Latitude
-                    ),
-             colour = "green",
-             size = 2) +
-  geom_point(data=Pink_Occ,
-             aes(x=Longitude,
-                 y=Latitude),
-             colour = "gray75",
-             size = 2)
-```
 
 
 # Leaflet for R
@@ -204,19 +200,4 @@ https://rstudio.github.io/leaflet/
 
 ## Leaflet example
 
-```{r leaflet, echo=F,eval=F}
 
-library(leaflet)
-
-leaflet() %>%
-  addTiles(
-    urlTemplate = "//{s}.tiles.mapbox.com/v3/jcheng.map-5ebohr46/{z}/{x}/{y}.png",
-    attribution = 'Maps by <a href="http://www.mapbox.com/">Mapbox</a>'
-  ) %>%
-  setView(lng = -90, lat = 1.3, zoom = 2) %>% 
-  addMarkers(
-    lng = -90,
-    lat= 1.4,
-    popup = "Hola!"
-  )
-```
