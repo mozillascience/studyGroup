@@ -1,0 +1,9 @@
+---
+title: Intro to GitHub and version control with RStudio
+text: A study group tutorial that will give you a friendly introduction to GitHub and version control with RStudio.
+location: Room ZB16, Zoology Buildling
+link: https://github.com/AberdeenStudyGroup/studyGroup/issues/9
+date: 2017-03-22
+startTime: '17:00'
+endTime: '18:30'
+---
