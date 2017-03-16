@@ -21,7 +21,7 @@ The following is a set of guidelines for contributing to the UofT Coders communi
 
 ### Code of Conduct
 
-We adhere to a [Code of Conduct](https://github.com/UofTCoders/studyGroup/blob/gh-pages/codeOfConduct.md) and by participating, you agree to also uphold this code. Please report any unacceptable behaviour to uoftcoders@gmail.com. If you feel that the exec has been violating the Code of Conduct, please email (placeholder) to report. 
+We adhere to a [Code of Conduct](https://github.com/UofTCoders/studyGroup/blob/gh-pages/codeOfConduct.md) and by participating, you agree to also uphold this code. Please report any unacceptable behaviour to uoftcoders@gmail.com. If you feel that the exec has been violating the Code of Conduct, please email groups.officer@utoronto.ca to report. 
 
 ### About Uoft Coders
 
