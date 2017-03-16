@@ -1,6 +1,6 @@
 ---
 title: "Intro to maps"
-author: "Juliano Palacios Abrantes"
+author: "Juliano Palacios Abrantes & Hassen Allegue"
 date: "14/3/2017"
 output: 
   html_document: 
