@@ -1,14 +1,21 @@
 # Introduction to Mapping in R: Building a Map from Scratch
-Juliano Palacios Abrantes  
+Juliano Palacios Abrantes & Hassen Allegue  
 16/3/2017  
 
 # Objectives
-This session will be focused on creating maps from scratch ideally to present study areas. We will also learn an easy, straightforqward way for quick map and spatial data visualization.
+This session will be focused on creating maps from scratch ideally to present study areas. We will also learn an easy, straightforward way for quick map and spatial data visualization.
+
+For this session we will create a map of the Pacific North West (because we ALL love the PNW). We will use coastal data from Natural Earth (because that's how I learned) and from Marine Regions (Sooo many cool stuff!). We will then plot the coast from Alaska to California and add the [Economic Exclusive Zone](https://stats.oecd.org/glossary/detail.asp?ID=884) of each country.
 
 # Instructions
 
 1. **Session Matterials:** Get the workshop materials: Go to the repository and click on the "fork" button to create an independent copy within your own GitHub account. Alternately, click on the "clone or download" button. 
-2. **Necessary Packages:** 
+
+2. **Shapefiles:** In here you can download the [Natural Earth 10-m-resolution coastline shapefile](http://www.naturalearthdata.com/downloads/10m-physical-vectors/) and the the [World EEZ v8 (2014-02-28, 65 MB))](http://www.marineregions.org/downloads.php) located under "Exclusive Economic Zones Boundaries (EEZ)".
+
+*Note*: if you followed step 1, save the shapefiles on the *Data* folder
+
+3. **Necessary Packages:** 
 
 
 ```r

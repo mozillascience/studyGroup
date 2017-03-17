@@ -122,7 +122,7 @@ xlims <- c(-185, -116)
 ylims <- c(32, 73)
 
 # Generate a base map with the coastline:
-ggplot() + 
+Map_Base <- ggplot() + 
   geom_path(data = data_coast.wc, 
             aes(x = long, y = lat, group = group), 
             color = "black",
@@ -135,7 +135,9 @@ ggplot() +
   labs(list(title = "Pacific North West Map", 
             x = "Longitude",
             y = "Latitude")) +
-  theme_classic() #I'm OCD and don0t like lines and background on my plots
+  theme_classic() #I'm OCD and don't like lines and background on my plots
+
+Map_Base
 ```
 
 <img src="Map_Session_files/figure-html/First Map-1.png" style="display: block; margin: auto;" />
@@ -158,7 +160,7 @@ So Now that we have or nice base map of the overall area of study we want to add
 #We repeat the same steps than before...
 
 #### Load World map of EEZ (takes waaaay more time) ####
-path_eez_world <- ("Data/World_EEZ_v8_20140228")
+path_eez_world <- ("Data/World_EEZ_v8_2014")
 fnam_eez_world <- "World_EEZ_v8_2014_HR.shp"
 
 eez_world <- readOGR(dsn = path_eez_world,
@@ -167,12 +169,15 @@ eez_world <- readOGR(dsn = path_eez_world,
 
 ```
 ## OGR data source with driver: ESRI Shapefile 
-## Source: "Data/World_EEZ_v8_20140228", layer: "World_EEZ_v8_2014_HR"
+## Source: "Data/World_EEZ_v8_2014", layer: "World_EEZ_v8_2014_HR"
 ## with 249 features
 ## It has 14 fields
 ```
 
 ```r
+#You can try to view the file to have an idea of all the data that contains
+#View(eez_world)
+
 # You should see the following message:
 # OGR data source with driver: ESRI Shapefile 
 # Source: "Data/World_EEZ_v8_20140228", layer: "World_EEZ_v8_2014_HR"
@@ -204,14 +209,25 @@ eez_Alaska <- eez_world[eez_world@data$Country == "Alaska", ]
 
 # Fortify the shapefile data:
 eez_Alaska <- fortify(eez_Alaska)
+```
+
+```
+## Regions defined for each Polygons
+```
+
+```r
+# Note: Check out eez_Alaska before and after the foritfy function so you see the difference
+
 
 # Extract the USA EEZ polygon to save
-Alaska_EEZ <- droplevels(filter(eez_Alaska, piece == 1))
+#Alaska_EEZ <- droplevels(filter(eez_Alaska, piece == 1))
 
-
-Map_EEZ <- Map_eez_Can + geom_path(data = filter(eez_Alaska, piece == 1), 
+# Alska Map...
+Map_EEZ_Alaska <- Map_Base +
+  geom_path(data = filter(eez_Alaska, piece == 1), #Piece 1 referes to the pacific side
             aes(x = long, y = lat, group = group), 
-            colour = "purple", size = 0.75) 
+            colour = "purple", size = 0.75) +
+  ggtitle("Alaska EEZ")
 
 #### Canada EEZ ####
 # Extract the EEZ for the USA:
@@ -219,13 +235,20 @@ eez_Can <- eez_world[eez_world@data$Country == "Canada", ]
 
 # Fortify the shapefile data:
 eez_Can <- fortify(eez_Can)
+```
 
-# # Extract the USA EEZ polygon to save
-Can_EEZ <- droplevels(filter(eez_Can, piece == 4))
+```
+## Regions defined for each Polygons
+```
 
-Map_eez_Can <- Map_eez_US+ geom_path(data = filter(eez_Can, piece == 4), #Turns out that piece 4 is British Columbia, who knew!? 
+```r
+# # # Extract the USA EEZ polygon to save
+# Can_EEZ <- droplevels(filter(eez_Can, piece == 4))
+
+Map_eez_Can <- Map_EEZ_Alaska+ geom_path(data = filter(eez_Can, piece == 4), #Turns out that piece 4 is British Columbia, who knew!? 
             aes(x = long, y = lat, group = group), 
-            colour = "red", size = 0.75)
+            colour = "red", size = 0.75) +
+  ggtitle("Canada EEZ")
 
 #### USA EEZ ####
 # Extract the EEZ for the USA:
@@ -233,22 +256,25 @@ eez_usa <- eez_world[eez_world@data$Country == "United States", ]
 
 # Fortify the shapefile data:
 eez_usa <- fortify(eez_usa)
+```
 
+```
+## Regions defined for each Polygons
+```
+
+```r
 # # Extract the USA EEZ polygon to save
 USA_EEZ <- droplevels(filter(eez_usa, piece == 2))
 
 Map_eez_US <- 
-  Map_Base + 
+  Map_eez_Can + 
   geom_path(data = filter(eez_usa, piece == 2), 
             aes(x = long, y = lat, group = group), 
-            colour = "blue", size = 0.75) 
+            colour = "blue", size = 0.75) +
+  ggtitle("US EEZ")
 
-
-  
-
-  
-  #### EEZ Names ####
-Map_EEZ_Names <- Map_EEZ +
+#### And finally we add the EEZ Names ####
+Map_EEZ_Names <- Map_eez_US +
     annotate("text",
              x=-150,
              y=65,
@@ -263,12 +289,23 @@ Map_EEZ_Names <- Map_EEZ +
              x=-145,
              y=41,
              colour = "blue",
-             label= "USA EEZ ->")
+             label= "USA EEZ ->") +
+  ggtitle("Pacific North West With EEZs")
   
-Map_EEZ_Names
+gridExtra::grid.arrange(Map_EEZ_Alaska,
+                        Map_eez_Can,
+                        Map_eez_US,
+                        Map_EEZ_Names,
+                        ncol=2)
 ```
 
-# Points inside EEZ
+<img src="Map_Session_files/figure-html/EZZ-1.png" style="display: block; margin: auto;" />
+
+# An Example of Other Map Stuff in Rrrrr
+
+Lets say you are working with Pink salmon (Cus' Pink is my new obsession, cus' Pink is like red but-not-quite) occurance data and want to work only with the data within Canada's EEZ...
+
+For this part we are gonna use the function "point.in.polygon" from the "sp" package. This amazing function extracts the data within the limits you give it. In this case, it will put a "1" for points inside the EEZ and a "0" for points outside the EEZ.
 
 
 

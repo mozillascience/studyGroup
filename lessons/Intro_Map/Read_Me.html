@@ -9,7 +9,7 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Juliano Palacios Abrantes" />
+<meta name="author" content="Juliano Palacios Abrantes &amp; Hassen Allegue" />
 
 
 <title>Introduction to Mapping in R: Building a Map from Scratch</title>
@@ -117,7 +117,7 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Introduction to Mapping in R: Building a Map from Scratch</h1>
-<h4 class="author"><em>Juliano Palacios Abrantes</em></h4>
+<h4 class="author"><em>Juliano Palacios Abrantes &amp; Hassen Allegue</em></h4>
 <h4 class="date"><em>16/3/2017</em></h4>
 
 </div>
@@ -125,12 +125,17 @@ $(document).ready(function () {
 
 <div id="objectives" class="section level1">
 <h1>Objectives</h1>
-<p>This session will be focused on creating maps from scratch ideally to present study areas. We will also learn an easy, straightforqward way for quick map and spatial data visualization.</p>
+<p>This session will be focused on creating maps from scratch ideally to present study areas. We will also learn an easy, straightforward way for quick map and spatial data visualization.</p>
+<p>For this session we will create a map of the Pacific North West (because we ALL love the PNW). We will use coastal data from Natural Earth (because that’s how I learned) and from Marine Regions (Sooo many cool stuff!). We will then plot the coast from Alaska to California and add the <a href="https://stats.oecd.org/glossary/detail.asp?ID=884">Economic Exclusive Zone</a> of each country.</p>
 </div>
 <div id="instructions" class="section level1">
 <h1>Instructions</h1>
 <ol style="list-style-type: decimal">
-<li><strong>Session Matterials:</strong> Get the workshop materials: Go to the repository and click on the “fork” button to create an independent copy within your own GitHub account. Alternately, click on the “clone or download” button.</li>
+<li><p><strong>Session Matterials:</strong> Get the workshop materials: Go to the repository and click on the “fork” button to create an independent copy within your own GitHub account. Alternately, click on the “clone or download” button.</p></li>
+<li><p><strong>Shapefiles:</strong> In here you can download the <a href="http://www.naturalearthdata.com/downloads/10m-physical-vectors/">Natural Earth 10-m-resolution coastline shapefile</a> and the the <a href="http://www.marineregions.org/downloads.php">World EEZ v8 (2014-02-28, 65 MB))</a> located under “Exclusive Economic Zones Boundaries (EEZ)”.</p></li>
+</ol>
+<p><em>Note</em>: if you followed step 1, save the shapefiles on the <em>Data</em> folder</p>
+<ol start="3" style="list-style-type: decimal">
 <li><strong>Necessary Packages:</strong></li>
 </ol>
 <pre class="r"><code># for ogrInfo() and readOGR()

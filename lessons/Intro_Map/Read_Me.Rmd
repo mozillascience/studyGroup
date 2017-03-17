@@ -8,9 +8,9 @@ output:
 ---
 
 # Objectives
-This session will be focused on creating maps from scratch ideally to present study areas. We will also learn an easy, straightforqward way for quick map and spatial data visualization.
+This session will be focused on creating maps from scratch ideally to present study areas. We will also learn an easy, straightforward way for quick map and spatial data visualization.
 
-For this session we will create a map of the Pacific North West (because we ALL love the PNW). We will use coastal data from Natural Earth (because thats how I learned) and from Marine Regions (Sooo many cool stuff!). We will then plot the coast from Alaska to California and add the [Economic Exclusive Zone](https://stats.oecd.org/glossary/detail.asp?ID=884) of each country.
+For this session we will create a map of the Pacific North West (because we ALL love the PNW). We will use coastal data from Natural Earth (because that's how I learned) and from Marine Regions (Sooo many cool stuff!). We will then plot the coast from Alaska to California and add the [Economic Exclusive Zone](https://stats.oecd.org/glossary/detail.asp?ID=884) of each country.
 
 # Instructions
 
