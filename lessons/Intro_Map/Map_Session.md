@@ -2,20 +2,42 @@
 Juliano Palacios Abrantes & Hassen Allegue  
 14/3/2017  
 
-# Instructions
+# Libraries
+  
 
-1. **Session Matterials:** Get the workshop materials: Go to the repository and click on the "fork" button to create an independent copy within your own GitHub account. Alternately, click on the "clone or download" button. 
-2. **Necessary Packages:** 
+```r
+# for ogrInfo() and readOGR()
+#install.packages('rgdal')
+library("rgdal") 
 
+# for file_path_sans_ext()
+#install.packages('tools')
+library("tools") 
 
+# for inner_join(), summarise() and the pipe operator (%>%)
+#install.packages('dplyr')
+library("dplyr") 
 
-# Create map from scratch
+# for fortify() and plotting
+#install.packages('ggplot2')
+library("ggplot2") 
+
+# for point.in.polygon() and spDists()
+#install.packages('sp')
+library("sp") 
+
+# for kable()
+#install.packages('knirt')
+library(knitr) 
+```
+
+# Create A map from scratch
 
 ## The Base Map
 
 ### Step 1. Gather Map Data
 
-First step is to gather the data. As you might already know, maps come as shapefiles. This files oftenly comprehend a vast amount of data and a complex hierachical structure (use it and the erase it!). And they almost allways need some subsetting...
+The first step is to gather the data. As you might already know, maps come in shapefiles. This files often comprehend a vast amount of data and a complex hierarchical structure (use it and the erase it!). Moreover, maps that you download almost always need some subsetting...
 
 #### Download the Coastaline
 
@@ -24,7 +46,7 @@ There are many sources of data for the coastlines, including data sets built int
 #### Download the EEZs
 You want to access the [Marine Regions](http://www.marineregions.org/downloads.php) website and download the *"World EEZ v8 (2014-02-28, 65 MB)"* located under "Exclusive Economic Zones Boundaries (EEZ)". Check out how many cool maps/layers you can download here! 
 
-*Note:* In coding "Order is progress", hence try your best (sometimes is really hard) to keep your s...tuff organized. I for instance, like to have a file in my project called *Data* where I store all the data I will use. 
+*Note:* In coding "Order is progress", hence try your best (sometimes is really hard) to keep your s...tuff organized. I for instance, like to have a folder in my project called *Data* where I store all the data I will use. 
 
 #### If you forked and cloned from GitHub
 Once you download the file save it on the *Data* file of this repository.
@@ -63,7 +85,7 @@ data_coast <- readOGR(dsn = path.ne.coast,
 ```
 
 ### Step 3. Subsetting
-Because we're not working with the rold we need to extract the data we need. Subsetting can be one of the more annoying and time intensive parts of shapefiles. Mainly because of that complex structure I was talking about. Hence, we are borrowing Simon Goring's function "quick.subset". #SimonSays! (https://downwithtime.wordpress.com/tag/maps/)
+Because we're not working with the world we need to extract the data we need. Subsetting can be one of the more annoying and time consuming parts of shapefiles. Mainly because of that complex structure I was talking about. Hence, we are borrowing Simon Goring's function "quick.subset". [#SimonSays!](https://downwithtime.wordpress.com/tag/maps/)
 
 
 ```r
@@ -98,8 +120,13 @@ data_coast.wc <- quick.subset(data_coast, #Orginal shapefile
                               domain #Limits
                               ) # 4132x8
 
-kable(head(data_coast.wc,5)) #Kable is just a fancy way to show data frames ;)
+kable(head(data_coast.wc,5),
+      caption = "Table 1. First 5 rows of the Subsetted Data") #Kable is just a fancy way to show data frames ;)
 ```
+
+
+
+Table: Table 1. First 5 rows of the Subsetted Data
 
               long        lat   order  piece   id   group    scalerank  featurecla 
 ------  ----------  ---------  ------  ------  ---  ------  ----------  -----------
@@ -112,12 +139,12 @@ kable(head(data_coast.wc,5)) #Kable is just a fancy way to show data frames ;)
 
 ### Step 4. Map, Map Map-ing!
 
-The reason (one of many) that we love ggplot2 is that everything is the same. Hence, ploting maps is the same (almost!) than plotting a simple scatter plot. The more import difference is the function "coord_map(projection = )". There is a whole theory about [Map Projection](http://www.colorado.edu/geography/gcraft/notes/mapproj/mapproj_f.html) and options, for now you just have to believe that *"mercator"* is the best.
+The reason (one of many) that we love ggplot2 is that everything is the same. Hence, plotting maps is the same (almost!) than plotting a simple scatter plot. The only difference is the function "coord_map(projection = )". There is a whole theory about [Map Projection](http://www.colorado.edu/geography/gcraft/notes/mapproj/mapproj_f.html) and you technically can choose different options. For now you just have to believe that *"mercator"* is the best.
 
 
 ```r
 # Set Limits of the plot
-# Like any other plot that you make you want to set a decent X and y axis limits. The difference with maps is that you need to tell ggplot those limits
+# Like any other plot that you make you want to set a decent X and y axis limits.
 xlims <- c(-185, -116)
 ylims <- c(32, 73)
 
@@ -137,19 +164,17 @@ Map_Base <- ggplot() +
             y = "Latitude")) +
   theme_classic() #I'm OCD and don't like lines and background on my plots
 
+#Try this other themes!:
+# theme_bw()
+# theme_dark()
+# theme_gray()
+
 Map_Base
 ```
 
 <img src="Map_Session_files/figure-html/First Map-1.png" style="display: block; margin: auto;" />
 
-```r
-#Try this other themes!:
-# theme_bw()
-# theme_dark()
-# theme_gray()
-```
-
-So Now that we have or nice base map of the overall area of study we want to add the Exclusive Economic Zone of each country (The US will be deivided in 2; the mainland and Alaska).
+So Now that we have or nice base map of the overall area of study. We now want to add the Exclusive Economic Zone of each country (The US will be divided in 2; the mainland and Alaska).
 
 ## Adding the EEZ's
 
@@ -199,15 +224,19 @@ fortify.shape <- function(x){
 
 ![It takes some time to plot](Images/yoda.jpg)
 
+This step is very straightforward. We are gonna subset or world_EZZ data in three parts/countries. So basically is copy paste the same code for each country. Also, if you're gonna use this data in the future is it **strongly recomended** to save it! That way you don't need to be using the world's data every time
+
+*Note:* As a general rule of thumb I copy+paste up to 5 times. If I need to do more than that I (i) create a function or (ii) do a repetition (for-loop,apply family, purrr, etc!).
+
 
 
 ```r
 #### Alaska EEZ ####
 
-# Extract the EEZ for Alaska:
+# First, we extract the EEZ data only for Alaska:
 eez_Alaska <- eez_world[eez_world@data$Country == "Alaska", ]
 
-# Fortify the shapefile data:
+# Second, fortify the shapefile data so ggplot2 can read it:
 eez_Alaska <- fortify(eez_Alaska)
 ```
 
@@ -218,19 +247,24 @@ eez_Alaska <- fortify(eez_Alaska)
 ```r
 # Note: Check out eez_Alaska before and after the foritfy function so you see the difference
 
+# Third, plot it!
 
-# Extract the USA EEZ polygon to save
-#Alaska_EEZ <- droplevels(filter(eez_Alaska, piece == 1))
-
-# Alska Map...
 Map_EEZ_Alaska <- Map_Base +
   geom_path(data = filter(eez_Alaska, piece == 1), #Piece 1 referes to the pacific side
             aes(x = long, y = lat, group = group), 
             colour = "purple", size = 0.75) +
   ggtitle("Alaska EEZ")
 
+Map_EEZ_Alaska
+```
+
+<img src="Map_Session_files/figure-html/EZZ-1.png" style="display: block; margin: auto;" />
+
+```r
+# And now we do the same for Canada and the US...
+
 #### Canada EEZ ####
-# Extract the EEZ for the USA:
+# Extract the EEZ for the Canada:
 eez_Can <- eez_world[eez_world@data$Country == "Canada", ]
 
 # Fortify the shapefile data:
@@ -242,14 +276,18 @@ eez_Can <- fortify(eez_Can)
 ```
 
 ```r
-# # # Extract the USA EEZ polygon to save
-# Can_EEZ <- droplevels(filter(eez_Can, piece == 4))
-
+#Aaaand map it...
 Map_eez_Can <- Map_EEZ_Alaska+ geom_path(data = filter(eez_Can, piece == 4), #Turns out that piece 4 is British Columbia, who knew!? 
             aes(x = long, y = lat, group = group), 
             colour = "red", size = 0.75) +
-  ggtitle("Canada EEZ")
+  ggtitle("Alaska and Canada's EEZ")
 
+Map_eez_Can
+```
+
+<img src="Map_Session_files/figure-html/EZZ-2.png" style="display: block; margin: auto;" />
+
+```r
 #### USA EEZ ####
 # Extract the EEZ for the USA:
 eez_usa <- eez_world[eez_world@data$Country == "United States", ]
@@ -263,18 +301,21 @@ eez_usa <- fortify(eez_usa)
 ```
 
 ```r
-# # Extract the USA EEZ polygon to save
-USA_EEZ <- droplevels(filter(eez_usa, piece == 2))
-
 Map_eez_US <- 
   Map_eez_Can + 
   geom_path(data = filter(eez_usa, piece == 2), 
             aes(x = long, y = lat, group = group), 
             colour = "blue", size = 0.75) +
-  ggtitle("US EEZ")
+  ggtitle("Alaska, Canada and US EEZ")
 
+Map_eez_US
+```
+
+<img src="Map_Session_files/figure-html/EZZ-3.png" style="display: block; margin: auto;" />
+
+```r
 #### And finally we add the EEZ Names ####
-Map_EEZ_Names <- Map_eez_US +
+ Map_eez_US +
     annotate("text",
              x=-150,
              y=65,
@@ -291,19 +332,20 @@ Map_EEZ_Names <- Map_eez_US +
              colour = "blue",
              label= "USA EEZ ->") +
   ggtitle("Pacific North West With EEZs")
-  
-gridExtra::grid.arrange(Map_EEZ_Alaska,
-                        Map_eez_Can,
-                        Map_eez_US,
-                        Map_EEZ_Names,
-                        ncol=2)
 ```
 
-<img src="Map_Session_files/figure-html/EZZ-1.png" style="display: block; margin: auto;" />
+<img src="Map_Session_files/figure-html/EZZ-4.png" style="display: block; margin: auto;" />
+
+```r
+# Extract the  polygon to save
+#where dataset is the fortified data, piece is the part of the poligon you want.
+# Name <- droplevels(filter(dataset, piece == x))
+# write.csv(Name, "FileName.csv")
+```
 
 # An Example of Other Map Stuff in Rrrrr
 
-Lets say you are working with Pink salmon (Cus' Pink is my new obsession, cus' Pink is like red but-not-quite) occurance data and want to work only with the data within Canada's EEZ...
+Lets say you are working with Pink salmon (Cus' Pink is my new obsession, cus' Pink is like red but-not-quite) occurrence data and want to work only with the data within Canada's EEZ...
 
 For this part we are gonna use the function "point.in.polygon" from the "sp" package. This amazing function extracts the data within the limits you give it. In this case, it will put a "1" for points inside the EEZ and a "0" for points outside the EEZ.
 

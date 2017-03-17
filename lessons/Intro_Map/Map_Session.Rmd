@@ -7,12 +7,9 @@ output:
     keep_md: yes
 ---
 
-# Instructions
-
-1. **Session Matterials:** Go to the [repository](https://github.com/jepa/studyGroup/tree/gh-pages/lessons/Intro_Map) and click on the "fork" button to create an independent copy within your own GitHub account. Alternately, click on the "clone or download" button. 
-2. **Necessary Packages:** 
-
-```{r , eval=T,echo=T, warning=F, message=F}
+# Libraries
+  
+```{r Libraries, eval=T,echo=T, warning=F, message=F}
 # for ogrInfo() and readOGR()
 #install.packages('rgdal')
 library("rgdal") 
@@ -232,6 +229,8 @@ Map_EEZ_Alaska <- Map_Base +
             colour = "purple", size = 0.75) +
   ggtitle("Alaska EEZ")
 
+Map_EEZ_Alaska
+
 # And now we do the same for Canada and the US...
 
 #### Canada EEZ ####
@@ -245,7 +244,9 @@ eez_Can <- fortify(eez_Can)
 Map_eez_Can <- Map_EEZ_Alaska+ geom_path(data = filter(eez_Can, piece == 4), #Turns out that piece 4 is British Columbia, who knew!? 
             aes(x = long, y = lat, group = group), 
             colour = "red", size = 0.75) +
-  ggtitle("Canada EEZ")
+  ggtitle("Alaska and Canada's EEZ")
+
+Map_eez_Can
 
 #### USA EEZ ####
 # Extract the EEZ for the USA:
@@ -259,10 +260,12 @@ Map_eez_US <-
   geom_path(data = filter(eez_usa, piece == 2), 
             aes(x = long, y = lat, group = group), 
             colour = "blue", size = 0.75) +
-  ggtitle("US EEZ")
+  ggtitle("Alaska, Canada and US EEZ")
+
+Map_eez_US
 
 #### And finally we add the EEZ Names ####
-Map_EEZ_Names <- Map_eez_US +
+ Map_eez_US +
     annotate("text",
              x=-150,
              y=65,
@@ -272,20 +275,15 @@ Map_EEZ_Names <- Map_eez_US +
              x=-150,
              y=48,
              colour = "red",
-             label= "Canada EEZ -> ")+
+             label= "Canada EEZ ---> ")+
     annotate("text",
              x=-145,
              y=41,
              colour = "blue",
-             label= "USA EEZ ->") +
+             label= "USA EEZ --->") +
   ggtitle("Pacific North West With EEZs")
 
   
-gridExtra::grid.arrange(Map_EEZ_Alaska,
-                        Map_eez_Can,
-                        Map_eez_US,
-                        Map_EEZ_Names,
-                        ncol=2)
 
 # Extract the  polygon to save
 #where dataset is the fortified data, piece is the part of the poligon you want.
