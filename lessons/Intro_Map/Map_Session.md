@@ -61,7 +61,7 @@ Make sure the "path.ne.coast" on the next "chunk" takes you to where you stored 
 # Coastal lines ####
 
 #path.ne.coast: Specify the path for the data. If you forked form GitHub and followed the download rules you don't need to change the path or the file_name
-path.ne.coast <- ("Data/ne_10m_coastline")
+path.ne.coast <- ("./Data/ne_10m_coastline")
 file_name <- "ne_10m_coastline.shp"
 
 # Loading the shapefile:
@@ -71,7 +71,7 @@ data_coast <- readOGR(dsn = path.ne.coast,
 
 ```
 ## OGR data source with driver: ESRI Shapefile 
-## Source: "Data/ne_10m_coastline", layer: "ne_10m_coastline"
+## Source: "./Data/ne_10m_coastline", layer: "ne_10m_coastline"
 ## with 4132 features
 ## It has 2 fields
 ```
@@ -108,8 +108,8 @@ quick.subset <- function(x, domain){
 #### Subsetting our data ####
 
 # Specify the desired domain (the West Coast of Alaska, Canada and US):
-P_Lat_N <-73 #Pacific_Latitude_North
-P_Lat_S <- 30 #Pacific_Latitude_South
+P_Lat_N  <- 73     #Pacific_Latitude_North
+P_Lat_S  <- 30     #Pacific_Latitude_South
 P_Long_W <- -179.5 #Pacific_Longitude_West
 P_Long_E <- -120.5 #Pacific_Longitude_East
 
@@ -174,7 +174,7 @@ Map_Base
 
 <img src="Map_Session_files/figure-html/First Map-1.png" style="display: block; margin: auto;" />
 
-So Now that we have or nice base map of the overall area of study. We now want to add the Exclusive Economic Zone of each country (The US will be divided in 2; the mainland and Alaska).
+So Now that we have a nice base map of the overall area of study. We now want to add the Exclusive Economic Zone of each country (The US will be divided in 2; the mainland and Alaska).
 
 ## Adding the EEZ's
 
@@ -185,18 +185,18 @@ So Now that we have or nice base map of the overall area of study. We now want t
 #We repeat the same steps than before...
 
 #### Load World map of EEZ (takes waaaay more time) ####
-path_eez_world <- ("Data/World_EEZ_v8_2014")
-fnam_eez_world <- "World_EEZ_v8_2014_HR.shp"
+path_eez_world <- "./Data/World_EEZ_v8_2014_LR"
+fnam_eez_world <- "World_EEZ_v8_2014.shp"
 
-eez_world <- readOGR(dsn = path_eez_world,
-                     layer =file_path_sans_ext(fnam_eez_world))
+eez_world <- readOGR(dsn   = path_eez_world,
+                     layer = file_path_sans_ext(fnam_eez_world))
 ```
 
 ```
 ## OGR data source with driver: ESRI Shapefile 
-## Source: "Data/World_EEZ_v8_2014", layer: "World_EEZ_v8_2014_HR"
+## Source: "./Data/World_EEZ_v8_2014_LR", layer: "World_EEZ_v8_2014"
 ## with 249 features
-## It has 14 fields
+## It has 15 fields
 ```
 
 ```r
@@ -277,7 +277,7 @@ eez_Can <- fortify(eez_Can)
 
 ```r
 #Aaaand map it...
-Map_eez_Can <- Map_EEZ_Alaska+ geom_path(data = filter(eez_Can, piece == 4), #Turns out that piece 4 is British Columbia, who knew!? 
+Map_eez_Can <- Map_EEZ_Alaska + geom_path(data = filter(eez_Can, piece == 4), #Turns out that piece 4 is British Columbia, who knew!? 
             aes(x = long, y = lat, group = group), 
             colour = "red", size = 0.75) +
   ggtitle("Alaska and Canada's EEZ")
@@ -317,20 +317,20 @@ Map_eez_US
 #### And finally we add the EEZ Names ####
  Map_eez_US +
     annotate("text",
-             x=-150,
-             y=65,
-             colour="purple",
-             label= "Alaska")+
+             x      = -150,
+             y      = 65,
+             colour = "purple",
+             label  = "Alaska") +
     annotate("text",
-             x=-150,
-             y=48,
+             x      = -150,
+             y      = 48,
              colour = "red",
-             label= "Canada EEZ -> ")+
+             label  = "Canada EEZ ---> ") +
     annotate("text",
-             x=-145,
-             y=41,
+             x      = -145,
+             y      = 41,
              colour = "blue",
-             label= "USA EEZ ->") +
+             label  = "USA EEZ --->") +
   ggtitle("Pacific North West With EEZs")
 ```
 
@@ -349,6 +349,49 @@ Lets say you are working with Pink salmon (Cus' Pink is my new obsession, cus' P
 
 For this part we are gonna use the function "point.in.polygon" from the "sp" package. This amazing function extracts the data within the limits you give it. In this case, it will put a "1" for points inside the EEZ and a "0" for points outside the EEZ.
 
+
+
+
+# ggmap
+
+[ggmap quickstart](https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/ggmap/ggmapCheatsheet.pdf)
+[GitHub](https://github.com/dkahle/ggmap)
+
+The package [ggsn](https://github.com/oswaldosantos/ggsn) allows you to add a scale bar on the map.
+
+
+```r
+# Loading the data: GPS locations of 3 harbour seals in the Strait of Georgia.
+data <- read.csv("./Data/harbour_seal_GPS.csv")
+
+library(ggmap)
+
+myLocation <- c(min(data$Longitude) - 0.1,
+								min(data$Latitude)  - 0.1,
+								max(data$Longitude) + 0.1,
+								max(data$Latitude)  + 0.1)
+
+myMap <- get_map(myLocation,
+								 source   = "stamen",
+								 maptype  = "toner",
+								 crop     = TRUE)
+
+
+myPlot <- ggmap(myMap, extent = "panel", maprange = FALSE) + 
+						geom_point(data = data, aes(x = Longitude, y = Latitude, colour = factor(sealID)), alpha = 0.7) +
+						theme(legend.position = "none", text = element_text(size = 12)) + 
+						ylab("Latitude") +
+						xlab("Longitude")
+
+myPlot
+```
+
+![](Map_Session_files/figure-html/ggmap-1.png)<!-- -->
+
+```r
+# Save you map in pdf
+# ggsave("File name", myPlot, width = 60, height = 30, dpi = 400, units = "in", scale = 0.2)
+```
 
 
 
