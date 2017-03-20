@@ -11,7 +11,7 @@ tags:
 <!-- change visible to true if you want it on the site -->
 <!-- remove any tags listed above that are not relevant -->
 
-![](./version-control-1.jpg)
+![](./img/version-control-1.jpg)
 
 This exercise id divided in two parts:
 
@@ -29,7 +29,7 @@ This exercise id divided in two parts:
 
 
 
-##1. Getting set up with Git and RStudio
+## 1. Getting set up with Git and RStudio
 
 By now you should have a GitHub account and Git installed on your laptop (let us know if you don't or you will not be able to go trough the rest of this tutorial).
 In order to connect RStudio with GitHub we need to configure Git, which is the version control software that GitHub is built on.
@@ -47,7 +47,7 @@ First let's make sure that we have actually installed Git.
 
 Type `git version`. You should see a short message containing some version information (Let us know if you don't).
 
-####1.1. Configure Git
+#### 1.1. Configure Git
 After installing git, you need to tell it who you are. Open a terminal window or command prompt (see above) and type the following:
 
 `git config --global user.email "you@youremail.com"`
@@ -66,9 +66,9 @@ or on **Windows**:
 It's a good idea to follow this step since the default editor selected by git is quite difficult to use!
 
 
-##2. Version control with RStudio and Git
+## 2. Version control with RStudio and Git
 
-###2.1. Setting up a version controlled project in RStudio
+### 2.1. Setting up a version controlled project in RStudio
 
 RStudio provides an interface for version control using git. We'll look at setting up and managing a version controlled project through RStudio.
 
@@ -77,19 +77,19 @@ Create a new project in RStudio as follows:
 **File** -> **New Project** -> **New Directory**
 
 
-![](./NewDir.png)
+![](./img/NewDir.png)
 
 
 
 Then click on **Empty Project**
 
-![](./EmptyProj.png)
+![](./img/EmptyProj.png)
 
 
 
 In the **Create New Project** screen, give your project a name,navigate to the directory you want to save your project in and make sure that **Create a git repository** is checked. Then click on **Create Project**.
 
-![](./CreateNew.png)
+![](./img/CreateNew.png)
 
 
 
@@ -100,7 +100,7 @@ Two files are created in the otherwise empty project:
 
 * **NewProject.Rproj** -- Configuration information for the RStudio project.
 
-![](./GitFiles.png)
+![](./img/GitFiles.png)
 
 
 
@@ -125,7 +125,7 @@ Now you can save your script by clicking on the disk icon in the top left corner
 After you've created this file in your project, you need to get it under version control. By default, the git version control pane is in the top right hand corner of RStudio. Find it and click on the **Git** tab. You'll see a list of the files in your project directory.
 
 
-![](./GitTab.png)
+![](./img/GitTab.png)
 
 
 
@@ -136,7 +136,7 @@ Git will only keep track of modifications to files that it has been asked to man
 Tick the **Staged** checkbox for each file.
 
 
-![](./Staged.png)
+![](./img/Staged.png)
 
 
 
@@ -146,7 +146,7 @@ All of your files are now staged, ready for you to record those changes as a **c
 Click on **Commit**.
 
 
-![](./Commit.png)
+![](./img/Commit.png)
 
 
 
@@ -155,7 +155,7 @@ This will open a pane showing details of the commit. You need to specify a **com
 
 
 
-![](./FirstCommit.png)
+![](./img/FirstCommit.png)
 
 
 
@@ -164,14 +164,14 @@ A message displaying the output from git will be shown.
 
 
 
-![](./CommitMsg.png)
+![](./img/CommitMsg.png)
 
 
 
 
 Click on **Close** and you are done.
 
-###2.2. Making changes
+### 2.2. Making changes
 
 Now we want to make some changes to our R script.
 For example we could change the colour of the dots in the plots from black (the default) to red. 
@@ -187,7 +187,7 @@ Now, click on the **Git** tab in RStudio. You'll notice that there's only one fi
 
 
 
-![](./MakeChanges.png)
+![](./img/MakeChanges.png)
 
 
 
@@ -198,7 +198,7 @@ Click on the **Staged** checkbox to stage your change. Now click on **Diff** (ne
 
 
 
-![](./Diff.png)
+![](./img/Diff.png)
 
 
 
@@ -207,19 +207,19 @@ Add a commit message and click on **Commit**.
 
 
 
-![](./CommitChanges.png)
+![](./img/CommitChanges.png)
 
 
 
 In the **Git** tab of RStudio, click on **Diff** and then **History**. You'll see that you can look through every commit you've ever made. This can be extremely useful for finding bugs or looking back to how your model looked a few months ago.
 
 
-![](./History.png)
+![](./img/History.png)
 
 
 
 
-###2.3. Setting up a remote repository on GitHub
+### 2.3. Setting up a remote repository on GitHub
 
 Your project is fully version controlled so you have access to a detailed history of every change you've ever made to it. This is a great first step but all of this only exists on your own computer at the moment.
 
@@ -228,14 +228,14 @@ Likely you'll want to connect your local repository to a remote repository using
 First, you need to create a GitHub repository to use as a remote. Log into GitHub and go to your profile page. On the **Repositories** tab, click **New**.
 
 
-![](./NewRepo.png)
+![](./img/NewRepo.png)
 
 
 
 At the **Create a new repository** screen, give your repository a name and click **Create Repository**.
 
 
-![](./NewRepo2.png)
+![](./img/NewRepo2.png)
 
 
 
@@ -243,7 +243,7 @@ The next screen gives sets of git commands for use in various circumstances. Fin
 
 
 
-![](./GitCommand.png)
+![](./img/GitCommand.png)
 
 
 
@@ -254,7 +254,7 @@ In RStudio, navigate to the **Git** tab and click on **More** -> **Shell...**.
 
 
 
-![](./Shell.png)
+![](./img/Shell.png)
 
 
 
@@ -263,7 +263,7 @@ Paste the git commands into the shell and press **Enter** to execute them.
 
 
 
-![](./Shell2.png)
+![](./img/Shell2.png)
 
 
 
@@ -274,7 +274,7 @@ It should look like this:
 
 
 
-![](./NewRepo3.png)
+![](./img/NewRepo3.png)
 
 
 
@@ -287,7 +287,7 @@ From the page of your repository in GitHub click on **Add a README**.
 
 
 
-![](./README.png)
+![](./img/README.png)
 
 
 
@@ -295,7 +295,7 @@ Now write a short description of your project, something like this.
 
 
 
-![](./READMEfile.png)
+![](./img/READMEfile.png)
 
 
 
@@ -306,7 +306,7 @@ Your repo should now look like this:
 
 
 
-![](./NewRepo4.png)
+![](./img/NewRepo4.png)
 
 
 
@@ -319,7 +319,7 @@ By default your repository has one branch named `master` which is considered to 
 
 
 
-![](./Master.png)
+![](./img/Master.png)
 
 
 
@@ -327,14 +327,14 @@ We use branches to experiment and make edits before committing them to `master`.
 
 When you create a branch off the `master` branch, you’re making a copy, or snapshot, of `master` as it was at that point in time. This is particualrly useful when you are working on a collaborative project. For example, if someone else made changes to the `master` branch while you were working on your branch, you could pull in those updates.
 
-####2.4.1. To create a new branch
+#### 2.4.1. To create a new branch
 
 Go to your repository and click the drop down at the top of the file list that says **branch: master**.
 Type a branch name into the new branch text box. Select the blue **Create branch** box or hit “Enter” on your keyboard.
 
 
 
-![](./NewBranch.png)
+![](./img/NewBranch.png)
 
 
 
@@ -345,7 +345,7 @@ Go back to your project in RStudio. In the **Git** tab, if you hover the mouse p
 
 
 
-![](./RStudioMaster.png)
+![](./img/RStudioMaster.png)
 
 
 
@@ -354,7 +354,7 @@ In the **Git** tab click on **Pull**. You will receive a message that tells you 
 
 
 
-![](Pull.png)
+![](./img/Pull.png)
 
 
 
@@ -362,12 +362,12 @@ If you click on **master** again you will now see the new branch that you create
 
 
 
-![](./ChangeBranch.png)
+![](./img/ChangeBranch.png)
 
 
 
 
-####2.4.2. Make and push changes
+#### 2.4.2. Make and push changes
 
 Now we can add a new plot to our script. Type the following code and then click **Run**.
 
@@ -380,13 +380,13 @@ Save your edited R script, click on the **Staged** box like you did before and c
 
 
 
-![](./CommitChangesPush.png)
+![](./img/CommitChangesPush.png)
 
 
-![](./Pushed.png)
+![](./img/Pushed.png)
 
 
-####2.4.3. Pull request and merge changes
+#### 2.4.3. Pull request and merge changes
 
 Now go back to your repo on GitHub. You will notice that at the top of all you files there is a new section that says: **Your recently pushed branches:**. The changes you made to your script have been pushed to your online copy of the project and are now in the branch `NewPlot`. In order to merge them into your `master` branch we need to create a pull request, just as you did in the first part of this tutorial.
 
@@ -394,7 +394,7 @@ Click on the button that says *Compare and pull request**.
 
 
 
-![](./ComparePullReq.png)
+![](./img/ComparePullReq.png)
 
 
 
@@ -402,7 +402,7 @@ In the **Open a pull request** page click on **Create pull request**.
 
 
 
-![](./CreatePullReq.png)
+![](./img/CreatePullReq.png)
 
 
 
@@ -411,7 +411,7 @@ GitHub has now compared the two versions of your project that are in the two bra
 
 
 
-![](./Merge.png)
+![](./img/Merge.png)
 
 
 
@@ -421,11 +421,11 @@ Click **Confirm merge**.
 Go ahead and delete the branch, since its changes have been incorporated, with the **Delete branch** button in the purple box.
 
 
-![](DeleteBranch.png)
+![](./img/DeleteBranch.png)
 
 
 
-###3. Summary
+### 3. Summary
 
 **Congratulations!**
 
