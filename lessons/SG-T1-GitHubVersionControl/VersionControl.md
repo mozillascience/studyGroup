@@ -11,9 +11,8 @@ tags:
 <!-- change visible to true if you want it on the site -->
 <!-- remove any tags listed above that are not relevant -->
 
-<div style="width:300px; height=200px">
 ![](../img/version-control-1.jpg)
-</div>
+
 
 This exercise id divided in two parts:
 
