@@ -11,7 +11,7 @@ tags:
 <!-- change visible to true if you want it on the site -->
 <!-- remove any tags listed above that are not relevant -->
 
-![](./img/version-control-1.jpg)
+![](../img/version-control-1.jpg)
 
 This exercise id divided in two parts:
 
