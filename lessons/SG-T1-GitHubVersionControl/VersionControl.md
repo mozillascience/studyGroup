@@ -394,7 +394,7 @@ Save your edited R script, click on the **Staged** box like you did before and c
 
 #### 2.4.3. Pull request and merge changes
 
-Now go back to your repo on GitHub. You will notice that at the top of all you files there is a new section that says: **Your recently pushed branches:**. The changes you made to your script have been pushed to your online copy of the project and are now in the branch `NewPlot`. In order to merge them into your `master` branch we need to create a pull request, just as you did in the first part of this tutorial.
+Now go back to your repo on GitHub. You will notice that at the top of all you files there is a new section that says: **Your recently pushed branches:**. The changes you made to your script have been pushed to your online copy of the project and are now in the branch `NewPlot`. In order to merge them into your `master` branch we need to create a pull request, just as you did in the first part of this tutorial.<!-- FIXME: I don't think any pull requests have been made earlier in the tutorial? Where specifically - can you point people to a certain section and what it was that they were doing when they made a pull request earlier?  -->
 
 Click on the button that says *Compare and pull request**.
 
