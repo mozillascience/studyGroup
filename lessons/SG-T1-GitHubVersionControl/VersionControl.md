@@ -60,7 +60,7 @@ After installing git, you need to tell it who you are. Open a terminal window or
 `git config --global user.name "Your Name"`
 
 On succesful completion, you should see no output from these commands.
-You can also configure git to use your preferred editor for commit messages, e.g. on a **Mac**:
+You can also configure git to use your preferred editor for commit messages, e.g. on a **Mac** or **Linux**:
 
 `git config --global core.editor nano`
 
