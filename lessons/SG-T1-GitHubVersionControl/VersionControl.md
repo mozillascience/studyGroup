@@ -23,16 +23,17 @@ This exercise id divided in two parts:
   * 2.2. [Making changes](#2.2.)
   * 2.3. [Setting up a remote repository on GitHub](#2.3.)
   * 2.4. [Subsequent workflow](#2.4.)
-    * 2.4.1. [To create a new branch](#2.4.1.)
-    * 2.4.2. [Make and push changes](#2.4.2.)
-    * 2.4.3. [Pull request and merge changes](#2.4.3.)
+    * 2.4.1. [Pull and push changes](#2.4.1.)
+    * 2.4.2. [Create a new branch](#2.4.2.)
+    * 2.4.3. [Make and push changes to a branch](#2.4.3.)
+    * 2.4.4. [Pull request and merge changes](#2.4.4.)
 3. [Summary](#3.)
 
 
 
 ## 1. Getting set up with Git and RStudio
 
-By now you should have a GitHub account and Git installed on your laptop (let us know if you don't or you will not be able to go trough the rest of this tutorial).
+By now you should have a GitHub account ([sign up here](https://github.com/) and [get setup here](https://help.github.com/articles/signing-up-for-a-new-github-account/)) and Git installed on your laptop ([Download Git here](https://git-scm.com/downloads)). Let us know if you don't or you will not be able to go trough the rest of this tutorial.
 In order to connect RStudio with GitHub we need to configure Git, which is the version control software that GitHub is built on.
 First let's make sure that we have actually installed Git.
 
@@ -46,6 +47,10 @@ First let's make sure that we have actually installed Git.
 
 * Go to Applications -> Utilities -> Terminal
 
+**Linux**
+
+* Open a terminal (`Ctrl+Alt+T` often does it)
+
 Type `git version`. You should see a short message containing some version information (Let us know if you don't).
 
 #### 1.1. Configure Git
@@ -56,7 +61,7 @@ After installing git, you need to tell it who you are. Open a terminal window or
 `git config --global user.name "Your Name"`
 
 On succesful completion, you should see no output from these commands.
-You can also configure git to use your preferred editor for commit messages, e.g. on a **Mac**:
+You can also configure git to use your preferred editor for commit messages, e.g. on a **Mac** or **Linux**:
 
 `git config --global core.editor nano`
 
@@ -66,6 +71,7 @@ or on **Windows**:
 
 It's a good idea to follow this step since the default editor selected by git is quite difficult to use!
 
+If the above commands in the terminal/command prompt seem like magic, or you just want to learn more about using git, try their excellent [online guides that let you learn to write git commands directly in your web browser](https://try.github.io/levels/1/challenges/1). This is also an excellent place to learn more about what we will discuss below, without worrying about messing up any actual files.
 
 ## 2. Version control with RStudio and Git
 
@@ -152,7 +158,9 @@ Click on **Commit**.
 
 
 
-This will open a pane showing details of the commit. You need to specify a **commit message** in the right hand panel. This should explain the modifications that you've made. Since this is the first commit, you can follow tradition and use a brief message such as **First commit**, but for subsequent commits it's worth providing a more descriptive message. Once you've typed a commit message, click on **Commit**.
+This will open a pane showing details of the commit. You need to specify a **commit message** in the right hand panel. Commit messages should explain **why you have made a change** and not *what* you have changed. Git keeps track of *what* has changed (see use of **Diff** below) and so it is best not to use commit messages for this purpose. The commit message lets your future self know the current state of your mind **why** you made this change or it will inform collaborators *why* the change was made.
+
+Since this is the first commit, you can follow tradition and use a brief message such as **First commit**, but for subsequent commits it's worth providing a more descriptive message. Once you've typed a commit message, click on **Commit**.
 
 
 
@@ -310,9 +318,34 @@ Your repo should now look like this:
 <img src="../img/NewRepo4.png" alt="NewRepo4" style="width: 1000px;"/>
 
 
-###2.4. Subsequent workflow
+### 2.4. Subsequent workflow
 
-Once a local repository has been associated with GitHub, it's not necessary to use the command line for subsequent uploads. 
+Once a local repository has been associated with GitHub, it's not necessary to use the command line for subsequent uploads. However, you will want to always keep the local (e.g., your personal computer) and remote (e.g., GitHub) in sync with one another. To do this you will **Pull** and **Push** changes from one place/repository to the next.
+
+#### 2.4.1. Pull and push changes
+
+When you start working on your local repository (e.g., files on your own computer), it is best to start by **Pulling** any new changes off of your remote repository (e.g., GitHub). Similarly, when you are finished working on them in your local repository (e.g., your computer) it is good to then **Push** them to the remote repository (e.g., GitHub). We will walk through this basic workflow that enables you to keep your local files in sync across multiple computers or when files may change because of someone else working on the project.
+
+To start working on a project, **Pull** any new changes to update your local copy.
+
+
+![](../img/PullMaster.png)
+
+
+Now you can make changes on your own computer. When you are finished, to **Push** these changes to the remote repository (e.g., GitHub).
+
+
+![](../img/Push.PNG)
+
+
+and you should see
+
+
+![](../img/PushMsg.PNG)
+
+
+
+#### 2.4.2. Create a new branch
 Now we need to create a **Branch**. **Branching** is the way to work on different versions of a repository at one time.
 
 By default your repository has one branch named `master` which is considered to be the definitive branch. 
@@ -326,8 +359,6 @@ By default your repository has one branch named `master` which is considered to 
 We use branches to experiment and make edits before committing them to `master`.
 
 When you create a branch off the `master` branch, you’re making a copy, or snapshot, of `master` as it was at that point in time. This is particualrly useful when you are working on a collaborative project. For example, if someone else made changes to the `master` branch while you were working on your branch, you could pull in those updates.
-
-#### 2.4.1. To create a new branch
 
 Go to your repository and click the drop down at the top of the file list that says **branch: master**.
 Type a branch name into the new branch text box. Select the blue **Create branch** box or hit “Enter” on your keyboard.
@@ -367,7 +398,7 @@ If you click on **master** again you will now see the new branch that you create
 
 
 
-#### 2.4.2. Make and push changes
+#### 2.4.3. Make and push changes to a branch
 
 Now we can add a new plot to our script. Type the following code and then click **Run**.
 
@@ -386,9 +417,9 @@ Save your edited R script, click on the **Staged** box like you did before and c
 <img src="../img/Pushed.png" alt="Pushed" style="width: 1000px;"/>
 
 
-#### 2.4.3. Pull request and merge changes
+#### 2.4.4. Pull request and merge changes
 
-Now go back to your repo on GitHub. You will notice that at the top of all you files there is a new section that says: **Your recently pushed branches:**. The changes you made to your script have been pushed to your online copy of the project and are now in the branch `NewPlot`. In order to merge them into your `master` branch we need to create a pull request, just as you did in the first part of this tutorial.
+Now go back to your repo on GitHub. You will notice that at the top of all you files there is a new section that says: **Your recently pushed branches:**. The changes you made to your script have been pushed to your online copy of the project and are now in the branch `NewPlot`. In order to merge them into your `master` branch we need to create a pull request.
 
 Click on the button that says *Compare and pull request**.
 
