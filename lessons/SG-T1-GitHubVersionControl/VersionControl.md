@@ -11,7 +11,7 @@ tags:
 <!-- change visible to true if you want it on the site -->
 <!-- remove any tags listed above that are not relevant -->
 
-![](../img/version-control-1.jpg)
+<img src="../img/version-control-1.jpg" alt="Cartoon" style="width: 200px;"/>
 
 
 This exercise id divided in two parts:
