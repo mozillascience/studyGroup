@@ -316,7 +316,7 @@ Your repo should now look like this:
 <img src="../img/NewRepo4.png" alt="NewRepo4" style="width: 1000px;"/>
 
 
-###2.4. Subsequent workflow
+### 2.4. Subsequent workflow
 
 Once a local repository has been associated with GitHub, it's not necessary to use the command line for subsequent uploads. 
 Now we need to create a **Branch**. **Branching** is the way to work on different versions of a repository at one time.
