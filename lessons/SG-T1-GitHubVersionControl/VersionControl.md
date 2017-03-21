@@ -32,7 +32,7 @@ This exercise id divided in two parts:
 
 ## 1. Getting set up with Git and RStudio
 
-By now you should have a GitHub account and Git installed on your laptop (let us know if you don't or you will not be able to go trough the rest of this tutorial).
+By now you should have a GitHub account ([sign up here](https://github.com/) and [get setup here](https://help.github.com/articles/signing-up-for-a-new-github-account/)) and Git installed on your laptop ([Download Git here](https://git-scm.com/downloads)). Let us know if you don't or you will not be able to go trough the rest of this tutorial.
 In order to connect RStudio with GitHub we need to configure Git, which is the version control software that GitHub is built on.
 First let's make sure that we have actually installed Git.
 
@@ -45,6 +45,10 @@ First let's make sure that we have actually installed Git.
 **Mac**
 
 * Go to Applications -> Utilities -> Terminal
+
+**Linux**
+
+* Open a terminal (`Ctrl+Alt+T` often does it)
 
 Type `git version`. You should see a short message containing some version information (Let us know if you don't).
 
