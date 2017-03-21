@@ -23,9 +23,10 @@ This exercise id divided in two parts:
   * 2.2. [Making changes](#2.2.)
   * 2.3. [Setting up a remote repository on GitHub](#2.3.)
   * 2.4. [Subsequent workflow](#2.4.)
-    * 2.4.1. [To create a new branch](#2.4.1.)
-    * 2.4.2. [Make and push changes](#2.4.2.)
-    * 2.4.3. [Pull request and merge changes](#2.4.3.)
+    * 2.4.1. [Pull and push changes](#2.4.1.)
+    * 2.4.2. [To create a new branch](#2.4.2.)
+    * 2.4.3. [Make and push changes to a branch](#2.4.3.)
+    * 2.4.4. [Pull request and merge changes](#2.4.4.)
 3. [Summary](#3.)
 
 
@@ -318,7 +319,12 @@ Your repo should now look like this:
 
 ### 2.4. Subsequent workflow
 
-Once a local repository has been associated with GitHub, it's not necessary to use the command line for subsequent uploads. 
+Once a local repository has been associated with GitHub, it's not necessary to use the command line for subsequent uploads. However, you will want to always keep the local (e.g., your personal computer) and remote (e.g., GitHub) in sync with one another. To do this you will **Pull** and **Push** changes from one place/repository to the next.
+
+#### 2.4.1. Pull and push changes
+
+
+#### 2.4.2. To create a new branch
 Now we need to create a **Branch**. **Branching** is the way to work on different versions of a repository at one time.
 
 By default your repository has one branch named `master` which is considered to be the definitive branch. 
@@ -332,8 +338,6 @@ By default your repository has one branch named `master` which is considered to 
 We use branches to experiment and make edits before committing them to `master`.
 
 When you create a branch off the `master` branch, you’re making a copy, or snapshot, of `master` as it was at that point in time. This is particualrly useful when you are working on a collaborative project. For example, if someone else made changes to the `master` branch while you were working on your branch, you could pull in those updates.
-
-#### 2.4.1. To create a new branch
 
 Go to your repository and click the drop down at the top of the file list that says **branch: master**.
 Type a branch name into the new branch text box. Select the blue **Create branch** box or hit “Enter” on your keyboard.
@@ -373,7 +377,7 @@ If you click on **master** again you will now see the new branch that you create
 
 
 
-#### 2.4.2. Make and push changes
+#### 2.4.3. Make and push changes to a branch
 
 Now we can add a new plot to our script. Type the following code and then click **Run**.
 
@@ -392,9 +396,9 @@ Save your edited R script, click on the **Staged** box like you did before and c
 <img src="../img/Pushed.png" alt="Pushed" style="width: 1000px;"/>
 
 
-#### 2.4.3. Pull request and merge changes
+#### 2.4.4. Pull request and merge changes
 
-Now go back to your repo on GitHub. You will notice that at the top of all you files there is a new section that says: **Your recently pushed branches:**. The changes you made to your script have been pushed to your online copy of the project and are now in the branch `NewPlot`. In order to merge them into your `master` branch we need to create a pull request, just as you did in the first part of this tutorial.<!-- FIXME: I don't think any pull requests have been made earlier in the tutorial? Where specifically - can you point people to a certain section and what it was that they were doing when they made a pull request earlier?  -->
+Now go back to your repo on GitHub. You will notice that at the top of all you files there is a new section that says: **Your recently pushed branches:**. The changes you made to your script have been pushed to your online copy of the project and are now in the branch `NewPlot`. In order to merge them into your `master` branch we need to create a pull request.
 
 Click on the button that says *Compare and pull request**.
 
