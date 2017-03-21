@@ -71,6 +71,7 @@ or on **Windows**:
 
 It's a good idea to follow this step since the default editor selected by git is quite difficult to use!
 
+If the above commands in the terminal/command prompt seem like magic, or you just want to learn more about using git, try their excellent [online guides that let you learn to write git commands directly in your web browser](https://try.github.io/levels/1/challenges/1). This is also an excellent place to learn more about what we will discuss below, without worrying about messing up any actual files.
 
 ## 2. Version control with RStudio and Git
 
