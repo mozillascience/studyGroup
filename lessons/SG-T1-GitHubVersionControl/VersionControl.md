@@ -24,7 +24,7 @@ This exercise id divided in two parts:
   * 2.3. [Setting up a remote repository on GitHub](#2.3.)
   * 2.4. [Subsequent workflow](#2.4.)
     * 2.4.1. [Pull and push changes](#2.4.1.)
-    * 2.4.2. [To create a new branch](#2.4.2.)
+    * 2.4.2. [Create a new branch](#2.4.2.)
     * 2.4.3. [Make and push changes to a branch](#2.4.3.)
     * 2.4.4. [Pull request and merge changes](#2.4.4.)
 3. [Summary](#3.)
@@ -324,7 +324,7 @@ Once a local repository has been associated with GitHub, it's not necessary to u
 #### 2.4.1. Pull and push changes
 
 
-#### 2.4.2. To create a new branch
+#### 2.4.2. Create a new branch
 Now we need to create a **Branch**. **Branching** is the way to work on different versions of a repository at one time.
 
 By default your repository has one branch named `master` which is considered to be the definitive branch. 
