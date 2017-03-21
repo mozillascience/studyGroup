@@ -324,6 +324,26 @@ Once a local repository has been associated with GitHub, it's not necessary to u
 
 #### 2.4.1. Pull and push changes
 
+When you start working on your local repository (e.g., files on your own computer), it is best to start by **Pulling** any new changes off of your remote repository (e.g., GitHub). Similarly, when you are finished working on them in your local repository (e.g., your computer) it is good to then **Push** them to the remote repository (e.g., GitHub). We will walk through this basic workflow that enables you to keep your local files in sync across multiple computers or when files may change because of someone else working on the project.
+
+To start working on a project, **Pull** any new changes to update your local copy.
+
+
+![](../img/PullMaster.png)
+
+
+Now you can make changes on your own computer. When you are finished, to **Push** these changes to the remote repository (e.g., GitHub).
+
+
+![](../img/Push.PNG)
+
+
+and you should see
+
+
+![](../img/PushMsg.PNG)
+
+
 
 #### 2.4.2. Create a new branch
 Now we need to create a **Branch**. **Branching** is the way to work on different versions of a repository at one time.
