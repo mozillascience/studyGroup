@@ -11,7 +11,7 @@ tags:
 <!-- change visible to true if you want it on the site -->
 <!-- remove any tags listed above that are not relevant -->
 
-<img src="../img/version-control-1.jpg" alt="Cartoon" style="width: 200px;"/>
+<img src="../img/version-control-1.jpg" alt="Cartoon" style="width: 1000px;"/>
 
 
 This exercise id divided in two parts:
@@ -156,7 +156,7 @@ This will open a pane showing details of the commit. You need to specify a **com
 
 
 
-![](../img/FirstCommit.png)
+<img src="../img/FirstCommit.png" alt="FirstCommit" style="width: 1000px;"/>
 
 
 
@@ -165,7 +165,7 @@ A message displaying the output from git will be shown.
 
 
 
-![](../img/CommitMsg.png)
+<img src="../img/CommitMsg.png" alt="CommitMsg" style="width: 1000px;"/>
 
 
 
@@ -199,7 +199,7 @@ Click on the **Staged** checkbox to stage your change. Now click on **Diff** (ne
 
 
 
-![](../img/Diff.png)
+<img src="../img/Diff.png" alt="Diff" style="width: 1000px;"/>
 
 
 
@@ -208,14 +208,14 @@ Add a commit message and click on **Commit**.
 
 
 
-![](../img/CommitChanges.png)
+<img src="../img/CommitChanges.png" alt="CommitChanges" style="width: 1000px;"/>
 
 
 
 In the **Git** tab of RStudio, click on **Diff** and then **History**. You'll see that you can look through every commit you've ever made. This can be extremely useful for finding bugs or looking back to how your model looked a few months ago.
 
 
-![](../img/History.png)
+<img src="../img/History.png" alt="History" style="width: 1000px;"/>
 
 
 
@@ -264,7 +264,7 @@ Paste the git commands into the shell and press **Enter** to execute them.
 
 
 
-![](../img/Shell2.png)
+<img src="../img/Shell2.png" alt="Shell2" style="width: 1000px;"/>
 
 
 
@@ -275,7 +275,7 @@ It should look like this:
 
 
 
-![](../img/NewRepo3.png)
+<img src="../img/NewRepo3.png" alt="NewRepo3" style="width: 1000px;"/>
 
 
 
@@ -288,7 +288,7 @@ From the page of your repository in GitHub click on **Add a README**.
 
 
 
-![](../img/README.png)
+<img src="../img/README.png" alt="README" style="width: 1000px;"/>
 
 
 
@@ -296,7 +296,7 @@ Now write a short description of your project, something like this.
 
 
 
-![](../img/READMEfile.png)
+<img src="../img/READMEfile.png" alt="READMEfile" style="width: 1000px;"/>
 
 
 
@@ -307,8 +307,7 @@ Your repo should now look like this:
 
 
 
-![](../img/NewRepo4.png)
-
+<img src="../img/NewRepo4.png" alt="NewRepo4" style="width: 1000px;"/>
 
 
 ###2.4. Subsequent workflow
@@ -335,7 +334,7 @@ Type a branch name into the new branch text box. Select the blue **Create branch
 
 
 
-![](../img/NewBranch.png)
+<img src="../img/NewBranch.png" alt="NewBranch" style="width: 1000px;"/>
 
 
 
@@ -381,10 +380,10 @@ Save your edited R script, click on the **Staged** box like you did before and c
 
 
 
-![](../img/CommitChangesPush.png)
+<img src="../img/CommitChangesPush.png" alt="CommitChangesPush" style="width: 1000px;"/>
 
 
-![](../img/Pushed.png)
+<img src="../img/Pushed.png" alt="Pushed" style="width: 1000px;"/>
 
 
 #### 2.4.3. Pull request and merge changes
@@ -395,7 +394,7 @@ Click on the button that says *Compare and pull request**.
 
 
 
-![](../img/ComparePullReq.png)
+<img src="../img/ComparePullReq.png" alt="ComparePullReq" style="width: 1000px;"/>
 
 
 
@@ -403,7 +402,7 @@ In the **Open a pull request** page click on **Create pull request**.
 
 
 
-![](../img/CreatePullReq.png)
+<img src="../img/CreatePullReq.png" alt="CreatePullReq" style="width: 1000px;"/>
 
 
 
@@ -412,7 +411,7 @@ GitHub has now compared the two versions of your project that are in the two bra
 
 
 
-![](../img/Merge.png)
+<img src="../img/Merge.png" alt="Merge" style="width: 1000px;"/>
 
 
 
