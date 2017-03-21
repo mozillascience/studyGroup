@@ -156,7 +156,7 @@ Click on **Commit**.
 
 
 
-This will open a pane showing details of the commit. You need to specify a **commit message** in the right hand panel. Commit messages should explain **why you have made a change** and not *what* you have changed. Git keeps track of *what* has changed and so you shouldn't use commit messages for this. The commit message lets your future self know the current state of your mind **why** you made this change or it will inform collaborators *why* the change was made.
+This will open a pane showing details of the commit. You need to specify a **commit message** in the right hand panel. Commit messages should explain **why you have made a change** and not *what* you have changed. Git keeps track of *what* has changed (see use of **Diff** below) and so it is best not to use commit messages for this purpose. The commit message lets your future self know the current state of your mind **why** you made this change or it will inform collaborators *why* the change was made.
 
 Since this is the first commit, you can follow tradition and use a brief message such as **First commit**, but for subsequent commits it's worth providing a more descriptive message. Once you've typed a commit message, click on **Commit**.
 
