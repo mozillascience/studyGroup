@@ -361,14 +361,14 @@ data <- read.csv("./Data/harbour_seal_GPS.csv")
 library(ggmap)
 
 myLocation <- c(min(data$Longitude) - 0.1,
-								min(data$Latitude)  - 0.1,
-								max(data$Longitude) + 0.1,
-								max(data$Latitude)  + 0.1)
+                min(data$Latitude)  - 0.1,
+                max(data$Longitude) + 0.1,
+                max(data$Latitude)  + 0.1)
 
 myMap <- get_map(myLocation,
-								 source   = "stamen",
-								 maptype  = "toner",
-								 crop     = TRUE)
+                 source   = "stamen",
+                 maptype  = "toner",
+                 crop     = TRUE)
 
 
 Seal_map <- ggmap(myMap, extent = "panel", maprange = FALSE) + 
