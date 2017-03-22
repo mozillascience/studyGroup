@@ -14,7 +14,7 @@ tags:
 <img src="../img/version-control-1.jpg" alt="Cartoon" style="width: 1000px;"/>
 
 
-This exercise id divided in two parts:
+This exercise is divided in two parts:
 
 1. [Getting set up with Git and RStudio](#1.)
   * 1.1. [Configure Git](#1.1.)
