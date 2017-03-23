@@ -1,4 +1,4 @@
-### [Leia isto em Português] (https://github.com/mozillascience/studyGroup/blob/gh-pages/README-pt.md)
+### [Leia isto em Português](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-pt.md)
 
 # मोज़िला अध्ययन समूह
 
