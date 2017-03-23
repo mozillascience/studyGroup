@@ -1,5 +1,3 @@
-
-
 ### [Leia isto em Português](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-pt.md)
 
 # Mozilla Study Groups
@@ -27,6 +25,8 @@ Everything you need to set up your own beautiful Mozilla Study Group website (it
 ### It's Broken, I Need Help!!!
 
 If anything in these instructions doesn't work or doesn't make sense, ask a question in the [Gitter chat](https://gitter.im/mozillascience/studyGroup), open an issue [here](https://github.com/mozillascience/studyGroup/issues) or email sciencelab@mozillafoundation.org.
+
+
 
 
 
