@@ -420,5 +420,8 @@ leaflet(data) %>%
 ```
 
 
-#### Cool Maps sources
+#### Cool resources
+
 [Marine Regions](http://www.marineregions.org/downloads.php)
+[Spatial Cheatsheet](http://www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html)
+
