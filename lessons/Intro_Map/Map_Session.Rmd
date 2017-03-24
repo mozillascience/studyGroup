@@ -349,6 +349,7 @@ Map_Pink_Occ +
 # ggmap
 
 [ggmap quickstart](https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/ggmap/ggmapCheatsheet.pdf)
+
 [GitHub](https://github.com/dkahle/ggmap)
 
 The package [ggsn](https://github.com/oswaldosantos/ggsn) allows you to add a scale bar on the map.
@@ -389,12 +390,13 @@ Seal_map
 # Leaflet for R
 
 https://rstudio.github.io/leaflet/
+
 [GitHub](https://github.com/rstudio/leaflet)
 
 
 ## Leaflet example
 
-```{r leaflet, echo=F,eval=T}
+```{r leaflet, echo=T,eval=F}
 
 library(leaflet)
 library(htmltools)
@@ -403,10 +405,7 @@ library(htmltools)
 pal  <- colorFactor(c("navy", "red", "darkgreen"), domain = unique(data$sealID))
 
 leaflet(data) %>%
-  addTiles(
-    urlTemplate = "//{s}.tiles.mapbox.com/v3/jcheng.map-5ebohr46/{z}/{x}/{y}.png",
-    attribution = 'Maps by <a href="http://www.mapbox.com/">Mapbox</a>'
-  ) %>%
+  addTiles() %>%
   setView(lng = -124.027526, lat = 49.371036, zoom = 7) %>%
   addCircleMarkers(
     color       = ~pal(sealID),
@@ -423,5 +422,6 @@ leaflet(data) %>%
 #### Cool resources
 
 [Marine Regions](http://www.marineregions.org/downloads.php)
+
 [Spatial Cheatsheet](http://www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html)
 
