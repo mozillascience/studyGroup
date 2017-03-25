@@ -27,11 +27,11 @@ Everything you need to set up your own beautiful Mozilla Study Group website (it
 ## How to Set Up Mozilla Study Group Website locally
 
 * Fork the Repository [Mozilla Study Group.](https://github.com/mozillascience/studyGroup)
-* Open Terminal: git clone of the forked repository.
-* In terminal:
-	1. cd studyGroup/
-	2. jekyll build
-	3. jekyll serve
+* Open Terminal (on a Mac) or the equivalent on your machine and type:
+	1. git clone [SSH OR HTTPS CODE FOR studyGroup]
+	2. cd studyGroup/
+	3. jekyll build
+	4. jekyll serve
 * It shows "Server address". Open it in browser. Yes, Mozilla Study Group is set locally!!
 
 ### It's Broken, I Need Help!!!
