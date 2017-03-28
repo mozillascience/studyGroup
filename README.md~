@@ -24,6 +24,16 @@ What do Study Groups look like in Real Life? Check out the [Boston University St
 
 Everything you need to set up your own beautiful Mozilla Study Group website (it looks like this!) for organizing events is [right here in the Orientation Guide.](https://mozillascience.github.io/study-group-orientation/3.3-get-online.html) If you are new to GitHub, don't worry, [there's an introduction to it here](https://mozillascience.github.io/study-group-orientation/3.1-collab-vers-github.html). Take a look, and if you need any help, you can ask a question in the [Gitter chat](https://gitter.im/mozillascience/studyGroup) or email sciencelab@mozillafoundation.org.
 
+## How to Set Up Mozilla Study Group Website locally
+
+* Fork the Repository [Mozilla Study Group.](https://github.com/mozillascience/studyGroup)
+* Open Terminal (on a Mac) or the equivalent on your machine and type:
+	1. git clone [SSH OR HTTPS CODE FOR studyGroup]
+	2. cd studyGroup/
+	3. jekyll build
+	4. jekyll serve
+* It shows "Server address". Open it in browser. Yes, Mozilla Study Group is set locally!!
+
 ### It's Broken, I Need Help!!!
 
 If anything in these instructions doesn't work or doesn't make sense, ask a question in the [Gitter chat](https://gitter.im/mozillascience/studyGroup), open an issue [here](https://github.com/mozillascience/studyGroup/issues) or email sciencelab@mozillafoundation.org.
