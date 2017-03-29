@@ -22,6 +22,16 @@
 
 घटनाओं के आयोजन के लिए अपनी खुद की सुंदर मोज़िला अध्ययन समूह की वेबसाइट (यह इस तरह दिखती है!) को स्थापित करने की आवश्यकता है [ठीक यहां ओरिएंटेशन गाइड में है।](https://mozillascience.github.io/study-group-orientation/3.3-get-online.html) यदि आप गिटहब के लिए नए हैं, चिंता न करें, [यहां इसकी एक परिचय है](https://mozillascience.github.io/study-group-orientation/3.1-collab-vers-github.html) एक नज़र डालें, और अगर आपको किसी भी मदद की आवश्यकता है, तो आप [गिटार चैट](https://gitter.im/mozillascience/studyGroup) में एक प्रश्न पूछ सकते हैं या ईमेल sciencelab@mozillafoundation.org।
 
+## मोज़िला अध्ययन समूह की वेबसाइट स्थानीय रूप से कैसे स्थापित करें
+
+* फोक रिपॉजिटरी [मोज़िला अध्ययन समूह](https://github.com/mozillascience/studyGroup)
+* ओपन टर्मिनल (मैक पर) या आपके मशीन के बराबर और प्रकार:
+	1. git clone [SSH OR HTTPS CODE FOR studyGroup]
+	2. cd studyGroup/
+	3. jekyll build
+	4. jekyll serve
+* यह "सर्वर पता" दिखाता है| ब्राउज़र में इसे खोलें| हाँ, मोज़िला अध्ययन समूह स्थानीय रूप से सेट है !!
+
 ### यह टूटी हुई है, मुझे सहायता चाहिए !!!
 
 यदि इन निर्देशों में कुछ भी काम नहीं करता है या समझ नहीं पा रहा है, तो [गिटार चैट](https://gitter.im/mozillascience/studyGroup) में एक प्रश्न पूछें, एक मुद्दा खोलें [यहां](https://Github.com/mozillascience/studyGroup/issues) या ईमेल sciencelab@mozillafoundation.org।
