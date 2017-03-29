@@ -1,6 +1,7 @@
-- name: Bill Mills
-  affiliation: TRIUMF
-  github: BillMills
+- name: Nicolas Schmelling
+  affiliation: Heinrich Heine University
+  github: schmelling
   interests:
-    - Programming
     - Open Science
+    - Programming
+    - Python
