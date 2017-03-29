@@ -1,6 +1,6 @@
 ### [इसे हिंदी में पढ़ें](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-hi.md)
 
-### [Read it in english](https://github.com/mozillascience/studyGroup/blob/gh-pages/README.md)
+### [Read in english](https://github.com/mozillascience/studyGroup/blob/gh-pages/README.md)
 
 # Grupo de Estudo Mozilla
 
@@ -21,7 +21,7 @@ Na vida real, com o que um Grupo de Estudos se parece? Dê uma olhada no site do
 
 ## Como criar o site do seu próprio Grupo de Estudo Mozilla?
 
-Tudo que você precisa para configurar o belíssimo site do seu Grupo de Estudos Mozilla (ele se parece com este aqui) para organizar eventos temos um [Guia de Orientação bem aqui.](https://mozillascience.github.io/study-group-orientation/3.3-get-online.html) Se você é novo no GitHub, não se preocupe, [temos um guia de introdução bem aqui também](https://mozillascience.github.io/study-group-orientation/3.1-collab-vers-github.html). Dê uma olhada e caso precise de ajuda, você pode nos perguntar no [chat Gitter](https://gitter.im/mozillascience/studyGroup) ou mande um email para sciencelab@mozillafoundation.org.
+Tudo que você precisa para configurar o belíssimo site do seu Grupo de Estudos Mozilla (ele se parece com este aqui) para organizar eventos temos um [Guia de Orientação bem aqui.](https://mozillascience.github.io/study-group-orientation/3.3-get-online.html) Se você é novo no GitHub, não se preocupe, [temos um guia de introdução bem aqui também](https://mozillascience.github.io/study-group-orientation/3.1-collab-vers-github.html). Dê uma olhada e caso precise de ajuda, você pode nos perguntar no [chat do Gitter](https://gitter.im/mozillascience/studyGroup) ou mande um email para sciencelab@mozillafoundation.org.
 
 ## Como criar o site do seu próprio Grupo de Estudo Mozilla localmente
 
@@ -35,4 +35,4 @@ Tudo que você precisa para configurar o belíssimo site do seu Grupo de Estudos
 
 ### Algo não está funcionando, preciso de ajuda!!!
 
-Se quaisquer coisas nessas instruções não funcionar ou não faz sentido, faça uma pergunta no [chat do Gitter](https://gitter.im/mozillascience/studyGroup), abra uma issue [aqui](https://github.com/mozillascience/studyGroup/issues) ou escreva um e-mail para sciencelab@mozillafoundation.org.
+Se quaisquer coisas nessas instruções não funcionar ou não faz sentido, pergunte lá no [chat do Gitter](https://gitter.im/mozillascience/studyGroup), abra uma `issue` [aqui](https://github.com/mozillascience/studyGroup/issues) ou escreva um e-mail para sciencelab@mozillafoundation.org.
