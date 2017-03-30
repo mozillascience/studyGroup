@@ -6,8 +6,8 @@ Para deixar claro, espera-se que todos os envolvidos nos eventos do Grupo de Est
 
 ### A Versão Curta
 
- - Espera-se que o Grupo de Estudos promova uma experiência de aprendizagem que seja livre de assédio para todos, sem importar gênero, orientação sexual, deficiência, aparência física, tamanho corporal, etinia, religião, ou escolha do editor de texto. Não toleramos nenhum tipo de assédio aos participantes.
- - Toda a comunicação deve ser apropriada para um ambiente profisional, incluindo pessoas de diferentes origens e formações. Linguagem e imagens com conteúdo ou conotação sexual são inapropriadas em qualquer evento.
+ - Espera-se que o Grupo de Estudos promova uma experiência de aprendizagem que seja livre de assédio para todos, sem importar gênero, orientação sexual, deficiência, aparência física, tamanho corporal, etnia, religião, ou escolha do editor de texto. Não toleramos nenhum tipo de assédio aos participantes.
+ - Toda a comunicação deve ser apropriada para um ambiente profissional, incluindo pessoas de diferentes origens e formações. Linguagem e imagens com conteúdo ou conotação sexual são inapropriadas em qualquer evento.
  - Seja gentil com os outros. Não insulte ou rebaixe os participantes.
  - Comporte-se de maneira profissional. Lembre-se que assédio e piadas com conotação sexista, racista, ou preconceituosas são inapropriadas.
  - Os participantes que violarem essas regras serão convidados a se retirarem dos eventos de acordo com o julgamento dos organizadores do mesmo, sem ressarcimento de nenhuma taxa cobrada.
@@ -16,7 +16,7 @@ Obrigado por tornar este evento amigável e receptivo para todos.
 
 ### A Versão Longa
 
-Assédio inclui comentários verbais ofensivos relacionados a gênero,  orientação sexual, deficiência, aparência física, tamanho corporal, etinia, religião, imagens sexuais em espaços públicos, intimidação deliberada, perseguição, fotografia ou filmagem embaraçosa, interrupção constante de palestras ou outros eventos, contato físico inapropriado, e atenção sexual não bem-vinda.
+Assédio inclui comentários verbais ofensivos relacionados a gênero,  orientação sexual, deficiência, aparência física, tamanho corporal, etnia, religião, imagens sexuais em espaços públicos, intimidação deliberada, perseguição, fotografia ou filmagem embaraçosa, interrupção constante de palestras ou outros eventos, contato físico inapropriado, e atenção sexual não bem-vinda.
 
 Participantes aos quais forem pedidos que interrompam comportamento inapropriado devem fazê-lo imediatamente.
 
