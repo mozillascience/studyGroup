@@ -79,12 +79,12 @@ load("puffin_GBIF.RData")
 
 The way you record information in the field or in the lab is probably very different to the way you want your data entered into R. In the field, you want tables that you can ideally draw up ahead and fill in as you go, and you will be adding notes and all sorts of information in addition to the data you want to analyse. For instance, if you monitor the height of seedlings during a factorial experiment using warming and fertilisation treatments, you might record your data like this:
 
-<center> <img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/SAB_fig1.png" alt="Img" style="width: 500px;"/> </center>
+<center> <img src="../SAB_fig1.png" alt="Img" style="width: 500px;"/> </center>
 
 Let's say you want to run a test to determine whether warming and/or fertilisation affected seedling growth. You may know how your experiment is set up, but R doesn't! At the moment, with 8 measures per row (combination of all treatments and species for one replicate, or block), you cannot run an analysis. On the contrary,
 <a href="https://www.jstatsoft.org/article/view/v059i10">tidy datasets</a> are arranged so that each **row** represents an **observation** and each **column** represents a **variable**. In our case, this would look something like this:
 
-<center> <img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/SAB_fig2.png" alt="Img" style="width: 400px;"/> </center>
+<center> <img src="../SAB_fig2.png" alt="Img" style="width: 400px;"/> </center>
 
 This makes a much longer dataframe row-wise, which is why this form is often called *long format*. Now if you wanted to compare between groups, treatments, species, etc, R would be able to split the dataframe correctly, as each grouping factor has its own column.
 
@@ -418,11 +418,11 @@ install.packages("colourpicker")
 
 To find out what is the code for a colour you like, click on `Addins/Colour picker`.
 
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/colourpicker.png" alt="Img" style="width: 800px;"/></center>
+<center><img src="../colourpicker.png" alt="Img" style="width: 800px;"/></center>
 
 When you click on `All R colours` you will see lots of different colours you can choose from - a good colour scheme makes your graph stand out, but of course, don't go crazy with the colours. When you click on `1`, and then on a certain colour, you fill up `1` with that colour, same goes for `2`, `3` - you can add mode colours with the `+`, or delete them by clicking the bin. Once you've made your pick, click `Done`. You will see a line of code `c("#8B5A00", "#CD8500")` appear - in this case, we just need the colour code, so we can copy that, and delete the rest.
 
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/colourpicker2.png" alt="Img" style="width: 800px;"/></center>
+<center><img src="../colourpicker2.png" alt="Img" style="width: 800px;"/></center>
 
 ### Plotting histograms of population change in different biomes and saving them
 
@@ -444,7 +444,7 @@ biome.plots <- LPI_long %>%
 
 The histograms will be saved in your working directory. You can use `getwd()` to find out where that is, if you've forgotten. Check out the histograms - how does population change vary between the different biomes?
 
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/hist_tundra.png" alt="Img" style="width: 400px;"/> <img src="{{ site.baseurl }}/img/hist_polar_seas.png" alt="Img" style="width: 400px;"/></center>
+<center><img src="../hist_tundra.png" alt="Img" style="width: 400px;"/> <img src="../hist_polar_seas.png" alt="Img" style="width: 400px;"/></center>
 
 ### Ploting slope estimates for population change versus duration of monitoring and adding histograms along the margins
 Within RStudio, you can use addins, including `Rcolourpicker` that we dicussed above, and `ggExtra` that we will use for our marginal histograms.
@@ -463,12 +463,12 @@ Making our initial graph:
 
 Once you've installed the package by running `install.packages("ggExtra")`, you can select the `ggplot2` code, click on `ggplot2 Marginal Histograms` from the Addin menu and build your plot. Once you click `Done`, the code will be automatically added to your script.
 
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/ggextra1.png" alt="Img" style="width: 800px;"/></center>
+<center><img src="../ggextra1.png" alt="Img" style="width: 800px;"/></center>
 
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/ggextra2.png" alt="Img" style="width: 800px;"/></center>
+<center><img src="../ggextra2.png" alt="Img" style="width: 800px;"/></center>
 
 Here is the final graph - what do you think, how has biodiversity changed in the last ~40 years?
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/popchangehist.png" alt="Img" style="width: 800px;"/></center>
+<center><img src="../popchangehist.png" alt="Img" style="width: 800px;"/></center>
 
 ## Visualising species occurrence
 
@@ -500,7 +500,7 @@ ggplot() + map_world +  # Plot the map
 
 We used a colour palette from `RColorBrewer` to colour the points (`Set1`). You can see all the colour palettes by running `display.brewer.all()` in R.
 
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/puffinmap.png" alt="Img" style="width: 800px;"/></center>
+<center><img src="../puffinmap.png" alt="Img" style="width: 800px;"/></center>
 
 <a name="Flickr"></a>
 
@@ -547,7 +547,7 @@ Now we can plot the occurrences on a map of the UK. `rgbif` has its own function
 ```r
 gbifmap(occur, region="UK")
 ```
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/GBIFoccurr.png" alt="Img" style="width: 800px;"/></center>
+<center><img src="../GBIFoccurr.png" alt="Img" style="width: 800px;"/></center>
 
 
 ### Clean data from Flickr
@@ -573,7 +573,7 @@ coordinates(geopics)<-c("longitude","latitude")     #make it spatial
 plot(geopics)                                       #plot it
 ```
 
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/FlickrAll.png" alt="Img" style="width: 700px;"/></center>
+<center><img src="../FlickrAll.png" alt="Img" style="width: 700px;"/></center>
 
 The function `coordinates` sets spatial coordinates to create a Spatial object, or retrieves spatial coordinates from a Spatial object.
 
@@ -601,7 +601,7 @@ library(rworldmap)
 data(countriesLow)
 plot(countriesLow, add = T)
 ```
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/FlickrUK.png" alt="Img" style="width: 700px;"/></center>
+<center><img src="../FlickrUK.png" alt="Img" style="width: 700px;"/></center>
 
 There is one more problem we need to solve. Some of the data points are not on the coast, which means that these pictures are probably not puffins. In order to delete them, we are going to use the UK coastline to select only the datapoints that are within 1Km of the coast and the ones that are on the sea. 
 The first step is to split the dataset into a marine and a terrestrial one. After that we can select from the terrestrial dataset only the points that are on the coast. Finally, we will put the marine and coastal points together.
@@ -651,7 +651,7 @@ plot(flickr_terr)
 plot(flickr_mar)
 ```
 
-<center><img src = "https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/FlickrTerr&Mar.png" alt = "Img" style = "width: 800px;"/></center>
+<center><img src = "../FlickrTerr&Mar.png" alt = "Img" style = "width: 800px;"/></center>
 
 Now we can select the coastal points from the terrestrial dataset. In order to calculate the distance of every point from the coastline we need to transform our UK polygon shapefile to a line shapefile. Again this operation is pretty straightforward in R.
 
@@ -673,7 +673,7 @@ Plot to check it worked.
 plot(flickr_coast)
 ```
 
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/FlickrCoast.png" alt="Img" style="width: 800px;"/></center>
+<center><img src="../FlickrCoast.png" alt="Img" style="width: 800px;"/></center>
 
 Now we can put the marine and coastal datasets together and plot to check that it worked.
 
@@ -683,7 +683,7 @@ plot(UK_coast)
 points(flickr_correct, pch = 20, col = "steelblue")
 ```
 
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/FlickrCoast2.png" alt="Img" style="width: 800px;"/></center>
+<center><img src="../FlickrCoast2.png" alt="Img" style="width: 800px;"/></center>
 
 ### Density maps
 
@@ -719,7 +719,7 @@ plot.years <- ggplot(data = flickr.points, aes(x = longitude, y = latitude)) +  
 # now plot, it takes a while!
 plot.years
 ```
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/FlickrDensity.png" alt="Img" style="width: 800px;"/></center>
+<center><img src="../FlickrDensity.png" alt="Img" style="width: 800px;"/></center>
 
 You can see from this plot that there are a few hotspots for watching puffins in the UK, such as the Farne Islands, shetland and Flamborough Head.
 
@@ -735,7 +735,7 @@ __If you get stuck you can find the code in the script SEECC_script_final.R [her
 
 This tutorial was prepared for a workshop on quantifying biodiversity change at the Scottish Ecology, Environment and Conservation Conference on 3rd April in Aberdeen. The workshop organisation and preparation of teaching materials were supported by the [Global Environment & Society Academy Innovation Fund.](http://www.ed.ac.uk/global-environment-society/gesa-innovation-fund)
 
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/GESA.jpg" alt="Img" style="width: 800px;"/></center>
+<center><img src="../GESA.jpg" alt="Img" style="width: 800px;"/></center>
 
 <hr>
 <hr>
