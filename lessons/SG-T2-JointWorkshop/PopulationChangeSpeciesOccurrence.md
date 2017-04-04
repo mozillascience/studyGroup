@@ -28,7 +28,7 @@ tags:
 
 This workshop will provide an overview of methods used to investigate an ecological research question using a big(ish) dataset that charts the population trends of ~15,000 animal populations from ~3500 species across the world, provided by the [Living Planet Index](http://www.livingplanetindex.org/home/index). We will use the LPI dataset to first examine how biodiversity has changed since 1970, both globally and at the biome scale, and then we will zoom in further to create a map of the distribution of the Atlantic puffin based on occurrence data from [GBIF](http://www.gbif.org/) and [Flickr](http://www.flickr.com/). We will be following a generic workflow that is applicable to most scientific endeavours, at least in the life sciences. This workflow can be summed up in this neat diagram we [recreated](http://r4ds.had.co.nz) from Hadley Wickham's book R for Data Science:
 
-<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/tree/master/img/tidyverse.png" alt="Img" style="width: 1100px;"/></center>
+<center><img src="https://github.com/ourcodingclub/ourcodingclub.github.io/blob/master/img/tidyverse.png" alt="Img" style="width: 1100px;"/></center>
 
 All the resources for this tutorial, including some helpful cheatsheets can be downloaded from [this repository](https://github.com/ourcodingclub/SEECC-workshop) Clone and download the repo as a zipfile, then unzip and set the folder as your working directory by running the code below (subbing in the actual folder path), or clicking `Session/ Set Working Directory/ Choose Directory` from the RStudio menu.
 
