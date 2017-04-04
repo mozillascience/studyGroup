@@ -11,7 +11,6 @@ tags:
 <!-- change visible to true if you want it on the site -->
 <!-- remove any tags listed above that are not relevant -->
 
-<img src="../img/version-control-1.jpg" alt="Cartoon" style="width: 1000px;"/>
 
 ### Tutorial Aims:
 
