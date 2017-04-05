@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Intermediate topics in R"
-visible: false
+title: "Intermediate topics in R: Strings and factors"
+visible: true
 tags: 
   # languages
   - r
