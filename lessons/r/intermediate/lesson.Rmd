@@ -112,7 +112,7 @@ str_detect(fruit, "[aeiou]$") %>%
 
 # search for any fruit that does not end in an `a`
 str_detect(fruit, "^.*[^a]$")
-# this is the same as above, but simpler
+# this is the same as above, but subsets instead
 str_subset(fruit, "[^a]$")
 
 # similar to sub

@@ -155,7 +155,7 @@ str_detect(fruit, "^.*[^a]$")
 #> [56] FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
 #> [67]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE  TRUE
 #> [78]  TRUE  TRUE  TRUE
-# this is the same as above, but simpler
+# this is the same as above, but subsets instead
 str_subset(fruit, "[^a]$")
 #>  [1] "apple"             "apricot"           "avocado"          
 #>  [4] "bell pepper"       "bilberry"          "blackberry"       
