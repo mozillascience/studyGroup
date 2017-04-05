@@ -16,7 +16,6 @@ tags:
  - **Authors**: Luke Johnston (@lwjohnst86)
  - **Research field**: Nutritional Sciences
  - **Lesson topic**: Working with character/string data
- - **Lesson content URL**: <link>
  
 Install these packages:
 
