@@ -23,7 +23,7 @@ tags:
 ### What You Will Need
 
 - Python 2.7, or 3.4+ installed
-- Download the files for [this lesson](https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/inttopics)
+- Download the files for [this lesson](https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/intermediate)
   - `scores.txt` is a sample data file for the first part of the lesson
 
 If you'd like to follow along in Jupyter Notebook, do the following:
