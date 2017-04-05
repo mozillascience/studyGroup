@@ -1,0 +1,9 @@
+---
+title: Introduction to Python
+text: A tutorial to introduce the Python language, what it can do, when you’ll want to use it and introduce some basic concepts
+location: Room ZB19, Zoology Buildling, University of Aberdeen
+link: https://github.com/AberdeenStudyGroup/studyGroup/issues/11
+date: 2017-04-19
+startTime: '17:00'
+endTime: '18:30'
+---
