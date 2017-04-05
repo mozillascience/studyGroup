@@ -9,7 +9,7 @@ tags:
 
  - **Authors**: Ahmed Hasan
  - **Research field**: Genomics
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/inttopics>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/intermediate>
 
 ## Topics Covered:
 
@@ -26,11 +26,11 @@ tags:
 - Download the files for [this lesson](https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/inttopics)
   - `scores.txt` is a sample data file for the first part of the lesson
 
-If you'd like to follow along in IPython Notebook, do the following:
+If you'd like to follow along in Jupyter Notebook, do the following:
 
   - Install [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html)
   - Run the notebook by typing `jupyter notebook` into command line.
-  - In the web application that opens, navigate to the folder containing the files you downloaded, and open 'inttopics.ipynb' to follow along.
+  - In the web application that opens, navigate to the folder containing the files you downloaded, and open 'lesson.ipynb' to follow along.
 
 Otherwise, you can follow along in your favourite IDE or command line. 
 
