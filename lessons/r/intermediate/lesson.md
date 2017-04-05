@@ -25,12 +25,12 @@ install.packages(c("stringr", "forcats"))
 ```
 
 Base R has some pretty decent string manipulation and searching functionality.
-The primary way of working with strings is through [regular
-expressions]({link}). Regular expressions, or regex in R, are a group of
-characters that have special meaning and function. For instance, the `*` means
-wildcard and it will search for any character (letter, number, symbol, etc). Or
-`$` means end of the string or line. If you want to see more details on regex in
-R, run `?regex` to get help on it.
+The primary way of working with strings is through 
+[regular expressions](http://www.regular-expressions.info/). Regular
+expressions, or regex in R, are a group of characters that have special meaning
+and function. For instance, the `.` means wildcard and it will search for any
+character (letter, number, symbol, etc). Or `$` means end of the string or line.
+If you want to see more details on regex in R, run `?regex` to get help on it.
 
 In general, the most commonly used functions (at least that I use and that I've
 seen) are `grep`, `grepl`, `sub`, and `gsub` commands. Each of these take regex
@@ -41,7 +41,7 @@ begin with the base R functions!
 ```r
 fruits <- c("apple", "banana", "pear")
 
-# replace `a` with nothing. `gsub` = global substitution
+# replace `a` at beginning of string with nothing. `gsub` = global substitution
 gsub("^a", "", fruits)
 #> [1] "pple"   "banana" "pear"
 # replace letters `an` or `ar` with `bb`
