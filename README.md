@@ -2,6 +2,8 @@
 
 ### [Leia isto em Português](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-pt.md)
 
+### [中文版请点这里](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-zh.md)
+
 # Mozilla Study Groups
 
 Welcome to [Mozilla Science Lab](https://www.mozillascience.org/)'s Study Group project! From here, we'll set you up with everything you need to start your own study group.
