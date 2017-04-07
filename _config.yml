@@ -18,7 +18,7 @@ language: en
 # Optional Configuration
 # None of these things need to be changed - but feel free!
 
-titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
+titleBackground: "http://ocean.nationalgeographic.com/u/TvyamNb-BivtNwpvn7Sct0VFDulyAfA9wBcU0gVHVnqC5ghqXjggeitqtJ-1ZIZ1rmCgor42TXOteIQU/"
 headlineSmall: "Welcome to our Informatics Study Group"
 headlineMain: "Come do some underwater informatics with us!"
 
