@@ -1,6 +1,6 @@
 # Aberdeen Study Groups
 
-## Hello and welcome to the Aberdeen Study Group! (a [Mozilla Study Group] (https://science.mozilla.org/blog/introducing-mozilla-science-study-groups))
+## Hello and welcome to the Aberdeen Study Group! (a [Mozilla Study Group](https://science.mozilla.org/blog/introducing-mozilla-science-study-groups))
 
 ### What is a Mozilla Study Group?
 
@@ -36,7 +36,7 @@ A few things to do & know now that you're here:
 
 •	Add yourself to the website: If you'd like to appear on the website under the 'Who we Are' section, have a look at the _data/members.yml; send us a pull request with an entry for yourself, or open an issue and we'll do it for you.
 
-If you're interested in starting a group of your own, you can check out the [Study Group Repository] (https://github.com/mozillascience/studyGroup/blob/gh-pages/README.md) on GitHub or our [Study Group Orientation Guide] (https://mozillascience.github.io/study-group-orientation/)
+If you're interested in starting a group of your own, you can check out the [Study Group Repository](https://github.com/mozillascience/studyGroup/blob/gh-pages/README.md) on GitHub or our [Study Group Orientation Guide](https://mozillascience.github.io/study-group-orientation/)
 
 
 
