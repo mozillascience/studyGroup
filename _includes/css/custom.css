@@ -17,8 +17,8 @@
   }
 }
 
-section#contact {
- a {
+#contact {
+ .btn-xl {
   margin-top: 8px;
  }
 }
