@@ -17,8 +17,6 @@
   }
 }
 
-#contact {
- .btn-xl {
+#contact .btn-xl {
   margin-top: 8px !important;
- }
 }
