@@ -16,3 +16,9 @@
     white-space: initial;
   }
 }
+
+section#contact {
+ a {
+  margin-top: 8px;
+ }
+}
