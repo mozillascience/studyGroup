@@ -1,3 +1,5 @@
+
+---
 title: Study Group Meetup - Introduction to LaTeX
 text: Come get an introduction to LaTeX from Clara Llebot, Data Management Specialist at OSU Libraries. 
 location: Willamette East Classroom - The Valley Library
@@ -5,3 +7,5 @@ link: https://github.com/vantuyls/studyGroup/issues/14
 date: 2017-04-18
 startTime: '11:00'
 endTime: '12:30'
+
+---
