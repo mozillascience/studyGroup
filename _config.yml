@@ -22,6 +22,9 @@ titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x
 headlineSmall: "Welcome To Our Study Group!"
 headlineMain: "Let's Work Together"
 
+# githubRepo:
+googleGroup:"https://groups.google.com/forum/#!forum/osuopensci"
+
 # Setup Google Calendar
 # Usage:
 # 1. create a new google account; set the calendar to 'public'
