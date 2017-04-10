@@ -1,7 +1,7 @@
 ---
-  title: Web Scrapping
+  title: Web Scrapping (Full)
   text: Web scraping for extracting data from websites. 
-  location: AERL TBD
+  location: AERL 220
   link: https://jepa.github.io/studyGroup/
   date: 2017-04-18
   startTime: '16:00'
