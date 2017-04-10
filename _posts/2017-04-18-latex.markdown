@@ -1,4 +1,3 @@
-
 ---
 title: Study Group Meetup - Introduction to LaTeX
 text: Come get an introduction to LaTeX from Clara Llebot, Data Management Specialist at OSU Libraries. 
