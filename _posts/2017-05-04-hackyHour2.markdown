@@ -1,5 +1,5 @@
 ---
-title: Hacky Hour!
+title: Hacky Hour
 text: Come socialize and network with others interested in Open Science and Computational Science.
 location: McMenniman's on Monroe, Corvallis, OR
 link: https://github.com/vantuyls/studyGroup/issues/15
