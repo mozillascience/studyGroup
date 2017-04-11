@@ -1,5 +1,5 @@
 ---
-title: Study Group Meetup Introduction to Mapbox
+title: Study Group Meetup - Introduction to Mapbox
 text: Come get an introduction to Mapbox from Matt Gregory, Senior Faculty Research Assistant in the Department of Forest Ecosystems and Society. 
 location: Willamette East and West Classrooms - The Valley Library
 link: https://github.com/vantuyls/studyGroup/issues/15
