@@ -1,0 +1,10 @@
+---
+title: Micro Working Open Workshop (Git and GitHub)
+text: organized by Mozilla Science Fellows (Bruno and Kirstie)
+location: London (UK)
+link: https://www.eventbrite.co.uk/e/micro-working-open-workshop-git-and-github-tickets-6217345247
+date: 2017-04-28
+startTime: '18:00'
+endTime: '20:30'
+
+---
