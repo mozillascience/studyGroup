@@ -5,5 +5,5 @@ location: MP408
 link: https://github.com/UofTCoders/Events/issues/98
 date: 2017-05-10
 startTime: '18:10'
-endTime: '22:00'
+endTime: '19:00'
 ---
