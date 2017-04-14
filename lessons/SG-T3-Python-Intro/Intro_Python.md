@@ -38,17 +38,13 @@ N.B. The & sign at the end allows spyder to run in the background so you can sti
 
 A window that looks something like this should have opened (it may appear marginally different depending on your operating system and Spyder version):
 
-<img src="../Images/spyder_open.png"/>
+<img src="../Images/spyder_open.png" width="1000"/>
 
 * The left hand side is your Script editor. Here you can write and edit your Python code, and when it's ready, send it to the Console to run. You can save your scripts so that you can come back to them at a later date to re-run them or to send them to other researchers. 
 * The top right hand window has three tabs - Object inspector (This contains all of the objects you have created), Variable explorer (This contains all of the variables you have created) and File explorer (this shows all of the files in your current working directory). Today, you're going to want to view the Variable explorer tab. I'll explain more about this a little later. Your tab bar will look like this:
-    <p align=center>
-    <img src="./Images/variable_explorer.png"/>
-    </p>		
+    <center><img src="../Images/variable_explorer.png"/></center>
 * The bottom right hand side is the Console. This is where your script will run. There are three tabs to this window, two console types (Console and IPython Console) and the history tab. We're going to want to have the Console tab open. It should look like this:
-    <p align=center>
-    <img src="./Images/console.png"/>
-    </p>
+    <center><img src="../Images/console.png"/></center>
 
 ### Python Version 2 vs. Python Version 3
 If possible when installing, you should install Python 3 as this is the most up-to-date version. However some users may already have Python 2 installed or prefer to use Python 2. There are some functional differences between the two (see [here](https://wiki.python.org/moin/Python2orPython3) for more details) but today it shouldn't matter too much which version you have. I'll point out any differences during the tutorial. 
@@ -75,23 +71,17 @@ print(text)
 ```
 
 You can then run your script by clicking on the "Run" green arrow in the top bar:
-<p align=center>
-<img src="./Images/run_arrow.png"/>
-</p>
+<center><img src="../Images/run_arrow.png"/></center>
 
 When you run a script for the first time you'll be asked to save it. Choose an appropriate name and location and save the file. 
 
 After running the script, you'll notice that your console has now changed:
-<p align=center>
-<img src="./Images/variable_out.png"/>
-</p>
+<center><img src="../Images/variable_out.png"/></center>
 The text has been printed in the console. Throughout the tutorial this is going to be the pattern we follow. Edit the script, run in the console, look at what is printed to the console.
  
 
 You should also have noticed that the Variable explorer on the top left hand side has changed (if it hasn't, click the small refresh arrow to the right). It now contains the variable "text" and information about the variable type (str = string):
-<p align=center>
-<img src="./Images/variable_explorer_2.png"/>
-</p>
+<center><img src="../Images/variable_explorer_2.png"/></center>
 
 Now we've made our first variable, go back to your script and edit it as follows:
 ```
@@ -109,9 +99,7 @@ Here I've introduced two new variable types - integers (whole numbers) and float
 Run your script and look at the changes in the console. 
 
 You'll also have noticed that Variable explorer now contains two more variables, both with different types:
-<p align=center>
-<img src="./Images/variable_explorer_3.png"/>
-</p>
+<center><img src="../Images/variable_explorer_3.png"/></center>
 
 Within your script you can declare as many variables as you like as long as the name is unique. Now we'll take a look at some of the things you can do with these variables.
 
@@ -167,9 +155,7 @@ print(x + y)
 ```
 
 When doing this you should have seen an error that looks like this in the console:
-<p align=center>
-<img src="./Images/adding_error.png"/>
-</p>
+<center><img src="../Images/adding_error.png"/></center>
 
 Error messages in Python are great for telling you what is wrong and where in the script the error has occurred. Here it is telling us that it is unable to add an integer (int) and a string (str) and that the error occurs on line 12 of the script. You should make yourself familiar with error messages. The more coding you learn, the more you will see them!
  
@@ -254,9 +240,7 @@ print(shopping)
 ```
 
 The entire list has been printed to console. You'll also notice that the variable explorer now contains a new variable with the type "list" and size "4":
-<p align=center>
-<img src="./Images/list_variable.png"/>
-</p>
+<center><img src="../Images/list_variable.png"/></center>
 
 In the same way that we used indexing to isolate certain characters from a string, indexing can be used to isolate certain elements of a list, as follows:
 ```
@@ -371,9 +355,7 @@ for item in shopping:
 
 You should see an error like follows:
 
-<p align=center>
-<img src="./Images/indentation_error.png"/>
-</p>
+<center><img src="../Images/indentation_error.png"/></center>
 
 As well as clear indentation, you'll have noticed that I separate my code into sections using line breaks. This isn't essential, but makes the code easier to read and makes for good practice. 
 
