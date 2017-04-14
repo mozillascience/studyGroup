@@ -40,7 +40,7 @@ N.B. The & sign at the end allows spyder to run in the background so you can sti
 
 A window that looks something like this should have opened (it may appear marginally different depending on your operating system and Spyder version):
 
-<img src="../Images/spyder_open.png"/>
+![](../Images/spyder_open.png")
 
 * The left hand side is your Script editor. Here you can write and edit your Python code, and when it's ready, send it to the Console to run. You can save your scripts so that you can come back to them at a later date to re-run them or to send them to other researchers. 
 * The top right hand window has three tabs - Object inspector (This contains all of the objects you have created), Variable explorer (This contains all of the variables you have created) and File explorer (this shows all of the files in your current working directory). Today, you're going to want to view the Variable explorer tab. I'll explain more about this a little later. Your tab bar will look like this:
