@@ -28,9 +28,7 @@ python --version
 If you're using Windows, you'll need to download software that allows you to run Python. Today we're going to use [Spyder](https://github.com/spyder-ide/spyder) as it has a nice graphical user interface (GUI), similar to RStudio. I would recommend the installation option via Anaconda, and the Python 3.6 version. Mac and Unix users can also download this software if they'd prefer to use the GUI. 
 
 Once installed, launch Spyder. On a Windows machine, you should now have Spyder in your available programmes. Click the symbol to launch:
-<p align=center>
-<img src="./Images/spyder_win.png"/ width="100"/>
-</p>
+<center><img src="../Images/spyder_win.png" width="100"/></center>
 
 If you have installed with Anaconda on a Mac or Unix platform, you can launch Spyder from the command line as follows:
 ```
