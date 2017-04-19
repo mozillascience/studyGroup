@@ -2,7 +2,7 @@
   title: R Markdown
   text: Learn how to produce amazing documents with R code! 
   location: AERL 107
-  link: https://jepa.github.io/studyGroup/
+  link: https://github.com/jepa/studyGroup/tree/gh-pages/lessons/R_Markdown
   date: 2017-04-21
   startTime: '16:00'
   endTime: '17:00'
