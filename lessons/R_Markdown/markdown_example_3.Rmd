@@ -3,19 +3,19 @@ title: "Non Dynamic stuff with R Markdown, pdf"
 author: "JEPA"
 date: "April 21, 2017"
 output:
-  word_document:
-    toc: yes
   pdf_document:
     fig_height: 2
     fig_width: 3
     highlight: haddock
+    toc: yes
+  word_document:
     toc: yes
 ---
 
 ``` {r setup, echo = FALSE, eval = TRUE, message = FALSE, warning = FALSE}
 library(dplyr)
 library(tidyr)
-library(stringr)
+#library(stringr)
 library(ggplot2)
 # install.packages('DT')
 library(DT)

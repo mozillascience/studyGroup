@@ -1,9 +1,19 @@
 
+```r
 # Libraries needed
+#The basics:
+#install.packages('dplyr')
+library(dplyr)
+#install.packages('ggplot2')
+library(ggplot2)
 
+#Some fancy tables
+# install.packages('DT')
+library(DT)
+# install.packages('knirt')
+library(knitr)
 library(data.table)
-library(knirt)
-
+```
 # rmarkdown_R
 This tutorial was adapted from the tutorial created by [Casey O'Hara](https://github.com/oharac) from the [eco-data-science Tutorial](https://github.com/eco-data-science/rmarkdown_R)
 
@@ -34,9 +44,14 @@ Check out what it looks like!  pretty nice, pretty easy.
 
 
 # Cool references
-
-[Here's a great R Markdown reference sheet](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) and a similar but more colorful [R Markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf), including basic Markdown formatting.  No need to recreate all the different formatting options here; but you should get to know and love the following, which are all easy:
+[R Markdown Website](http://rmarkdown.rstudio.com/lesson-1.html)
+[Here's a great R Markdown reference sheet](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) and a similar but more colorful 
+[R Markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf), including basic Markdown formatting.  No need to recreate all the different formatting options here; but you should get to know and love the following, which are all easy:
 
 [Print out this awesome reference sheet](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) or [this awesome cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) and nail it to your monitor.
 
 More code chunk options can be found on the [R Markdown reference sheet](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) or [R Markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf), or at http://rmarkdown.rstudio.com/authoring_rcodechunks.html.  Some of these are also shown later in this document.
+* citations and bibliographies: http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
+* [Themes and Highlights](http://rmarkdown.rstudio.com/html_document_format.html#appearance-and-style) - make your docs look fancy with [Bootswatch themes](http://bootswatch.com/) and syntax highlighting style ()
+* [Knit Options](http://yihui.name/knitr/options/#package_options) - more control over how your document knits
+* [knitr::knit_child()](https://www.rforge.net/doc/packages/knitr/knit_child.html) - knitting multiple Rmd documents into one (Gavin)

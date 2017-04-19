@@ -17,7 +17,6 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 library(ggplot2)
-# install.packages('DT')
 library(DT)
 library(knitr)
 
@@ -27,7 +26,7 @@ There are some cool stuff you can do with `Rmarkdown` when you `knit` it to .htm
 
 ## Dynamic tables
 
-For this example we're gonna use our classic [Alaska](http://www.seaaroundus.org/?gclid=Cj0KEQjw8tbHBRC6rLS024qYjtEBEiQA7wIDeUk0hWAQ_MkdhsIBczR7jaN3qC4ndTuExVUNThk0g2kaArm88P8HAQ) fisheries data from Sea Around Us. There are probablly many packages that can be used to show dynamic tables, I know [datatable](https://rstudio.github.io/DT/) so will show some examples:
+For this example we're gonna use our classic [Alaska](http://www.seaaroundus.org/?gclid=Cj0KEQjw8tbHBRC6rLS024qYjtEBEiQA7wIDeUk0hWAQ_MkdhsIBczR7jaN3qC4ndTuExVUNThk0g2kaArm88P8HAQ) fisheries data from Sea Around Us. There are probably many packages that can be used to show dynamic tables, I know [datatable](https://rstudio.github.io/DT/) so will show some examples:
 
 ### Normal Table
 

@@ -154,15 +154,3 @@ It's generally a good practice to avoid using `setwd()` in your code anyway - us
 #### Spaces/line breaks
 
 As noted above: Knitting an .Rmd properly is very sensitive to line breaks.  Whenever you want to change the format from one line to the next, include an extra line break in between.  Note that knitting ignores multiple line breaks, so one blank line and ten blank lines will render the same in the final output document.
-
-
-## Appendix 3: More R references
-
-* https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
-* https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf
-* http://www.markitdown.net/markdown
-* http://cpsievert.github.io/slides/markdown/
-* citations and bibliographies: http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
-* [Themes and Highlights](http://rmarkdown.rstudio.com/html_document_format.html#appearance-and-style) - make your docs look fancy with [Bootswatch themes](http://bootswatch.com/) and syntax highlighting style ()
-* [Knit Options](http://yihui.name/knitr/options/#package_options) - more control over how your document knits
-* [knitr::knit_child()](https://www.rforge.net/doc/packages/knitr/knit_child.html) - knitting multiple Rmd documents into one (Gavin)

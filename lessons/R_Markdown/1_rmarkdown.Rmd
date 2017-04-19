@@ -36,7 +36,7 @@ Use R Markdown to highlight the workflow of your code, to share your process. Th
 Use R Markdown to document your results such as for publication. Focus on your research question and present the results in nicely-formatted text, equations, tables, and graphs.
 
 - Hide the work: if they want to see the process, they can dig into the document.
-- Focus on the big picture: formatted writeup and fancy graphs
+- Focus on the big picture: formatted write up and fancy graphs
 - Present results in a format that doesn't even look like code - looks more like a publication.
 
 # R Markdown Structure
@@ -92,13 +92,13 @@ output:
 
 ### Note on spaces and line breaks
 
-Markdown is finicky, but R Markdown is especially finicky about line breaks and spaces.  A single line break is treated about the same as a space.  Between sections with different formatting, it's good to always put a blank line (two line breaks).  If your knitted formattin looks wrong, you probably forgot to space it properly.
+Markdown is finicky, but R Markdown is especially finicky about line breaks and spaces.  A single line break is treated about the same as a space.  Between sections with different formatting, it's good to always put a blank line (two line breaks).  If your knitted formatting looks wrong, you probably forgot to space it properly.
 
 ## 3.Code Chunk
 
 Code chunks allow for pieces of executable R code within your document - basically, mini scripts or pieces of a larger script, with regular Markdown text in between. Each code chunk can access values, functions, and packages defined earlier in the .Rmd, but beyond that, each chunk needs to be self-contained (e.g. if you define a function or a loop, the entire code for that must be within a single code chunk).
 
-Each code chunk starts with three back-ticks (\```) at the start of a line, followed by 'r' in braces. Next comes the code; then the code block ends with a triple backtick on its own line. 
+Each code chunk starts with three back-ticks (\```) at the start of a line, followed by 'r' in braces. Next comes the code; then the code block ends with a triple back tick on its own line. 
 
 * e.g. `` ``` {r chunk name, echo = FALSE, eval = TRUE, message = FALSE, warning = FALSE}``
 
@@ -152,18 +152,13 @@ caption = "Quota Allocation for 2016 According to IPHC"
 
 Outside of code blocks, you can include R code directly in the formatted text. This is helpful if you want to display a value or output in a nicely formatted way. This can access values calculated locally or in other code chunks earlier in the document. To do this, start with a single back-tick followed by 'r', and end with another single back-tick. For example:
 
-The TAC for the 2017 Pacific Halibut seasson was `r TAC`. From the total quota, `r Canada/1000000` million tons where allocated to Canda and `r (Alaska + USA)/1000000 ` million tons for the US (Alasaka = `r Alaska/1000000`, Mainland = `r USA/1000000`).
+The TAC for the 2017 Pacific Halibut season was `r TAC`. From the total quota, `r Canada/1000000` million tons where allocated to Canada and `r (Alaska + USA)/1000000 ` million tons for the US (Alaska = `r Alaska/1000000`, Mainland = `r USA/1000000`).
 
 #### Chunk Visualization in line V.s Console
 
-A fresh new (2017!) version of R Markdown is that the chunk outputs can be visuable inline the chunk. This is specially useful for those like me that have a 13' monitor!  Lets have a look:
+A fresh new (2017!) version of R Markdown is that the chunk outputs can be seen inline the chunk (Notebook!). This is specially useful for those like me that have a 13' monitor!  Lets have a look:
 
 ```{r, eval = TRUE, echo = FALSE, warning=FALSE,message=FALSE}
-
-# Nice table display
-library(knitr)
-
-library(data.table)
 
 Canada <- 7300000
 Alaska <-(4950000 + 9600000 + 2710000 + 1390000 + 1660000)-
@@ -184,7 +179,7 @@ caption = "Quota Allocation for 2016 According to IPHC"
 )
 ```
 
-To change this option you can go to the little screw nest to "knit" buton and select "Chunk Output in Console"/"Chunk Output in inline" that way the output will be normally displayed in the console. 
+To change this option you can go to the little screw nest to "knit" button and select "Chunk Output in Console"/"Chunk Output in inline" that way the output will be normally displayed in the console. 
 
 
 ## 4.- knit it!
@@ -204,15 +199,3 @@ It's generally a good practice to avoid using `setwd()` in your code anyway - us
 #### Spaces/line breaks
 
 As noted above: Knitting an .Rmd properly is very sensitive to line breaks.  Whenever you want to change the format from one line to the next, include an extra line break in between.  Note that knitting ignores multiple line breaks, so one blank line and ten blank lines will render the same in the final output document.
-
-
-## Appendix 3: More R references
-
-* https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
-* https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf
-* http://www.markitdown.net/markdown
-* http://cpsievert.github.io/slides/markdown/
-* citations and bibliographies: http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
-* [Themes and Highlights](http://rmarkdown.rstudio.com/html_document_format.html#appearance-and-style) - make your docs look fancy with [Bootswatch themes](http://bootswatch.com/) and syntax highlighting style ()
-* [Knit Options](http://yihui.name/knitr/options/#package_options) - more control over how your document knits
-* [knitr::knit_child()](https://www.rforge.net/doc/packages/knitr/knit_child.html) - knitting multiple Rmd documents into one (Gavin)
