@@ -11,11 +11,13 @@ For this session we will create a map of the Pacific North West (because we ALL 
 
 1. **Session Matterials:** Get the workshop materials: Go to the repository and click on the "fork" button to create an independent copy within your own GitHub account. Alternately, click on the "clone or download" button. 
 
-2. **Shapefiles:** In here you can download the [Natural Earth 10-m-resolution coastline shapefile](http://www.naturalearthdata.com/downloads/10m-physical-vectors/) and the the [World EEZ v8 (2014-02-28, 65 MB))](http://www.marineregions.org/downloads.php) located under "Exclusive Economic Zones Boundaries (EEZ)".
+2. **Shapefiles:** In here you can download the [Natural Earth 10-m-resolution coastline shapefile](http://www.naturalearthdata.com/downloads/10m-physical-vectors/) and the [World EEZ v8 (2014-02-28, 65 MB))](http://www.marineregions.org/downloads.php) (download the low res file, it's faster to plot) located under "Exclusive Economic Zones Boundaries (EEZ)".
 
 *Note*: if you followed step 1, save the shapefiles on the *Data* folder
 
-3. **Necessary Packages:** 
+3. **csv files:** All csv files are located in the *Data* folder (*harbour_seal_GPS.csv* and *Pink_Salmon_Occ.csv*)
+
+4. **Necessary Packages:**
 
 
 ```r
@@ -37,5 +39,18 @@ library("ggplot2")
 
 # for point.in.polygon() and spDists()
 #install.packages('sp')
-library("sp") 
+library("sp")
+
+# ggmap()
+#install.packages('ggmap')
+library("ggmap")
+
+# for leaflet() and colorFactor()
+#install.packages('leaflet')
+library("leaflet")
+
+#for htmlEscape()
+#install.packages('htmltools')
+library("htmltools")
+
 ```

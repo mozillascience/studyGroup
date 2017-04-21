@@ -1,0 +1,118 @@
+---
+title: "Dynamic stuff with R Markdown, HTML"
+author: "CCO, JA"
+date: "October 12, 2015"
+output: 
+  html_document:
+    toc: true
+    theme: spacelab
+    highlight: haddock
+  pdf_document:
+    toc: true
+    highlight: haddock
+---
+
+``` {r setup, echo = FALSE, eval = TRUE, message = FALSE, warning = FALSE}
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(ggplot2)
+library(DT)
+library(knitr)
+
+```
+
+There are some cool stuff you can do with `Rmarkdown` when you `knit` it to .html. Among the most cool stuff that you can do are dynamic outputs (tables and figures).
+
+## Dynamic tables
+
+For this example we're gonna use our classic [Alaska](http://www.seaaroundus.org/?gclid=Cj0KEQjw8tbHBRC6rLS024qYjtEBEiQA7wIDeUk0hWAQ_MkdhsIBczR7jaN3qC4ndTuExVUNThk0g2kaArm88P8HAQ) fisheries data from Sea Around Us. There are probably many packages that can be used to show dynamic tables, I know [datatable](https://rstudio.github.io/DT/) so will show some examples:
+
+### Normal Table
+
+```{r Table_example, echo=F, eval=T}
+
+Alaska_Data <- read.csv("data/Alaska.csv")
+
+datatable(Alaska_Data[1:5])
+
+```
+
+### Other Options
+
+```{r Table_example_II, echo=T, eval=T}
+
+Alaska_Data <- read.csv("data/Alaska.csv")
+
+datatable(Alaska_Data[1:5],
+          caption = 'Table 1: This is a simple caption for the table.',
+          filter = 'top', options = list(
+  pageLength = 5, autoWidth = TRUE
+)
+)
+
+```
+
+
+
+### Dynamic Maps
+
+Remember our map example of last session? Well, you can use [leaflet](https://rstudio.github.io/leaflet/markers.html) to show dynamic maps in R-markdown! Say whaaaaaaaaaat?
+
+```{r leafletMap, echo=F,eval=T, message=F}
+
+library(leaflet)
+library(htmltools)
+
+data <- quakes
+
+FEDECOOP <- paste(sep = "<br/>",
+                    "<b><a href='http://www.fedecoop.com.mx'>MetaID 342</a></b>",
+                    "Lobster Stock Assesment and Catch from FEDECOOP since 1970",
+                    "Private Dataset"
+  )
+
+leaflet(data) %>%
+      addTiles(
+        urlTemplate = "//{s}.tiles.mapbox.com/v3/jcheng.map-5ebohr46/{z}/{x}/{y}.png",
+        attribution = 'Maps by <a href="http://www.mapbox.com/">Mapbox</a>'
+      ) %>%
+      #Initial view #
+      setView(lng = -102.5528, 
+              lat = 23.6345,
+              zoom = 5) %>% 
+      # Data examples as markers ####
+    addCircleMarkers(lng = -109.4725,
+               lat = 24.6356, 
+               popup = "7654")%>%
+      addMarkers(lng = -95.8084852,
+                 lat = 20.5764432,
+                 popup = "Where I lost my Dive watch"
+      )%>%
+      addMarkers(lng = -107.8084852,
+                 lat = 15.5764432,
+                 popup = "Collection point"
+      )%>%
+      # Data examples as rectangles ####
+    addRectangles(
+      lng1=-107.607877, lat1=18.459820,
+      lng2=-110.557877, lat2=17.431188,
+      color="red",
+      fillColor = "red",
+      fillOpacity = 0,
+      popup = "The We all love fish MPA; Since 1980"
+    ) %>% 
+      addRectangles(
+        lng1=-115.507877, lat1=28.400000,
+        lng2=-115.557877, lat2=28.421188,
+        color="green",
+        fillColor = "green",
+        fillOpacity = 0.2,
+        popup = FEDECOOP
+      ) %>% 
+  addTiles() %>%
+  addMarkers(
+  clusterOptions = markerClusterOptions()
+)
+  
+```

@@ -32,7 +32,19 @@ library("sp")
 
 # for kable()
 #install.packages('knirt')
-library(knitr) 
+library("knitr") 
+
+# ggmap()
+#install.packages('ggmap')
+library("ggmap")
+
+# for leaflet() and colorFactor()
+#install.packages('leaflet')
+library("leaflet")
+
+#for htmlEscape()
+#install.packages('htmltools')
+library("htmltools")
 
 ```
 
@@ -49,7 +61,7 @@ The first step is to gather the data. As you might already know, maps come in sh
 There are many sources of data for the coastlines, including data sets built into R packages maps and mapdata. However, just because this is how I learned it we are using the [Natural Earth 10-m-resolution coastline shapefile](http://www.naturalearthdata.com/downloads/10m-physical-vectors/).
 
 #### Download the EEZs
-You want to access the [Marine Regions](http://www.marineregions.org/downloads.php) website and download the *"World EEZ v8 (2014-02-28, 65 MB)"* located under "Exclusive Economic Zones Boundaries (EEZ)". Check out how many cool maps/layers you can download here! 
+You want to access the [Marine Regions](http://www.marineregions.org/downloads.php) website and download the *"World EEZ v8 (2014-02-28, 65 MB)"* (select the low res file, it's faster to plot) located under "Exclusive Economic Zones Boundaries (EEZ)". Check out how many cool maps/layers you can download here! 
 
 *Note:* In coding "Order is progress", hence try your best (sometimes is really hard) to keep your s...tuff organized. I for instance, like to have a folder in my project called *Data* where I store all the data I will use. 
 
@@ -141,7 +153,7 @@ Map_Base <- ggplot() +
             aes(x = long, y = lat, group = group), 
             color = "black",
             size = 0.25) + 
-  coord_map(projection = "mercator") + #Try plotting the map without this! 
+  coord_map(projection = "mercator") + #Try plotting the map without this!
   scale_x_continuous(limits = xlims,
                      expand = c(0, 0)) + 
   scale_y_continuous(limits = ylims,
@@ -173,8 +185,8 @@ So Now that we have a nice base map of the overall area of study. We now want to
 #We repeat the same steps than before...
 
 #### Load World map of EEZ (takes waaaay more time) ####
-path_eez_world <- "./Data/World_EEZ_v8_2014"
-fnam_eez_world <- "World_EEZ_v8_2014_HR.shp"
+path_eez_world <- "./Data/World_EEZ_v8_20140228_LR"
+fnam_eez_world <- "World_EEZ_v8_2014.shp"
 
 eez_world <- readOGR(dsn   = path_eez_world,
                      layer = file_path_sans_ext(fnam_eez_world))
@@ -188,15 +200,9 @@ eez_world <- readOGR(dsn   = path_eez_world,
 # with 249 features
 # It has 14 fields
 
-#fortify is a function of the ggplo2 package that turns a map (shpaefile) into a data frame than can more easily be plotted with ggplot2.
+#fortify is a function of the ggplo2 package that turns a map (shapefile) into a data frame than can more easily be plotted with ggplot2.
 
 # For more info. check this out (https://github.com/tidyverse/ggplot2/wiki/plotting-polygon-shapefiles)
-
-fortify.shape <- function(x){
-  x@data$id <- rownames(x@data)
-  x.f = fortify(x, region = "id")
-  x.join <- inner_join(x.f, x@data, by = "id")
-}
 
 ```
 
@@ -283,10 +289,9 @@ Map_eez_US
              label  = "USA EEZ --->") +
   ggtitle("Pacific North West With EEZs")
 
-  
 
 # Extract the  polygon to save
-#where dataset is the fortified data, piece is the part of the poligon you want.
+# where dataset is the fortified data, piece is the part of the polygon you want.
 # Name <- droplevels(filter(dataset, piece == x))
 # write.csv(Name, "FileName.csv")
 
@@ -299,45 +304,52 @@ Lets say you are working with Pink salmon (Cus' Pink is my new obsession, cus' P
 
 For this part we are gonna use the function "point.in.polygon" from the "sp" package. This amazing function extracts the data within the limits you give it. In this case, it will put a "1" for points inside the EEZ and a "0" for points outside the EEZ.
 
-```{r Habitat Suitabillity, echo=F,eval=F}
+```{r Habitat Suitabillity, echo=T, eval=T, warning=F}
 
-# Pink_Occ <- read.csv("./Data/Pink_Occ.csv")
-# 
-# # # # Extract Canada's EEZ polygon to save
-# # Can_EEZ <- droplevels(filter(eez_Can, piece == 4))
-# 
-# #First, lets see if the subsetting inside te EEZ works using the Occurance data...
-# In_eez_Can_Occ <- point.in.polygon(Pink_Occ$Longitude,
-#                                    Pink_Occ$Latitude,
-#                                    Can_EEZ$long,
-#                                    Can_EEZ$lat)
-# 
-# # Add a column to sim.obs with this information:
-# Pink_Occ$EEZ<- In_eez_Can_Occ
-# 
-# # Extract the observations in sim.obs that occur inside the EEZ:
-# Pink_Occ_EEZ <- Pink_Occ %>%
-#   filter(EEZ == 1)  %>%
-#   select(-EEZ)
-# 
-# Map_eez_Can +
-#   geom_point(data = Pink_Occ_EEZ,
-#                 aes(x = Longitude,
-#                       y = Latitude
-#                     ),
-#              colour = "green",
-#              size = 2) +
-#   geom_point(data=Pink_Occ,
-#              aes(x=Longitude,
-#                  y=Latitude),
-#              colour = "gray75",
-#              size = 2)
+Pink_Occ <- read.csv("./Data/Pink_Salmon_Occ.csv")
+
+# Add Pink Salmon occurence location to the map
+Map_Pink_Occ <- Map_eez_US +
+                  geom_point(data = Pink_Occ,
+                             aes(x = Longitude,
+                                 y = Latitude),
+                             colour = "gray75",
+                             size = 2)
+Map_Pink_Occ
+
+
+# Extract Canada's EEZ polygon to save
+Can_EEZ <- droplevels(filter(eez_Can, piece == 4))
+
+#First, lets see if the subsetting inside te EEZ works using the Occurance data...
+In_eez_Can_Occ <- point.in.polygon(Pink_Occ$Longitude,
+                                   Pink_Occ$Latitude,
+                                   Can_EEZ$long,
+                                   Can_EEZ$lat)
+
+# Add a column to Pink_Occ with this information:
+Pink_Occ$EEZ <- In_eez_Can_Occ
+
+# Extract the observations in Pink_Occ that occur inside the EEZ:
+Pink_Occ_EEZ <- Pink_Occ %>%
+                filter(EEZ == 1) %>%
+                select(-EEZ)
+
+# Highlight the Pink salmon locations occurence inside the EEZ in Canada
+Map_Pink_Occ +  
+  geom_point(data = Pink_Occ_EEZ,
+              aes(x = Longitude,
+                  y = Latitude),
+           colour = "red",
+           size = 2)
+
 ```
 
 
 # ggmap
 
 [ggmap quickstart](https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/ggmap/ggmapCheatsheet.pdf)
+
 [GitHub](https://github.com/dkahle/ggmap)
 
 The package [ggsn](https://github.com/oswaldosantos/ggsn) allows you to add a scale bar on the map.
@@ -350,23 +362,23 @@ data <- read.csv("./Data/harbour_seal_GPS.csv")
 library(ggmap)
 
 myLocation <- c(min(data$Longitude) - 0.1,
-								min(data$Latitude)  - 0.1,
-								max(data$Longitude) + 0.1,
-								max(data$Latitude)  + 0.1)
+                min(data$Latitude)  - 0.1,
+                max(data$Longitude) + 0.1,
+                max(data$Latitude)  + 0.1)
 
 myMap <- get_map(myLocation,
-								 source   = "stamen",
-								 maptype  = "toner",
-								 crop     = TRUE)
+                 source   = "stamen",
+                 maptype  = "toner",
+                 crop     = TRUE)
 
 
-myPlot <- ggmap(myMap, extent = "panel", maprange = FALSE) + 
-						geom_point(data = data, aes(x = Longitude, y = Latitude, colour = factor(sealID)), alpha = 0.7) +
-						theme(legend.position = "none", text = element_text(size = 12)) + 
-						ylab("Latitude") +
-						xlab("Longitude")
+Seal_map <- ggmap(myMap, extent = "panel", maprange = FALSE) + 
+              geom_point(data = data, aes(x = Longitude, y = Latitude, colour = factor(sealID)), alpha = 0.7) +
+              theme(legend.position = "none", text = element_text(size = 12)) + 
+              ylab("Latitude") +
+              xlab("Longitude")
 
-myPlot
+Seal_map
 
 # Save you map in pdf
 # ggsave("File name", myPlot, width = 60, height = 30, dpi = 400, units = "in", scale = 0.2)
@@ -378,28 +390,25 @@ myPlot
 # Leaflet for R
 
 https://rstudio.github.io/leaflet/
+
 [GitHub](https://github.com/rstudio/leaflet)
 
 
 ## Leaflet example
 
-```{r leaflet, echo=F,eval=T}
-
-# Create color palette
-#pal  <- colorFactor(c("navy", "red", "darkgreen"), domain = unique(data$sealID))
+```{r leaflet, echo=T,eval=F}
 
 library(leaflet)
 library(htmltools)
 
+# Create color palette
+pal  <- colorFactor(c("navy", "red", "darkgreen"), domain = unique(data$sealID))
+
 leaflet(data) %>%
-  addTiles(
-    urlTemplate = "//{s}.tiles.mapbox.com/v3/jcheng.map-5ebohr46/{z}/{x}/{y}.png",
-    attribution = 'Maps by <a href="http://www.mapbox.com/">Mapbox</a>'
-  ) %>%
+  addTiles() %>%
   setView(lng = -124.027526, lat = 49.371036, zoom = 7) %>%
   addCircleMarkers(
-    color = ~sealID,
-    #color       = ~pal(sealID),
+    color       = ~pal(sealID),
     radius      = 5,
     fillOpacity = 0.5,
     stroke      = FALSE,
@@ -410,5 +419,9 @@ leaflet(data) %>%
 ```
 
 
-#### Cool Maps sources
+#### Cool resources
+
 [Marine Regions](http://www.marineregions.org/downloads.php)
+
+[Spatial Cheatsheet](http://www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html)
+
