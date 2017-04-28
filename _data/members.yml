@@ -1,6 +1,17 @@
-- name: Bill Mills
-  affiliation: TRIUMF
-  github: BillMills
+- name: Marc Galland
+  affiliation: University of Amsterdam
+  github: mgalland
   interests:
+    - Plants
+    - Omics
     - Programming
+    - Data Analysis
+
+- name: Mateusz Kuzak
+  affiliation: Netherlands eScience Center
+  github: mkuzak
+  interests:
+    - Open Source
     - Open Science
+    - Open Education
+    - Reproducible Reasearch
