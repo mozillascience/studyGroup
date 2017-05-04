@@ -18,7 +18,6 @@
   github: lwjohnst86
   interests:
     - R
-    - SAS
 
 - name: Elliott Sales de Andrade
   position: Technical Admin
@@ -36,3 +35,11 @@
   interests:
     - Python
     - R
+
+- name: Joel Östblom
+  position: Course Coordinator
+  degree: PhD, IBBME
+  github: joelostblom
+  interests:
+    - Python
+    - Linux
