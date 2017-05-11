@@ -4,7 +4,7 @@
 #Step 1: give your study group a name and a short description,
 #and choose a language from the options in the _data directory:
 title: Amsterdam Science Park Study Group
-description: "A study group."
+description: "We are a group of students and researchers dedicated to learning, sharing scientific coding techniques and knowledge in an effort to improve scientific research."
 language: en
 
 #Step 2: press the green 'Commit Changes' button at the bottom of this page.
@@ -20,7 +20,7 @@ language: en
 
 titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
 headlineSmall: "Welcome to the Amsterdam Science Park Study Group!"
-headlineMain: "By working together, we can speed up research by solving code-related issues and improving programming practises"
+headlineMain: "Let's work together to speed up research"
 
 # Setup Google Calendar
 # Usage:
@@ -28,9 +28,9 @@ headlineMain: "By working together, we can speed up research by solving code-rel
 # 2. change 'USER' in the example urls below to the username of the google account you made for your calendar
 # 3. set calendar_on: True.
 
-calendar_on: False
-calendar_embed_url: "https://www.google.com/calendar/embed?src=USER@gmail.com"
-calendar_ical_url: "https://www.google.com/calendar/ical/USER@gmail.com/public/basic.ics"
+calendar_on: True
+calendar_embed_url: "https://www.google.com/calendar/embed?src=amsterdamscienceparkstudygroup@gmail.com"
+calendar_ical_url: "https://www.google.com/calendar/ical/amsterdamscienceparkstudygroup@gmail.com/public/basic.ics"
 
 
 #========================================
