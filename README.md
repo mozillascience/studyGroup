@@ -1,6 +1,6 @@
-##Welcome to the Research Bazaar Arizona (ResBazAZ)! 
+## Welcome to the Research Bazaar Arizona (ResBazAZ)! 
 
-###Where to find key resources?
+### Where to find key resources?
 You can get reminders about upcoming events from [Twitter](https://twitter.com/ResBazAZ) 
 and 
 [Meetup.com] (https://www.meetup.com/ResBazAZ/). 
@@ -10,15 +10,15 @@ To contact us for help with your coding projects, ping us on our [gitter](https:
 For more general information about us see [our  website here] (http://resbazaz.github.io/studyGroup/) 
 
 
-###Who we are:
+### Who we are:
 We are a group of people with diverse backgrounds and expertise who come together to do research. 
 We are students, post-docs, faculty, researchers, and more. 
 
-###What we do:
+### What we do:
 We work in fields like science, humanities, health, and engineering. We use technology (e.g. programming) to further our data analysis and inquiry.
 We range in levels of proficiency, from beginner to expert. 
 
-###Why are we at ResBaz?:
+### Why are we at ResBaz?:
 When researchers from different fields collaborate, incredible things can happen! Everyone has something valuable to contribute, and we all have things to learn. ResBazAZ is more than a help desk, its a community of enthusiastic researchers.
 
 
