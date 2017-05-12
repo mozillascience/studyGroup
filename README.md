@@ -3,11 +3,11 @@
 ### Where to find key resources?
 You can get reminders about upcoming events from [Twitter](https://twitter.com/ResBazAZ) 
 and 
-[Meetup.com] (https://www.meetup.com/ResBazAZ/). 
+[Meetup.com](https://www.meetup.com/ResBazAZ/). 
 
 To contact us for help with your coding projects, ping us on our [gitter](https://gitter.im/resbaz/Arizona). 
 
-For more general information about us see [our  website here] (http://resbazaz.github.io/studyGroup/) 
+For more general information about us see [our  website here](http://resbazaz.github.io/studyGroup/) 
 
 
 ### Who we are:
