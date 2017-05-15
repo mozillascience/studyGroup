@@ -1,0 +1,9 @@
+---
+title: Coworking Session - Unit Testing/Pair Programming
+text: Work on your projects together, with a focus on learning to unit test your code. Beginners welcome!
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/103
+date: 2017-06-14
+startTime: '18:10'
+endTime: '19:30'
+---
