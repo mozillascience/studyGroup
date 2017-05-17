@@ -2,17 +2,17 @@
 title: "Dynamic stuff with R Markdown, HTML"
 author: "CCO, JA"
 date: "October 12, 2015"
-output: 
+output:
   html_document:
-    toc: true
+    highlight: haddock
     theme: spacelab
-    highlight: haddock
+    toc: yes
   pdf_document:
-    toc: true
     highlight: haddock
+    toc: yes
 ---
 
-``` {r setup, echo = FALSE, eval = TRUE, message = FALSE, warning = FALSE}
+```{r setup, echo = FALSE, eval = TRUE, message = FALSE, warning = FALSE}
 library(dplyr)
 library(tidyr)
 library(stringr)
@@ -30,7 +30,7 @@ For this example we're gonna use our classic [Alaska](http://www.seaaroundus.org
 
 ### Normal Table
 
-```{r Table_example, echo=F, eval=T}
+```{r Table_example, echo=F, eval=F}
 
 Alaska_Data <- read.csv("data/Alaska.csv")
 

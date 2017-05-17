@@ -25,7 +25,7 @@ Use R Markdown to highlight the workflow of your code, to share your process. Th
 Use R Markdown to document your results such as for publication. Focus on your research question and present the results in nicely-formatted text, equations, tables, and graphs.
 
 - Hide the work: if they want to see the process, they can dig into the document.
-- Focus on the big picture: formatted writeup and fancy graphs
+- Focus on the big picture: formatted write up and fancy graphs
 - Present results in a format that doesn't even look like code - looks more like a publication.
 
 # R Markdown Structure
@@ -81,13 +81,13 @@ output:
 
 ### Note on spaces and line breaks
 
-Markdown is finicky, but R Markdown is especially finicky about line breaks and spaces.  A single line break is treated about the same as a space.  Between sections with different formatting, it's good to always put a blank line (two line breaks).  If your knitted formattin looks wrong, you probably forgot to space it properly.
+Markdown is finicky, but R Markdown is especially finicky about line breaks and spaces.  A single line break is treated about the same as a space.  Between sections with different formatting, it's good to always put a blank line (two line breaks).  If your knitted formatting looks wrong, you probably forgot to space it properly.
 
 ## 3.Code Chunk
 
 Code chunks allow for pieces of executable R code within your document - basically, mini scripts or pieces of a larger script, with regular Markdown text in between. Each code chunk can access values, functions, and packages defined earlier in the .Rmd, but beyond that, each chunk needs to be self-contained (e.g. if you define a function or a loop, the entire code for that must be within a single code chunk).
 
-Each code chunk starts with three back-ticks (\```) at the start of a line, followed by 'r' in braces. Next comes the code; then the code block ends with a triple backtick on its own line. 
+Each code chunk starts with three back-ticks (\```) at the start of a line, followed by 'r' in braces. Next comes the code; then the code block ends with a triple back tick on its own line. 
 
 * e.g. `` ``` {r chunk name, echo = FALSE, eval = TRUE, message = FALSE, warning = FALSE}``
 
@@ -121,11 +121,11 @@ Table: Quota Allocation for 2016 According to IPHC
 
 Outside of code blocks, you can include R code directly in the formatted text. This is helpful if you want to display a value or output in a nicely formatted way. This can access values calculated locally or in other code chunks earlier in the document. To do this, start with a single back-tick followed by 'r', and end with another single back-tick. For example:
 
-The TAC for the 2017 Pacific Halibut seasson was 2.889\times 10^{7}. From the total quota, 7.3 million tons where allocated to Canda and 19.9828 million tons for the US (Alasaka = 18.8428, Mainland = 1.14).
+The TAC for the 2017 Pacific Halibut season was 2.889\times 10^{7}. From the total quota, 7.3 million tons where allocated to Canada and 19.9828 million tons for the US (Alaska = 18.8428, Mainland = 1.14).
 
 #### Chunk Visualization in line V.s Console
 
-A fresh new (2017!) version of R Markdown is that the chunk outputs can be visuable inline the chunk. This is specially useful for those like me that have a 13' monitor!  Lets have a look:
+A fresh new (2017!) version of R Markdown is that the chunk outputs can be seen inline the chunk (Notebook!). This is specially useful for those like me that have a 13' monitor!  Lets have a look:
 
 
 Table: Quota Allocation for 2016 According to IPHC
@@ -134,7 +134,7 @@ Table: Quota Allocation for 2016 According to IPHC
 ---------  --------  --------  ----------
  18842800   7300000   1140000    28890000
 
-To change this option you can go to the little screw nest to "knit" buton and select "Chunk Output in Console"/"Chunk Output in inline" that way the output will be normally displayed in the console. 
+To change this option you can go to the little screw nest to "knit" button and select "Chunk Output in Console"/"Chunk Output in inline" that way the output will be normally displayed in the console. 
 
 
 ## 4.- knit it!

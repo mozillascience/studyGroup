@@ -152,7 +152,7 @@ $(document).ready(function () {
 <p>Use R Markdown to document your results such as for publication. Focus on your research question and present the results in nicely-formatted text, equations, tables, and graphs.</p>
 <ul>
 <li>Hide the work: if they want to see the process, they can dig into the document.</li>
-<li>Focus on the big picture: formatted writeup and fancy graphs</li>
+<li>Focus on the big picture: formatted write up and fancy graphs</li>
 <li>Present results in a format that doesn’t even look like code - looks more like a publication.</li>
 </ul>
 </div>
@@ -201,13 +201,13 @@ output:
 <p><strong>NOTE:</strong> Since Markdown basically converts your formatting to HTML, you can also just include straight HTML tags to do the same thing:</p>
 <div id="note-on-spaces-and-line-breaks" class="section level3">
 <h3>Note on spaces and line breaks</h3>
-<p>Markdown is finicky, but R Markdown is especially finicky about line breaks and spaces. A single line break is treated about the same as a space. Between sections with different formatting, it’s good to always put a blank line (two line breaks). If your knitted formattin looks wrong, you probably forgot to space it properly.</p>
+<p>Markdown is finicky, but R Markdown is especially finicky about line breaks and spaces. A single line break is treated about the same as a space. Between sections with different formatting, it’s good to always put a blank line (two line breaks). If your knitted formatting looks wrong, you probably forgot to space it properly.</p>
 </div>
 </div>
 <div id="code-chunk" class="section level2">
 <h2>3.Code Chunk</h2>
 <p>Code chunks allow for pieces of executable R code within your document - basically, mini scripts or pieces of a larger script, with regular Markdown text in between. Each code chunk can access values, functions, and packages defined earlier in the .Rmd, but beyond that, each chunk needs to be self-contained (e.g. if you define a function or a loop, the entire code for that must be within a single code chunk).</p>
-<p>Each code chunk starts with three back-ticks (```) at the start of a line, followed by ‘r’ in braces. Next comes the code; then the code block ends with a triple backtick on its own line.</p>
+<p>Each code chunk starts with three back-ticks (```) at the start of a line, followed by ‘r’ in braces. Next comes the code; then the code block ends with a triple back tick on its own line.</p>
 <ul>
 <li>e.g. <code>``` {r chunk name, echo = FALSE, eval = TRUE, message = FALSE, warning = FALSE}</code></li>
 </ul>
@@ -256,11 +256,11 @@ output:
 </tbody>
 </table>
 <p>Outside of code blocks, you can include R code directly in the formatted text. This is helpful if you want to display a value or output in a nicely formatted way. This can access values calculated locally or in other code chunks earlier in the document. To do this, start with a single back-tick followed by ‘r’, and end with another single back-tick. For example:</p>
-<p>The TAC for the 2017 Pacific Halibut seasson was 2.88910^{7}. From the total quota, 7.3 million tons where allocated to Canda and 19.9828 million tons for the US (Alasaka = 18.8428, Mainland = 1.14).</p>
+<p>The TAC for the 2017 Pacific Halibut season was 2.88910^{7}. From the total quota, 7.3 million tons where allocated to Canada and 19.9828 million tons for the US (Alaska = 18.8428, Mainland = 1.14).</p>
 </div>
 <div id="chunk-visualization-in-line-v.s-console" class="section level4">
 <h4>Chunk Visualization in line V.s Console</h4>
-<p>A fresh new (2017!) version of R Markdown is that the chunk outputs can be visuable inline the chunk. This is specially useful for those like me that have a 13’ monitor! Lets have a look:</p>
+<p>A fresh new (2017!) version of R Markdown is that the chunk outputs can be seen inline the chunk (Notebook!). This is specially useful for those like me that have a 13’ monitor! Lets have a look:</p>
 <table>
 <caption>Quota Allocation for 2016 According to IPHC</caption>
 <thead>
@@ -280,7 +280,7 @@ output:
 </tr>
 </tbody>
 </table>
-<p>To change this option you can go to the little screw nest to “knit” buton and select “Chunk Output in Console”/“Chunk Output in inline” that way the output will be normally displayed in the console.</p>
+<p>To change this option you can go to the little screw nest to “knit” button and select “Chunk Output in Console”/“Chunk Output in inline” that way the output will be normally displayed in the console.</p>
 </div>
 </div>
 <div id="knit-it" class="section level2">
