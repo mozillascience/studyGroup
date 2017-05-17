@@ -1,10 +1,4 @@
-# Contents file
-
-Look at me!
-
-# Outline
-
-## Overview
+# Overview
 - A website's information is divided into 3 components
   - HTML: content and semantics
   - CSS:  description of appearance (based on semantics)
