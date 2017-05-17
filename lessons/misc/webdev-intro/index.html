@@ -23,15 +23,20 @@
   </section>
 </body>
 
+<script src="app/slideshow.js"></script>
 <script>
 var url = './contents.md';
+var contents = '';
 
 var cFile = new XMLHttpRequest();
 cFile.open('GET', url, true);
 cFile.send();
 cFile.addEventListener('readystatechange', function() {
+    contents = this.responseText;
     if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
         window.setTimeout(renderContents.bind(this, this.responseText), 1000);
+        console.log(this.responseText);
+        console.log(addParentSection(splitContents(this.responseText)));
     }
 });
 
@@ -40,5 +45,4 @@ function renderContents(contentText) {
     document.getElementById('content').innerHTML = html;
 }
 </script>
-<script src="app/slideshow.js"></script>
 </html>
