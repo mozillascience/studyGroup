@@ -1,13 +1,34 @@
 body {
     background: #112
 }
-#content.show-all {
+#content {
     display: flex;
+    flex-direction: column;
+}
+#content.horizontal {
+    flex-direction: row;
+    overflow: scroll;
 }
 section.slide {
-    padding: 1rem;
+    padding: 2rem;
     background: #eef;
     margin: 1rem;
     min-width: 50%;
 }
-
+section.slide > p:first-child {
+    color: #777;
+    font-size: large;
+    margin: -1rem;
+}
+section.slide h1 {
+    margin: -1rem;
+}
+#content.show-all .slide {
+    display: block;
+}
+#content .slide {
+    display: none;
+}
+#content .slide.shown {
+    display: block;
+}

@@ -26,7 +26,7 @@ function addParentSection(slides) {
     var result = [];
     for (let i in slides) {
         if (slides[i].startsWith('##'))
-            result[i] = `# `.concat(prev, '\n', slides[i]);
+            result[i] = prev.concat('\n', slides[i]);
         else {
             prev = slides[i].split('\n')[0].slice(1).trim();
             result[i] = slides[i];
@@ -49,8 +49,11 @@ function makeSlideElements(text, addParent) {
     return elms;
 }
 
-function startSlides(rootElm, url) {
+var cElm, nElm;
+function startSlides(contentElm, navElm, url) {
     var url = './contents.md';
+    cElm = contentElm;
+    nElm = navElm;
 
     var xlr = new XMLHttpRequest();
     xlr.open('GET', url, true);
@@ -58,7 +61,7 @@ function startSlides(rootElm, url) {
     xlr.addEventListener('readystatechange', function() {
         contents = this.responseText;
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-            window.setTimeout(renderContents.bind(this, rootElm, this.responseText), 1000);
+            window.setTimeout(renderContents.bind(this, contentElm, this.responseText), 1000);
         }
     });
 
@@ -66,5 +69,18 @@ function startSlides(rootElm, url) {
         rootElm.innerHTML = '';
         for (let elm of makeSlideElements(contents, true))
             rootElement.appendChild(elm);
+        rootElm.children[0].classList.add('shown');
+
     }
+}
+
+function prevSlide() {
+    var current = cElm.getElementsByClassName('shown')[0];
+    current.classList.remove('shown');
+    current.previousElementSibling.classList.add('shown');
+}
+function nextSlide() {
+    var current = cElm.getElementsByClassName('shown')[0];
+    current.classList.remove('shown');
+    current.nextElementSibling.classList.add('shown');
 }
