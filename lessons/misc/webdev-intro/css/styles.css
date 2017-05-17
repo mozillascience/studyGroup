@@ -1,7 +1,13 @@
 body {
     background: #112
 }
-section {
-    padding: 2em;
-    background: #eef;
+#content.show-all {
+    display: flex;
 }
+section.slide {
+    padding: 1rem;
+    background: #eef;
+    margin: 1rem;
+    min-width: 50%;
+}
+

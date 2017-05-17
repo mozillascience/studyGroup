@@ -8,7 +8,7 @@
   <meta name="description" content="Presentation about html/css/js basics">
   <meta name="author" content="John Ladan">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,32 +17,16 @@
 </head>
 
 <body>
-  <section id='content'>
+  <div id='content'>
       <h1>Meaningless header</h1>
       <p>Content will show here soon.</p>
-  </section>
+  </div>
 </body>
 
 <script src="app/slideshow.js"></script>
 <script>
+var rootElement = document.getElementById('content');
 var url = './contents.md';
-var contents = '';
-
-var cFile = new XMLHttpRequest();
-cFile.open('GET', url, true);
-cFile.send();
-cFile.addEventListener('readystatechange', function() {
-    contents = this.responseText;
-    if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-        window.setTimeout(renderContents.bind(this, this.responseText), 1000);
-        console.log(this.responseText);
-        console.log(addParentSection(splitContents(this.responseText)));
-    }
-});
-
-function renderContents(contentText) {
-    html = marked(contentText);
-    document.getElementById('content').innerHTML = html;
-}
+startSlides(rootElement, url);
 </script>
 </html>

@@ -1,5 +1,7 @@
 'use strict'
 
+var contents = '';
+
 console.log('this is a slideshow');
 console.log(marked('# test\nof *marked*'));
 
@@ -31,5 +33,38 @@ function addParentSection(slides) {
         }
     }
    return result;
-} 
+}
 
+function makeSlideElements(text, addParent) {
+    var slides = splitContents(text);
+    if (addParent)
+        slides = addParentSection(slides);
+    var elms = [];
+    for (let sl of slides) {
+        let elm = document.createElement('section');
+        elm.innerHTML = marked(sl);
+        elm.classList.add('slide');
+        elms.push(elm);
+    }
+    return elms;
+}
+
+function startSlides(rootElm, url) {
+    var url = './contents.md';
+
+    var xlr = new XMLHttpRequest();
+    xlr.open('GET', url, true);
+    xlr.send();
+    xlr.addEventListener('readystatechange', function() {
+        contents = this.responseText;
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+            window.setTimeout(renderContents.bind(this, rootElm, this.responseText), 1000);
+        }
+    });
+
+    function renderContents(rootElm, contents) {
+        rootElm.innerHTML = '';
+        for (let elm of makeSlideElements(contents, true))
+            rootElement.appendChild(elm);
+    }
+}
