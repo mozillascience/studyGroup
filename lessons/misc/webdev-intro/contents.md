@@ -10,7 +10,7 @@ Look at me!
   - CSS:  description of appearance (based on semantics)
   - javascript: perform actions
 
-## HTML
+# HTML
 
 - A way of adding semantics to text
 - First designed for static documents based on SGML
@@ -18,7 +18,7 @@ Look at me!
 - Now on HTML 5, fully made with the modern web in mind
   - main, nav, section, article, header, footer, video, etc.
 
-### Sample HTML Document
+## Sample HTML Document
 
 Things to note in [our sample](./sample/index.html):
 
@@ -30,7 +30,7 @@ Things to note in [our sample](./sample/index.html):
 - `<body>` contains the actual page
 - Things are nested, like `section` in `body`, and `h1` in `section` and text in `h1` **this suggests a tree-like structure**.
 
-### What are the semantics?
+## What are the semantics?
 
 - The purpose of text is described by the tags surrounding it
   - `h1` is a heading
@@ -46,7 +46,7 @@ Things to note in [our sample](./sample/index.html):
   - ids are meant to be a unique identifier for an element
     - e.g. `<nav id='main-nav'></nav>`
 
-### Why provide semantics?
+## Why provide semantics?
 
 - Describes what elements are
   - So the browser knows how to render/place them
@@ -54,12 +54,20 @@ Things to note in [our sample](./sample/index.html):
   - video, img, links, buttons, etc.
 - [Accessibility!](https://www.w3.org/WAI/eval/preliminary)
 
-### How the browser interprets HTML
+## How the browser interprets HTML
 
 - Parsed and used to form the Document Object Model (DOM)
 - The DOM is how the website is stored in memory
 - Basically a tree with each `Node` an `Element`.
 - Provides an API to read and edit the document in situ
+
+## HTML pre-languages
+
+- Opening and closing tags can be be tiresome when writing content, so a lot of developers use **Markdown** to write content. The text in `.md` format can be passed through a parser and compiled into HTML. This can be done with most markup languages.
+
+- Even with the content written in a nicer language, the boiler-plate and layout is often tiresome, so templating languages like [mustache](https://mustache.github.io/) are popular.
+
+
 
 ## CSS
 
@@ -151,6 +159,20 @@ XXX include a picture
 
 Sites with more complicated layout will often use `* { box-sizing: content-box; }`. To make the sizes consistent regardless of borders and padding.
 
+## CSS pre-languages
+
+CSS lacks some features that can be very useful/convenient, like
+ - constants
+ - nested rules for hierarchies
+ - conditional logic
+ - include statements
+
+This is good for browser performance, but a pain for developers. There are lots of pre-processors for CSS that add all these features and more
+ - [Stylus](http://stylus-lang.com/) *my preference*
+ - [SASS](http://sass-lang.com/) 
+ - [less](http://lesscss.org/)
+
+
 # JavaScript (ECMAScript)
 
 JavaScript is the scripting language supported by modern browsers. It's specified as ECMAScript, the latest standard being ECMAScript 2015 (aka ES6). All modern browsers support ES5.1, and most of (ES6)[http://caniuse.com/#search=ES6]
@@ -164,9 +186,27 @@ JavaScript is a scripting language with
 
 ES6 adds
  - syntax for classes
- - template strings with the back tick `\`` (think `"""` in Python, but with `${expressions}`)
+ - template strings with the back tick \` (think  `"""`  in Python, but with `${expressions}`)
  - block-level scope with `let` instead of `var`
  - modules (not implemented in browsers as of writing)
+
+## JavaScript pre-languages
+
+- [TypeScript](http://www.typescriptlang.org/) superset of ES6 that adds static (duck) typing
+- [Dart](https://www.dartlang.org/) a very C/C++ inspired language from Google
+- [CoffeeScript](http://coffeescript.org/) -- JS with "nicer" syntax
+- [PureScript](http://www.purescript.org/) inspired by Haskell
+- [comprehensive list](https://github.com/jashkenas/coffeescript/wiki/list-of-languages-that-compile-to-js)
+
+# Tools
+
+- Localhost simple webserver with a text editor
+  - `python3 -m http.server`
+  - `http-server` (installed with `npm`)
+- Developer tools in the browser
+- `node` and `npm`
+- JSFiddle
+
 
 # Resources
 
