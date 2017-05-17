@@ -17,10 +17,28 @@
 </head>
 
 <body>
-  <section>
+  <section id='content'>
       <h1>Meaningless header</h1>
       <p>Content will show here soon.</p>
   </section>
-  <script src="app/slideshow.js"></script>
 </body>
+
+<script>
+var url = './contents.md';
+
+var cFile = new XMLHttpRequest();
+cFile.open('GET', url, true);
+cFile.send();
+cFile.addEventListener('readystatechange', function() {
+    if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+        window.setTimeout(renderContents.bind(this, this.responseText), 1000);
+    }
+});
+
+function renderContents(contentText) {
+    html = marked(contentText);
+    document.getElementById('content').innerHTML = html;
+}
+</script>
+<script src="app/slideshow.js"></script>
 </html>
