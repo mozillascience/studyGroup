@@ -24,7 +24,7 @@ leadership: How to lead a Study Group session
 pastEvents: See Our Past Events
 
 notification: Want to be notified of our upcoming events?
-watching: 'Head over to <a href="%GITHUB_REPO_URL%">GitHub</a> and watch our repository, like this:'
+watching: 'Head over to <a href="https://github.com/mozillascience/studyGroup">GitHub</a> and watch our repository, like this:'
 watchingCaption: 'Look in the top right-hand corner of <a href="%GITHUB_REPO_URL%">our repo</a>, and click "Watching." <br>You can undo this at any time in the same place.'
 
 calendar: Subscribe to our events calendar!
