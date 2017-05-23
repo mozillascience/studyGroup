@@ -51,7 +51,6 @@ function makeSlideElements(text, addParent) {
 
 var cElm, nElm;
 function startSlides(contentElm, navElm, url) {
-    var url = './contents.md';
     cElm = contentElm;
     nElm = navElm;
 
@@ -61,26 +60,67 @@ function startSlides(contentElm, navElm, url) {
     xlr.addEventListener('readystatechange', function() {
         contents = this.responseText;
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-            window.setTimeout(renderContents.bind(this, contentElm, this.responseText), 1000);
+            window.setTimeout(setup.bind(this, contentElm, navElm), 1000);
         }
     });
-
+    
+    function setup(contentElm, navElm) {
+        renderContents(contentElm, this.responseText);
+        genNavbar(navElm, contentElm);
+    }
     function renderContents(rootElm, contents) {
         rootElm.innerHTML = '';
         for (let elm of makeSlideElements(contents, true))
-            rootElement.appendChild(elm);
+            rootElm.appendChild(elm);
         rootElm.children[0].classList.add('shown');
-
     }
 }
 
 function prevSlide() {
     var current = cElm.getElementsByClassName('shown')[0];
-    current.classList.remove('shown');
-    current.previousElementSibling.classList.add('shown');
+    if (current.previousElementSibling) {
+        selectSlide(current.previousElementSibling);
+    }
 }
 function nextSlide() {
     var current = cElm.getElementsByClassName('shown')[0];
-    current.classList.remove('shown');
-    current.nextElementSibling.classList.add('shown');
+    if (current.nextElementSibling) {
+        selectSlide(current.nextElementSibling);
+    }
+}
+
+function selectSlide(slideElm) {
+    var contentElm = slideElm.parentElement;
+    // update the classes of slides
+    for (let slide of contentElm.children)
+        slide.classList.remove('shown');
+    slideElm.classList.add('shown');
+    // update the nav bar
+    var slideIndex = Array.from(contentElm.children).indexOf(slideElm);
+    // nElm is from the outer context (bad)
+    for (let b of nElm.children)
+        b.classList.remove('shown');
+    nElm.children[1+slideIndex].classList.add('shown');
+}
+
+function genNavbar(navElm, contentElm) {
+    var prevButton, nextButton;
+    prevButton = document.createElement('button');
+    prevButton.innerText = '<-';
+    prevButton.onclick = prevSlide;
+    navElm.appendChild(prevButton);
+    // Note that using var here would break functionality due to scoping rules
+    for (let sl of contentElm.children) {
+        let marker = document.createElement('button');
+        marker.classList.add('dot');
+        marker.onclick = function() { 
+            selectSlide(sl); 
+        };
+        marker.innerText = ' ';
+        navElm.appendChild(marker);
+    }
+    nextButton = document.createElement('button');
+    nextButton.innerText = '->';
+    nextButton.onclick = nextSlide;
+    navElm.appendChild(nextButton);
 }

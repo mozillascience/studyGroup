@@ -32,3 +32,45 @@ section.slide h1 {
 #content .slide.shown {
     display: block;
 }
+
+nav {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+    align-content: center;
+    background: #eef;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+nav button {
+    box-sizing: border-box;
+    height: 2em;
+    border-radius: 2em;
+    background: #333;
+    color: #eee;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: auto;
+    height: 2em;
+    border: 3px solid #333;
+    line-height: 1.5;
+    margin-left: .2em;
+    margin-right: .2em;
+}
+    
+nav button.dot {
+    width: 2em;     
+    padding: 0;     
+    background-image: radial-gradient(circle, #919396, #919396 40%, #fff 50%, #fff);     
+    color: #000;     
+    border: solid 3px #fff;
+}
+
+nav button.dot.shown {
+    border-color: #0ea;
+}
+nav button.dot:hover {
+    border-color: #333;
+}
+

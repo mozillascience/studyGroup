@@ -17,6 +17,8 @@
 </head>
 
 <body>
+  <nav id='slide-nav'>
+  </nav>
   <div id='content'>
       <h1>Meaningless header</h1>
       <p>Content will show here soon.</p>
@@ -25,8 +27,9 @@
 
 <script src="app/slideshow.js"></script>
 <script>
-var rootElement = document.getElementById('content');
+var cElm = document.getElementById('content');
+var nElm = document.getElementById('slide-nav');
 var url = './contents.md';
-startSlides(rootElement, url);
+startSlides(cElm, nElm, url);
 </script>
 </html>
