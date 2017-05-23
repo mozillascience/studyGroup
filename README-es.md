@@ -39,4 +39,4 @@ Todo lo que necesitas para configurar un bellisimo sitio web de Grupo de Estudio
 
 ### ¡No funciona, necesito ayuda!!!
 
-Si algo en estas instrucciones no funciona o no tiene sentido, haga una pregunta en el [chat de Gitter](https://gitter.im/mozillascience/studyGroup), abre un issue [aquí](https://github.com/mozillascience/studyGroup/issues) o email sciencelab@mozillafoundation.org.
+Si algo en estas instrucciones no funciona o no tiene sentido, haga una pregunta en el [chat de Gitter](https://gitter.im/mozillascience/studyGroup), abre un issue [aquí](https://github.com/mozillascience/studyGroup/issues) o email sciencelab@mozillafoundation.org. 
