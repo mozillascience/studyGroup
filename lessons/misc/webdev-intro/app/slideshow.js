@@ -167,8 +167,10 @@ function genNavbar(navElm, contentElm) {
     prevButton = document.createElement('button');
     prevButton.innerText = '<-';
     prevButton.onclick = prevSlide;
+    prevButton.setAttribute('aria-label', 'previous slide');
     navElm.appendChild(prevButton);
     // Note that using var here would break functionality due to scoping rules
+    var i = 1;
     for (let sl of contentElm.children) {
         let marker = document.createElement('button');
         marker.classList.add('dot');
@@ -176,10 +178,12 @@ function genNavbar(navElm, contentElm) {
             selectSlide(sl); 
         };
         marker.innerText = ' ';
+        marker.setAttribute('aria-label', `slide ${i++}`);
         navElm.appendChild(marker);
     }
     nextButton = document.createElement('button');
     nextButton.innerText = '->';
     nextButton.onclick = nextSlide;
+    nextButton.setAttribute('aria-label', 'next slide');
     navElm.appendChild(nextButton);
 }
