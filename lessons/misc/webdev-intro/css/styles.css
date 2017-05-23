@@ -10,6 +10,7 @@ body {
     overflow: scroll;
 }
 section.slide {
+    font-size: 1.5em;
     padding: 2rem;
     background: #eef;
     margin: 1rem;

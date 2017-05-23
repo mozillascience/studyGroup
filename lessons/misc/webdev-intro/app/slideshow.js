@@ -68,12 +68,44 @@ function startSlides(contentElm, navElm, url) {
         renderContents(contentElm, this.responseText);
         genNavbar(navElm, contentElm);
     }
+
     function renderContents(rootElm, contents) {
         rootElm.innerHTML = '';
         for (let elm of makeSlideElements(contents, true))
             rootElm.appendChild(elm);
         rootElm.children[0].classList.add('shown');
     }
+
+    window.addEventListener('keyup', function(keyEvent) {
+        switch(keyEvent.key) {
+            case 'h':
+                prevSlide();
+                break;
+            case 'l':
+            case ' ':
+                nextSlide();
+                break;
+            case 'j':
+                selectSlide(cElm.lastElementChild);
+                break;
+            case 'k':
+                selectSlide(cElm.firstElementChild);
+                break;
+            case 's':
+                toggleShowAll(cElm);
+                break;
+            case 'v':
+                toggleHorizontal(cElm);
+        }
+    })
+}
+
+function toggleShowAll(cElm) {
+    cElm.classList.toggle('show-all');
+}
+
+function toggleHorizontal(cElm) {
+    cElm.classList.toggle('horizontal');
 }
 
 function prevSlide() {
