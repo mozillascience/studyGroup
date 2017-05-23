@@ -67,6 +67,14 @@ function startSlides(contentElm, navElm, url) {
     function setup(contentElm, navElm) {
         renderContents(contentElm, this.responseText);
         genNavbar(navElm, contentElm);
+        // This sets the hash in the url
+        var h = location.hash;
+        if (h === '')
+            selectSlide(cElm.children[0]);
+        else {
+            let slideIndex = parseInt(h.slice(1)) - 1;
+            selectSlide(cElm.children[slideIndex]);
+        }
     }
 
     function renderContents(rootElm, contents) {
@@ -76,6 +84,7 @@ function startSlides(contentElm, navElm, url) {
         rootElm.children[0].classList.add('shown');
     }
 
+    // Handle the hotkeys for switching slides
     window.addEventListener('keyup', function(keyEvent) {
         switch(keyEvent.key) {
             case 'h':
@@ -91,6 +100,12 @@ function startSlides(contentElm, navElm, url) {
             case 'k':
                 selectSlide(cElm.firstElementChild);
                 break;
+        }
+    })
+    // Handle hotkeys for changing the layout
+    // notice that the event listeners are both run
+    window.addEventListener('keyup', function(keyEvent) {
+        switch(keyEvent.key) {
             case 's':
                 toggleShowAll(cElm);
                 break;
@@ -98,6 +113,13 @@ function startSlides(contentElm, navElm, url) {
                 toggleHorizontal(cElm);
         }
     })
+
+    // This handles the user changing the hash on the url
+    window.onpopstate = function () {
+        var slideIndex = location.hash.slice(1)-1;
+        selectSlide(cElm.children[slideIndex]);
+    }
+
 }
 
 function toggleShowAll(cElm) {
@@ -133,6 +155,11 @@ function selectSlide(slideElm) {
     for (let b of nElm.children)
         b.classList.remove('shown');
     nElm.children[1+slideIndex].classList.add('shown');
+    updateUrl(slideIndex);
+}
+
+function updateUrl(slideIndex) {
+    window.history.replaceState({slide: slideIndex}, 'Slide change', './#'+(slideIndex+1));
 }
 
 function genNavbar(navElm, contentElm) {
