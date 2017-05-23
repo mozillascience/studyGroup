@@ -88,16 +88,20 @@ function startSlides(contentElm, navElm, url) {
     window.addEventListener('keyup', function(keyEvent) {
         switch(keyEvent.key) {
             case 'h':
+            case 'ArrowLeft':
                 prevSlide();
                 break;
             case 'l':
             case ' ':
+            case 'ArrowRight':
                 nextSlide();
                 break;
             case 'j':
+            case 'ArrowDown':
                 selectSlide(cElm.lastElementChild);
                 break;
             case 'k':
+            case 'ArrowUp':
                 selectSlide(cElm.firstElementChild);
                 break;
         }

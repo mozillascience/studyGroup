@@ -82,3 +82,8 @@ nav button.dot:hover {
     border-color: #333;
 }
 
+img {
+    max-height: 12em;
+    margin: 1em;
+    float: right;
+}

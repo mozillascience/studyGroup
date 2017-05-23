@@ -117,18 +117,20 @@ Things to note in [our sample](./sample/index.html):
 
 ## HTML pre-languages
 
-- Opening and closing tags can be be tiresome when writing content, so a lot of developers use **Markdown** to write content. The text in `.md` format can be passed through a parser and compiled into HTML. This can be done with most markup languages.
+Writing raw HTML with all the opening and closing tags can be be quite tedious.
 
-- Even with the content written in a nicer language, the boiler-plate and layout is often tiresome, so templating languages like [mustache](https://mustache.github.io/) are popular.
+ - so a lot of developers use **Markdown** to write content. The text in `.md` format can be passed through a parser and compiled into HTML. This can be done with most markup languages.
+
+- Even with the content written in a nicer language, the boiler-plate and layout is often repetitive, so templating languages like [mustache](https://mustache.github.io/) are popular.
+  - especially with server-side processing
 
 
-
-## CSS
+# CSS
 
 Cascading style sheets describe the *appearance* of elements.
 
 "Cascading" refers to the way rules/declarations are applied:
- - they **cascade down the hierarchy to all children**
+ - some declarations **cascade down the hierarchy to children**
  - the rule with the most specific selector takes precedence
     - otherwise, rules are applied in order of the CSS file
 
@@ -138,7 +140,7 @@ Syntax:
 
 The whole statement is a "*rule*". Each `property: value;` pair is a "*declaration*".
  
-### Selectors
+## Selectors
 
 Describe the elements in the DOM
 
@@ -150,7 +152,7 @@ Describe the elements in the DOM
   - `#main-nav`, `#start-button`
 - Universal selector *
 
-### Combinators
+## Combinators
 
 Selectors can also be combined to describe where an element falls in the DOM hierarchy.
 
@@ -171,7 +173,7 @@ section > p + h1 {
 
 Selects the top-level heading directly adjacent to a paragraph which is the child of a section.
 
-### Other selections
+## Other selections
 
 - Attribute selectors: i
   - `[attr]` has the attribute `attr`, 
@@ -185,33 +187,35 @@ Selects the top-level heading directly adjacent to a paragraph which is the chil
 - Psuedo-elements preceded by two colons `::`
   - Often used to add decoration ``[href^=http}::after { content: '⤴'; }
 
-### Declarations (`property: value;`)
+## Declarations (`property: value;`)
 
 These describe the way an element is drawn. Different elements can have their own special properties, but no error will be given if a property doesn't apply. 
 
 Common properties include:
  - `color` : values can be like `red`, `#f00`, `#fa0000`, `rgba(255, 0, 0, .5)`
  - `background` : as above
- - `display` : `block`, `inline`, etc.
+ - `display` : `block`, `inline`, `block-inline`, `flex`, etc.
  - `margin-top`: a length `0em`, `0.3rem`, `4px`, `1%`
  - 'visible'
 
 You'll have to look up a reference for all the possibilities.
 
-### Box model
+## Box model
 
-It's worth mentioning the box model for element sizing/spacing.
+It's worth mentioning the box model for element sizing/spacing. ![box model illustration](./img/box-model-standard-small.png)
 
-XXX include a picture
-
-- `margin`s are the spaces between objects
-- `border`s are the size of the drawn border
+- `margin`'s are the spaces between objects
+- `border`'s are the size of the drawn border
 - `padding` is the space between the border and the content
 - `width` and `height` describe the size of the element
   - `box-sizing: content-box` is default where width/height does not include margins, borders or padding.
   - `box-sizing: border-box` makes width/height include padding and borders (easier math in many cases)
 
-Sites with more complicated layout will often use `* { box-sizing: content-box; }`. To make the sizes consistent regardless of borders and padding.
+Sites with more complicated layout will often use 
+
+```* { box-sizing: content-box; }```, 
+
+to make the sizes consistent regardless of borders and padding.
 
 ## CSS pre-languages
 
@@ -222,7 +226,7 @@ CSS lacks some features that can be very useful/convenient, like
  - include statements
 
 This is good for browser performance, but a pain for developers. There are lots of pre-processors for CSS that add all these features and more
- - [Stylus](http://stylus-lang.com/) *my preference*
+ - [Stylus](http://stylus-lang.com/) ← *my preference*
  - [SASS](http://sass-lang.com/) 
  - [less](http://lesscss.org/)
 
@@ -243,6 +247,285 @@ ES6 adds
  - template strings with the back tick \` (think  `"""`  in Python, but with `${expressions}`)
  - block-level scope with `let` instead of `var`
  - modules (not implemented in browsers as of writing)
+
+## Javascript types
+
+There are primitive types:
+- Boolean
+- null
+- undefined (*not assigned a value*)
+- Number (*floating point*)
+- String
+
+Then there are notably,
+- function (callable object)
+- Array (mutable and extendable)
+
+## Declaring variables
+
+Variables can be declared with `var` or `let`. You'll probably use `var` most. 
+
+```js
+var x = 1;
+var s = 'hello world;
+var u; // undefined
+var f = function() {
+    console.log('function f called');
+};
+var o = {name: 'some object', callMe: f, 1: 'one'}
+```
+
+`let` is for block-scope which is good for loop variables.
+
+```
+for (let i=0; i<10; i++) {
+    console.log(i)
+}
+console.log(i) // error
+
+```
+
+## Functions
+
+Can be anonymous:
+
+```js
+(function() {console.log('hello world')})()
+```
+
+Named throughout current scope ("hoisted"):
+```js
+foo() // logs "bar"
+function foo() { 
+    console.log('bar'); 
+}
+```
+
+Attached to a variable:
+
+```js
+bar() // error
+var bar = function () {
+    console.log('foo')
+}
+bar() // logs "foo"
+```
+
+## Lexical scope
+
+The *scope* describes what variables are accessible and their names. In JavaScript, the scope of a variable defined with `var` is the current function. JS also has a lexical scope, so functions inherit the scope of their parents.
+
+```js
+// example of isolating scope with a function
+var x = 10;
+(function () {
+    var x = document.createElement('section');
+    x.innerHTML = '<h1>From Demo</h1>';
+    x.className = 'slide shown';
+    document.getElementById('content').appendChild(x);
+})()
+console.log(x);
+```
+
+## More with scope rules
+
+Variables can become private.
+
+```js
+// Example of a closure
+var counter = (function() {
+    var i = 0;
+    return function () {
+        return i++;
+    };
+})();
+console.log(counter())
+console.log(counter())
+```
+
+## More with scope rules
+
+We can make factories
+
+```js
+// Bigger example of a closure
+var countBy = function(inc) {
+    var count = -inc;
+    return function() {
+        count += inc;
+        return count;
+    }
+};
+c = countBy(6);
+d = countBy(2);
+
+console.log(c())
+console.log(d())
+console.log(c())
+console.log(d())
+```
+    
+
+## Objects
+
+Object properties can be accessed with either `.` or `[]`.
+
+```js
+o.name;
+o['callMe']();
+o[1]
+```
+
+And properties can always be added/reassigned
+
+```js
+f.name = 'asdf';
+f.obj = o;
+```
+
+
+## Methods/Calling
+
+Object properties that are methods have a special variable `this` added to scope.
+
+```js
+var f = function (arg1, arg2) {
+    arg2 = arg2 || 'earth';
+    console.log(`called by ${this.name}`)
+    console.log('object', this);
+    console.log('arg1', arg1);
+    console.log('arg2', arg2);
+}
+var foo = {name: 'bar', method: f}
+```
+
+The following are equivalent
+
+```js
+foo.method('hi');
+f.bind(foo)('hi');
+f.apply(foo, ['hi');
+f.call(foo, 'hi');
+```
+
+## Conditional statements
+
+The if/else if/else statement is same as in C
+
+```js
+if (condition) {
+    codeBlock;
+}
+else if (condition2)
+    statement;
+else {
+    codeBlock;
+}
+```
+
+There is also switch case.
+
+## Casting in comparison
+
+There are two equalities in JavaScript
+ - `==` or `!=` perform casting when comparing values so `12 == true` is `true`
+ - `===` or `!==` don't cast, so `1 === true` is `false
+
+Casting also happens for `<`, `<=`, etc. 
+
+A logical "not" is the operator `!`, which does cast to booleans. So you can do `!!undefined` to get `true`.
+
+## Loops
+
+There are `while`, `do...while`, and `for` loops. All follow classic C syntax, but there are special forms of `for` loops
+
+```js
+var shoppingList = ['banana', 'apple', 'bread'];
+shoppingList.title = 'My Groceries';
+
+/* This will print the object's properties */
+for (let i in shoppingList)
+    console.log(i);
+
+/* and this prints the elements in the _iterable_ object */
+for (let x of shoppingList)
+    console.log(x);
+
+/* for arrays you could still do */
+for (let i=0; i<shoppingList.length; i++) {
+    console.log(shoppingList[i]);
+}
+```
+
+The `for...of` syntax behaves most like Python's `for...in` loop.
+
+## Interacting with the DOM
+
+Go over the code for this "app".
+
+
+## Classes/Objects
+
+JavaScript is *prototype*-based. This is different from *class*-based, but has similar functionality.
+
+- An Object is like a key-value store,
+- A constructor is a function applied to a prototype object
+    - `var obj = new MyClass();`
+- methods/properties can be through the prototype
+    - `MyClass.prototype = {foo: function() { return 'foo';}, bar: 'bar'}
+- or just `ownProperty`
+    - `function MyClass() { this.asdf = function() {return this.bar;}`
+- properties go up the property chain
+    - `obj.toString()` would go to `Object.prototype.toString.apply(obj)`
+
+## Prototype example
+
+```js
+function A() {
+    this.varA = 'a';
+}
+
+function B() {
+    A.call(this);
+    this.varB = 'b';
+}
+
+A.prototype = { foo: 1, bar: function(x) { return this.foo + 1;}};
+B.prototype = Object.create(A.prototype);
+B.prototype.foo = 3;
+
+a = new A();
+b = new B();
+
+a.bar(1);
+b.bar(1);
+
+B.prototype.foo = -1;
+b.bar(1);
+```
+
+## Class syntax
+
+Just a syntactic wrapping of what we covered before.
+
+```js
+
+class C extends B {
+    constructor(c) {
+        super();
+        this.foo = -1
+        this.varC = c;
+    };
+
+    get foo() {
+        return this._foo;
+    };
+
+    set foo(b) {
+        this._foo = b;
+    };
+}
+```
 
 ## JavaScript pre-languages
 
