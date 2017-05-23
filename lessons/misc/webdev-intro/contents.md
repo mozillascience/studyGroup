@@ -1,7 +1,7 @@
 # Overview
 
 This is a very brief introduction to programming for the web, focused on the "front end". We'll talk about
-- how websites are structured (the DOM)
+- how websites are structured -- the *Document Object Model* (DOM)
 - a brief overview of HTML/CSS
 - an introduction to JavaScript *using ECMAScript 2015 (ES6)*
 
@@ -13,6 +13,7 @@ First, some resources to go more in depth after this primer.
 - [caniuse.com](http://caniuse.com/) If you're concerned about compatibility.
 * [JSfiddle](https://jsfiddle.net/) for quickly trying and sharing snippets.
     - There are other sites like fiddle out there.
+- [Accessibility guidelines](https://www.w3.org/WAI/eval/preliminary)
 
 ## Tools
 
@@ -31,10 +32,10 @@ For more serious work, you'll need
 
 # A website's structure
 
-A website's source is divided into 3 components
-  - HTML: content and semantics
-  - CSS:  description of appearance (based on semantics)
-  - JavaScript: perform actions
+A website is separated into 3 parts:
+  - content and semantics: HTML
+  - style/appearance: CSS
+  - behaviour: JavaScript
 
 ## In the browser
 
@@ -43,15 +44,36 @@ The HTML/CSS are used to create the DOM, while JavaScript interacts with it.
 
 We can inspect the DOM using *Developer tools* in any browser, by menu, or right-click > inspect.
 
+## Exploring the DOM
 
+Things to notice:
+- Tree-like structure (root is `document`)
+- Each element has 
+    - tagName
+    - classList
+    - id
+    - attributes (if applicable)
+    - rendering information (e.g. `offsetHeight`)
+    - events
+    - associated styles
+- Nodes can be elements, but also text, etc.
+    - have children and parents and siblings
 
 # HTML
 
+HyperText Markup Language
+
 - A way of adding semantics to text
 - First designed for static documents based on SGML
-  - h1-7, paragraphs, tables, links, emphasis
+  - tags for: h1-7, paragraphs, tables, links, emphasis
 - Now on HTML 5, fully made with the modern web in mind
   - main, nav, section, article, header, footer, video, etc.
+
+```html
+<tag-name attribute="value">innerHTML</tag-name>
+<tag-name attribute="value" />
+<!-- comments -->
+```
 
 ## Sample HTML Document
 
@@ -63,11 +85,11 @@ Things to note in [our sample](./sample/index.html):
   - linked files (like css)
   - scripts to run before the contents
 - `<body>` contains the actual page
-- Things are nested, like `section` in `body`, and `h1` in `section` and text in `h1` **this suggests a tree-like structure**.
+- Things are nested, like `section` in `body`, and `h1` in `section` and text in `h1` **like the DOM**
 
 ## What are the semantics?
 
-- The purpose of text is described by the tags surrounding it
+- The purpose of text is described by the tags surrounding it *e.g.*
   - `h1` is a heading
   - `p` is a paragraph
   - `ul` is an unordered list with `li` elements inside of it
@@ -77,24 +99,21 @@ Things to note in [our sample](./sample/index.html):
   - classes describe properties that many elements might have
     - an element can have multiple classes in a space-separated list
     - ususally using lower-case with dashes like `red-box` 
-    - e.g. `<div class="hidden aside">`
+    - e.g. `<div class="hidden slide">`
   - ids are meant to be a unique identifier for an element
     - e.g. `<nav id='main-nav'></nav>`
+- also attributes like `href`, `alt`, or anything else
 
 ## Why provide semantics?
 
 - Describes what elements are
   - So the browser knows how to render/place them
 - Describes what actions they can do
-  - video, img, links, buttons, etc.
+  - video, img, canvas, svg...
+  - links, text input, buttons...
 - [Accessibility!](https://www.w3.org/WAI/eval/preliminary)
-
-## How the browser interprets HTML
-
-- Parsed and used to form the Document Object Model (DOM)
-- The DOM is how the website is stored in memory
-- Basically a tree with each `Node` an `Element`.
-- Provides an API to read and edit the document in situ
+  - tools like screen-readers can navigate the page
+  - tabs and associated keys work as expected
 
 ## HTML pre-languages
 

@@ -14,8 +14,20 @@ section.slide {
     padding: 2rem;
     background: #eef;
     margin: 1rem;
+    margin-top: 0;
     min-width: 50%;
 }
+#content.show-all .slide {
+    display: block;
+    margin-top: 1rem;
+}
+#content .slide {
+    display: none;
+}
+#content .slide.shown {
+    display: block;
+}
+
 section.slide > p:first-child {
     color: #777;
     font-size: large;
@@ -23,15 +35,6 @@ section.slide > p:first-child {
 }
 section.slide h1 {
     margin: -1rem;
-}
-#content.show-all .slide {
-    display: block;
-}
-#content .slide {
-    display: none;
-}
-#content .slide.shown {
-    display: block;
 }
 
 nav {
@@ -42,6 +45,10 @@ nav {
     background: #eef;
     margin: 1rem;
     padding: 1rem;
+    margin-bottom: 0;
+    position: relative;
+    box-shadow: 0 .2rem .2rem .2rem rgba(0,0,0,.2);
+    border-radius: .5rem .5rem 0 0;
 }
 
 nav button {
