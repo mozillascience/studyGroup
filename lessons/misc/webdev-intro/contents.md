@@ -1,8 +1,49 @@
 # Overview
-- A website's information is divided into 3 components
+
+This is a very brief introduction to programming for the web, focused on the "front end". We'll talk about
+- how websites are structured (the DOM)
+- a brief overview of HTML/CSS
+- an introduction to JavaScript *using ECMAScript 2015 (ES6)*
+
+## Resources
+
+First, some resources to go more in depth after this primer.
+
+- [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Learn) for comprehensive documentation on HTML, CSS, JS, and relevant APIs.
+- [caniuse.com](http://caniuse.com/) If you're concerned about compatibility.
+* [JSfiddle](https://jsfiddle.net/) for quickly trying and sharing snippets.
+    - There are other sites like fiddle out there.
+
+## Tools
+
+You don't need much to start
+
+- Localhost simple webserver with a text editor
+  - `http-server` (installed with `npm`)
+  - `python3 -m http.server`
+- Developer tools in the browser
+- JSFiddle or the like
+
+For more serious work, you'll need
+- `node` the stand-alone JavaScript runtime
+- `npm` the package manager included with node.js
+
+
+# A website's structure
+
+A website's source is divided into 3 components
   - HTML: content and semantics
   - CSS:  description of appearance (based on semantics)
-  - javascript: perform actions
+  - JavaScript: perform actions
+
+## In the browser
+
+The HTML/CSS are used to create the DOM, while JavaScript interacts with it.
+![rendering a website](./img/rendering.svg)
+
+We can inspect the DOM using *Developer tools* in any browser, by menu, or right-click > inspect.
+
+
 
 # HTML
 
@@ -192,18 +233,3 @@ ES6 adds
 - [PureScript](http://www.purescript.org/) inspired by Haskell
 - [comprehensive list](https://github.com/jashkenas/coffeescript/wiki/list-of-languages-that-compile-to-js)
 
-# Tools
-
-- Localhost simple webserver with a text editor
-  - `python3 -m http.server`
-  - `http-server` (installed with `npm`)
-- Developer tools in the browser
-- `node` and `npm`
-- JSFiddle
-
-
-# Resources
-
-- [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Learn)
-- [caniuse.com](http://caniuse.com/)
-* [JSfiddle](https://jsfiddle.net/)
