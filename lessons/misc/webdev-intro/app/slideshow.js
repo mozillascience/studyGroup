@@ -100,6 +100,46 @@ function startSlides(contentElm, navElm, url) {
 
 }
 
+/* making the nav bar (actually used by the startSlides function, but hoisted from here
+ */
+function genNavbar(navElm, contentElm) {
+    // sometimes people predefine all variables at the start
+    var prevButton, nextButton;
+    /* Complicated elements can involve a lot of statements
+     * HTML5 added `<template>` objects which make it easier to define elements
+     * with html */
+    var template = document.createElement('template');
+    // a library could help with string formatting
+    var tHTML = function(np, text) {
+        return `<button id="${np}-slide-button" aria-label="${np} slide" aria-controls="content">${text}</button>`;
+    };
+    template.innerHTML = tHTML('previous', '&lt;');
+    prevButton = template.content.lastChild;
+    prevButton.onclick = prevSlide;
+    navElm.appendChild(prevButton);
+    var i = 0;
+    for (let sl of contentElm.children) {
+        template.innerHTML += `<button class="dot" aria-labelledby="slide-title-${i++}" aria-controls="content"> </button>`;
+        let marker = template.content.lastChild;
+        marker.onclick = function() { 
+            /* Note that using `var` for `sl` would break functionality due to
+             * scoping rules */
+            selectSlide(sl); 
+        };
+        navElm.appendChild(marker);
+    }
+    template.innerHTML += tHTML('next', '&gt;');
+    nextButton = template.content.lastChild;
+    nextButton.onclick = nextSlide;
+    navElm.appendChild(nextButton);
+    /* This line could be used instead of each individual appendChild,
+     * but `innerHTML +=` recreates DOM elements, removing attached event
+     * listeners
+    navElm.appendChild(document.importNode(template.content, true));
+    */
+}
+
+
 /* The rest of the functions are defined in global scope
  * so I can access them from commandline as well.
  */
@@ -177,44 +217,6 @@ function makeSlideElements(text, addParent) {
     return elms;
 }
 
-
-// making the nav bar
-function genNavbar(navElm, contentElm) {
-    // sometimes people predefine all variables at the start
-    var prevButton, nextButton;
-    /* Complicated elements can involve a lot of statements
-     * HTML5 added `<template>` objects which make it easier to define elements
-     * with html */
-    var template = document.createElement('template');
-    // a library could help with string formatting
-    var tHTML = function(np, text) {
-        return `<button id="${np}-slide-button" aria-label="${np} slide" aria-controls="content">${text}</button>`;
-    };
-    template.innerHTML = tHTML('previous', '&lt;');
-    prevButton = template.content.lastChild;
-    prevButton.onclick = prevSlide;
-    navElm.appendChild(prevButton);
-    var i = 0;
-    for (let sl of contentElm.children) {
-        template.innerHTML += `<button class="dot" aria-labelledby="slide-title-${i++}" aria-controls="content"> </button>`;
-        let marker = template.content.lastChild;
-        marker.onclick = function() { 
-            /* Note that using `var` for `sl` would break functionality due to
-             * scoping rules */
-            selectSlide(sl); 
-        };
-        navElm.appendChild(marker);
-    }
-    template.innerHTML += tHTML('next', '&gt;');
-    nextButton = template.content.lastChild;
-    nextButton.onclick = nextSlide;
-    navElm.appendChild(nextButton);
-    /* This line could be used instead of each individual appendChild,
-     * but `innerHTML +=` recreates DOM elements, removing attached event
-     * listeners
-    navElm.appendChild(document.importNode(template.content, true));
-    */
-}
 
 /* Just some string-handling functions */
 function splitContents(text) {
