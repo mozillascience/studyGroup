@@ -40,10 +40,13 @@ function makeSlideElements(text, addParent) {
     if (addParent)
         slides = addParentSection(slides);
     var elms = [];
-    for (let sl of slides) {
+    for (let i in slides) {
         let elm = document.createElement('section');
-        elm.innerHTML = marked(sl);
+        elm.innerHTML = marked(slides[i]);
         elm.classList.add('slide');
+        let heading = elm.getElementsByTagName('h1')[0] ||
+                  elm.getElementsByTagName('h2')[0];
+        heading.id = `slide-title-${i}`
         elms.push(elm);
     }
     return elms;
@@ -174,7 +177,7 @@ function genNavbar(navElm, contentElm) {
     prevButton.setAttribute('aria-label', 'previous slide');
     navElm.appendChild(prevButton);
     // Note that using var here would break functionality due to scoping rules
-    var i = 1;
+    var i = 0;
     for (let sl of contentElm.children) {
         let marker = document.createElement('button');
         marker.classList.add('dot');
@@ -182,7 +185,7 @@ function genNavbar(navElm, contentElm) {
             selectSlide(sl); 
         };
         marker.innerText = ' ';
-        marker.setAttribute('aria-label', `slide ${i++}`);
+        marker.setAttribute('aria-labelledby', `slide-title-${i++}`);
         navElm.appendChild(marker);
     }
     nextButton = document.createElement('button');
