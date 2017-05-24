@@ -65,11 +65,11 @@ function startSlides(contentElm, navElm, url) {
                 nextSlide();
                 break;
             case 'j':
-            case 'ArrowDown':
+            //case 'ArrowDown':
                 selectSlide(cElm.lastElementChild);
                 break;
             case 'k':
-            case 'ArrowUp':
+            //case 'ArrowUp':
                 selectSlide(cElm.firstElementChild);
                 break;
         }

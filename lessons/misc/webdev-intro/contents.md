@@ -59,7 +59,6 @@ Things to notice:
     - attributes (if applicable)
     - rendering information (e.g. `offsetHeight`)
     - events
-    - associated styles
 - Nodes can be elements, but also text, etc.
     - have children and parents and siblings
 
@@ -81,7 +80,7 @@ HyperText Markup Language
 
 ## Sample HTML Document
 
-Things to note in [this document](./sample/index.html):
+Things to note in this document:
 
 - doctype is html
 - `<head>` contains metadata about the page, including
@@ -135,7 +134,7 @@ Cascading style sheets describe the *appearance* of elements.
 
 "Cascading" refers to the way rules/declarations are applied:
  - some declarations **cascade down the hierarchy to children**
- - the rule with the most specific selector takes precedence
+ - the rule with the *most specific* selector takes precedence
     - otherwise, rules are applied in order of the CSS file
 
 Syntax:
@@ -146,7 +145,7 @@ The whole statement is a "*rule*". Each `property: value;` pair is a "*declarati
  
 ## Selectors
 
-Describe the elements in the DOM
+Describe the elements in the DOM. There are,
 
 - Type selectors (element name)
   - `a`, `div`, `p`, `section`, `asdf`, ...

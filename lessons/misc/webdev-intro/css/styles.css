@@ -103,3 +103,16 @@ pre {
     padding: .5em;
     background: white;
 }
+
+code {
+    background: white;
+    color: #600;
+}
+pre code {
+    color: black;
+}
+
+ul ul li:last-child {
+    margin-bottom: .3em;
+}
+
