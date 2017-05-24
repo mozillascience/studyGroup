@@ -241,7 +241,7 @@ This is good for browser performance, but a pain for developers. There are lots 
 
 # JavaScript (ECMAScript)
 
-JavaScript is the scripting language supported by modern browsers. It's specified as ECMAScript, the latest standard being ECMAScript 2015 (aka ES6). All modern browsers support ES5.1, and most of (ES6)[http://caniuse.com/#search=ES6]
+JavaScript is the scripting language supported by modern browsers. It's specified as ECMAScript, the latest standard being ECMAScript 2015 (aka ES6). All modern browsers support ES5.1, and most of [ES6](http://caniuse.com/#search=ES6)
 
 JavaScript is a scripting language with 
  - C-like syntax (curly braces), 
