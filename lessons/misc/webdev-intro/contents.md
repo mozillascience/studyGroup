@@ -542,6 +542,16 @@ class C extends B {
 }
 ```
 
+## Modules
+
+The current state of modules is a bit complicated because of many players coming up with many solutions. See *AMD*, *CommonJS*, *RequireJS*, *Browserify*, or home-spun versions.
+
+I won't be covering those here, because it is so complicated.
+
+However, after all of that, a module is often accessible as an *object* with the supplied functions as *properties*. (*e.g.* [`marked`](https://github.com/chjj/marked) and [`hljs`](https://github.com/isagalaev/highlight.js) in the current site).
+
+Many libraries can be installed with `npm`.
+
 ## JavaScript pre-languages
 
 - [TypeScript](http://www.typescriptlang.org/) superset of ES6 that adds static (duck) typing
