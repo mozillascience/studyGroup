@@ -39,8 +39,12 @@ A website is separated into 3 parts:
 
 ## In the browser
 
-The HTML/CSS are used to create the DOM, while JavaScript interacts with it.
+<figure>
 ![rendering a website](./img/rendering.svg)
+<figcaption>source: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works)</figcaption>
+</figure>
+
+The HTML/CSS are used to create the DOM, while JavaScript interacts with it.
 
 We can inspect the DOM using *Developer tools* in any browser, by menu, or right-click > inspect.
 
@@ -77,7 +81,7 @@ HyperText Markup Language
 
 ## Sample HTML Document
 
-Things to note in [our sample](./sample/index.html):
+Things to note in [this document](./sample/index.html):
 
 - doctype is html
 - `<head>` contains metadata about the page, including
@@ -202,7 +206,12 @@ You'll have to look up a reference for all the possibilities.
 
 ## Box model
 
-It's worth mentioning the box model for element sizing/spacing. ![box model illustration](./img/box-model-standard-small.png)
+It's worth mentioning the box model for element sizing/spacing. 
+
+<figure>
+![box model illustration](./img/box-model-standard-small.png)
+<figcaption>source: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model)</figcaption>
+</figure>
 
 - `margin`'s are the spaces between objects
 - `border`'s are the size of the drawn border
@@ -267,7 +276,7 @@ Variables can be declared with `var` or `let`. You'll probably use `var` most.
 
 ```js
 var x = 1;
-var s = 'hello world;
+var s = 'hello world';
 var u; // undefined
 var f = function() {
     console.log('function f called');
@@ -423,7 +432,7 @@ else {
 }
 ```
 
-There is also switch case.
+There is also `switch..case`, which we'll see in this app's code.
 
 ## Casting in comparison
 
@@ -468,6 +477,7 @@ Note:
 - `Element.getElementById` and `.getElementsByClassName`
 - `classList.add/remove()`
 - slide creation and navigation bar element creation
+- this [link](#10) should go to slide 10. 
 
 
 ## Classes/Objects

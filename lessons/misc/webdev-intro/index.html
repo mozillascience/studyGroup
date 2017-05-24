@@ -14,14 +14,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
   <script src="lib/marked.js"></script>
+  <!-- for syntax highlighting -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
 </head>
 
 <body>
   <nav id='slide-nav'>
+      <a href="#slide-1">first slide?</a>
   </nav>
   <div id='content' aria-live="polite">
-      <h1>Meaningless header</h1>
-      <p>Content will show here soon.</p>
+      <section class="shown slide">
+          <h1 id="slide-1">Meaningless header</h1>
+          <p>The actual content will show here soon. This is <em>just</em></p>
+          <ul>
+              <li>some filler content</li>
+              <li>a little HTML to demonstrate a document.</li>
+          </ul>
+          <figure>
+              <img alt="just a placeholder" src="./img/rendering.svg"/>
+              <figcaption>Source: 
+              <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works">MDN</a>
+              </figcaption>
+          </figure>
+      </section>
   </div>
 </body>
 
@@ -30,6 +46,11 @@
 var cElm = document.getElementById('content');
 var nElm = document.getElementById('slide-nav');
 var url = './contents.md';
+marked.setOptions({
+    highlight: function (code) {
+        return hljs.highlightAuto(code).value;
+    }
+});
 startSlides(cElm, nElm, url);
 </script>
 </html>

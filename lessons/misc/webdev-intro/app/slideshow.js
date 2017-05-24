@@ -28,6 +28,7 @@ function startSlides(contentElm, navElm, url) {
      * They are hoisted, so that they can be used earlier in the function. */
     function setup(contentElm, navElm) {
         renderContents(contentElm, this.responseText);
+        navElm.innerHTML = '';
         genNavbar(navElm, contentElm);
         // On loading, we determine which slide to show based on the hash
         var h = location.hash;

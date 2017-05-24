@@ -83,7 +83,23 @@ nav button.dot:hover {
 }
 
 img {
-    max-height: 12em;
-    margin: 1em;
+    /* max-height: 12em; */
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+    margin-left: 1em;
     float: right;
+    width: 50%;
+}
+
+figcaption {
+    font-size: .7em;
+}
+
+pre {
+    margin: .5em 2em;
+    padding: .5em;
+    background: white;
 }
