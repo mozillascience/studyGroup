@@ -463,6 +463,12 @@ The `for...of` syntax behaves most like Python's `for...in` loop.
 
 Go over the code for this "app".
 
+Note:
+- Not organized well ("global" variables, weird scope, etc.)
+- `Element.getElementById` and `.getElementsByClassName`
+- `classList.add/remove()`
+- slide creation and navigation bar element creation
+
 
 ## Classes/Objects
 
@@ -472,7 +478,7 @@ JavaScript is *prototype*-based. This is different from *class*-based, but has s
 - A constructor is a function applied to a prototype object
     - `var obj = new MyClass();`
 - methods/properties can be through the prototype
-    - `MyClass.prototype = {foo: function() { return 'foo';}, bar: 'bar'}
+    - `MyClass.prototype = {foo: function() { return 'foo';}, bar: 'bar'}`
 - or just `ownProperty`
     - `function MyClass() { this.asdf = function() {return this.bar;}`
 - properties go up the property chain
