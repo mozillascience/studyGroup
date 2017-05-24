@@ -4,6 +4,8 @@
 
 ### [中文版请点这里](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-zh.md)
 
+### [Lee esto en Español](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-es.md)
+
 # मोज़िला अध्ययन समूह
 
 [मोज़िला साइंस लैब](https://www.mozillascience.org/) के अध्ययन समूह परियोजना में आपका स्वागत है! यहां से, हम आपको अपने स्वयं के अध्ययन समूह को शुरू करने के लिए जिस चीज की ज़रूरत है उसके साथ हम आपको तैयार करेंगे।

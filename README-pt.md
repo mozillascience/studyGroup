@@ -4,6 +4,8 @@
 
 ### [中文版请点这里](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-zh.md)
 
+### [Lee esto en Español](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-es.md)
+
 # Grupo de Estudo Mozilla
 
 Bem vindo ao projeto Grupo de Estudos do [Mozilla Science Lab](https://www.mozillascience.org/)! A partir daqui, iremos disponibilizar tudo que você precisa para começar o seu próprio grupo de estudo.
