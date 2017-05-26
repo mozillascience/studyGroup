@@ -33,6 +33,9 @@ Our goal is to expand collaborations beyond a departmental level. Thanks to our 
 
 Overall, we strive to represent every background and every skill! So please join us!
 
+### Our community guidelines?
+We want everyone to feel comfortable and welcome at ResBazAZ. Therefore, we abide by the [Mozilla Community Participation Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/)
+
 
 ### Plans for the Mozilla Global Sprint?
 The Mozilla Global Sprint June 1st & 2nd.
