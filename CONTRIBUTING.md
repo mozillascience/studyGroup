@@ -1,4 +1,4 @@
-# Contributing to [Project]
+# Contributing to ResBazAZ
 
 Thank you for your interest in contributing to Research Bazaar Arizona (ResBazAZ) :tada:! 
 

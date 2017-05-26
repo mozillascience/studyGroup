@@ -42,7 +42,9 @@ The Mozilla Global Sprint June 1st & 2nd.
 
 [What is the Mozillal Global Sprint?](https://mozilla.github.io/global-sprint/)
 
-[Where is the Tucson Global Sprint?](https://ti.to/Mozilla/global-sprint-tucson-az)
+[RSVP for the Tucson Global Sprint?](https://ti.to/Mozilla/global-sprint-tucson-az)
+
+The Global Sprint will be held in the **iSpace** of the University of Arizona's Science & Engineering Library, 9am-5pm, both June 1st and June 2nd. 
 
 For the Global Sprint, ResBazAZ is proud to announce that we are partnering with Atmosphere (CyVerse) and the University of Arizona libraries to work on several projects! We encourage you to join us June 1st and 2nd and come contribute to whichever project you find the most intriguing! 
 
