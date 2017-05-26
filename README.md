@@ -36,6 +36,9 @@ Overall, we strive to represent every background and every skill! So please join
 ### Our community guidelines?
 We want everyone to feel comfortable and welcome at ResBazAZ. Therefore, we abide by the [Mozilla Community Participation Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/)
 
+### How to contribute?
+Check out our guildeliens for [contributing](https://github.com/resbazaz/studyGroup/blob/gh-pages/CONTRIBUTING.md)
+
 
 ### Plans for the Mozilla Global Sprint?
 The Mozilla Global Sprint June 1st & 2nd.
