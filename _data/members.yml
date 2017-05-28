@@ -1,25 +1,25 @@
-- name: Marc Galland
+- name: Michelle van der Gragt
   affiliation: University of Amsterdam
-  github: mgalland
+  github: MvanderGragt
   interests:
-    - Plants
-    - Omics
+    - Tomato genetics
+    - Small RNAs
     - Programming
-    - Data Analysis
+    - Python/R
 
-- name: Mateusz Kuzak
-  affiliation: Netherlands eScience Center
-  github: mkuzak
+- name: Till Bey
+  affiliation: University of Amsterdam
+  github: tillbey
   interests:
-    - Open Source
-    - Open Science
-    - Open Education
-    - Reproducible Reasearch
+    - Image Analysis
+    - Chromatin structure and gene activity
+    - Python/R
 
-- name: Carlos Martinez-Ortiz
-  affiliation: Netherlands eScience Center
-  github: c-martinez
+- name: Elise van Bree
+  affiliation: University of Amsterdam
+  github: elisevanbree
   interests:
-    - Open Science
-    - Reproducible Reasearch
-    - Data Analysis
+    - Brain evolution
+    - Retrotransposon 
+    - ChiP-Seq & RNA-Seq
+    - Snakemake for bioinformatic pipelines
