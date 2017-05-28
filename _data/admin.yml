@@ -1,0 +1,25 @@
+- name: Marc Galland
+  affiliation: University of Amsterdam
+  github: mgalland
+  interests:
+    - Plants
+    - Omics
+    - Programming
+    - Data Analysis
+
+- name: Mateusz Kuzak
+  affiliation: Netherlands eScience Center
+  github: mkuzak
+  interests:
+    - Open Source
+    - Open Science
+    - Open Education
+    - Reproducible Reasearch
+
+- name: Carlos Martinez-Ortiz
+  affiliation: Netherlands eScience Center
+  github: c-martinez
+  interests:
+    - Open Science
+    - Reproducible Reasearch
+    - Data Analysis

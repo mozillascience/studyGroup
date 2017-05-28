@@ -1,0 +1,83 @@
+<!-- Who We Are Section -->
+    <section id="who-we-are" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Who We Are</h2>
+                    <h3 class="section-subheading text-muted">
+                        We are a diverse group hailing from multiple departments across the University and beyond.
+                    </h3>
+                </div>
+            </div>
+            <h2 class="section-subheading text-center">Administration</h2>
+            {% for member in site.data.admin %}
+            {% assign loopindex = forloop.index0 | modulo: 3 %}
+            {% if loopindex == 0 %}
+            {% if forloop.first == false %}
+            </div>
+            {% endif %}
+            <div class="row">
+                <div class="col-sm-3 col-sm-offset-1half">
+            {% else %}
+                <div class="col-sm-3">
+            {% endif %}
+                    <div class="team-member">
+                        {% if member.github %}
+                        <img src="https://avatars.githubusercontent.com/{{ member.github }}?s=96" class="img-responsive img-circle" alt="">
+                        <h4><a href="https://github.com/{{ member.github }}">{{ member.name }}</a></h4>
+                        {% else %}
+                        <i class="fa fa-user"></i>
+                        <h4>{{ member.name }}</h4>
+                        {% endif %}
+                        <p class="text-muted">{{ member.position }}</p>
+                        <p class="text-muted"><i>{{ member.degree }}</i></p>
+                        {% if member.interests %}
+                        Interests:
+                        <ul class="list-inline text-muted">
+                            {% for interest in member.interests %}
+                            <li class="fa fa-angle-right">&nbsp;{{ interest }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
+            {% if forloop.last == true %}
+            </div>
+            {% endif %}
+            {% endfor %}
+            <h2 class="section-subheading text-center">Members</h2>
+            <div class="row">
+                {% for member in site.data.members %}
+                {% assign loopindex = forloop.index0 | modulo: 4 %}
+                {% if loopindex == 0 %}
+                {% if forloop.first == false %}
+            </div>
+                {% if forloop.last == false %}
+            <div class="row">
+                {% endif %}
+                {% endif %}
+                {% endif %}
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        {% if member.github %}
+                        <img src="https://avatars.githubusercontent.com/{{ member.github }}?s=96" class="img-responsive img-circle" alt="">
+                        <h4><a href="https://github.com/{{ member.github }}">{{ member.name }}</a></h4>
+                        {% else %}
+                        <i class="fa fa-user"></i>
+                        <h4>{{ member.name }}</h4>
+                        {% endif %}
+                        <p class="text-muted"><i>{{ member.degree }}</i></p>
+                        {% if member.interests %}
+                        Interests:
+                        <ul class="list-inline text-muted">
+                            {% for interest in member.interests %}
+                            <li class="fa fa-angle-right">&nbsp;{{ interest }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
