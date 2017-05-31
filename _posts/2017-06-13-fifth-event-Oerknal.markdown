@@ -1,8 +1,8 @@
 ---
-title: Co-working session.
-text: Let's meet again in Oerknal to learn code and solve practical issues. Don't forget to bring your own laptop! 
-location: Science Park Oerknal
-link: https://github.com/mozillascience/studyGroup#how-to-launch-a-new-event
+title: Collaborate with your colleagues using Git and GitHub.
+text: This session will be taught by Mateusz to show the power of collaboration for code building. Don't forget to bring your own laptop! 
+location: Science Park 904. Room C4.215
+link: https://github.com/ScienceParkStudyGroup/Events/Issues/1
 date: 2017-06-13
 startTime: '16:00'
 endTime: '17:00'
