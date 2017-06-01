@@ -26,7 +26,7 @@ activities:
     icon: fa-book
 
 events: Events
-eventsSubheading: 'Weekly events'
+eventsSubheading: '<iframe style= "border:5px; border-color: red;" width="1080" height="600" src="http://meetu.ps/39RMXF" frameborder="0"></iframe>'
 eventPlaceholder: '<iframe style= "border:5px; border-color: red;" width="1080" height="600" src="http://meetu.ps/39RMXF" frameborder="0"></iframe>'
 suggestEvent: Suggest an Event
 leadership: How to lead a Study Group session
