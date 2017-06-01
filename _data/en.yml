@@ -4,7 +4,7 @@ events: Events
 contact: Contact
 tellMeMore: Tell Me More
 
-activitiesSubheading: 'And you can, too!'
+activitiesSubheading: 'Need help now?  Want to talk?  Go post in our Gitter: <a href="https://gitter.im/resbaz/Arizona" target="_blank">resbaz/Arizona</a>'
 activities:
   - title: Collaboration
     description: 'We support an ample community of researchers from diverse areas and levels of expertise. Wether you are just starting to learn programming or you are already an expert, we have a place for you!'
