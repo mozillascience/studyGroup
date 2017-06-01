@@ -18,7 +18,7 @@ activities:
 
 Ourevents:
   - title: PhTea
-    description: 'Where: Keating Building Cafe (Bio5)<br>When: 8AM - 10AM, every Tuesday'
+    description: '<strong>Where:</strong> Keating Building Cafe (Bio5)<br>When: 8AM - 10AM, every Tuesday<br>What: PhTea is a weekly, informal meeting that occurs every Tuesday morning.  Whether you're debugging code, or need ideas for how to introduce programming into your research, PhTea is a great place to receive help and share knowledge!'
     icon: fa-coffee
   - title: Hacky Hour
     description: 'Meeting and working with experts from different fields can bring a new and fresh perspective to your own work! Even more, re-inforce your skill and help train a new generation of developers by teaching others.'
