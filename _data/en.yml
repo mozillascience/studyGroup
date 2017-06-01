@@ -6,19 +6,19 @@ tellMeMore: Tell Me More
 
 activitiesSubheading: 'And you can, too!'
 activities:
+  - title: Co-Working
+    description: 'We support an ample community of researchers from diverse areas and levels of expertise. Wether you are just starting to learn programming or you are already an expert, we have a place for you! Join us to get help on a personal coding project, help others with their problems, or simply learn'
+    icon: fa-laptop
   - title: Skill Sharing
     description: 'Share your favorite coding skills and tools with your friends and colleagues in friendly, no-pressure work-alongs.</p>'
     icon: fa-comment
-  - title: Co-Working
-    description: 'Get together to work on your coding projects, help each other out and share your work.'
-    icon: fa-laptop
   - title: Community Building
     description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
     icon: fa-group
 
 events: Events
 eventsSubheading: Our upcoming and recent events
-eventPlaceholder: Nothing yet! Propose an event here.
+eventPlaceholder: '<iframe width="1080" height="600" src="http://meetu.ps/39RMXF" frameborder="0"></iframe>'
 suggestEvent: Suggest an Event
 leadership: How to lead a Study Group session
 pastEvents: See Our Past Events
