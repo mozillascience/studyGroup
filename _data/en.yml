@@ -28,7 +28,7 @@ activities:
 events: Events
 eventPlaceholder: Nothing yet! Propose an event here.
 eventsSubheading: Weekly events
-eventsMeetup: '<iframe style= "border:5px; border-color: red;" width="1080" height="600" src="http://meetu.ps/39RMXF" frameborder="0"></iframe>'
+eventsMeetup: 'Find our Meetup here <iframe style= "border:5px; border-color: red;" width="1080" height="600" src="http://meetu.ps/39RMXF" frameborder="0"></iframe>'
 suggestEvent: Suggest an Event
 leadership: How to lead a Study Group session
 pastEvents: See Our Past Events
