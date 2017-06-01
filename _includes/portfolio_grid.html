@@ -1,14 +1,38 @@
 <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
-        <div class="container">
+            <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">{{site.data[site.language].events}}</h2>
                     <h3 class="section-subheading text-muted">{{site.data[site.language].eventsSubheading}}</h3>
                 </div>
             </div>
+            <div class="row text-center">
+                {% for event in site.data[site.language].Ourevents %}
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa {{event.icon}} fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">{{event.title}}</h4>
+                        <p class="text-muted">{{event.description}}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{site.data[site.language].events}}</h2>
+                    <h3 class="section-subheading text-muted">{{site.data[site.language].eventsSubheading}}</h3>
+                    {{site.data[site.language].eventsMeetup}}                 
+                </div>
+            </div>
             <div class="col-lg-12">
-              <!--current events-->
+              <current events>
               <ul class='events'>
                 {% assign isEvent = 0 %}
                 {% for post in site.posts reversed %}
@@ -37,7 +61,7 @@
                 </div>
                 {% endif %}
               </ul>
-              <!--past events-->
+              <past events>
               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
                   <div class="panel-heading text-center" role="tab" id="headingOne">
@@ -93,4 +117,4 @@
             </div>
             {% endif %}
         </div>
-    </section>
+    </section-->

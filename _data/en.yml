@@ -4,21 +4,70 @@ events: Events
 contact: Contact
 tellMeMore: Tell Me More
 
-activitiesSubheading: 'And you can, too!'
+activitiesSubheading: 'Need help now?  Want to talk?  Go post in our Gitter: <a href="https://gitter.im/resbaz/Arizona" target="_blank">resbaz/Arizona</a>'
 activities:
-  - title: Skill Sharing
-    description: 'Share your favorite coding skills and tools with your friends and colleagues in friendly, no-pressure work-alongs.</p>'
-    icon: fa-comment
-  - title: Co-Working
-    description: 'Get together to work on your coding projects, help each other out and share your work.'
-    icon: fa-laptop
+  - title: Everyone is Welcome
+    description: 'We support an ample community of researchers from diverse areas and levels of 
+    expertise. Whether you are just starting to learn programming or you are already an expert, we 
+    have a place for you!'
+    icon: fa-users
+  - title: Collaboration
+    description: 'Meeting and working with experts from different fields can bring a new and fresh 
+    perspective to your own work! Even more, re-inforce your skill and help train a new generation 
+    of developers by teaching others.'
+    icon: fa-thumbs-o-up
   - title: Community Building
-    description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
-    icon: fa-group
+    description: 'Meet new people in and outside of your field. Join our supportive network of 
+    data scientists and find out what we can do when we work together.'
+    icon: fa-home
 
-events: Events
-eventsSubheading: Our upcoming and recent events
+Ourevents:
+  - title: PhTea
+    description: "<strong>Where:</strong> Keating Building Cafe (Bio5)<br>
+    <strong>When:</strong> 8AM - 10AM, every Tuesday<br>
+    <strong>What:</strong> Whether you're debugging code or need ideas for how to 
+    introduce programming into your research, PhTea is a great place to receive help 
+    and share knowledge! No specific problem? No worries -- join us at PhTea to chit chat
+    with other researchers in the morning while enjoying some coffee or tea. PhTea is the 
+    best way to start your Tuesday!"
+    icon: fa-coffee
+  - title: Hacky Hour
+    description: "<strong>Where:</strong> Pasco (University Blvd)<br>
+<strong>When:</strong> 4PM - 7PM, every Thursday<br>
+<strong>What:</strong> Hacking + Happy Hour = HackyHour! Every week, researchers, 
+data scientists, and programmers around campus get together.  
+Some people bring their programming problems to get help from those with more experience. 
+Those without projects come to discuss  
+their research, brainstorm new ideas, try out new technologies, or chit chat about 
+data science!"
+    icon: fa-beer
+  - title: Shut Up and Write
+    description: "<strong>Where:</strong> iSpace (Science & Engineering Library)<br>
+<strong>When:</strong> 8AM - 10AM, every Friday<br>
+<strong>What:</strong> Friday mornings are dedicated to helping you write, whether 
+it's a thesis/dissertation, a peer-reviewed journal article, a grant proposal, or 
+something else. At ShutUpAndWrite, we use the 
+<a href='https://en.wikipedia.org/wiki/Pomodoro_Technique' target='_blank'>Pomodoro Technique</a>
+ to help you get the most out of the time you spend writing!"
+    icon: fa-laptop
+  - title: Community Events
+    description: "<p><strong>Tucson Python Meetup:</strong> The goal of this group is to encourage
+     more mingling, learning, and sharing ideas within the Tucson Python community. 
+     Everybody is welcome, no matter what your level of Python experience. 
+     Activities include presentations and workshops on everything from how to use Python 
+     to control the lights in your home, to building web applications which can scale to 
+     millions of users. For more information, see: 
+     <a href='https://www.meetup.com/Tucson-Python-Meetup/' target='_blank'>https://www.meetup.com/Tucson-Python-Meetup/</a></p>
+    <p><strong>Tucson Data Science Meetup:</strong> Monthly meetups discussing many aspects of 
+    Data Science, including machine learning/deep learning, 
+    natural language processing, data visualization, bioinformatics, and more! See: <a href='https://www.meetup.com/Tucson-Data-Science-Meetup/' target='_blank'>https://www.meetup.com/Tucson-Data-Science-Meetup/</a></p>"
+    icon: fa-calendar
+ 
+
 eventPlaceholder: Nothing yet! Propose an event here.
+eventsSubheading: '<p style="line-height: 1.25em;">Stay up to date on announcements at our Twitter: <a href="https://twitter.com/ResBazAZ" target="_blank">@ResBazAZ</a><br>
+RSVP for our events at Meetup: <a href="https://www.meetup.com/ResBazAZ/" target="_blank">Our MeetUp</a>.</p>'
+eventsMeetup: 'Find our Meetup here <iframe style= "border:5px; border-color: red;" width="1080" height="600" src="http://meetu.ps/39RMXF"></iframe>'
 suggestEvent: Suggest an Event
 leadership: How to lead a Study Group session
 pastEvents: See Our Past Events
@@ -33,7 +82,7 @@ googleCalendar: 'If you use Google calendar, you can add our calendar by pressin
 iCal: 'If you use another calendar app, you can copy and paste <a href="%CALENDAR_ICAL_URL%">this address</a> into any calendar product that supports the iCal format.'
 
 sayHi: Come Say Hi
-contactSubheading: 'We use GitHub to get coding help, talk about events and share files. Join us there!'
+contactSubheading: 'Any more questions?  You can ask us at our Gitter!'
 contact: Talk To Us
 
 teamHeadline: Who We Are

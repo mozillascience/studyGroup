@@ -19,3 +19,17 @@
   interests:
     - Language & NLP
     - Russian
+
+- name: Julian Pistorius
+  affiliation: Cyverse
+  github: julianpistorius
+  interests:
+    - Python
+
+- name: Gaius Augustus
+  affiliation: Cancer Biology GIDP, University of Arizona
+  github: gaiusjaugustus
+  interests:
+    - R Programming
+    - Bioinformatics
+    - Python
