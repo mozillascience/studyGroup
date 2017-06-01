@@ -17,20 +17,20 @@ activities:
     icon: fa-group
 
 Ourevents:
-  - title: Collaboration
+  - title: PhTea
     description: 'We support an ample community of researchers from diverse areas and levels of expertise. Wether you are just starting to learn programming or you are already an expert, we have a place for you!'
-    icon: fa-laptop
-  - title: Skill Sharing
+    icon: fa-coffee
+  - title: Hacky Hour
     description: 'Meeting and working with experts from different fields can bring a new and fresh perspective to your own work! Even more, re-inforce your skill and help train a new generation of developers by teaching others.'
-    icon: fa-comment
-  - title: Community Building
+    icon: fa-beer
+  - title: Shut Up and Write
     description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
-    icon: fa-group
+    icon: fa-book
  
 
 events2: Events
 eventPlaceholder: Nothing yet! Propose an event here.
-eventsSubheading: Weekly events
+eventsSubheading: 'RSVP at <a href="http://google.com">Our MeetUp</a>.'
 eventsMeetup: 'Find our Meetup here <iframe style= "border:5px; border-color: red;" width="1080" height="600" src="http://meetu.ps/39RMXF"></iframe>'
 suggestEvent: Suggest an Event
 leadership: How to lead a Study Group session
