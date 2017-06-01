@@ -18,10 +18,6 @@ activities:
 
 events: Events
 eventsSubheading: Our upcoming and recent events
-  - title: PhTea
-    location: Keating Building Cafe (Bio5)
-    time: 8AM - 10AM, every Tuesday
-    description: "PhTea is a weekly, informal meeting that occurs every Tuesday morning. Whether you're debugging code, or need ideas for how to introduce programming into your research, PhTea is a great place to recieve help and share knowledge! No specific problem? No worries -- join us at PhTea to chit chat with other researchers in the morning while enjoying some coffee or tea. PhTea is the best way to start your Tuesday!"
 eventsMeetup: '<iframe width="1080" height="600" src="http://meetu.ps/39RMXF" frameborder="0"></iframe>'
 eventPlaceholder: '<iframe width="1080" height="600" src="http://meetu.ps/39RMXF" frameborder="0"></iframe>'
 suggestEvent: Suggest an Event
