@@ -16,7 +16,7 @@ activities:
     description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
     icon: fa-group
   - title: PhTea
-    description: 'r need ideas for how to introduce programming into your research, PhTea is a great place to recieve help and share knowledge! No specific problem? No worries -- join us at PhTea to chit chat with other researchers in the morning while enjoying some coffee or tea. PhTea is the best way to start your Tuesday!'
+    description: 'Join us in this weekly, informal meeting every tuesday morning (8:00-10:00am). Wether you're debugging code, or need ideas for how to introduce programming into your research, PhTea is a great place to recieve help and share knowledge! No specific problem? No worries -- join us at PhTea to chit chat with other researchers in the morning while enjoying some coffee or tea. PhTea is the best way to start your Tuesday!'
     icon: fa-coffee
   - title: Hacky Hour
     description: 'Meeting and working with experts from different fields can bring a new and fresh perspective to your own work! Even more, re-inforce your skill and help train a new generation of developers by teaching others.'
