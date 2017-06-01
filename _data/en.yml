@@ -15,17 +15,20 @@ activities:
   - title: Community Building
     description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
     icon: fa-group
-  - title: PhTea
-    description: 'PhTea is a weekly, informal meeting that occurs every Tuesday morning (8-10am). Wether you are debugging code, or need ideas for how to introduce programming into your research, PhTea is a great place to recieve help and share knowledge! No specific problem? No worries, join us at Phtea to chit chat with other researchers in the morning while enjoying some coffee or tea.'
-    icon: fa-coffee
-  - title: Hacky Hour
-    description: 'Meeting and working with experts from different fields can bring a new and fresh perspective to your own work! Even more, re-inforce your skill and help train a new generation of developers by teaching others.'
-    icon: fa-beer
-  - title: Shut up and write
-    description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
-    icon: fa-book
 
-events: Events
+events:
+  - title: Collaboration
+    description: 'We support an ample community of researchers from diverse areas and levels of expertise. Wether you are just starting to learn programming or you are already an expert, we have a place for you!'
+    icon: fa-laptop
+  - title: Skill Sharing
+    description: 'Meeting and working with experts from different fields can bring a new and fresh perspective to your own work! Even more, re-inforce your skill and help train a new generation of developers by teaching others.'
+    icon: fa-comment
+  - title: Community Building
+    description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
+    icon: fa-group
+ 
+
+events2: Events
 eventPlaceholder: Nothing yet! Propose an event here.
 eventsSubheading: Weekly events
 eventsMeetup: 'Find our Meetup here <iframe style= "border:5px; border-color: red;" width="1080" height="600" src="http://meetu.ps/39RMXF"></iframe>'
