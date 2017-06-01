@@ -15,7 +15,7 @@ activities:
     description: 'Meeting and working with experts from different fields can bring a new and fresh 
     perspective to your own work! Even more, re-inforce your skill and help train a new generation 
     of developers by teaching others.'
-    icon: fa-handshake
+    icon: fa-thumbs-o-up
   - title: Community Building
     description: 'Meet new people in and outside of your field. Join our supportive network of 
     data scientists and find out what we can do when we work together.'
