@@ -1,6 +1,6 @@
 ---
 whatWeDo: What We Do
-Ourevents: Events
+events: Events
 contact: Contact
 tellMeMore: Tell Me More
 
@@ -16,7 +16,7 @@ activities:
     description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
     icon: fa-group
 
-events:
+Ourevents:
   - title: Collaboration
     description: 'We support an ample community of researchers from diverse areas and levels of expertise. Wether you are just starting to learn programming or you are already an expert, we have a place for you!'
     icon: fa-laptop
