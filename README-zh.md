@@ -4,6 +4,8 @@
 
 ### [Read in English](https://github.com/mozillascience/studyGroup/blob/gh-pages/README.md)
 
+### [Lee esto en Español](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-es.md)
+
 # Mozilla 学习小组
 
 欢迎使用 [Mozilla Science Lab](https://www.mozillascience.org/) 旗下的 “Mozilla 学习小组”! 下面, 我们将为您介绍如何开始您的Mozilla学习小组之旅。
