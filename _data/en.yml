@@ -15,13 +15,12 @@ activities:
   - title: Community Building
     description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
     icon: fa-group
-
-events: Events
-eventsSubheading: 'Weekly events'
-weekly:
   - title: PhTea
     description: 'holder'
     icon: fa-coffee
+
+events: Events
+eventsSubheading: 'Weekly events'
 eventsMeetup: '<iframe width="1080" height="600" src="http://meetu.ps/39RMXF" frameborder="0"></iframe>'
 eventPlaceholder: '<iframe width="1080" height="600" src="http://meetu.ps/39RMXF" frameborder="0"></iframe>'
 suggestEvent: Suggest an Event
