@@ -6,11 +6,11 @@ tellMeMore: Tell Me More
 
 activitiesSubheading: 'And you can, too!'
 activities:
-  - title: Co-Working
-    description: 'We support an ample community of researchers from diverse areas and levels of expertise. Wether you are just starting to learn programming or you are already an expert, we have a place for you! Join us to get help on a personal coding project, help others with their problems, or simply learn'
+  - title: Collaboration
+    description: 'We support an ample community of researchers from diverse areas and levels of expertise. Wether you are just starting to learn programming or you are already an expert, we have a place for you!'
     icon: fa-laptop
   - title: Skill Sharing
-    description: 'Share your favorite coding skills and tools with your friends and colleagues in friendly, no-pressure work-alongs.</p>'
+    description: 'Meeting and working with experts from different fields can bring a new and fresh perspective to your own work! Even more, re-inforce your skill and help train a new generation of developers by teaching others.'
     icon: fa-comment
   - title: Community Building
     description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
@@ -18,6 +18,10 @@ activities:
 
 events: Events
 eventsSubheading: Our upcoming and recent events
+  - title: PhTea
+    location: Keating Building Cafe (Bio5)
+    time: 8AM - 10AM, every Tuesday
+    description: "PhTea is a weekly, informal meeting that occurs every Tuesday morning. Whether you're debugging code, or need ideas for how to introduce programming into your research, PhTea is a great place to recieve help and share knowledge! No specific problem? No worries -- join us at PhTea to chit chat with other researchers in the morning while enjoying some coffee or tea. PhTea is the best way to start your Tuesday!"
 eventsMeetup: '<iframe width="1080" height="600" src="http://meetu.ps/39RMXF" frameborder="0"></iframe>'
 eventPlaceholder: '<iframe width="1080" height="600" src="http://meetu.ps/39RMXF" frameborder="0"></iframe>'
 suggestEvent: Suggest an Event
