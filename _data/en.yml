@@ -18,6 +18,7 @@ activities:
 
 events: Events
 eventsSubheading: Our upcoming and recent events
+eventsMeetup: '<iframe width="1080" height="600" src="http://meetu.ps/39RMXF" frameborder="0"></iframe>'
 eventPlaceholder: '<iframe width="1080" height="600" src="http://meetu.ps/39RMXF" frameborder="0"></iframe>'
 suggestEvent: Suggest an Event
 leadership: How to lead a Study Group session
