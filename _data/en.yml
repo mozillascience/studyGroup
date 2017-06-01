@@ -18,14 +18,18 @@ activities:
 
 Ourevents:
   - title: PhTea
-    description: "<strong>Where:</strong> Keating Building Cafe (Bio5)<br>When: 8AM - 10AM, every Tuesday<br>What: PhTea is a weekly, informal meeting that occurs every Tuesday morning.  Whether you're debugging code, or need ideas for how to introduce programming into your research, PhTea is a great place to receive help and share knowledge"
+    description: "<strong>Where:</strong> Keating Building Cafe (Bio5)<br><strong>When:</strong> 8AM - 10AM, every Tuesday<br><strong>What:</strong> PhTea is a weekly, informal meeting that occurs every Tuesday morning. Whether you're debugging code, or need ideas for how to introduce programming into your research, PhTea is a great place to recieve help and share knowledge! No specific problem? No worries -- join us at PhTea to chit chat with other researchers in the morning while enjoying some coffee or tea. PhTea is the best way to start your Tuesday!"
     icon: fa-coffee
   - title: Hacky Hour
-    description: 'Meeting and working with experts from different fields can bring a new and fresh perspective to your own work! Even more, re-inforce your skill and help train a new generation of developers by teaching others.'
+    description: "<strong>Where:</strong> Pasco (University Blvd)
+
+<strong>When:</strong> 4PM - 7PM, every Thursday
+
+<strong>What:</strong> Hacking + Happy Hour = HackyHour! Every week, researchers, data scientists, and programmers around campus get together at Pasco for Hacky Hour. Some people bring their programming problems to get help, others who have experience with their problems will help them. Those without projects come to discuss about their research, brainstorm new ideas, try out new technologies, or chit chat about data science!   "
     icon: fa-beer
   - title: Shut Up and Write
     description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
-    icon: fa-book
+    icon: fa-laptop
  
 
 events2: Events
