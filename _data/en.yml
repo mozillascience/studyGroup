@@ -18,17 +18,32 @@ activities:
 
 Ourevents:
   - title: PhTea
-    description: "<strong>Where:</strong> Keating Building Cafe (Bio5)<br><strong>When:</strong> 8AM - 10AM, every Tuesday<br><strong>What:</strong> PhTea is a weekly, informal meeting that occurs every Tuesday morning. Whether you're debugging code, or need ideas for how to introduce programming into your research, PhTea is a great place to recieve help and share knowledge! No specific problem? No worries -- join us at PhTea to chit chat with other researchers in the morning while enjoying some coffee or tea. PhTea is the best way to start your Tuesday!"
+    description: "<strong>Where:</strong> Keating Building Cafe (Bio5)<br>
+    <strong>When:</strong> 8AM - 10AM, every Tuesday<br>
+    <strong>What:</strong> PhTea is a weekly, informal meeting that occurs every 
+    Tuesday morning. Whether you're debugging code, or need ideas for how to 
+    introduce programming into your research, PhTea is a great place to recieve help 
+    nd share knowledge! No specific problem? No worries -- join us at PhTea to chit chat
+    ith other researchers in the morning while enjoying some coffee or tea. PhTea is the 
+    best way to start your Tuesday!"
     icon: fa-coffee
   - title: Hacky Hour
-    description: "<strong>Where:</strong> Pasco (University Blvd)
-
-<strong>When:</strong> 4PM - 7PM, every Thursday
-
-<strong>What:</strong> Hacking + Happy Hour = HackyHour! Every week, researchers, data scientists, and programmers around campus get together at Pasco for Hacky Hour. Some people bring their programming problems to get help, others who have experience with their problems will help them. Those without projects come to discuss about their research, brainstorm new ideas, try out new technologies, or chit chat about data science!   "
+    description: "<strong>Where:</strong> Pasco (University Blvd)<br>
+<strong>When:</strong> 4PM - 7PM, every Thursday<br>
+<strong>What:</strong> Hacking + Happy Hour = HackyHour! Every week, researchers, 
+data scientists, and programmers around campus get together at Pasco for Hacky Hour. 
+ome people bring their programming problems to get help, others who have experience 
+with their problems will help them. Those without projects come to discuss about 
+their research, brainstorm new ideas, try out new technologies, or chit chat about 
+data science!"
     icon: fa-beer
   - title: Shut Up and Write
-    description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
+    description: "<strong>Where:</strong> iSpace (Science & Engineering Library)<br>
+<strong>When:</strong> 8AM - 10AM, every Friday<br>
+<strong>What:</strong> Friday mornings are dedicated to helping you write, whether 
+its a thesis/dissertation, peer-reviewed journal article, a grant proposal, or 
+something else you need to write. At ShutUpAndWrite, we use the Pomodoro Method to 
+help you get the most out of the time you spend writing!"
     icon: fa-laptop
  
 
