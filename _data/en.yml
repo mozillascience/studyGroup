@@ -53,7 +53,7 @@ help you get the most out of the time you spend writing!"
 
 eventPlaceholder: Nothing yet! Propose an event here.
 eventsSubheading: '<p style="line-height: 1.25em;">Stay up to date on announcements at our Twitter: <a href="https://twitter.com/ResBazAZ" target="_blank">@ResBazAZ</a><br>
-RSVP for our events at Meetup: <a href="hhttps://www.meetup.com/ResBazAZ/" target="_blank">Our MeetUp</a>.</p>'
+RSVP for our events at Meetup: <a href="https://www.meetup.com/ResBazAZ/" target="_blank">Our MeetUp</a>.</p>'
 eventsMeetup: 'Find our Meetup here <iframe style= "border:5px; border-color: red;" width="1080" height="600" src="http://meetu.ps/39RMXF"></iframe>'
 suggestEvent: Suggest an Event
 leadership: How to lead a Study Group session
@@ -69,7 +69,7 @@ googleCalendar: 'If you use Google calendar, you can add our calendar by pressin
 iCal: 'If you use another calendar app, you can copy and paste <a href="%CALENDAR_ICAL_URL%">this address</a> into any calendar product that supports the iCal format.'
 
 sayHi: Come Say Hi
-contactSubheading: 'We use GitHub to get coding help, talk about events and share files. Join us there!'
+contactSubheading: 'Any more questions?  You can ask us at our Gitter!'
 contact: Talk To Us
 
 teamHeadline: Who We Are
