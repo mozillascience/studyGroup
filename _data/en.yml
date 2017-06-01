@@ -45,11 +45,9 @@ its a thesis/dissertation, peer-reviewed journal article, a grant proposal, or
 something else you need to write. At ShutUpAndWrite, we use the Pomodoro Method to 
 help you get the most out of the time you spend writing!"
     icon: fa-laptop
-  - title: Tucson Python Meetup
-    description: "For anyone interested in learning and working with Python and its many interesting libraries! See: <a href='https://www.meetup.com/Tucson-Python-Meetup/' target='_blank'>https://www.meetup.com/Tucson-Python-Meetup/</a>"
-    icon: fa-calendar
-  - title: Tucson Data Science Meetup
-    description: "For anyone interested in learning and working with Data Science, including machine learning/deep learning, natural language processing, data visualization, bioinformatics and more! See: <a href='https://www.meetup.com/Tucson-Data-Science-Meetup/' target='_blank'>https://www.meetup.com/Tucson-Data-Science-Meetup/</a>"
+  - title: Community Events
+    description: "<p><strong>Tucson Python Meetup:</strong> For anyone interested in learning and working with Python and its many interesting libraries! See: <a href='https://www.meetup.com/Tucson-Python-Meetup/' target='_blank'>https://www.meetup.com/Tucson-Python-Meetup/</a></p>
+    <p><strong>Tucson Data Science Meetup:</strong> For anyone interested in learning and working with Data Science, including machine learning/deep learning, natural language processing, data visualization, bioinformatics and more! See: <a href='https://www.meetup.com/Tucson-Data-Science-Meetup/' target='_blank'>https://www.meetup.com/Tucson-Data-Science-Meetup/</a></p>"
     icon: fa-calendar
  
 
