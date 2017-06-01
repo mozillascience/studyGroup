@@ -15,6 +15,12 @@ activities:
   - title: Community Building
     description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
     icon: fa-group
+  - title: Collaboration
+    description: 'We support an ample community of researchers from diverse areas and levels of expertise. Wether you are just starting to learn programming or you are already an expert, we have a place for you!'
+    icon: fa-laptop
+  - title: Skill Sharing
+    description: 'Meeting and working with experts from different fields can bring a new and fresh perspective to your own work! Even more, re-inforce your skill and help train a new generation of developers by teaching others.'
+    icon: fa-comment
   - title: Community Building
     description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
     icon: fa-group
