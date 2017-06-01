@@ -191,7 +191,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Alegreya SC","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Alegreya SC", Serif;
+    font-weight: 800;
+    font-size: 1.2em ;
     color: #{{ site.color.primary }};
 }
 
