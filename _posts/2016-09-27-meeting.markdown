@@ -1,0 +1,9 @@
+---
+title: Introducing 'Python for Genomic Data Science'
+text: We will be introducing this Coursera course and deciding how to engage with it.
+location: SANBI, 5th Floor, Life Sciences Building, UWC
+link: https://github.com/SANBI-SA/studyGroup/issues/7
+date: 2016-09-27
+startTime: '15:00'
+endTime: '16:00'
+---
