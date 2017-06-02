@@ -2,8 +2,9 @@
 title: "Intro to piping and Data Manipulation"
 author: "JEPA"
 date: "02/06/2017"
-output: 
-  html_document: 
+output:
+  pdf_document: default
+  html_document:
     keep_md: yes
 ---
 
@@ -19,7 +20,9 @@ library(tidyr)
 #install.packages('ggplot2')
 library(ggplot2)
 
-Alaska <- read.csv("./Data/Alaska.csv")
+Alaska <- read.csv("./Data/Alaska.csv") #Sea around Us data for Alaska
+USA <- read.csv("./Data/USAP.csv") #Sea around Us data for USA
+
 
 ```
 
@@ -113,7 +116,7 @@ Filter_NA_Example2 <- filter(Alaska,!is.na(uncertainty_score)) #Clear NA's
 
 ```
 
-### Group_by*
+### Group_by* (plus summarise)
 The `group_by`function allows you to group your data by common variables for future (inmidiate) calculations. This function needs the "pipe opperator"
 
 #### Basic structure:
@@ -214,16 +217,83 @@ head(Select_Example5, 3)
 ```
 
 ###slice
-###summarize()*
+The `slice`function works like the `select`function but for rows. So, if you want to extract an specific row, a set of rows, or a range between values, use slice!
+
+#### Basic Structure 
+
+New_Data <- slice(Old_Data, number)
+
+```{r slice, echo =T, eval=T}
+
+#Select by row number
+Slice_Example1 <- slice(Alaska, 3948)
+
+Slice_Example1
+
+#Select by multiple rows
+Slice_Example2 <- slice(Alaska, 1000:3948)
+
+head(Slice_Example2, 3)
+
+```
+
 
 #Joining Data with dplyr
 
 ### The "bind" family
+
 #### bind_cols
+
+```{r bind_cols, echo =T, eval=T}
+
+#Lets just asume that we have two different data sets
+Data1 <- select(Alaska, 1)
+Data2 <- select(Alaska, 2)
+
+#Now we bind the columns together
+Bind_Cols_1 <- bind_cols(Data1,Data2)
+
+head(Bind_Cols_1, 3)
+```
+
 #### bind_rows
+
+```{r bind_rows, echo =T, eval=T}
+
+#Lets just asume that we have two different data sets
+Data1 <- slice(Alaska, 1:3)
+Data2 <- slice(Alaska, 10800:10802)
+
+#Now we bind the columns together
+Bind_Row_1 <- bind_cols(Data1,Data2)
+
+head(Bind_Row_1, 6)
+```
+
 ### The "join" family
+
 #### anti_join
+
+```{r anti_join, echo =T, eval=T}
+
+#Lets asume we want to know how many species are fished in Alaska and not in the continental US
+Similar_Species <- anti_join(Alaska, USA, by="scientific_name")
+
+#You can also do it by more than one variable
+Similar_Species2 <- anti_join(Alaska, USA, by=c("scientific_name","reporting_status"))
+
+```
+
 #### semi_join
+
+```{r semi_join, echo =T, eval=T}
+#Now we want to know how many species are fished in BOTH Alaska and the continental US
+Diff_Species <- semi_join(Alaska, USA, by="scientific_name")
+
+#Not just like anti_join, you can do it for more than one variable
+
+```
+
 #### inner_join
 #### left_join
 #### right_join

@@ -15,7 +15,8 @@ library(tidyr)
 #install.packages('ggplot2')
 library(ggplot2)
 
-Alaska <- read.csv("./Data/Alaska.csv")
+Alaska <- read.csv("./Data/Alaska.csv") #Sea around Us data for Alaska
+USA <- read.csv("./Data/USAP.csv") #Sea around Us data for USA
 ```
 
 # Dplyr and Tidyr
@@ -204,7 +205,7 @@ head(Filter_NA_Example1[1:4],3)
 Filter_NA_Example2 <- filter(Alaska,!is.na(uncertainty_score)) #Clear NA's
 ```
 
-### Group_by*
+### Group_by* (plus summarise)
 The `group_by`function allows you to group your data by common variables for future (inmidiate) calculations. This function needs the "pipe opperator"
 
 #### Basic structure:
@@ -224,8 +225,8 @@ head(Group_by_Example, 3)
 ```
 
 ```
-## # A tibble: 3 × 2
-##      common_name `n()`
+## # A tibble: 3 x 2
+##      common_name   n()
 ##           <fctr> <int>
 ## 1       Abalones    52
 ## 2  Alaska plaice     9
@@ -243,8 +244,8 @@ head(Group_by_Example, 3)
 ```
 
 ```
-## # A tibble: 3 × 2
-##      common_name `n()`
+## # A tibble: 3 x 2
+##      common_name   n()
 ##           <fctr> <int>
 ## 1       Abalones    52
 ## 2  Alaska plaice     9
@@ -404,16 +405,156 @@ head(Select_Example5, 3)
 ```
 
 ###slice
-###summarize()*
+The `slice`function works like the `select`function but for rows. So, if you want to extract an specific row, a set of rows, or a range between values, use slice!
+
+#### Basic Structure 
+
+New_Data <- slice(Old_Data, number)
+
+
+```r
+#Select by row number
+Slice_Example1 <- slice(Alaska, 3948)
+
+Slice_Example1
+```
+
+```
+##                 area_name area_type                   data_layer
+## 1 USA (Alaska, Subarctic)       eez Reconstructed domestic catch
+##   uncertainty_score year          scientific_name     common_name
+## 1                 3 1973 Clupea pallasii pallasii Pacific herring
+##               functional_group commercial_group fishing_entity
+## 1 Medium pelagics (30 - 89 cm)    Herring-likes            USA
+##   fishing_sector catch_type reporting_status  tonnes landed_value
+## 1     Industrial   Landings         Reported 15792.9     23152391
+```
+
+```r
+#Select by multiple rows
+Slice_Example2 <- slice(Alaska, 1000:3948)
+
+head(Slice_Example2, 3)
+```
+
+```
+##                 area_name area_type                   data_layer
+## 1 USA (Alaska, Subarctic)       eez Reconstructed domestic catch
+## 2 USA (Alaska, Subarctic)       eez Reconstructed domestic catch
+## 3 USA (Alaska, Subarctic)       eez Reconstructed domestic catch
+##   uncertainty_score year          scientific_name     common_name
+## 1                 3 1957  Hippoglossus stenolepis Pacific halibut
+## 2                 1 1957  Hippoglossus stenolepis Pacific halibut
+## 3                 3 1957 Clupea pallasii pallasii Pacific herring
+##               functional_group commercial_group fishing_entity
+## 1   Large flatfishes (>=90 cm)       Flatfishes            USA
+## 2   Large flatfishes (>=90 cm)       Flatfishes            USA
+## 3 Medium pelagics (30 - 89 cm)    Herring-likes            USA
+##   fishing_sector catch_type reporting_status      tonnes landed_value
+## 1      Artisanal   Landings         Reported 12564.60000  18419703.60
+## 2   Recreational   Landings       Unreported    11.14694     16341.42
+## 3     Industrial   Landings         Reported 53656.10001  78659842.61
+```
+
 
 #Joining Data with dplyr
 
 ### The "bind" family
+
 #### bind_cols
+
+
+```r
+#Lets just asume that we have two different data sets
+Data1 <- select(Alaska, 1)
+Data2 <- select(Alaska, 2)
+
+#Now we bind the columns together
+Bind_Cols_1 <- bind_cols(Data1,Data2)
+
+head(Bind_Cols_1, 3)
+```
+
+```
+##                 area_name area_type
+## 1 USA (Alaska, Subarctic)       eez
+## 2 USA (Alaska, Subarctic)       eez
+## 3 USA (Alaska, Subarctic)       eez
+```
+
 #### bind_rows
+
+
+```r
+#Lets just asume that we have two different data sets
+Data1 <- slice(Alaska, 1:3)
+Data2 <- slice(Alaska, 10800:10802)
+
+#Now we bind the columns together
+Bind_Row_1 <- bind_cols(Data1,Data2)
+
+head(Bind_Row_1, 6)
+```
+
+```
+##                 area_name area_type                   data_layer
+## 1 USA (Alaska, Subarctic)       eez Reconstructed domestic catch
+## 2 USA (Alaska, Subarctic)       eez Reconstructed domestic catch
+## 3 USA (Alaska, Subarctic)       eez Reconstructed domestic catch
+##   uncertainty_score year              scientific_name       common_name
+## 1                 1 1950 Marine fishes not identified Marine fishes nei
+## 2                 3 1950 Marine fishes not identified Marine fishes nei
+## 3                 3 1950 Marine fishes not identified Marine fishes nei
+##                functional_group       commercial_group fishing_entity
+## 1 Medium demersals (30 - 89 cm) Other fishes & inverts            USA
+## 2 Medium demersals (30 - 89 cm) Other fishes & inverts            USA
+## 3 Medium demersals (30 - 89 cm) Other fishes & inverts            USA
+##   fishing_sector catch_type reporting_status    tonnes landed_value
+## 1    Subsistence   Landings       Unreported   13.8030      20235.2
+## 2      Artisanal   Landings         Reported 1483.9740    2175505.9
+## 3      Artisanal   Landings       Unreported  389.9891     571724.0
+##                 area_name area_type                   data_layer
+## 1 USA (Alaska, Subarctic)       eez Reconstructed domestic catch
+## 2 USA (Alaska, Subarctic)       eez Reconstructed domestic catch
+## 3 USA (Alaska, Subarctic)       eez Reconstructed domestic catch
+##   uncertainty_score year    scientific_name common_name
+## 1                 4 2009 Anoplopoma fimbria   Sablefish
+## 2                 2 2009 Anoplopoma fimbria   Sablefish
+## 3                 4 2009 Anoplopoma fimbria   Sablefish
+##                 functional_group commercial_group fishing_entity
+## 1 Large bathydemersals (>=90 cm)   Scorpionfishes            USA
+## 2 Large bathydemersals (>=90 cm)   Scorpionfishes            USA
+## 3 Large bathydemersals (>=90 cm)   Scorpionfishes            USA
+##   fishing_sector catch_type reporting_status       tonnes landed_value
+## 1     Industrial   Landings         Reported  1074.516856  1575241.711
+## 2    Subsistence   Landings       Unreported     5.002588     7333.794
+## 3      Artisanal   Landings         Reported 11175.083144 16382671.889
+```
+
 ### The "join" family
+
 #### anti_join
+
+
+```r
+#Lets asume we want to know how many species are fished in Alaska and not in the continental US
+Similar_Species <- anti_join(Alaska, USA, by="scientific_name")
+
+#You can also do it by more than one variable
+Similar_Species2 <- anti_join(Alaska, USA, by=c("scientific_name","reporting_status"))
+```
+
 #### semi_join
+
+
+```r
+#Now we want to know how many species are fished in BOTH Alaska and the continental US
+Diff_Species <- semi_join(Alaska, USA, by="scientific_name")
+
+#Not just like anti_join, you can do it for more than one variable
+```
+
+
 #### inner_join
 #### left_join
 #### right_join
