@@ -1,0 +1,246 @@
+---
+title: "Intro to piping and Data Manipulation"
+author: "JEPA"
+date: "02/06/2017"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+# Libraries and Data
+  
+```{r Libraries, eval=T,echo=T, warning=F, message=F}
+#install.packages('dplyr')
+library(dplyr) 
+
+#install.packages('tidyr')
+library(tidyr) 
+
+#install.packages('ggplot2')
+library(ggplot2)
+
+Alaska <- read.csv("./Data/Alaska.csv")
+
+```
+
+# Dplyr and Tidyr
+
+Despite beign separate, these two packadges work together as one. Theyr main function is to manipulate data frames and keep things "tydi". In some cases you can also make basic data creation. Both packadges follow the same syntax and can use the pipe opperator, I normally don't even know which function is from what packadge so I oftenly just call both.
+
+Plus: Most functions are self explanatory like `select` or `filter`! 
+
+## Dplyr
+
+### Arrange
+The `arrange`function allows you to, literaly, arrenge your data by any value of a column
+
+#### Basic structure:
+
+New_Table <- arrange(Data, column_to_arange_by)
+
+*Note:* If you eant to do from Top <- Bottom you can use `desc()` within the function
+
+*Note:* when doing multiple variables the order is important since it will start with the first one
+
+```{r Dplyr, echo =T, eval=T}
+
+#You can arrange by characters (A -> Z)
+Arrange_Example <- arrange(Alaska,common_name)
+
+head(Arrange_Example[5:7], 3)
+
+#You can arrange by characters (A <- Z) using desc()
+Arrange_Example2 <- arrange(Alaska,desc(common_name))
+
+
+head(Arrange_Example2[5:7], 3)
+
+# you can do multiple characters:
+Arrange_Example3 <- arrange(Alaska,common_name,functional_group, desc(commercial_group))
+
+head(Arrange_Example3[7:9],3)
+
+# And naturally, you can also arrange by numeric factors
+
+Arrange_Example4 <- arrange(Alaska, uncertainty_score, desc(tonnes))
+
+head(Arrange_Example4[4:6],3)
+
+
+```
+
+### Filter
+The `filter`function allows you to, literaly, filter your data by any category or numer.
+
+#### Basic structure:
+
+New_Table <- filter(Data, column_to_filter_by == "category")
+
+```{r Filter, echo =T, eval=T}
+
+#You can filter by character
+Filter_Example <- filter(Alaska,common_name =="Clams")
+
+head(Filter_Example[1:5], 5)
+
+#You can filter by numeric input too
+Filter_Example2 <- filter(Alaska,
+                         year == 2009)
+head(Filter_Example2[1:5], 5)
+
+# Note: you can do =>, <= or !=
+
+# you can do multiple characters:
+
+Selection <- c("Clams","Octopuses")
+
+Filter_Example3 <- filter(Alaska,common_name %in% Selection)
+
+head(Filter_Example3[4:8], 5)
+
+# NOTE: remember that in R there are multiple ways to get to the same result! 
+
+#Wait! What if I want to filter by multiple columns!? 
+
+Filter_Example4 <- filter(Alaska,common_name == "Clams" &
+                            reporting_status =="Unreported")
+
+#You can also filter by NA
+
+Filter_NA_Example1 <- filter(Alaska,is.na(uncertainty_score)) #Extract only NA's
+head(Filter_NA_Example1[1:4],3)
+Filter_NA_Example2 <- filter(Alaska,!is.na(uncertainty_score)) #Clear NA's
+
+```
+
+### Group_by*
+The `group_by`function allows you to group your data by common variables for future (inmidiate) calculations. This function needs the "pipe opperator"
+
+#### Basic structure:
+
+New_Table <- Data %>% 
+  group_by(column_1,column_2...) %>% 
+  second_function()
+
+```{r Group_by, echo =T, eval=T}
+
+#Simple group_by
+Group_by_Example <- Alaska %>% 
+  group_by(common_name) %>% 
+  summarise(n()) #tells you how many rows of each common_name you have
+
+head(Group_by_Example, 3)
+
+#Multiple
+Group_by_Example2 <- Alaska %>% 
+  group_by(common_name,uncertainty_score) %>% 
+  summarise(n()) %>% #tells you how many rows of each common_name you have
+  arrange(uncertainty_score)
+
+head(Group_by_Example, 3)
+```
+
+### Mutate
+The `mutate`function allows you to create a new column in the dataset. The new columb can have characters or numbers.
+
+#### Basic structure:
+
+New_Table <- mutate(Data, Name_New_Column = action)
+
+```{r mutate, echo =T, eval=T}
+
+#Functions
+Mutate_Example1 <- mutate(Alaska, Log = log(tonnes))
+
+head(Mutate_Example1[13:16], 3)
+
+#In data calculations (per row)
+Mutate_Example2 <- mutate(Alaska, Price_plus_Ton = (landed_value+tonnes))
+
+head(Mutate_Example2[13:16], 3)
+
+#Or characters...
+Mutate_Example3 <- mutate(Alaska, Country = "USA")
+
+head(Mutate_Example3[13:16], 3)
+
+Mutate_Example4 <- mutate(Mutate_Example3, Country = paste("In",year,Country,"harvested",round(tonnes,2), "tonnes of", common_name))
+
+paste(Mutate_Example4[1,16])
+paste(Mutate_Example4[5387,16])
+
+```
+
+### select
+The `select`function is one of those "of-course it does that" function cus it allows you to, wait for it... SELECT any column you want.
+
+#### Basic structure:
+
+New_Table <- select(Data,number or name of colum)
+
+```{r select, echo =T, eval=T}
+
+#Select by column number
+Select_Example1 <- select(Alaska, 6)
+
+head(Select_Example1,3)
+
+#Select by multiple column numbers
+Select_Example2 <- select(Alaska, 4,5,6,7)
+
+head(Select_Example2, 3)
+
+# You can also do (4:7) and even (4:6,15)
+
+#Select by name
+Select_Example3 <- select(Alaska, area_name,year,scientific_name,tonnes)
+
+head(Select_Example3, 3)
+
+# You can substract columns from a dataframe
+
+Select_Example4 <- select(Select_Example3, -area_name,year)
+
+head(Select_Example4, 3)
+
+#Note, you can also substract using -1
+
+#And you can also re-order your columns!
+
+Select_Example5 <- select(Select_Example3, scientific_name,year,tonnes,area_name)
+
+head(Select_Example5, 3)
+
+```
+
+###slice
+###summarize()*
+
+#Joining Data with dplyr
+
+### The "bind" family
+#### bind_cols
+#### bind_rows
+### The "join" family
+#### anti_join
+#### semi_join
+#### inner_join
+#### left_join
+#### right_join
+### intersect
+### union
+### setdiff
+
+
+
+
+
+
+
+# The Piping opperator %>% 
+
+Many R packadges like `dplyr`, `tidyr` and `leaflet`, allows you to use the pipe (%>%) operator to chain functions together. Chaining code allows you to streamline your workflow and make it easier to read.
+
+When using the %>% operator, first specify the data frame that all following functions will use. For the rest of the chain the data frame argument can be omitted from the remaining functions.
+
+**NOTE:** for Mac users the pipe simbol "%>%" shortcut is command + shit + m 
