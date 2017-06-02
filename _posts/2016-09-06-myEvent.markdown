@@ -1,0 +1,10 @@
+---
+title: Tools for Reproducible Data Analysis
+text: A study group on tools for reproducible data analysis, based at SANBI at the University of the Western Cape.
+location: SANBI, 5th Floor, Life Sciences Building, UWC
+link: https://github.com/SANBI-SA/studyGroup/issues/3
+date: 2016-09-06
+startTime: '14:00'
+endTime: '15:00'
+
+---
