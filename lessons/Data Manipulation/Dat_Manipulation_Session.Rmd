@@ -243,15 +243,23 @@ head(Slice_Example2, 3)
 #Joining Data with dplyr
 
 ### The "bind" family
+These functions will help us bind two or more datasets in one deoending on different variables.
 
 #### bind_cols
+
+The `bind_cols` function allows us to bind two datasets by column.
+
+##### Basic Structure 
+
+New_Data <- bind_cols(Data1, Data2)
+
 
 ```{r bind_cols, echo =T, eval=T}
 
 #Lets just asume that we have two different data sets
 Data1 <- select(Alaska, 1)
 Data2 <- select(Alaska, 2)
-
+View(Data2)
 #Now we bind the columns together
 Bind_Cols_1 <- bind_cols(Data1,Data2)
 
@@ -259,6 +267,12 @@ head(Bind_Cols_1, 3)
 ```
 
 #### bind_rows
+
+The `bind_rows` function is a sister-function of bind_cols but for binding rows.
+
+##### Basic Structure 
+
+New_Data <- bind_rows(Data1, Data2)
 
 ```{r bind_rows, echo =T, eval=T}
 
@@ -298,6 +312,8 @@ Diff_Species <- semi_join(Alaska, USA, by="scientific_name")
 
 #### Inner_join
 #### Left_join
+
+
 #### Right_join
 ### Intersect
 ### Union
@@ -309,7 +325,7 @@ Many R packadges like `dplyr`, `tidyr` and `leaflet`, allows you to use the pipe
 
 When using the %>% operator, first specify the data frame that all following functions will use. For the rest of the chain the data frame argument can be omitted from the remaining functions.
 
-**NOTE:** for Mac users the pipe simbol "%>%" shortcut is command + shit + m 
+**NOTE:** for Mac users the pipe simbol "%>%" shortcut is: command + shit + m. For windows users is: Ctrol + Shift + m
 
 ```{r pi-pi-pi-piping, echo =T, eval=T}
 
