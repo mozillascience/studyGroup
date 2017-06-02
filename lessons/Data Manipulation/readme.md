@@ -36,8 +36,8 @@ library(ggplot2)
 ```
 # References and help!
 
-[Tutorial on dplyr and tidyr packages for Eco-Data-Sci group](https://github.com/eco-data-science/dplyr-tidyr-tutorial)
-[A more complete Guide to dplyr](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
-[dplyr CRAN](https://cran.r-project.org/web/packages/dplyr/dplyr.pdf)
-[The whole deal](http://dplyr.tidyverse.org/articles/dplyr.html)
-[Download this AWESOME CHEAT SHEET](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+- [Tutorial on dplyr and tidyr packages for Eco-Data-Sci group](https://github.com/eco-data-science/dplyr-tidyr-tutorial)
+- [A more complete Guide to dplyr](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
+- [dplyr CRAN](https://cran.r-project.org/web/packages/dplyr/dplyr.pdf)
+- [The whole deal](http://dplyr.tidyverse.org/articles/dplyr.html)
+- [Download this AWESOME CHEAT SHEET](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)

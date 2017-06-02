@@ -3,7 +3,9 @@ title: "Intro to piping and Data Manipulation"
 author: "JEPA"
 date: "02/06/2017"
 output:
-  pdf_document: default
+  pdf_document: 
+    toc: yes
+    toc_depth: 3
   html_document:
     keep_md: yes
 ---
@@ -294,18 +296,12 @@ Diff_Species <- semi_join(Alaska, USA, by="scientific_name")
 
 ```
 
-#### inner_join
-#### left_join
-#### right_join
-### intersect
-### union
-### setdiff
-
-
-
-
-
-
+#### Inner_join
+#### Left_join
+#### Right_join
+### Intersect
+### Union
+### Setdiff
 
 # The Piping opperator %>% 
 
@@ -314,3 +310,16 @@ Many R packadges like `dplyr`, `tidyr` and `leaflet`, allows you to use the pipe
 When using the %>% operator, first specify the data frame that all following functions will use. For the rest of the chain the data frame argument can be omitted from the remaining functions.
 
 **NOTE:** for Mac users the pipe simbol "%>%" shortcut is command + shit + m 
+
+```{r pi-pi-pi-piping, echo =T, eval=T}
+
+Example <- Alaska %>% 
+  filter(year >= 2000) %>% #Lets filter the years above 2000
+  select(area_name,scientific_name,tonnes,year) %>% #We only care about these data
+  group_by(scientific_name,year) %>% 
+  summarise(Mean = mean(tonnes), SD = sd(tonnes)) %>% #Give me the mean and sd of each species each year
+  mutate(Round_Mean = round(Mean,2), Round_SD = round(SD,2)) %>% #create a log version of mean and the sd
+  transmute(Log_Mean = log(Round_Mean,2), Log_SD = log(Round_SD,2)) %>% 
+  semi_join(USA, by="scientific_name")
+
+```
