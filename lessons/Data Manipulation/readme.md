@@ -1,0 +1,38 @@
+# Intro to "piping" and Data Manipulation
+JEPA
+02/06/2017
+
+# Why use dplyr and tidyr?
+
+- Speed - dplyr and tidyr are really fast
+- Readability - the code syntax is straightforward and easy to read
+- Chaining - never break the chain. More on this later
+- Integrates with ggplot2 - plot your data in the same workflow that you manipulate it with
+- Can be used to analyze external databases without knowledge of additional database query languages
+
+# Objectives
+The session will cover a variety of useful functions to manipulate data, mainly from `dplyr` and `tidyr`.
+
+# Instructions
+
+1. **Session Matterials:** Get the workshop materials: Go to the repository and click on the "fork" button to create an independent copy within your own GitHub account. Alternately, click on the "clone or download" button. 
+
+2. **csv files:** All csv files are located in the *Data* folder ( *Alaska.csv*)
+
+4. **Necessary Packages:**
+
+
+```r
+
+#install.packages('dplyr')
+library(dplyr) 
+
+#install.packages('tidyr')
+library(tidyr) 
+
+#install.packages('ggplot2')
+library(ggplot2) 
+
+```
+# References
+[Tutorial on dplyr and tidyr packages for Eco-Data-Sci group](https://github.com/eco-data-science/dplyr-tidyr-tutorial)
