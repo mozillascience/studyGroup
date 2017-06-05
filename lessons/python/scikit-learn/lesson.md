@@ -1,16 +1,19 @@
 ---
 layout: page
-title: Machine Learning
+title: Machine Learning with scikit-learn
 visible: true
+tags:
+	- python
+	- intermediate
 ---
 <!-- change visible to true if you want it on the site -->
 
-# My Lesson Title
+# Machine learning in Python
 
  - **Authors**: Nil Sahin
  - **Research field**: Computational Biology and Molecular Genetics
  - **Lesson topic**: Machine Learning using Python's Sklearn packages
- - **Lesson content URL**: <link>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/misc/scikit-learn>
 
 ## Introduction to Machine Learning
 
@@ -62,13 +65,13 @@ Machine learning originated from pattern recognition and computational learning 
 
 ### Useful websites
 
-[Sklearn](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model) class and function reference page
+* [Sklearn](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model) class and function reference page
 
-[Machine Learning course](http://www.cs.toronto.edu/~urtasun/courses/CSC411_Fall16/CSC411_Fall16.html) from Computer Science Department, UOFT
+* [Machine Learning course](http://www.cs.toronto.edu/~urtasun/courses/CSC411_Fall16/CSC411_Fall16.html) from Computer Science Department, UOFT
 
-[TPOT](https://rhiever.github.io/tpot/) for optimized machine learning pipelines
+* [TPOT](https://rhiever.github.io/tpot/) for optimized machine learning pipelines
 
-[KERAS](https://keras.io/) package for Neural Networks
+* [KERAS](https://keras.io/) package for Neural Networks
 
-[Tensorflow Playground](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.69754&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false) for Deep Neural Networks
+* [Tensorflow Playground](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.69754&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false) for Deep Neural Networks
 
