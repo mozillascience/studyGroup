@@ -9,6 +9,7 @@ tags:
 <!-- change visible to true if you want it on the site -->
 
 
+
 # Machine learning in Python
 
  - **Authors**: Nil Sahin
@@ -17,11 +18,13 @@ tags:
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/misc/scikit-learn>
 
 
+
 ## Introduction to Machine Learning
 
 "Machine learning gives computers the ability to learn without explicitly programmed." - Arthur Samuel, 1959
 
 Machine learning originated from pattern recognition and computational learning theory in AI. It is the study and construction of algorithms to learn from and make predictions on data through building a model from sample input.
+
 
 
 ### Some uses of learning algorithms
@@ -37,6 +40,7 @@ Machine learning originated from pattern recognition and computational learning 
 * Spam filtering, fraud detection: The enemy adapts so we must adapt too
 
 
+
 ### Types of learning tasks
 
 * **Supervised Learning**: correct output known for each training example for predicting output when given an input vector
@@ -50,10 +54,12 @@ Machine learning originated from pattern recognition and computational learning 
 * **Reinforcement Learning**: perform an action with the goal to maximize payoff by the feedback of reward and punishments, e.g. playing a game against an opponent
 
 
+
 ### Packages to be installed
 
 * `numpy, pandas, matplotlib, sklearn, scipy, itertools`
 * `tpot`: For installation, please refer to [TPOT.](https://rhiever.github.io/tpot/installing/)
+
 
 
 ### In this tutorial, we will cover:
@@ -67,6 +73,7 @@ Machine learning originated from pattern recognition and computational learning 
 * Other classification and clustering algorithms (e.g. Neural Networks, Hierarchical Clustering)
 * Model selection (such as Bayesian Information Criteria - BIC)
 * Hyper-parameter selection
+
 
 
 ### Useful websites
