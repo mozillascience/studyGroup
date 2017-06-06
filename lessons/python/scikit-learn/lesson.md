@@ -3,8 +3,8 @@ layout: page
 title: Machine Learning with scikit-learn
 visible: true
 tags:
-	- python
-	- intermediate
+ - python
+ - intermediate
 ---
 <!-- change visible to true if you want it on the site -->
 
