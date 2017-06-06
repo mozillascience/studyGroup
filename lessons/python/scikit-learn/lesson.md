@@ -15,7 +15,7 @@ tags:
  - **Authors**: Nil Sahin
  - **Research field**: Computational Biology and Molecular Genetics
  - **Lesson topic**: Machine Learning using Python's Sklearn packages
- - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/misc/scikit-learn>
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/scikit-learn>
 
 
 
