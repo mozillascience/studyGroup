@@ -23,3 +23,20 @@
     - Retrotransposon 
     - ChiP-Seq & RNA-Seq
     - Snakemake for bioinformatic pipelines
+
+- name: Maria Constantin
+  affiliation: University of Amsterdam
+  github: meconstantin001
+  interests:
+    - Plant-Fungi interaction
+    - Genomics
+    - Sequencing 
+    - Python
+
+- name: Fran de Lamo
+  affiliation: University of Amsterdam
+  github: frandelamo
+  interests:
+    - Plant-Microbe interaction
+    - Proteomics
+    - R
