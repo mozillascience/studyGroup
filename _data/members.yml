@@ -2,8 +2,10 @@
   affiliation: CoGe
   github: AndreinaCastillo
   interests:
-    - Plasmodium
-    - Python
+    - Plasmodium and malaria
+    - Infectious diseases
+    - Molecular and comparative genomics
+    - Programming (Python)
 
 - name: Marnee Dearman
   affiliation: College of Medicine, University of Arizona
@@ -24,7 +26,8 @@
   affiliation: Cyverse
   github: julianpistorius
   interests:
-    - Python
+    - Programming 
+    - Outreach and training
 
 - name: Gaius Augustus
   affiliation: Cancer Biology GIDP, University of Arizona
@@ -33,3 +36,12 @@
     - R Programming
     - Bioinformatics
     - Python
+    
+- name: Blake Joyce
+  affiliation: Cyverse
+  github: bjoyce3
+  interests:
+    - Precision Agriculture
+    - Bioinformatics
+    - Community training and outreach
+    - Plant molecular biology
