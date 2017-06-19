@@ -59,7 +59,7 @@ I know you are antsy to write your functions, but first open the `DESCRIPTION` f
 
 Below is what this file should look similar to when you first open it. I'll give a quick few words about each section that you need to edit and won't discuss the sections that you can leave with the default values for now.
 
-![](./img_p2/defaultDESCRIPTION.png)
+![](../img_p2/defaultDESCRIPTION.png)
 
 
 ### Title
@@ -121,7 +121,7 @@ License: GPL-3
 
 We will leave the rest for now, and so here is what the file looks like after the above fields have been edited.
 
-![](./img_p2/basicDESCRIPTION.png)
+![](../img_p2/basicDESCRIPTION.png)
 
 Remember to come back and update this as the package evolves!
 
@@ -211,11 +211,11 @@ The next thing to do is to save the function in a text file ending in `.R` insid
 
 I've created a file `summary_stats.R` in which to put functions that create non-standard summary statistics.
 
-![](./img_p2/summary_stats.png)
+![](../img_p2/summary_stats.png)
 
 Right now, `SDI` is the only function in this file,
 
-![](./img_p2/sdiFun.png)
+![](../img_p2/sdiFun.png)
 
 but more can be added as they are created.
 
@@ -250,12 +250,12 @@ prompt(SDI)
 
 Note, this saves `SDI.Rd` to the parent directory (e.g., wherever `getwd()` returns), which is wolakR_parent in this case:
 
-![](./img_p2/wolakR_parentWith_SDI_Rd.png)
+![](../img_p2/wolakR_parentWith_SDI_Rd.png)
 
 
 `prompt()` already auto-fills a lot about the basic structure of the function for us. See the top of the file, for example:
 
-![](./img_p2/head_SDI_Rd.png)
+![](../img_p2/head_SDI_Rd.png)
 
 Note the `prompt()` function notifies us when we need to change/add/edit and provides guidance using symbols like:
 
@@ -371,7 +371,7 @@ stopifnot(SDI("weight", popDat) == 0.0)
 
 Now we need to move the help file to the appropriate location in the package source. This is in the `man` folder, which was not created automatically. So create the folder
 
-![](./img_p2/wolakR_with_man.png)
+![](../img_p2/wolakR_with_man.png)
 
 then move the `.Rd` file you just edited into this folder.
 
@@ -439,7 +439,7 @@ devtools::build(pkg = "wolakR")
 ```
 
 
-![](./img_p2/wolakR_zip.png)
+![](../img_p2/wolakR_zip.png)
 
 
 
