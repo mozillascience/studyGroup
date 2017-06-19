@@ -163,6 +163,3 @@ has_devel()
 and make sure it returns `TRUE` after some gobbledegook!
 
 
-</br>
-</br>
-
