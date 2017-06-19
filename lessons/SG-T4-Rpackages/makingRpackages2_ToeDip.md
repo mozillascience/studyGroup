@@ -25,13 +25,6 @@ The point here is to get **something** up and running with as little pain as pos
 
 In R, start by (1) loading `devtools` for many operations in this part, (2) pointing `R` to where you want to hold the package on your computer, and (3) creating the minimum necessary folder structure. I will be calling mine the `wolakR` package to host various R functions that I personally use over and over again.
 
-<!--
-library(devtools)
-system("mkdir ~/wolakR_parent")
-setwd("~/wolakR_parent")
-create("wolakR", rstudio = FALSE)
--->
-<!-- ```{R setwd_createStructure, eval = FALSE} -->
 ```
 # (1)
 library(devtools)
@@ -144,7 +137,6 @@ Say we want to quantify the average amount by which females and males differ (se
 
 Suppose I had a `data.frame` with the mean female and male measurement for four traits in a population.
 
-<!-- ```{R sdiData, eval = FALSE} -->
 ```
 popDat <- data.frame(trait = c("length", "weight", "coloration", "intelligence"),
 	female = c(4.2, 255.0, 0.57, 144),
@@ -154,7 +146,6 @@ popDat <- data.frame(trait = c("length", "weight", "coloration", "intelligence")
 An initial attempt to calculate the SDI for each trait would be to stick some code into a `for` loop, where we iterate through traits.
 
 
-<!-- ```{R forSDI, eval = FALSE} -->
 ```
 sdi <- rep(NA, nrow(popDat))
 for(t in unique(popDat$trait)){
@@ -182,7 +173,6 @@ Unfortunately, the `for` loop approach requires re-writing this code in each R s
 It is actually pretty easy to take much of the `for` loop and stick it in a function.
 
 <!-- assumes "female" and "male" are columns in the object `dfin` -->
-<!-- ```{R makeSDIfun, eval = FALSE} -->
 ```
 SDI <- function(t, dfin){
   tmpind <- which(dfin$trait == t)
@@ -219,11 +209,6 @@ Right now, `SDI` is the only function in this file,
 
 but more can be added as they are created.
 
-<!-- 
-TODO
-#### Style points 
-Hadley Wickham's [R pakage book online](http://r-pkgs.had.co.nz/r.html)
--->
 
 
 
@@ -243,7 +228,6 @@ We will use the `prompt()` function to generate a default `SDI.Rd` file for the 
 
 Here, we use the `prompt()` function to fill-in a lot of information already for a specific function that we wish to document.
 
-<!-- ```{R prompt_SDI, eval = FALSE} -->
 ```
 prompt(SDI)
 ```
@@ -380,12 +364,6 @@ then move the `.Rd` file you just edited into this folder.
 --------------------------------------------------------------------------------
 
 
-<!--
-FIXME
-# package.Rd
-
-# NAMESPACE
--->
 
 # Pop some fizz!
 
@@ -395,10 +373,6 @@ Congratulations, you basically have an R package!! There are technically more st
 
 Make sure you are in the directory containing all of your package files, then use the `devtools` function `install()` to turn those files sitting on your computer into an R package that is installed in your R program!
 
-<!--
-setwd("~/wolakR_parent")
--->
-<!-- ```{R install_wolakR, eval = FALSE} -->
 ```
 setwd("wolakR_parent")
 install("wolakR")
@@ -420,7 +394,6 @@ We will use the `devtools` package to run a bunch of checks on our package struc
 
 Further, I specify `check(... , document = FALSE)` below so as to not have `devtools` automatically creat the documentation based on `roxygen2` comments (see next tutorial). We will relax this later, but in order to **avoid** your hard written **documentation** from being **over-written** make sure `document = FALSE`!
 
-<!-- ```{R devtoolsCheck_wolakR, eval = FALSE} -->
 ```
 devtools::check(pkg = "wolakR", document = FALSE)
 
@@ -433,7 +406,6 @@ Further, if you don't have access to Windows and you want to check your package 
 Again, `devtools` to the rescue! Use the `build()` function to create a compressed bundle to upload on [win-builder](http://win-builder.r-project.org/).
 
 
-<!-- ```{R build_wolakR, eval = FALSE} -->
 ```
 devtools::build(pkg = "wolakR")
 ```
@@ -483,7 +455,6 @@ Way up at the beginning, when we used `create()`<!-- TODO add link to this secti
 
 For now, that should be all you need to do (in addition to making the repository `README.md`). Keep the `.gitignore` and `.Rbuildignore` files in mind in case you add any new files that need to be ignored. So now, assuming you have your R package hosted as a repository on GitHub, installing this directly into R couldnt' be easier.
 
-<!-- ```{R demo_installFromGitHub, eval = FALSE} -->
 ```
 library(devtools)
 #               < username > / < repo name >
