@@ -453,7 +453,7 @@ Way up at the beginning, when we used `create()`<!-- TODO add link to this secti
 
 ## Install from GitHub
 
-For now, that should be all you need to do (in addition to making the repository `README.md`). Keep the `.gitignore` and `.Rbuildignore` files in mind in case you add any new files that need to be ignored. So now, assuming you have your R package hosted as a repository on GitHub, installing this directly into R couldnt' be easier.
+For now, that should be all you need to do (in addition to making the repository `README.md`). Keep the `.gitignore` and `.Rbuildignore` files in mind in case you add any new files that need to be ignored. So now, assuming you have your R package hosted as a repository on GitHub, installing this directly into R couldn't be easier.
 
 ```
 library(devtools)
@@ -462,7 +462,6 @@ install_github("matthewwolak/wolakR")
 library(wolakR)
 ```
 
-And there you have it! Go forth, develop packages, and share with others!
-
+And there you have it! Go forth, develop packages, and share with others! Keep adding functions and documentation or go to Part III<!-- TODO add link --> of the tutorial to learn to use `roxygen2` and how to get this package in shape to be hosted on CRAN!
 
 
