@@ -357,7 +357,7 @@ Now we need to move the help file to the appropriate location in the package sou
 
 ![](../img_p2/wolakR_with_man.png)
 
-then move the `.Rd` file you just edited into this folder.
+then move the `SDI.Rd` file you just edited into this folder.
 
 
 
@@ -390,7 +390,7 @@ Type `?SDI` (or whatever you called your R function) and see the help page (with
 
 We will use the `devtools` package to run a bunch of checks on our package structure and syntax. The `check()` function in this package will run through a list of operations and print some basic output to the screen. If you want this package to be acceptable for hosting on CRAN, it should return 'OK' at every stage (and no 'NOTEs' or 'WARNINGs'). Though, that is not the *only* criteria for your package to be acceptable to CRAN!
 
-**NOTE:**, the `utils` package that comes with base R also has a checking function by the same name as the `devtools` function. Hence, we will point R to the `devtools` namespace to search for the `check()` function using the `::` operator.
+**NOTE:** the `utils` package that comes with base R also has a checking function by the same name as the `devtools` function. Hence, we will point R to the `devtools` namespace to search for the `check()` function using the `::` operator.
 
 Further, I specify `check(... , document = FALSE)` below so as to not have `devtools` automatically creat the documentation based on `roxygen2` comments (see next tutorial). We will relax this later, but in order to **avoid** your hard written **documentation** from being **over-written** make sure `document = FALSE`!
 
