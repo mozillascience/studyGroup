@@ -1,24 +1,15 @@
 ---
 layout: page
-title: | 
-  | **R Package Tutorial:**
-  | *II. Dipping your toe into the water*
-
-author: Matthew Wolak
+title: R Package Tutorial II Dipping your toe into the water
 visible: true
 tags:
   # languages
-  - R
+  - r
   # levels
   - beginner
 ---
-<!-- 
-output:
-  html_document:
-    toc: true
----
--->
 
+**Author:** Matthew Wolak
 
 
 # Preamble
@@ -502,7 +493,5 @@ library(wolakR)
 
 And there you have it! Go forth, develop packages, and share with others!
 
-</br>
-</br>
 
 
