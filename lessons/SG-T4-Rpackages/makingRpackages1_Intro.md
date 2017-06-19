@@ -1,9 +1,6 @@
 ---
 layout: page
-title: | 
-  | **R Package Tutorial:**
-  | *I. Intro to making a basic package*
-
+title: R Package Tutorial: I. Intro to making a basic package
 author: Matthew Wolak
 visible: true
 tags:
