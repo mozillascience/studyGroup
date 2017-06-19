@@ -45,7 +45,7 @@ create("wolakR")
 
 Your directory should look like something like this
 
-![](./img_p2/cleanStart.png)
+![](../img_p2/cleanStart.png)
 
 Note, if you executed `create("wolakR")` as above (as opposed to `create("wolakR, rstudio = FALSE)`), this has automatically added and populated the hidden files `.gitignore` and `.Rbuildignore` inside of the package. These will become useful later on as we begin to build the package from source and host it on GitHub. For now, just ignore them. If you don't have these files, don't worry as they won't be needed until later (when we will create them if need be).
 
