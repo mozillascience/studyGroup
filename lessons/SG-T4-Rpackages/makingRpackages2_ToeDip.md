@@ -6,7 +6,7 @@ tags:
   # languages
   - r
   # levels
-  - beginner
+  - intermediate
 ---
 
 **Author:** Matthew Wolak
