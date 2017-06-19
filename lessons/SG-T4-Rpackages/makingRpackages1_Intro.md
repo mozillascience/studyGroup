@@ -1,20 +1,15 @@
 ---
 layout: page
-title: R Package Tutorial: I. Intro to making a basic package
-author: Matthew Wolak
+title: R Package Tutorial I Intro to making a basic package
 visible: true
 tags:
   # languages
-  - R
+  - r
   # levels
   - beginner
 ---
-<!-- 
-output:
-  html_document:
-    toc: true
----
--->
+
+**Author:** Matthew Wolak
 
 # Introduction
 
