@@ -69,7 +69,7 @@ I generally use the `X.X.X.X` format, however, other people use something like `
 Versions reflect the fact that code starts off, well a little *off*. Packages, like single lines of code, aren't perfect at the first pass and so inherent to package writing and development is the iterative process of improvement. Use the version number of the package to reflect this process and provide a simple means of conveying the degree to which minor/major changes have occurred between states of the package. For example: 
 
   - `0.0.0.9000` starting point for the package
-  - `0.0.0.9001` a new development feature/code the is under construction
+  - `0.0.0.9001` a new development feature/code that is under construction
   - `0.0.1.0` a new version of a fairly stable (but not releasable) package
   - `0.0.2.0` minor fixes to previous version
   - `0.1.0.0` major changes/new features have been added
