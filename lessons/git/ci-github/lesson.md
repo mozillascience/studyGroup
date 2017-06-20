@@ -11,7 +11,7 @@ tags:
 
  - **Authors**: Luke Johnston ([@lwjohnst86](https://github.com/lwjohnst86))
  - **Research field**: Diabetes epidemiology
- - **Lesson topic**: Using continuous integration within Github
+ - **Lesson topic**: Using continuous integration within GitHub
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/ci-github>
 
 ## What is Continuous Integration (CI)?
