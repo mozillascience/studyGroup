@@ -110,8 +110,8 @@ script: pytest
 ```
 
 I am not nearly as familiar with Python, however, the same things that apply to R
-also apply to Python. You need to install dependencies and use the `script` option
-to specific what commands or file to run.
+also apply to Python. You (optionally) need to install dependencies and use the `script` option
+to specify what commands or file to run the tests with.
 
 ## Lesson flow and other remarks
 
