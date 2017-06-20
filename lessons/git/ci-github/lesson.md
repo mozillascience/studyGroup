@@ -59,7 +59,7 @@ including [R](https://docs.travis-ci.com/user/languages/r/) and
 The two main things you need for Travis are to include a `.travis.yml` file in
 your GitHub repo and link Travis to it via the [Travis website](https://travis-ci.org/).
 
-### Example R `.travis.yml` file
+### Example using R and `.travis.yml` file
 
 ```
 language: r
@@ -97,6 +97,49 @@ an example) and include Travis commands to push to a `gh-pages` branch (see
 an example). For a more detailed example and walkthrough, see 
 [this Gist](https://gist.github.com/willprice/e07efd73fb7f13f917ea.html).
 
+Let's work through a (very simple and silly) example. Create three files: `.travis.yml`, 
+`function.R`, and `test.R`. (As a side note, as with above, I will not be covering 
+formal unit testing in this lesson).
+
+**`.travis.yml`**
+
+```
+language: r
+cache: packages
+# build in two different OS
+os:
+    - linux
+    - osx
+r_packages:
+    - "dplyr"
+    - "testthat"
+script:
+    - Rscript test.R
+```
+
+**`function.R`**
+
+```r
+add_nums <- function(num1, num2) {
+    num1 + num2
+}
+
+random_half_split <- function(data) {
+    size <- nrow(data) / 2
+    dplyr::sample_n(data, size)
+}
+```
+
+**`test.R`**
+
+```r
+library(testthat)
+source("function.R")
+expect_equal(add_nums(2, 2), 4)
+actual_size <- nrow(random_half_split(iris))
+expect_equal(actual_size, 75)
+```
+
 ### Example Python `.travis.yml` file
 
 ```
@@ -112,6 +155,37 @@ script: pytest
 I am not nearly as familiar with Python, however, the same things that apply to R
 also apply to Python. You (optionally) need to install dependencies and use the `script` option
 to specify what commands or file to run the tests with.
+
+As with R, let's do a simple and silly example. Create the three files: `.travis.yml`, 
+`function.py`, and `test.py`. (As a side note, as with above, I will not be covering 
+formal unit testing in this lesson).
+
+**`.travis.yml`**
+
+```
+language: python
+script:
+    - python test.py
+```
+
+**`function.py`**
+
+```r
+def add_nums(num1, num2):
+    added = num1 + num2
+    return added;
+```
+
+**`test.py`**
+
+```r
+from function import *
+
+added = add_nums(2, 2)
+
+if added != 4:
+    raise Exception("Error!")
+```
 
 ## Lesson flow and other remarks
 
