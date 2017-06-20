@@ -26,7 +26,7 @@ server). For this reason, I will only refer to CI in the context of git repos.
 
 Automated CI services are available on GitHub through [Travis CI](https://travis-ci.org/).
 Travis is a service independent (as a company) of GitHub, however they currently
-only work with GitHub. There is the `.org` version of travis for public GitHub
+only work with GitHub. There is the `.org` version of Travis for public GitHub
 repos and a `.com` version for private repos. There are other CI's available on
 GitLab or BitBucket (services similar to GitHub). Through Travis, you can get
 your git repo and associated code/files/documents (really, any thing that is
@@ -50,14 +50,14 @@ important in most if not all scientific fields.
 
 ## Travis and the `.travis.yml` file
 
-As I mentioned, you use travis for GitHub. In order to use travis, you need to
+As I mentioned, you use Travis for GitHub. In order to use Travis, you need to
 sign up and follow the [getting started](https://docs.travis-ci.com/user/getting-started/)
 steps. Travis has many supported [languages](https://docs.travis-ci.com/),
 including [R](https://docs.travis-ci.com/user/languages/r/) and 
 [Python](https://docs.travis-ci.com/user/languages/python/). 
 
-The two main things you need for travis are to include a `.travis.yml` file in
-your GitHub repo and link travis to it via the [travis website](https://travis-ci.org/).
+The two main things you need for Travis are to include a `.travis.yml` file in
+your GitHub repo and link Travis to it via the [Travis website](https://travis-ci.org/).
 
 ### Example R `.travis.yml` file
 
@@ -86,13 +86,13 @@ r_packages:
     - "packagename"
 ```
 
-If you are creating packages and want to use travis to test your packages, use
+If you are creating packages and want to use Travis to test your packages, use
 the R command `devtools::use_travis()` to get you started.
 
 Building websites via R Markdown is relatively straight forward. You first need
 to create a `deploy.sh` file of some sort (see 
 [this file](https://github.com/codeasmanuscript/rworkshops/blob/master/deploy.sh) as
-an example) and include travis commands to push to a `gh-pages` branch (see
+an example) and include Travis commands to push to a `gh-pages` branch (see
 [this file](https://github.com/codeasmanuscript/rworkshops/blob/master/.travis.yml) as
 an example). For a more detailed example and walkthrough, see 
 [this Gist](https://gist.github.com/willprice/e07efd73fb7f13f917ea.html).
@@ -115,14 +115,14 @@ to specific what commands or file to run.
 
 ## Lesson flow and other remarks
 
-In the live version of the lesson, I'll cover simple examples of using travis
+In the live version of the lesson, I'll cover simple examples of using Travis
 for R and Python. Since I am more familiar with R, I'll be covering R examples
-in more detail. In general, the lesson will go over setting up travis, creating
-the `.travis.yml` file, getting travis to run, and seeing the results for the 
+in more detail. In general, the lesson will go over setting up Travis, creating
+the `.travis.yml` file, getting Travis to run, and seeing the results for the 
 CI build.
 
-There are so many things you can do with travis (or any CI for that matter)! 
+There are so many things you can do with Travis (or any CI for that matter)! 
 Simple reasons are pretty straight forward, though there is a learning curve. 
-More complex uses are, well, more complex to set up. In the end, setting up travis/CI
+More complex uses are, well, more complex to set up. In the end, setting up Travis/CI
 can save you time and reduce your workload as it automates many of the repetitive 
 tasks you many do when creating code or code-dependent documents.
