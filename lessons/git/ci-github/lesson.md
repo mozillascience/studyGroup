@@ -157,34 +157,32 @@ also apply to Python. You (optionally) need to install dependencies and use the 
 to specify what commands or file to run the tests with.
 
 As with R, let's do a simple and silly example. Create the three files: `.travis.yml`, 
-`function.py`, and `test.py`. (As a side note, as with above, I will not be covering 
+`function.py`, and `test_function.py`. (As a side note, as with above, I will not be covering 
 formal unit testing in this lesson).
 
 **`.travis.yml`**
 
 ```
 language: python
-script:
-    - python test.py
+script: pytest
 ```
 
 **`function.py`**
 
-```r
+```python
 def add_nums(num1, num2):
     added = num1 + num2
     return added;
 ```
 
-**`test.py`**
+**`test_function.py`**
 
-```r
-from function import *
+```python
+import function
 
-added = add_nums(2, 2)
-
-if added != 4:
-    raise Exception("Error!")
+def test_add_nums():
+    added = function.add_nums(2, 2)
+    assert added == 4
 ```
 
 ## Lesson flow and other remarks
