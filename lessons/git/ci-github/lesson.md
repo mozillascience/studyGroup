@@ -113,9 +113,6 @@ r:
 os:
     - linux
     - osx
-r_packages:
-    - "dplyr"
-    - "testthat"
 script:
     - Rscript test.R
 ```
@@ -154,11 +151,11 @@ Authors@R: person("Luke", "Johnston", email = "lwjohnst@gmail.com",
     role = c("aut", "cre"))
 Description: Testing around
 LazyData: TRUE
+# packages to install
 Imports:
-    dplyr
-RoxygenNote: 6.0.1
-Suggests: 
+    dplyr,
     testthat
+RoxygenNote: 6.0.1
 ```
 
 ### Example Python `.travis.yml` file
