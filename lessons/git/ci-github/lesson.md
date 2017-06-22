@@ -98,8 +98,9 @@ an example). For a more detailed example and walkthrough, see
 [this Gist](https://gist.github.com/willprice/e07efd73fb7f13f917ea.html).
 
 Let's work through a (very simple and silly) example. Create three files: `.travis.yml`, 
-`function.R`, and `test.R`. (As a side note, as with above, I will not be covering 
-formal unit testing in this lesson).
+`function.R`, `test.R`, and an empty `DESCRIPTION` file (this file is needed for
+R with travis). (As a side note, as with above, I will not be covering formal
+unit testing in this lesson).
 
 **`.travis.yml`**
 
@@ -107,6 +108,8 @@ formal unit testing in this lesson).
 language: r
 cache: packages
 # build in two different OS
+r:
+    - release
 os:
     - linux
     - osx
@@ -140,6 +143,10 @@ actual_size <- nrow(random_half_split(iris))
 expect_equal(actual_size, 75)
 ```
 
+**`DESCRIPTION`**
+
+This should be an empty file. Travis needs this file in order to run for R.
+
 ### Example Python `.travis.yml` file
 
 ```
@@ -164,6 +171,8 @@ formal unit testing in this lesson).
 
 ```
 language: python
+python:
+    - 3.6
 script: pytest
 ```
 
@@ -172,7 +181,7 @@ script: pytest
 ```python
 def add_nums(num1, num2):
     added = num1 + num2
-    return added;
+    return added
 ```
 
 **`test_function.py`**
