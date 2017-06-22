@@ -98,7 +98,7 @@ an example). For a more detailed example and walkthrough, see
 [this Gist](https://gist.github.com/willprice/e07efd73fb7f13f917ea.html).
 
 Let's work through a (very simple and silly) example. Create three files: `.travis.yml`, 
-`function.R`, `test.R`, and an empty `DESCRIPTION` file (this file is needed for
+`function.R`, `test.R`, and `DESCRIPTION` (this file is needed for
 R with travis). (As a side note, as with above, I will not be covering formal
 unit testing in this lesson).
 
@@ -145,7 +145,21 @@ expect_equal(actual_size, 75)
 
 **`DESCRIPTION`**
 
-This should be an empty file. Travis needs this file in order to run for R.
+```
+Package: testing_ci_r
+Type: Package
+Title: Testing out
+Version: 0.0.0.9000
+Authors@R: person("Luke", "Johnston", email = "lwjohnst@gmail.com",
+    role = c("aut", "cre"))
+Description: Testing around
+LazyData: TRUE
+Imports:
+    dplyr
+RoxygenNote: 6.0.1
+Suggests: 
+    testthat
+```
 
 ### Example Python `.travis.yml` file
 
