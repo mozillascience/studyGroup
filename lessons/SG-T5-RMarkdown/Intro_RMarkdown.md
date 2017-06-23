@@ -31,9 +31,7 @@ RStudio is an easy to use graphical user interface for running R. It allows you 
 
 Once RStudio is installed and running, your window should look something like this:
 
-<p align=center>
-<img src="../Images/RStudio.png">
-</p>
+<center><img src="../Images/RStudio.png", width="1000"></center>
 
 As well as installing RStudio, you'll need to have the package for rmarkdown installed. To do this, in the console panel (on the left), run:
 ```
@@ -42,32 +40,24 @@ install.packages("rmarkdown")
 
 You should now be able to open a new R Markdown file. To do this go, to the "Open" symbol in the top left hand corner and select "R Markdown"
 
-<p align=center>
-<img src="../Images/Open_Markdown.png">
-</p>
+<center><img src="../Images/Open_Markdown.png"></center>
 
 The following window then asks you for a title, the author and what format you'd like the final rendered file to be. All of these elements can be changed later if you change your mind. You can also see from the left hand tab that R Markdown can be used to make other things besides documents, including presentations and shiny apps.
 
 Give the document an appropriate name and choose "HTML" as the output format:
 
-<p align=center>
-<img src="../Images/New_Markdown.png">
-</p>
+<center><img src="../Images/New_Markdown.png"></center>
 
 The new R Markdown file should now have opened on the left hand side, above the console window. A template R Markdown script is provided. This includes the set up information at the top of the page in between two lines of three dashes. More setup options can be added if needed. This is used by knitr during rendering to produce the correct file format. Text and code blocks are also included, and these will be explained in more detail below. 
 
-<p align=center>
-<img src="../Images/New_Markdown_v2.png">
-</p>
+<center><img src="../Images/New_Markdown_v2.png"></center>
 
 
 ## Code Chunks and Plots
 
-The template R Markdown script includes three code chunks. You can specify a code chunk by starting it \```{r} and ending it with \```. Code within these blocks can be run within the console by either selecting the "Run" option at the top of the window or by clicking on the green arrow within the code chunk:
+The template R Markdown script includes three code chunks. You can specify a code chunk by starting it \`\`\`{r} and ending it with \`\`\`. Code within these blocks can be run within the console by either selecting the "Run" option at the top of the window or by clicking on the green arrow within the code chunk:
 
-<p align=center>
-<img src="../Images/Run_Chunks.png">
-</p>
+<center><img src="../Images/Run_Chunks.png"></center>
 
 This runs the code within the console, just like a normal script, and output that would have been printed in the console is embedded within the R Markdown file beneath the code chunk. This includes text, tables, plots and any error messages. Code chunks can contain anything that would run in the console, as well as comment lines that start with a hash. The code chunk can have as many lines of code as you like and can be edited and re-run infinite times. Have a go at running the code chunks which have been provided by the default template.
  
@@ -140,7 +130,7 @@ Here are some examples. Add these to your R Markdown document. In each case I've
 \*italic text*  
 *italic text*
 
-\--strikethrough--  
+\~\~strikethrough\~\~  
 ~~strikethrough~~
 
 superscript^2^  
@@ -163,24 +153,22 @@ So far example, if I had the following image of a coding cat saved in /users/s10
 
 NOTE! Using tilde (~) in the path to specify home won't work here!
 
-<p align=center>
-<img src="../Images/coding_cat.png">
-</p>
+<center><img src="../Images/coding_cat.png", width="500"></center>
 
 Add an image to your R Markdown file. Either take a copy of coding cat, use your own image or find one on Google. You just need to save it to your computer and know the path to where it is saved.
 
 ## Inserting Tables
 Tables have not been made part of the native markdown code but people have developed ways around this. There are several different options to add tables in. You can use the pipe (\|) and dash (\-) syntax, where each row is separated with dashes and each column of a table is divided by a pipe. Like this:
 
-\| Table Header 1 | Table Header 2 |  
-\| -------------- | -------------- |  
-\| Row One        | Row One        |  
+\| Table Header 1 \| Table Header 2 \|  
+\| -------------- \| -------------- \|  
+\| Row One        \| Row One        \|  
 
 This makes:
 
-| Table Header 1 |  Table Header 2|
-| -------------- | -------------- |
-| Row One        | Row One        |
+| Table Header 1 | Table Header 2 |
+| - | - |
+| Row One | Row One |
 
 But this is a bit tedious, especially if you have a large table! A better way to do this is by using one of several functions available in R packages. The below example is using the function kable that comes as a part of the knitr package, but there are lots of others available, all with slightly different functionality!
 
@@ -211,9 +199,7 @@ Recently I've come across a handy tool, citr, which allows you to add citations 
 ## Rendering R Markdown into Documents
 We're now onto the final (and most exciting) part, rendering your R Markdown script into a html document. This is very simple to do, just click on "Knit" button at the top of the R Markdown script:
 
-<p align=center>
-<img src="../Images/knit.png">
-</p>
+<center><img src="../Images/knit.png"></center>
 
 After a few seconds a html document should appear containing all of the code chunks and their respective outputs as well as any formatted text and images that you added to the document. If there are any issues whilst rendering the R Markdown code, these will appear in the console. For example, code chunks that install packages are unable to be rendered into a document and will need to be commented out.
 
