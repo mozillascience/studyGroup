@@ -4,7 +4,7 @@ title: Introduction to R Markdown
 visible: true
 tags:
   # languages
-  - R
+  - r
   # levels
   - beginner
 ---
