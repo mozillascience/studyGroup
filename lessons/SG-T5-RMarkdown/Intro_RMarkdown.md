@@ -31,7 +31,7 @@ RStudio is an easy to use graphical user interface for running R. It allows you 
 
 Once RStudio is installed and running, your window should look something like this:
 
-<center><img src="../Images/RStudio.png", width="1000"></center>
+<center><img src="../Images/RStudio.png" width="1000"></center>
 
 As well as installing RStudio, you'll need to have the package for rmarkdown installed. To do this, in the console panel (on the left), run:
 ```
@@ -153,7 +153,7 @@ So far example, if I had the following image of a coding cat saved in /users/s10
 
 NOTE! Using tilde (~) in the path to specify home won't work here!
 
-<center><img src="../Images/coding_cat.png", width="500"></center>
+<center><img src="../Images/coding_cat.png" width="500"></center>
 
 Add an image to your R Markdown file. Either take a copy of coding cat, use your own image or find one on Google. You just need to save it to your computer and know the path to where it is saved.
 
@@ -168,7 +168,7 @@ This makes:
 
 | Table Header 1 | Table Header 2 |
 | - | - |
-| Row One | Row One |
+| Row One | Row One |  
 
 But this is a bit tedious, especially if you have a large table! A better way to do this is by using one of several functions available in R packages. The below example is using the function kable that comes as a part of the knitr package, but there are lots of others available, all with slightly different functionality!
 
