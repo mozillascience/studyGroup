@@ -1,6 +1,6 @@
 ---
-title: Co-working session.
-text: Let's meet again in Oerknal to learn code and solve practical issues. Don't forget to bring your own laptop! 
+title: RNA-Seq / Git / Co-working session
+text: First hands-on with Kallisto to perform RNA-Seq analysis. Learning how to build common pipelines with Github. Co-working as usual. 
 location: Science Park Oerknal
 link: https://github.com/mozillascience/studyGroup#how-to-launch-a-new-event
 date: 2017-06-27
