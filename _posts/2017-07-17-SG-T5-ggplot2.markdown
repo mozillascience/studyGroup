@@ -1,0 +1,9 @@
+---
+title: Introduction to ggplot2
+text: A study group tutorial that will give you a friendly introduction to ggplot2.
+location: Room ZB19, Zoology Buildling
+link: https://github.com/AberdeenStudyGroup/studyGroup/issues/20
+date: 2017-07-17
+startTime: '17:30'
+endTime: '19:00'
+---
