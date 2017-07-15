@@ -1,6 +1,6 @@
 ---
 layout: page
-title: `dplyr` and `magrittr`
+title: dplyr and magrittr
 visible: true
 tags:
   - r
@@ -13,17 +13,17 @@ tags:
 
 ## Topics Covered:
 
-- tidy data
+- 'tidy' data
 - `dplyr` verbs:
-  - select
-  - filter
-  - arrange
-  - mutate
-  - summarise
-- magrittr
-  - the pipe (%>%)
-  - tee operator (%T>%)
-  - compound assignment (%<>%)
+  - `select`
+  - `filter`
+  - `arrange`
+  - `mutate`
+  - `summarise`
+- `magrittr`
+  - the pipe (`%>%`)
+  - tee operator (`%T>%`)
+  - compound assignment (`%<>%`)
 
 ### What You Will Need
 
