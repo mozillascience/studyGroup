@@ -212,10 +212,12 @@ AirQuality
 Let`s customise the plot a bit more . We create 2 more variables.
 
 ```
-                                       airquality$Month == "Aug" |
+airquality_trimmed <- airquality[which(airquality$Month == "Jul" |  
+                                       airquality$Month == "Aug" |                                       
                                        airquality$Month == "Sep"), ]
-airquality_trimmed$Temp.f <- factor(ifelse(airquality_trimmed$Temp > mean(airquality_trimmed$Temp), 1, 0),
-                                    labels = c("Low temp", "High temp"))
+                                     
+airquality_trimmed$Temp.f <- factor(ifelse(airquality_trimmed$Temp > mean(airquality_trimmed$Temp), 
+                                                                     1,0), labels = c("Low temp", "High temp"))
 ```
 
 Now with the new dataframe we make a boxplots looking at Ozone during 3 months: July, Aug and Sep, highlighting also the role of the temperature (`fecet_grid`).
