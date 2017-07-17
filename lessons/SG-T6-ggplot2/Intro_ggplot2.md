@@ -189,7 +189,7 @@ AirQuality <- ggplot(airquality, aes(x = Month, y = Ozone)) +
 AirQuality
 ```
 
-<center><img src="../plot11.jpeg" width="500"></center>
+<center><img src="../plot11a.jpeg" width="500"></center>
 
 Now we change the colour of the boxes, the title and the y axis. Any problem with the plot?
 
@@ -207,7 +207,7 @@ AirQuality <- ggplot(airquality, aes(x = Month, y = Ozone)) +
 AirQuality
 ```
 
-<center><img src="../plot12.jpeg" width="500"></center>
+<center><img src="../plot11.jpeg" width="500"></center>
 
 Let`s customise the plot a bit more . We create 2 more variables.
 
