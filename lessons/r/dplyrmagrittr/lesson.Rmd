@@ -5,7 +5,7 @@ date: "July 19, 2017"
 output: md_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, echo = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 options(tibble.print_max = 5)
 ```
