@@ -1,8 +1,10 @@
 ---
-title: "Data wrangling with dplyr and magrittr"
-author: "Ahmed Hasan"
-date: "July 19, 2017"
-output: md_document
+layout: page
+title: Data wrangling with dplyr and magrittr
+visible: true
+tags:
+  - r
+  - intermediate
 ---
 
 ```{r setup, include=FALSE}
