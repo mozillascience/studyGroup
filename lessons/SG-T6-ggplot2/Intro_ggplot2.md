@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Introduction `to ggplot2`
+title: Introduction to ggplot2
 visible: true
 tags:
   # languages
@@ -47,7 +47,7 @@ g<-ggplot(data=mtcars, aes(x=mpg, y=disp))+geom_point(color="firebrick")
 g
 ```
 
-<center><img src="../plot1.jpeg" width="1000"></center>
+<center><img src="../plot1.jpeg" width="500"></center>
 
 ### 2. Same basic scatterplot with a black and white theme (`theme_bw` function), note also the difference in coding the same scatterplot, what has changed?
 
@@ -58,7 +58,7 @@ g <- g + geom_point(data=mtcars, aes(x=mpg, y=disp),color="firebrick")
 g
 ```
 
-<center><img src="../plot2.jpeg" width="1000"></center>
+<center><img src="../plot2.jpeg" width="500"></center>
 
 ### 3. Add colours depending on third variable (colour depending by the type of gear) + legend manipulation (`theme` function)
 
@@ -69,7 +69,7 @@ g <- g + geom_point(data=mtcars, aes(x=mpg, y=disp,colour=gear)) +theme(legend.t
 g
 ```
 
-<center><img src="../plot3.jpeg" width="1000"></center>
+<center><img src="../plot3.jpeg" width="500"></center>
 
 ### 4. Add title to the plot (`ggtitle`), change size of points in the legend (`guides`) and type of text in the title, again using `theme` function
 
@@ -82,7 +82,7 @@ g <- g + geom_point(data=mtcars, aes(x=mpg, y=disp,colour=gear),size = 4.0) +the
 g
 ```
 
-<center><img src="../plot4.jpeg" width="1000"></center>
+<center><img src="../plot4.jpeg" width="500"></center>
 
 ### 5. Add x and y labels (`labs`), change text size
 
@@ -96,7 +96,7 @@ g<- g + labs(x = "mpg", y="disp") +theme(text = element_text(size=20))
 g
 ```
 
-<center><img src="../plot5.jpeg" width="1000"></center>
+<center><img src="../plot5.jpeg" width="500"></center>
 
 ### 6. Change scale label (`scale_colour_brewer` function), have a look at all the color pallettes!
 
@@ -110,7 +110,7 @@ g<- g + labs(x = "mpg", y="disp") +theme(text = element_text(size=20))+ scale_co
 g
 ```
 
-<center><img src="../plot6.jpeg" width="1000"></center>
+<center><img src="../plot6.jpeg" width="500"></center>
 
 ## Faceting
 
@@ -122,7 +122,7 @@ qplot(hp, mpg, data=mtcars, shape=am, color=am,
    xlab="Horsepower", ylab="Miles per Gallon") 
 ```
 
-<center><img src="../plot7.jpeg" width="1000"></center>
+<center><img src="../plot7.jpeg" width="500"></center>
 
 ## Boxplots
 
@@ -135,7 +135,7 @@ qplot(gear, mpg, data=mtcars, geom=c("boxplot", "jitter"),
    xlab="", ylab="Miles per Gallon")
 ```
 
-<center><img src="../plot8.jpeg" width="1000"></center>
+<center><img src="../plot8.jpeg" width="500"></center>
 
 Now we make our colour palette manually: we use `scale_fill_discrete` (fills with standard colors belonging to the standard color palette in `ggplot2`) and `scale_fill_manual` functions (you define your own colors), have a look on the `ggplot2` [website](http://ggplot2.tidyverse.org/reference/) in how many ways you can define this
 
@@ -152,7 +152,7 @@ BoxplotCars<-BoxplotCars + scale_fill_discrete(name="Gear",
 BoxplotCars
 ```
 
-<center><img src="../plot9.jpeg" width="1000"></center>
+<center><img src="../plot9.jpeg" width="500"></center>
 
 We can use a manual scale instead of hue.
 
@@ -171,7 +171,7 @@ BoxplotCars<-BoxplotCars + scale_fill_manual(values=c("#999999", "#E69F00", "#56
 BoxplotCars
 ```
 
-<center><img src="../plot10.jpeg" width="1000"></center>
+<center><img src="../plot10.jpeg" width="500"></center>
 
 Let's play around with another dataset and discover some more functionalities in `ggplot2`.
 First load the data and do some basic data manipulation.
@@ -189,7 +189,7 @@ AirQuality <- ggplot(airquality, aes(x = Month, y = Ozone)) +
 AirQuality
 ```
 
-<center><img src="../plot11.jpeg" width="1000"></center>
+<center><img src="../plot11.jpeg" width="500"></center>
 
 Now we change the colour of the boxes, the title and the y axis. Any problem with the plot?
 
@@ -207,7 +207,7 @@ AirQuality <- ggplot(airquality, aes(x = Month, y = Ozone)) +
 AirQuality
 ```
 
-<center><img src="../plot12.jpeg" width="1000"></center>
+<center><img src="../plot12.jpeg" width="500"></center>
 
 Let`s customise the plot a bit more . We create 2 more variables.
 
@@ -241,7 +241,7 @@ AirQuality <- ggplot(airquality_trimmed, aes(x = Month, y = Ozone)) +
 AirQuality  
 ```
 
-<center><img src="../plot12.jpeg" width="1000"></center>
+<center><img src="../plot12.jpeg" width="500"></center>
 
 You can also easily group box plots by the levels of another variable. There are two options, in separate (`panel`) plots, or in the same plot. In order to make the graphs a bit clearer, we’ve kept only months “July”, “Aug” and “Sep” in a new dataset `airquality_trimmed`. We’ve also mean-split Temp so that this is also categorical, and made it into a new labelled factor variable called Temp.f.In order to produce a panel plot by temperature, we add the `facet_grid(. ~ Temp.f)` option to the plot.
 
@@ -264,7 +264,7 @@ AirQuality <- ggplot(airquality_trimmed, aes(x = Month, y = Ozone, fill = Temp.f
 AirQuality  
  ```
 
-<center><img src="../plot13.jpeg" width="1000"></center> 
+<center><img src="../plot13.jpeg" width="500"></center> 
  
 ## Kernel density plots
 
@@ -276,7 +276,7 @@ qplot(mpg, data=mtcars, geom="density", fill=gear, alpha=I(.5),
    ylab="Density")   
 ```
 
-<center><img src="../plot14.jpeg" width="1000"></center> 
+<center><img src="../plot14.jpeg" width="500"></center> 
 
 ## Conclusions and useful links
 
