@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Data wrangling with dplyr and magrittr
-visible: true
+visible: false
 tags:
   - r
   - intermediate
@@ -208,7 +208,7 @@ ir %>%
 
 `mutate` is arguably where `dplyr` really comes to life. So far, we've just been playing around with existing data, subsetting it and arranging it how we please. Which is certainly very useful! But `mutate` allows us to create entirely new variables (i.e. columns) in our data frame object out of operations performed on the data frame itself.
 
-`mutate` employs _window functions_ in order to do this. Unlike an _aggregation function_ (such as `mean`) which takes in $n$ values and returns one value, a window function will take in $n$ elements as input and return $n$ elements as output. In the case of `mutate`, this means performing an operation on every single row of a data frame and returning the resultant values in a new column.
+`mutate` employs _window functions_ in order to do this. Unlike an _aggregation function_ (such as `mean`) which takes in $n$ values and returns one value, a window function will take in _n_ elements as input and return _n_ elements as output. In the case of `mutate`, this means performing an operation on every single row of a data frame and returning the resultant values in a new column.
 
 Let's use `mutate` to calculate the approximate area of sepals and petals in our dataset.
 
@@ -261,7 +261,7 @@ The important thing to note is that in using `summarise`, we are obtaining our s
 
 ## `group_by` - group your data
 
-`group_by` is primarily a helper function itself, but it provides an immense amount of added utility to `mutate` and `summarise`. It does so by adding grouping information in an under the hood fashion. While this does not necessarily do anything explicit to the data, both `summarise` and `mutate` behave quite differently when presented with a grouped data frame.
+`group_by` is primarily a helper function itself, but it provides an immense amount of added utility to `mutate` and `summarise`. It does so by adding grouping information in an under-the-hood fashion. While this does not necessarily do anything explicit to the data, both `summarise` and `mutate` behave quite differently when presented with a grouped data frame.
 
 For instance, let's redo the `summarise` function we did above, but now in a grouped manner:
 
