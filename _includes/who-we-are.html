@@ -9,7 +9,7 @@
                     </h3>
                 </div>
             </div>
-            <h2 class="section-subheading text-center">Administration</h2>
+            <h2 class="section-subheading text-center">Executive council</h2>
             {% for member in site.data.admin %}
             {% assign loopindex = forloop.index0 | modulo: 3 %}
             {% if loopindex == 0 %}
@@ -45,9 +45,9 @@
             </div>
             {% endif %}
             {% endfor %}
-            <h2 class="section-subheading text-center">Members</h2>
+            <h2 class="section-subheading text-center">Contributors</h2>
             <div class="row">
-                {% for member in site.data.members %}
+                {% for member in site.data.contributors %}
                 {% assign loopindex = forloop.index0 | modulo: 4 %}
                 {% if loopindex == 0 %}
                 {% if forloop.first == false %}

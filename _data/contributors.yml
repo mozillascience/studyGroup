@@ -1,0 +1,32 @@
+- name: Ahmed Hasan
+  github: aays
+  interests:
+    - R
+    - Python
+
+- name: Derek Howard
+  github: derekhoward
+  interests:
+    - Python
+
+- name: John Ladan
+  degree: MMath, PhD Physics
+  github: jladan
+  interests:
+    - Python
+    - Julia
+    - Javascript
+
+- name: Abigail Cabunoc Mayes
+  degree: Mozilla Science Lab
+  github: acabunoc
+
+- name: Ian Dennis Miller
+  degree: PhD, Psychology
+  github: iandennismiller
+  interests:
+    - Python
+    - R
+    - Social Network Analysis
+    - LaTeX
+    - Flask
