@@ -1,5 +1,5 @@
 ---
-title: Collaborating with others using Github
+title: Collaborating with others using GitHub
 text: Learn how to use Github on collaborative projects
 location: MP408
 link: https://github.com/UofTCoders/Events/issues/110
