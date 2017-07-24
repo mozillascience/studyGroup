@@ -1,0 +1,9 @@
+---
+title: Coworking Session 
+text: Work together to package up your code for reuse in R or Python.
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/111
+date: 2017-08-09
+startTime: '18:10'
+endTime: '19:30'
+---
