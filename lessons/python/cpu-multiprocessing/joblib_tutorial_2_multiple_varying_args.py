@@ -17,6 +17,6 @@ if __name__ == '__main__':
     pool_size = cpu_count()
     print("Number of processes:", pool_size)
     #can specify backend parameter to use threads
-    outputs = Parallel(n_jobs=pool_size, backend="threading")(delayed(f)(x,y) for x,y in inputs)
+    outputs = Parallel(n_jobs=pool_size)(delayed(f)(x,y) for x,y in inputs)
 
     print('Pool:', outputs)
