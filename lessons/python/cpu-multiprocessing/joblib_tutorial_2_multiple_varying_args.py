@@ -1,5 +1,4 @@
-from joblib import Parallel, delayed
-from multiprocessing import cpu_count
+from joblib import Parallel, delayed, cpu_count
 
 def f(x, y):
     return x * y
