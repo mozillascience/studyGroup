@@ -28,12 +28,12 @@ if __name__ == '__main__':
     pool_outputs = pool.map(f, inputs)
 
     #using pool.apply()
-    #pool_outputs = [pool.apply(f, args=(x,)) for x in range(1,7)]
+    #pool_outputs = [pool.apply(f, args=(x,)) for x in inputs]
 
     #using pool.apply_async()
-    #pool_outputs = [pool.apply_async(f, args=(x,)) for x in range(1,7)]
+    #pool_outputs = [pool.apply_async(f, args=(x,)) for x in inputs]
     #need to use p.get()
-    #output = [p.get() for p in pool_outputs]
+    #pool_outputs = [p.get() for p in pool_outputs]
 
     pool.close() # no more tasks
     pool.join()  # wrap up current tasks
