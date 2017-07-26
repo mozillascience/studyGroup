@@ -1,4 +1,5 @@
-from joblib import Parallel, delayed
+from joblib import Parallel, delayed, cpu_count
+
 
 def f(x):
     return x * 2
@@ -13,9 +14,7 @@ if __name__ == '__main__':
     #number of threads to use
     pool_size = cpu_count() * 2
     print("Number of processes:", pool_size)
-    pool = Pool(processes=pool_size, initializer=start_process)
-    pool_outputs = pool.map(f, inputs)
-    pool.close() # no more tasks
-    pool.join()  # wrap up current tasks
+    outputs = Parallel(n_jobs=pool_size)(delayed(f)(x) for x in inputs)
 
-    print('Pool:', pool_outputs)
+
+    print('Result:', outputs)

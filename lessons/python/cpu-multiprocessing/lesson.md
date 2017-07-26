@@ -18,7 +18,7 @@ tags:
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/python/cpu-multiprocessing>
 
 ## Resources:
-- Lesson material adapted from [PYMOTW lesson](https://pymotw.com/2/multiprocessing/basics.html)
+- Lesson material adapted from [PYMOTW lesson](https://pymotw.com/3/multiprocessing/basics.html)
 - [Joblib documentation](https://pythonhosted.org/joblib/parallel.html)
 - [Introduction to Parallel/Concurrent Programming in Python](https://code.tutsplus.com/articles/introduction-to-parallel-and-concurrent-programming-in-python--cms-28612)
 

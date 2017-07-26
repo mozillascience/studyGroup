@@ -2,7 +2,7 @@
  Due to the way the new processes are started, the child process needs to be able to import the script containing the target function. Wrapping the main part of the application in a check for __main__ ensures that it is not run recursively in each child as the module is imported. Another approach is to import the target function from a separate script.
 '''
 import multiprocessing
-from mp_tutorial_2 import worker
+from mp_tutorial_2_input import worker
 
 if __name__ == '__main__':
     jobs = []
