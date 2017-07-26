@@ -6,6 +6,9 @@ From: http://distributed.readthedocs.io/en/latest/joblib.html
 import distributed.joblib
 # Scikit-learn bundles joblib, so you need to import from
 # `sklearn.externals.joblib` instead of `joblib` directly
+# This is not true depending on the packaging (e.g. Fedora/Debian)
+# in this case, use the following:
+# from joblib import parallel_backend
 from sklearn.externals.joblib import parallel_backend
 from sklearn.datasets import load_digits
 from sklearn.grid_search import RandomizedSearchCV
