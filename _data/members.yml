@@ -1,6 +1,6 @@
-- name: Bill Mills
-  affiliation: TRIUMF
-  github: BillMills
+- name: Ashwin Phadke
+  affiliation: Mozilla RC
+  github: ashwin-phadke
   interests:
     - Programming
     - Open Science
