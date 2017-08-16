@@ -43,8 +43,7 @@ the sample have an *equal* probability of being selected, including multiple
 times, so a value could have a duplicate). This 
 
 ```{r}
-
-x <- runif(20, min = 50, max = 100)
+x <- runif(10)
 hist(x)
 mean(x)
 
@@ -56,10 +55,11 @@ boot_mean <- function(x, i) {
     mean(x[i])
 }
 
-est_dist <- boot(x, boot_mean, R = 2000)
+mean_results <- boot(x, boot_mean, R = 2000)
 
 library(broom)
-tidy(est_dist)
+tidy(mean_results)
+boot.ci(mean_results)
 
 boot_corr <- function(data, i) {
     cor(data$x[i], data$y[i])
@@ -69,7 +69,9 @@ example_data <- data.frame(y = runif(10, min = 140, max = 200),
                            x = runif(10, min = 50, max = 120))
 
 cor(example_data$x, example_data$y)
-tidy(boot(example_data, boot_corr, R = 10))
+cor_results <- boot(example_data, boot_corr, R = 10)
+tidy(cor_results)
+boot.ci(cor_results)
 ```
 
 ## Permutation testing
