@@ -1,6 +1,12 @@
-###[Leia isto em Português](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-pt.md)
+### [इसे हिंदी में पढ़ें](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-hi.md)
 
-#Mozilla Study Groups
+### [Leia isto em Português](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-pt.md)
+
+### [中文版请点这里](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-zh.md)
+
+### [Lee esto en Español](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-es.md)
+
+# Mozilla Study Groups
 
 Welcome to [Mozilla Science Lab](https://www.mozillascience.org/)'s Study Group project! From here, we'll set you up with everything you need to start your own study group.
 
@@ -8,7 +14,7 @@ Welcome to [Mozilla Science Lab](https://www.mozillascience.org/)'s Study Group 
 
 Mozilla Study Groups are fun, informal meetups of your friends and colleagues from around your local institution or town to share skills, stories and ideas on using code for research, and explore open research practices. The goal is to create a friendly, no-pressure environment where people can share their work, ask for help on a coding problem, and learn and work together with their peers. **Anyone can start a Study Group-- you don't have to be an expert coder to do so!**
 
-What do Study Groups look like in Real Life? Check out the [Boston University Study Group's website](http://study.bu.edu/), and the [University of Tornonto Coders website](https://uoftcoders.github.io/studyGroup/). You can also watch a few short [videos from Study Group Leads in our Orientation Guide](https://mozillascience.github.io/study-group-orientation/1-about-study-groups.html). 
+What do Study Groups look like in Real Life? Check out the [Boston University Study Group's website](http://study.bu.edu/), and the [University of Toronto Coders website](https://uoftcoders.github.io/studyGroup/). You can also watch a few short [videos from Study Group Leads in our Orientation Guide](https://mozillascience.github.io/study-group-orientation/1-about-study-groups.html). 
 
 
 ## For New Organizers
@@ -22,10 +28,19 @@ What do Study Groups look like in Real Life? Check out the [Boston University St
 
 Everything you need to set up your own beautiful Mozilla Study Group website (it looks like this!) for organizing events is [right here in the Orientation Guide.](https://mozillascience.github.io/study-group-orientation/3.3-get-online.html) If you are new to GitHub, don't worry, [there's an introduction to it here](https://mozillascience.github.io/study-group-orientation/3.1-collab-vers-github.html). Take a look, and if you need any help, you can ask a question in the [Gitter chat](https://gitter.im/mozillascience/studyGroup) or email sciencelab@mozillafoundation.org.
 
+## How to Set Up Mozilla Study Group Website locally
+
+* Fork the Repository [Mozilla Study Group.](https://github.com/mozillascience/studyGroup)
+* Open Terminal (on a Mac) or the equivalent on your machine and type:
+	1. git clone [SSH OR HTTPS CODE FOR studyGroup]
+	2. cd studyGroup/
+	3. jekyll build
+	4. jekyll serve
+* It shows "Server address". Open it in browser. Yes, Mozilla Study Group is set locally!!
+
 ### It's Broken, I Need Help!!!
 
 If anything in these instructions doesn't work or doesn't make sense, ask a question in the [Gitter chat](https://gitter.im/mozillascience/studyGroup), open an issue [here](https://github.com/mozillascience/studyGroup/issues) or email sciencelab@mozillafoundation.org.
-
 
 
 

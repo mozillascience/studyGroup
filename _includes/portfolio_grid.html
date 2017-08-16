@@ -22,7 +22,7 @@
                     {% assign isEvent = 1 %}
                     <li>
                       <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
-                      <div class='eventSub'>{{ post.text }}</div>
+                      <div class='eventSub'><a href="https://mozillascience.github.io/study-group-orientation/3.4-add-event.html">{{ post.text }}</a></div>
                     </li>
                   {% endif %}
                 {% endfor %}
@@ -31,7 +31,7 @@
                 {% else %}
                 <div class="row">
                       <div class="col-lg-12 text-center">
-                          <a href="{{ site.github.issues_url }}" class="btn btn-xl eventSuggest">{{site.data[site.language].suggestEvent}}</a>
+                          <a href="http://mozillascience.github.io/studyGroupHandbook/event-types.html" class="btn btn-xl eventSuggest">{{site.data[site.language].suggestEvent}}</a>
                           <a href="http://mozillascience.github.io/studyGroupHandbook/event-types.html#workalong" class="btn btn-xl eventSuggest">{{site.data[site.language].leadership}}</a>
                       </div>
                 </div>
@@ -77,6 +77,7 @@
             {% else %}
             <div class="col-lg-12">
             {% endif %}
+	      <b><i>Let's feature your event on <a href="https://mozillascience.github.io/studyGroupEvents/">Mozilla Sudy Group Event</a>! Just fill the <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_YVyXIgxHleSLawwIzlnuM28oJ7phDLHT-SpUJVqVmE93qA/viewform?c=0&w=1">form</a> and let the world join your event!!</i><b>
               <h3 class="section-heading eventInstructions">{{site.data[site.language].notification}}</h3>
               <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].watching | replace: '%GITHUB_REPO_URL%', site.github.repository_url }}</h3>
               <figure>
