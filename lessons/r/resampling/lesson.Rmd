@@ -31,7 +31,7 @@ the sample. What resampling does is to take randomly drawn (sub)samples of the
 sample and calculate the statistic from that (sub)sample. Do this enough times and
 you can get a distribution of statistic values that can provide an empirical
 measure of the accuracy/precision of the test statistic. In this lesson, I'll
-cover bootstrapping and permutation testing. To understand the difference:
+cover bootstrapping and permutation testing. To understand the basic difference:
 
 - Bootstrapping is best used to estimate confidence intervals of test statistics.
 - Permutation testing is best used for testing hypotheses.
@@ -50,6 +50,14 @@ mean(x)
 resample <- sample(x, replace = TRUE)
 mean(resample)
 
+library(dplyr)
+library(ggplot2)
+data_frame(num = 1:100) %>% 
+    group_by(num) %>% 
+    mutate(means = mean(sample(x, replace = TRUE))) %>% 
+    ggplot(aes(x = means)) +
+    geom_freqpoly()
+    
 library(boot)
 boot_mean <- function(x, i) {
     mean(x[i])
@@ -85,19 +93,24 @@ statistic (e.g. correlation or regression). Usually this is done on the
 response/outcome/y variable.
 
 ```{r}
-y <- runif(10)
-x <- runif(10)
-cor(y, x)
+ds <- data.frame(y = runif(10), x = runif(10))
+ds
+cor(ds$y, ds$x)
 
-resample_y <- sample(y)
-cor(resample_y, x)
+ds$resample_y <- sample(ds$y)
+ds
+cor(ds$resample_y, ds$x)
+
+data_frame(num = 1:1000) %>% 
+    group_by(num) %>% 
+    mutate(corr = cor(sample(y), x, method = "spearman")) %>% 
+    ggplot(aes(x = corr)) +
+    geom_freqpoly()
 
 library(coin)
 ds <- data.frame(y, x)
 cor.test(y, x)
 spearman_test(y~x, data = ds)
-
-
 ```
 
 
