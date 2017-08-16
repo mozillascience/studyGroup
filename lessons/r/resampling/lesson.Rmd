@@ -1,0 +1,106 @@
+---
+layout: page
+title: "Resampling techniques in R: bootstrapping and permutation testing"
+visible: false
+tags:
+  # languages
+  - r
+  # levels
+  - intermediate
+---
+<!-- change visible to true if you want it on the site -->
+<!-- remove any tags listed above that are not relevant -->
+
+ - **Authors**: Luke Johnston 
+ - **Research field**: Nutritional Sciences
+ - **Lesson topic**: What computing topics does this lesson cover?
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/resampling>
+
+-----
+
+In statistics, we use samples to infer about the population given some set of
+conditions. We generally do not know or can ever know (without substantial cost
+and time) the entire characteristics of the population, so we use the sample to
+make guesses. Because the sample is not the entire population, the sample does
+not completely represent the population. That's why there are standard
+deviations, standard errors, and confidence intervals with all statistics. If we
+took another sample, it would be slightly different from the original sample and
+would have slightly different statistics. Since standard errors of the
+statistics are calculated based on the sample, these estimates can be biased to
+the sample. What resampling does is to take randomly drawn (sub)samples of the
+sample and calculate the statistic from that (sub)sample. Do this enough times and
+you can get a distribution of statistic values that can provide an empirical
+measure of the accuracy/precision of the test statistic. In this lesson, I'll
+cover bootstrapping and permutation testing. To understand the difference:
+
+- Bootstrapping is best used to estimate confidence intervals of test statistics.
+- Permutation testing is best used for testing hypotheses.
+
+## Bootstrapping
+
+Bootstrapping is the process of resampling *with replacement* (*all* values in
+the sample have an *equal* probability of being selected, including multiple
+times, so a value could have a duplicate). This 
+
+```{r}
+
+x <- runif(20, min = 50, max = 100)
+hist(x)
+mean(x)
+
+resample <- sample(x, replace = TRUE)
+mean(resample)
+
+library(boot)
+boot_mean <- function(x, i) {
+    mean(x[i])
+}
+
+est_dist <- boot(x, boot_mean, R = 2000)
+
+library(broom)
+tidy(est_dist)
+
+boot_corr <- function(data, i) {
+    cor(data$x[i], data$y[i])
+}
+
+example_data <- data.frame(y = runif(10, min = 140, max = 200),
+                           x = runif(10, min = 50, max = 120))
+
+cor(example_data$x, example_data$y)
+tidy(boot(example_data, boot_corr, R = 10))
+```
+
+## Permutation testing
+
+Similar to bootstrapping, except permutation testing resamples *without
+replacement* (meaning when a value is selected, it can not be selected again, so
+no value can be a duplicate). This simply shuffles the values. In the case of a
+univariate statistic (e.g. mean), this will not change anything. However, when
+there are two or more variables, reshuffling one variable will change the test
+statistic (e.g. correlation or regression). Usually this is done on the
+response/outcome/y variable.
+
+```{r}
+y <- runif(10)
+x <- runif(10)
+cor(y, x)
+
+resample_y <- sample(y)
+cor(resample_y, x)
+
+library(coin)
+ds <- data.frame(y, x)
+cor.test(y, x)
+spearman_test(y~x, data = ds)
+
+
+```
+
+
+## Resources:
+
+- [CrossValidated Q&A on resampling](https://stats.stackexchange.com/questions/104040/resampling-simulation-methods-monte-carlo-bootstrapping-jackknifing-cross)
+- [Wikipedia on Bootstrap](https://en.wikipedia.org/wiki/Bootstrapping_(statistics))
+- [Documentation on the `coin` package](https://cran.r-project.org/web/packages/coin/vignettes/coin.pdf)
