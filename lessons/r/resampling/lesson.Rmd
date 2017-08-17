@@ -11,7 +11,6 @@ tags:
 
  - **Authors**: Luke Johnston 
  - **Research field**: Nutritional Sciences
- - **Lesson topic**: What computing topics does this lesson cover?
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/resampling>
 
 -----
