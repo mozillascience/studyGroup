@@ -1,4 +1,4 @@
-## Dias para facilitar as sessões de Work Along 
+## Dicas para facilitar as sessões de Work Along 
 
 **Work Along** é um modelo de compartilhamento de conhecimento, um membro do grupo demonstra como ele usa um particular algoritmo, ferramenta ou outra habilidade em sua pesquisa, enquanto todos os demais o segue. É melhor se todos os membros possuam notebooks para trabalhar neles e a pessoa que for apresentar deve possuir um projetor onde sua própria tela será de fácil visualização. Trabalhar juntos ajuda a todos a descobrir novas ferramentas e observar novas soluções para problemas comuns. 
 

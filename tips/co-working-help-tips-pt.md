@@ -1,4 +1,4 @@
-## DIcas para Sessões de Co-Working 
+## Dicas para Sessões de Co-Working 
 
 **A sessão de co-working** é uma sessão aberta onde membros trabalham em projetos separados, mas ajudam uns aos outros em problemas e questões, além de compartilharem o sucesso juntos. Sessões de Co-working são fáceis de serem executadas, e o formato da sessão promove a colaboração, compartilhamento de habilidades e solução conjunta de problemas,tudo isso em um ambiente sem pressão enquanto todos os membros progridem em suas próprias pesquisas. 
 

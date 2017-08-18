@@ -1,4 +1,4 @@
-## Dica para os anfitriões do Hacky Hour
+## Dicas para os anfitriões do Hacky Hour
 
 **O Hacky Hour** é um encontro social informal, onde os membros da comunidade conhecem uns aos outros, discutem novas idéias e constroem novos laços sociais fortalecendo o Grupo como um todo. Hacky Hours são eventos simples de organizar, desde que haja um café ou pub disponíveis além de várias pessoas! Como anfritião você deve está atento para receber os convidados, fazer conexões e introduções entre os convidados. 
 
