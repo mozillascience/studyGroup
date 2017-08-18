@@ -1,4 +1,4 @@
-##Tips for Hacky Hour Hosts
+## Tips for Hacky Hour Hosts
 
 **The Hacky Hour** is an informal, social get-together where community members meet one another, discuss new ideas, and build the social ties that help strengthen any community. Hacky Hours are the easiest events to organize, since all that's required is an open cafe or pub, and a bunch of people! As Hacky Hour host, you’ll be focused on welcoming attendees, and making introductions and connections among attendees.
 
