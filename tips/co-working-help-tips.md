@@ -1,4 +1,4 @@
-##Tips for Co-Working or Help/Q&A Sessions
+## Tips for Co-Working or Help/Q&A Sessions
 
 **The Co-Working session** or **Help/Q&A session** is an an open session where members work on separate projects, but help each other with problems and questions, and share successes. Co-working sessions are easy to run, and the format encourages collaboration, skill-sharing, and hands-on problem-solving in a casual, low-pressure environment… all while members to make progress on their own work!
 

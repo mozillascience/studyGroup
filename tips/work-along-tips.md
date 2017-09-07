@@ -1,4 +1,4 @@
-##Tips for Work-Along Facilitators
+## Tips for Work-Along Facilitators
 
 The **Work-Along** is a skill-sharing session, where one group member demonstrates how they use a particular piece of code, tool, or other skill in their research, while everyone else follows along. It’s best if all members have laptops to work on, and the person who’s demonstrating can project their own screen for easy viewing. Work-alongs help your community discover new tools and see novel solutions to common problems. 
 
