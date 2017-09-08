@@ -1,0 +1,9 @@
+---
+title: Hacky Hour Social
+text: Look for the UofT Coders posters to find where we're seated!
+location: Red Lounge (College/Spadina)
+link: https://github.com/UofTCoders/Events/issues/117
+date: 2017-09-21
+startTime: '18:00'
+endTime: '21:00'
+---

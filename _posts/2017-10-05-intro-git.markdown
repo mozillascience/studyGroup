@@ -1,0 +1,9 @@
+---
+title: Introduction to Version Control with Git/Github
+text: Learn how to use version control with your code using Git and Github.
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/119
+date: 2017-10-05
+startTime: '18:10'
+endTime: '19:00'
+---
