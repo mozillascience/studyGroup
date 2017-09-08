@@ -1,0 +1,9 @@
+---
+title: Introduction to R
+text: Learn the basics of programming in R.
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/116
+date: 2017-09-14
+startTime: '18:10'
+endTime: '19:00'
+---
