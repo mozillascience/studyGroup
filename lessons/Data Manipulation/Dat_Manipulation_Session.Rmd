@@ -28,7 +28,7 @@ USA <- read.csv("./Data/USAP.csv") #Sea around Us data for USA
 
 ```
 
-# Dplyr and Tidyr
+# Data Manipulation with Dplyr and Tidyr
 
 Despite beign separate, these two packadges work together as one. Theyr main function is to manipulate data frames and keep things "tydi". In some cases you can also make basic data creation. Both packadges follow the same syntax and can use the pipe opperator, I normally don't even know which function is from what packadge so I oftenly just call both.
 
@@ -240,7 +240,7 @@ head(Slice_Example2, 3)
 ```
 
 
-#Joining Data with dplyr
+# Joining Data with dplyr
 
 ### The "bind" family
 These functions will help us bind two or more datasets in one deoending on different variables.
@@ -259,7 +259,7 @@ New_Data <- bind_cols(Data1, Data2)
 #Lets just asume that we have two different data sets
 Data1 <- select(Alaska, 1)
 Data2 <- select(Alaska, 2)
-View(Data2)
+# View(Data2)
 #Now we bind the columns together
 Bind_Cols_1 <- bind_cols(Data1,Data2)
 
@@ -290,13 +290,15 @@ head(Bind_Row_1, 6)
 
 #### anti_join
 
+Lets us know what variables from one dataset are not present in some other dataset
+
 ```{r anti_join, echo =T, eval=T}
 
 #Lets asume we want to know how many species are fished in Alaska and not in the continental US
-Similar_Species <- anti_join(Alaska, USA, by="scientific_name")
+Diff_Species <- anti_join(Alaska, USA, by="scientific_name")
 
 #You can also do it by more than one variable
-Similar_Species2 <- anti_join(Alaska, USA, by=c("scientific_name","reporting_status"))
+Diff_Species2 <- anti_join(Alaska, USA, by=c("scientific_name","reporting_status"))
 
 ```
 
@@ -304,17 +306,43 @@ Similar_Species2 <- anti_join(Alaska, USA, by=c("scientific_name","reporting_sta
 
 ```{r semi_join, echo =T, eval=T}
 #Now we want to know how many species are fished in BOTH Alaska and the continental US
-Diff_Species <- semi_join(Alaska, USA, by="scientific_name")
+Same_Species <- semi_join(Alaska, USA, by="scientific_name")
 
-#Not just like anti_join, you can do it for more than one variable
+#Note: just like anti_join, you can do it for more than one variable
 
 ```
 
 #### Inner_join
+
+```{r Inner_join, echo =T, eval=T}
+#Now we want to know how many species are fished in BOTH Alaska and the continental US
+Inner_Species <- inner_join(Alaska, USA, by="scientific_name")
+
+#Note: just like anti_join, you can do it for more than one variable
+
+```
+
+
 #### Left_join
 
+```{r Left_join, echo =T, eval=T}
+#Now we want to know how many species are fished in BOTH Alaska and the continental US
+Left_Species <- left_join(Alaska, USA, by="scientific_name")
+
+#Note: just like anti_join, you can do it for more than one variable
+
+```
 
 #### Right_join
+
+```{r right_join, echo =T, eval=T}
+#Now we want to know how many species are fished in BOTH Alaska and the continental US
+Right_Species <- right_join(Alaska, USA, by="scientific_name")
+
+#Note: just like anti_join, you can do it for more than one variable
+
+```
+
 ### Intersect
 ### Union
 ### Setdiff
@@ -333,9 +361,12 @@ Example <- Alaska %>%
   filter(year >= 2000) %>% #Lets filter the years above 2000
   select(area_name,scientific_name,tonnes,year) %>% #We only care about these data
   group_by(scientific_name,year) %>% 
-  summarise(Mean = mean(tonnes), SD = sd(tonnes)) %>% #Give me the mean and sd of each species each year
+  summarise(Mean = mean(tonnes), 
+            SD = sd(tonnes),
+            N = n()) %>% #Give me the mean and sd of each species each year
   mutate(Round_Mean = round(Mean,2), Round_SD = round(SD,2)) %>% #create a log version of mean and the sd
-  transmute(Log_Mean = log(Round_Mean,2), Log_SD = log(Round_SD,2)) %>% 
+  transmute(Log_Mean = log(Round_Mean,2), 
+            Log_SD = log(Round_SD,2)) %>% 
   semi_join(USA, by="scientific_name")
 
 ```
