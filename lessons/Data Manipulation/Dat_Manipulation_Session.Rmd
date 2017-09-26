@@ -176,7 +176,22 @@ paste(Mutate_Example4[5387,16])
 
 ```
 
-### select
+### Rename
+The `rename` function is another "self explainatory" it allows you to rename the columns
+
+#### Basic structure:
+
+New_Table <- rename(Data,New_Name = Old_Name)
+
+```{r mutate, echo =T, eval=T}
+
+Rename_Example <- rename(Alaska, Weight = tonnes)
+
+```
+
+
+
+### Select
 The `select`function is one of those "of-course it does that" function cus it allows you to, wait for it... SELECT any column you want.
 
 #### Basic structure:
@@ -213,6 +228,13 @@ head(Select_Example4, 3)
 #And you can also re-order your columns!
 
 Select_Example5 <- select(Select_Example3, scientific_name,year,tonnes,area_name)
+
+head(Select_Example5, 3)
+
+#And you don't have to write everything
+
+Select_Example6 <- select(Select_Example5, scientific_name,
+                          everything())
 
 head(Select_Example5, 3)
 
