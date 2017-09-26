@@ -1,0 +1,10 @@
+---
+  title: GGplot2
+  text: Data visualization with GGplot2! 
+  location: Hakai Node, AERL 2nd Floor
+  link:
+  date: 2017-10-26
+  startTime: '16:00'
+  endTime: '17:00'
+---
+  
