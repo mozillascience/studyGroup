@@ -3,7 +3,7 @@ title: "Intro to piping and Data Manipulation"
 author: "JEPA"
 date: "02/06/2017"
 output:
-  pdf_document: 
+  pdf_document:
     toc: yes
     toc_depth: 3
   html_document:
@@ -13,6 +13,11 @@ output:
 # Libraries and Data
   
 ```{r Libraries, eval=T,echo=T, warning=F, message=F}
+
+#If you downloaded tidyverse
+#install.packages('tidyverse')
+#library(tidyverse)
+
 #install.packages('dplyr')
 library(dplyr) 
 
@@ -81,10 +86,24 @@ The `filter`function allows you to, literally, filter your data by any category 
 
 New_Table <- filter(Data, column_to_filter_by == "category")
 
+`filter` operators:
+
+`a == b`	`a` is equal to `b`
+`a != b`	`a` is not equal to `b`
+`a > b`	  `a` is greater than `b`
+`a < b`	  `a` is less than `b`
+`a >= b`	`a` is greater than or equal to `b`
+`a <= b`	`a` is less than or equal to `b`
+`a %in% b`	`a` is an element in `b`
+
+
+
+
 ```{r Filter, echo =T, eval=T}
 
 #You can filter by character
-Filter_Example <- filter(Alaska,common_name =="Clams")
+Filter_Example <- filter(Alaska, 
+                         common_name =="Clams")
 
 head(Filter_Example[1:5], 5)
 
@@ -99,7 +118,8 @@ head(Filter_Example2[1:5], 5)
 
 Selection <- c("Clams","Octopuses")
 
-Filter_Example3 <- filter(Alaska,common_name %in% Selection)
+Filter_Example3 <- filter(Alaska,
+                          common_name %in% Selection)
 
 head(Filter_Example3[4:8], 5)
 
@@ -107,16 +127,21 @@ head(Filter_Example3[4:8], 5)
 
 #Wait! What if I want to filter by multiple columns!? 
 
-Filter_Example4 <- filter(Alaska,common_name == "Clams" &
-                            reporting_status =="Unreported")
+Filter_Example4 <- filter(Alaska,common_name == "Clams",
+                            reporting_status =="Unreported") # Will give me all clams that are unreported
 
 #You can also filter by NA
 
 Filter_NA_Example1 <- filter(Alaska,is.na(uncertainty_score)) #Extract only NA's
+
 head(Filter_NA_Example1[1:4],3)
+
 Filter_NA_Example2 <- filter(Alaska,!is.na(uncertainty_score)) #Clear NA's
 
 ```
+
+
+
 
 ### Group_by* (plus summarise)
 The `group_by`function allows you to group your data by common variables for future (immediate) calculations. This function needs the "pipe operator"
@@ -146,7 +171,7 @@ head(Group_by_Example, 3)
 ```
 
 ### Mutate
-The `mutate`function allows you to create a new column in the data-set. The new column can have characters or numbers.
+The `mutate` function allows you to create a new column in the data-set. The new column can have characters or numbers.
 
 #### Basic structure:
 
@@ -183,7 +208,7 @@ The `rename` function is another "self explainatory" it allows you to rename the
 
 New_Table <- rename(Data,New_Name = Old_Name)
 
-```{r mutate, echo =T, eval=T}
+```{r rename, echo =T, eval=T}
 
 Rename_Example <- rename(Alaska, Weight = tonnes)
 
@@ -197,6 +222,8 @@ The `select`function is one of those "of-course it does that" function cus it al
 #### Basic structure:
 
 New_Table <- select(Data,number or name of column)
+
+**Note:** Re-ordering of values happens here!
 
 ```{r select, echo =T, eval=T}
 
@@ -217,13 +244,13 @@ Select_Example3 <- select(Alaska, area_name,year,scientific_name,tonnes)
 
 head(Select_Example3, 3)
 
-# You can substract columns from a dataframe
+# You can drop columns from a dataframe
 
 Select_Example4 <- select(Select_Example3, -area_name,year)
 
 head(Select_Example4, 3)
 
-#Note, you can also substract using -1
+#Note, you can also drop using -
 
 #And you can also re-order your columns!
 
@@ -285,11 +312,11 @@ New_Data <- bind_cols(Data1, Data2)
 #Lets just asume that we have two different data sets
 Data1 <- select(Alaska, 1)
 Data2 <- select(Alaska, 2)
-<<<<<<< HEAD
-# View(Data2)
-=======
 
->>>>>>> 7e3de76fb81ad0e0f103bc0ac3937709fca1c5be
+# View(Data2)
+
+
+
 #Now we bind the columns together
 Bind_Cols_1 <- bind_cols(Data1,Data2)
 
@@ -329,13 +356,13 @@ Lets us know what variables from one dataset are not present in some other datas
 
 ```{r anti_join, echo =T, eval=T}
 
-<<<<<<< HEAD
+
 #Lets asume we want to know how many species are fished in Alaska and not in the continental US
 Diff_Species <- anti_join(Alaska, USA, by="scientific_name")
-=======
+
 #Lets assume we want to know how many species are fished in Alaska and not in the continental US
 Similar_Species <- anti_join(Alaska, USA, by="scientific_name")
->>>>>>> 7e3de76fb81ad0e0f103bc0ac3937709fca1c5be
+
 
 #You can also do it by more than one variable
 Diff_Species2 <- anti_join(Alaska, USA, by=c("scientific_name","reporting_status"))
@@ -354,18 +381,14 @@ Same_Species <- semi_join(Alaska, USA, by="scientific_name")
 ```
 
 #### Inner_join
-<<<<<<< HEAD
+
+`Inner_join` will let you combine variables (rows) from different data-sets into one data-set based on a category/column that you choose
 
 ```{r Inner_join, echo =T, eval=T}
 #Now we want to know how many species are fished in BOTH Alaska and the continental US
 Inner_Species <- inner_join(Alaska, USA, by="scientific_name")
 
 #Note: just like anti_join, you can do it for more than one variable
-=======
-`Inner_join` will let you combine variables (rows) from different data-sets into one data-set based on a category/column that you choose
-
-
-```{r Inner_join, echo =T, eval=T}
 
 #Lets just asume that we have two different data sets
 Data1 <- select(Alaska, 7,8)
@@ -378,12 +401,11 @@ Inner_Example <- inner_join(Data1, Data2, by="common_name")
 #The result will be a data-set with the "common_name", "functional_group" and "fishing_sector"
 
 head(Inner_Example,3)
->>>>>>> 7e3de76fb81ad0e0f103bc0ac3937709fca1c5be
 
 ```
 
 
-<<<<<<< HEAD
+
 #### Left_join
 
 ```{r Left_join, echo =T, eval=T}
@@ -407,8 +429,6 @@ Right_Species <- right_join(Alaska, USA, by="scientific_name")
 ### Intersect
 ### Union
 ### Setdiff
-=======
-
 
 
 ## Tidyr
@@ -453,13 +473,13 @@ head(Unite_Example[4:6],3)
 #Note that, because month and day are NA's, the new column has them together
 
 ```
->>>>>>> 7e3de76fb81ad0e0f103bc0ac3937709fca1c5be
+
 
 # The Piping opperator %>% 
 
-Many R packages like `dplyr`, `tidyr` and `leaflet`, allows you to use the pipe (%>%) operator to chain functions together. Chaining code allows you to streamline your workflow and make it easier to read.
+Many R packages like `dplyr`, `tidyr` `ggplot2` and `leaflet`, allows you to use the pipe (`%>%`) operator to chain functions together. Chaining code allows you to streamline your workflow and make it easier to read.
 
-When using the %>% operator, first specify the data frame that all following functions will use. For the rest of the chain the data frame argument can be omitted from the remaining functions.
+When using the `%>%` operator, first specify the data frame that all following functions will use. For the rest of the chain the data frame argument can be omitted from the remaining functions.
 
 **NOTE:** for Mac users the pipe symbol "%>%" shortcut is: command + shit + m. For windows users is: Ctrol + Shift + m
 
@@ -475,7 +495,45 @@ Pipie_Example <- Alaska %>%
   mutate(Round_Mean = round(Mean,2), Round_SD = round(SD,2)) %>% #create a log version of mean and the sd
   transmute(Log_Mean = log(Round_Mean,2), 
             Log_SD = log(Round_SD,2)) %>% 
-  semi_join(USA, by="scientific_name")
+  semi_join(USA, 
+            by="scientific_name")
   
 
 ```
+
+
+# Combo! 
+
+![S](Images/Combo.png)
+
+ \clearpage
+ 
+
+One of the beauties of `tydiverse` is that you can mix several packages in one code like this graph:
+
+```{r Combo, echo =T, eval=T, warning=F, message=F}
+
+Pipie_Example <- Alaska %>% 
+  filter(year >= 2000) %>% #Lets filter the years above 2000
+  select(area_name,scientific_name,tonnes,year) %>% #We only care about these data
+  group_by(scientific_name,year) %>% 
+  summarise(Mean = mean(tonnes), 
+            SD = sd(tonnes),
+            N = n()) %>% #Give me the mean and sd of each species each year
+  mutate(Round_Mean = round(Mean,2), Round_SD = round(SD,2)) %>% #create a log version of mean and the sd
+  transmute(Log_Mean = log(Round_Mean,2), 
+            Log_SD = log(Round_SD,2)) %>% 
+  ggplot(., #It tells ggplot2 to use the data you are piping
+         aes(
+           x=Log_Mean,
+           y=Log_SD
+         )) +
+  geom_point()
+
+Pipie_Example
+  
+
+```
+
+
+

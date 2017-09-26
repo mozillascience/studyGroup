@@ -1,6 +1,6 @@
-# Intro to "piping" and Data Manipulation
+# Intro to Data Manipulation and "piping"
 JEPA
-02/06/2017
+09/28/2017
 
 # Why use dplyr and tidyr?
 
@@ -23,6 +23,21 @@ The session will cover a variety of useful functions to manipulate data, mainly 
 
 
 ```r
+## Install all packages (Combo!)
+
+## This is the Combo:
+
+## Loading tidyverse: ggplot2
+## Loading tidyverse: tibble
+## Loading tidyverse: tidyr
+## Loading tidyverse: readr
+## Loading tidyverse: purrr
+## Loading tidyverse: dplyr
+
+#install.packages('tidyverse')
+library(tidyverse)
+
+# If you only want the minimum...
 
 #install.packages('dplyr')
 library(dplyr) 
