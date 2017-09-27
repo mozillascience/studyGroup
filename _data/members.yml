@@ -40,3 +40,18 @@
     - Plant-Microbe interaction
     - Proteomics
     - R
+
+- name: Elspeth Sage
+  affiliation: University of Amsterdam (IBED)
+  github: Elspeth Sage
+  interests:
+    - Ecology
+    - Spatial analysis
+    - R
+
+- name: Morgan Brown
+  affiliation: University of Amsterdam (IBED)
+  github: Morgan Brown
+  interests: 
+    - Animal behaviour
+    - Spatial analysis

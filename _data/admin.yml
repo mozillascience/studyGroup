@@ -1,5 +1,5 @@
 - name: Marc Galland
-  affiliation: University of Amsterdam
+  affiliation: University of Amsterdam (SILS)
   github: mgalland
   interests:
     - Plants
@@ -25,7 +25,7 @@
     - Data Analysis
     
 - name: Emiel van Loon
-  affiliation: University of Amsterdam
+  affiliation: University of Amsterdam (IBED)
   github: EmielvanLoon
   interests:
     - Statistical Ecology
@@ -34,10 +34,38 @@
     - Reproducible Research
  
 - name: Like Fokkens 
-  affiliation: University of Amsterdam
+  affiliation: University of Amsterdam (SILS)
   github: LikeFokkens
   interests:
     - Genome Biology
     - Fungal Genetics 
     - Python
     - Teaching
+
+- name: Joeri Jongbloets
+  affiliation: University of Amsterdam (SILS)
+  github: jjongbloets
+  interests:
+    - Genetics
+    - Microbiology 
+    - Modelling
+    - Python
+    - R
+
+- name: Pietro Marchesi
+  affiliation: University of Amsterdam (SILS)
+  github: pietromarchesi
+  interests:
+    - Neurosciences
+    - Computer Science
+    - Data analysis 
+    - Python
+
+- name: Zsofia Koma
+  affiliation: University of Amsterdam (IBED)
+  github: komazsofi
+  interests:
+    - Ecology
+    - Geoinformatics
+    - Spatial analysis
+    - Machine Learning
