@@ -54,6 +54,17 @@ git config --global core.editor "your_editor"
 git config --list # To confirm
 ```
 
+# Creating a Repo on Github
+The cloud (GitHub) serves as an online repo where files are accessible 24x7
+
+* Go to [GitHub](https://github.com/)
+
+* Create a new repo by pressing the `New Repository` button
+
+* Let us keep the name short and self explanatory and call it 'git-training' 
+
+* We will call this the `remote` repo form here on
+
 # Creating a Git Repo
 * change directory (move to another folder) using 
 ```bash 
@@ -68,15 +79,16 @@ cd ..
 mkdir
 ```
 
-# Let us create a Repo
+# Let us create a `local` Repo
 ```bash
 cd ~/Documents
 # for windows users with full path
 cd C:/Users/user_name/Documents
-# create a new folder
-mkdir new_git_repo
+# create a new folder 
+# use the same name as your remote repo on GitHub
+mkdir git-training
 # move to the new folder
-cd new_git_repo
+cd git-training
 ```
 ## Convert folder to **git** repo
 ```bash
@@ -85,22 +97,90 @@ git init
 ## check your folder to find git configuration files/folders
 This folder is now a git repo (short for repository)
 
+# Using GitHub with Git
+If you have GitHub, you can add the repository you cloned/created to it and visualize the changes
+
+Remember, you installed this earlier?
+
+# Configuring your repo for use with GitHub on the cloud
+In order to use this local repo with the one you created earlier we need to set the remote configuration
+```bash
+git remote -v
+```
+will tell you what is the remote corresponding to your local repo
+
+If it is empty, you can setup a remote using 
+```bash
+git remote add remote_name remote_url
+```
+
+Before you do this, you need to have an account on GitHub and a repo on it
+
+# Configuring your repo for use with GitHub on the cloud
+* Copy the repo url from the repo creation page and use it in
+```bash
+git remote add origin copy_url_here
+```
+
+* Check your remote configuration again
+```bash
+git remote -v
+```
+
 # Adding new files to a repo
 * create a text file with
     + your name
     + program
     + research area
 * save the file as `my_cred` in the git repo you just created
-* add this file to the git index
+
+# Visualize changes to files
+You can see the changes you made to this file in GitHub
+\begin{block}
+{New files} on GitHub can be seen with a \textcolor{green}{green '+'} to their right 
+\end{block}
+
+This indicates the file is new and is `untracked` by git
+
+\begin{block}
+{Old modified files} can be seen with a \textcolor{gray}{gray circle} to their right
+\end{block}
+
+This indicates the file is already `tracked` and there are `uncommited` changes
+```bash
+git status
+``` 
+can give information on `tracked`, `untracked` and `indexed` files
+
+# Adding Files to git index
+* add the file to the git index
 ```bash
 git add ~/Documents/new_git_repo/my_cred
 # you can also use wildcards instead of full name
 git add *my_cred
 ```
-* let us move `commit` this change to history 
+* check file status again 
+```bash
+git status
+```
+Notice the file has changed from \textcolor{red}{red} to \textcolor{green}{green}
+
+* let us `commit` this change to repo history 
 ```bash
 git commit -m "initial commit with my info"
 ```
+* Now your file is `tracked` by git
+
+# `push` to your new repo on GitHub
+You can move all your **committed** changes to the remote repo
+```bash
+git push origin
+```
+You can also get all **commits** from the remote repo
+```bash
+git pull origin
+```
+Make sure your `remote` is set before you do this
 
 # Cloning an Existing `git` repo
 We can copy or clone existing repositories from GitHub using
@@ -123,7 +203,7 @@ git clone https://github.com/UofTCoders/studyGroup
 # Modify a existing file and commit changes
 Go to the directory containing the example file
 ```bash
-cd C:/Users/shyam/Documents/Courses/studyGroup/lessons/git/intro
+cd C:/Users/shyam/Documents/studyGroup/lessons/git/intro
 # see all files in the directory
 ls
 ```
@@ -134,13 +214,92 @@ To open files in bash/shell
 editor_name file_name
 gitpad example_file.md
 ```
-
-add a new line to this starting with an asterisk(*)
+add a new line to this file starting with an asterisk(*)
 
 save file and close
 
-# Add changes to index and commit changes
-If you have GitHub, you can add the repository you cloned/created to it and visualize the changes
+# Visualize changes to file
+You can visualize on GitHub as before or 
+
+You can also use
+```bash
+git diff example_file.md
+```
+in the command line
+
+Note the file has to be `tracked` to use `git diff`
+
+
+# Add changes to index and commit changes to repo
+We will use the previously used commands to `add` and `commit` files
+```bash
+git add *example_file.md
+git commit -m "added one new line to file"
+```
+
+You should not see the file on GitHub anymore as the changes are committed now
+
+# `push` commits to the remote repo
+Let us first check the `remote` configuration
+```bash
+git remote -v
+```
+Notice that the remote is already set
+
+```bash
+git push origin
+```
+will push your `local` changes to the `remote` repo
+
+# Discarding changes in your repo
+Discard \textcolor{red}{unstaged} \textcolor{gray}{Tracked} changes using
+```bash
+git checkout .
+```
+Discard \textcolor{red}{unstaged} unTracked changes using
+```bash
+git clean -f
+```
+Use this command with caution:
+
+Discard \textcolor{green}{staged} and \textcolor{red}{unstaged} Tracked changes using
+```bash
+git reset --hard
+```
+
+# Creating branches in your repo
+Branches can enable development without affecting your stable code
+To create a new (non-existent) branch and move to that branch
+```bash
+git checkout -b new_branch_name
+```
+
+To create an equivalent branch in the remote repo
+```bash
+git push -u origin new_branch_name
+```
+
+# Summary of Commands covered today
+```bash
+git init
+git clone
+git config
+git remote
+git status
+git diff
+git add
+git commit
+git push
+git pull
+git checkout
+git clean
+```
+
+
+
+
+
+
 
 
 
