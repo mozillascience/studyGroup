@@ -1,0 +1,146 @@
+---
+title: "Intro to Git"
+author: "Shyam Srinivasan"
+date: "October 5, 2017"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Learning expectations
+
+This won't even touch the surface of git... But! Hopefully, you:
+
+- Recognize the power of using version control
+- Know the basic tools to get started using git
+- Where to go for help
+
+But! No expectation to actually start using it :)
+
+
+# Getting started with Git and GitHub
+
+Installing and running Git and GitHub
+
+## Linux
+https://www.howtoforge.com/tutorial/install-git-and-github-on-ubuntu-14.04/
+
+* Dowload and Install Git for Linux
+`sudo apt-get install git`
+
+## Windows/MacOS
+https://desktop.github.com/
+
+* Make sure you install posh-git along with GitHub
+
+# Configuring your setup:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@some.domain"
+```
+
+Optional Configurations
+```bash
+git config --global color.ui "auto" 
+```
+
+Setup Editor for Text Files
+
+```bash
+git config --global core.editor "your_editor"
+git config --list # To confirm
+```
+
+# Creating a Git Repo
+* change directory (move to another folder) using 
+```bash 
+cd
+```
+* to move back one folder use
+```bash 
+cd ..
+```
+* to make a new directory
+```bash
+mkdir
+```
+
+# Let us create a Repo
+```bash
+cd ~/Documents
+# for windows users with full path
+cd C:/Users/user_name/Documents
+# create a new folder
+mkdir new_git_repo
+# move to the new folder
+cd new_git_repo
+```
+## Convert folder to **git** repo
+```bash
+git init
+```
+## check your folder to find git configuration files/folders
+This folder is now a git repo (short for repository)
+
+# Adding new files to a repo
+* create a text file with
+    + your name
+    + program
+    + research area
+* save the file as `my_cred` in the git repo you just created
+* add this file to the git index
+```bash
+git add ~/Documents/new_git_repo/my_cred
+# you can also use wildcards instead of full name
+git add *my_cred
+```
+* let us move `commit` this change to history 
+```bash
+git commit -m "initial commit with my info"
+```
+
+# Cloning an Existing `git` repo
+We can copy or clone existing repositories from GitHub using
+```bash
+git clone
+```
+Let us do this for the UofT Coders repo available at
+[UofT Coders git repo](https://github.com/UofTCoders/studyGroup)
+
+Select the green `Clone or Download` button and select ` copy to clipboard`
+
+In your shell/bash move to a directory of your choice and clone the repo
+```bash
+cd ~/Documents
+# if you are using git posh (in powershell) 
+# use the right click to paste the copied url
+git clone https://github.com/UofTCoders/studyGroup
+```
+
+# Modify a existing file and commit changes
+Go to the directory containing the example file
+```bash
+cd C:/Users/shyam/Documents/Courses/studyGroup/lessons/git/intro
+# see all files in the directory
+ls
+```
+Open file `example_file.md` in any text editor
+
+To open files in bash/shell
+```bash
+editor_name file_name
+gitpad example_file.md
+```
+
+add a new line to this starting with an asterisk(*)
+
+save file and close
+
+# Add changes to index and commit changes
+If you have GitHub, you can add the repository you cloned/created to it and visualize the changes
+
+
+
