@@ -1,11 +1,15 @@
 # Intro to piping and Data Manipulation
 JEPA  
-02/06/2017  
+09/28/2017  
 
 # Libraries and Data
   
 
 ```r
+#If you downloaded tidyverse
+#install.packages('tidyverse')
+#library(tidyverse)
+
 #install.packages('dplyr')
 library(dplyr) 
 
@@ -19,22 +23,22 @@ Alaska <- read.csv("./Data/Alaska.csv") #Sea around Us data for Alaska
 USA <- read.csv("./Data/USAP.csv") #Sea around Us data for USA
 ```
 
-# Dplyr and Tidyr
+# Data Manipulation with Dplyr and Tidyr
 
-Despite beign separate, these two packadges work together as one. Theyr main function is to manipulate data frames and keep things "tydi". In some cases you can also make basic data creation. Both packadges follow the same syntax and can use the pipe opperator, I normally don't even know which function is from what packadge so I oftenly just call both.
+Despite being separate, these two packages work together as one. Their main function is to manipulate data frames and keep things "tydi". In some cases you can also make basic data creation. Both packages follow the same syntax and can use the pipe operator, I normally don't even know which function is from what package so I often just call both.
 
 Plus: Most functions are self explanatory like `select` or `filter`! 
 
 ## Dplyr
 
 ### Arrange
-The `arrange`function allows you to, literaly, arrenge your data by any value of a column
+The `arrange`function allows you to, literally, arrange your data by any value of a column
 
 #### Basic structure:
 
-New_Table <- arrange(Data, column_to_arange_by)
+New_Table <- arrange(Data, column_to_arrange_by)
 
-*Note:* If you eant to do from Top <- Bottom you can use `desc()` within the function
+*Note:* If you want to do from Top <- Bottom you can use `desc()` within the function
 
 *Note:* when doing multiple variables the order is important since it will start with the first one
 
@@ -98,16 +102,28 @@ head(Arrange_Example4[4:6],3)
 ```
 
 ### Filter
-The `filter`function allows you to, literaly, filter your data by any category or numer.
+The `filter` function allows you to, literally, filter your data by any category or number.
 
 #### Basic structure:
 
 New_Table <- filter(Data, column_to_filter_by == "category")
 
+`filter` operators:
+
+- `a == b`	`a` is equal to `b`
+- `a != b`	`a` is not equal to `b`
+- `a > b`	  `a` is greater than `b`
+- `a < b`	  `a` is less than `b`
+- `a >= b`	`a` is greater than or equal to `b`
+- `a <= b`	`a` is less than or equal to `b`
+- `a %in% b`	`a` is an element in `b`  
+
+
 
 ```r
 #You can filter by character
-Filter_Example <- filter(Alaska,common_name =="Clams")
+Filter_Example <- filter(Alaska, 
+                         common_name =="Clams")
 
 head(Filter_Example[1:5], 5)
 ```
@@ -128,7 +144,7 @@ head(Filter_Example[1:5], 5)
 ```
 
 ```r
-#You can filter by numeric input too
+#You can filter by numeric inputs too
 Filter_Example2 <- filter(Alaska,
                          year == 2009)
 head(Filter_Example2[1:5], 5)
@@ -156,7 +172,8 @@ head(Filter_Example2[1:5], 5)
 
 Selection <- c("Clams","Octopuses")
 
-Filter_Example3 <- filter(Alaska,common_name %in% Selection)
+Filter_Example3 <- filter(Alaska,
+                          common_name %in% Selection)
 
 head(Filter_Example3[4:8], 5)
 ```
@@ -181,12 +198,14 @@ head(Filter_Example3[4:8], 5)
 
 #Wait! What if I want to filter by multiple columns!? 
 
-Filter_Example4 <- filter(Alaska,common_name == "Clams" &
-                            reporting_status =="Unreported")
+Filter_Example4 <- filter(Alaska,common_name == "Clams",
+                            reporting_status =="Unreported") #Will give me all clams 
+# that are unreported
 
 #You can also filter by NA
 
 Filter_NA_Example1 <- filter(Alaska,is.na(uncertainty_score)) #Extract only NA's
+
 head(Filter_NA_Example1[1:4],3)
 ```
 
@@ -205,8 +224,11 @@ head(Filter_NA_Example1[1:4],3)
 Filter_NA_Example2 <- filter(Alaska,!is.na(uncertainty_score)) #Clear NA's
 ```
 
+
+
+
 ### Group_by* (plus summarise)
-The `group_by`function allows you to group your data by common variables for future (inmidiate) calculations. This function needs the "pipe opperator"
+The `group_by`function allows you to group your data by common variables for future (immediate) calculations. This function needs the "pipe operator"
 
 #### Basic structure:
 
@@ -219,14 +241,14 @@ New_Table <- Data %>%
 #Simple group_by
 Group_by_Example <- Alaska %>% 
   group_by(common_name) %>% 
-  summarise(n()) #tells you how many rows of each common_name you have
+  summarise(n()) #tells you how many rows of each "common_name"" you have
 
 head(Group_by_Example, 3)
 ```
 
 ```
-## # A tibble: 3 x 2
-##      common_name   n()
+## # A tibble: 3 × 2
+##      common_name `n()`
 ##           <fctr> <int>
 ## 1       Abalones    52
 ## 2  Alaska plaice     9
@@ -237,15 +259,15 @@ head(Group_by_Example, 3)
 #Multiple
 Group_by_Example2 <- Alaska %>% 
   group_by(common_name,uncertainty_score) %>% 
-  summarise(n()) %>% #tells you how many rows of each common_name you have
+  summarise(n()) %>% #tells you how many rows of each "common_name"" you have
   arrange(uncertainty_score)
 
 head(Group_by_Example, 3)
 ```
 
 ```
-## # A tibble: 3 x 2
-##      common_name   n()
+## # A tibble: 3 × 2
+##      common_name `n()`
 ##           <fctr> <int>
 ## 1       Abalones    52
 ## 2  Alaska plaice     9
@@ -253,7 +275,7 @@ head(Group_by_Example, 3)
 ```
 
 ### Mutate
-The `mutate`function allows you to create a new column in the dataset. The new columb can have characters or numbers.
+The `mutate` function allows you to create a new column in the data-set. The new column can have characters or numbers.
 
 #### Basic structure:
 
@@ -303,7 +325,8 @@ head(Mutate_Example3[13:16], 3)
 ```
 
 ```r
-Mutate_Example4 <- mutate(Mutate_Example3, Country = paste("In",year,Country,"harvested",round(tonnes,2), "tonnes of", common_name))
+Mutate_Example4 <- mutate(Mutate_Example3, Country = paste("In",year,Country,"harvested",
+                                                           round(tonnes,2), "tonnes of", common_name))
 
 paste(Mutate_Example4[1,16])
 ```
@@ -320,12 +343,28 @@ paste(Mutate_Example4[5387,16])
 ## [1] "In 1979 USA harvested 18.7 tonnes of Squids"
 ```
 
-### select
+### Rename
+The `rename` function is another "self explanatory" it allows you to rename the columns
+
+#### Basic structure:
+
+New_Table <- rename(Data,New_Name = Old_Name)
+
+
+```r
+Rename_Example <- rename(Alaska, Weight = tonnes)
+```
+
+
+
+### Select
 The `select`function is one of those "of-course it does that" function cus it allows you to, wait for it... SELECT any column you want.
 
 #### Basic structure:
 
-New_Table <- select(Data,number or name of colum)
+New_Table <- select(Data,number or name of column)
+
+**Note:** Re-ordering of values happens here!
 
 
 ```r
@@ -373,7 +412,7 @@ head(Select_Example3, 3)
 ```
 
 ```r
-# You can substract columns from a dataframe
+# You can drop columns from a dataframe
 
 Select_Example4 <- select(Select_Example3, -area_name,year)
 
@@ -388,11 +427,27 @@ head(Select_Example4, 3)
 ```
 
 ```r
-#Note, you can also substract using -1
+#Note, you can also drop using -
 
 #And you can also re-order your columns!
 
 Select_Example5 <- select(Select_Example3, scientific_name,year,tonnes,area_name)
+
+head(Select_Example5, 3)
+```
+
+```
+##                scientific_name year    tonnes               area_name
+## 1 Marine fishes not identified 1950   13.8030 USA (Alaska, Subarctic)
+## 2 Marine fishes not identified 1950 1483.9740 USA (Alaska, Subarctic)
+## 3 Marine fishes not identified 1950  389.9891 USA (Alaska, Subarctic)
+```
+
+```r
+#And you don't have to write everything
+
+Select_Example6 <- select(Select_Example5, scientific_name,
+                          everything())
 
 head(Select_Example5, 3)
 ```
@@ -457,17 +512,30 @@ head(Slice_Example2, 3)
 ```
 
 
-#Joining Data with dplyr
+## Joining Data with dplyr
+
 
 ### The "bind" family
+These functions will help us bind two or more data-sets in one depending on different variables.
 
 #### bind_cols
+
+The `bind_cols` function allows us to bind two data-sets by column.
+
+##### Basic Structure 
+
+New_Data <- bind_cols(Data1, Data2)
+
 
 
 ```r
 #Lets just asume that we have two different data sets
 Data1 <- select(Alaska, 1)
 Data2 <- select(Alaska, 2)
+
+# View(Data2)
+
+
 
 #Now we bind the columns together
 Bind_Cols_1 <- bind_cols(Data1,Data2)
@@ -484,9 +552,15 @@ head(Bind_Cols_1, 3)
 
 #### bind_rows
 
+The `bind_rows` function is a sister-function of bind_cols but for binding rows.
+
+##### Basic Structure 
+
+New_Data <- bind_rows(Data1, Data2)
+
 
 ```r
-#Lets just asume that we have two different data sets
+#Lets just assume that we have two different data sets
 Data1 <- slice(Alaska, 1:3)
 Data2 <- slice(Alaska, 10800:10802)
 
@@ -534,44 +608,281 @@ head(Bind_Row_1, 6)
 ### The "join" family
 
 #### anti_join
+This function will allow you to select all variables that are **not** the same within two data-sets. Note, both data-sets must have at least one similar category/column.
+
+##### Basic Structure 
+
+Data_Name <- anti_join(Dataset1,Dataset2, by="similar category")
+
+Lets us know what variables from one data-set are not present in some other data-set
 
 
 ```r
-#Lets asume we want to know how many species are fished in Alaska and not in the continental US
+#Lets asume we want to know how many species are fished in Alaska 
+#and not in the continental US
+Diff_Species <- anti_join(Alaska, USA, by="scientific_name")
+
+#Lets assume we want to know how many species are fished in Alaska 
+#and not in the continental US
 Similar_Species <- anti_join(Alaska, USA, by="scientific_name")
 
+
 #You can also do it by more than one variable
-Similar_Species2 <- anti_join(Alaska, USA, by=c("scientific_name","reporting_status"))
+Diff_Species2 <- anti_join(Alaska, USA, by=c("scientific_name","reporting_status"))
 ```
 
 #### semi_join
+This function does the opposite as the anti join, letting you select those variables shared by two data-sets.
+
+##### Basic Structure 
+
+Data_Name <- semi_join(Dataset1, Dataset2, by="similar category")
 
 
 ```r
 #Now we want to know how many species are fished in BOTH Alaska and the continental US
-Diff_Species <- semi_join(Alaska, USA, by="scientific_name")
+Same_Species <- semi_join(Alaska, USA, by="scientific_name")
 
-#Not just like anti_join, you can do it for more than one variable
+#Note: just like anti_join, you can do it for more than one variable
+```
+
+#### Inner_join
+
+`Inner_join` will let you combine variables (rows) from different data-sets into one data-set based on a category/column that you choose
+
+##### Basic Structure 
+
+Data_Name <- inner_join(Dataset1, Dataset2, by="similar category")
+
+
+```r
+#Now we want to know how many species are fished in BOTH Alaska and the continental US
+Inner_Species <- inner_join(Alaska, USA, by="scientific_name")
+```
+
+```
+## Warning in inner_join_impl(x, y, by$x, by$y, suffix$x, suffix$y): joining
+## factors with different levels, coercing to character vector
+```
+
+```r
+#Note: just like anti_join, you can do it for more than one variable
+
+#Lets just asume that we have two different data sets
+Data1 <- select(Alaska, 7,8)
+Data2 <- select(Alaska, 7,11)
+
+#Both Data 1 have two columns from witch one is "common_name".
+# In the case of Data 1 the second column is "functional_group" and in the case of Data2 its "fishing_sector"
+
+Inner_Example <- inner_join(Data1, Data2, by="common_name")
+
+# The result will be a data-set with the "common_name",
+# "functional_group" and "fishing_sector"
+
+head(Inner_Example,3)
+```
+
+```
+##         common_name              functional_group fishing_sector
+## 1 Marine fishes nei Medium demersals (30 - 89 cm)    Subsistence
+## 2 Marine fishes nei Medium demersals (30 - 89 cm)      Artisanal
+## 3 Marine fishes nei Medium demersals (30 - 89 cm)      Artisanal
 ```
 
 
-#### inner_join
-#### left_join
-#### right_join
-### intersect
-### union
-### setdiff
+
+#### Left_join
+
+##### Basic Structure 
+
+Data_Name <- left_join(Dataset1, Dataset2, by="similar category")
+
+
+```r
+#Now we want to know how many species are fished in BOTH Alaska and the continental US
+Left_Species <- left_join(Alaska, USA, by="scientific_name")
+```
+
+```
+## Warning in left_join_impl(x, y, by$x, by$y, suffix$x, suffix$y): joining
+## factors with different levels, coercing to character vector
+```
+
+```r
+#Note: just like anti_join, you can do it for more than one variable
+```
+
+#### Right_join
+
+##### Basic Structure 
+
+Data_Name <- right_join(Dataset1, Dataset2, by="similar category")
+
+
+```r
+#Now we want to know how many species are fished in BOTH Alaska and the continental US
+Right_Species <- right_join(Alaska, USA, by="scientific_name")
+```
+
+```
+## Warning in right_join_impl(x, y, by$x, by$y, suffix$x, suffix$y): joining
+## factors with different levels, coercing to character vector
+```
+
+```r
+#Note: just like anti_join, you can do it for more than one variable
+```
+
+
+## Tidyr
+
+### Gather and Spread
+The `gather` function allows us to convert long data to short format. This is specifically helpful for plotting since it will allow you to set categories to data.
+
+Note: The `spread` function is exactly the opposite to `gather` and has the same structure
+
+##### Basic Structure 
+
+Data_Name <- gather(Dataset, key ="Some_Name", value ="Other_name", x:x)
 
 
 
+```r
+# For example, if you want to have a divission between scientific and common name to plot 
+# the tonnes you'll do something like this:
+Data1<- select(Alaska, 6,7,15)
+Gather_Example <- gather(Data1, key='Name_Type', value='Species', 1:2)
+```
+
+```
+## Warning: attributes are not identical across measure variables; they will
+## be dropped
+```
+
+```r
+head(Gather_Example,5)
+```
+
+```
+##   landed_value       Name_Type                             Species
+## 1    20235.198 scientific_name        Marine fishes not identified
+## 2  2175505.884 scientific_name        Marine fishes not identified
+## 3   571724.021 scientific_name        Marine fishes not identified
+## 4    12045.723 scientific_name        Marine fishes not identified
+## 5      664.751 scientific_name Miscellaneous aquatic invertebrates
+```
+
+### Unite and Separate
+
+These functions are used to unite or spread dates on a data-set
+
+##### Basic Structure 
+
+Data_name <- separate(Data, TemporalColumn, c("year", "month", "day"), sep = "-")
+
+Note: The date structure will depend on your data, as well as the `sep =`
 
 
+```r
+#Assuming that our data set had a dat volumn with year/month/day this is how we would do it...
+Separate_Example <- separate(Alaska,year,c("year", "month", "day"), sep = "-")
+
+#Note: ignore the warning message, is because we don't have a month/day format
+
+head(Separate_Example[5:7],3)
+```
+
+```
+##   year month  day
+## 1 1950  <NA> <NA>
+## 2 1950  <NA> <NA>
+## 3 1950  <NA> <NA>
+```
+
+```r
+# And then we can also go backwords 
+
+Unite_Example <- unite(Separate_Example,"Date",year, month, day, sep = "-")
+
+head(Unite_Example[4:6],3)
+```
+
+```
+##   uncertainty_score       Date              scientific_name
+## 1                 1 1950-NA-NA Marine fishes not identified
+## 2                 3 1950-NA-NA Marine fishes not identified
+## 3                 3 1950-NA-NA Marine fishes not identified
+```
+
+```r
+#Note that, because month and day are NA's, the new column has them together
+```
 
 
 # The Piping opperator %>% 
 
-Many R packadges like `dplyr`, `tidyr` and `leaflet`, allows you to use the pipe (%>%) operator to chain functions together. Chaining code allows you to streamline your workflow and make it easier to read.
+Many R packages like `dplyr`, `tidyr` `ggplot2` and `leaflet`, allows you to use the pipe (`%>%`) operator to chain functions together. Chaining code allows you to streamline your workflow and make it easier to read.
 
-When using the %>% operator, first specify the data frame that all following functions will use. For the rest of the chain the data frame argument can be omitted from the remaining functions.
+When using the `%>%` operator, first specify the data frame that all following functions will use. For the rest of the chain the data frame argument can be omitted from the remaining functions.
 
-**NOTE:** for Mac users the pipe simbol "%>%" shortcut is command + shit + m 
+**NOTE:** for Mac users the pipe symbol "%>%" shortcut is: command + shit + m. For windows users is: Ctrol + Shift + m
+
+
+```r
+Pipie_Example <- Alaska %>% 
+  filter(year >= 2000) %>% #Lets filter the years above 2000
+  select(area_name,scientific_name,tonnes,year) %>% #We only care about these data
+  group_by(scientific_name,year) %>% 
+  summarise(Mean = mean(tonnes), 
+            SD = sd(tonnes),
+            N = n()) %>% #Give me the mean and sd of each species each year
+  mutate(Round_Mean = round(Mean,2), #create a log version of mean 
+         Round_SD = round(SD,2)) %>% #... and the sd
+  transmute(Log_Mean = log(Round_Mean,2), 
+            Log_SD = log(Round_SD,2)) %>% 
+  semi_join(USA, 
+            by="scientific_name")
+```
+
+```
+## Adding missing grouping variables: `scientific_name`
+```
+
+
+# Combo! 
+
+![S](Images/Combo.png)
+
+ \clearpage
+ 
+
+One of the beauties of `tydiverse` is that you can mix several packages in one code like this graph:
+
+
+```r
+Pipie_Example <- Alaska %>% 
+  filter(year >= 2000) %>% #Lets filter the years above 2000
+  select(area_name,scientific_name,tonnes,year) %>% #We only care about these data
+  group_by(scientific_name,year) %>% 
+  summarise(Mean = mean(tonnes), 
+            SD = sd(tonnes),
+            N = n()) %>% #Give me the mean and sd of each species each year
+  mutate(Round_Mean = round(Mean,2), #create a log version of mean 
+         Round_SD = round(SD,2)) %>% # and the sd
+  transmute(Log_Mean = log(Round_Mean,2), 
+            Log_SD = log(Round_SD,2)) %>% 
+  ggplot(., #It tells ggplot2 to use the data you are piping
+         aes(
+           x=Log_Mean,
+           y=Log_SD
+         )) +
+  geom_point()
+
+Pipie_Example
+```
+
+![](Dat_Manipulation_Session_files/figure-html/Combo-1.png)<!-- -->
+
+
+

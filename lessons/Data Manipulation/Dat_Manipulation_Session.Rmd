@@ -1,7 +1,7 @@
 ---
 title: "Intro to piping and Data Manipulation"
 author: "JEPA"
-date: "02/06/2017"
+date: "09/28/2017"
 output:
   pdf_document:
     toc: yes
@@ -80,7 +80,7 @@ head(Arrange_Example4[4:6],3)
 ```
 
 ### Filter
-The `filter`function allows you to, literally, filter your data by any category or number.
+The `filter` function allows you to, literally, filter your data by any category or number.
 
 #### Basic structure:
 
@@ -88,15 +88,13 @@ New_Table <- filter(Data, column_to_filter_by == "category")
 
 `filter` operators:
 
-`a == b`	`a` is equal to `b`
-`a != b`	`a` is not equal to `b`
-`a > b`	  `a` is greater than `b`
-`a < b`	  `a` is less than `b`
-`a >= b`	`a` is greater than or equal to `b`
-`a <= b`	`a` is less than or equal to `b`
-`a %in% b`	`a` is an element in `b`
-
-
+- `a == b`	`a` is equal to `b`
+- `a != b`	`a` is not equal to `b`
+- `a > b`	  `a` is greater than `b`
+- `a < b`	  `a` is less than `b`
+- `a >= b`	`a` is greater than or equal to `b`
+- `a <= b`	`a` is less than or equal to `b`
+- `a %in% b`	`a` is an element in `b`  
 
 
 ```{r Filter, echo =T, eval=T}
@@ -107,7 +105,7 @@ Filter_Example <- filter(Alaska,
 
 head(Filter_Example[1:5], 5)
 
-#You can filter by numeric input too
+#You can filter by numeric inputs too
 Filter_Example2 <- filter(Alaska,
                          year == 2009)
 head(Filter_Example2[1:5], 5)
@@ -128,7 +126,8 @@ head(Filter_Example3[4:8], 5)
 #Wait! What if I want to filter by multiple columns!? 
 
 Filter_Example4 <- filter(Alaska,common_name == "Clams",
-                            reporting_status =="Unreported") # Will give me all clams that are unreported
+                            reporting_status =="Unreported") #Will give me all clams 
+# that are unreported
 
 #You can also filter by NA
 
@@ -194,7 +193,8 @@ Mutate_Example3 <- mutate(Alaska, Country = "USA")
 
 head(Mutate_Example3[13:16], 3)
 
-Mutate_Example4 <- mutate(Mutate_Example3, Country = paste("In",year,Country,"harvested",round(tonnes,2), "tonnes of", common_name))
+Mutate_Example4 <- mutate(Mutate_Example3, Country = paste("In",year,Country,"harvested",
+                                                           round(tonnes,2), "tonnes of", common_name))
 
 paste(Mutate_Example4[1,16])
 paste(Mutate_Example4[5387,16])
@@ -202,7 +202,7 @@ paste(Mutate_Example4[5387,16])
 ```
 
 ### Rename
-The `rename` function is another "self explainatory" it allows you to rename the columns
+The `rename` function is another "self explanatory" it allows you to rename the columns
 
 #### Basic structure:
 
@@ -289,11 +289,8 @@ head(Slice_Example2, 3)
 ```
 
 
-<<<<<<< HEAD
-# Joining Data with dplyr
-=======
-###Joining Data with dplyr
->>>>>>> 7e3de76fb81ad0e0f103bc0ac3937709fca1c5be
+## Joining Data with dplyr
+
 
 ### The "bind" family
 These functions will help us bind two or more data-sets in one depending on different variables.
@@ -352,15 +349,17 @@ This function will allow you to select all variables that are **not** the same w
 
 Data_Name <- anti_join(Dataset1,Dataset2, by="similar category")
 
-Lets us know what variables from one dataset are not present in some other dataset
+Lets us know what variables from one data-set are not present in some other data-set
 
 ```{r anti_join, echo =T, eval=T}
 
 
-#Lets asume we want to know how many species are fished in Alaska and not in the continental US
+#Lets asume we want to know how many species are fished in Alaska 
+#and not in the continental US
 Diff_Species <- anti_join(Alaska, USA, by="scientific_name")
 
-#Lets assume we want to know how many species are fished in Alaska and not in the continental US
+#Lets assume we want to know how many species are fished in Alaska 
+#and not in the continental US
 Similar_Species <- anti_join(Alaska, USA, by="scientific_name")
 
 
@@ -371,6 +370,10 @@ Diff_Species2 <- anti_join(Alaska, USA, by=c("scientific_name","reporting_status
 
 #### semi_join
 This function does the opposite as the anti join, letting you select those variables shared by two data-sets.
+
+##### Basic Structure 
+
+Data_Name <- semi_join(Dataset1, Dataset2, by="similar category")
 
 ```{r semi_join, echo =T, eval=T}
 #Now we want to know how many species are fished in BOTH Alaska and the continental US
@@ -384,6 +387,10 @@ Same_Species <- semi_join(Alaska, USA, by="scientific_name")
 
 `Inner_join` will let you combine variables (rows) from different data-sets into one data-set based on a category/column that you choose
 
+##### Basic Structure 
+
+Data_Name <- inner_join(Dataset1, Dataset2, by="similar category")
+
 ```{r Inner_join, echo =T, eval=T}
 #Now we want to know how many species are fished in BOTH Alaska and the continental US
 Inner_Species <- inner_join(Alaska, USA, by="scientific_name")
@@ -394,11 +401,13 @@ Inner_Species <- inner_join(Alaska, USA, by="scientific_name")
 Data1 <- select(Alaska, 7,8)
 Data2 <- select(Alaska, 7,11)
 
-#Bothe Data 1 have two columns from witch one is "common_name". In the case of Data 1 the second column is "functional_group" and in the case of Data2 its "fishing_sector"
+#Both Data 1 have two columns from witch one is "common_name".
+# In the case of Data 1 the second column is "functional_group" and in the case of Data2 its "fishing_sector"
 
 Inner_Example <- inner_join(Data1, Data2, by="common_name")
 
-#The result will be a data-set with the "common_name", "functional_group" and "fishing_sector"
+# The result will be a data-set with the "common_name",
+# "functional_group" and "fishing_sector"
 
 head(Inner_Example,3)
 
@@ -407,6 +416,10 @@ head(Inner_Example,3)
 
 
 #### Left_join
+
+##### Basic Structure 
+
+Data_Name <- left_join(Dataset1, Dataset2, by="similar category")
 
 ```{r Left_join, echo =T, eval=T}
 #Now we want to know how many species are fished in BOTH Alaska and the continental US
@@ -418,6 +431,10 @@ Left_Species <- left_join(Alaska, USA, by="scientific_name")
 
 #### Right_join
 
+##### Basic Structure 
+
+Data_Name <- right_join(Dataset1, Dataset2, by="similar category")
+
 ```{r right_join, echo =T, eval=T}
 #Now we want to know how many species are fished in BOTH Alaska and the continental US
 Right_Species <- right_join(Alaska, USA, by="scientific_name")
@@ -426,23 +443,23 @@ Right_Species <- right_join(Alaska, USA, by="scientific_name")
 
 ```
 
-### Intersect
-### Union
-### Setdiff
-
 
 ## Tidyr
 
-### Gather
-The `gather` function allows us to convert long data intoo short format. THis is specifically helpfull for plotting since it will allow you to set categories to data.
+### Gather and Spread
+The `gather` function allows us to convert long data to short format. This is specifically helpful for plotting since it will allow you to set categories to data.
 
-Note: The `spread`function is exactlly the oposite to `gather` and has the same structure
+Note: The `spread` function is exactly the opposite to `gather` and has the same structure
 
+##### Basic Structure 
+
+Data_Name <- gather(Dataset, key ="Some_Name", value ="Other_name", x:x)
 
 
 ```{r gather, echo=t, eval=T}
 
-# For example, if you want to have a divission between scientific and common name to plot the tonnes you'll do something like this:
+# For example, if you want to have a divission between scientific and common name to plot 
+# the tonnes you'll do something like this:
 Data1<- select(Alaska, 6,7,15)
 Gather_Example <- gather(Data1, key='Name_Type', value='Species', 1:2)
 
@@ -453,7 +470,13 @@ head(Gather_Example,5)
 
 ### Unite and Separate
 
-These functions are used to unite or spread dates on a dataset
+These functions are used to unite or spread dates on a data-set
+
+##### Basic Structure 
+
+Data_name <- separate(Data, TemporalColumn, c("year", "month", "day"), sep = "-")
+
+Note: The date structure will depend on your data, as well as the `sep =`
 
 ```{r unite, echo=t, eval=T, warning=F}
 
@@ -492,7 +515,8 @@ Pipie_Example <- Alaska %>%
   summarise(Mean = mean(tonnes), 
             SD = sd(tonnes),
             N = n()) %>% #Give me the mean and sd of each species each year
-  mutate(Round_Mean = round(Mean,2), Round_SD = round(SD,2)) %>% #create a log version of mean and the sd
+  mutate(Round_Mean = round(Mean,2), #create a log version of mean 
+         Round_SD = round(SD,2)) %>% #... and the sd
   transmute(Log_Mean = log(Round_Mean,2), 
             Log_SD = log(Round_SD,2)) %>% 
   semi_join(USA, 
@@ -520,7 +544,8 @@ Pipie_Example <- Alaska %>%
   summarise(Mean = mean(tonnes), 
             SD = sd(tonnes),
             N = n()) %>% #Give me the mean and sd of each species each year
-  mutate(Round_Mean = round(Mean,2), Round_SD = round(SD,2)) %>% #create a log version of mean and the sd
+  mutate(Round_Mean = round(Mean,2), #create a log version of mean 
+         Round_SD = round(SD,2)) %>% # and the sd
   transmute(Log_Mean = log(Round_Mean,2), 
             Log_SD = log(Round_SD,2)) %>% 
   ggplot(., #It tells ggplot2 to use the data you are piping
