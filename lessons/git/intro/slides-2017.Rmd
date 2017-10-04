@@ -98,7 +98,7 @@ git init
 This folder is now a git repo (short for repository)
 
 # Using GitHub with Git
-If you have GitHub, you can add the repository you cloned/created to it and visualize the changes
+If you have GitHub (on Windows/MacOS), you can add the repository you cloned/created to it and visualize the changes
 
 Remember, you installed this earlier?
 
@@ -119,7 +119,8 @@ Before you do this, you need to have an account on GitHub and a repo on it
 # Configuring your repo for use with GitHub on the cloud
 * Copy the repo url from the repo creation page and use it in
 ```bash
-git remote add origin copy_url_here
+git remote add origin 
+https://github.com/shyamsrinivasan/git-training.git
 ```
 
 * Check your remote configuration again
@@ -176,9 +177,12 @@ You can move all your **committed** changes to the remote repo
 ```bash
 git push origin
 ```
-You can also get all **commits** from the remote repo
+Since this is the first time we are doing this, we need to 
+establish a link between your local repo and remote repo. 
+
+you can do this using
 ```bash
-git pull origin
+git push -u origin master
 ```
 Make sure your `remote` is set before you do this
 
