@@ -252,7 +252,7 @@ git push origin
 will push your `local` changes to the `remote` repo
 
 # Discarding changes in your repo
-Discard \textcolor{red}{unstaged} \textcolor{gray}{Tracked} changes using
+Discard \textcolor{red}{unstaged} \textcolor{gray}{Tracked} files using
 ```bash
 git checkout .
 ```
