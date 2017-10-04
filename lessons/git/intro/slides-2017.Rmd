@@ -63,7 +63,7 @@ The cloud (GitHub) serves as an online repo where files are accessible 24x7
 
 * Let us keep the name short and self explanatory and call it 'git-training' 
 
-* We will call this the `remote` repo form here on
+* We will call this the `remote` repo from here on
 
 # Creating a Git Repo
 * change directory (move to another folder) using 
