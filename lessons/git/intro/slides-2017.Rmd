@@ -156,9 +156,7 @@ can give information on `tracked`, `untracked` and `indexed` files
 # Adding Files to git index
 * add the file to the git index
 ```bash
-git add ~/Documents/new_git_repo/my_cred
-# you can also use wildcards instead of full name
-git add *my_cred
+git add my_cred.txt
 ```
 * check file status again 
 ```bash
@@ -225,8 +223,8 @@ save file and close
 # Add changes to index and commit changes to repo
 We will use the previously used commands to `add` and `commit` files
 ```bash
-git add *example_file.md
-git commit -m "added one new line to file"
+git add example_file.md
+git commit -m "add one new line to file"
 ```
 
 # Visualize changes to file
