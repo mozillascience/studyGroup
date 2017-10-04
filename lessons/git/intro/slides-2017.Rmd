@@ -189,10 +189,10 @@ Make sure your `remote` is set before you do this
 # Cloning an Existing `git` repo
 We can copy or clone existing repositories from GitHub using
 ```bash
-git clone
+git clone remote_repo_url
 ```
-Let us do this for the UofT Coders repo available at
-[UofT Coders git repo](https://github.com/UofTCoders/studyGroup)
+Let us do this for the sandbox repo I have created
+[sandbox git repo]https://github.com/shyamsrinivasan/sandbox-test.git
 
 Select the green `Clone or Download` button and select ` copy to clipboard`
 
@@ -201,13 +201,14 @@ In your shell/bash move to a directory of your choice and clone the repo
 cd ~/Documents
 # if you are using git posh (in powershell) 
 # use the right click to paste the copied url
-git clone https://github.com/UofTCoders/studyGroup
+git clone 
+https://github.com/shyamsrinivasan/sandbox-test.git
 ```
 
 # Modify a existing file and commit changes
 Go to the directory containing the example file
 ```bash
-cd C:/Users/shyam/Documents/studyGroup/lessons/git/intro
+cd sandbox-test
 # see all files in the directory
 ls
 ```
