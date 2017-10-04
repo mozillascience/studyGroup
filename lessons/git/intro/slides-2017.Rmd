@@ -267,18 +267,6 @@ Discard \textcolor{green}{staged} and \textcolor{red}{unstaged} Tracked changes 
 git reset --hard
 ```
 
-# Creating branches in your repo
-Branches can enable development without affecting your stable code
-To create a new (non-existent) branch and move to that branch
-```bash
-git checkout -b new_branch_name
-```
-
-To create an equivalent branch in the remote repo
-```bash
-git push -u origin new_branch_name
-```
-
 # Summary of Commands covered today
 ```bash
 git init
