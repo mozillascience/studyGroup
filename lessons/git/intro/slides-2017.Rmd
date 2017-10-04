@@ -222,19 +222,6 @@ add a new line to this file starting with an asterisk(*)
 
 save file and close
 
-# Visualize changes to file
-You can visualize on GitHub as before or 
-
-You can also use
-```bash
-git diff example_file.md
-```
-in the command line
-
-Note the file has to be `tracked` and 
-the changes have to be `committed` to use `git diff`
-
-
 # Add changes to index and commit changes to repo
 We will use the previously used commands to `add` and `commit` files
 ```bash
@@ -242,7 +229,15 @@ git add *example_file.md
 git commit -m "added one new line to file"
 ```
 
-You should not see the file on GitHub anymore as the changes are committed now
+# Visualize changes to file
+You can use
+```bash
+git diff example_file.md
+```
+in the command line
+
+Note the file has to be `tracked` and 
+the changes have to be `committed` to use `git diff`
 
 # `push` commits to the remote repo
 Let us first check the `remote` configuration
