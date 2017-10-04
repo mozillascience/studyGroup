@@ -216,7 +216,7 @@ Open file `example_file.md` in any text editor
 To open files in bash/shell
 ```bash
 editor_name file_name
-gitpad example_file.md
+notepad example_file.md
 ```
 add a new line to this file starting with an asterisk(*)
 
