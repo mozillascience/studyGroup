@@ -227,7 +227,8 @@ git diff example_file.md
 ```
 in the command line
 
-Note the file has to be `tracked` to use `git diff`
+Note the file has to be `tracked` and 
+the changes have to be `committed` to use `git diff`
 
 
 # Add changes to index and commit changes to repo
