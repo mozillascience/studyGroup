@@ -256,7 +256,7 @@ Discard \textcolor{red}{unstaged} \textcolor{gray}{Tracked} changes using
 ```bash
 git checkout .
 ```
-Discard \textcolor{red}{unstaged} unTracked changes using
+Discard \textcolor{red}{unstaged} unTracked files using
 ```bash
 git clean -f
 ```
