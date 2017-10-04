@@ -242,7 +242,7 @@ You can also visualize all commits to the repo using
 git log
 ```
 
-More information can be obtained in a cleaner format using 
+commit information can be obtained in a cleaner format using 
 ```bash
 git log --online
 ```
