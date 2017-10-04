@@ -36,6 +36,15 @@ cd git-training
 ## convert folder to git repo
 git init
 
+## check remote configuration of new git repo
+git remote -v
+
+## setup new remote for empty remote
+git remote add origin sandbox_repo_remote_url
+
+## check remote configuration again
+git remote -v
+
 ## clone = copy the repo from GitHub to your computer
 ## In the terminal (still in the GitHub folder), type:
 git clone https://github.com/your-account-name/studyGroup
