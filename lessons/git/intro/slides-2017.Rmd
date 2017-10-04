@@ -146,7 +146,7 @@ This indicates the file is new and is `untracked` by git
 {Old modified files} can be seen with a \textcolor{gray}{gray circle} to their right
 \end{block}
 
-This indicates the file is already `tracked` and there are `uncommited` changes
+This indicates the file is already `tracked` and there are `uncommitted` changes
 ```bash
 git status
 ``` 
