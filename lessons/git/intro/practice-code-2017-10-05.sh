@@ -28,10 +28,13 @@ cd ~/Documents
 cd C:/Users/user_name/Documents
 
 ## mkdir = make directory (create a folder)
-mkdir git_repos
+mkdir git-training
 
-## move to the GitHub folder
-cd git_repos
+## move to the new folder
+cd git-training
+
+## convert folder to git repo
+git init
 
 ## clone = copy the repo from GitHub to your computer
 ## In the terminal (still in the GitHub folder), type:
