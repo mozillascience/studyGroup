@@ -40,7 +40,7 @@ git init
 git remote -v
 
 ## setup new remote for empty remote
-git remote add origin sandbox_repo_remote_url
+git remote add origin https://github.com/shyamsrinivasan/git-training.git
 
 ## check remote configuration again
 git remote -v
@@ -50,7 +50,7 @@ git remote -v
 git status
 
 ## let us add this new file to the git index
-git add ~/Documents/git-training/my_cred.txt
+git add my_cred.txt
 
 ## check changed file status again
 git status
@@ -58,22 +58,44 @@ git status
 ## commit new file to be tracked by git
 git commit -m "initial commit with my info"
 
-## clone = copy the repo from GitHub to your computer
-## In the terminal (still in the GitHub folder), type:
-git clone https://github.com/your-account-name/studyGroup
-cd studyGroup
+## if remote is set and you have an internet connection
+## push changes to remote repo
+git push -u origin master
 
-## creating a local git repo and pushing it to your origin on GitHub
-cd ..
-mkdir new_local_repo
-cd new_local_repo
+## create another repo on github to test cloning/copying function of git
+## let us call this repo sandbox-test
+cd ~/Documents
 
+## clone using 
+git clone https://github.com/shyamsrinivasan/sandbox-test.git
+cd sandbox-test
 
+## see all files in directory
+ls
 
+## open file example_file.md in notepad or any other text editor of your choice
+## you can do so from the command line using
+notepad example_file.md
 
-## First, fork the 'studyGroup' repo from the UofTCoders group.  Forking
-## just means copy over into your own account. Click "fork" in the top right corner.
-## url: https://github.com/UofTCoders/studyGroup
+## after saving and closing file add file to git index and commit
+git add example_file.md
+git commit -m "add one new line to file"
+
+## using diff to visualize differences between commits
+git diff example_file.md
+
+## check all the commits made to this repo
+git log
+
+## get ore info a cleaner format
+git log --online
+
+## chaneck remote version
+git remote -v
+
+## push changes to remote repo
+git push origin 
+
 
 
 
