@@ -24,15 +24,12 @@ But! No expectation to actually start using it :)
 
 # Getting started with Git and GitHub
 
-Installing and running Git and GitHub
+Create an account on GitHub
 
-## Linux
-https://www.howtoforge.com/tutorial/install-git-and-github-on-ubuntu-14.04/
+* You set your username, email and password here
 
-* Download and Install Git for Linux
-`sudo apt-get install git`
+Install and run Git and GitHub
 
-## Windows/MacOS
 https://desktop.github.com/
 
 * Make sure you install posh-git along with GitHub
