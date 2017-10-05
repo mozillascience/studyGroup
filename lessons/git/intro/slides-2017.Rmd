@@ -19,6 +19,8 @@ This won't even touch the surface of git... But! Hopefully, you:
 
 But! No expectation to actually start using it :)
 
+# What is Git?
+![](https://imgs.xkcd.com/comics/git.png)
 
 # Getting started with Git and GitHub
 
