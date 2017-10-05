@@ -40,7 +40,7 @@ git init
 git remote -v
 
 ## setup new remote for empty remote
-git remote add origin https://github.com/shyamsrinivasan/git-training.git
+git remote add origin https://github.com/UofTCoders/git-training.git
 
 ## check remote configuration again
 git remote -v
@@ -63,12 +63,12 @@ git commit -m "initial commit with my info"
 git push -u origin master
 
 ## create another repo on github to test cloning/copying function of git
-## let us call this repo sandbox-test
+## let us call this repo sandbox-2017
 cd ~/Documents
 
 ## clone using 
-git clone https://github.com/shyamsrinivasan/sandbox-test.git
-cd sandbox-test
+git clone https://github.com/UofTCoders/sandbox-2017.git
+cd sandbox-2017
 
 ## see all files in directory
 ls

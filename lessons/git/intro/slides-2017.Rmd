@@ -126,7 +126,7 @@ Before you do this, you need to have an account on GitHub and a repo on it
 * Copy the repo url from the repo creation page and use it in
 ```bash
 git remote add origin 
-https://github.com/shyamsrinivasan/git-training.git
+https://github.com/UofTCoders/git-training.git
 ```
 
 * Check your remote configuration again
@@ -195,7 +195,7 @@ We can copy or clone existing repositories from GitHub using
 ```bash
 git clone remote_repo_url
 ```
-Let us do this for the [sandbox repo](https://github.com/shyamsrinivasan/sandbox-test.git) I have created
+Let us do this for the [sandbox repo](https://github.com/UofTCoders/sandbox-2017.git) I have created
 
 Select the green `Clone or Download` button and select ` copy to clipboard`
 
@@ -205,13 +205,13 @@ cd ~/Documents
 # if you are using git posh (in powershell) 
 # use the right click to paste the copied url
 git clone 
-https://github.com/shyamsrinivasan/sandbox-test.git
+https://github.com/UofTCoders/sandbox-2017.git
 ```
 
 # Modify a existing file and commit changes
 Go to the directory containing the example file
 ```bash
-cd sandbox-test
+cd sandbox-2017
 # see all files in the directory
 ls
 ```
