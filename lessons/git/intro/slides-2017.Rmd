@@ -28,11 +28,18 @@ Create an account on GitHub
 
 * You set your username, email and password here
 
-Install and run Git and GitHub
-
+## Windows/MacOS
 https://desktop.github.com/
 
 * Make sure you install posh-git along with GitHub
+
+## Linux
+
+* Download and install Git for Ubuntu/Debian/Mint Linux
+`sudo apt-get install git`
+
+* Download and install Git for Fedora Linux
+`sudo dnf install git`
 
 # Configuring your setup:
 
