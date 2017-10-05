@@ -11,7 +11,7 @@ tags:
  - **Research field**: Nutritional and diabetes epidemiology
  - **Lesson topic**: Version control (Git)
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/intro/>
- - **Intro to Git slides (2015)**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/intro/slides.Rmd>
+ - **Intro to Git slides (2017)**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/intro/slides-2017.Rmd>
  - **Philosophy of Git slides (2016)**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/git/intro/philosophy_of_git.pdf>
  - **Lesson video stream (2016)**: <https://www.youtube.com/watch?v=JbUeTXP05XQ>
 
