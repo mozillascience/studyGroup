@@ -64,7 +64,7 @@ ul.events{
 .eventSub{
   color: #696969;
   margin-left:2em;
-  font-style:italic;
+  /* font-style:italic; */
   margin-bottom: 1em;
 }
 
