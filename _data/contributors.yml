@@ -28,6 +28,13 @@
     - Julia
     - Javascript
 
+- name: Sara Mahallati
+  github: SaraMahallati
+  interests:
+    - MATLAB
+    - LaTeX
+    - Python
+
 - name: Abigail Cabunoc Mayes
   degree: Mozilla Science Lab
   github: acabunoc
