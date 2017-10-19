@@ -9,7 +9,7 @@ tags:
   - intermediate
 ---
 
- - **Authors**: Raul ([@ralle123](https://github.com/ralle123))
+ - **Authors**: Raul Samayoa ([@ralle123](https://github.com/ralle123))
  - **Lesson topic**: Machine learning
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/ml-intro>
 
