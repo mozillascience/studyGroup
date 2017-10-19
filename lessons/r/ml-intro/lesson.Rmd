@@ -78,7 +78,6 @@ seems correct
 library(ggplot2)
 end <- ggplot(alligator, aes(x = lnWeight, y = lnLength)) + 
     geom_point()
-end <-
 end + geom_smooth(method = 'lm', se = FALSE) + 
     geom_vline(xintercept = 5.5) + 
     geom_hline(yintercept = 4.06312, color = 'red')
@@ -89,9 +88,8 @@ end + geom_smooth(method = 'lm', se = FALSE) +
 ```{r}
 library(datasets)
 head(iris)
-first <- ggplot(iris, aes(Petal.Width, Petal.Length)) + 
+ggplot(iris, aes(Petal.Width, Petal.Length)) + 
     geom_point()
-first
 ```
 
 After resetting the seed I do a

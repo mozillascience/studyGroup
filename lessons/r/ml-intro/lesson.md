@@ -90,11 +90,12 @@ seems correct
 library(ggplot2)
 end <- ggplot(alligator, aes(x = lnWeight, y = lnLength)) + 
     geom_point()
-end <-
 end + geom_smooth(method = 'lm', se = FALSE) + 
     geom_vline(xintercept = 5.5) + 
     geom_hline(yintercept = 4.06312, color = 'red')
 ```
+
+![center](../figure/unnamed-chunk-5-1.png)
 
 ### k-means
 
@@ -115,9 +116,8 @@ head(iris)
 ```
 
 ```r
-first <- ggplot(iris, aes(Petal.Width, Petal.Length)) + 
+ggplot(iris, aes(Petal.Width, Petal.Length)) + 
     geom_point()
-first
 ```
 
 ![center](../figure/unnamed-chunk-6-1.png)
