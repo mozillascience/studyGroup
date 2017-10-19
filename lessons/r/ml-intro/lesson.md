@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Introduction to Machine Learning in R"
-visible: true
+visible: false
 tags:
   # languages
   - r
