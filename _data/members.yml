@@ -21,8 +21,17 @@
   interests:
     - Brain evolution
     - Retrotransposon 
-    - ChiP-Seq & RNA-Seq
-    - Snakemake for bioinformatic pipelines
+    - Epigenetics (ChIP-Seq)
+    - Bioinformatic pipelines 
+
+- name: Nina Haring
+  affiliation: University of Amsterdam
+  github: ninaharing
+  interests:
+    - Brain evolution
+    - Repeats influence
+    - Gene expression (RNA-Seq)
+    - Bioinformatic pipelines
 
 - name: Maria Constantin
   affiliation: University of Amsterdam
