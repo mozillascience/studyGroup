@@ -1,7 +1,7 @@
 ---
 title: Open Spatial Analysis II - Introduction to QGIS 
 text: A study group tutorial that will give you a friendly introduction to QGIS.
-location: TBC
+location: Room ZB16 Zoology Building
 link: https://github.com/AberdeenStudyGroup/studyGroup/issues/25
 date: 2017-11-29
 startTime: '17:00'
