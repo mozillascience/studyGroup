@@ -109,6 +109,5 @@ During the Workshop
 After the Workshop
 ------------------
 
-1.  Post a link to the lessons notes (if any) on the workshop’s GitHub issue. 
-    If you don’t have somewhere to host your notes, send them to us and we 
-    will put them on SciProg’s GitHub under the “lessons” directory.
+*  Post a link to the lessons notes (if any) on the workshop’s GitHub issue. 
+    
