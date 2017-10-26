@@ -1,7 +1,7 @@
 How to lead a skill-sharing workshop
 ==============================
 
-Everyone is welcome to lead a SciProg workshop to share valuable skills
+Everyone is welcome to lead a workshop to share valuable skills
 with their peers. The topic is up to you! If you’re looking for ideas,
 here are a few:
 
@@ -44,7 +44,7 @@ Before the Workshop
 
 1.  [Create a GitHub issue](https://github.com/sciprog-sfu/sciprog-sfu.github.io/issues/new) 
     to let us know you’re interested in leading a workshop. Our [workshop 
-    issue template](https://raw.githubusercontent.com/sciprog-sfu/sciprog-sfu.github.io/master/lessons/workshop_issue_template.md) 
+    issue template](https://github.com/ScienceParkStudyGroup/studyGroup/blob/gh-pages/lessons/lesson_template.md) 
     describes everything we
     need from you. 
 
@@ -60,7 +60,7 @@ Before the Workshop
         your notes to make sure it’ll work the same way on the day of your
         workshop.
 
-4.  Bring sticky notes (or ask the SciProg organizers to bring some).
+4.  Bring sticky notes.
 
     -   This idea is taken from Software Carpentry workshops ([*source*](http://software-carpentry.org/workshops/operations/)). They usually 
         use two colours, but we can get by with only one colour.
@@ -78,7 +78,7 @@ During the Workshop
 
 1.  Arrive 10 minutes in advance.
 
-    -   We usually gather at the Oerknal Café (USC Sport Center) or in one room at Science Park 904 (e.g. B0.206). 
+    -   We usually gather at the Oerknal Café for co-working sessions or in one room at Science Park 904 (e.g. D1.112). 
 
     -   Arrive early to set up your computer.
 
