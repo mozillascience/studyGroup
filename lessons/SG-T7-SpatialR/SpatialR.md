@@ -6,7 +6,7 @@ output: html_document
 visible: true
 tags:
   # languages
-  - R
+  - r
   # levels
   - intermediate
 ---
@@ -15,26 +15,27 @@ tags:
 
 During this tutorial you will learn how to deal with spatial data in R. The exercise is divided in three parts, followed by a summary and links to other useful resources:
 
-1. [Classes for Spatial Data in R and how to import the data](#1.)
-  * 1.1. [The `Spatial` class and its subclasses](#1.1.)
-  * 1.2. [Importing your data and making it *spatial*](#1.2.)
-  * 1.3. [Importing shapefiles](#1.3.)
-2. [Visualising Spatial Data](#2.)
-  * 2.1. [Plotting lines, points and polygons](#2.1.)
-  * 2.2. [Projections and transformations](#2.2.)
-3. [Geoprocessing](#3.)
-  * 3.1. [Buffer and intersect](#3.1.)
-  * 3.2. [Distance](#3.2.)
-4. [Rasters](#4.)
-  * 4.1. [Import rasters and change projection](#4.1.)
-  * 4.2. [Some geoprocessing](#4.2.)
-5. [Summary and useful links](#5.)  
+<a href="#1."> 1. Classes for Spatial Data in R and how to import the data </a>
+ <a href="#1.1."> * 1.1. The `Spatial` class and its subclasses </a>
+  <a href="#1.2."> * 1.2. Importing your data and making it *spatial* </a>
+  <a href="#1.3."> * 1.3. Importing shapefiles </a>
+<a href="#2."> 2. Visualising Spatial Data </a>
+  <a href="#2.1."> * 2.1. Plotting lines, points and polygons </a>
+  <a href="#2.2."> * 2.2. Projections and transformations </a>
+<a href="#3."> 3. Geoprocessing </a>
+ <a href="#3.1."> * 3.1. Buffer and intersect </a>
+  <a href="#3.2."> * 3.2. Distance </a>
+<a href="#4."> 4. Rasters </a>
+  <a href="#4.1."> * 4.1. Import rasters and change projection </a>
+  <a href="#4.2.">* 4.2. Some geoprocessing </a>
+<a href="#5."> 5. Summary and useful links </a>
 
 ## 1. Classes for Spatial Data in R and how to import the data
 
 Data requires two types of information to be spatial:
 1. coordinate values
 2. a system of reference for these coordinates
+
 The reason why we need the first piece of information is self-explanatory, we need an *x* and *y* location on the Earth where our features are located. The second piece of information is necessary because the Earth is shperical while a map is flat, so that when we want to represent spatial features on a 2-dimensional surface we need to translate from the spherical longitude/latitude system to a non-spherical coordinate system. Any other information attached to these locations, such as time, depth or height, is an *attribute*. There are different ways of representing spatial information, the main ones are:
 1. points - a single location, such as a GPS reading of a species sighting
 2. lines - a set of points connected by sraight line segments, such as a road
@@ -47,8 +48,9 @@ The first 3 are vector data models and we will look at them in the first three s
 
 All spatial objects in `R` belong to the class `Spatial` with just two slots: 
 1. a bounding box, a matrix of numerical coordinates with two columns ("min" and "max") and two rows (*x* and *y* coordinates) 
-2. a `CRS` class object, a character string defining the coordinate system (`proj4string`). The class `Spatial` has 10 subclasses 
-We can use the function `getClass` to see the definition of a class and its subclasses. If you don't have the package `sp` already, install it with `install.packages("sp")`.
+2. a `CRS` class object, a character string defining the coordinate system (`proj4string`). 
+
+The class `Spatial` has 10 subclasses. We can use the function `getClass` to see the definition of a class and its subclasses. If you don't have the package `sp` already, install it with `install.packages("sp")`.
 
 ```{r}
 > library(sp)
