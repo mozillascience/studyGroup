@@ -13,7 +13,9 @@ tags:
 <!-- change visible to true if you want it on the site -->
 <!-- remove any tags listed above that are not relevant -->
 
-During this tutorial you will learn how to deal with spatial data in R. The exercise is divided in three parts, followed by a summary and links to other useful resources:
+During this tutorial you will learn how to deal with spatial data in R. 
+To follow the tutorial go to [this link](https://github.com/AberdeenStudyGroup/SG-T7-SpatialR) to download all the data you will need. Once you're there, click on the green **Clone or download** button.You can either clone the repository on your GitHub account (if you have one) or download as a zip file. Once you done, open an `R` or `Rsudio` session and set the working directory to the directory where you saved the repository.
+The exercise is divided in three parts, followed by a summary and links to other useful resources:
 
 <a href="#1."> 1. Classes for Spatial Data in R and how to import the data </a>
  
