@@ -40,6 +40,7 @@ The reason why we need the first piece of information is self-explanatory, we ne
 2. lines - a set of points connected by sraight line segments, such as a road
 3. polygons - an area marked by one or more lines, such as a country
 4. grids - a set of points or rectangular cells organised in a regular lattice
+
 The first 3 are vector data models and we will look at them in the first three sections of this tutorial. The latter is a raster data model, representing continuous surfaces by using a regular tessellation. We will look at this type of data in the last part of this tutorial.
 
 ### 1.1. The `Spatial` class and its subclasses
@@ -197,7 +198,7 @@ Now we can plot our spatial data:
 ```{r}
 > plot(voles, pch = 20, col = "steelblue")
 ```
-<!-- <center><img src="../voles_1.png" alt="Img" style="width: 800px;"/></center> -->
+<center><img src="../voles_1.png" alt="Img" style="width: 800px;"/></center> 
 
 ### 1.3. Importing shapefiles
 
@@ -236,7 +237,8 @@ Data attributes:
 
 > plot(voles, pch = 20, col = "steelblue")
 ```
-<!-- <center><img src="../voles_1.png" alt="Img" style="width: 800px;"/></center>-->
+<center><img src="../voles_2.png" alt="Img" style="width: 800px;"/></center> 
+
 
 ## 2. Visualising Spatial Data
 
@@ -260,14 +262,16 @@ We can now plot these shapefiles on a single map.
 > plot(coast, col = "gray")
 > lines(main_rivers, col = "royalblue1", lwd = 0.2)
 ```
-<!-- Insert UK_rivers here -->
+
+<center><img src="../UK_rivers.png" alt="Img" style="width: 800px;"/></center> 
 
 Now plot the voles.
 
 ```{r}
 > points(voles, pch = 20, col = "orange")
 ```
-<!-- Insert voles_2 here -->
+<center><img src="../voles_2.png" alt="Img" style="width: 800px;"/></center> 
+
 Where are our voles?
 This is a very common problem and one that took me hours to solve when I first started to deal with spatial data. What is happening here is actually quite simple. Remember the two conditions necessary for data to be spatial? Let's have a look at the `summary` of our objects.
 
@@ -317,8 +321,7 @@ Now we can try the plotting again.
 > lines(main_rivers, col = "royalblue1", lwd = 2)
 > points(voles_proj, col = "orange", pch = ".", cex = 3)
 ```
-
-<!-- Insert voles_3 here -->
+<center><img src="../voles_3.png" alt="Img" style="width: 800px;"/></center> 
 
 Play around with the graphic parameters and make sure that you understand what they do.
 
@@ -390,8 +393,7 @@ We can use the function `raster` to import this file and then use `plot` to visu
 > land_use <- raster("./data/Land_Use.tif")
 > plot(land_use)
 ```
-
-<!-- Insert Land_Use.png here -->
+<center><img src="../Land_Use.png" alt="Img" style="width: 800px;"/></center> 
 
 Let's familiarise ourselves with this object.
 
@@ -419,8 +421,7 @@ Let's plot our voles occurrences on top of the land use raster.
 > plot(land_use_proj)
 > points(voles_proj, col = "black", pch = ".", cex = 3)
 ```
-
-<!-- Insert Land_Use_cont.png here -->
+<center><img src="../Land_Use_cont.png" alt="Img" style="width: 800px;"/></center> 
 
 Looks like we have lost the categorical nature of the raster data AND it took forever! It might be better to reproject the vector data in this case.
 
@@ -433,8 +434,7 @@ Plot again.
 > plot(land_use)
 > points(voles_proj2, col = "black", pch = ".", cex = 3)
 ```
-
-<!-- Insert Land_Use_Final.png -->
+<center><img src="../Land_Use_Final.png" alt="Img" style="width: 800px;"/></center> 
 
 ### 4.2. Some geoprocessing
 
