@@ -20,30 +20,30 @@ To follow the tutorial go to [this link](https://github.com/AberdeenStudyGroup/S
 The exercise is divided in three parts, followed by a summary and links to other useful resources:
 
 #### <a href="#1."> 1. Classes for Spatial Data in R and how to import the data </a>
- 
- #### <a href="#1.1."> 1.1. The `Spatial` class and its subclasses </a>
+
+##### <a href="#1.1."> 1.1. The `Spatial` class and its subclasses </a>
   
-  #### <a href="#1.2."> 1.2. Importing your data and making it *spatial* </a>
+##### <a href="#1.2."> 1.2. Importing your data and making it *spatial* </a>
   
-  #### <a href="#1.3."> 1.3. Importing shapefiles </a>
+##### <a href="#1.3."> 1.3. Importing shapefiles </a>
 
 #### <a href="#2."> 2. Visualising Spatial Data </a>
   
-  #### <a href="#2.1."> 2.1. Plotting lines, points and polygons </a>
+##### <a href="#2.1."> 2.1. Plotting lines, points and polygons </a>
   
-  #### <a href="#2.2."> 2.2. Projections and transformations </a>
+##### <a href="#2.2."> 2.2. Projections and transformations </a>
 
 #### <a href="#3."> 3. Geoprocessing </a>
  
- #### <a href="#3.1."> 3.1. Buffer and intersect </a>
+##### <a href="#3.1."> 3.1. Buffer and intersect </a>
   
-  #### <a href="#3.2."> 3.2. Distance </a>
+##### <a href="#3.2."> 3.2. Distance </a>
 
 #### <a href="#4."> 4. Rasters </a>
   
-  #### <a href="#4.1."> 4.1. Import rasters and change projection </a>
+##### <a href="#4.1."> 4.1. Import rasters and change projection </a>
   
-  #### <a href="#4.2."> 4.2. Some geoprocessing </a>
+##### <a href="#4.2."> 4.2. Some geoprocessing </a>
 
 #### <a href="#5."> 5. Summary and useful links </a>
 
