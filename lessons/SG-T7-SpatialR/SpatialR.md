@@ -19,34 +19,35 @@ To follow the tutorial go to [this link](https://github.com/AberdeenStudyGroup/S
 
 The exercise is divided in three parts, followed by a summary and links to other useful resources:
 
-#### <a href="#1."> 1. Classes for Spatial Data in R and how to import the data </a>
+#### <a href="#classes"> 1. Classes for Spatial Data in R and how to import the data </a>
 
-##### <a href="#1.1."> 1.1. The `Spatial` class and its subclasses </a>
+##### <a href="#spatialclass"> 1.1. The `Spatial` class and its subclasses </a>
   
-##### <a href="#1.2."> 1.2. Importing your data and making it *spatial* </a>
+##### <a href="#coordinates"> 1.2. Importing your data and making it *spatial* </a>
   
-##### <a href="#1.3."> 1.3. Importing shapefiles </a>
+##### <a href="#shapefiles"> 1.3. Importing shapefiles </a>
 
-#### <a href="#2."> 2. Visualising Spatial Data </a>
+#### <a href="#vis"> 2. Visualising Spatial Data </a>
   
-##### <a href="#2.1."> 2.1. Plotting lines, points and polygons </a>
+##### <a href="#plot"> 2.1. Plotting lines, points and polygons </a>
   
-##### <a href="#2.2."> 2.2. Projections and transformations </a>
+##### <a href="#proj"> 2.2. Projections and transformations </a>
 
-#### <a href="#3."> 3. Geoprocessing </a>
+#### <a href="#geoprocessing"> 3. Geoprocessing </a>
  
-##### <a href="#3.1."> 3.1. Buffer and intersect </a>
+##### <a href="#buffoverlay"> 3.1. Buffer and intersect </a>
   
-##### <a href="#3.2."> 3.2. Distance </a>
+##### <a href="#distance"> 3.2. Distance </a>
 
-#### <a href="#4."> 4. Rasters </a>
+#### <a href="#rasters"> 4. Rasters </a>
   
-##### <a href="#4.1."> 4.1. Import rasters and change projection </a>
+##### <a href="#importras"> 4.1. Import rasters and change projection </a>
   
-##### <a href="#4.2."> 4.2. Some geoprocessing </a>
+##### <a href="#geoprocras"> 4.2. Some geoprocessing </a>
 
-#### <a href="#5."> 5. Summary and useful links </a>
+#### <a href="#summary"> 5. Summary and useful links </a>
 
+<a name="classes"></a>
 ## 1. Classes for Spatial Data in R and how to import the data
 
 Data requires two types of information to be spatial:
@@ -61,6 +62,7 @@ The reason why we need the first piece of information is self-explanatory, we ne
 
 The first 3 are vector data models and we will look at them in the first three sections of this tutorial. The latter is a raster data model, representing continuous surfaces by using a regular tessellation. We will look at this type of data in the last part of this tutorial.
 
+<a name="spatialclass"></a>
 ### 1.1. The `Spatial` class and its subclasses
 
 All spatial objects in `R` belong to the class `Spatial` with just two slots: 
@@ -133,6 +135,7 @@ Class "SpatialPixelsDataFrame", directly, with explicit coerce
 ```
 Use the function `getClass` to look at the other subclasses of `Spatial` and notice which slots they contain. What are the differences?
 
+<a name="coordinates"></a>
 ### 1.2. Importing your data and making it *spatial*
 
 For this part of the tutorial we will use a dataset downloaded from GBIF containing occurrences of watervoles (*Arvicola amphibius*) in the UK. You will find the dataset `voles.csv` in the folder called data. It is a .csv file so we can use `read.csv` to read it into `R`:
@@ -219,6 +222,7 @@ Now we can plot our spatial data:
 ```
 <center><img src="../voles_1.png" alt="Img" style="width: 800px;"/></center> 
 
+<a name="shapefiles"></a>
 ### 1.3. Importing shapefiles
 
 What if your data is already spatial? Then you probably have a shapefile. These files are made up of three mandatory files, with extensions .shp, .shx and .dbf, but other files that might be associated with a shapefile are .prj, .xml, .sbn, .sbx and .cpg. Sometimes the data you need is provided to you in this format already so it is useful to introduce here the functions that you need to read such data into `R`. 
@@ -256,8 +260,10 @@ Data attributes:
 
 ```
 
+<a name="vis"></a>
 ## 2. Visualising Spatial Data
 
+<a name="plot"></a>
 ### 2.1. Plotting lines, points and polygons
 
 We have already used the `plot` methods provided by `sp`, which builds on the traditional `R` plotting system. In this part of the tutorial we will plot other types of vector data (lines and polygons).
@@ -287,7 +293,7 @@ Now plot the voles.
 > points(voles, pch = 20, col = "orange")
 ```
 <center><img src="../voles_2.png" alt="Img" style="width: 800px;"/></center> 
-
+ 
 Where are our voles?
 This is a very common problem and one that took me hours to solve when I first started to deal with spatial data. What is happening here is actually quite simple. Remember the two conditions necessary for data to be spatial? Let's have a look at the `summary` of our objects.
 
@@ -320,6 +326,7 @@ Data attributes:
 
 The first difference that you will notice is how different the `Coordinates` slot looks in the two objects, then you will notice the different `proj4string`. The coordinates reference systems for the two objects are different, therefore even if we know that they are on the same place on the Earth, they will not be mapped correctly when trying to plot them on the same map. We need to convert the reference system of some of our objects so that, in the end, they are all the same. 
 
+<a name="proj"></a>
 ### 2.2. Projections and transformations
 
 Looking at the `Coordinates` slot of the `voles` dataset we notice that the coordinates are in latitude and longitude degrees. This tells us that the data are unprojected. On the other hand, the data in the `rivers` and `coast` datasets are in meters, therefore projected. There exist many different projections and which one to use will depend on whch area on the globe you are mapping. In this case, working with the UK, the Transverse Mercator projection works well.
@@ -337,10 +344,11 @@ Now we can try the plotting again.
 > lines(main_rivers, col = "royalblue1", lwd = 2)
 > points(voles_proj, col = "orange", pch = ".", cex = 3)
 ```
-<center><img src="../voles_3.png" alt="Img" style="width: 800px;"/></center> 
+<center><img src="../Voles_3.png" alt="Img" style="width: 800px;"/></center> 
 
 Play around with the graphic parameters and make sure that you understand what they do.
 
+<a name="geoprocessing"></a>
 ## 3. Geoprocessing
 
 Now that we know how to import our spatial data, visualise it and fix projection issues, we can start doing some manipulations. 
@@ -348,6 +356,7 @@ Now that we know how to import our spatial data, visualise it and fix projection
 The package `rgeos` has most of the geoprocessing functions that you would find in a GIS software, such as: union, distance, intersection, buffer, intersects, within and many more. We do not have the time to look at all of them, so we will concentrate on those operations that I found most common with biological spatial data, buffer, intersect and distance.
 Imagine you want to know if our voles' occurrences are mainly in the vicinity of rivers. There are two ways we can answer this question. We can either create a buffer around our rivers and count how many points fall within this buffer compared to those outside or calculate the distance from every occurrence to the nearest river and count how many points are within a certain distance. 
 
+<a name="buffoverlay"></a>
 ### 3.1. Buffer and Overlay
 
 To create the buffer around our rivers we can use the function `gBuffer` in the package `rgeos`. If you don't have this package you can install it using `install.packages("rgeos")`. 
@@ -378,6 +387,7 @@ logical       1       0
 
 All of our voles' occurrences are within 1m of rivers. Let's replicate this result using a diferent approach.
 
+<a name="distance"></a>
 ### 3.2. Distance
 
 We can select occurrences that are within a cetrain distance from the rivers by using the function `gWithinDistance` in the package `rgeos`.
@@ -392,6 +402,7 @@ logical       1       0
 Ok, that probably was not a very interesting question, we know that watervoles live close to waterways, but now you know how to make a buffer, intersect two different spatial objects and calculate distance between different spatial features.
 Also, you might have noticed that the distance operation took much less time to run compared to the intersect one. There usually is more than one way to do the same task in `R`, but some approaches will be more efficient than others, so it is worth experimenting to find the fastest option.
 
+<a name="rasters"></a>
 ## 4. Rasters
 
 This data model is widely used for storing data in regular rectangular cells, such as digital elevation models, satellite imagery and interpolated data from point measurements.
@@ -400,6 +411,7 @@ Raster data also come in different formats. Today we will work with GeoTiff form
 
 We will use the package `raster` to import the raster data and do some manipulations, so install the package with `install.packages("raster")` and load it with `library(raster)`.
 
+<a name="importras"></a>
 ### 4.1. Import rasters and change projection
 
 In the data folder there is a `.tif` file, a GeoTiff raster with information about land cover in the UK.
@@ -409,7 +421,7 @@ We can use the function `raster` to import this file and then use `plot` to visu
 > land_use <- raster("./data/Land_Use.tif")
 > plot(land_use)
 ```
-<center><img src="../Land_Use.png" alt="Img" style="width: 800px;"/></center> 
+<center><img src="../Land_use.png" alt="Img" style="width: 800px;"/></center> 
 
 Let's familiarise ourselves with this object.
 
@@ -452,6 +464,7 @@ Plot again.
 ```
 <center><img src="../Land_Use_Final.png" alt="Img" style="width: 800px;"/></center> 
 
+<a name="geoprocras"></a>
 ### 4.2. Some geoprocessing
 
 Imagine we want to know in which land cover class water voles are more likely to be. The simplest way of doing this is by finding out what land use category is under each water vole occurrence. This operation is a point-raster overlay, or an extraction.
@@ -483,6 +496,7 @@ Non-irrigated arable land
                        28
 ```
 
+<a name="summary"></a>
 ## 5. Summary and useful links
 
 This tutorial is only a basic introduction to mapping and geoprocessing in `R`. The idea was to introduce the types of object that you will be dealing with in spatial analysis so they are not that obscure and scary anymore.
