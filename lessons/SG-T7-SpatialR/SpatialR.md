@@ -15,7 +15,7 @@ tags:
 
 During this tutorial you will learn how to deal with spatial data in R. 
 
-To follow the tutorial go to [this link](https://github.com/AberdeenStudyGroup/SG-T7-SpatialR) to download all the data you will need. Once you're there, click on the green **Clone or download** button.You can either clone the repository on your GitHub account (if you have one) or download as a zip file. Once you done, open an `R` or `Rsudio` session and set the working directory to the directory where you saved the repository.
+To follow the tutorial go to [this link](https://github.com/AberdeenStudyGroup/SG-T7-SpatialR) to download some of the data you will need. Once you're there, click on the green **Clone or download** button.You can either clone the repository on your GitHub account (if you have one) or download as a zip file. Once you done, open an `R` or `Rsudio` session and set the working directory to the directory where you saved the repository.
 
 The exercise is divided in three parts, followed by a summary and links to other useful resources:
 
@@ -333,10 +333,10 @@ Looking at the `Coordinates` slot of the `voles` dataset we notice that the coor
 The easiest thing to do to be able to visualise all our data on the same map is to project the `voles` dataset. We can use the function `spTransform` in the `rgdal` package.
 
 ```{r}
-> merc_proj <- proj4string(rivers)
+> merc_proj <- proj4string(coast)
 > voles_proj <- spTransform(voles, merc_proj)
 ```
-With the previous two lines we extracted the character string that describes the projection of the dataset `rivers` with `proj4string` and we used `spTransform` to project our `voles` dataset.
+With the previous two lines we extracted the character string that describes the projection of the dataset `coast` with `proj4string` and we used `spTransform` to project our `voles` dataset. Do the same for the `rivers` dataset.
 Now we can try the plotting again.
 
 ```{r}
@@ -414,7 +414,7 @@ We will use the package `raster` to import the raster data and do some manipulat
 <a name="importras"></a>
 ### 4.1. Import rasters and change projection
 
-In the data folder there is a `.tif` file, a GeoTiff raster with information about land cover in the UK.
+To download the file you need for this part of the tutorial, go to [this link](https://drive.google.com/file/d/0B07wf8TVPUitazJBNTBDY0hldms/view?usp=sharing). Once you've downloaded the file save it in the same `data` folder where you have all the other files. Now in your data folder there is a `.tif` file, a GeoTiff raster with information about land cover in the UK.
 We can use the function `raster` to import this file and then use `plot` to visualise it.
 
 ```{r}
