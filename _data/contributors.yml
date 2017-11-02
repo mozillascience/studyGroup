@@ -1,0 +1,68 @@
+- name: Kathy Chung
+  degree: Digital Humanities
+  github: chungkky
+
+- name: Zoe Francis
+  github: zoelynnfrancis
+    
+- name: Ahmed Hasan
+  github: aays
+  interests:
+    - R
+    - Python
+
+- name: Derek Howard
+  github: derekhoward
+  interests:
+    - Python
+
+- name: Serena Jeblee
+  degree: Computer Science
+  github: sjeblee
+
+- name: John Ladan
+  degree: MMath, PhD Physics
+  github: jladan
+  interests:
+    - Python
+    - Julia
+    - Javascript
+
+- name: Sara Mahallati
+  github: SaraMahallati
+  interests:
+    - MATLAB
+    - LaTeX
+    - Python
+
+- name: Abigail Cabunoc Mayes
+  degree: Mozilla Science Lab
+  github: acabunoc
+
+- name: Sarah Meister
+  github: thesarahmeister
+
+- name: Ian Dennis Miller
+  degree: PhD, Psychology
+  github: iandennismiller
+  interests:
+    - Python
+    - R
+    - Social Network Analysis
+    - LaTeX
+    - Flask
+
+- name: Dano Morrison
+  github: jdpigeon
+
+- name: Nil Sahin
+  degree: PhD, Molecular Genetics
+  github: nsahin
+
+- name: Brian Sutherland
+  github: bksutherland
+
+- name: Dawn Walker
+  degree: MI, iSchool
+  github: dcwalk
+  

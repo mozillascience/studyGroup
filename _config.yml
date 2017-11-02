@@ -2,7 +2,7 @@
 #Follow these 2 steps to set up your site.
 
 #Step 1: give your study group a name and a short description:
-title: University of Toronto Scientific Coders
+title: University of Toronto Coders
 description: "We are a group of students and researchers dedicated to learning about and sharing scientific coding techniques and knowledge in an effort to improve scientific research."
 
 #Step 2: press the green 'Commit Changes' button at the bottom of this page.
@@ -16,7 +16,6 @@ description: "We are a group of students and researchers dedicated to learning a
 # Optional Configuration
 # None of these things need to be changed - but feel free!
 
-titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
 headlineSmall: "Welcome To The U of T Coders Group!"
 headlineMain: "Let's Work Together"
 avatar: "img/logos/logo_icon_dark.png"
@@ -28,8 +27,23 @@ avatar: "img/logos/logo_icon_dark.png"
 # 3. set calendar_on: True.
 
 calendar_on: True
-calendar_embed_url: "https://www.google.com/calendar/embed?src=utorontostudygroup@gmail.com"
-calendar_ical_url: "https://www.google.com/calendar/ical/utorontostudygroup@gmail.com/public/basic.ics"
+calendar_embed_url: "https://www.google.com/calendar/embed?src=uoftcoders@gmail.com"
+calendar_ical_url: "https://www.google.com/calendar/ical/uoftcoders@gmail.com/public/basic.ics"
+
+# ===============================
+# Categories for sorting lessons.
+# ===============================
+
+languages:
+  - python
+  - r
+  - git
+  - misc
+
+levels:
+  - beginner
+  - intermediate
+  - advanced
 
 #========================================
 # No touching anything below this line :)
@@ -43,3 +57,4 @@ color:
 # Build settings
 markdown: kramdown
 permalink: pretty
+future: true

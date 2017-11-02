@@ -1,0 +1,9 @@
+---
+title: Coworking Session
+text: Work on your code with your colleagues
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/67
+date: 2016-10-19
+startTime: '18:10'
+endTime: '19:30'
+---

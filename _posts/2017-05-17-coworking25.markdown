@@ -1,0 +1,9 @@
+---
+title: Coworking Session
+text: Get together to work on your coding projects. Beginners welcome!
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/99
+date: 2017-05-17
+startTime: '18:10'
+endTime: '19:30'
+---

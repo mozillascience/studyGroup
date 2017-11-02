@@ -3,22 +3,3 @@ _site/
 # Google calendar secret key
 client_secret.json
 
-# LaTeX stuff
-*.aux
-*.backup
-*.bbl
-*.blg
-*.idx
-*.ilg
-*.ind
-*.ist
-*.lof
-*.log
-*.lot
-*.nav
-*.out
-*.pdf
-*.snm
-*.synctex.gz
-*.toc
-*.vrb

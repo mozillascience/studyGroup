@@ -1,0 +1,9 @@
+---
+title: Coworking Session
+text: Come work on a project and get advice on tools and strategies.
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/81
+date: 2017-01-25
+startTime: '18:10'
+endTime: '19:30'
+---

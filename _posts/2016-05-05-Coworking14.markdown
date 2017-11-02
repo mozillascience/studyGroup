@@ -1,0 +1,9 @@
+---
+title: Coworking Session
+text: Bring a project to work on or something you want to discuss with the group!
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/48
+date: 2016-05-05
+startTime: '18:10'
+endTime: '19:30'
+---

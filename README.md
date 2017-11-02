@@ -1,6 +1,8 @@
 Mozilla Study Groups
 ============
 
+[![Join the chat at https://gitter.im/UofTCoders/Lobby](https://badges.gitter.im/UofTCoders/studyGroup.svg)](https://gitter.im/UofTCoders/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Welcome to [Mozilla Science Lab](https://www.mozillascience.org/)'s Study Group project! From here, we'll set you up with everything you need to start your own study group.
 
 ### Wait What's a 'Mozilla Study Group'?
@@ -16,7 +18,9 @@ Welcome to our Mozilla Study Group! A few things to do & know now that you're he
  - **Read the code of conduct:** this Study Group is for everyone - we abide by a [set of rules](https://www.mozillascience.org/code-of-conduct/) that require everyone be treated with respect. Help us make a space where everyone feels welcome, and we'll all have a better time!
  - **Add yourself to the website:** If you'd like to appear on the website under the 'Who we Are' section, have a look at the `_data/members.yml`; send us a pull request with an entry for yourself, or open an issue and we'll do it for you.
 
-## For Organizers
+## For Organizers/Instructors
+
+Check out the [`CONTRIBUTING` file](https://github.com/UofTCoders/studyGroup/blob/gh-pages/CONTRIBUTING.md) or [the page on the site](https://uoftcoders.github.io/studyGroup/CONTRIBUTING) for more details.
 
 ### It's Broken, I Need Help
 

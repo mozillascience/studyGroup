@@ -1,0 +1,206 @@
+---
+layout: page
+title: "Intermediate topics in R: Strings and factors"
+visible: false
+tags: 
+  # languages
+  - r
+  # levels
+  - intermediate
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+# Strings, factors, and regular expressions
+
+ - **Authors**: Luke Johnston (@lwjohnst86)
+ - **Research field**: Nutritional Sciences
+ - **Lesson topic**: Working with character/string data
+ - **Lesson video link**: <https://youtu.be/jdMOmg9SMEc>
+ 
+Install these packages:
+
+```{r, eval=FALSE}
+install.packages(c("stringr", "forcats"))
+```
+
+Base R has some pretty decent string manipulation and searching functionality.
+The primary way of working with strings is through 
+[regular expressions](http://www.regular-expressions.info/). Regular
+expressions, or regex in R, are a group of characters that have special meaning
+and function. For instance, the `.` means wildcard and it will search for any
+character (letter, number, symbol, etc). Or `$` means end of the string or line.
+If you want to see more details on regex in R, run `?regex` to get help on it.
+
+In general, the most commonly used functions (at least that I use and that I've
+seen) are `grep`, `grepl`, `sub`, and `gsub` commands. Each of these take regex
+characters (`$ ^ * . + ? [] () |` are a few; see `?regex` for more). Let's
+begin with the base R functions!
+
+```{r}
+fruits <- c("apple", "banana", "pear")
+
+# replace `a` at beginning of string with nothing. `gsub` = global substitution
+gsub("^a", "", fruits)
+# replace letters `an` or `ar` with `bb`
+gsub("(an|ar)", "bb", fruits)
+# same as above but only first search and replace. `sub` = substitution
+sub("(an|ar)", "bb", fruits)
+# search for fruits starting with a. Returns the number position of the search
+# result.
+grep("^a", fruits)
+# same as above, but returns the actual value rather than the number
+grep("^a", fruits, value = TRUE)
+# same as above, but returns a vector of logical values
+grepl("^a", fruits)
+```
+
+While base R is pretty powerful, it isn't always easy to work with and there are
+some major bits of functionality missing. That's where the `stringr` package
+(which is a subset of common functions from the `stringi` package) comes into
+play. `stringr` greatly expands on string manipulation in R. Let's go through
+some.
+
+```{r}
+library(stringr)
+
+# month.name is a default variable in R. I'm putting it in a new variable to
+# make it shorter to type out.
+mth <- month.name
+mth
+
+# Almost every stringr function begins with `str_`.
+# Convert cases (lower case, UPPER CASE)
+str_to_lower(mth)
+str_to_upper(mth)
+
+# Find out the number of characters in each string of the vector
+str_length(mth)
+mth
+
+# Combine (concatenate) the strings together. Similar to `paste`
+str_c(mth, collapse = ", ")
+
+# Take a subset of the months based on a regex.
+# for months starting with `J`
+str_subset(mth, "^J")
+# for months ending in y
+str_subset(mth, "y$")
+# for months that contain either s, n, or d (only lower case)
+str_subset(mth, "[snd]")
+# same as above, but all letters since months have been converted to lower case
+str_subset(str_to_lower(mth), "[snd]")
+
+# Because stringr is part of the tidyverse packages, you can also use the pipe
+# `%>%` command with the commands, to make it easier to read.
+mth %>%
+    str_to_lower() %>%
+    str_subset("[snd]")
+
+# Using the fruit variable in the stringr package... different from the `fruits`
+# we created above!
+# str_detect converts to logical, for use in filtering, subsetting, etc.
+# searches for all fruit beginning with `be`
+str_detect(fruit, "^be")
+
+# Find out the proportion (mean of values that are either 0 or 1) of fruit with
+# at least one vowel at the end of the string.
+str_detect(fruit, "[aeiou]$") %>%
+    mean()
+
+# search for any fruit that does not end in an `a`
+str_detect(fruit, "^.*[^a]$")
+# this is the same as above, but subsets instead
+str_subset(fruit, "[^a]$")
+
+# similar to sub
+# search any month that starts with J and ends with e and replace the middle
+# letters with `HIII`.
+str_replace(mth, "^(J).*(e)$", "\\1HIII\\2")
+
+# vector of sentences
+head(sentences)
+
+# you can split strings up by a specific character. `str_split` creates a list,
+# so I use `[[1]]` or `[1]` to show only the first one.
+str_split(sentences, " ")[[1]] # this outputs a vector
+str_split(sentences, " ")[1] # this outputs a list
+# or split by the letter `e`
+str_split(sentences, "e")[[1]]
+# if you want to split by the word, use the `boundary` function.
+str_split(sentences, boundary("word"))[[1]]
+# or by a sentence
+str_split(sentences, boundary("sentence"))[[1]]
+
+# include in a pipe
+str_split(sentences, boundary("sentence"))[[1]] %>%
+    # convert to Title Case
+    str_to_title()
+```
+
+String manipulation is great, but sometimes you need to convert to factor
+variables for use in statistical models or when plotting (for instance when
+using `ggplot2`). The `forcats` package makes it easier to work with factors.
+Base R really only has one function for working with factors... the `factor`
+command.
+
+```{r}
+library(forcats)
+
+str(mth)
+# This is base function. Compare this...
+as.factor(mth)
+# with this...
+as_factor(mth)
+# base R as.factor orders alphabetically, while forcats as_factor orders in
+# appearance.
+
+mth2 <- c(mth[10:12], mth[6:12], mth)
+mth2
+
+# you can also order by frequency:
+fct_infreq(mth2)
+# this more explicitly orders by appearance.
+fct_inorder(mth2)
+
+# this counts the number of levels within the factors. It is a simple summary
+fct_count(mth2, sort = TRUE)
+
+# if you want to convert levels that contains only a few (in this case, less the
+# 10% of the total proportion), they will be converted to `Other`. This is a
+# nice, quick function to group together uncommon values.
+fct_lump(mth2, prop = 0.1)
+# or any level with only an n=1 in the category
+fct_lump(mth2, n = 1)
+# or if you want them renamed to `None`
+fct_lump(mth2, prop = 0.1, other_level = 'None')
+
+# this is also a really nice function to rename levels within a factor.
+fct_recode(mth2,
+           Jan = "January",
+           Feb = "February",
+           "Dec ember" = "December"
+           )
+
+```
+
+
+# Resources
+
+Very good book on R and data (<https://r4ds.had.co.nz>). Also the
+[tidyverse](https://tidyverse.org) resource is good.
+
+Factors (`forcats`):
+
+- <https://forcats.tidyverse.org/>
+- <https://r4ds.had.co.nz/factors.html>
+
+Strings (`stringr`):
+
+- <https://stringr.tidyverse.org/>
+- <https://r4ds.had.co.nz/strings.html>
+- For more complex string work, check out the
+[stringi package](https://cran.r-project.org/web/packages/stringi/index.html)
+

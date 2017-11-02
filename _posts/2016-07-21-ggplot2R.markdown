@@ -1,0 +1,9 @@
+---
+title: Intro to ggplot2 in R
+text: Basics of ggplot2 R package and simple graph making
+location: MP408
+link: https://github.com/UofTCoders/Events/issues/57
+date: 2016-07-21
+startTime: '18:10'
+endTime: '19:00'
+---

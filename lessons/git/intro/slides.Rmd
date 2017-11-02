@@ -1,0 +1,46 @@
+---
+title: "Let's git started :)"
+author: "Luke Johnston"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output: slidy_presentation
+---
+
+## Learning expectations
+
+This won't even touch the surface of git... But! Hopefully, you:
+
+- Recognize the power of using version control
+- Know the basic tools to get started using git
+- Where to go for help
+
+But! No expectation to actually start using it :)
+
+## Configuring your setup:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@some.domain"
+git config --global color.ui "auto" 
+git config --global core.editor "your_editor"
+git config --list # To confirm
+```
+
+## 4 main concepts (and ~7 commands)
+
+- **Start repository**: `git init`, `git clone` (GitHub)
+- **Check activity**: `git status`, `git log`, `git diff`
+- **Save to history**: `git add`, `git commit`
+- **Move through the history**: `git checkout`, `git branch` (may be covered)
+
+## Different areas in Git
+
+![](https://git-scm.com/book/en/v2/book/01-introduction/images/areas.png)
+
+## 4 areas to remember
+
+Using `git status` shows much of this information already.
+
+- Untracked files: Use `git add`
+- Tracked but modified: Use `git add` or `git commit filename`
+- Staged but not committed: Use `git commit`
+- Committed (in the repository): Use `git checkout` to access

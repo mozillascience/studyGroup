@@ -62,10 +62,14 @@ ul.events{
 }
 
 .eventSub{
-  color: #553982;
+  color: #696969;
   margin-left:2em;
-  font-style:italic;
+  /* font-style:italic; */
   margin-bottom: 1em;
+}
+
+section#come-say-hi h3.section-subheading {
+color:#FFFFFF;
 }
 
 .eventTitle{
@@ -191,7 +195,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: 'Pacifico', "Helvetica Neue",Helvetica,Arial,cursive;
     color: #{{ site.color.primary }};
 }
 
@@ -257,7 +261,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
-        font-size: 2em;
+        font-size: 2.5em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -273,7 +277,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 1.75em;
     }
 }
 
@@ -281,7 +285,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url({{ site.titleBackground }});
+    background-image: url(img/header1.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -361,24 +365,24 @@ section h3.section-subheading {
     }
 }
 
-.service-heading {
+.what-we-do-heading {
     margin: 15px 0;
     text-transform: none;
 }
 
-#portfolio .portfolio-item {
+#what-we-do .what-we-do-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#what-we-do .what-we-do-item .what-we-do-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#what-we-do .what-we-do-item .what-we-do-link .what-we-do-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -390,11 +394,11 @@ section h3.section-subheading {
     background: rgba({{ site.color.primary | hex_to_rgb | join: ',' }}, .9);
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#what-we-do .what-we-do-item .what-we-do-link .what-we-do-hover:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#what-we-do .what-we-do-item .what-we-do-link .what-we-do-hover .what-we-do-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -405,16 +409,16 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#what-we-do .what-we-do-item .what-we-do-link .what-we-do-hover .what-we-do-hover-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#what-we-do .what-we-do-item .what-we-do-link .what-we-do-hover .what-we-do-hover-content h3,
+#what-we-do .what-we-do-item .what-we-do-link .what-we-do-hover .what-we-do-hover-content h4 {
     margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
+#what-we-do .what-we-do-item .what-we-do-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
@@ -422,24 +426,24 @@ section h3.section-subheading {
     background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+#what-we-do .what-we-do-item .what-we-do-caption h4 {
     margin: 0;
     text-transform: none;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+#what-we-do .what-we-do-item .what-we-do-caption p {
     margin: 0;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
 }
 
-#portfolio * {
+#what-we-do * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
+    #what-we-do .what-we-do-item {
         margin: 0 0 30px;
     }
 }
@@ -664,72 +668,68 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
-aside.clients img {
-    margin: 50px auto;
-}
-
-section#contact {
+section#come-say-hi {
     background-color: #222;
-    background-image: url(img/map-image.png);
+    background-image: url(img/newbackground.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading {
+section#come-say-hi .section-heading {
     color: #fff;
 }
 
-section#contact .form-group {
+section#come-say-hi .form-group {
     margin-bottom: 25px;
 }
 
-section#contact .form-group input,
-section#contact .form-group textarea {
+section#come-say-hi .form-group input,
+section#come-say-hi .form-group textarea {
     padding: 20px;
 }
 
-section#contact .form-group input.form-control {
+section#come-say-hi .form-group input.form-control {
     height: auto;
 }
 
-section#contact .form-group textarea.form-control {
+section#come-say-hi .form-group textarea.form-control {
     height: 236px;
 }
 
-section#contact .form-control:focus {
+section#come-say-hi .form-control:focus {
     border-color: #{{ site.color.primary }};
     box-shadow: none;
 }
 
-section#contact::-webkit-input-placeholder {
+section#come-say-hi::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-moz-placeholder {
+section#come-say-hi:-moz-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact::-moz-placeholder {
+section#come-say-hi::-moz-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-ms-input-placeholder {
+section#come-say-hi:-ms-input-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact .text-danger {
+section#come-say-hi .text-danger {
     color: #e74c3c;
 }
 
@@ -785,7 +785,7 @@ ul.social-buttons li a:active {
     outline: 0;
 }
 
-.portfolio-modal .modal-content {
+.what-we-do-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -796,32 +796,32 @@ ul.social-buttons li a:active {
     box-shadow: none;
 }
 
-.portfolio-modal .modal-content h2 {
+.what-we-do-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
 }
 
-.portfolio-modal .modal-content p {
+.what-we-do-modal .modal-content p {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content p.item-intro {
+.what-we-do-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
 }
 
-.portfolio-modal .modal-content ul.list-inline {
+.what-we-do-modal .modal-content ul.list-inline {
     margin-top: 0;
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content img {
+.what-we-do-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .close-modal {
+.what-we-do-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -831,11 +831,11 @@ ul.social-buttons li a:active {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
+.what-we-do-modal .close-modal:hover {
     opacity: .3;
 }
 
-.portfolio-modal .close-modal .lr {
+.what-we-do-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -846,7 +846,7 @@ ul.social-buttons li a:active {
     transform: rotate(45deg);
 }
 
-.portfolio-modal .close-modal .lr .rl {
+.what-we-do-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;

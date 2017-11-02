@@ -2,10 +2,19 @@
 layout: page
 title:
 visible: false
+tags:
+  # languages
+  - python
+  - r
+  - git
+  - misc
+  # levels
+  - beginner
+  - intermediate
+  - advanced
 ---
 <!-- change visible to true if you want it on the site -->
-
-# My Lesson Title
+<!-- remove any tags listed above that are not relevant -->
 
  - **Authors**: My Name
  - **Research field**: My field of study

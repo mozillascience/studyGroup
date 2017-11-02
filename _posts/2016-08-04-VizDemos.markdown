@@ -1,0 +1,9 @@
+---
+title: Lightning Demos Data Visualization + Pub Night
+text: Quick demos showing how we visualize our data, followed by a social at GSU Pub.
+location: MP408 + GSU Pub
+link: https://github.com/UofTCoders/Events/issues/58
+date: 2016-08-04
+startTime: '18:10'
+endTime: '21:00'
+---
