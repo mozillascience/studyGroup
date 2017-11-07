@@ -22,7 +22,7 @@ If you want to follow along, make sure you have the correct packages installed a
    - pip install nltk
    - to download only tools/data used in this lesson:
 
-> python -m nltk.downloader stopwords porter_test vader_lexicon
+> python -m nltk.downloader stopwords porter_test vader_lexicon tagsets punkt wordnet
 
    - Alternatively, this will download ~2gb of data, but should ensure all components of nltk work if you're interested in exploring other functionalities of nltk:
 
