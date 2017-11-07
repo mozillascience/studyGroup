@@ -52,8 +52,9 @@ print("World")
 - `readr`: Can read CSV files
 - `tidyr`: Restructure data
 - `dplyr`: To manipulate data
-- `ggplot2`: To make plots.
-You can find more information [here](https://www.tidyverse.org).
+- `ggplot2`: To make plots
+
+You can find more information [here](https://www.tidyverse.org)
 
 ```{r}
 
@@ -61,7 +62,7 @@ You can find more information [here](https://www.tidyverse.org).
 
 ## Load Dataset
 
-The training set of the titanic dataset from Kaggle can be found [here](https://raw.githubusercontent.com/ScienceParkStudyGroup/studyGroup/gh-pages/lessons/20171107_Simple_Plots_with_R_Joeri/train.csv). 
+We first need to [download](https://raw.githubusercontent.com/ScienceParkStudyGroup/studyGroup/gh-pages/lessons/20171107_Simple_Plots_with_R_Joeri/train.csv) the training set of the titanic dataset from here.
 
 We can use the `read_csv` function to load a CSV file, assuming the file uses `,` to separate the different values. If the file uses `;` to separate the values we use `read_csv2`. The following code reads the `train.csv` file from the current directory and stores the resulting `data.frame` in the variable `df.raw`. NOTE: In R we use the `<-` to store something into a variable, but you can also use `=` for this if you want.
 
@@ -77,7 +78,7 @@ Whenever you load a new dataset it is always a good idea to inspect the data you
 
 In a tidy universe our data is always structured in `long format`. This means that we place observations on each row and the variables measured in each observations are recorded per column. If your dataset is not structered like this you will need to restructure this (not covered in this session).
 
-## First Plot
+## Our First Plot
 
 Now let's make a simple plot. In `tidyverse` (or `ggplot2`) plots are composed of several components. We have axes, items to visualize data (like points, lines and bars) and more. 
 
@@ -95,7 +96,6 @@ So let's start with removing an outlier. We may want to remove that 500 pound ti
 The `filter` function will keep all rows for which the given criteria are `TRUE`. 
 
 ```{r}
-
 ```
 
 You can add multiple criteria to filter with, to get the surviving adult males.

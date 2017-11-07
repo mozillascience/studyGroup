@@ -22,7 +22,7 @@ As with all programming languages you need a program to write your program or sc
 
 __So let's look at RStudio.__
 
-When you work with many datasets of different versions, it is important to properly organise your files on your computer. It is useful to have a folder where you place all your projects.
+When you work with many datasets of different versions, it is important to properly organise your files on your computer. It is useful to have a folder where you place all your projects, so that can easily find them back later on.
 
 Once we have location for our projects, we can create a new project with RStudio. RStudio will create a new folder for that project, which helps to avoid confusion about which file/dataset belongs to which project. My habit is to create a new project for each dataset I collect and I often create a separate folder within my project folder called `data` to store the data files.
 
@@ -62,7 +62,9 @@ library(tidyverse)
 
 ## Load Dataset
 
-We can use the `read_csv` function to load a CSV file, assuming the file uses `,` to separate the different values. If the file uses `;` to separate the values we use `read_csv2`. The following code reads the `train.csv` file from the current directory and stores the resulting `data.frame` in the variable `df.raw`. NOTE: In R many use `<-` to store something into a variable, but you can also use `=` for this if you want.
+We first need to [download](https://raw.githubusercontent.com/ScienceParkStudyGroup/studyGroup/gh-pages/lessons/20171107_Simple_Plots_with_R_Joeri/train.csv) the training set of the titanic dataset from here.
+
+We can use the `read_csv` function to load a CSV file, assuming the file uses `,` to separate the different values. If the file uses `;` to separate the values we use `read_csv2`. The following code reads the `train.csv` file from the current directory and stores the resulting `data.frame` in the variable `df.raw`. NOTE: In R we use the `<-` to store something into a variable, but you can also use `=` for this if you want.
 
 ```{r}
 df.raw <- read_csv("train.csv")
