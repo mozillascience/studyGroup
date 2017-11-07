@@ -28,6 +28,9 @@ If you want to follow along, make sure you have the correct packages installed a
 
 > python -m nltk.downloader all
 
+Also save this text as book.txt in a place you can easily access:
+https://www.gutenberg.org/cache/epub/3070/pg3070.txt
+
 If you'd like to follow along in Jupyter Notebook, do the following:
 
    - Install [Jupyter Notebook](https://jupyter.readthedocs.org/en/latest/install.html)
