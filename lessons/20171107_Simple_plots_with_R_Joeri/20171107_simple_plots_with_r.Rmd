@@ -1,0 +1,267 @@
+---
+title: "Simple plots with R"
+author: "Joeri Jongbloets"
+date: "November 7th, 2017"
+output: html_notebook
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Preface
+
+Before we can start make sure you have:
+
+* [R](https://www.r-project.org)
+* [RStudio](http://rstudio.com)
+
+The R-language is a language designed from the start with data-analysis in mind. This means the language has features not found in many other languages, such as vectors. R is also an interpreted language, meaning that whenever you execute R-code, the R interpreter program will translate this to actual (machine executable) code and execute this code. Interpreters also keep track of the information you give them. Unless you overwrite or delete the information or stop the interpreter, this data will linger around.
+
+As with all programming languages you need a program to write your program or script. While you can use a simple text-editor and run them using an R interpreter, most people prefer to use an IDE (Intergrated Development Environment) that helps with creating, testing and running programs. We will use RStudio as our IDE for R.
+
+__So let's look at RStudio.__
+
+When you work with many datasets of different versions, it is important to properly organise your files on your computer. It is useful to have a folder where you place all your projects.
+
+Once we have location for our projects, we can create a new project with RStudio. RStudio will create a new folder for that project, which helps to avoid confusion about which file/dataset belongs to which project. My habit is to create a new project for each dataset I collect and I often create a separate folder within my project folder called `data` to store the data files.
+
+Project also come with other useful functions. For example when you exit RStudio, it will automatically store the state of your interpreter, so when you re-open the project it will continue where you left it. Another important feature is that RStudio will start the interpreter with the working directory set to your project folder. So when you load files, you always know where the interpreter loads it from.
+
+## Introduction
+
+In this workshop we will learn how to load, massage and plot data using the powerfull `tidyverse` package. This document is written in RMarkdown, a combination of R code and text. When we want to write R code we do this in "chunks", like this one:
+
+```{r}
+
+```
+
+Whenever we 'preview' or 'knit' the document, RStudio will read the document, execute the R code in each chunk and parse the result into a nice HTML or PDF document. Let's try to "knit to HTML" the document.
+
+We can also run a single chunk with Ctrl+Alt+C (Cmd+Option+C) or a single line (or selection) with Ctrl+Enter (Cmd+Enter). Try this here:
+
+```{r}
+print("Hello")
+print("World")
+```
+
+### Tidyverse
+
+`tidyverse` is a collection of packages each providing an interface to commonly used tasks, such as:
+
+- `readr`: Can read CSV files
+- `tidyr`: Restructure data
+- `dplyr`: To manipulate data
+- `ggplot2`: To make plots
+
+You can find more information [here](https://www.tidyverse.org)
+
+```{r}
+library(tidyverse)
+```
+
+## Load Dataset
+
+We can use the `read_csv` function to load a CSV file, assuming the file uses `,` to separate the different values. If the file uses `;` to separate the values we use `read_csv2`. The following code reads the `train.csv` file from the current directory and stores the resulting `data.frame` in the variable `df.raw`. NOTE: In R many use `<-` to store something into a variable, but you can also use `=` for this if you want.
+
+```{r}
+df.raw <- read_csv("train.csv")
+```
+
+Whenever you load a new dataset it is always a good idea to inspect the data you just loaded.
+
+```{r}
+glimpse(df.raw)
+```
+
+Or get the first 5 rows of the dataset.
+
+```{r}
+head(df.raw)
+```
+
+In a tidy universe our data is always structured in `long format`. This means that we place observations on each row and the variables measured in each observations are recorded per column. If your dataset is not structered like this you will need to restructure this (not covered in this session).
+
+## Our First Plot
+
+Now let's make a simple plot. In `tidyverse` (or `ggplot2`) plots are composed of several components. We have axes, items to visualize data (like points, lines and bars) and more. 
+
+```{r}
+ggplot(df.raw, aes(x=Pclass, y=Fare, group=Pclass)) +
+  geom_boxplot() + 
+  labs(x="Passenger Class", y="Fare", title="My first Plot in R")
+```
+
+## Data Manipulation
+
+Often we need to massage the data a bit before we can actualy do something with it.
+
+### Filter
+
+So let's start with removing an outlier. We may want to remove that 500 pound ticket.
+The `filter` function will keep all rows for which the given criteria are `TRUE`. 
+
+```{r}
+filter(df.raw, Fare < 500)
+```
+
+You can add multiple criteria to filter with. Filter the dataset to get only the surviving adult males.
+
+```{r}
+filter(df.raw, Sex == "male", Age >= 18, Survived == 1)
+```
+
+Or use logic operators to do this:
+
+```{r}
+filter(df.raw, Sex == "male" & Age >= 18 & Survived == 1)
+```
+
+Try now to filter the dataset to contain only women and children.. (Note: I'm looking for _all_ women of _all_ ages and _all_ children of _both_ sexes).
+
+```{r}
+filter(df.raw, Sex == "female" | Age < 18)
+```
+
+#### Pipes
+
+Hold on... our code is getting more and more complex. We should structure this a bit.
+
+Time to meet the __pipe__: `%>%`
+
+The pipe is useful when you nest multipe functions. Nesting means that each function uses the result of the previous function.
+
+Consider this example, we want to know how many males we have:
+
+````{r}
+nrow(filter(df.raw, Sex == "male"))
+```
+
+We can write this also with `%>%`:
+
+```{r}
+df.raw %>%
+  filter(Sex == "male") %>%
+  nrow()
+```
+
+### Mutating
+
+Many times we want to add new information to our data, for example by calculating something.
+
+Let's create a new column with the age of each passenger multiplied by two.
+
+```{r}
+df.raw %>%
+  mutate( Age2 = Age * 2)
+```
+
+## More plots
+
+Make a violinplot to show the relation between Sex and Fare:
+
+```{r}
+df.raw %>%
+  filter(Fare < 500) %>%
+  ggplot(aes(x=Sex, y=Fare)) +
+  geom_violin()
+```
+
+What if we want to relate this to survival, can we also show this information?
+Unfortunately we cannot split the violin plot (as with seaborn), but we can use facets:
+
+```{r}
+df.raw %>%
+  filter(Fare < 500) %>%
+  ggplot(aes(x=Sex, y=Fare, group=Sex, fill=Sex)) +
+  facet_wrap(~Survived) +
+  geom_violin()
+```
+
+Now plot the distribution of fares for the different classes and location of embark.
+
+```{r}
+df.raw %>%
+  filter(Fare < 500, !is.na(Fare), !is.na(Embarked)) %>%
+  mutate(Pclass = as.factor(Pclass)) %>%
+  ggplot(aes(x=Pclass, y=Fare, group=Pclass, fill=Pclass)) +
+  facet_wrap(~Embarked) +
+  geom_boxplot()
+```
+
+## Group-By and Summarise
+
+Let's `count` the number of people of each sex:
+
+```{r}
+df.raw %>%
+  group_by(Sex) %>%
+  count()
+```
+
+Or the number of people that died or survived per sex:
+
+```{r}
+df.raw %>%
+  group_by(Sex, Survived) %>%
+  count()
+```
+
+The `count` function is a shorthand for the `summarise` function:
+
+```{r}
+df.raw %>%
+  group_by(Sex, Survived) %>%
+  summarise(
+    n = n()
+  )
+```
+
+With `summarise` we have full control on how we summarise each group:
+
+```{r}
+df.raw %>%
+  filter(!is.na(Age)) %>%
+  group_by(Sex, Survived) %>%
+  summarise(
+    mean_Age = mean(Age)
+  )
+```
+
+And it is not limited to a single value:
+
+```{r}
+df.raw %>%
+  filter(!is.na(Age)) %>%
+  group_by(Sex, Survived) %>%
+  summarise(
+    n = n(),
+    mean_Age = mean(Age)
+  )
+```
+
+### Group-by and Mutate
+
+Group by works also with `mutate`. We can - for example - calculate for each person the percentage of the average fare they paid within their class:
+
+```{r}
+df.raw %>%
+  filter(!is.na(Fare)) %>%
+  group_by(Pclass) %>%
+  mutate( frac_Fare = Fare / mean(Fare))
+```
+
+Note the difference when you do not use `group_by`:
+
+```{r}
+df.raw %>%
+  filter(!is.na(Fare)) %>%
+  mutate( frac_Fare = Fare / mean(Fare))
+```
+
+## Learn more
+
+* [tidyverse](https://www.tidyverse.org)
+* [ggplot2](http://ggplot2.org)
+* [RMarkdown](http://rmarkdown.rstudio.com)
+* [Cheatsheet](https://www.rstudio.com/resources/cheatsheets/)
