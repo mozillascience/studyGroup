@@ -1,31 +1,63 @@
-<section id="events">
+<!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
-                    <h2 class="section-heading">{{site.data[site.language].linksHeading}}</h2>
-                    <h3 class="section-subheading text-muted">{{site.data[site.language].linksSubheading}}</h3>
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Upcoming Events</h2>
                 </div>
             </div>
-             <div class="row">
-                  <div class="col-lg-12 text-center">
-	    <a class='eventTitle' href="http://www.datacarpentry.org">Data Carpentry</a>
-          <div class='eventSub'>Introductory lessons on data organization and visualization for research.</div>
-          <a class='eventTitle' href="https://software-carpentry.org/lessons/">Software Carpentry</a>
-          <div class='eventSub'>Introductory lessons on various topics in computing for research.</div>
-          <a class='eventTitle' href="https://aci.wisc.edu">Advanced Computing Initiative</a>
-          <div class='eventSub'>Support for shared computing resources at UW-Madison.</div>
-          <a class='eventTitle' href="https://at.doit.wisc.edu/training/software-training-for-students/">UW-Madison DoIT Software Training for Students</a>
-          <div class='eventSub'>UW-Madison Division of Information Services offers Software Training for Students on a variety of introductory topics. </div>
-          <a class='eventTitle' href="https://www.biotech.wisc.edu/services/brc">Bioinformatics Resource Center</a>
-          <div class='eventSub'>The BRC is a resource within the UW Biotechnology Center that assists researchers with their data analysis needs.</div>
-          <a class='eventTitle' href="https://qbi.wisc.edu/">Quantitative Biology Initiative</a>
-          <div class='eventSub'>QBI hosts interdisciplinary seminars relavent to computational, statistical, and quantitative biology. </div>
-          <a class='eventTitle'
-             href="https://cci.wisc.edu">Campus Computing Infrastructure</a>
-          <div class='eventSub'>Delivers shared, scalable IT infrastructure services for server hosting, storage, and backup.</div>
-	 <a class='eventTitle'
-	    href="http://chtc.cs.wisc.edu">Center for High Throughput Computing</a>
-	 <div class='eventSub'>Supports scalable computing resources and services for the UW System.</div>
-      </ul>
-    </div>
-  </div>
-</section>
+            <div class="col-lg-12">
+              <ul class='events'>
+              {% assign isEvent = 0 %}
+              {% for post in site.posts reversed %}
+                {% capture nowyear %}{{'now' | date: '%Y'}}{% endcapture %}
+                {% capture postyear %}{{post.date | date: '%Y'}}{% endcapture %}
+                {% capture nowmonth %}{{'now' | date: '%m'}}{% endcapture %}
+                {% capture postmonth %}{{post.date | date: '%m'}}{% endcapture %}
+                {% capture nowday %}{{'now' | date: '%j'}}{% endcapture %}
+                {% capture postday %}{{post.date | date: '%j'}}{% endcapture %}
+                {% if postyear >= nowyear and postmonth >= nowmonth and postday >= nowday %}
+                  {% assign isEvent = 1 %}
+                  <li>
+                    <a class='eventTitle' href="{{ post.link }}">{{ post.title }}</a>
+                    <div class='eventSub'>{{ post.date | date: "%B %-d, %Y"}} at {{ post.time }} — {{ post.location }}</div>
+                    <div class='eventText'>{{ post.text }}</div>
+                  </li>
+                {% endif %}
+              {% endfor %}
+              </ul>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Past Events</h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+              <ul class='events'>
+              {% assign isEvent = 0 %}
+              {% for post in site.posts %}
+                {% capture nowyear %}{{'now' | date: '%Y'}}{% endcapture %}
+                {% capture postyear %}{{post.date | date: '%Y'}}{% endcapture %}
+                {% capture nowmonth %}{{'now' | date: '%m'}}{% endcapture %}
+                {% capture postmonth %}{{post.date | date: '%m'}}{% endcapture %}
+                {% capture nowday %}{{'now' | date: '%j'}}{% endcapture %}
+                {% capture postday %}{{post.date | date: '%j'}}{% endcapture %}
+                {% if postyear <= nowyear and postmonth <= nowmonth and postday <= nowday %}
+                  {% assign isEvent = 1 %}
+                  <li>
+                    <a class='eventTitle' href="{{ post.link }}">{{ post.title }}</a>
+                    <div class='eventSub'>{{ post.date | date: "%B %-d, %Y"}} at {{ post.time }} — {{ post.location }}</div>
+                    <div class='eventText'>{{ post.text }}</div>
+                  </li>
+                {% endif %}
+              {% endfor %}
+              </ul>
+            </div>
+        </div>
+    </section>
