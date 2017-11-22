@@ -1,0 +1,248 @@
+---
+title: "Statistical tests with R"
+author: "Emiel van Loon"
+date: "November 18th, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Preface
+
+As with the previous studygroup session, you will need to have R and RStudio installed:
+
+* [R](https://www.r-project.org)
+* [RStudio](http://rstudio.com)
+
+Furthermore, it is assumed that you are aware of the standard null-hypothesis testing framework and (at least qualitatively) familiar with the basic concepts in statistics.
+So: the things you hopefully still remember from your basic statistics course.
+
+## Introduction
+
+In this workshop we will learn some functions to generate random data and take samples from data. Using these functions some basic statistical concepets are demonstrated. Fruthermore two very important functions to conduct hypothesis testing will be shown: `t.test()` and `prop.test()`.
+All of thes functions are part of 'base-R' so no special packages required. 
+
+
+## Random variables
+
+Hypothesis testing (or statistical modeling in general) makes only sense for so-called random variables. Random variables are not totally random: they have an expected value, which may depend on a specific treatment or be related to a predictor variable, but on top of that also random variation. Considering observations in the natural sciences as random variables often makes sense!
+Secondly, hypothesis testing assumes that you didn't observe the complete population in which you are interested (either because the population does not have a physical manifestation or because it is simply to big): you are dealing with a sample.
+
+It is very illustrative to (first) generate some random variables ourselves, and pretend that these are actual populations or processes we would like to investigate. So for today we will not make it to using real data yet.
+
+There are functions in R that can generate random data, with a specified probability distribution. The functions `rnorm()`, `runif()` and `rbinom()` for instance, generate data with a normal, uniform and binominal distribution respectively.
+
+Let's generate three data sequences each containing 1000 values:
+
+- The first data sequence should be normally distributed, with a mean of 6 and a standard deviation of 0.5. Store it in a variable named `R`.
+- The second sequence should be uniformly distributed with a minimum of 5 and a maximum of 7. Store it in a variable with the name `U`.
+- The third sequence should have a binomial distribution with a probability of success of 0.3 (applying a trial size of 1). Wtore it in a variable with the name `B`
+
+Note: use the R help function (e.g. `?rnorm`) to find out which input arguments the function expects.
+
+```{r rnd_data}
+R <- rnorm(...)
+U <- runif(...)
+B <- rbinom(...)
+```
+
+We also generate a vector with labels 'A' and 'B', which will be useful at some stage.
+
+```{r}
+L <- factor( rep(c('A','B'),500) )
+```
+
+Next, let's check whether the data is distributed as we expect, by visualising the disributions of `R` and `U`.
+
+```{r}
+par(mfrow=c(1,3)) # to make a window with 3 sub-plots
+hist(...)
+...
+...
+```
+
+```{r echo=FALSE}
+par(mfrow=c(1,1)) # to reset the nr of sub-plots in one window to 1
+```
+
+## Sampling from a population
+
+Now we are going to take some samples from these populations, and look at the properties of these.
+It is important to realize that we know exactly the underlying model which generated the data. So for `R` we know that the 'true' model is a normally distributed random variable with a mean of 6 and a standard deviation of 0.5.
+
+The function we can use to take a sample from a data array is `sample()`. Sample requires you to specify the vector from which the samples should be taken and the sample size.
+
+Take a sample of 5 values from `R` and just look at the values.
+Repeat this sampling with a size of 5 a few times. Next, do the same for `B`.
+
+
+```{r}
+sample(...)
+...
+```
+
+Notice how the values vary. This simulates the process of taking a sample from a real population - each time you would conduct a similar experiment or collect new data, your values would be slightly different.
+
+When investigating a process in this way, a crucial piece of information is often about a representative value (e.g. the most frequent or most likely value, or the expected value): whether it is constant under different treatments or within which boundaries its value falls.
+In the remainder we are concentrating on these two questions.
+
+And for the 'representative value' we are going to choose the most important ones: the mean (for a quantitative variable) and the proportion (for a binary variable).
+
+We calculate the mean for a sequence of values by the function `mean` and the proportion (for a sequence of 0 and 1) ... also by `mean` (a proportion is in fact a kind of mean over a sequence of zeros and ones).
+So let's calculate the mean of the total data sets `R` and `B`.
+
+```{r}
+mean(...)
+...
+```
+
+Next, do the same but then calculate the mean for a random sample of 5 observations from R and B (repeat it a few times, so that also here you can see the variation)
+
+```{r}
+...
+...
+```
+
+## little intermezzo - repeated sampling
+
+In the last exercise you dit draw a sample and looked at the values. But we would in fact like to repeat the drawing of samples, calculation of means and store the results.
+
+For readability and conceptual understanding we will make this calculation in a for-loop which is given below.
+
+```{r}
+sampsize <- 5
+nrsamp <- 100
+R5 <- rep(NA,nrsamp)       # vector with NA to store results
+
+for(i in 1:nrsamp){
+  R5[i] <- mean(sample(R,sampsize))
+}
+```
+
+As you see, 10 samples of size 5 are taken from R.
+For each of these samples the mean is calculated and this mean is stored
+in the vector `R5`
+
+Do the same for samples of size 10 and size 20 (store the results in the objects `R10` and `R20` respectively.
+
+```{r}
+sampsize <- 10
+nrsamp <- 100
+R10 <- rep(NA,nrsamp)
+
+...
+...
+...
+
+sampsize <- 20
+nrsamp <- 100
+R20 <- rep(NA,nrsamp)
+
+...
+...
+...
+
+```
+
+To see what happened as a result of taking bigger samples,
+we look at the histograms of the sampling means:
+
+```{r}
+par(mfrow=c(1,3)) # to make a window with 3 sub-plots
+...
+...
+...
+```
+
+Let's relate these findings with some theory.
+
+## the variation among sample means
+
+As you do probably expect, the mean for a sample is estimating the mean of the population (and that's good news: you can estimate this important parameter, the population mean, via a sample).
+
+However, the variability in the population makes that your estimates vary. The larger your sample size, the smaller the variability you will get between sample means (you probably also already expected this). There is in fact a nice relation between the variabiliy you get in your sample-means and the variability in your population:
+$$ sd_{sample} = \frac{\sigma}{\sqrt{n}}$$
+With $\sigma$ the population standard deviation, and $n$ the sample size. The value of $sd_{sample}$ is called the standard error - it is the standard deviation of the sample means.
+
+We can now check whether the results found in the sampling experiments follow the theory! Because we know $\sigma$ (0.5) and can calculate the standard deviation of the sample-means (`sd()`). 
+
+Give it a try: do the results in R5, R10 and R20 correspond to the theoretically expected value of $\frac{\sigma}{\sqrt{n}}$?
+
+```{r}
+...
+...
+...
+```
+
+
+Now we arrive at a crucial idea in statistical testing. We don't have to take multiple samples to assess the uncertainty of the estimated mean: a single sample is sufficient!
+
+How can this be? The reason why this works is because it turns out that if you take samples from a random variable (with an arbitrary probability distribution), then the means of these samples follow a normal distribution (with the mean around the population mean and a standard deviation $sd_{sample}$) ! 
+
+As a somewhat bigger assignment: can you try this for the uniform random data in U (clearly the population distribution is non-normal)?
+
+```{r}
+
+```
+
+For smaller samples (it is relevant for samples which are smaller in size than 30), an adjustment is required which leads to a distribution that is slightly different from the normal distribution: the t-distribution.
+
+Now that we have a theoretical distribution with which a sample can be compared, it becomes feasible to test hypotheses about a population based on only one sample.
+
+## Hypothesis testing - differences in means
+
+Classical hypothesis testing is based on the combination of a null-hypothesis (H0, stating the situation when there is 'no effect') and the alternative hypothesis (Ha, stating the situation when there is 'an effect').
+
+Let's focus on our random data. We would like to test whether the mean of the random variable R is 6 versus the alternative hypothesis that it is smaller than 6.
+
+$$H0: \mu = 6$$
+$$HA: \mu <>6$$
+
+A function which allows us to test for differences in means is `t.test()`
+The function can test for a difference in means between two groups, but also the mean of a sample against some theoretical value (as in this example)
+
+Have a look at this function, and try to apply it to a random sample of 5 to answer the above hypothesis.
+
+```{r}
+...
+```
+
+Let's consider as a new problem. We will look at a hypothesis test with a difference among two groups. Let's assume you sample 10 individuals from those cases where `L=='A'` and also 10 for `L==B`, and you'd like to test whether the mean value for individuals with label `A` is bigger than for individuals with label `B`.
+
+```{r}
+...
+...
+...
+```
+
+We will interpret these results interactively!
+
+
+## Hypothesis testing - differences in proportions
+
+Similarly to testing for the mean we can test for a difference in proportions.
+
+The function, for testing proportions is `prop.test()`. It works quite similar to `t.test()`, with the difference that you need to specify the input slithgly different.
+
+When you consider variable `B`, assume that you would like to test whether the proportion is 0.3 based on a sample of, say 5.
+
+The example code below calculates a table, based on a sample of 5 from `B`. This table is the first input entry for the function `prop.test()`. 
+```{r}
+Bs <- table(sample(B,5))    
+```
+
+```{r}
+...
+```
+
+
+## Learn more
+
+A few good resources to learn more about the basics of statistical hypothesis testing are:
+
+* P. Dalgaard (2008), 'Introductory Statistics with R', 2nd ed., Springer Verlag, ISBN 978-0387790534.
+The book is available  (paper as well as digitally) in the UvA library.
+* [OpenIntro](https://www.openintro.org/) Great open textbook (in diffeent flavours) with a rich set of resouces like video tutorials, exercises and R-practicals.
+* [interactive apps (made in R)](http://www.artofstat.com/webapps.html) Give good intuitive insight in basic statistical concepts and also important aspects around hypothesis testing.
