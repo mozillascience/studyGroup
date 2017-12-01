@@ -14,7 +14,7 @@ tags:
  - **Authors**: Kent Bonsma-Fisher
  - **Research field**: Physics / Quantum Information
  - **Lesson topic**: Introduction to quantum computing
- - **Lesson content URL**: <link>
+ - **Lesson content URL**: https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/misc/quantum-computing
  - **Lesson video URL**: https://www.youtube.com/watch?v=lR4mZqZJyCs&t=10s
 
 This is a beginner level introduction to quantum computing. It assumes some knowledge of vectors and matrices
