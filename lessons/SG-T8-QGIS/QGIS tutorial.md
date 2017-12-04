@@ -14,9 +14,7 @@ tags:
  - **Authors**: Alicia Ledo
  - **Lesson topic**: This is a basic tutorial to introduce you to the QGIS software. It is oriented to people with no knowledge on the software. The tutorial covers: what is QGIS, QGIS interface, some basic tools and uses.
 
-```
-![](../qgis-logo-new.png)
-```
+<center><img src="../qgis-logo-new.png" alt="Img" style="width: 800px;"/></center>
 
 QGIS is a free and open-source cross-platform desktop geographic information system application that supports viewing, editing, and analysis of geospatial data.
 After the tutorial you will have a basic idea of how to use QGIS and about the potentiality of QGIS. It is a very basic tutorial, giving just the little nudge necessary to start using it (particularly for ArcGIS users!) The QGIS is a free, open source GIS software. Unfortunately, explaining what a GIS is won’t be covered in the tutorial (see below* for extra information). If you don’t know how to use ArcGIS, perfect! QGIS is easier to understand than the commercial option, since QGIS it far is more intuitive. If you do use ArcGIS, you may find QGIS estrange, at a first glance. But after, QGIS will be your friend. If you know how to use QGIS, this tutorial may be very basic, but you will be more than welcome! So we can start creating our Aberdeen QGIS community.
