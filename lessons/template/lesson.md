@@ -25,9 +25,7 @@ Write up your lesson here! If you're unsure of markdown, feel free to cut and pa
 
 Be sure to include any data or examples you need in this same directory. Linking to other files, pictures for example, requires specifying a relative path for the parent directory. If you pictures are in the same file as the `.md` file in which you are writing, then you would include that file by writing something like:
 
-```
-![](../picture2insert.png)
-```
+<center><img src="../path_to_image.png" width="100"/></center>
 
 where the two dots (`../`) is the critical part.
 
