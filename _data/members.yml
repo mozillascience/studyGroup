@@ -90,14 +90,14 @@
     - Tomato
     - R
   
-- name: Xing Ji
+ - name: Xing Ji
   affiliation: University of Amsterdam (IBED)
   github: jxh087
   interests:
     - Marine biology
     - Ecology
 
- - name: Ruy Kortbeek
+- name: Ruy Kortbeek
   affiliation: University of Amsterdam (SILS)
   github: RuyKortbeek
   interests:
@@ -106,7 +106,7 @@
     - Insect bioassays
     - R
     
-  - name: Niels Nouse
+- name: Niels Nouse
   affiliation: University of Amsterdam (SILS)
   github: NNouse
   interests:
@@ -114,7 +114,7 @@
     - Soil microbiology
     - R
     
-  - name: Niels Nouse
+- name: Niels Nouse
   affiliation: University of Amsterdam (SILS)
   github: NNouse
   interests:
@@ -122,7 +122,7 @@
     - Soil microbiology
     - R
     
-  - name: Lisa Oskam
+- name: Lisa Oskam
   affiliation: University of Amsterdam (SILS)
   github: lisaos
   interests:
