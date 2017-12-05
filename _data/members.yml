@@ -81,6 +81,7 @@
     - Metagenomics
     - Rhizosphere
     - R
+
 - name: Jihed Chouaref
   affiliation: University of Amsterdam (SILS)
   github: JihedC
@@ -88,3 +89,45 @@
     - Plant genetics
     - Tomato
     - R
+  
+- name: Xing Ji
+  affiliation: University of Amsterdam (IBED)
+  github: jxh087
+  interests:
+    - Marine biology
+    - Ecology
+
+ - name: Ruy Kortbeek
+  affiliation: University of Amsterdam (SILS)
+  github: RuyKortbeek
+  interests:
+    - Tomato insect resistance
+    - Specialized metabolism
+    - Insect bioassays
+    - R
+    
+  - name: Niels Nouse
+  affiliation: University of Amsterdam (SILS)
+  github: NNouse
+  interests:
+    - Tomato physiology
+    - Soil microbiology
+    - R
+    
+  - name: Niels Nouse
+  affiliation: University of Amsterdam (SILS)
+  github: NNouse
+  interests:
+    - Tomato physiology
+    - Soil microbiology
+    - R
+    
+  - name: Lisa Oskam
+  affiliation: University of Amsterdam (SILS)
+  github: lisaos
+  interests:
+    - Plant-Microbe interactions
+    - R
+    
+    
+  
