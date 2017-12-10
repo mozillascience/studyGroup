@@ -10,6 +10,14 @@ What do other Study Groups look like? Check out the [Boston University Study Gro
 
 # Some great topics adressed by the Study Group
 Based on the publication ["Bioinformatics curriculum guidelines: toward a definition of core competencies."](https://www.ncbi.nlm.nih.gov/pubmed/24603430)
+Some core skill sets include:
+*  General skills: project management, independence, curiosity, self-motivation, leadership, etc.
+*  Computational skills: software engineering, programming, system administration, machine learning, database design and management, statistical softwares, etc.
+*  Biology: molecular biology, genomics, genetics, systems biology, Next-Generation Sequencing, etc.
+*  Statistics: application of statistics, experimental design, NGS analysis using R and Bioconductor, etc.
+*  Bioinformatics: scientific data management, analysis of large datasets, broad knowledge of bioinformatics, functional genetics and genomics, etc.
+
+To help you to acquire these skills, the Amsterdam Science Park Study Group will cover:
 
 ## Data Science
 
@@ -21,7 +29,7 @@ Based on the publication ["Bioinformatics curriculum guidelines: toward a defini
 ### Data Science and Statistics
 * Data tidyness: keeping your data clean
 * Fitting regression models
-* Machine Learning for  
+* Machine Learning applied to biological data.
 
 ## FAIR data
 How to make your data (more) FAIR = Findable, Accessible, Interoperable, Reusable. 
