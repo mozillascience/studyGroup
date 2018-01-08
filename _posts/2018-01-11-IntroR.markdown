@@ -1,0 +1,9 @@
+---
+title: "Introduction to R"
+text:  A brief introduction to R programming. No experience is necessary to attend this lesson.
+location: MADLAB at Gerstein
+link: https://github.com/UofTCoders/Events/issues/131
+date: 2018-01-11
+startTime: '18:10'
+endTime: '19:00'
+---
