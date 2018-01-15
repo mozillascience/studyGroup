@@ -1,0 +1,88 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(dplyr)
+library(tidyr)
+```
+
+With `name()` is a function compared to `name` is a variable/object
+
+```{r}
+iris
+```
+
+- select
+- mutate
+- arrange
+- group_by
+- filter
+- summarize
+
+```{r}
+select(iris, Sepal.Length, Sepal.Width)
+```
+
+```{r}
+select(iris, -Sepal.Length)
+```
+
+```{r}
+mutate(iris, NewColumn = "test", 
+       WidthTimes100 = Petal.Width * 100,
+       Petal.Length = log(Petal.Length))
+```
+
+```{r}
+arrange(iris, Sepal.Width)
+arrange(iris, desc(Sepal.Width))
+arrange(iris, Species, Sepal.Width)
+# colnames(iris)
+```
+
+```{r}
+summary(iris)
+filter(.data = iris, Sepal.Length < 5.5 & # AND
+       Petal.Length == 1.4)
+filter(.data = iris, Sepal.Length < 5.5 | # OR
+       Petal.Length == 1.4)
+```
+
+```{r}
+summarize(iris, MeanPL = mean(Petal.Length),
+          MeanSL = mean(Sepal.Length))
+```
+
+```{r}
+iris %>% 
+    select(Sepal.Length) %>% 
+    filter(Sepal.Length < 5)
+# iris2 <- select(iris, Sepal.Length)
+# iris2 <- filter(iris2, Sepal.Length < 5)
+```
+
+```{r}
+iris %>% 
+    group_by(Species) %>% 
+    summarize(MeanSL = mean(Sepal.Length),
+              MedianSL = median(Sepal.Length))
+```
+
+- gather
+- spread
+
+```{r}
+iris %>% 
+    gather(ColumnName, ColumnValue, -Species) %>% 
+    group_by(Species, ColumnName) %>% 
+    summarize(MeanValue =
+                  paste0(
+                      round(mean(ColumnValue), 2),
+                      " (",
+                      round(sd(ColumnValue), 2),
+                      ")")) %>% 
+    spread(Species, MeanValue)
+```
+
