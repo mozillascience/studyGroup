@@ -1,0 +1,9 @@
+---
+title: "Introduction to Git and the Philosophy of Version Control"
+text:  Learn how to use version control for your project using Git and Github
+location: MADLAB at Gerstein
+link: https://github.com/UofTCoders/Events/issues/133
+date: 2018-01-18
+startTime: '18:10'
+endTime: '19:00'
+---
