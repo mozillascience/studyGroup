@@ -18,7 +18,7 @@ language: en
 # Optional Configuration
 # None of these things need to be changed - but feel free!
 
-titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
+titleBackground: "https://github.com/gaiusjaugustus/studyGroup/blob/gh-pages/img/resbaz2017.jpg"
 headlineSmall: "Welcome!"
 headlineMain: "Let's Work Together"
 
