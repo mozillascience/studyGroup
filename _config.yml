@@ -18,7 +18,11 @@ language: en
 # Optional Configuration
 # None of these things need to be changed - but feel free!
 
-titleBackground: "{{ site.baseurl }}/img/resbaz2017.jpg"
+
+baseurl: "/studyGroup"
+url: "http://gaiusjaugustus.github.io"
+
+titleBackground: "{{ site.url }}{{ site.baseurl }}/img/resbaz2017.jpg"
 headlineSmall: "Join us for this year's conference, March 29th and 30th!"
 headlineMain: "Research Bazaar Tucson 2018"
 
