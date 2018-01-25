@@ -2,7 +2,8 @@
 whatWeDo: What We Do
 events: Events
 contact: Contact
-tellMeMore: Tell Me More
+team: Who We Are
+tellMeMore: Learn More
 
 activitiesSubheading: 'Need help now?  Want to talk?  Go post in our Gitter: <a href="https://gitter.im/resbaz/Arizona" target="_blank">resbaz/Arizona</a>'
 activities:
@@ -82,11 +83,11 @@ googleCalendar: 'If you use Google calendar, you can add our calendar by pressin
 iCal: 'If you use another calendar app, you can copy and paste <a href="%CALENDAR_ICAL_URL%">this address</a> into any calendar product that supports the iCal format.'
 
 sayHi: Come Say Hi
-contactSubheading: 'Any more questions?  You can ask us at our Gitter!'
+contactSubheading: ''
 contact: Talk To Us
 
 teamHeadline: Who We Are
-teamSubheading: "We're scientists, students and researchers who want to work with you!"
+teamSubheading: "We're scientists, students and researchers who want to work with you! Any more questions?  You can ask us at our Gitter!"
 interests: Interests
 
 codeOfConduct: Study Group Code of Conduct

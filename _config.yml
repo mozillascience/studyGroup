@@ -18,9 +18,13 @@ language: en
 # Optional Configuration
 # None of these things need to be changed - but feel free!
 
-titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
-headlineSmall: "Welcome!"
-headlineMain: "Let's Work Together"
+
+baseurl: "/studyGroup"
+url: "http://gaiusjaugustus.github.io"
+
+titleBackground: "/img/resbaz2017.jpg"
+headlineSmall: "Join us for this year's conference, March 29th and 30th!"
+headlineMain: "Research Bazaar Tucson 2018"
 
 # Setup Google Calendar
 # Usage:
