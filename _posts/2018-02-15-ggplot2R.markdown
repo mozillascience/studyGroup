@@ -3,7 +3,7 @@ title: Intro to ggplot2 in R
 text: ggplot2 is a great plotting package in R, learn the basics in this lesson!
 location: MADLAB at Gerstein
 link: https://github.com/UofTCoders/Events/issues/136
-date: 2018-02-08
+date: 2018-02-15
 startTime: '18:10'
 endTime: '19:00'
 ---
