@@ -4,7 +4,7 @@ title: Contributing to UofT Coders
 ---
 Welcome to the Contributing guideline for UofT Coders. Thanks for taking the time to contribute! :clap::clap:  
 
-The following is a set of guidelines for contributing to the UofT Coders community, whether it be by teaching a lesson, fixing the website, helping to plan and organize our various events, or taking on a leadership role. 
+The following is a set of guidelines for contributing to the UofT Coders community, whether it be by teaching a lesson, fixing the website, helping to plan and organize our various events, or taking on a leadership role.
 
 ### Table of Contents
 
@@ -17,28 +17,45 @@ The following is a set of guidelines for contributing to the UofT Coders communi
     - [Other Ways to Get Involved](#other-ways-to-get-involved)
 
 -----
-## What You Should Know
+# What You Should Know
 
 ### Code of Conduct
 
-We adhere to a [Code of Conduct](https://github.com/UofTCoders/studyGroup/blob/gh-pages/codeOfConduct.md) and by participating, you agree to also uphold this code. Please report any unacceptable behaviour to uoftcoders@gmail.com. If you feel that the exec has been violating the Code of Conduct, please email groups.officer@utoronto.ca to report. 
+We adhere to a [Code of Conduct](https://github.com/UofTCoders/studyGroup/blob/gh-pages/codeOfConduct.md) and by participating, you agree to also uphold this code. Please report any unacceptable behaviour to uoftcoders@gmail.com. If you feel that the exec has been violating the Code of Conduct, please email groups.officer@utoronto.ca to report.
 
 ### About Uoft Coders
 
-The UofT Coders group was formed to share and learn about coding techniques and best practices for computing and analysis in research. We hold weekly sessions in the format of code-alongs, coworking sessions or journal clubs/discussions. To see our previous and upcoming events, you can visit our [Events repo](https://github.com/UofTCoders/Events/issues). To learn more about our group, you can read our [constitution](https://github.com/UofTCoders/council/blob/master/Constitution.md). 
+The UofT Coders group was formed to share and learn about coding techniques and best practices for computing and analysis in research. We hold weekly sessions in the format of code-alongs, coworking sessions or journal clubs/discussions. To see our previous and upcoming events, you can visit our [Events repo](https://github.com/UofTCoders/Events/issues). To learn more about our group, you can read our [constitution](https://github.com/UofTCoders/council/blob/master/Constitution.md).
 
 -----
-## How You Can Contribute
+# How You Can Contribute
 
-## Running a lesson
+## Running a Lesson
+### Lesson Instructor Checklist
+#### Making the Lesson:
 
-### Making the lesson
++ **Use Built-in Datasets**: Use built-in sample datasets instead of requiring attendees to download files.
++ **Keep in mind beginners**: make few assumptions about the knowledge of the audience, unless specified that this is an intermediate level lesson, requiring prior knowledge. Keep it simple.
++ **Minimal use of slides**: If your lesson involves coding, keep slides to a minimum if at all, focus on interactive live-coding.
++ **Code Review**: The lesson code is posted to GitHub along with a pull request to [UofTCoders/studygroup](https://github.com/UofTCoders/studyGroup) repository at least 1 full day prior to the lesson date to allow for review. See [Making a Pull Request](#submitting-a-pull-request)
 
+
+#### Giving the Lesson
+
++ **Arrive early**: Come 10 minutes before the lesson starts to set up.
++ **Introduce yourself**: Start by introducing yourself and perhaps why you're teaching this lesson.
++ **Stay on time**: Keep mindful of the time, lessons are 50-60 minutes long.
++ **Start from the very beginning**. Actually show how to open the program or IDE (RStudio/Jupyter Notebook/Shell/etc)
+with everyone else and show how to do it (for beginner lessons).
++ **Live-coding**: Use of slides is minimal, majority of lesson involves writing the code WITH the audience during the lesson
++ **Stay on topic**: There is only one hour, if a question arises that is off-topic, you can always suggest discussing afterwards.
+-------
+## Lesson Tips
 The Mozilla Science Study Group
 handbook [**here**](https://mozillascience.github.io/studyGroupHandbook/lessons.html#reuse)
 and [**here**](https://mozillascience.github.io/studyGroupHandbook/event-types.html#workalong)
 has several very good points about making a lesson. This section summarizes bits
-of the handbook, but also adds pieces that are missing from it. Check out the 
+of the handbook, but also adds pieces that are missing from it. Check out the
 [lesson bank too](https://github.com/mozillascience/studyGroupLessons/issues).
 
 From the handbook:
@@ -47,10 +64,11 @@ From the handbook:
 - **Keep in mind the beginners**
 - **Don't use slides and focus on writing the code**
 
+
 Expanding on this are other things to keep in mind.
 
-**Data**: External data *should not be used* unless it is absolutely necessary. 
-Instead, rely on built-in or sample datasets provided by the respective 
+**Data**: External data *should not be used* unless it is absolutely necessary.
+Instead, rely on built-in or sample datasets provided by the respective
 programming language or package.
 
 **Code**: This is the main thing that should be emphasized. How the code is
@@ -64,13 +82,39 @@ audience.
 - Keep the code *generalizable*. Our members come from diverse fields of
 research. What we share is the need to code.
 
+**Come 10 min** early, to make sure everything is set up.
+
+Before you begin:
+
+- Introduce yourself and ask that everyone else state their name and maybe their
+program
+
+A few more tips:
+
+- Start from the *(nearly) very beginning*. Open the program or IDE (RStudio/Jupyter/etc)
+with everyone else and show how to do it (for beginner lessons).
+- Make *no/few assumptions* about what the audience knows. Let them know what keys
+you are using to run a particular piece of code (Ctrl-Enter for
+Jupyter/RStudio/etc) (for beginner lessons).
+- Write the code *with the audience*. Start from an empty file and write the
+code you planned. This forces you to slow down and allows the audience to follow
+along much better. If need be, print off the code you wanted to go through to
+have the paper beside you.
+- Stay *on-topic*. There is only one hour. If an question arises that is
+off-topic, say simply that you can talk about that later.
+
+
+
+## Submitting a Pull Request
 Lessons should be submitted as a Pull Request (PR) at least *one full day* before the
 session. Submitting the lessons as a Pull Request is also a great way to find
-out whether your lesson matches what is advertised in the Events repo. New lessons 
-should be created from a copy of the `lessons/template/lesson.md` file. Follow the 
+out whether your lesson matches what is advertised in the Events repo. New lessons
+should be created from a copy of the `lessons/template/lesson.md` file. Follow the
 details and requests in the template lesson file and write up your lesson!
 
-Submitting a PR can be done by (**brief step-by-step**):
+Follow the instructions below for submitting a PR:
+
+**Brief step-by-step**:
 
 1. Forking the `studyGroup` repo
 2. (Optional) `git clone` your forked version onto your computer
@@ -80,22 +124,22 @@ Submitting a PR can be done by (**brief step-by-step**):
 6. `git push` your lesson to your forked `studyGroup` repo
 7. Submit a PR using Github's Pull Request button on your forked version
 
-In a more **detailed step-by-step**:
+**Detailed step-by-step**:
 
-1. Fork the `studyGroup` into your GitHub account. See 
+1. Fork the `studyGroup` into your GitHub account. See
 [this GitHub help for info on forking](https://help.github.com/articles/fork-a-repo/).
 2. After it is forked, `git clone` from your terminal or Git Bash of your new
 forked version of `studyGroup` onto your computer *from your account*. If you
 want it on your Desktop do:
   ```
   cd Desktop
-  git clone https://github.com/YOUR-USERNAME/studyGroup.git 
+  git clone https://github.com/YOUR-USERNAME/studyGroup.git
   ```
 
   ...replacing YOUR-USERNAME with your own user name on GitHub (eg: mine would
   look like `git clone https://github.com/lwjohnst86/studyGroup.git`).
-3. Type `ls` to confirm that the `studyGroup` folder was created. Then 
-`cd studyGroup` and `git status` or `git log` to confirm that you are now in the 
+3. Type `ls` to confirm that the `studyGroup` folder was created. Then
+`cd studyGroup` and `git status` or `git log` to confirm that you are now in the
 new repo.
 4. Add the original Study Group repo using this command:
   ```
@@ -113,12 +157,12 @@ teaching. Files and folders should be named as such:
     what the topic is (e.g. `python/intro/`, `r/loops/`).
     - If you need more than one word, keep all small caps and use a dash (`-`)
     for a space (e.g. `misc/bash-intro/`, `misc/jekyll-ghpages/`).
-6. Copy the `lessons/template/lesson.md` into the new folder and write up your 
-lesson in there, filling out requested information. This is a 
+6. Copy the `lessons/template/lesson.md` into the new folder and write up your
+lesson in there, filling out requested information. This is a
 [Markdown](https://help.github.com/articles/markdown-basics/) file (`.md`).
 The reason it should be Markdown or plain text is because GitHub
 renders the Markdown file into HTML so it's nicer to read on the site and for
-others. 
+others.
 
 7. Save the new file in the git history:
   ```
@@ -130,8 +174,8 @@ others.
   ```
   git push origin gh-pages
   ```
-9. Submit a Pull Request *from* your GitHub account *into* the UofTCoders. 
-Make sure the **base fork** is set to `UofTCoders/studyGroup` (and not `mozillascience/studyGroup`). 
+9. Submit a Pull Request *from* your GitHub account *into* the UofTCoders.
+Make sure the **base fork** is set to `UofTCoders/studyGroup` (and not `mozillascience/studyGroup`).
 Check [the GitHub help on Pull Requests](https://help.github.com/articles/using-pull-requests/).
 
 **Note**: For those wanting to contribute regularly or who edit their
@@ -141,7 +185,7 @@ workflow such as this:
 
 ```
 ## Good to name the branch to reflect what you are doing.
-git checkout -b cleaningUp 
+git checkout -b cleaningUp
 ## Make edits/changes/cleaning up
 git add files-changed
 git commit
@@ -159,29 +203,6 @@ git push origin --delete cleaningUp
 ## Update your main branch from the new upstream branch
 git pull upstream gh-pages
 ```
-
-### Giving the lesson
-
-**Come 10 min** early, to make sure everything is set up.
-
-Before you begin:
-
-- Introduce yourself and ask that everyone else state their name and maybe their 
-program
-
-A few tips:
-
-- Start from the *(nearly) very beginning*. Open the program or IDE (RStudio/Jupyter/etc)
-with everyone else and show how to do it (for beginner lessons).
-- Make *no/few assumptions* about what the audience knows. Let them know what keys
-you are using to run a particular piece of code (Ctrl-Enter for
-Jupyter/RStudio/etc) (for beginner lessons).
-- Write the code *with the audience*. Start from an empty file and write the
-code you planned. This forces you to slow down and allows the audience to follow
-along much better. If need be, print off the code you wanted to go through to
-have the paper beside you.
-- Stay *on-topic*. There is only one hour. If an question arises that is
-off-topic, say simply that you can talk about that later.
 
 -----
 
