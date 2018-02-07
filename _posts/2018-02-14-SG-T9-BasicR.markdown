@@ -1,7 +1,7 @@
 ---
 title: Basic data processing with R  
 text: A study group tutorial that will give you a friendly introduction to the basics of data manipulation in R .
-location: Room TBC Zoology Building
+location: Room ZB18 Zoology Building
 link: https://github.com/AberdeenStudyGroup/studyGroup/issues/29
 date: 2018-02-14
 startTime: '17:00'
