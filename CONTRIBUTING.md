@@ -37,7 +37,7 @@ The UofT Coders group was formed to share and learn about coding techniques and 
 + **Use Built-in Datasets**: Use built-in sample datasets instead of requiring attendees to download files.
 + **Keep in mind beginners**: make few assumptions about the knowledge of the audience, unless specified that this is an intermediate level lesson, requiring prior knowledge. Keep it simple.
 + **Minimal use of slides**: If your lesson involves coding, keep slides to a minimum if at all, focus on interactive live-coding.
-+ **Code Review**: The lesson code is posted to GitHub along with a pull request to [UofTCoders/studygroup](https://github.com/UofTCoders/studyGroup) repository at least 1 full day prior to the lesson date to allow for review. See [Making a Pull Request](#submitting-a-pull-request)
++ **Code Review**: The lesson code is posted to GitHub along with a pull request to [UofTCoders/studyGroup](https://github.com/UofTCoders/studyGroup) repository at least 1 full day prior to the lesson date to allow for review. See [Making a Pull Request](#submitting-a-pull-request)
 
 
 #### Giving the Lesson
@@ -116,7 +116,7 @@ Follow the instructions below for submitting a PR:
 
 **Brief step-by-step**:
 
-1. Forking the `studyGroup` repo
+1. Fork the `studyGroup` repo
 2. (Optional) `git clone` your forked version onto your computer
 3. Use the lesson template and make your lesson
 4. Follow the file/folder naming rules (see below)
