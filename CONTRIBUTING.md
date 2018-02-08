@@ -46,7 +46,7 @@ The UofT Coders group was formed to share and learn about coding techniques and 
 + **Introduce yourself**: Start by introducing yourself and perhaps why you're teaching this lesson.
 + **Stay on time**: Keep mindful of the time, lessons are 50-60 minutes long.
 + **Start from the very beginning**. Actually show how to open the program or IDE (RStudio/Jupyter Notebook/Shell/etc)
-with everyone else and show how to do it (for beginner lessons).
+with everyone else (especially for beginner lessons).
 + **Live-coding**: Use of slides is minimal, majority of lesson involves writing the code WITH the audience during the lesson
 + **Stay on topic**: There is only one hour, if a question arises that is off-topic, you can always suggest discussing afterwards.
 -------
