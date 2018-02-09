@@ -4,12 +4,6 @@
 
 - name: Zoe Francis
   github: zoelynnfrancis
-    
-- name: Ahmed Hasan
-  github: aays
-  interests:
-    - R
-    - Python
 
 - name: Derek Howard
   github: derekhoward
@@ -27,13 +21,6 @@
     - Python
     - Julia
     - Javascript
-
-- name: Sara Mahallati
-  github: SaraMahallati
-  interests:
-    - MATLAB
-    - LaTeX
-    - Python
 
 - name: Abigail Cabunoc Mayes
   degree: Mozilla Science Lab
@@ -55,14 +42,10 @@
 - name: Dano Morrison
   github: jdpigeon
 
-- name: Nil Sahin
-  degree: PhD, Molecular Genetics
-  github: nsahin
-
 - name: Brian Sutherland
   github: bksutherland
 
 - name: Dawn Walker
   degree: MI, iSchool
   github: dcwalk
-  
+
