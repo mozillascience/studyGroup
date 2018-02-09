@@ -12,12 +12,28 @@
   interests:
     - R
 
+- name: Ahmed Hasan
+  position: Course Coordinator
+  degree: MSc, Biology
+  github: aays
+  interests:
+    - R
+    - Python
+
 - name: Luke W Johnston
-  position: Treasurer
+  position: Technical Admin (remote)
   degree: PhD, Nutritional Sciences
   github: lwjohnst86
   interests:
     - R
+
+- name: Sara Mahallati
+  position: Technical Admin (remote)
+  degree: PhD, Biomedical Engineering
+  github: SaraMahallati
+  interests:
+    - MATLAB
+    - Python
 
 - name: Elliott Sales de Andrade
   position: Technical Admin
@@ -27,6 +43,13 @@
     - Fortran
     - Python
     - Visualization
+
+- name: Nil Sahin
+  position: Treasurer
+  degree: PhD, Computational Biology
+  github: nsahin
+  interests:
+    - Python
 
 - name: Lina Tran
   position: Admin
