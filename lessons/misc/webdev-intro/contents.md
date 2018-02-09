@@ -1,3 +1,8 @@
+---
+layout: page
+title: 'Intro to web development with HTML/CSS/JS'
+---
+
 # Overview
 
 This is a very brief introduction to programming for the web, focused on the "front end". We'll talk about
@@ -39,10 +44,7 @@ A website is separated into 3 parts:
 
 ## In the browser
 
-<figure>
-![rendering a website](./img/rendering.svg)
-<figcaption>source: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works)</figcaption>
-</figure>
+![rendering a website. Source: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works)](../img/rendering.svg)
 
 The HTML/CSS are used to create the DOM, while JavaScript interacts with it.
 
@@ -68,7 +70,7 @@ HyperText Markup Language
 
 - A way of adding semantics to text
 - First designed for static documents based on SGML
-  - tags for: h1-7, paragraphs, tables, links, emphasis
+  - tags for: h1 to h7, paragraphs, tables, links, emphasis
 - Now on HTML 5, fully made with the modern web in mind
   - main, nav, section, article, header, footer, video, etc.
 
@@ -78,7 +80,7 @@ HyperText Markup Language
 <!-- comments -->
 ```
 
-## Sample HTML Document
+## [Sample HTML Document](../sample/index.html)
 
 Things to note in this document:
 
@@ -139,7 +141,7 @@ Cascading style sheets describe the *appearance* of elements.
 
 Syntax:
 
-*`selector`* **`{`** *`property: value;`* ... **`}`**
+`selector { property: value; ... }`
 
 The whole statement is a "*rule*". Each `property: value;` pair is a "*declaration*".
  
@@ -188,7 +190,7 @@ Selects the top-level heading directly adjacent to a paragraph which is the chil
   - `h1:first-of-type` selects the first `h1` of its siblings
   - `p:nth-of-type(2n+1)` selects all odd paragraphs
 - Psuedo-elements preceded by two colons `::`
-  - Often used to add decoration ``[href^=http}::after { content: '⤴'; }
+  - Often used to add decoration ``[href^=http]::after { content: '⤴'; }``
 
 ## Declarations (`property: value;`)
 
@@ -199,7 +201,7 @@ Common properties include:
  - `background` : as above
  - `display` : `block`, `inline`, `block-inline`, `flex`, etc.
  - `margin-top`: a length `0em`, `0.3rem`, `4px`, `1%`
- - 'visible'
+ - `visible`
 
 You'll have to look up a reference for all the possibilities.
 
@@ -528,7 +530,7 @@ Just a syntactic wrapping of what we covered before.
 class C extends B {
     constructor(c) {
         super();
-        this.foo = -1
+        this.foo = -1;
         this.varC = c;
     };
 
