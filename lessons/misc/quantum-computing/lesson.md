@@ -24,4 +24,4 @@ We go over the matrix algebra for qubits, some examples of quantum gates acting 
 
 Then we go through Grover's search algorithm in Python and try it out on the IBM quantum experience machine.
 
-See the notebooks in the linked folder and QuantumComputing_UofTcoders.pdf for the slides.
+See the [notebooks](https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/misc/quantum-computing/grovers-algorthim-2-qubits.ipynb) in the linked folder and [QuantumComputing_UofTcoders.pdf](https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/misc/quantum-computing/QuantumComputing_UofTcoders.phd) for the slides.
