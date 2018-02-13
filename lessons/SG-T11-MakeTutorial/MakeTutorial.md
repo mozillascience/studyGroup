@@ -26,6 +26,8 @@ The tutorial is divided in 4 parts:
 
 #### <a href="#tutorial"> 4. Upload the tutorial on the website </a>
 
+#### <a href="#links"> 5. Useful links </a>
+
 <a name="event"></a>
 ## 1. Open an issue and create the event on the website
 
@@ -81,7 +83,7 @@ Let's go back to develop the script for the tutorial.
 
 #### Step 1
 
-* **For RStudio users**
+##### For RStudio users
 If you don't have Git installed on your machine then go though Part 1 of [this tutorial](https://aberdeenstudygroup.github.io/studyGroup/lessons/SG-T1-GitHubVersionControl/VersionControl/).
 Once Git is installed and configured, from your new repository page, click on the green button **Clone or download** and copy the link:
 
@@ -93,7 +95,7 @@ The open RStudio open the File menu and click on New Project. Choose the **Versi
 
 Now the GitHub repository is connected to the folder on your machine, so you can commit and push changes to the online repository. For now just open a new R script.
 
-* **For everyone else**
+##### For everyone else
 If you use Tinn-R or any other script editor to write your code just open a new script.
 
 #### Step 2
@@ -122,11 +124,11 @@ Make sure you save any plots you produce with this script.
 
 #### Step 3
 
-* **For RStudio users**
+##### For RStudio users
 After you have saved your script and your plots, stage the changes in the Git tab, commit and push them to your remote repository. You can follow the workflow explained in [this tutorial](https://aberdeenstudygroup.github.io/studyGroup/lessons/SG-T1-GitHubVersionControl/VersionControl/).
 If you have data files to upload, then follow the steps for non-RStudio users.
 
-* **For everyone else**
+##### For everyone else
 
 All you need to do now is upload your script onto your new repository. Go to your new repository and click on Upload files, browse to your file or drag it into the repository. Then click on the green button **Commit changes**.
 
@@ -252,6 +254,22 @@ Write the `html` code that you will need to insert the plot you saved into your 
 
 #### Step 5
 We are finally ready to upload our tutorial on GitHub.
+Go back to the **AberdeenStudyGroup/studyGroup** [repository](https://github.com/AberdeenStudyGroup/studyGroup) and open the directory **lessons**. This directory contains all the tutorials that have been developed for the Study Group. To add your own, simply click on **Create new file**. We will now create a new folder inside this directory by writing the name of the new directory followed by `/` and by `README.md`.
+
+<center><img src="../Tutorial.PNG" alt="Img" style="width: 800px;"/></center>
+
+Write an informative README file and then click on the green button **Commit new file**.
+Now you can add your tutorial and all of your image files by simply uploading them into this directory. Just click on **Upload files**, choose your files and commit your changes. Done!
+Now you can admire your tutorial on the Aberdeen Study Group [website](https://aberdeenstudygroup.github.io/studyGroup/lessons/).
 
 
-If you want to learn more on markdown syntax have a look at [this tutorial](https://www.markdowntutorial.com/).
+<a name="links"></a>
+## 5. Useful links
+
+* Mozilla has created an **awesome** handbook for Study Group leaders. You can find it at [this link](https://mozillascience.github.io/study-group-orientation/index.html)
+
+* If you want to learn more on markdown syntax have a look at this [Aberdeen Study Group tutorial](https://aberdeenstudygroup.github.io/studyGroup/lessons/SG-T5-RMarkdown/Intro_RMarkdown/)
+
+* This guide to [Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/) is meant to help Git and GitHub beginners get up and running with GitHub Pages and Jekyll in an afternoon!
+
+* Have a look at this blog post on [What makes a good programming tutorial](https://www.makeuseof.com/tag/makes-good-programming-tutorial/)
