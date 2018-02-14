@@ -80,11 +80,11 @@ ggplot(data=n.ind,aes(x=as.numeric(month), y=n, colour=year)) + geom_line() + ge
 
 ggplot(data=n.ind,aes(x=as.numeric(month), y=n, colour=year)) + geom_line() + geom_point() + facet_wrap(~species,scales=("free_y")) +scale_x_continuous(breaks=seq(1,12,1)) +xlab("Month")
 ```
-<center><img src="../Plot1.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Plot1.png" alt="Img" style="width: 800px;"/></center>
 
-<center><img src="../Plot2.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Plot2.png" alt="Img" style="width: 800px;"/></center>
 
-<center><img src="../Plot3.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Plot3.png" alt="Img" style="width: 800px;"/></center>
 
 For many species we only have a few observations. So lets look at only at one of the species that have higher values.
 ```{r}
@@ -107,7 +107,7 @@ boxplot(n~season, n.sp)
 t.test(n~season, n.sp)
 ```
 
-<center><img src="../Plot4.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Plot4.png" alt="Img" style="width: 800px;"/></center>
 
 Now lets see if there are differences between the year for the overall average and for each season separately.
 ```{r}
@@ -126,9 +126,9 @@ ggplot(year, aes(x=as.numeric(year),y=mean))+geom_line()+geom_point()+xlab("Year
 ggplot(n.sp, aes(x=as.numeric(year),y=n, color=season))+geom_line()+geom_point()+xlab("Year")+ylab("N ind")
 ```
 
-<center><img src="../Plot5.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Plot5.png" alt="Img" style="width: 800px;"/></center>
 
-<center><img src="../Plot6.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Plot6.png" alt="Img" style="width: 800px;"/></center>
 
 You can see that from 1997 there is an inversion in the general trend, with more sharks in winter than spring - lets see if there is any relation with environmental variables.
 To start we calculate the both the mean and max temperature per season and year. Notice that the data has a lot of NA. Arithmetic functions on NA yield NA.
@@ -163,7 +163,7 @@ lines(lowess(mean.temp,n), col="blue") # lowess line (x,y) - error: R doesn't kn
 lines(lowess(n.sp$mean.temp,n.sp$n), col="blue") # lowess line (x,y)
 ```
 
-<center><img src="../Plot7.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Plot7.png" alt="Img" style="width: 800px;"/></center>
 
 It seems that there are some extreme values in the data: this can bias/change the fit estimates and predictions.
 In some cases outliers don't have to be removed, it depends if the data makes sense or if it as sampling error. other ways to deal with outliers are data transformation  or use a different model. Two very good book on the subject are "Analysing ecological data" and "A beginner's guide to R" for Alain Zuur.
@@ -185,9 +185,9 @@ lines(lowess(n.sp.out$mean.temp,n.sp.out$n), col="blue") # lowess line (x,y)
 cor.test(n.sp.out$n, n.sp.out$mean.temp) # now the correlation between mean temperature and n indivuals is significative.
 ```
 
-<center><img src="../Plot8.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Plot8.png" alt="Img" style="width: 800px;"/></center>
 
-<center><img src="../Plot9.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Plot9.png" alt="Img" style="width: 800px;"/></center>
 
 One last thing before finish, lets plot the data with and without outliers side by side in and save it as jpeg.
 ```{r error=TRUE}
@@ -203,4 +203,4 @@ lines(lowess(n.sp.out$mean.temp,n.sp.out$n), col="blue") # lowess line (x,y))
 
 dev.off () # this closes the image
 ```
-<center><img src="../outliers.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../outliers.jpg" alt="Img" style="width: 800px;"/></center>
