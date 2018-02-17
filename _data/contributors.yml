@@ -4,6 +4,7 @@
   interests:
     - Interdisciplinary Conservation Science
     - Open Science
+    - For ever The general
 
 - name: Matthew Wolak
   affiliation: University of Aberdeen
@@ -19,15 +20,6 @@
   interests:
     - Molecular Ecology & Evolution
     - Disease Ecology
-    
-  
-- name: Julien Martin
-  affiliation: University of Aberdeen
-  github: JulienGAMArtin
-  interests:
-    - Evolutionary & Behavioural Ecology
-    - Statistics
-
 
 - name: Deon Roos
   affiliation: University of Aberdeen
@@ -42,11 +34,5 @@
   interests:
     - Bioinformatics 
     - Next Generation Sequencing
-    
-- name: Cristian Navarro
-  affiliation: University of Aberdeen
-  github: CristianNa
-  interests:
-    - Community and trophic Ecology 
-    - Coding
+
 

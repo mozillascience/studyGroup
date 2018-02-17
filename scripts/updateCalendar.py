@@ -41,12 +41,12 @@ except ImportError:
 
 # Modify these variables in step 2 above -------------------
 # APPLICATION_NAME: app name you created in step one above:
-APPLICATION_NAME = 'test'
+APPLICATION_NAME = 'AberdeenStudyGroup Calendar'
 # CALENDAR_ID: google account name you created for your calendar:
-CALENDAR_ID = 'USER@gmail.com'
+CALENDAR_ID = 'aberdeenstudygroup@gmail.com'
 # TIME_ZONE_STR: check here:
 # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-TIME_ZONE_STR = 'America/Vancouver'
+TIME_ZONE_STR = 'Europe/London'
 # -----------------------------------------------------------
 
 SCOPES = 'https://www.googleapis.com/auth/calendar'
@@ -176,7 +176,7 @@ def get_credentials():
     if not os.path.exists(credential_dir):
         os.makedirs(credential_dir)
     credential_path = os.path.join(credential_dir,
-                                   'google-sfuStudyGroupCalendar.json')
+                                   'google-AberdeenStudyGroupCalendar.json')
 
     store = oauth2client.file.Storage(credential_path)
     credentials = store.get()
