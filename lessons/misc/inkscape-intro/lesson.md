@@ -89,15 +89,17 @@ Most hotkeys can be seen in the menus, or hovering over buttons on the interface
 
 Everything else is probably best learned through using it. Here are some samples of what we'll make in the tutorial.
 
-![flow chart](./flow_chart.svgz)
+![flow chart](./flow_chart.svg)
 
-![beaker drawing](./beaker_demo.svgz)
+![beaker drawing](./beaker_demo.svg)
 
-![dna diagram](./dna_demo.svgz)
+![dna diagram](./dna_demo.svg)
 
-![lattice](./lattice_demo.svgz)
+![lattice](./lattice_demo.svg)
 
-![phages (group and clone)](./phage_demo.svgz)
+![phages (group and clone)](./phage_demo.svg)
+
+![equations](./phage_flow_demo.svg)
 
 ## Python extensions
 
