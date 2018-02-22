@@ -66,9 +66,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="83.296004"
-     inkscape:cy="140.94385"
+     inkscape:zoom="3.8820147"
+     inkscape:cx="168.54488"
+     inkscape:cy="146.95977"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -81,7 +81,9 @@
      inkscape:window-height="1315"
      inkscape:window-x="0"
      inkscape:window-y="23"
-     inkscape:window-maximized="0" />
+     inkscape:window-maximized="0"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -238,7 +240,7 @@
          y="57.562317" />
     </g>
     <image
-       y="25.128462"
+       y="25.205448"
        x="88.730728"
        id="image1146"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKMAAACOCAYAAABdXrhoAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
@@ -443,7 +445,7 @@ TSuTtNXRAfCkJtcOEP8HvKPO1bRjSE0AAAAASUVORK5CYII=
          style="opacity:1;vector-effect:none;fill:url(#linearGradient1222);fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill" />
     </g>
     <image
-       y="63.456005"
+       y="63.725456"
        x="88.347084"
        id="image1960"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAggAAAHGCAYAAAAR9nM6AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
