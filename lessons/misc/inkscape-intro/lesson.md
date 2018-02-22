@@ -28,6 +28,60 @@ table.content-tab {margin: 1em; width:100%;}
 </table>
 
 ## Example
- ![Vector vs. Bitmap](./vector_bitmap.svg)
+
+![Vector vs. Bitmap](./vector_bitmap.svg)
+
+Notice how at its regular size, all copies look the same for screen/printing resolutions lower than 96dpi. The difference is noticeable once we try to zoom in, or view it at higher resolutions.
+
+# Closed/Proprietary vs. Open Source
+
+There are all sorts of philosophical reasons for opening source code and toolsets, and others for opening up content created. When it comes down to practice, the reasons are basically:
+- **it's free**;
+- you can open and change it in the future;
+- other people can make new work from yours.
+
+Inkscape is the most mature, and most cross-platform vector graphics program.
+
+# Interface Tour
+
+The interface of inkscape tends to be quite crowded, so it can be overwhelming when you first open the application. In fact, it's so crowded, I don't think it will help much to include a screenshot.
+
+Instead, here are the important things to notice (in order of importance):
+- Tool palette, typically on the left
+- Tool-specific options, typically top-left
+- Tool tips (e.g. modifier keys), at the bottom
+- General toolbar (save, copy, group, **show panels**), maybe top or right
+- Transform/Format/etc. panels, typically hidden, but on the right when shown
+- Snaps, typically bottom or right
+- Colour palette, at the bottom
+
+# Keyboard and mouse
+The other tricky part is that it's optimized for keyboard and mouse. Most tools have different behaviour when a modifier key is held down. For example, with the selector tool, shift+click adds to the selection, Alt+Drag does a path-selection instead of rectangle, and shift+alt+drag adds to the current selection with a path-selection.
+**Note**: if something is already selected, alt+drag moves the object.
+
+Right-clicks and middle-clicks will also have different behaviours.
+
+A notable modifier key is *Ctrl* (^). This will often force more "regular" shapes/orientations. For example, horizontal/vertical lines and moves, 45-degree rotation, and aspect-ratio locked scaling.
+
+Often, *Shift* is used as a secondary modifier for opposite behaviour. Examples,
+- ctrl+z is undo, shift+ctrl+z is redo
+- ctrl+g groups objects, shift+ctrl+g ungroups 
+
+## Notable hotkeys
+
+Most hotkeys can be seen in the menus, or hovering over buttons on the interface. The following are ones that I use frequently.
+
+- Escape will change tools and/or deselect. Keep pressing it until you're back at the selection tool with nothing selected.
+- The number row handles zooming 
+  - `=`, `-` zoom in and out
+  - `5` zooms to fit document
+  - `1` goes 1:1
+  - back-tick (`) goes to the previous zoom (like undo) 
+- ctrl-z for undo
+- ctrl-d for duplicate
+- alt-d for clone
+- ctrl-g for group
+- ctrl-c for copy
+- shift-ctrl-c for past style (stroke and fill)
 
 
