@@ -85,3 +85,16 @@ Most hotkeys can be seen in the menus, or hovering over buttons on the interface
 - shift-ctrl-c for past style (stroke and fill)
 
 
+# Demo Tutorials
+
+Everything else is probably best learned through using it. Here are some samples of what we'll make in the tutorial.
+
+![flow chart](./flow_chart.svgz)
+
+![beaker drawing](./beaker_demo.svgz)
+
+![dna diagram](./dna_demo.svgz)
+
+![lattice](./lattice_demo.svgz)
+
+![phages (group and clone)](./phage_demo.svgz)
