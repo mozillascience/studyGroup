@@ -98,3 +98,17 @@ Everything else is probably best learned through using it. Here are some samples
 ![lattice](./lattice_demo.svgz)
 
 ![phages (group and clone)](./phage_demo.svgz)
+
+## Python extensions
+
+There may be a problem related to python versions when running extensions. Be sure to have Python 2.7 installed, and then specify the interpreter in `~/.config/inkscape/preferences.xml`
+
+The interpreter option will likely not be there initially.
+
+```
+  <group
+     id="extensions"
+     python-interpreter="/usr/bin/python2.7"
+     ...
+  >
+```
