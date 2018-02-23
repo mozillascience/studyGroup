@@ -96,44 +96,43 @@ div.demo-table>div img {max-width: 100%}
 </style>
 <div class="demo-table">
 <div class="left">
-
-![flow chart](./flow_chart.svg)
-
+<img alt="flow chart" src="./flow_chart.svg">
 </div>
 <div class="right">
 Demonstrates rectangles, transforms, lines, text, clone, and gradients
 </div>
 
 <div class="left">
-![phages (group and clone)](./phage_demo.svg)
+<img alt="phages (group and clone)" src="./phage_demo.svg">
+</div>
+<div class="right">
+Demonstrates polygons, rounded rectangles, elipses, object->path, grouping,
+spraying clones, arranging objects.
+</div>
+
+<div class="left">
+<img alt="equations" src="./phage_flow_demo.svg">
 </div>
 <div class="right">
 Demonstrates polygons, rounded rectangles, elipses, object->path, grouping, clones, arrows, importing PDFs.
 </div>
 
 <div class="left">
-![equations](./phage_flow_demo.svg)
+<img alt="lattice" src="./lattice_demo.svg">
 </div>
 <div class="right">
 Demonstrates rectangles, transforms, lines, clone, and gradients
 </div>
 
 <div class="left">
-![lattice](./lattice_demo.svg)
+<img alt="beaker drawing" src="./beaker_demo.svg">
 </div>
 <div class="right">
 Demonstrates rectangles, transforms, lines, clone, and gradients
 </div>
 
 <div class="left">
-![beaker drawing](./beaker_demo.svg)
-</div>
-<div class="right">
-Demonstrates rectangles, transforms, lines, clone, and gradients
-</div>
-
-<div class="left">
-![dna diagram](./dna_demo.svg)
+<img alt="dna diagram" src="./dna_demo.svg">
 </div>
 <div class="right">
 Demonstrates rectangles, transforms, lines, clone, and gradients
