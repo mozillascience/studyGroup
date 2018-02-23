@@ -1,4 +1,4 @@
-```
+<!-- 
 If you're posting an event, volunteer, job or other
 opportunity to the UofT Coders Study Group, please address 
 all of the following points in your post:
@@ -9,7 +9,5 @@ all of the following points in your post:
 - Details of issue/event/opportunity
 - Why you think UofT Coders can help or would be interested?
 
-You may remove this code block when submitting the issue.
-
 Thanks for sharing with the community! 
-```
+-->
