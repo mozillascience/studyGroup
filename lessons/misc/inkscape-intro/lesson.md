@@ -96,14 +96,14 @@ div.demo-table>div img {max-width: 100%}
 </style>
 <div class="demo-table">
 <div class="left">
-<img alt="flow chart" src="./flow_chart.svg">
+<img alt="flow chart" src="../demos/flow_chart.svg">
 </div>
 <div class="right">
 Demonstrates rectangles, transforms, lines, text, clone, and gradients
 </div>
 
 <div class="left">
-<img alt="phages (group and clone)" src="./phage_demo.svg">
+<img alt="phages (group and clone)" src="../demos/phage_demo.svg">
 </div>
 <div class="right">
 Demonstrates polygons, rounded rectangles, elipses, object->path, grouping,
@@ -111,31 +111,31 @@ spraying clones, arranging objects.
 </div>
 
 <div class="left">
-<img alt="equations" src="./phage_flow_demo.svg">
+<img alt="equations" src="../demos/phage_flow_demo.svg">
 </div>
 <div class="right">
 Demonstrates polygons, rounded rectangles, elipses, object->path, grouping, clones, arrows, importing PDFs.
 </div>
 
 <div class="left">
-<img alt="lattice" src="./lattice_demo.svg">
+<img alt="lattice" src="../demos/lattice_demo.svg">
 </div>
 <div class="right">
-Demonstrates rectangles, transforms, lines, clone, and gradients
+Demonstrates circles, tiled clones, arrange, layers, lines, paste formatting, transform panel.
 </div>
 
 <div class="left">
-<img alt="beaker drawing" src="./beaker_demo.svg">
+<img alt="beaker drawing" src="../demos/beaker_demo.svg">
 </div>
 <div class="right">
-Demonstrates rectangles, transforms, lines, clone, and gradients
+Demonstrates rounded rectangles, object->path, bezier curves, path offsets, gradients, clipping, transparency, layers, spraying clones
 </div>
 
 <div class="left">
-<img alt="dna diagram" src="./dna_demo.svg">
+<img alt="dna diagram" src="../dna_demo.svg">
 </div>
 <div class="right">
-Demonstrates rectangles, transforms, lines, clone, and gradients
+Demonstrates extensions (render -> plot function), cutting/joining paths, breaking/combining paths, cloning, z-order, rounded rectangles, transformations.
 </div>
 
 </div>
