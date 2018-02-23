@@ -96,17 +96,19 @@ div.demo-table>div img {max-width: 100%}
 </style>
 <div class="demo-table">
 <div class="left">
+
 ![flow chart](./flow_chart.svg)
+
 </div>
 <div class="right">
-Demonstrates rectangles, transforms, lines, clone, and gradients
+Demonstrates rectangles, transforms, lines, text, clone, and gradients
 </div>
 
 <div class="left">
 ![phages (group and clone)](./phage_demo.svg)
 </div>
 <div class="right">
-Demonstrates rectangles, transforms, lines, clone, and gradients
+Demonstrates polygons, rounded rectangles, elipses, object->path, grouping, clones, arrows, importing PDFs.
 </div>
 
 <div class="left">
