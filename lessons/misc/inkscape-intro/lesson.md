@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'Inkscape (open source graphic design)'
+title: 'Intro to Inkscape for graphic design'
 visible: true
 tags:
   - misc
@@ -89,17 +89,58 @@ Most hotkeys can be seen in the menus, or hovering over buttons on the interface
 
 Everything else is probably best learned through using it. Here are some samples of what we'll make in the tutorial.
 
+<style>
+div.demo-table {width: 90%; display:flex; flex-flow: row wrap; justify-content: center; align-items: stretch;}
+div.demo-table>div {width: 40%;}
+div.demo-table>div img {max-width: 100%}
+</style>
+<div class="demo-table">
+<div class="left">
 ![flow chart](./flow_chart.svg)
+</div>
+<div class="right>
+Demonstrates rectangles, transforms, lines, clone, and gradients
+</div>
 
-![beaker drawing](./beaker_demo.svg)
-
-![dna diagram](./dna_demo.svg)
-
-![lattice](./lattice_demo.svg)
-
+<div class="left">
 ![phages (group and clone)](./phage_demo.svg)
+</div>
+<div class="right>
+Demonstrates rectangles, transforms, lines, clone, and gradients
+</div>
 
+<div class="left">
 ![equations](./phage_flow_demo.svg)
+</div>
+<div class="right>
+Demonstrates rectangles, transforms, lines, clone, and gradients
+</div>
+
+<div class="left">
+![lattice](./lattice_demo.svg)
+</div>
+<div class="right>
+Demonstrates rectangles, transforms, lines, clone, and gradients
+</div>
+
+<div class="left">
+![beaker drawing](./beaker_demo.svg)
+</div>
+<div class="right>
+Demonstrates rectangles, transforms, lines, clone, and gradients
+</div>
+
+<div class="left">
+![dna diagram](./dna_demo.svg)
+</div>
+<div class="right>
+Demonstrates rectangles, transforms, lines, clone, and gradients
+</div>
+
+</div>
+
+
+
 
 ## Python extensions
 
