@@ -98,42 +98,42 @@ div.demo-table>div img {max-width: 100%}
 <div class="left">
 ![flow chart](./flow_chart.svg)
 </div>
-<div class="right>
+<div class="right">
 Demonstrates rectangles, transforms, lines, clone, and gradients
 </div>
 
 <div class="left">
 ![phages (group and clone)](./phage_demo.svg)
 </div>
-<div class="right>
+<div class="right">
 Demonstrates rectangles, transforms, lines, clone, and gradients
 </div>
 
 <div class="left">
 ![equations](./phage_flow_demo.svg)
 </div>
-<div class="right>
+<div class="right">
 Demonstrates rectangles, transforms, lines, clone, and gradients
 </div>
 
 <div class="left">
 ![lattice](./lattice_demo.svg)
 </div>
-<div class="right>
+<div class="right">
 Demonstrates rectangles, transforms, lines, clone, and gradients
 </div>
 
 <div class="left">
 ![beaker drawing](./beaker_demo.svg)
 </div>
-<div class="right>
+<div class="right">
 Demonstrates rectangles, transforms, lines, clone, and gradients
 </div>
 
 <div class="left">
 ![dna diagram](./dna_demo.svg)
 </div>
-<div class="right>
+<div class="right">
 Demonstrates rectangles, transforms, lines, clone, and gradients
 </div>
 
