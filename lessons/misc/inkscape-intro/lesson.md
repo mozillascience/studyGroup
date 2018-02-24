@@ -145,8 +145,9 @@ Demonstrates extensions (render -> plot function), cutting/joining paths, breaki
 
 ## Python extensions
 
-There may be a problem related to python versions when running extensions. Be sure to have Python 2.7 installed, and then specify the interpreter in `~/.config/inkscape/preferences.xml`
+There may be a problem related to python versions when running some extensions. If an extension has raises a syntax error, be sure to have Python 2.7 installed, and then specify the interpreter in `~/.config/inkscape/preferences.xml`
 
+On my system (Mac OSX), Python 2.7 was located at `/usr/bin/python2.7`.
 The interpreter option will likely not be there initially.
 
 ```
@@ -156,3 +157,5 @@ The interpreter option will likely not be there initially.
      ...
   >
 ```
+
+The `plot function` extension also depended on the `lxml` module, which can be installed with `pip` (`pip2` you you have multiple versions of Python).
