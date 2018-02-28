@@ -1,0 +1,9 @@
+---
+title: Intro to 3D Printing (MADLab Certification)
+text: Learn how to safely operate Gerstein Library's Makerbot Replicator 2 3D printers 
+location: MADLAB at Gerstein
+link: https://github.com/UofTCoders/Events/issues/140
+date: 2018-03-15
+startTime: '18:10'
+endTime: '19:00'
+---
