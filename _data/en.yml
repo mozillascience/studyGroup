@@ -33,7 +33,7 @@ Ourevents:
     best way to start your Tuesday!"
     icon: fa-coffee
   - title: Hacky Hour
-    description: "<strong>Where:</strong> Pasco (University Blvd)<br>
+    description: "<strong>Where:</strong> Gentle Ben's (University Blvd)<br>
 <strong>When:</strong> 4PM - 7PM, every Thursday<br>
 <strong>What:</strong> Hacking + Happy Hour = HackyHour! Every week, researchers, 
 data scientists, and programmers around campus get together.  
@@ -42,15 +42,6 @@ Those without projects come to discuss
 their research, brainstorm new ideas, try out new technologies, or chit chat about 
 data science!"
     icon: fa-beer
-  - title: Shut Up and Write
-    description: "<strong>Where:</strong> iSpace (Science & Engineering Library)<br>
-<strong>When:</strong> 8AM - 10AM, every Friday<br>
-<strong>What:</strong> Friday mornings are dedicated to helping you write, whether 
-it's a thesis/dissertation, a peer-reviewed journal article, a grant proposal, or 
-something else. At ShutUpAndWrite, we use the 
-<a href='https://en.wikipedia.org/wiki/Pomodoro_Technique' target='_blank'>Pomodoro Technique</a>
- to help you get the most out of the time you spend writing!"
-    icon: fa-laptop
   - title: Community Events
     description: "<p><strong>Tucson Python Meetup:</strong> The goal of this group is to encourage
      more mingling, learning, and sharing ideas within the Tucson Python community. 
