@@ -132,7 +132,7 @@ Demonstrates rounded rectangles, object->path, bezier curves, path offsets, grad
 </div>
 
 <div class="left">
-<img alt="dna diagram" src="../dna_demo.svg">
+<img alt="dna diagram" src="../demos/dna_demo.svg">
 </div>
 <div class="right">
 Demonstrates extensions (render -> plot function), cutting/joining paths, breaking/combining paths, cloning, z-order, rounded rectangles, transformations.
