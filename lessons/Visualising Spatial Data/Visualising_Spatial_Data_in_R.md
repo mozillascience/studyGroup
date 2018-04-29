@@ -136,7 +136,7 @@ ebola_plot_sub
 
 ```
 
-<center><img src="../Ebola_map.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Ebola_map.png" alt="Img" style="width: 800px;"/></center>
 
 
 We can now use the gganimate package to plot the data for all weeks. To do this
