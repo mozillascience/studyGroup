@@ -223,6 +223,8 @@ ggmap(map_no_text)
 
 ```
 
+<center><img src="../map_text.PNG" alt="Img" style="width: 800px;"/></center>
+
 For this visualisation we are going to plot the density of points using the
 ```stat_density2d``` function. This function utilises the ```kde2d``` function to calculate
 contours and create a heatmap. The ```kde2d``` function determines the
