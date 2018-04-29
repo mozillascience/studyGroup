@@ -135,6 +135,10 @@ ebola_plot <- ggplot(data = ebola_data_sub, aes(x = long, y = lat, group=group))
 ebola_plot_sub
 
 ```
+
+<center><img src="../Ebola_map.PNG" alt="Img" style="width: 800px;"/></center>
+
+
 We can now use the gganimate package to plot the data for all weeks. To do this
 we use similar code for the ```ggplot``` function but simply add in the ```frame=date.y``` argument.
 In the ebola_data dataframe date.y is the variable that contains information about the week case numbers
