@@ -223,7 +223,7 @@ ggmap(map_no_text)
 
 ```
 
-<center><img src="../map_text.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../map_text.png" alt="Img" style="width: 800px;"/></center>
 
 For this visualisation we are going to plot the density of points using the
 ```stat_density2d``` function. This function utilises the ```kde2d``` function to calculate
@@ -281,7 +281,7 @@ raw_points
 
 ```
 
-<center><img src="../crime_points.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../crime_points.png" alt="Img" style="width: 800px;"/></center>
 
 Finally we will add stat_density2d to create a heatmap of the density of these
 points. The ```stat_density2d``` function will accept the same aesthetic arguments as most ggplot
@@ -306,4 +306,4 @@ Bike_dens_200m<- ggmap(map) + stat_density2d(data = c_data_b,aes(x = Longitude, 
 Bike_dens_200m
 
 ```
-<center><img src="../crime_dens.PNG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../crime_dens.png" alt="Img" style="width: 800px;"/></center>
