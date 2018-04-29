@@ -161,6 +161,8 @@ gganimate(ebola_plot_animate, filename="ebola_gif.gif")
 
 ```
 
+<center><img src="../ebola_gif.gif" alt="Img" style="width: 800px;"/></center>
+
 <a name="Crime"></a>
 ## 2. Visualising crime data using ggmap
 
