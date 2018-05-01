@@ -25,11 +25,13 @@ in Sierra Leone and data from the World Health Organisation on the weekly number
 cases in each area.
 
 To start you will need to download all of the data, which can be found
-in the gganimate_ggmap_tutorial folder (https://github.com/AberdeenStudyGroup/SG-T14_ggmap_gganimate). 
-You will also need to install ImageMagick. You can download it from https://www.imagemagick.org/script/download.php. 
+in the gganimate_ggmap_tutorial [folder](https://github.com/AberdeenStudyGroup/SG-T14_ggmap_gganimate). 
+You will also need to install ImageMagick. You can download it from [here](https://www.imagemagick.org/script/download.php). 
 
 Next open RStudio and load all of the required packages. If you don't
-have these packages already they can be installed using the ```install.packages()``` function. We will then include a line of code that will help gganimate find imagemagick using ani.options
+have these packages already they can be installed using the ```install.packages()``` function. 
+We will then include a line of code that will help gganimate find imagemagick using ```ani.options()``` from the animation package.
+You will need to include the link to your "ImageMagick" foler in Program Files followed by ```magick.exe```
 
 ```{r}
 
@@ -37,7 +39,8 @@ library(tidyr)
 library(rgdal)
 library(ggplot2)
 library(gganimate)
-kibrary(animation)
+library(animation)
+ani.options(convert=shortPathName("Link_to_ImageMagick_folder\\magick.exe"))
 
 ```
 
@@ -52,13 +55,13 @@ setwd("Your_working_directory")
 ```
 
 Now you can import the data for the polygons showing the administrative areas
-of Sierra Leone. We will do this using the readOGR function. We will use two
+of Sierra Leone. We will do this using the ```readOGR``` function. We will use two
 arguments in this case ```“dsn=”``` & ```layer=```. The ```dsn=``` argument is the path to
 the folder that contains your Sierra Lone shape file (the folder named "Sierra_Leone"),
 this should also include the file name of your shapefile with the “.shp” extension.
 The ```layer=``` argument should just include the filename of your shapefile without
 the any extension. We also specify the projection for this data using ```proj4string```
-(see Section 1.2 in the Open Spatial Anaylsis 1 Tutorial ) in this case we will use
+(see Section 1.2 in the Open Spatial Analysis 1 Tutorial ) in this case we will use
 the "+proj=longlat" as our coordinates are in decimal latitude and longitude.
 
 ```{r}
@@ -78,10 +81,10 @@ Now you can plot your shapefile in R
 plot(SL)
 
 ```
-Now that we have our shapefile imported we will transform it into a dataframe using ```fortify``` and
-join it with a dataframe of metadata associated with each polygon using the ```merge``` function.
-This function will merge two dataframes based on a common attribute, in this case
-we are merging them based on the column "id" and by.y=0 megres these dataframes by row.name
+Now that we have our shapefile imported we will transform it into a data frame using ```fortify``` and
+join it with a data frame of metadata associated with each polygon using the ```merge``` function.
+This function will merge two data frames based on a common attribute, in this case
+we are merging them based on the column "id" and by.y=0 merges these data frames by row.name
 
 
 ```{r}
@@ -92,12 +95,13 @@ SL.df <- merge(fortify(SL), as.data.frame(SL), by.x="id", by.y=0)
 ```
 
 Now we will import the data for the weekly numbers of ebola cases. After importing the
-data we will reformat it using the ```gather``` function. The dataframe is in a wide format
-,each week is a column that contains the case number for each area. The ```gather``` function tranforms the data into a long format, one column
-"date" will contain the weeks and another column which contains the number of cases "cases".
-The ```-admin2Name``` means that gather will keep this column intact and duplicate the area names as needed.
-After this we create a new dataframe with both the spatial data and the weekly case dataframe
-using the ```merge``` function to merge the polygon datframe with the cases dataframe by area name.
+data we will reformat it using the ```gather``` function. The dataframe is in a wide format,
+each week is a column that contains the case number for each area. The ```gather``` function 
+transforms the data into a long format, one column "date" will contain the weeks and another 
+column which contains the number of cases "cases". The ```-admin2Name``` means that gather will 
+keep this column intact and duplicate the area names as needed. After this we create a new data frame 
+with both the spatial data and the weekly case data frame using the ```merge``` function to merge 
+the polygon datframe with the cases data frame by area name.
 
 ```{r}
 
@@ -113,7 +117,7 @@ str(ebola) ## Data is now in long format
 ebola_data <- merge(SL.df,ebola,by="admin2Name")
 
 ```
-We can now use the new ebola_data dataframe to plot the number of cases for each
+We can now use the new ebola_data data frame to plot the number of cases for each
 area in Sierra Leone. We start by plotting the cases for a single week using ```ggplot```
 (see ggplot tutorial for an introduction on how to use ggplot2) it's important to include
 the ```group=group``` argument to make sure that polygons are plotted in the correct order. By
@@ -127,7 +131,7 @@ high fill colours. http://colorbrewer2.org is a good place to source colour sche
 ebola_data_sub <- ebola_data[ebola_data$date.y=="X.2014.W51.",]
 
 ## create ggplot object ##
-ebola_plot <- ggplot(data = ebola_data_sub, aes(x = long, y = lat, group=group)) +
+ebola_plot_sub <- ggplot(data = ebola_data_sub, aes(x = long, y = lat, group=group)) +
   geom_polygon(aes(fill = cases),color="black") +
   scale_fill_gradient(low = "#fcfbfd", high = "#2d004b") +
   coord_map() + theme_minimal()
@@ -143,9 +147,9 @@ ebola_plot_sub
 
 We can now use the gganimate package to plot the data for all weeks. To do this
 we use similar code for the ```ggplot``` function but simply add in the ```frame=date.y``` argument.
-In the ebola_data dataframe date.y is the variable that contains information about the week case numbers
-were collected for. The ```gganimate``` fuction will then create a plot for each week and combine these to create a gif.
-We use the first arguement to tell gganimate the ggplot object we want to gganimate
+In the ebola_data data frame date.y is the variable that contains information about the week case numbers
+were collected for. The ```gganimate``` function will then create a plot for each week and combine these to create a gif.
+We use the first argument to tell gganimate the ggplot object we want to gganimate
 and the ```filename=``` argument to designate a filename for a file to be written out into the working directory.
 It might take a little while to do this.
 
