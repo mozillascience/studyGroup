@@ -124,7 +124,7 @@ area in Sierra Leone. We start by plotting the cases for a single week using ```
 the ```group=group``` argument to make sure that polygons are plotted in the correct order. By
 including ```fill=cases``` geom_polygon will change the fill colour for each polygon depending on the
 number of cases in each polygon. The ```scale_fill_gradient``` function allows us to change the low and
-high fill colours. http://colorbrewer2.org is a good place to source colour schemes for maps.
+high fill colours. [http://colorbrewer2.org](http://colorbrewer2.org) is a good place to source colour schemes for maps.
 
 
 ```{r}
@@ -214,8 +214,7 @@ download a “terrain” map although there other options ("satellite" and
 ```style=``` argument, this argument passes HTML code to the google API to
 customise the map you download. For example, if we include
 ```style='feature:all|element:labels|visibility:off``` it will remove all of the text
-from the map. https://developers.google.com/maps/documentation/static-maps/ has
-some good examples of ways to customise maps from google. We can use the function ggmap to
+from the map. [https://developers.google.com/maps/documentation/static-maps/](https://developers.google.com/maps/documentation/static-maps/) has some good examples of ways to customise maps from google. We can use the function ggmap to
 plot the map.
 
 ```{r}
