@@ -62,7 +62,7 @@ the folder that contains your Sierra Lone shape file (the folder named "Sierra_L
 this should also include the file name of your shapefile with the “.shp” extension.
 The ```layer=``` argument should just include the filename of your shapefile without
 the any extension. We also specify the projection for this data using ```proj4string```
-(see Section 1.2 in the [Open Spatial Analysis 1 Tutorial](https://aberdeenstudygroup.github.io/studyGroup/lessons/SG-T7-SpatialR/SpatialR/) in this case we will use
+(see Section 1.2 in the [Open Spatial Analysis 1 Tutorial](https://aberdeenstudygroup.github.io/studyGroup/lessons/SG-T7-SpatialR/SpatialR/) ) in this case we will use
 the "+proj=longlat" as our coordinates are in decimal latitude and longitude.
 
 ```{r}
