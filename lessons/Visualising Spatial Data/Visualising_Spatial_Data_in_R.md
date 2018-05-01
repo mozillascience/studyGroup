@@ -24,11 +24,12 @@ Ebola outbreak in Sierra Leone using a polygon shapefile of administrative areas
 in Sierra Leone and data from the World Health Organisation on the weekly number
 cases in each area.
 
-To start you will need to download all of the data. Which can be found
-in the gganimate_ggmap_tutorial folder. (link?).
+To start you will need to download all of the data, which can be found
+in the gganimate_ggmap_tutorial folder (https://github.com/AberdeenStudyGroup/SG-T14_ggmap_gganimate). 
+You will also need to install ImageMagick. You can download it from https://www.imagemagick.org/script/download.php. 
 
 Next open RStudio and load all of the required packages. If you don't
-have these packages already they can be installed using the ```install.packages()``` function
+have these packages already they can be installed using the ```install.packages()``` function. We will then include a line of code that will help gganimate find imagemagick using ani.options
 
 ```{r}
 
@@ -36,6 +37,7 @@ library(tidyr)
 library(rgdal)
 library(ggplot2)
 library(gganimate)
+kibrary(animation)
 
 ```
 
