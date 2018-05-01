@@ -24,14 +24,15 @@ Ebola outbreak in Sierra Leone using a polygon shapefile of administrative areas
 in Sierra Leone and data from the World Health Organisation on the weekly number
 cases in each area.
 
-To start you will need to download all of the data, which can be found
-in the gganimate_ggmap_tutorial [folder](https://github.com/AberdeenStudyGroup/SG-T14_ggmap_gganimate). 
+To start you will need to download all of the data, which can be found in the [gganimate_ggmap_tutorial folder](https://github.com/AberdeenStudyGroup/SG-T14_ggmap_gganimate). Once you’re there, click on the green Clone or 
+download button.You can either clone the repository on your GitHub account (if you have one) or download as a zip file. 
+
 You will also need to install ImageMagick. You can download it from [here](https://www.imagemagick.org/script/download.php). 
 
 Next open RStudio and load all of the required packages. If you don't
 have these packages already they can be installed using the ```install.packages()``` function. 
 We will then include a line of code that will help gganimate find imagemagick using ```ani.options()``` from the animation package.
-You will need to include the link to your "ImageMagick" foler in Program Files followed by ```magick.exe```
+You will need to include the link to your "ImageMagick" folder in Program Files followed by ```\\magick.exe```
 
 ```{r}
 
@@ -61,7 +62,7 @@ the folder that contains your Sierra Lone shape file (the folder named "Sierra_L
 this should also include the file name of your shapefile with the “.shp” extension.
 The ```layer=``` argument should just include the filename of your shapefile without
 the any extension. We also specify the projection for this data using ```proj4string```
-(see Section 1.2 in the Open Spatial Analysis 1 Tutorial ) in this case we will use
+(see Section 1.2 in the [Open Spatial Analysis 1 Tutorial](https://aberdeenstudygroup.github.io/studyGroup/lessons/SG-T7-SpatialR/SpatialR/) in this case we will use
 the "+proj=longlat" as our coordinates are in decimal latitude and longitude.
 
 ```{r}
@@ -300,7 +301,9 @@ The arguments with ```..level..``` will vary the fill and transparency based on 
 density of points derived using the ```kde2d``` function. The higher the density estimate
 the less transparent the contours will be. As before we use the ```scale_fill_gradient```
 function to define our low and high colours. The ```scale_alpha(guide=FALSE)``` will
-remove the legend showing changes in alpha.
+remove the legend showing changes in alpha. For a more in depth desription of density maps see Section 5 in the 
+[Quantifying Population and Visualising Species Occurrence Change Tutorial](https://aberdeenstudygroup.github.io/studyGroup/lessons/SG-T2-JointWorkshop/PopulationChangeSpeciesOccurrence/)
+
 
 ```{r}
 
