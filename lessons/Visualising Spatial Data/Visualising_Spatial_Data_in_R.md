@@ -35,7 +35,7 @@ We will then include a line of code that will help gganimate find imagemagick us
 You will need to include the link to your "ImageMagick" folder in Program Files followed by ```\\magick.exe```
 
 ```{r}
-
+devtools::install_github("dgrtwo/gganimate")
 library(tidyr)
 library(rgdal)
 library(ggplot2)
