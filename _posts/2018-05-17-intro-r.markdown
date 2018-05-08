@@ -1,0 +1,9 @@
+---
+title: Intro to R
+text: An introduction to programming in R and using RStudio.
+location: MADLab at Gerstein
+link: https://github.com/UofTCoders/Events/issues/155
+date: 2018-05-17
+startTime: '18:00'
+endTime: '19:30'
+---
