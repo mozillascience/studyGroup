@@ -1,0 +1,9 @@
+---
+title: Lightning Demos: R
+text: Demonstrate what you've created using R, or demo a tool or package that you've found useful.
+location: MADLab at Gerstein
+link: https://github.com/UofTCoders/Events/issues/154
+date: 2018-05-10
+startTime: '18:00'
+endTime: '19:30'
+---
