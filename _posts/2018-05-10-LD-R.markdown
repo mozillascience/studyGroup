@@ -1,5 +1,5 @@
 ---
-title: Lightning Demos: R
+title: Lightning Demos - R
 text: Demonstrate what you've created using R, or demo a tool or package that you've found useful.
 location: MADLab at Gerstein
 link: https://github.com/UofTCoders/Events/issues/154
