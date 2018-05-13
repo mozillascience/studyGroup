@@ -80,7 +80,7 @@ includes many resources about programming education.
 
 To see live-coding in action in the UofT Coders group, watch a portion of the 
 [Intro to R livestream](https://www.youtube.com/watch?v=b74V54VFL98) taught by 
-[Ahmmed](https://github.com/aays), or look over the code that was covered in an 
+[Ahmed](https://github.com/aays), or look over the code that was covered in an 
 [R lesson](https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/r/intro/Intro_R_Sept21.R) 
 created by [Luke](https://github.com/lwjohnst86). 
 
