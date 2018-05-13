@@ -1,3 +1,11 @@
+- name: Lina Tran
+  position: President
+  degree: PhD, Physiology
+  github: linamnt
+  interests:
+    - Python
+    - R
+
 - name: Madeleine Bonsma
   position: Special Events Coordinator
   degree: PhD, Physics
@@ -44,14 +52,6 @@
   github: nsahin
   interests:
     - Python
-
-- name: Lina Tran
-  position: President
-  degree: PhD, Physiology
-  github: linamnt
-  interests:
-    - Python
-    - R
 
 - name: Joel Östblom
   position: Course Coordinator
