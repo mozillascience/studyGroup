@@ -15,9 +15,9 @@
   github: sjeblee
 
 - name: Luke W Johnston
-- degree: PhD, Nutritional Sciences
-- github: lwjohnst86
-- interests:
+  degree: PhD, Nutritional Sciences
+  github: lwjohnst86
+  interests:
     - R
 
 - name: John Ladan
@@ -48,6 +48,9 @@
 - name: Dano Morrison
   github: jdpigeon
 
+- name: Raul Samayoa
+  github: ralle123
+
 - name: Brian Sutherland
   github: bksutherland
 
@@ -55,3 +58,6 @@
   degree: MI, iSchool
   github: dcwalk
 
+- name: Frances Wong
+  degree: PhD Physiology
+  github: FrancesWong
