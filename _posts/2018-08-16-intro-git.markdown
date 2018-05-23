@@ -1,0 +1,9 @@
+---
+title: Intro to Git
+text:  Introduction to Git version control 
+location: MADLab at Gerstein
+link: https://github.com/UofTCoders/Events/issues/169
+date: 2018-08-16
+startTime: '18:10'
+endTime: '19:00'
+---
