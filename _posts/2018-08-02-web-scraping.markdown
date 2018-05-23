@@ -1,5 +1,5 @@
 ---
-title: Web Scrapping
+title: Web Scraping
 text:  
 location: MADLab at Gerstein
 link: https://github.com/UofTCoders/Events/issues/167

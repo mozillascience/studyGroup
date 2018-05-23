@@ -1,5 +1,5 @@
 ---
-title: Coworking, theme: Python
+title: Coworking, theme-Python
 text:  Python-themed Coworking session
 location: MADLab at Gerstein
 link: https://github.com/UofTCoders/Events/issues/168
