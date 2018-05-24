@@ -1,6 +1,6 @@
 ---
 title: Contributing to an Open Source Project 101
-text:  learn how to contribute to an open source project 
+text:  Learn how to contribute to an open source project 
 location: MADLab at Gerstein
 link: https://github.com/UofTCoders/Events/issues/170
 date: 2018-08-23

@@ -1,6 +1,6 @@
 ---
-title: Coworking, theme-Programming Gadgets
-text:  applying what we learned in the previous session and programming our devices
+title: Coworking - Programming Gadgets
+text:  Applying what we learned in the previous session and programming our devices
 location: MADLab at Gerstein
 link: https://github.com/UofTCoders/Events/issues/164
 date: 2018-07-12
