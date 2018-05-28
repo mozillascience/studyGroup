@@ -176,7 +176,7 @@ create_new_emails_for_session <- function(.data) {
             **Skill level**: {skill_level}
             **What to bring:**
 
-            *Installation instructions*: You will need to install the appropriate programs. See the {program_language} section of the [installation instructions page](https://au-oc.github.io/content/installation). {needs_packages}
+            *Installation instructions*: You will need to install the appropriate programs. See the {program_language} section of the [installation instructions page](link?). {needs_packages}
             "
         )
 
