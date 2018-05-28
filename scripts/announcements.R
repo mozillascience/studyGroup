@@ -31,7 +31,7 @@ session_details <- read_csv(here::here("_data", "events.csv"), comment = "#") %>
     arrange(date) %>%
     # drop sessions that are not set (NA in date)
     filter(!is.na(date)) %>%
-    mutate_at(vars(start_time, end_time), as.character)
+    mutate_at(vars(start_time, end_time), funs(strftime(., format = "%H:%M", tz = "GMT")))
 
 # Find any existing posts, take the date, and filter out those sessions from the
 # session_details dataframe.
