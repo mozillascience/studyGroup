@@ -85,7 +85,6 @@ gh_issue_info <- function(.data) {
             ),
             ""
         )) %>%
-        mutate_at(vars(start_time, end_time), funs(strftime(., format = "%H:%M"))) %>%
         glue_data(
             "
             {description}
@@ -165,7 +164,6 @@ create_new_emails_for_session <- function(.data) {
             ),
             ""
         )) %>%
-        mutate_at(vars(start_time, end_time), funs(strftime(., format = "%H:%M"))) %>%
         glue_data(
             "
             <add this to the email subject> {title} - {day_month(date)}
