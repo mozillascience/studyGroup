@@ -1,0 +1,6 @@
+# key = a short title of the session, added to the _posts file
+# title, description, date, start_time, end_time are pretty self explanatory
+# skill_level is beginner intermediate advanced as in the Events Issues
+# gh_labels is another label to add to the session... So far only one label can be added
+key,title,description,date,start_time,end_time,packages,skill_level,program_language,gh_labels
+delete-this-row,Example title,Blah blah blah,2018-06-01,11:00,12:30,package1 package2,intermediate,R,code along
