@@ -94,7 +94,7 @@ gh_issue_info <- function(.data) {
             - **Instructor**: TBA
             - **Skill level**: {skill_level}
 
-            *Installation instructions*: You will need to install the appropriate programs. See the {program_language} section of the [installation instructions page](?link?). {needs_packages}
+            *Installation instructions*: You will need to install the appropriate programs. See the {program_language} section of the [installation instructions page](https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/install-python-r.md). {needs_packages}
 
             **Directions:**  MADLab is located in [Gerstein Science Information Centre](https://goo.gl/maps/2916Y54jQkx), Room B112 at the south end of the first lower level. Once you go through the main entrance of Gerstein, take a right turn down a corridor (across from the admin desk or just past the reading room), then take the stairs down and follow the signs to MADLab, the door should be open 10-15 minutes before the lesson.
             "
@@ -175,7 +175,7 @@ create_new_emails_for_session <- function(.data) {
             **Skill level**: {skill_level}
             **What to bring:**
 
-            *Installation instructions*: You will need to install the appropriate programs. See the {program_language} section of the [installation instructions page](link?). {needs_packages}
+            *Installation instructions*: You will need to install the appropriate programs. See the {program_language} section of the [installation instructions page](https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/install-python-r.md). {needs_packages}
             "
         )
 
