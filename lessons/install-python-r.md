@@ -20,18 +20,18 @@ Some packages are not available in the default Anaconda repositories. User contr
 
 ## Official way
 
-If you are only or mainly using R, this method is the standard, most common, and
-official way of installing R:
+If you are only or mainly using R, this method is the official and most common
+way of installing R:
 
 1. Download R from the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/), 
 which is the official source for R and R packages. From this page you can find R
 for Windows, Mac, and Linux. Follow the instructions and get R installed on your
 computer.
 2. Download and install [RStudio](https://www.rstudio.com/products/rstudio/download/#download),
-which is the most commonly used and most powerful interface to using R. Since
+which is the most commonly used and most powerful interface for using R. Since
 R, like most other programming languages, is just a way of communicating with 
 the computer, RStudio is a way for humans to communicate to R. RStudio is the 
-recommended program to use when using R. All our R tutorials use RStudio.
+recommended program for using R and all our R tutorials use RStudio.
 3. Installing R packages is done within RStudio, or through the R console via
 the `install.packages` command.
 
