@@ -31,7 +31,16 @@ session_details <- read_csv(here::here("_data", "events.csv"), comment = "#") %>
     arrange(date) %>%
     # drop sessions that are not set (NA in date)
     filter(!is.na(date)) %>%
-    mutate_at(vars(start_time, end_time), funs(strftime(., format = "%H:%M", tz = "GMT")))
+    mutate_at(vars(start_time, end_time), funs(strftime(., format = "%H:%M", tz = "GMT"))) %>%
+    mutate(location_string = case_when(
+        # if both location and url are included
+        !is.na(location) & !is.na(location_url) ~ glue::glue("[{location}]({location_url})"),
+        # if only location is included
+        !is.na(location) & is.na(location_url) ~ location,
+        # if neither location nor url are included
+        TRUE ~ "TBD"
+    ))
+
 
 # Find any existing posts, take the date, and filter out those sessions from the
 # session_details dataframe.
@@ -89,7 +98,7 @@ gh_issue_info <- function(.data) {
             "
             {description}
 
-            - **Where**: MADLab at [Gerstein Science Information Centre](https://goo.gl/maps/2916Y54jQkx)
+            - **Where**: {location_string}
             - **When**: {day_month(date)}, from {start_time}-{end_time} pm
             - **Instructor**: TBA
             - **Skill level**: {skill_level}
@@ -134,7 +143,7 @@ create_new_posts_with_content <- function(.data) {
             ---
             title: "{title}"
             text: "{description}"
-            location: "MADLab at Gerstein"
+            location: "{location}"
             link: "{url}"
             date: "{as.Date(date)}"
             startTime: "{start_time}"
@@ -171,7 +180,7 @@ create_new_emails_for_session <- function(.data) {
             {description}
 
             **When**: {day_month(date)}, from {start_time}-{end_time}
-            **Where**: MADLab at [Gerstein Science Information Centre](https://goo.gl/maps/2916Y54jQkx)
+            **Where**: {location_string}
             **Skill level**: {skill_level}
             **What to bring:**
 
