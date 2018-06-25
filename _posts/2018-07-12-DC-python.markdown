@@ -1,0 +1,11 @@
+---
+title: Data Carpentry Workshop (2 days) - Data analysis and visualization in Python
+text: "Join us for a hands-on two-day Data Carpentry workshop covering core small research team skills
+including data organization and cleaning, data analysis, and data visualization. 
+Workshop costs $30 and is open to everyone. Click to see the event page for more details and registration!"
+location: MADLab, Gerstein Science Information Centre, Room B112
+link: https://uoftcoders.github.io/2018-07-12-utoronto/
+date: 2018-07-12
+startTime: '09:00'
+endTime: '16:30'
+---
