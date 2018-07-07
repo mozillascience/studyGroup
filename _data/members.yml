@@ -1,6 +1,40 @@
-- name: Bill Mills
-  affiliation: TRIUMF
-  github: BillMills
+- name: Gladys Nalvarte
+  affiliation: Simula
+  github: GladysNalvarte
   interests:
-    - Programming
+    - Python
     - Open Science
+    - jupyterhub
+    - repo2docker
+
+- name: Ana Costa Conrado
+  affiliation: 
+  github: anacost
+  interests:
+    - Python
+    - R
+    - Open Science
+    - Machine & Deep Learning
+
+- name: Michel Heeremans
+  affiliation: University of Oslo
+  github: heereman
+  interests:
+    - Carpentry@UiO
+
+- name: Anne Bergsaker
+  affiliation: University of Oslo
+  github: 
+  interests:
+    - Carpentry@UiO
+
+- name: Anne Fouilloux
+  affiliation: University of Oslo
+  github: annefou
+  interests:
+    - Python
+    - R
+    - Fortran 
+    - HPC & Cloud computing
+    - The Carpentries
+
