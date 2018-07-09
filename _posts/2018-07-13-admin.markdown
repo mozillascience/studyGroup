@@ -1,0 +1,12 @@
+---
+title: Informal discussion 
+text: Discuss on possible subjects to plan future events
+location: Science Library
+link: 
+date: 2018-07-13
+startTime: '9:00'
+endTime: '11:00'
+
+---
+
+Meeting with a few organisers to draft a plan for UiO@Carpentry Study Group.

@@ -20,10 +20,23 @@
                   {% assign nowday = nowday | minus: 2 %}
                   {% if postyear > nowyear or postday >= nowday and postyear >= nowyear %}
                     {% assign isEvent = 1 %}
-                    <li>
-                      <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
-                      <div class='eventSub'><a href="https://mozillascience.github.io/study-group-orientation/3.4-add-event.html">{{ post.text }}</a></div>
-                    </li>
+                  <li>
+                    <div class="uio-event row">
+                      <div class="uio-event-date col-lg-2 col-lg-offset-2">
+                        <ul>
+                          <li>{{ post.date | date: "%B" }}</li>
+                          <li>{{ post.date | date: "%-d" }}</li> 
+                          <li>{{ post.date | date: "%Y"}}<li>
+                        </ul>
+                      </div> 
+                      <div class="col-lg-6">
+                        <a class='eventTitle' href="{{ post.link }}">
+                          <h3>{{ post.title }}</h3>
+                        </a>
+                        <div class="eventDesc"> {{ post.content }} </div> 
+                      </div> 
+                    </div>         
+                  </li>
                   {% endif %}
                 {% endfor %}
                 {% if isEvent == 0 %}
