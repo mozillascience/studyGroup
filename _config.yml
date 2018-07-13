@@ -33,6 +33,20 @@ calendar_on: False
 calendar_embed_url: "https://www.google.com/calendar/embed?src=USER@gmail.com"
 calendar_ical_url: "https://www.google.com/calendar/ical/USER@gmail.com/public/basic.ics"
 
+# ===============================
+# Categories for sorting lessons.
+# ===============================
+
+languages:
+  - python
+  - r
+  - git
+  - misc
+
+levels:
+  - beginner
+  - intermediate
+  - advanced
 
 #========================================
 # No touching anything below this line :)
