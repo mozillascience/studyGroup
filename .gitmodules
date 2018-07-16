@@ -1,0 +1,3 @@
+[submodule "lessons/pytest-lesson"]
+	path = lessons/pytest-lesson
+	url = https://github.com/annefou/pytest-lesson
