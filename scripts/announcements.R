@@ -68,7 +68,8 @@ coffee_code_details <-
             TRUE ~ "TBD"
         ),
         title = "Coffee and Code",
-        description = "A casual co-working session - bring your laptop and whatever you're working on!")
+        description = "A casual co-working session - bring your laptop and whatever you're working on!",
+        key = "coffee-and-code")
 
 # Find any existing posts, take the date, and filter out those sessions from the
 # session_details dataframe.
@@ -187,7 +188,7 @@ create_gh_issues_events(new_sessions)
 
 create_new_posts_with_content <- function(.data) {
     new_post_filenames <-
-        glue_data(new_sessions, "{here::here('_posts')}/{date}-{key}.md")
+        glue_data(.data, "{here::here('_posts')}/{date}-{key}.md")
 
     # Get the GitHub Issue URL for the event.
     gh_issue_number <- gh::gh("GET /repos/:owner/:repo/issues",
