@@ -1,0 +1,31 @@
+
+# Key is the part of the filename in _posts/
+- key: python-stats
+  # Title of event that will show up as the GH Issue title
+  title: Measures of association and statistical testing of hypotheses in Python
+  # Explanation of event as a paragraph form
+  description: >
+    "We will cover:
+    - Introduction/Motivation
+    - Effect size and its statistical significance
+    - Association between two continuous, ordinal and categorical variables
+    - Implications to data science and machine learning"
+
+  # Date of the event in YYYY-MM-DD format
+  date: 2018-07-26
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "19:00"
+  # Where the event will take place
+  location: MADLab at Gerstein Science Information Centre
+  # The URL for the location
+  location_url: https://goo.gl/maps/2916Y54jQkx
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: "Python >= 3.4, NumPy, SciPy, Pandas >= 0.21, Scikit Learn >= 0.19, and Jupyter Notebok, or Jupyter Lab"
+  # Beginner Intermediate Advanced
+  skill_level: Intermediate
+  # R or Python
+  program_language: Python
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: code-along
