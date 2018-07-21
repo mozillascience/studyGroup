@@ -194,11 +194,11 @@ create_new_posts_with_content <- function(.data) {
     gh_issue_number <- gh::gh("GET /repos/:owner/:repo/issues",
                               owner = "uoftcoders",
                               repo = "Events") %>%
-        map_dfr(~ data_frame(title = .$title, url = .$html_url)) %>%
-        mutate(title = str_remove(title, " - .* [1-9]?$"))
+        map_dfr(~ data_frame(by_title = .$title, url = .$html_url))
 
     new_post_content <- .data %>%
-        left_join(gh_issue_number, by = "title") %>%
+        mutate(by_title = str_c(title, " - ", day_month(date, add_name = FALSE))) %>%
+        left_join(gh_issue_number, by = "by_title") %>%
         glue_data(
             '
             ---
