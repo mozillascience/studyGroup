@@ -1,0 +1,26 @@
+
+# Key is the part of the filename in _posts/
+- key:
+  # Title of event that will show up as the GH Issue title
+  title:
+  # Explanation of event as a paragraph form
+  description: >
+    ""
+  # Date of the event in YYYY-MM-DD format
+  date:
+  # Start and end time for event in 24 hour HH:MM format
+  start_time:
+  end_time:
+  # Where the event will take place
+  location:
+  # The URL for the location
+  location_url:
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages:
+  # Beginner Intermediate Advanced
+  skill_level:
+  # R or Python
+  program_language:
+  # Only one label that will be put into the GitHub Issue
+  gh_labels:
