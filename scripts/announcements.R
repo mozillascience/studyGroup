@@ -66,7 +66,9 @@ coffee_code_details <-
             is.na(location_url) ~ location,
             # if neither location nor url are included
             TRUE ~ "TBD"
-        ))
+        ),
+        title = "Coffee and Code",
+        description = "A casual co-working session - bring your laptop and whatever you're working on!")
 
 # Find any existing posts, take the date, and filter out those sessions from the
 # session_details dataframe.
@@ -218,3 +220,4 @@ create_new_posts_with_content <- function(.data) {
 }
 
 create_new_posts_with_content(new_sessions)
+create_new_posts_with_content(new_coffee_code)
