@@ -1,0 +1,186 @@
+---
+always_allow_html: yes
+layout: page
+title: 'Introduction to Statistics in R'
+visible: false
+tags:
+  - r
+  - intermediate
+  - statistics
+---
+
+* Author: Lindsay Coome
+* Lesson Topic: Introduction to Statistics in R
+* Lesson video stream: <https://www.youtube.com/watch?v=A7AD40fpLK8>
+
+
+```{r}
+# Have the following packages installed and loaded:
+# install.packages("car")
+# install.packages("psych")
+# install.packages("multcomp")
+library(car)
+library(psych)
+library(multcomp)
+```
+
+## Descriptive statistics
+### Frequencies with table():
+The table() function displays counts of identical observations for either a single data vector or a dataframe
+
+```{r}
+#table
+table(mtcars$gear)
+#cross tabulate
+#note: first variable is set as the rows
+table(mtcars$gear, mtcars$carb)
+```
+
+
+### Mean:
+Without the na.rm=T argument, mean() will return a null value if there is any missing data in the object
+
+```{r}
+mean(Wong$viq, na.rm=T)
+```
+
+### Median:
+
+```{r}
+median(Wong$viq, na.rm=T)
+```
+
+### Variance and SD:
+
+```{r}
+var(Wong$viq, na.rm=T)
+sd(Wong$viq, na.rm=T)
+```
+
+### Range: 
+
+```{r}
+range(Wong$viq, na.rm=T)
+```
+
+### describe() from the psych package:
+Provides item name, item number, nvalid, mean, sd, median, mad (median absolute deviation from the median), min, max, skew, kurtosis, se
+
+```{r}
+describe(Wong$age)
+```
+
+
+### describeBy() from the psych package:
+A simple way of generating summary statistics by grouping variable
+
+```{r}
+describeBy(Wong$age, Wong$sex)
+```
+
+## Inferential statistics
+### One-sample t test:
+
+```{r}
+t.test(Wong$age, mu=30)
+```
+
+### Two sample t-test:
+
+```{r}
+#one way to compare groups:
+#t.test( object1, object1)
+#or use sex as the grouping variable:
+t.test(Wong$age~Wong$sex)
+```
+
+### Paired samples t-test:
+
+```{r}
+#t.test(object1, object1, paired=TRUE)
+```
+
+### Correlations:
+cor.test gives the correlation and significance test on the correlation
+
+```{r}
+cor.test(iris$Petal.Length, iris$Petal.Width)
+```
+
+### General linear model (i.e., with a normally-distributed dependent variable):
+Dependent variables are predicted by a tilde “~” 
+The formula to regress “y” on “x” is y ~ x
+
+```{r}
+result <- lm(viq~duration, data=Wong)
+summary(result)
+
+#multiple predictors with interaction terms
+result <- lm(viq~duration*days*sex, data=Wong)
+summary(result)
+
+#use + for main effect of predictor only
+result <- lm(viq~duration*days + sex, data=Wong)
+summary(result)
+```
+
+### Analysis of Variance:
+ANOVA is simply a different way of evaluating explained variance in linear modelling
+You must always wrap the anova() function around a lm() function
+
+```{r}
+anova(lm(mpg ~ am*gear, data=mtcars))
+```
+
+However, R uses type II sums of squares by default
+Anova() from the car package can give you “Type III Sums of Squares” 
+This matters when you have more than one predictor (e.g. treatment x sex)
+Asking for type III sums of squares will match what you get from SPSS or SAS
+
+```{r}
+result <- lm(mpg ~ am*gear, data=mtcars)
+Anova(result, type=3)
+```
+
+### Post hoc tests:
+R comes with a default pairwise t-test (pairwise.t.test())
+multcomp offers more posthoc options than base R
+
+```{r}
+result <- lm(Petal.Length ~ Species, data=iris)
+postHocs<-glht(result, linfct = mcp(Species = "Tukey"))
+#summary function gives results of multiple comparisons
+summary(postHocs)
+#you can also ask for confidence intervals
+confint(postHocs)
+```
+
+### Logistic regression:
+Normally-distributed dependent variable assumption violated
+So, you must use the glm() function rather than lm()
+
+```{r}
+summary(glm(Wong$sex ~ Wong$piq*Wong$viq, family=binomial))
+```
+
+### Scales and reliability:
+Learn how to sum across rows (useful for getting a summary score from a scale)
+Can get Cronbach's Alpha from the ```psych``` package
+
+```{r}
+#Subset iris data so only numerical columns remain
+newiris <- iris[c(1:4)]
+#Calculate row means
+rowMeans(newiris, na.rm=TRUE)
+#Use the psych package for Cronbach's Alpha
+alpha(newiris)
+```
+
+
+
+
+
+
+
+
+

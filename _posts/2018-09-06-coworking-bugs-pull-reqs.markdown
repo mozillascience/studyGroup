@@ -1,6 +1,6 @@
 ---
-title: Coworking, theme-bugs and pull reqs
-text: coworking session to work on bugs and pull requests 
+title: Coworking - Bugs and Pull Requests
+text: A coworking session to practice contributing to open source projects 
 location: MADLab at Gerstein
 link: https://github.com/UofTCoders/Events/issues/172
 date: 2018-09-06
