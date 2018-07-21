@@ -34,7 +34,9 @@ session_details <-
     arrange(date) %>%
     # drop sessions that are not set (NA in date)
     filter(!is.na(date)) %>%
-    mutate_at(vars(start_time, end_time), funs(as_date(., format = "%H:%M", tz = "GMT"))) %>%
+    mutate_at(vars(start_time, end_time), funs(
+        as.POSIXct(., format = "%H:%M", tz = "GMT") %>%
+            strftime(format = "%H:%M", tz = "GMT"))) %>%
     mutate(
         location_url = na_if(location_url, ""),
         location_string = case_when(
@@ -46,18 +48,38 @@ session_details <-
             TRUE ~ "TBD"
         ))
 
+coffee_code_details <-
+    yaml.load_file(here::here("_data", "coffee-code.yml")) %>%
+    map_dfr(as.tibble) %>%
+    arrange(date) %>%
+    # drop sessions that are not set (NA in date)
+    filter(!is.na(date)) %>%
+    mutate_at(vars(start_time, end_time), funs(
+        as.POSIXct(., format = "%H:%M", tz = "GMT") %>%
+            strftime(format = "%H:%M", tz = "GMT"))) %>%
+    mutate(
+        location_url = na_if(location_url, ""),
+        location_string = case_when(
+            # if both location and url are included!is.na(location) &
+            !is.na(location_url) ~ glue::glue("[{location}]({location_url})"),
+            # if only location is included!is.na(location) &
+            is.na(location_url) ~ location,
+            # if neither location nor url are included
+            TRUE ~ "TBD"
+        ))
 
 # Find any existing posts, take the date, and filter out those sessions from the
 # session_details dataframe.
-keep_only_new_sessions <- function() {
+keep_only_new <- function(.data) {
     existing_post_dates <- fs::dir_ls(here::here("_posts"), regexp = ".md$|.markdown$") %>%
         str_extract("[0-9]{4}-[0-9]{2}-[0-9]{2}")
 
-    session_details %>%
+    .data %>%
         filter(!as.character(date) %in% existing_post_dates)
 }
 
-new_sessions <- keep_only_new_sessions()
+new_sessions <- keep_only_new(session_details)
+new_coffee_code <- keep_only_new(coffee_code_details)
 
 # Create a GitHub Issue of the session ------------------------------------
 
@@ -89,7 +111,7 @@ day_month <- function(.date, add_name = TRUE) {
     trimws(format(as.Date(.date), format = date_format))
 }
 
-gh_issue_info <- function(.data) {
+gh_issue_info_event <- function(.data) {
     content <- .data %>%
         mutate(needs_packages = ifelse(
             !is.na(packages),
@@ -119,13 +141,44 @@ gh_issue_info <- function(.data) {
         select(title, content, skill_level, gh_labels)
 }
 
-create_gh_issues <- function(.data) {
+gh_issue_info_coffee_code <- function(.data) {
+    content <- .data %>%
+        glue_data(
+            "
+            Our bi-weekly 'Coffee and Code' meet-up:
+
+            Show up anytime between the allotted hours for as long or short as you'd like (see below for details about when and where Coffee and Code will take place). You can even show up earlier or stay later if you're in a coding groove! Look for the UofT Coders posters to find where we're sitting.
+
+            Bring something to work on whether it be data analysis, a Kaggle competition, making figures, setting up software or anything else you'd like to work on.
+
+            Ask for help and discuss. This is friendly, welcoming environment for coders of all levels from absolute beginner to advanced, and of course we know coding is great, but it can be a lot more fun when you're not alone.
+
+            - **Where**: {location_string}
+            - **When**: {day_month(date)}, from {start_time}-{end_time}
+            - **What to bring**: A laptop with something to work on
+            "
+        )
+
     .data %>%
-        gh_issue_info() %>%
+        mutate(content = content, title = str_c(title, " - ", day_month(date, add_name = FALSE))) %>%
+        select(title, content, gh_labels)
+}
+
+
+create_gh_issues_coffee_code <- function(.data) {
+    .data %>%
+        gh_issue_info_coffee_code() %>%
+        pmap( ~ post_gh_issue(..1, ..2, ..3))
+}
+
+create_gh_issues_events <- function(.data) {
+    .data %>%
+        gh_issue_info_event() %>%
         pmap( ~ post_gh_issue(..1, ..2, c(..3, ..4)))
 }
 
-create_gh_issues(new_sessions)
+create_gh_issues_coffee_code(new_coffee_code)
+create_gh_issues_events(new_sessions)
 
 # Create files in _posts/ -------------------------------------------------
 # Adds the new sessions/events to the _posts folder.
