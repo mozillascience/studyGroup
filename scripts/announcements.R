@@ -24,22 +24,27 @@ library(tidyverse)
 library(lubridate)
 library(glue)
 library(assertr)
+library(yaml)
 
 # Importing and Filtering the Event Data ----------------------------------
 
-session_details <- read_csv(here::here("_data", "events.csv"), comment = "#") %>%
+session_details <-
+    yaml.load_file(here::here("_data", "events.yml")) %>%
+    map_dfr(as.tibble) %>%
     arrange(date) %>%
     # drop sessions that are not set (NA in date)
     filter(!is.na(date)) %>%
-    mutate_at(vars(start_time, end_time), funs(strftime(., format = "%H:%M", tz = "GMT"))) %>%
-    mutate(location_string = case_when(
-        # if both location and url are included
-        !is.na(location) & !is.na(location_url) ~ glue::glue("[{location}]({location_url})"),
-        # if only location is included
-        !is.na(location) & is.na(location_url) ~ location,
-        # if neither location nor url are included
-        TRUE ~ "TBD"
-    ))
+    mutate_at(vars(start_time, end_time), funs(as_date(., format = "%H:%M", tz = "GMT"))) %>%
+    mutate(
+        location_url = na_if(location_url, ""),
+        location_string = case_when(
+            # if both location and url are included!is.na(location) &
+            !is.na(location_url) ~ glue::glue("[{location}]({location_url})"),
+            # if only location is included!is.na(location) &
+            is.na(location_url) ~ location,
+            # if neither location nor url are included
+            TRUE ~ "TBD"
+        ))
 
 
 # Find any existing posts, take the date, and filter out those sessions from the

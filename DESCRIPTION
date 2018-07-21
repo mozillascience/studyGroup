@@ -6,6 +6,7 @@ Encoding: UTF-8
 LazyData: true
 ByteCompile: true
 Imports: 
+    yaml,
     here,
     tidyverse,
     lubridate,
