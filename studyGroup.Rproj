@@ -14,10 +14,6 @@ LaTeX: pdfLaTeX
 
 AutoAppendNewline: Yes
 StripTrailingWhitespace: Yes
-<<<<<<< HEAD
 
-BuildType: Package
-PackageUseDevtools: Yes
-PackageInstallArgs: --no-multiarch --with-keep.source
-=======
->>>>>>> b7b5624683f65ec097a071ae9566cb3849fa7517
+BuildType: Custom
+CustomScriptPath: scripts/announcements.R
