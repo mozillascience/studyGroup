@@ -24,6 +24,9 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: "Python >= 3.4, NumPy, SciPy, Pandas >= 0.21, Scikit Learn >= 0.19, and Jupyter Notebok, or Jupyter Lab"
   # Beginner Intermediate Advanced
+  
+  youtube_link: "https://www.youtube.com/channel/UCfGUFz6EG5gBfRt8-du0jaA/videos?sort=dd&view=2&shelf_id=3&live_view=502"
+  
   skill_level: Intermediate
   # R or Python
   program_language: Python
