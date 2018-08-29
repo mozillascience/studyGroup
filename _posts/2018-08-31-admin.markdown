@@ -11,3 +11,7 @@ endTime: '15:00'
 
 Meeting to plan events and activities for fall 2018.
 
+- **When**: Friday 31 August, 14-15h:
+- **Where**: Niels Henrik Abels hus, room 209
+- **Who**: _Everybody willing to be involved in the organization of the UiO@Carpentry StudyGroup is welcome._
+
