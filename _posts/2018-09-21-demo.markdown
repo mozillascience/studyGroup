@@ -1,0 +1,25 @@
+---
+title: Demo session on NetworkX python package
+text: Learn about NetworkX python package.
+location: Science Library
+link: https://github.com/uio-carpentry/studyGroup/issues/6
+date: 2018-09-21
+startTime: '14:00'
+endTime: '16:00'
+
+---
+
+**Session leader**: Annika Rockenberger
+
+NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+
+During this Coding lightning demo session:
+
+-  Learn about networkX python package 
+- Get concrete examples on how to use it
+- Discuss your use cases
+
+- **When**: 21st September 2018, 14-16h
+- **Location**:   Niels Henrik Abels hus, room 209
+- **Who**: _everybody willing to learn about networkX python package_
+

@@ -1,0 +1,22 @@
+---
+title: Book Club on Teaching Tech together
+text: We start reading the first 5 chapters of "Teaching Tech together (Greg Wilson) 
+location: Science Library
+link: https://github.com/uio-carpentry/studyGroup/issues/5
+date: 2018-09-14
+startTime: ''
+endTime: ''
+
+---
+
+**Session leader**: Anne Fouilloux
+
+We do not meet this week but we encourage you start reading and commenting Greg Wilson's book "Teaching Tech together". 
+
+We are using [https://web.hypothes.is/](https://web.hypothes.is/), an online tool to annotate the web, with anyone, anywhere.
+
+Start reading "Teaching Tech together" using hypothes.is at [https://hypothes.is/groups/mReaNk2e/studygroup-uio](https://hypothes.is/groups/mReaNk2e/studygroup-uio). 
+
+**online material to learn how to use hypothes.is**: 
+- https://web.hypothes.is/quick-start-guide-for-students/
+

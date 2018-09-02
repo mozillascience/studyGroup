@@ -1,0 +1,21 @@
+---
+title: Demo session on openscience framework
+text: Learn about openscience and share/discuss your openscience framework with us
+location: Science Library
+link: https://github.com/uio-carpentry/studyGroup/issues/10
+date: 2018-11-02
+startTime: '14:00'
+endTime: '16:00'
+
+---
+
+**Session leader**: Michael Heeremans
+
+Openscience: come and show your openscience framework.
+
+Short coding ligthning demo on openscience. If you wish to show your openscience framework, please contact the organizer (comment this issue).
+
+- **When**: 2nd November 2018, 14-16h
+- **Location**:   Niels Henrik Abels hus, room 209
+- **Who**: _anyone interested in openscience_
+
