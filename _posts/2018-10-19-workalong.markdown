@@ -3,7 +3,7 @@ title: Work along session on deep learning
 text: 
 location: Science Library
 link: https://github.com/uio-carpentry/studyGroup/issues/8
-date: 2018-09-07
+date: 2018-10-19
 startTime: '14:00'
 endTime: '16:00'
 

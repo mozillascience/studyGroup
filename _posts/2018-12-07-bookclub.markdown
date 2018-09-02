@@ -1,0 +1,26 @@
+---
+title: Book Club on Teaching Tech together
+text: Discuss the first 5 chapters of "Teaching Tech together (Greg Wilson) 
+location: Science Library
+link: https://github.com/uio-carpentry/studyGroup/issues/14
+date: 2018-12-07
+startTime: '14:00'
+endTime: '16:00'
+
+---
+
+**Session leader**: Anne Fouilloux
+
+You read at least 5 chapters of "Teaching Tech together" (Greg Wilson) and would like to discuss and share your thoughts about teaching techniques.
+
+We are using [https://web.hypothes.is/](https://web.hypothes.is/), an online tool to annotate the web, with anyone, anywhere.
+
+The StudyGroup@UiO share comments at [https://hypothes.is/groups/mReaNk2e/studygroup-uio.](https://hypothes.is/groups/mReaNk2e/studygroup-uio)
+
+
+**online material to learn how to use hypothes.is**: 
+- https://web.hypothes.is/quick-start-guide-for-students/
+
+**When**: 7th December 2018, 14-16h
+**Location**:   Niels Henrik Abels hus, room 209
+
