@@ -1,18 +1,18 @@
 
 # Key is the part of the filename in _posts/
-- key: python-stats
+- key: coworking
   # Title of event that will show up as the GH Issue title
-  title: Measures of association and statistical testing of hypotheses in Python
+  title: 'Coworking: Bugs and Pull Requests'
   # Explanation of event as a paragraph form
   description: >
-    "We will cover:
-    - Introduction/Motivation
-    - Effect size and its statistical significance
-    - Association between two continuous, ordinal and categorical variables
-    - Implications to data science and machine learning"
+    "Bring a project to work on alongside peers. 
+    It can be research, homework, open science, or just something fun you're working on. 
+    We'll have a Python-themed session so that people can ask questions of other people using the same tools, but everyone is welcome even if you'll be working on something different. 
+    Check out the handbook for more information about coworking sessions.
+    "
 
   # Date of the event in YYYY-MM-DD format
-  date: 2018-07-26
+  date: 2018-09-06
   # Start and end time for event in 24 hour HH:MM format
   start_time: "18:10"
   end_time: "19:00"
@@ -22,13 +22,13 @@
   location_url: https://goo.gl/maps/2916Y54jQkx
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: "Python >= 3.4, NumPy, SciPy, Pandas >= 0.21, Scikit Learn >= 0.19, and Jupyter Notebok, or Jupyter Lab"
+  packages: ""
   # Beginner Intermediate Advanced
   
-  youtube_link: "https://www.youtube.com/channel/UCfGUFz6EG5gBfRt8-du0jaA/videos?sort=dd&view=2&shelf_id=3&live_view=502"
+  youtube_link: ""
   
   skill_level: Intermediate
   # R or Python
-  program_language: Python
+  program_language: Git
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
