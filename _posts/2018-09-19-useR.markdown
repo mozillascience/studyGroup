@@ -1,11 +1,11 @@
 ---
-title: useR! group Functions, loops and list-columns: taking control of lists with purrr
+title: use R! group Functions, loops and list-columns - taking control of lists with purrr
 text: 
 location: Microsoft Norge
 link: https://github.com/uio-carpentry/studyGroup/issues/17
-date: 2018-10-19
-startTime: '14:00'
-endTime: '16:00'
+date: 2018-09-19
+startTime: '17:30'
+endTime: '19:30'
 
 ---
 
