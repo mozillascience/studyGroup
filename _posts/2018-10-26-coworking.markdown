@@ -13,6 +13,7 @@ endTime: '16:00'
 
 Come and meet us for two hours to learn about Internet of Things and work 
 with an Arduino (demos).
+Annika will bring a couple of Arduino Unos, breadboards, jumper cables, LEDs, resistors, buttons and a selection of sensors (light, distance, temperature, CO2 sensors). We have a take on physical programming with Arduino and micro electronics. It will be fun!
 
 - **When**: 26th October 2018, 14-16h
 - **Where**: Niels Henrik Abels hus, room 209
