@@ -7,14 +7,14 @@ tags:
   - beginner
 ---
 
- - **Authors**: Dano Morrison
+ - **Authors**: Dano Morrison & Lina Tran
  - **Research field**: Neuroscience
  - **Lesson topic**: How to use Pandoc and Markdown for writing scientific manuscripts
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/misc/pandoc-intro>
 
 # Intro to Pandoc
 
-Do you enjoy the spartan, academic aesthetic of LaTeX documents but not have the time to learn its unforgiving syntax? Does writing HTML documents by hand make you feel uncool? Do you enjoy automating difficult things? If so, Pandoc is what you're looking for. 
+Do you enjoy the spartan, academic aesthetic of LaTeX documents but not have the time to learn its unforgiving syntax? Does writing HTML documents by hand make you feel uncool? Do you enjoy automating difficult things? If so, Pandoc is what you're looking for.
 
 Pandoc is a command line tool that you can use to automatically convert files from markup format to another. With Pandoc, you can write in something easy like Markdown, Microsoft Word, or LibreOffice, and convert it something hard like:
 - HTML
@@ -98,7 +98,7 @@ refer to `code` inline with backticks
 console.log('or define a whole bunch of code with three back ticks')
 ```
 
-# Pandoc 
+# Pandoc
 
 Once Pandoc is installed, the easiest way to convert a file is to open up your terminal (in the folder where your file is) and call:
 `pandoc <filetobeconverted> -o <newfilename.xx>`
@@ -144,13 +144,13 @@ Pretty \emph{cool} stuff
 \end{document}
 ```
 
-That's sure better than writing all that stuff yourself! 
+That's sure better than writing all that stuff yourself!
 You can also go straight to pdf (if you have the right dependencies installed) with
 `pandoc sample.md -s -o sample.pdf`
 
 You may have figured out that `-o` stands for 'output' and `-s` stands for 'standalone.' There's also a lot of other pandoc command modifiers that you can take a look at any time by running `pandoc -h`
 
-You can also combine multiple input files into one output files with the regular character `*` (it's not a special pandoc feature, but pandoc supports having multiple files thrown at from the terminal). 
+You can also combine multiple input files into one output files with the regular character `*` (it's not a special pandoc feature, but pandoc supports having multiple files thrown at from the terminal).
 `-H` Will let you include other files as the header of whatever you're producing
 `-V` will let you pass variables (ie. fontsize, documentclass for LaTeX documents)
 
@@ -172,6 +172,3 @@ If you want to expand on what the template provides, you can go into it and chan
 The easiest step, simply add a `--template=yourtemplate.tex` modifier into your console command. Make sure that your template is either in your working directory or in `/.pandoc/templates` *NOTE: You have to make this directory yourself*.
 You can use variables in the template such as `fontfamily` to style your own file. Example:
 `pandoc sample.md -o sample.pdf --template=mytemplate.tex -V fontfamily=sans`
-
-
-
