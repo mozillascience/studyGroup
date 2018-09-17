@@ -5,8 +5,9 @@
   title: 'UofT Coders Social'
   # Explanation of event as a paragraph form
   description: >
-    "We're having a social at the GSU Pub to welcome new and returning members with the start of the new academic year. Join us and get to know the exec and fellow members of the UofT Coders community in a less formal environment. You do not need to have attended an event previously to attend. Everyone is welcome.
-    "
+    We're having a social at the GSU Pub to welcome new and returning members with the start of the new academic year.
+    Join us and get to know the exec and fellow members of the UofT Coders community in a less formal environment.
+    You do not need to have attended an event previously to attend. Everyone is welcome.
 
   # Date of the event in YYYY-MM-DD format
   date: 2018-09-13
@@ -16,7 +17,7 @@
   # Where the event will take place
   location: GSU pub
   # The URL for the location
-  location_url: https://www.google.com/maps/place/GSU+Pub/@43.6607748,-79.4003391,15z/data=!4m2!3m1!1s0x0:0x57ab5cf07565ea67?sa=X&ved=2ahUKEwjL7_rN38LdAhVH5oMKHQwHDmcQ_BIwD3oECAoQCw
+  location_url: "https://www.google.com/maps/place/GSU+Pub/@43.6607748,-79.4003391,15z/data=!4m2!3m1!1s0x0:0x57ab5cf07565ea67?sa=X&ved=2ahUKEwjL7_rN38LdAhVH5oMKHQwHDmcQ_BIwD3oECAoQCw"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
@@ -40,9 +41,9 @@
   title: 'Coworking'
   # Explanation of event as a paragraph form
   description: >
-    "Co-working sessions are meetings where you can work on projects and discuss strategies
+    Co-working sessions are meetings where you can work on projects and discuss strategies
     and tools to solve your coding problems with the help of other coding group members.
-    Even if you're just starting out, this is a great place to get started."
+    Even if you're just starting out, this is a great place to get started.
 
   # Date of the event in YYYY-MM-DD format
   date: 2018-09-20
@@ -52,7 +53,7 @@
   # Where the event will take place
   location: MADLab at Gerstein Science Information Centre
   # The URL for the location
-  location_url: https://goo.gl/maps/2916Y54jQkx
+  location_url: "https://goo.gl/maps/2916Y54jQkx"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
@@ -64,4 +65,4 @@
   # R or Python
   program_language: Python
   # Only one label that will be put into the GitHub Issue
-  gh_labels: coworking
+  gh_labels: co-working
