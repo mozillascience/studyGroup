@@ -1,18 +1,51 @@
 
 # Key is the part of the filename in _posts/
-- key: coworking
+- key: Social
   # Title of event that will show up as the GH Issue title
-  title: 'Coworking: Bugs and Pull Requests'
+  title: 'UofT Coders Social'
   # Explanation of event as a paragraph form
   description: >
-    "Bring a project to work on alongside peers. 
-    It can be research, homework, open science, or just something fun you're working on. 
-    We'll have a Python-themed session so that people can ask questions of other people using the same tools, but everyone is welcome even if you'll be working on something different. 
-    Check out the handbook for more information about coworking sessions.
+    "We're having a social at the GSU Pub to welcome new and returning members with the start of the new academic year. Join us and get to know the exec and fellow members of the UofT Coders community in a less formal environment. You do not need to have attended an event previously to attend. Everyone is welcome.
     "
 
   # Date of the event in YYYY-MM-DD format
-  date: 2018-09-06
+  date: 2018-09-13
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "21:00"
+  # Where the event will take place
+  location: GSU pub
+  # The URL for the location
+  location_url: https://www.google.com/maps/place/GSU+Pub/@43.6607748,-79.4003391,15z/data=!4m2!3m1!1s0x0:0x57ab5cf07565ea67?sa=X&ved=2ahUKEwjL7_rN38LdAhVH5oMKHQwHDmcQ_BIwD3oECAoQCw
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: ""
+  # Beginner Intermediate Advanced
+
+  youtube_link: ""
+
+  skill_level: Beginner
+  # R or Python
+  program_language: Python
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: social
+
+
+
+
+
+# Key is the part of the filename in _posts/
+- key: coworking
+  # Title of event that will show up as the GH Issue title
+  title: 'Coworking'
+  # Explanation of event as a paragraph form
+  description: >
+    "Co-working sessions are meetings where you can work on projects and discuss strategies
+    and tools to solve your coding problems with the help of other coding group members.
+    Even if you're just starting out, this is a great place to get started."
+
+  # Date of the event in YYYY-MM-DD format
+  date: 2018-09-20
   # Start and end time for event in 24 hour HH:MM format
   start_time: "18:10"
   end_time: "19:00"
@@ -24,11 +57,11 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   # Beginner Intermediate Advanced
-  
+
   youtube_link: ""
-  
-  skill_level: Intermediate
+
+  skill_level: Beginner
   # R or Python
-  program_language: Git
+  program_language: Python
   # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
+  gh_labels: coworking
