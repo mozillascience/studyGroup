@@ -31,12 +31,13 @@
     - Carpentry@UiO
 
 - name: Annika Rockenberger 
-  affiliation: 
+  affiliation: The National Library of Norway
   github: arockenberger
   interests:
-    - Humanities
-    - Digital Textology
-    - Software Carpentries
+    - Digital Humanities
+    - Python
+    - The Carpentries
+    - Physical Programming
 
 - name: Anne Fouilloux
   affiliation: University of Oslo
