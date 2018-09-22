@@ -39,7 +39,7 @@ Character 2
 ~~~
 {: .language-python}
 
-This will automatically generate a CSV file with node-node relations (source, type, target, weight) in the column in the centre. Data changes as you type: 
+Easy Linavis will automatically generate a CSV file with node-node relations (source, type, target, weight) in the column in the centre. Data changes as you type: 
 as soon as you change something in the first column, the mid-column changes accordingly. The "type" column in the CSV file is always "undirected" here, 
 but we inserted it so you can directly work with the CSV files in Gephi. The network graph in the right column is also generated live, using a 
 spring-embedded layout, just to give you a first impression of what your network data looks like. To make it easier to understand how ezlinavis works, we provide some example files which can be accessed via the corresponding drop-down menu in the right upper corner.
@@ -57,7 +57,7 @@ and not the new version 2.X. Information on how to migrate from 1.X to 2.X can b
 
 ### Other tools
 
-Another tool that is freely available [https://gephi.org/](https://gephi.org/). It is a very handy tools for creating nice network plots. To use it, 
+Another tool that is freely available [https://gephi.org/](https://gephi.org/). To be fully ffunctional, you need an up to date version of java. Gephi is a very handy tools for creating nice network plots. To use it, 
 download one file from Easy Linavis (as a csv file) and use it in Gephi.
 
 
@@ -67,33 +67,145 @@ Annika has prepared several jupyter notebooks:
 
 - [https://github.com/arockenberger/InnsbruckEasterplay/blob/master/CNA_tests.ipynb](https://github.com/arockenberger/InnsbruckEasterplay/blob/master/CNA_tests.ipynb)
 
-**Facts**:
 
-- no weight by default (need to ask NetworkX to compute them)
-- not directional by default; use DiGraph() and/or MultiGraph() for directional networks.
+To make use of NetworkX python package, you need to import it:
 
-In all the examples, csv python package is used.
+~~~
+import networkx as nx
+~~~
+{: .language-python}
 
-- csv.reader() --> add information on how to skip header
+We use `nx` as a shortcut to avoid writing networkx everytime we call a function from NetworkX python package.
 
-- if you remove a node, it does not removes all the connections; you end up having selfloop node. So you need to clean it.
---> have a look on how to remove connection.
+
+- To define a new graph, use Graph method:
+
+~~~
+G = nx.Graph([("A", "eggs"),])
+~~~
+{: .language-python}
+
+It defines a new graph with two nodes "A" and "eggs" connected to each other. You need to give a list of connections (one connection is represented by two "nodes").
+
+To print all the nodes:
+~~~
+print(G.nodes)
+~~~
+{: .language-python}
+
+To print all the connections:
+~~~
+print(G.edges)
+~~~
+{: .language-python}
+
+To add new nodes:
+
+~~~
+G.add_node("spinach") # add a single node
+G.add_node("Hg") # add a single node by mistake
+G.add_nodes_from(["folates", "asparagus", "liver"]) # add a list of nodes
+~~~
+{: .language-python}
+
+To add a new connection between nodes:
+
+~~~
+G.add_edge("spinach", "folates") # add one edge, both ends exist
+G.add_edge("spinach", "heating oil") # add one edge 
+G.add_edge("liver", "Se") # add one edge, one end does not exist
+G.add_edges_from([("folates", "liver"), ("folates", "asparagus")]) # add list of edges
+~~~
+{: .language-python}
+
+
+> ## **Tips**:
+>
+> - no weight by default (need to ask NetworkX to compute them)
+> - not directional by default; use DiGraph() and/or MultiGraph() for directional networks.
+> - when defining new connections( add_edge or add_edges_from), a new node is created 
+>   if it does not exist yet. SO BE CAREFUL WITH THE NAMES OF THE NODES (typos, letter cases, etc.)
+>
+{: .callout}
+
+To plot a graph with networkx:
+~~~
+nx.draw(G)
+~~~
+{: .language-python}
+
+![networkx_plot](../fig/networkx_plot.png)
+
+It plots nodes and associated connections.
+
+
+- To delete nodes and connections:
+
+~~~
+G.remove_node("Hg") # removes this node
+G.remove_nodes_from(["Hg",]) # removes a missing node from a list
+G.remove_edge("spinach", "heating oil") # removes edge between these nodes
+G.remove_edges_from([("spinach", "heating oil"),]) # removes edges from a list
+G.remove_node("heating oil") 
+~~~
+{: .language-python}
+
+> ## Tips
+> 
+> You get an error if you try to remove a node that does not exist (same with a connection)
+> 
+{: .callout}
 
 #### Examples
 
+We will now work with "real" examples i.e. read a network from a csv file. 
+We are using "Elizabeth Inchbald: Lover's Vows (1798)" from [Easy Linavis](https://ezlinavis.dracor.org/).
 
-- Add an example with several columns. Choose 2 columns.
-- https://github.com/arockenberger/NB_API_Python For visualization
-- nbtext library --> will be released so we can use it for plotting.
-- Make an example to plot with WordCloud.
+To read a csv file, the easiest is to use pandas python package:
+
+~~~
+import pandas as pd
+df = pd.read_csv("data/Elizabeth1798.csv")
+df.head()
+~~~
+{: .language-python}
+
+~~~
+        Source	Type	       Target	     Weight
+0	Agatha	Undirected	Amelia	        1
+1	Agatha	Undirected	Anhalt	        2
+2	Agatha	Undirected	Baron	        1 
+3	Agatha	Undirected	Cottager	3
+4	Agatha	Undirected	Countryman	1
+~~~
+{: .output}
+
+
+The file contains quite a large number of rows so we printed only the first rows (5 first rows) using head().
+
+- To create a Graph from a pandas dataframe:
+
+~~~
+# create a graph using Source and Target for connections.
+G = nx.from_pandas_edgelist(df, 'Source', 'Target')
+nx.draw(G)
+~~~
+{: .language-python}
+
+![Elizabeth_plot](../fig/elizabeth_plot.png)
+
+`from_pandas_edgelist` takes a pandas dataframe and the two column names used as "Source" and "Target".
+
+See documentation online for more information on [from_pandas_edgelist](https://networkx.github.io/documentation/stable/reference/generated/networkx.convert_matrix.from_pandas_edgelist.html).
+
+
+- Have a look at Annicka's jupyter notebook at [https://github.com/arockenberger/NB_API_Python](https://github.com/arockenberger/NB_API_Python) for visualization.
 
 ### AOB
 
 We also discuss on how to write a blog: [https://hypotheses.org/](https://hypotheses.org/)
 
-
-
-- Add info on where to buy domain (not take the cheapest one).
+- Add info on where to buy domain (do not take the cheapest one).
 
 
 
