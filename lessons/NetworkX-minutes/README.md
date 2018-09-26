@@ -51,21 +51,22 @@ data. If you want to contact us, please drop a line to ffischer(at)hse.ru.
 
 - [https://textology.hypotheses.org/37](https://textology.hypotheses.org/37)
 - [https://github.com/arockenberger/InnsbruckEasterplay](https://github.com/arockenberger/InnsbruckEasterplay)
-- [Complex Netowkr Analysis in Python](https://pragprog.com/book/dzcnapy/complex-network-analysis-in-python): based on NetworkX but version 1.X 
+- [Complex Network Analysis in Python](https://pragprog.com/book/dzcnapy/complex-network-analysis-in-python): based on NetworkX version 1.X 
 and not the new version 2.X. Information on how to migrate from 1.X to 2.X can be found at
  [https://networkx.github.io/documentation/stable/release/migration_guide_from_1.x_to_2.0.html](https://networkx.github.io/documentation/stable/release/migration_guide_from_1.x_to_2.0.html).
 
 ### Other tools
 
-Another tool that is freely available [https://gephi.org/](https://gephi.org/). To be fully ffunctional, you need an up to date version of java. Gephi is a very handy tools for creating nice network plots. To use it, 
-download one file from Easy Linavis (as a csv file) and use it in Gephi.
+Another tool that is freely available is Gephi [https://gephi.org/](https://gephi.org/). To be fully functional, you need an up to date version of java. Gephi is a very handy tool for creating nice network plots, especially if you want to publish them. To use it, 
+download a file from Easy Linavis (as a csv file) and use it in Gephi or create your own csv.
 
 
 ### Codes used for the demo
 
 Annika has prepared several jupyter notebooks:
 
-- [https://github.com/arockenberger/InnsbruckEasterplay/blob/master/CNA_tests.ipynb](https://github.com/arockenberger/InnsbruckEasterplay/blob/master/CNA_tests.ipynb)
+- A follow-along notebook for the textbook on complex network analysis (up tp chapter 5, will be continued) [https://github.com/arockenberger/InnsbruckEasterplay/blob/master/CNA_tests.ipynb](https://github.com/arockenberger/InnsbruckEasterplay/blob/master/CNA_tests.ipynb)
+– A notebook for doing cna with material from the Innsbruck Easterplay [https://github.com/arockenberger/InnsbruckEasterplay/blob/master/InnsOS_charnet.ipynb](https://github.com/arockenberger/InnsbruckEasterplay/blob/master/InnsOS_charnet.ipynb)
 
 
 To make use of NetworkX python package, you need to import it:
@@ -93,7 +94,7 @@ print(G.nodes)
 ~~~
 {: .language-python}
 
-To print all the connections:
+To print all the connections, or edges:
 ~~~
 print(G.edges)
 ~~~
@@ -103,12 +104,11 @@ To add new nodes:
 
 ~~~
 G.add_node("spinach") # add a single node
-G.add_node("Hg") # add a single node by mistake
 G.add_nodes_from(["folates", "asparagus", "liver"]) # add a list of nodes
 ~~~
 {: .language-python}
 
-To add a new connection between nodes:
+To add a new connection – edge – between nodes:
 
 ~~~
 G.add_edge("spinach", "folates") # add one edge, both ends exist
@@ -121,7 +121,7 @@ G.add_edges_from([("folates", "liver"), ("folates", "asparagus")]) # add list of
 
 > ## **Tips**:
 >
-> - no weight by default (need to ask NetworkX to compute them)
+> - no weight by default (need to ask NetworkX to compute them, but can be assigned as attributes manually)
 > - not directional by default; use DiGraph() and/or MultiGraph() for directional networks.
 > - when defining new connections( add_edge or add_edges_from), a new node is created 
 >   if it does not exist yet. SO BE CAREFUL WITH THE NAMES OF THE NODES (typos, letter cases, etc.)
@@ -199,13 +199,13 @@ nx.draw(G)
 See documentation online for more information on [from_pandas_edgelist](https://networkx.github.io/documentation/stable/reference/generated/networkx.convert_matrix.from_pandas_edgelist.html).
 
 
-- Have a look at Annicka's jupyter notebook at [https://github.com/arockenberger/NB_API_Python](https://github.com/arockenberger/NB_API_Python) for visualization.
+- Have a look at Lars Johnson's (National Library of Norway) jupyter notebook at [https://github.com/arockenberger/NB_API_Python](https://github.com/arockenberger/NB_API_Python) for visualization.
 
 ### AOB
 
-We also discuss on how to write a blog: [https://hypotheses.org/](https://hypotheses.org/)
+We also discussed how to host, write and publish an academic blog on the free to use, open access blog platform Hypotheses.org [https://hypotheses.org/](https://hypotheses.org/). The blogs are indexed by major libraries and journal indexing services and you can apply for an official ISSN. Hypotheses is open for all languages, the four main languages with several thousands of academic blogs are Spanish, French, German and English.
 
-- Add info on where to buy domain (do not take the cheapest one).
+- You can host and publish your own blog by using, for example, Wordpress or Drupal (Content Mangement Systems, CMS). The offer a great variety in layouts and templates for a website that has not just static content. If you decide to buy hosting services, there's plenty to choose from. It doesn't have to be costly, but be aware that the cheapest option isn't necessarily the best. You must put a GDPR statement on your site if you use a CMS!
 
 
 
