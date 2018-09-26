@@ -55,7 +55,7 @@ More and more researchers need to make available their data before being able to
 
 ### Dataverse.no
 * [https://dataverse.no/](https://dataverse.no/)
-* UiT; now also UiA
+* UiT; now also UiA and NMBU
 * Hosts institutional repositories
 * Archiving data for local researchers
 * Have developed by institutional review, domain specific
