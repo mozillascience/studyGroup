@@ -6,5 +6,5 @@ location: "MADLab"
 link: "https://github.com/UofTCoders/Events/issues/187"
 date: "2018-09-27"
 startTime: "18:10"
-endTime: "21:00"
+endTime: "19:00"
 ---

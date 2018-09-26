@@ -13,7 +13,7 @@
   date: 2018-09-27
   # Start and end time for event in 24 hour HH:MM format
   start_time: "18:10"
-  end_time: "21:00"
+  end_time: "19:00"
   # Where the event will take place
   location: MADLab
   # The URL for the location
