@@ -1,23 +1,23 @@
 
 # Key is the part of the filename in _posts/
-- key: Social
+- key: demo-reproducible-documents
   # Title of event that will show up as the GH Issue title
-  title: 'UofT Coders Social'
+  title: 'Lightning Demos: reproducible docuements (reports, papers and thesis)'
   # Explanation of event as a paragraph form
   description: >
-    We're having a social at the GSU Pub to welcome new and returning members with the start of the new academic year.
-    Join us and get to know the exec and fellow members of the UofT Coders community in a less formal environment.
-    You do not need to have attended an event previously to attend. Everyone is welcome.
+    What is your approach to creating reproducible documents?
+    how do you use the capabilities in R, Python, Latex, pandoc, etc. to integrate your data analysis with writing your reports and other manuscripts?
+    Come to this session and show your peers what is your workflow for creating reproducible documents or hear from others how they do it.
 
   # Date of the event in YYYY-MM-DD format
-  date: 2018-09-13
+  date: 2018-09-27
   # Start and end time for event in 24 hour HH:MM format
   start_time: "18:10"
   end_time: "21:00"
   # Where the event will take place
-  location: GSU pub
+  location: MADLab
   # The URL for the location
-  location_url: "https://www.google.com/maps/place/GSU+Pub/@43.6607748,-79.4003391,15z/data=!4m2!3m1!1s0x0:0x57ab5cf07565ea67?sa=X&ved=2ahUKEwjL7_rN38LdAhVH5oMKHQwHDmcQ_BIwD3oECAoQCw"
+  location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
@@ -29,40 +29,4 @@
   # R or Python
   program_language: Python
   # Only one label that will be put into the GitHub Issue
-  gh_labels: social
-
-
-
-
-
-# Key is the part of the filename in _posts/
-- key: coworking
-  # Title of event that will show up as the GH Issue title
-  title: 'Coworking'
-  # Explanation of event as a paragraph form
-  description: >
-    Co-working sessions are meetings where you can work on projects and discuss strategies
-    and tools to solve your coding problems with the help of other coding group members.
-    Even if you're just starting out, this is a great place to get started.
-
-  # Date of the event in YYYY-MM-DD format
-  date: 2018-09-20
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab at Gerstein Science Information Centre
-  # The URL for the location
-  location_url: "https://goo.gl/maps/2916Y54jQkx"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  # Beginner Intermediate Advanced
-
-  youtube_link: ""
-
-  skill_level: Beginner
-  # R or Python
-  program_language: Python
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: co-working
+  gh_labels: lightning-demo
