@@ -1,3 +1,15 @@
+## Installing Git
+
+Installation instructions for Git can be found on the
+[Git download site](http://git-scm.com/book/en/Getting-Started-Installing-Git)
+- On Windows: Download the `.exe` file from this
+  [Github link](http://msysgit.github.io) and run it.
+- On Mac: To use the graphical Git installer, download from this
+  [SourceForge link](http://sourceforge.net/projects/git-osx-installer/)
+- On Linux: Use your respective package manager (for example, if you
+  use Ubuntu or Debian, run this code: `sudo apt-get install git`)
+
+
 # Installing Python
 
 Python can be managed through the Anaconda platform, which is [available for Linux, OSX and Windows](https://www.continuum.io/downloads). The default installation includes Python. The 64bit Python3 installer is a suitable download choice for most people.
