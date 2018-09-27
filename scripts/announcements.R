@@ -136,7 +136,7 @@ gh_issue_info_event <- function(.data) {
             *Installation instructions*: You will need to install the appropriate programs. See the {program_language} section of the [installation instructions page](https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/install-python-r.md). {needs_packages}
 
             *Watch*: This event will be [streamed live]({youtube_link}). If you have questions during the live stream (or just want to chat with us), please ask in our [Gitter lobby](https://gitter.im/UofTCoders/Lobby) and we will forward your questions to the instructor! (Although we aim to live stream each event, there are sometimes technical difficulties so it's best to attend in person if you can.)
-        
+
             **Directions:**  MADLab is located in [Gerstein Science Information Centre](https://goo.gl/maps/2916Y54jQkx), Room B112 at the south end of the first lower level. Once you go through the main entrance of Gerstein, take a right turn down a corridor (across from the admin desk or just past the reading room), then take the stairs down and follow the signs to MADLab, the door should be open 10-15 minutes before the lesson.
             "
         )

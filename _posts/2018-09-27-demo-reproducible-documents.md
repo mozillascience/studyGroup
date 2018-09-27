@@ -1,5 +1,5 @@
 ---
-title: "Lightning Demos: reproducible docuements (reports, papers and thesis)"
+title: "Lightning Demos: reproducible documents (reports, papers and thesis)"
 text: "What is your approach to creating reproducible documents? how do you use the capabilities in R, Python, Latex, pandoc, etc. to integrate your data analysis with writing your reports and other manuscripts? Come to this session and show your peers what is your workflow for creating reproducible documents or hear from others how they do it.
 "
 location: "MADLab"
