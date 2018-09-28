@@ -1,7 +1,6 @@
 ---
 title: "R: Magrittr/Dplyr/Tidyr for data wrangling"
-text: "" "
-"
+text: ""
 location: "MADLab"
 link: "https://github.com/UofTCoders/Events/issues/201"
 date: "2018-11-15"

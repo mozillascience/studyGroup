@@ -1,7 +1,6 @@
 ---
 title: "Python: Plotting with Seaborn and Matplotlib"
-text: "" "
-"
+text: ""
 location: "MADLab"
 link: "https://github.com/UofTCoders/Events/issues/200"
 date: "2018-11-08"
