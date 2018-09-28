@@ -1,7 +1,6 @@
 ---
 title: "Python: Statistical Methods"
-text: "" "
-"
+text: ""
 location: "MADLab"
 link: "https://github.com/UofTCoders/Events/issues/204"
 date: "2018-12-06"
