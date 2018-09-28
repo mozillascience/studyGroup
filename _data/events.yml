@@ -1,51 +1,13 @@
-
-# Key is the part of the filename in _posts/
-- key: git-intro
-  # Title of event that will show up as the GH Issue title
-  title: 'Intro to Version Control with Git and GitHub'
-  # Explanation of event as a paragraph form
-  description: >
-    Learn how to take advantage of version control for your projects
-    and why it can be useful. We will be focusing on Git, a popular
-    piece of software that does version control. This session is
-    geared towards complete beginners - if you've never touched Git before,
-    this is for you!
-
-  # Date of the event in YYYY-MM-DD format
-  date: 2018-10-04
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab
-  # The URL for the location
-  location_url: "https://goo.gl/maps/cfygtx94KL92"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  # Beginner Intermediate Advanced
-
-  youtube_link: ""
-
-  skill_level: Beginner
-  # R or Python
-  program_language: Git
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
-
-
   # Key is the part of the filename in _posts/
-- key: git-intermediate
+- key: R-stats
   # Title of event that will show up as the GH Issue title
-  title: 'Intermediate Topics in Git and GitHub'
+  title: 'R: Statistical Methods'
   # Explanation of event as a paragraph form
   description: >
-    In this session, we will build on the material presented at last week's Intro to Git and will discuss more advanced ways to use Git in collaboration with others.
-    The material will be aimed at an audience that has some familiarity with basic Git commands, but by no means do you need to be experienced or an expert. If you attended last week's session or have used Git before
-    or have looked over the material from last week, you should be well-prepared.
+    " "
 
   # Date of the event in YYYY-MM-DD format
-  date: 2018-10-11
+  date: 2018-11-29
   # Start and end time for event in 24 hour HH:MM format
   start_time: "18:10"
   end_time: "19:00"
@@ -62,6 +24,36 @@
 
   skill_level: intermediate
   # R or Python
-  program_language: git
+  program_language: R
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: code-along
+
+
+  # Key is the part of the filename in _posts/
+- key: python-stats
+  # Title of event that will show up as the GH Issue title
+  title: 'Python: Statistical Methods'
+  # Explanation of event as a paragraph form
+  description: >
+    " "
+  # Date of the event in YYYY-MM-DD format
+  date: 2018-12-06
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "19:00"
+  # Where the event will take place
+  location: MADLab
+  # The URL for the location
+  location_url: "https://goo.gl/maps/cfygtx94KL92"
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: ""
+  # Beginner Intermediate Advanced
+
+  youtube_link: ""
+
+  skill_level: Intermediate
+  # R or Python
+  program_language: Python
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
