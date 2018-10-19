@@ -1,3 +1,7 @@
 [submodule "lessons/pytest-lesson"]
 	path = lessons/pytest-lesson
 	url = https://github.com/annefou/pytest-lesson
+[submodule "lessons/deep-learning-minutes/neuralRPy"]
+	path = lessons/deep-learning-minutes/neuralRPy
+	url = https://github.com/anacost/neuralRPy
+	branch = master
