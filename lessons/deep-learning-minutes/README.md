@@ -73,3 +73,14 @@ tensorflow
 {: .language-python}
 
 
+### neuralnet with R
+
+See jupyter notebook with [neuralnet example](https://github.com/anacost/neuralRPy/blob/master/neuralnet_sensitivity_met_data.ipynb).
+
+### Tensorflow with python
+
+See jupyter notebook with [tensorflow in python](https://github.com/anacost/neuralRPy/blob/master/tensorflowPy.ipynb).
+
+### Other materials
+
+- [A Beginner's Guide to Neural Networks and Deep Learning](https://skymind.ai/wiki/neural-network)
