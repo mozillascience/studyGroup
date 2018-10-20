@@ -3,58 +3,55 @@ whatWeDo: What We Do
 events: Events
 contact: Contact
 team: Who We Are
-tellMeMore: Learn More
+tellMeMore: Join Us
 
 activitiesSubheading: 'Need help now?  Want to talk?  Go post in our Gitter: <a href="https://gitter.im/resbaz/Arizona" target="_blank">resbaz/Arizona</a>'
 activities:
   - title: Everyone is Welcome
-    description: 'We support an ample community of researchers from diverse areas and levels of 
-    expertise. Whether you are just starting to learn programming or you are already an expert, we 
+    description: 'We support an ample community of researchers from diverse areas and levels of
+    expertise. Whether you are just starting to learn programming or you are already an expert, we
     have a place for you!'
     icon: fa-users
   - title: Collaboration
-    description: 'Meeting and working with experts from different fields can bring a new and fresh 
-    perspective to your own work! Even more, re-inforce your skill and help train a new generation 
+    description: 'Meeting and working with experts from different fields can bring a new and fresh
+    perspective to your own work! Even more, re-inforce your skill and help train a new generation
     of developers by teaching others.'
     icon: fa-thumbs-o-up
   - title: Community Building
-    description: 'Meet new people in and outside of your field. Join our supportive network of 
+    description: 'Meet new people in and outside of your field. Join our supportive network of
     data scientists and find out what we can do when we work together.'
     icon: fa-home
 
 Ourevents:
-  - title: PhTea
+  - title: Coffee and Code
     description: "<strong>Where:</strong> Catalyst Café, Biosciences Research Laboratories Building, 1230 North Cherry Avenue<br>
     <strong>When:</strong> 8AM - 10AM, every Tuesday<br>
-    <strong>What:</strong> Whether you're debugging code or need ideas for how to 
-    introduce programming into your research, PhTea is a great place to receive help 
-    and share knowledge! No specific problem? No worries -- join us at PhTea to chit chat
-    with other researchers in the morning while enjoying some coffee or tea. PhTea is the 
+    <strong>What:</strong> Whether you're debugging code or need ideas for how to
+    introduce programming into your research, Coffee and Code is a great place to receive help
+    and share knowledge! No specific problem? No worries -- join us at Coffee and Code to chit chat
+    with other researchers in the morning while enjoying some coffee or tea. Coffee and Code is the
     best way to start your Tuesday!"
     icon: fa-coffee
   - title: Hacky Hour
     description: "<strong>Where:</strong> Gentle Ben's (University Blvd)<br>
 <strong>When:</strong> 4PM - 7PM, every Thursday<br>
-<strong>What:</strong> Hacking + Happy Hour = HackyHour! Every week, researchers, 
-data scientists, and programmers around campus get together.  
-Some people bring their programming problems to get help from those with more experience. 
-Those without projects come to discuss  
-their research, brainstorm new ideas, try out new technologies, or chit chat about 
+<strong>What:</strong> Hacking + Happy Hour = HackyHour! Every week, researchers,
+data scientists, and programmers around campus get together.
+Some people bring their programming problems to get help from those with more experience.
+Those without projects come to discuss
+their research, brainstorm new ideas, try out new technologies, or chit chat about
 data science!"
     icon: fa-beer
   - title: Community Events
     description: "<p><strong>Tucson Python Meetup:</strong> The goal of this group is to encourage
-     more mingling, learning, and sharing ideas within the Tucson Python community. 
-     Everybody is welcome, no matter what your level of Python experience. 
-     Activities include presentations and workshops on everything from how to use Python 
-     to control the lights in your home, to building web applications which can scale to 
-     millions of users. For more information, see: 
-     <a href='https://www.meetup.com/Tucson-Python-Meetup/' target='_blank'>https://www.meetup.com/Tucson-Python-Meetup/</a></p>
-    <p><strong>Tucson Data Science Meetup:</strong> Monthly meetups discussing many aspects of 
-    Data Science, including machine learning/deep learning, 
-    natural language processing, data visualization, bioinformatics, and more! See: <a href='https://www.meetup.com/Tucson-Data-Science-Meetup/' target='_blank'>https://www.meetup.com/Tucson-Data-Science-Meetup/</a></p>"
+     more mingling, learning, and sharing ideas within the Tucson Python community.
+     Everybody is welcome, no matter what your level of Python experience.
+     Activities include presentations and workshops on everything from how to use Python
+     to control the lights in your home, to building web applications which can scale to
+     millions of users. For more information, see:
+     <a href='https://www.meetup.com/Tucson-Python-Meetup/' target='_blank'>https://www.meetup.com/Tucson-Python-Meetup/</a></p>"
     icon: fa-calendar
- 
+
 
 eventPlaceholder: Nothing yet! Propose an event here.
 eventsSubheading: '<p style="line-height: 1.25em;">Stay up to date on announcements at our Twitter: <a href="https://twitter.com/ResBazAZ" target="_blank">@ResBazAZ</a><br>
@@ -81,4 +78,4 @@ teamHeadline: Who We Are
 teamSubheading: "We're scientists, students and researchers who want to work with you! Any more questions?  You can ask us at our Gitter!"
 interests: Interests
 
-codeOfConduct: Study Group Code of Conduct
+codeOfConduct: Code of Conduct

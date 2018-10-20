@@ -7,7 +7,7 @@ and
 
 To contact us for help with your coding projects, ping us on our [gitter](https://gitter.im/resbaz/Arizona). 
 
-For more general information about us see [our  website here](http://resbazaz.github.io/studyGroup/) 
+For more general information about us see [our  website here](https://resbazaz.github.io/studyGroup/) 
 
 
 ### Who we are:

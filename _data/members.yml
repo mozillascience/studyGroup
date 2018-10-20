@@ -1,12 +1,3 @@
-- name: Andreina Castillo
-  affiliation: CoGe
-  github: AndreinaCastillo
-  interests:
-    - Plasmodium and malaria
-    - Infectious diseases
-    - Molecular and comparative genomics
-    - Programming (Python)
-
 - name: Marnee Dearman
   affiliation: College of Medicine, University of Arizona
   github: MarneeDear
@@ -15,18 +6,11 @@
     - Graph Databases
     - Python
 
-- name: Heather Lent
-  affiliation: CoGe
-  github: hclent
-  interests:
-    - Language & NLP
-    - Russian
-
 - name: Julian Pistorius
-  affiliation: Cyverse
+  affiliation: CyVerse
   github: julianpistorius
   interests:
-    - Programming 
+    - Programming
     - Outreach and training
 
 - name: Gaius Augustus
@@ -36,7 +20,7 @@
     - R Programming
     - Bioinformatics
     - Python
-    
+
 - name: Blake Joyce
   affiliation: Cyverse
   github: bjoyce3

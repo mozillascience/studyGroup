@@ -20,11 +20,11 @@ language: en
 
 
 baseurl: "/studyGroup"
-url: "http://resbazaz.github.io"
+url: "https://resbazaz.github.io"
 
 titleBackground: "/img/resbaz2017.jpg"
-headlineSmall: "Join us for this year's conference, March 29th and 30th!"
-headlineMain: "Research Bazaar Tucson 2018"
+headlineSmall: "Community - Skills Sharing - Digital Literacy"
+headlineMain: "Research Bazaar - Tucson, Arizona"
 
 # Setup Google Calendar
 # Usage:
