@@ -3,7 +3,7 @@ title: use R! group How analysing football data made me fall in love with footba
 text: 
 location: Teknologihuset
 link: https://www.meetup.com/Oslo-useR-Group/events/255853637/
-date: 2018-09-19
+date: 2018-12-10
 startTime: '17:30'
 endTime: '19:30'
 
