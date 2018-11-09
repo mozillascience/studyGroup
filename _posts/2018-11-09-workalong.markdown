@@ -1,5 +1,5 @@
 ---
-title: Work along session on "How to use pytest?"
+title: Work along session on "Automated testing"
 text: Learn about pytest and how to use this python package for testing your codes
 location: Science Library
 link: https://github.com/uio-carpentry/studyGroup/issues/11
