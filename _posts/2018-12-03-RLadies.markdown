@@ -1,0 +1,32 @@
+---
+title: RLadies Oslo, Topic modelling - what is it, and how does VG use it?
+text: 
+location: Teknologihuset
+link: https://www.meetup.com/rladies-oslo/events/256272641/?isFirstPublish=true
+date: 2018-12-03
+startTime: '17:00'
+endTime: '19:00'
+
+---
+
+**Session leader**: Athanasia Monika Mowinckel
+
+The next RLadies-Oslo next meetup is set for December 3rd, with the amazing @ZazzValette presenting "Topic modelling - what is it, and how does VG use it?”
+
+Topic models (TM) are powerful tools to programmatically uncover textual structure in what otherwise appear to be just plain unstructured text. The applications of TM are many, like content analysis, article search, and personalisation of content. Isabelle Valette will take us through what topic models are, the way the algorithm works, and how VG has been using it inside and outside the newsroom.
+
+Who is Isabelle?
+French data nerd, nature lover and week-end hiker, Isabelle works as a data scientist at the media house VG, one of Norway's largest newspaper. Educated as an economist and transformed into an RLady, a computer scientist and data journalist, Isa loves #rstats. She is passionate about empowering women to become awesome coders.
+
+
+There will be some Christmas themed refreshments and spirit! 
+Come join us!
+
+
+
+- **Level**: beginner to intermediate
+- **When**: 03th December 2018
+- **Time**: 17:00-19:00
+- **Location**:   Teknologihuset, Pilestredet 56 · Oslo
+- **More information**: https://www.meetup.com/rladies-oslo/events/256272641/?isFirstPublish=true
+
