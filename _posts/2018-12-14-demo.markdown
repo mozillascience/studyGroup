@@ -1,5 +1,5 @@
 ---
-title: Demo session on Github & gitlab best practices
+title: Social coding and open software
 text: Learn about the different software development best practices for researchers
 location: Science Library
 link: https://github.com/uio-carpentry/studyGroup/issues/15
@@ -11,7 +11,12 @@ endTime: '16:00'
 
 **Session leader**: Anne Fouilloux
 
-During this session, we will present you the main stages of Software Development and what are the main Software development best practices for developing Research programs. 
+During this session, we will present you:
+
+- Why software matters in research
+- Why open software
+- How to do open software
+- How to grow a community around your code
 
 **When**: 14th December 2018, 14-16h
 **Location**:   Niels Henrik Abels hus, room 209
