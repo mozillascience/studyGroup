@@ -1,0 +1,30 @@
+---
+title: Oslo useR! Group, Prepare to be surprised! Visualizing public data from npd.no
+text: 
+location: Microsoft Norge, Lysaker Torg 45, Lysaker
+link: https://www.meetup.com/Oslo-useR-Group/events/256437202/
+date: 2019-01-10
+startTime: '17:30'
+endTime: '20:00'
+
+---
+
+**Session leader**: Dmytro Perepolkin and Kristijan Bakaric
+
+“Visualization can surprise, but it doesn’t scale. Modeling scales well, but it can’t fundamentally surprise.” – Hadley Wickham.
+
+One of the most important phases in the Data Analysis process is data visualization. It is an inherently human activity which relies on our ability to comprehend visual information and make sense of patterns. However, there’s only so much we can spend in visualizing the data, and regardless how many hours we may decide to put into it, it is never going to be enough. Therefore, it is important to be able to build simple custom-purposed visualizations that facilitate sense-making and can trigger new ideas for modelling.
+
+This project has started as a small-scale proof of concept for using {htmlwidgets} in R markdown. But then, inspired by awesome talk by Matt Dray (@mattdray) at #EARL2018, it took new direction incorporating new interactive features and data filtering. In this talk Kristijan will walk you through the process of thinking through, composing and deploying interactive Rmarkdown reports without help of Shiny server, using DT, leaflet, mapview, plotly, crosstalk and flexdashboard.
+
+About the speaker:
+
+Kristijan, originally from Croatia, has a master’s degree in Geology of Mineral Resources and Geophysical Exploration. He has been working as an exploration geologist in the field of oil and gas exploration for almost five years. Majority of the time he spent on the other end of the data analysis tunnel – in the realm of specialized commercial front-ends. There he visualized, analyzed and interpreted the data, within the given software boundaries and with a different hat; completely unaware of what was happening with the data in the background.
+
+In 2017 he started working in a hybrid data analyst role, and approximately six months ago, mainly in his free time, he started with a new hobby - learning about a toolbox called R and its wealth of packages. After so many years working “indirectly” with the data, R started to empower him to understand the data analysis process. He likes to summarize his R journey so far as mindset changing and simply fun. Main sources he is using for learning R are friendly colleagues (Dmytro), google, https://www.datacamp.com/ and books from https://bookdown.org/).
+
+- **Level**: beginner to intermediate
+- **When**: 10th January 2019
+- **Time**: 17:30-20:00
+- **Location**:   Microsoft Norge, Lysaker Torg 45, Lysaker
+- **More information**: https://www.meetup.com/Oslo-useR-Group/events/256437202/
