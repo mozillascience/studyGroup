@@ -3,7 +3,7 @@ title: Book Club on Teaching Tech together
 text: Discuss the first 5 chapters of "Teaching Tech together (Greg Wilson) 
 location: Science Library
 link: https://github.com/uio-carpentry/studyGroup/issues/14
-date: 2018-12-07
+date: 2019-01-18
 startTime: '14:00'
 endTime: '16:00'
 
@@ -21,6 +21,6 @@ The StudyGroup@UiO share comments at [https://hypothes.is/groups/mReaNk2e/studyg
 **online material to learn how to use hypothes.is**: 
 - https://web.hypothes.is/quick-start-guide-for-students/
 
-**When**: 7th December 2018, 14-16h
+**When**: 18th January 2019, 14-16h
 **Location**:   Niels Henrik Abels hus, room 209
 
