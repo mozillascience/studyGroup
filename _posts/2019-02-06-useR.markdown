@@ -1,0 +1,25 @@
+---
+title: Oslo useR! Group, Mild introduction to Rcpp: what you need to know about C++ as R user
+text: 
+location: Teknologihuset
+link: https://www.meetup.com/Oslo-useR-Group/events/256805098/
+date: 2019-02-06
+startTime: '17:30'
+endTime: '19:30'
+
+---
+
+**Session leader**: Dmytro Perepolkin and Øystein Sørensen
+
+Sometimes R code just isn’t fast enough. You’ve used profiling to figure out where your bottlenecks are, and you’ve done everything you can in R, but your code still isn’t fast enough. In this talk you will learn how you can improve performance by rewriting key functions in C++. Rcpp provides a clean, approachable API that lets you write high-performance code with as little friction as possible.
+
+About the speaker:
+Øystein holds a master's degree in Environmental Physics and Renewable Energy and a PhD in Biostatistics. In addition to his PhD work, Øystein has worked for two years as a data scientist in Storebrand's marketing team and for two year as a data scientist in NextBridge Analytics. Today he is Associate Professor at the University of Oslo.
+
+
+- **Level**: beginner to intermediate
+- **When**: 6th February 2019
+- **Time**: 17:30-19:30
+- **Location**:   Teknologihuset, Pilestredet 56 · Oslo
+- **More information**: https://www.meetup.com/Oslo-useR-Group/events/256805098/
+
