@@ -1,6 +1,6 @@
 ---
-title: Oslo useR! Group, Mild introduction to Rcpp: what you need to know about C++ as R user
-text: 
+title: Oslo useR! Group, Mild introduction to Rcpp
+text: what you need to know about C++ as R user
 location: Teknologihuset
 link: https://www.meetup.com/Oslo-useR-Group/events/256805098/
 date: 2019-02-06
