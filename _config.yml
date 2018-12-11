@@ -3,7 +3,7 @@
 
 #Step 1: give your study group a name and a short description,
 #and choose a language from the options in the _data directory:
-title: Carpentry@UiO Study Group
+title: Carpentry@Oslo Study Group
 description: "Study group for the Carpentries community at University of Oslo."
 language: en
 
@@ -19,7 +19,7 @@ language: en
 # None of these things need to be changed - but feel free!
 
 titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
-headlineSmall: "Welcome to UiO Carpentry Study Group!"
+headlineSmall: "Welcome to Oslo Carpentry Study Group!"
 headlineMain: "Let's Meet and Work Together"
 avatar: "img/logos/uio-carpentry-logo-small.png"
 
