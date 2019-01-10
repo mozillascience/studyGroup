@@ -1,5 +1,6 @@
 #Setup ~~~
 #Follow these 2 steps to set up your site.
+exclude: [".Rproj.user"]
 
 #Step 1: give your study group a name and a short description:
 title: University of Toronto Coders

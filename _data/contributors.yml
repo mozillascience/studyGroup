@@ -48,6 +48,13 @@
 - name: Dano Morrison
   github: jdpigeon
 
+- name: Joel Östblom
+  degree: PhD, Biomedical Engineering
+  github: joelostblom
+  interests:
+    - Python
+    - Linux
+
 - name: Raul Samayoa
   github: ralle123
 

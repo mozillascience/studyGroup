@@ -22,7 +22,7 @@
 
 - name: Ahmed Hasan
   position: Course Coordinator
-  degree: MSc, Biology
+  degree: PhD, Biology
   github: aays
   interests:
     - R
@@ -52,11 +52,3 @@
   github: nsahin
   interests:
     - Python
-
-- name: Joel Östblom
-  position: Technical Admin
-  degree: PhD, Biomedical Engineering
-  github: joelostblom
-  interests:
-    - Python
-    - Linux
