@@ -52,7 +52,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:"dplyr tidyr"
+  packages: "dplyr tidyr"
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -89,7 +89,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -130,7 +130,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -162,7 +162,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -194,7 +194,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -211,7 +211,7 @@
     # Key is the part of the filename in _posts/
 - key: R-shinyapps
   # Title of event that will show up as the GH Issue title
-  title: 'Intro to TidyRand Reshape2'
+  title: 'Intro to TidyR and Reshape2'
   # Explanation of event as a paragraph form
   description: ""
   # Date of the event in YYYY-MM-DD format
@@ -225,7 +225,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -254,7 +254,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -284,7 +284,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -315,7 +315,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -345,7 +345,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -374,7 +374,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -405,7 +405,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -435,7 +435,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
