@@ -147,7 +147,7 @@
      # Key is the part of the filename in _posts/
 - key: R-reshape2
   # Title of event that will show up as the GH Issue title
-  title: 'Intro to TidyRand Reshape2'
+  title: 'Intro to TidyR and Reshape2'
   # Explanation of event as a paragraph form
   description: ""
 
