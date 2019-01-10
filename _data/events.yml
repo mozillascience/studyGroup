@@ -52,7 +52,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:"dplyr tidyr"
+  packages: "dplyr tidyr"
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -89,7 +89,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -130,14 +130,14 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
 
   skill_level: Beginner
   # R or Python
-  program_language:
+  program_language: ""
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
 
@@ -162,7 +162,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -181,7 +181,8 @@
   title: 'Intro to TidyRand Reshape2'
   # Explanation of event as a paragraph form
   description: >
-    This is an introductory tutorial on image processing using Python packages. We will understand image data types, manipulate and prepare images for analysis such as image segmentation.
+    This is an introductory tutorial on image processing using Python packages.
+    We will understand image data types, manipulate and prepare images for analysis such as image segmentation.
 
   # Date of the event in YYYY-MM-DD format
   date: 2019-02-14
@@ -194,7 +195,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -225,7 +226,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -254,7 +255,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -284,7 +285,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -315,7 +316,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -345,7 +346,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -374,7 +375,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -405,7 +406,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -435,7 +436,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages:""
+  packages: ""
   # Beginner Intermediate Advanced
 
   youtube_link: ""
@@ -447,3 +448,62 @@
   gh_labels: code-along
 
 
+
+
+    # Key is the part of the filename in _posts/
+- key: co-working
+  # Title of event that will show up as the GH Issue title
+  title: 'co-working'
+  # Explanation of event as a paragraph form
+  description: ""
+  # Date of the event in YYYY-MM-DD format
+  date: 2019-04-18
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "19:00"
+  # Where the event will take place
+  location: MADLab
+  # The URL for the location
+  location_url: "https://goo.gl/maps/cfygtx94KL92"
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: ""
+  # Beginner Intermediate Advanced
+
+  youtube_link: ""
+
+  skill_level: Advanced
+  # R or Python
+  program_language: Python
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: code-along
+
+
+
+    # Key is the part of the filename in _posts/
+- key: social
+  # Title of event that will show up as the GH Issue title
+  title: 'End of Term Social'
+  # Explanation of event as a paragraph form
+  description: ""
+  # Date of the event in YYYY-MM-DD format
+  date: 2019-04-25
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "19:00"
+  end_time: "21:00"
+  # Where the event will take place
+  location: TBA
+  # The URL for the location
+  location_url: ""
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: ""
+  # Beginner Intermediate Advanced
+
+  youtube_link: ""
+
+  skill_level: Beginner
+  # R or Python
+  program_language: Python
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: code-along
