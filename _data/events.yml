@@ -33,7 +33,7 @@
   # Key is the part of the filename in _posts/
 - key: Intro-R
   # Title of event that will show up as the GH Issue title
-  title: "Intro to R/Tidyverse"
+  title: "Intro to R and Tidyverse"
   # Explanation of event as a paragraph form
   description: >
     The basics of using R and the Tidyverse for working with data, specifically:
@@ -178,7 +178,7 @@
     # Key is the part of the filename in _posts/
 - key: python-imageprocessing
   # Title of event that will show up as the GH Issue title
-  title: "Intro to TidyRand Reshape2"
+  title: "Image Processing in Python"
   # Explanation of event as a paragraph form
   description: >
     This is an introductory tutorial on image processing using Python packages.
@@ -212,7 +212,7 @@
     # Key is the part of the filename in _posts/
 - key: R-shinyapps
   # Title of event that will show up as the GH Issue title
-  title: "Intro to TidyRand Reshape2"
+  title: "R: Interactive Plotting with Shinny Apps"
   # Explanation of event as a paragraph form
   description: ""
   # Date of the event in YYYY-MM-DD format

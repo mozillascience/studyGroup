@@ -84,6 +84,50 @@ keep_only_new <- function(.data) {
 new_sessions <- keep_only_new(session_details)
 new_coffee_code <- keep_only_new(coffee_code_details)
 
+# Create files in _posts/ -------------------------------------------------
+# Adds the new sessions/events to the _posts folder.
+
+create_new_posts_with_content <- function(.data) {
+    new_post_filenames <-
+        glue_data(.data, "{here::here('_posts')}/{date}-{key}.md")
+
+    # Get the GitHub Issue URL for the event.
+    gh_issue_number <- gh::gh("GET /repos/:owner/:repo/issues",
+                              owner = "uoftcoders",
+                              repo = "Events") %>%
+        map_dfr(~ data_frame(by_title = .$title, url = .$html_url))
+
+    new_post_content <- .data %>%
+        mutate(by_title = str_c(title, " - ", day_month(date, add_name = FALSE))) %>%
+        left_join(gh_issue_number, by = "by_title") %>%
+        glue_data(
+            '
+            ---
+            title: "{title}"
+            text: "{description}"
+            location: "{location}"
+            link: "{url}"
+            date: "{as.Date(date)}"
+            startTime: "{start_time}"
+            endTime: "{end_time}"
+            ---
+            '
+        )
+
+    # Save post content to file
+    fs::dir_create(here::here("_posts"))
+    map2(new_post_content, new_post_filenames, ~ write_lines(x = .x, path = .y))
+    usethis:::done("Markdown posts created in _posts/ folder.")
+    return(invisible())
+}
+
+create_new_posts_with_content(new_sessions)
+create_new_posts_with_content(new_coffee_code)
+
+
+
+
+
 # Create a GitHub Issue of the session ------------------------------------
 
 post_gh_issue <- function(title, body, labels) {
@@ -186,42 +230,4 @@ create_gh_issues_events <- function(.data) {
 create_gh_issues_coffee_code(new_coffee_code)
 create_gh_issues_events(new_sessions)
 
-# Create files in _posts/ -------------------------------------------------
-# Adds the new sessions/events to the _posts folder.
 
-create_new_posts_with_content <- function(.data) {
-    new_post_filenames <-
-        glue_data(.data, "{here::here('_posts')}/{date}-{key}.md")
-
-    # Get the GitHub Issue URL for the event.
-    gh_issue_number <- gh::gh("GET /repos/:owner/:repo/issues",
-                              owner = "uoftcoders",
-                              repo = "Events") %>%
-        map_dfr(~ data_frame(by_title = .$title, url = .$html_url))
-
-    new_post_content <- .data %>%
-        mutate(by_title = str_c(title, " - ", day_month(date, add_name = FALSE))) %>%
-        left_join(gh_issue_number, by = "by_title") %>%
-        glue_data(
-            '
-            ---
-            title: "{title}"
-            text: "{description}"
-            location: "{location}"
-            link: "{url}"
-            date: "{as.Date(date)}"
-            startTime: "{start_time}"
-            endTime: "{end_time}"
-            ---
-            '
-        )
-
-    # Save post content to file
-    fs::dir_create(here::here("_posts"))
-    map2(new_post_content, new_post_filenames, ~ write_lines(x = .x, path = .y))
-    usethis:::done("Markdown posts created in _posts/ folder.")
-    return(invisible())
-}
-
-create_new_posts_with_content(new_sessions)
-create_new_posts_with_content(new_coffee_code)
