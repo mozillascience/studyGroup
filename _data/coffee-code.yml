@@ -80,7 +80,7 @@
 
 
 # Date of the event in YYYY-MM-DD format
-- date: 2019-03-09
+- date: 2019-04-09
   # Start and end time for event in 24 hour HH:MM format
   start_time: "9:00"
   end_time: "11:00"

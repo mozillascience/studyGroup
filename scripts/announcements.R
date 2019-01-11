@@ -89,7 +89,7 @@ new_coffee_code <- keep_only_new(coffee_code_details)
 post_gh_issue <- function(title, body, labels) {
     # Will need to set up a GitHub PAT via (I think) the function
     # devtools::github_pat() in the console.
-    devtools:::rule("Posting GitHub Issues")
+ #   devtools:::rule("Posting GitHub Issues")
     cat("Posting `", title, "`\n\n")
     if (!devtools:::yesno("Are you sure you want to post this event as an Issue?")) {
         gh::gh(
@@ -98,6 +98,7 @@ post_gh_issue <- function(title, body, labels) {
             repo = "Events",
             title = title,
             body = body,
+
             labels = array(c(labels))
         )
         usethis:::done("Event posted as an Issue to UofTCoders/Events.")
