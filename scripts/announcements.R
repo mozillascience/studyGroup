@@ -89,6 +89,13 @@ new_coffee_code <- keep_only_new(coffee_code_details)
 # Create files in _posts/ -------------------------------------------------
 # Adds the new sessions/events to the _posts folder.
 
+# Format as eg August 23
+day_month <- function(.date, add_name = TRUE) {
+    date_format <- "%B %e" # as August 23
+    if (add_name) date_format <- "%A, %B %e" # as Monday, August 23
+    trimws(format(as.Date(.date), format = date_format))
+}
+
 create_new_posts_with_content <- function(.data) {
     new_post_filenames <-
         glue_data(.data, "{here::here('_posts')}/{date}-{key}.md")
@@ -152,13 +159,6 @@ post_gh_issue <- function(title, body, labels) {
     } else {
         message("Event not posted to Issue.")
     }
-}
-
-# Format as eg August 23
-day_month <- function(.date, add_name = TRUE) {
-    date_format <- "%B %e" # as August 23
-    if (add_name) date_format <- "%A, %B %e" # as Monday, August 23
-    trimws(format(as.Date(.date), format = date_format))
 }
 
 gh_issue_info_event <- function(.data) {
