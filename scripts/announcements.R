@@ -20,7 +20,9 @@
 
 if (!require(devtools)) install.packages("devtools")
 devtools::install_dev_deps()
-library(tidyverse)
+library(stringr)
+library(dplyr)
+library(purrr)
 library(lubridate)
 library(glue)
 library(assertr)
@@ -30,7 +32,7 @@ library(yaml)
 
 session_details <-
     yaml.load_file(here::here("_data", "events.yml")) %>%
-    map_dfr(as.tibble) %>%
+    map_dfr(as_tibble) %>%
     arrange(date) %>%
     # drop sessions that are not set (NA in date)
     filter(!is.na(date)) %>%
@@ -41,7 +43,7 @@ session_details <-
         location_url = na_if(location_url, ""),
         location_string = case_when(
             # if both location and url are included!is.na(location) &
-            !is.na(location_url) ~ glue::glue("[{location}]({location_url})"),
+            !is.na(location_url) ~ glue("[{location}]({location_url})"),
             # if only location is included!is.na(location) &
             is.na(location_url) ~ location,
             # if neither location nor url are included
@@ -50,7 +52,7 @@ session_details <-
 
 coffee_code_details <-
     yaml.load_file(here::here("_data", "coffee-code.yml")) %>%
-    map_dfr(as.tibble) %>%
+    map_dfr(as_tibble) %>%
     arrange(date) %>%
     # drop sessions that are not set (NA in date)
     filter(!is.na(date)) %>%
