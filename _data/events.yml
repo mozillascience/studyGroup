@@ -7,7 +7,6 @@
     The basics of data analysis using the
     programming language Python with a
     beginner-friendly participatory live-coding.
-
   # Date of the event in YYYY-MM-DD format
   date: 2019-01-10
   # Start and end time for event in 24 hour HH:MM format
@@ -21,7 +20,6 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   youtube_link: ""
-
   skill_level: Beginner
   # Beginner Intermediate Advanced
   # R or Python
@@ -40,7 +38,6 @@
     - Intro to R/navigating RStudio
     - Intro to Tidyverse - pipe operators
     - Basic data wrangling with dplyr and tidyr packages
-
   # Date of the event in YYYY-MM-DD format
   date: 2019-01-17
   # Start and end time for event in 24 hour HH:MM format
@@ -54,9 +51,7 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: "dplyr tidyr"
   # Beginner Intermediate Advanced
-
   youtube_link: ""
-
   skill_level: Beginner
   # R or Python
   program_language: R
@@ -77,7 +72,6 @@
     This is a beginner level workshop, so no previous knowledge is required.
     A few intermediate level concept will be introduced, but we will not go
     into scripting in BASH.
-
   # Date of the event in YYYY-MM-DD format
   date: 2019-01-24
   # Start and end time for event in 24 hour HH:MM format
@@ -91,9 +85,7 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   # Beginner Intermediate Advanced
-
   youtube_link: ""
-
   skill_level: Beginner
   # R or Python
   program_language: Bash
@@ -118,7 +110,6 @@
     - resizing drawing region and exporting
     - importing from other sources (e.g. plots generated in R or Python)
 
-
   # Date of the event in YYYY-MM-DD format
   date: 2019-01-31
   # Start and end time for event in 24 hour HH:MM format
@@ -132,25 +123,18 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   # Beginner Intermediate Advanced
-
   youtube_link: ""
-
   skill_level: Beginner
   # R or Python
   program_language: ""
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
 
-
-
-
-     # Key is the part of the filename in _posts/
 - key: R-reshape2
   # Title of event that will show up as the GH Issue title
   title: "Intro to TidyR and Reshape2"
   # Explanation of event as a paragraph form
   description: ""
-
   # Date of the event in YYYY-MM-DD format
   date: 2019-02-07
   # Start and end time for event in 24 hour HH:MM format
@@ -164,15 +148,12 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   # Beginner Intermediate Advanced
-
   youtube_link: ""
-
   skill_level: Intermediate
   # R or Python
   program_language: R
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
-
 
 
     # Key is the part of the filename in _posts/
@@ -183,7 +164,6 @@
   description: >
     This is an introductory tutorial on image processing using Python packages.
     We will understand image data types, manipulate and prepare images for analysis such as image segmentation.
-
   # Date of the event in YYYY-MM-DD format
   date: 2019-02-14
   # Start and end time for event in 24 hour HH:MM format
@@ -197,9 +177,7 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   # Beginner Intermediate Advanced
-
   youtube_link: ""
-
   skill_level: Intermediate
   # R or Python
   program_language: Python
@@ -209,7 +187,6 @@
 
 
 
-    # Key is the part of the filename in _posts/
 - key: R-shinyapps
   # Title of event that will show up as the GH Issue title
   title: "R: Interactive Plotting with Shinny Apps"
@@ -228,9 +205,7 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   # Beginner Intermediate Advanced
-
   youtube_link: ""
-
   skill_level: Intermediate
   # R or Python
   program_language: R
@@ -257,9 +232,7 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   # Beginner Intermediate Advanced
-
   youtube_link: ""
-
   skill_level: Advanced
   # R or Python
   program_language: Python
@@ -267,8 +240,6 @@
   gh_labels: code-along
 
 
-
-    # Key is the part of the filename in _posts/
 - key: git-testing
   # Title of event that will show up as the GH Issue title
   title: "Git Continuous Integration and Testing"
@@ -287,19 +258,13 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   # Beginner Intermediate Advanced
-
   youtube_link: ""
-
   skill_level: Advanced
   # R or Python
   program_language: Git
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
 
-
-
-
-    # Key is the part of the filename in _posts/
 - key: software-defined-radio
   # Title of event that will show up as the GH Issue title
   title: "Information on the Air - Software Defined Radio"
@@ -318,18 +283,13 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   # Beginner Intermediate Advanced
-
   youtube_link: ""
-
   skill_level: Intermediate
   # R or Python
   program_language: ""
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
 
-
-
-    # Key is the part of the filename in _posts/
 - key: Regression-R
   # Title of event that will show up as the GH Issue title
   title: "Regression Models in R"
@@ -348,9 +308,7 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   # Beginner Intermediate Advanced
-
   youtube_link: ""
-
   skill_level: Intermediate
   # R or Python
   program_language: R
@@ -358,7 +316,6 @@
   gh_labels: code-along
 
 
-    # Key is the part of the filename in _posts/
 - key: HTML
   # Title of event that will show up as the GH Issue title
   title: HTML and Web Design
@@ -377,19 +334,12 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   # Beginner Intermediate Advanced
-
   youtube_link: ""
-
   skill_level: Beginner
   # R or Python
   program_language: html
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
-
-
-
-
-    # Key is the part of the filename in _posts/
 - key: ggplot2
   # Title of event that will show up as the GH Issue title
   title: "Intro to ggplot2 in R"
