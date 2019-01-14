@@ -133,17 +133,12 @@ create_new_posts_with_content <- function(.data) {
 create_new_posts_with_content(new_sessions)
 create_new_posts_with_content(new_coffee_code)
 
-
-
-
-
 # Create a GitHub Issue of the session ------------------------------------
 
 post_gh_issue <- function(title, body, labels) {
     # Will need to set up a GitHub PAT via (I think) the function
     # devtools::github_pat() in the console.
- #   devtools:::rule("Posting GitHub Issues")
-    cat("Posting `", title, "`\n\n")
+    cat("\n\nPosting `", title, "`\n\n")
     if (!devtools:::yesno("Are you sure you want to post this event as an Issue?")) {
         gh::gh(
             "POST /repos/:owner/:repo/issues",
@@ -216,7 +211,6 @@ gh_issue_info_coffee_code <- function(.data) {
         select(title, content, gh_labels)
 }
 
-
 create_gh_issues_coffee_code <- function(.data) {
     .data %>%
         gh_issue_info_coffee_code() %>%
@@ -231,5 +225,3 @@ create_gh_issues_events <- function(.data) {
 
 create_gh_issues_coffee_code(new_coffee_code)
 create_gh_issues_events(new_sessions)
-
-
