@@ -1,7 +1,7 @@
   # Key is the part of the filename in _posts/
 - key: intro-python
   # Title of event that will show up as the GH Issue title
-  title: 'Intro to Python'
+  title: "Intro to Python"
   # Explanation of event as a paragraph form
   description: >
     The basics of data analysis using the
@@ -33,7 +33,7 @@
   # Key is the part of the filename in _posts/
 - key: Intro-R
   # Title of event that will show up as the GH Issue title
-  title: 'Intro to R/Tidyverse'
+  title: "Intro to R and Tidyverse"
   # Explanation of event as a paragraph form
   description: >
     The basics of using R and the Tidyverse for working with data, specifically:
@@ -67,7 +67,7 @@
   # Key is the part of the filename in _posts/
 - key: Intro-Bash
   # Title of event that will show up as the GH Issue title
-  title: 'Intro to Bash/Shell Scripting'
+  title: "Intro to Bash/Shell Scripting"
   # Explanation of event as a paragraph form
   description: >
     This introduction to BASH aims to make participants
@@ -104,7 +104,7 @@
    # Key is the part of the filename in _posts/
 - key: inkscape
   # Title of event that will show up as the GH Issue title
-  title: 'Inkscape - An Open-Source Alternative to Adobe Illustrator'
+  title: "Inkscape - An Open-Source Alternative to Adobe Illustrator"
   # Explanation of event as a paragraph form
   description: >
     We will learn to use Inkscape, a cross-platform open source graphic design software.
@@ -137,7 +137,7 @@
 
   skill_level: Beginner
   # R or Python
-  program_language:
+  program_language: ""
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
 
@@ -147,7 +147,7 @@
      # Key is the part of the filename in _posts/
 - key: R-reshape2
   # Title of event that will show up as the GH Issue title
-  title: 'Intro to TidyRand Reshape2'
+  title: "Intro to TidyR and Reshape2"
   # Explanation of event as a paragraph form
   description: ""
 
@@ -178,10 +178,11 @@
     # Key is the part of the filename in _posts/
 - key: python-imageprocessing
   # Title of event that will show up as the GH Issue title
-  title: 'Intro to TidyRand Reshape2'
+  title: "Image Processing in Python"
   # Explanation of event as a paragraph form
   description: >
-    This is an introductory tutorial on image processing using Python packages. We will understand image data types, manipulate and prepare images for analysis such as image segmentation.
+    This is an introductory tutorial on image processing using Python packages.
+    We will understand image data types, manipulate and prepare images for analysis such as image segmentation.
 
   # Date of the event in YYYY-MM-DD format
   date: 2019-02-14
@@ -211,7 +212,7 @@
     # Key is the part of the filename in _posts/
 - key: R-shinyapps
   # Title of event that will show up as the GH Issue title
-  title: 'Intro to TidyR and Reshape2'
+  title: "R: Interactive Plotting with Shinny Apps"
   # Explanation of event as a paragraph form
   description: ""
   # Date of the event in YYYY-MM-DD format
@@ -240,7 +241,7 @@
   # Key is the part of the filename in _posts/
 - key: deeplearning-tensorflow
   # Title of event that will show up as the GH Issue title
-  title: 'Deep Learning with Tensorflow and Keras'
+  title: "Deep Learning with Tensorflow and Keras"
   # Explanation of event as a paragraph form
   description: ""
   # Date of the event in YYYY-MM-DD format
@@ -270,7 +271,7 @@
     # Key is the part of the filename in _posts/
 - key: git-testing
   # Title of event that will show up as the GH Issue title
-  title: 'Git: Continuous Integration and Testing'
+  title: "Git Continuous Integration and Testing"
   # Explanation of event as a paragraph form
   description: ""
   # Date of the event in YYYY-MM-DD format
@@ -301,7 +302,7 @@
     # Key is the part of the filename in _posts/
 - key: software-defined-radio
   # Title of event that will show up as the GH Issue title
-  title: 'Information on the Air - Software Defined Radio'
+  title: "Information on the Air - Software Defined Radio"
   # Explanation of event as a paragraph form
   description: ""
   # Date of the event in YYYY-MM-DD format
@@ -331,7 +332,7 @@
     # Key is the part of the filename in _posts/
 - key: Regression-R
   # Title of event that will show up as the GH Issue title
-  title: 'Regression Models in R'
+  title: "Regression Models in R"
   # Explanation of event as a paragraph form
   description: ""
   # Date of the event in YYYY-MM-DD format
@@ -360,7 +361,7 @@
     # Key is the part of the filename in _posts/
 - key: HTML
   # Title of event that will show up as the GH Issue title
-  title: 'HTML and Web Design'
+  title: HTML and Web Design
   # Explanation of event as a paragraph form
   description: ""
   # Date of the event in YYYY-MM-DD format
@@ -391,7 +392,7 @@
     # Key is the part of the filename in _posts/
 - key: ggplot2
   # Title of event that will show up as the GH Issue title
-  title: 'Intro to ggplot2 in R'
+  title: "Intro to ggplot2 in R"
   # Explanation of event as a paragraph form
   description: ""
   # Date of the event in YYYY-MM-DD format
@@ -421,7 +422,7 @@
     # Key is the part of the filename in _posts/
 - key: Deeplearning-pytorch
   # Title of event that will show up as the GH Issue title
-  title: 'Deep Learning with PyTorch'
+  title: "Deep Learning with PyTorch"
   # Explanation of event as a paragraph form
   description: ""
   # Date of the event in YYYY-MM-DD format
@@ -447,3 +448,62 @@
   gh_labels: code-along
 
 
+
+
+    # Key is the part of the filename in _posts/
+- key: co-working
+  # Title of event that will show up as the GH Issue title
+  title: "co-working"
+  # Explanation of event as a paragraph form
+  description: ""
+  # Date of the event in YYYY-MM-DD format
+  date: 2019-04-18
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "19:00"
+  # Where the event will take place
+  location: MADLab
+  # The URL for the location
+  location_url: "https://goo.gl/maps/cfygtx94KL92"
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: ""
+  # Beginner Intermediate Advanced
+
+  youtube_link: ""
+
+  skill_level: Advanced
+  # R or Python
+  program_language: Python
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: code-along
+
+
+
+    # Key is the part of the filename in _posts/
+- key: social
+  # Title of event that will show up as the GH Issue title
+  title: "End of Term Social"
+  # Explanation of event as a paragraph form
+  description: ""
+  # Date of the event in YYYY-MM-DD format
+  date: 2019-04-25
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "19:00"
+  end_time: "21:00"
+  # Where the event will take place
+  location: TBA
+  # The URL for the location
+  location_url: ""
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: ""
+  # Beginner Intermediate Advanced
+
+  youtube_link: ""
+
+  skill_level: Beginner
+  # R or Python
+  program_language: Python
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: code-along
