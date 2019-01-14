@@ -20,17 +20,20 @@
 
 if (!require(devtools)) install.packages("devtools")
 devtools::install_dev_deps()
-library(tidyverse)
+library(stringr)
+library(dplyr)
+library(purrr)
 library(lubridate)
 library(glue)
 library(assertr)
 library(yaml)
+library(readr)
 
 # Importing and Filtering the Event Data ----------------------------------
 
 session_details <-
     yaml.load_file(here::here("_data", "events.yml")) %>%
-    map_dfr(as.tibble) %>%
+    map_dfr(as_tibble) %>%
     arrange(date) %>%
     # drop sessions that are not set (NA in date)
     filter(!is.na(date)) %>%
@@ -41,7 +44,7 @@ session_details <-
         location_url = na_if(location_url, ""),
         location_string = case_when(
             # if both location and url are included!is.na(location) &
-            !is.na(location_url) ~ glue::glue("[{location}]({location_url})"),
+            !is.na(location_url) ~ glue("[{location}]({location_url})"),
             # if only location is included!is.na(location) &
             is.na(location_url) ~ location,
             # if neither location nor url are included
@@ -50,7 +53,7 @@ session_details <-
 
 coffee_code_details <-
     yaml.load_file(here::here("_data", "coffee-code.yml")) %>%
-    map_dfr(as.tibble) %>%
+    map_dfr(as_tibble) %>%
     arrange(date) %>%
     # drop sessions that are not set (NA in date)
     filter(!is.na(date)) %>%
@@ -73,68 +76,31 @@ coffee_code_details <-
 
 # Find any existing posts, take the date, and filter out those sessions from the
 # session_details dataframe.
-keep_only_new <- function(.data) {
+keep_only_new <- function(events) {
     existing_post_dates <- fs::dir_ls(here::here("_posts"), regexp = ".md$|.markdown$") %>%
         str_extract("[0-9]{4}-[0-9]{2}-[0-9]{2}")
 
-    .data %>%
+    events %>%
         filter(!as.character(date) %in% existing_post_dates)
 }
 
 new_sessions <- keep_only_new(session_details)
 new_coffee_code <- keep_only_new(coffee_code_details)
 
-# Create files in _posts/ -------------------------------------------------
-# Adds the new sessions/events to the _posts folder.
+# Create a GitHub Issue of the session ------------------------------------
 
-create_new_posts_with_content <- function(.data) {
-    new_post_filenames <-
-        glue_data(.data, "{here::here('_posts')}/{date}-{key}.md")
-
-    # Get the GitHub Issue URL for the event.
-    gh_issue_number <- gh::gh("GET /repos/:owner/:repo/issues",
-                              owner = "uoftcoders",
-                              repo = "Events") %>%
-        map_dfr(~ data_frame(by_title = .$title, url = .$html_url))
-
-    new_post_content <- .data %>%
-        mutate(by_title = str_c(title, " - ", day_month(date, add_name = FALSE))) %>%
-        left_join(gh_issue_number, by = "by_title") %>%
-        glue_data(
-            '
-            ---
-            title: "{title}"
-            text: "{description}"
-            location: "{location}"
-            link: "{url}"
-            date: "{as.Date(date)}"
-            startTime: "{start_time}"
-            endTime: "{end_time}"
-            ---
-            '
-        )
-
-    # Save post content to file
-    fs::dir_create(here::here("_posts"))
-    map2(new_post_content, new_post_filenames, ~ write_lines(x = .x, path = .y))
-    usethis:::done("Markdown posts created in _posts/ folder.")
-    return(invisible())
+# Format as eg August 23
+day_month <- function(date_var, add_name = TRUE) {
+    date_format <- "%B %e" # as August 23
+    if (add_name) date_format <- "%A, %B %e" # as Monday, August 23
+    trimws(format(as.Date(date_var), format = date_format))
 }
 
-create_new_posts_with_content(new_sessions)
-create_new_posts_with_content(new_coffee_code)
-
-
-
-
-
-# Create a GitHub Issue of the session ------------------------------------
 
 post_gh_issue <- function(title, body, labels) {
     # Will need to set up a GitHub PAT via (I think) the function
     # devtools::github_pat() in the console.
- #   devtools:::rule("Posting GitHub Issues")
-    cat("Posting `", title, "`\n\n")
+    cat("\n\nPosting `", title, "`\n\n")
     if (!devtools:::yesno("Are you sure you want to post this event as an Issue?")) {
         gh::gh(
             "POST /repos/:owner/:repo/issues",
@@ -152,15 +118,8 @@ post_gh_issue <- function(title, body, labels) {
     }
 }
 
-# Format as eg August 23
-day_month <- function(.date, add_name = TRUE) {
-    date_format <- "%B %e" # as August 23
-    if (add_name) date_format <- "%A, %B %e" # as Monday, August 23
-    trimws(format(as.Date(.date), format = date_format))
-}
-
-gh_issue_info_event <- function(.data) {
-    content <- .data %>%
+gh_issue_info_event <- function(events) {
+    content <- events %>%
         mutate(needs_packages = ifelse(
             !is.na(packages),
             str_c(
@@ -186,13 +145,13 @@ gh_issue_info_event <- function(.data) {
             "
         )
 
-    .data %>%
+    events %>%
         mutate(content = content, title = str_c(title, " - ", day_month(date, add_name = FALSE))) %>%
         select(title, content, skill_level, gh_labels)
 }
 
-gh_issue_info_coffee_code <- function(.data) {
-    content <- .data %>%
+gh_issue_info_coffee_code <- function(events) {
+    content <- events %>%
         glue_data(
             "
             Our bi-weekly 'Coffee and Code' meet-up:
@@ -209,20 +168,19 @@ gh_issue_info_coffee_code <- function(.data) {
             "
         )
 
-    .data %>%
+    events %>%
         mutate(content = content, title = str_c(title, " - ", day_month(date, add_name = FALSE))) %>%
         select(title, content, gh_labels)
 }
 
-
-create_gh_issues_coffee_code <- function(.data) {
-    .data %>%
+create_gh_issues_coffee_code <- function(events) {
+    events %>%
         gh_issue_info_coffee_code() %>%
         pmap( ~ post_gh_issue(..1, ..2, ..3))
 }
 
-create_gh_issues_events <- function(.data) {
-    .data %>%
+create_gh_issues_events <- function(events) {
+    events %>%
         gh_issue_info_event() %>%
         pmap( ~ post_gh_issue(..1, ..2, c(..3, ..4)))
 }
@@ -230,4 +188,42 @@ create_gh_issues_events <- function(.data) {
 create_gh_issues_coffee_code(new_coffee_code)
 create_gh_issues_events(new_sessions)
 
+# Create files in _posts/ -------------------------------------------------
+# Adds the new sessions/events to the _posts folder.
 
+create_new_posts_with_content <- function(events) {
+    new_post_filenames <-
+        glue_data(events, "{here::here('_posts')}/{date}-{key}.md")
+
+    # Get the GitHub Issue URL for the event.
+    gh_issue_number <- gh::gh("GET /repos/:owner/:repo/issues",
+                              owner = "uoftcoders",
+                              repo = "Events") %>%
+        map_dfr(~ tibble(by_title = .x$title, url = .x$html_url))
+
+    new_post_content <- events %>%
+        mutate(by_title = str_c(title, " - ", day_month(date, add_name = FALSE))) %>%
+        left_join(gh_issue_number, by = "by_title") %>%
+        glue_data(
+            '
+            ---
+            title: "{title}"
+            text: "{description}"
+            location: "{location}"
+            link: "{url}"
+            date: "{as.Date(date)}"
+            startTime: "{start_time}"
+            endTime: "{end_time}"
+            ---
+            '
+        )
+
+    # Save post content to file
+    fs::dir_create(here::here("_posts"))
+    map2(new_post_content, new_post_filenames, ~ readr::write_lines(x = .x, path = .y))
+    usethis:::done("Markdown posts created in _posts/ folder.")
+    return(invisible())
+}
+
+create_new_posts_with_content(new_sessions)
+create_new_posts_with_content(new_coffee_code)

@@ -8,10 +8,15 @@ ByteCompile: true
 Imports: 
     yaml,
     here,
-    tidyverse,
+    purrr,
+    dplyr,
+    stringr,
     lubridate,
     glue,
     fs,
     gh,
     usethis,
-    assertr
+    assertr,
+    readr
+URL: https://github.com/SaraMati/studyGroup
+BugReports: https://github.com/SaraMati/studyGroup/issues
