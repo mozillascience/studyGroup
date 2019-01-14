@@ -20,7 +20,9 @@
 
 if (!require(devtools)) install.packages("devtools")
 devtools::install_dev_deps()
-library(tidyverse)
+library(stringr)
+library(dplyr)
+library(purrr)
 library(lubridate)
 library(glue)
 library(assertr)
@@ -30,7 +32,7 @@ library(yaml)
 
 session_details <-
     yaml.load_file(here::here("_data", "events.yml")) %>%
-    map_dfr(as.tibble) %>%
+    map_dfr(as_tibble) %>%
     arrange(date) %>%
     # drop sessions that are not set (NA in date)
     filter(!is.na(date)) %>%
@@ -41,7 +43,7 @@ session_details <-
         location_url = na_if(location_url, ""),
         location_string = case_when(
             # if both location and url are included!is.na(location) &
-            !is.na(location_url) ~ glue::glue("[{location}]({location_url})"),
+            !is.na(location_url) ~ glue("[{location}]({location_url})"),
             # if only location is included!is.na(location) &
             is.na(location_url) ~ location,
             # if neither location nor url are included
@@ -50,7 +52,7 @@ session_details <-
 
 coffee_code_details <-
     yaml.load_file(here::here("_data", "coffee-code.yml")) %>%
-    map_dfr(as.tibble) %>%
+    map_dfr(as_tibble) %>%
     arrange(date) %>%
     # drop sessions that are not set (NA in date)
     filter(!is.na(date)) %>%
@@ -86,6 +88,13 @@ new_coffee_code <- keep_only_new(coffee_code_details)
 
 # Create files in _posts/ -------------------------------------------------
 # Adds the new sessions/events to the _posts folder.
+
+# Format as eg August 23
+day_month <- function(.date, add_name = TRUE) {
+    date_format <- "%B %e" # as August 23
+    if (add_name) date_format <- "%A, %B %e" # as Monday, August 23
+    trimws(format(as.Date(.date), format = date_format))
+}
 
 create_new_posts_with_content <- function(.data) {
     new_post_filenames <-
@@ -124,17 +133,12 @@ create_new_posts_with_content <- function(.data) {
 create_new_posts_with_content(new_sessions)
 create_new_posts_with_content(new_coffee_code)
 
-
-
-
-
 # Create a GitHub Issue of the session ------------------------------------
 
 post_gh_issue <- function(title, body, labels) {
     # Will need to set up a GitHub PAT via (I think) the function
     # devtools::github_pat() in the console.
- #   devtools:::rule("Posting GitHub Issues")
-    cat("Posting `", title, "`\n\n")
+    cat("\n\nPosting `", title, "`\n\n")
     if (!devtools:::yesno("Are you sure you want to post this event as an Issue?")) {
         gh::gh(
             "POST /repos/:owner/:repo/issues",
@@ -150,13 +154,6 @@ post_gh_issue <- function(title, body, labels) {
     } else {
         message("Event not posted to Issue.")
     }
-}
-
-# Format as eg August 23
-day_month <- function(.date, add_name = TRUE) {
-    date_format <- "%B %e" # as August 23
-    if (add_name) date_format <- "%A, %B %e" # as Monday, August 23
-    trimws(format(as.Date(.date), format = date_format))
 }
 
 gh_issue_info_event <- function(.data) {
@@ -214,7 +211,6 @@ gh_issue_info_coffee_code <- function(.data) {
         select(title, content, gh_labels)
 }
 
-
 create_gh_issues_coffee_code <- function(.data) {
     .data %>%
         gh_issue_info_coffee_code() %>%
@@ -229,5 +225,3 @@ create_gh_issues_events <- function(.data) {
 
 create_gh_issues_coffee_code(new_coffee_code)
 create_gh_issues_events(new_sessions)
-
-

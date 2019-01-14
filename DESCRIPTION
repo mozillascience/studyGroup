@@ -8,7 +8,9 @@ ByteCompile: true
 Imports: 
     yaml,
     here,
-    tidyverse,
+    purrr,
+    dplyr,
+    stringr,
     lubridate,
     glue,
     fs,
