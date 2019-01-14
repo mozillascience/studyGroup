@@ -1,6 +1,6 @@
 **Epicollect5 tutorial**
 
-Resident PhD student Cristian D. Navarro Waggershauser will share a basic use and his experiences using Epicollect5. This in an open source free data collecton app used for recording, uploading and downloading data and project information.
+Resident PhD student and Study Group President Cristian D. Navarro Waggershauser will share a basic use and his experiences using Epicollect5. This in an open source free data collecton app used for recording, uploading and downloading data and project information.
 
 
 **For more information:**
