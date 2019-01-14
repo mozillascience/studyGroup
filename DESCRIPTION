@@ -16,4 +16,7 @@ Imports:
     fs,
     gh,
     usethis,
-    assertr
+    assertr,
+    readr
+URL: https://github.com/SaraMati/studyGroup
+BugReports: https://github.com/SaraMati/studyGroup/issues
