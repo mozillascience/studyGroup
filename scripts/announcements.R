@@ -27,6 +27,7 @@ library(lubridate)
 library(glue)
 library(assertr)
 library(yaml)
+library(readr)
 
 # Importing and Filtering the Event Data ----------------------------------
 
@@ -198,7 +199,7 @@ create_new_posts_with_content <- function(events) {
     gh_issue_number <- gh::gh("GET /repos/:owner/:repo/issues",
                               owner = "uoftcoders",
                               repo = "Events") %>%
-        map_dfr(~ data_frame(by_title = .x$title, url = .x$html_url))
+        map_dfr(~ tibble(by_title = .x$title, url = .x$html_url))
 
     new_post_content <- events %>%
         mutate(by_title = str_c(title, " - ", day_month(date, add_name = FALSE))) %>%
@@ -219,7 +220,7 @@ create_new_posts_with_content <- function(events) {
 
     # Save post content to file
     fs::dir_create(here::here("_posts"))
-    map2(new_post_content, new_post_filenames, ~ write_lines(x = .x, path = .y))
+    map2(new_post_content, new_post_filenames, ~ readr::write_lines(x = .x, path = .y))
     usethis:::done("Markdown posts created in _posts/ folder.")
     return(invisible())
 }
