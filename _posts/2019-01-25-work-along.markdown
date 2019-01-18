@@ -11,6 +11,8 @@ endTime: '16:00'
 
 **Session leader**: Annika Rockenberger 
 
+The goal is to discuss how to develop a one-day workshop teaching the Zotero reference management system to novices. During this session, we will walk you through the main features of Zotero in both the browser and the standalone version and show you some of the more advanced features that Zotero provides, too.
+
 **When**: 25th January 2019, 14-16h
 **Location**:   Vilhelm Bjerknes' hus, room 123
 
