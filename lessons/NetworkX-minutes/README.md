@@ -19,6 +19,10 @@ tags:
  - [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 
+# Network analysis lesson
+
+A newly created lesson from Annika can be found [here](https://github.com/arockenberger/network_analysis_lesson)
+
 # Minutes of the studyGroup@UiO demo session 
 
 **When**: 21st September 2018, 14:00-16:00
@@ -192,7 +196,7 @@ nx.draw(G)
 ~~~
 {: .language-python}
 
-![Elizabeth_plot](../fig/elizabeth_plot.png)
+![Elizabeth_plot](../fig/Elizabeth_plot.png)
 
 `from_pandas_edgelist` takes a pandas dataframe and the two column names used as "Source" and "Target".
 
