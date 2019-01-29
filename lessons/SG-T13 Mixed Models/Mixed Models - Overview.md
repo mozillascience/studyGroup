@@ -8,6 +8,11 @@ This tutorial will be presented by Dr Thomas Cornulier and will cover using mixe
 - perfect for those looking to understand the processes behind model selection
 
 
+*Tutorial Material*
+All material needed for this tutorial is found in this folder:
+- Tutorial data: `Rats.txt` and `RIKZRichness.txt` 
+- Tutorial code: `MixedModels1.r`
+
 
 *About the Speaker*
 
