@@ -29,5 +29,5 @@ _This is a knowledge sharing session and if you come with a problem you understa
 
 **When**: 1st February 2019, 14-16h
 
-**Location**:   Vilhelm Bjerknes' hus, room 123
+**Location**:   None
 
