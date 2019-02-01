@@ -12,4 +12,4 @@ We meet in the Foyer of the National Library at Solli plass.
 
 **Time:** 14:00-16:00
 
-**Location:** National Library of Norway, Henrik Ibsens gate 110, 0254 Oslo
+**Location:** National Library of Norway, Henrik Ibsens gate 110, 0254 Oslo, Room "Slottsbibliotek"
