@@ -1,0 +1,33 @@
+---
+title: RLadies Oslo, Building shiny dashboards - with Aurora and Lene
+text: 
+location: room "Shell", Ole-Johan Dahls hus
+link: https://www.meetup.com/rladies-oslo/events/256431595/
+date: 2019-02-04
+startTime: '17:00'
+endTime: '19:00'
+
+---
+
+**Session leader**: Lene Norderhaug D., Aurora V., Athanasia Monika Mowinckel, Isabelle V.
+
+In this workshop, Aurora and Lene will take us through the steps of building a shiny dashboard. We will incrementally build the dashboard, with explanations throughout to help you understand how the components act together.
+
+At the end of the workshop, you should enough basic understanding of shiny to be able to start building your own shiny dashboard.
+
+About the Shiny R-ladies:
+
+Aurora is a diverse data scientist in NextBridge Anlytics. She works with innovative and demanding analytical tasks, and has also worked with system developement. Her background is from physics and she has a PhD in the field of quantum mechanics and condensed matter physics. She has long experience from teaching in academia and began using R some years ago due to a demand for a shiny dashboard.
+
+Lene is a physicist turned data scientist. After analysing data for LHC injections at CERN she joined Nextbridge Analytics in 2016. She enjoys working on a wide range of projects using data and algorithms. After being introduced to R for the second time and tidyverse for the first time she really got into R and after learning about R-ladies she was a part of starting up R-ladies Oslo.
+
+How to find us: 
+Seminar room "Shell", Ground floor. Take the T-bane or trikk to Forskningsparken.
+
+
+- **Level**: beginner to intermediate
+- **When**: 04th February 2019
+- **Time**: 17:00-19:00
+- **Location**:   Seminar room Shell (ground floor), Ole-Johan Dahls hus, Gaustadalléen 23B · Oslo
+- **More information**: https://www.meetup.com/rladies-oslo/events/256431595/
+
