@@ -1,21 +1,3 @@
-- name: Gladys Nalvarte
-  affiliation: Simula
-  github: GladysNalvarte
-  interests:
-    - Python
-    - Open Science
-    - jupyterhub
-    - repo2docker
-
-- name: Ana Costa Conrado
-  affiliation: 
-  github: anacost
-  interests:
-    - Python
-    - R
-    - Open Science
-    - Machine & Deep Learning
-
 - name: Michel Heeremans
   affiliation: University of Oslo
   github: heereman
@@ -24,28 +6,12 @@
     - Research Data Management
     - Open Science
 
-- name: Anne Bergsaker
-  affiliation: University of Oslo
-  github: 
-  interests:
-    - Carpentry@UiO
-
-- name: Annika Rockenberger 
-  affiliation: The National Library of Norway
-  github: arockenberger
-  interests:
-    - Digital Humanities
-    - Python
-    - The Carpentries
-    - Physical Programming
-
-- name: Anne Fouilloux
-  affiliation: University of Oslo
-  github: annefou
+- name: Gladys Nalvarte
+  affiliation: Simula
+  github: GladysNalvarte
   interests:
     - Python
-    - R
-    - Fortran 
-    - HPC & Cloud computing
-    - The Carpentries
+    - Open Science
+    - jupyterhub
+    - repo2docker
 

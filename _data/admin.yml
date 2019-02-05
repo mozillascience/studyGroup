@@ -1,0 +1,31 @@
+- name: Anne Fouilloux
+  affiliation: University of Oslo
+  github: annefou
+  role: President
+  interests:
+    - Python
+    - R
+    - Fortran 
+    - HPC & Cloud computing
+    - The Carpentries
+
+- name: Ana Costa Conrado
+  affiliation: University of Oslo
+  github: anacost
+  role: Event coordinator
+  interests:
+    - Python
+    - R
+    - Open Science
+    - Machine & Deep Learning
+
+- name: Annika Rockenberger 
+  affiliation: The National Library of Norway
+  github: arockenberger
+  role: Marketing and Social Media Coordinator
+  interests:
+    - Digital Humanities
+    - Python
+    - The Carpentries
+    - Physical Programming
+
