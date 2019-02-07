@@ -1,0 +1,27 @@
+---
+title: RLadies Oslo, Bayesian methods for rank and preference data with Valeria Vitelli
+text: 
+location: Teknologihuset
+link: https://www.meetup.com/rladies-oslo/events/256566088/
+date: 2019-03-18
+startTime: '17:00'
+endTime: '19:00'
+
+---
+
+**Session leader**: Valeria Vitelli, Lene Norderhaug D., Aurora V., Athanasia Monika Mowinckel, Isabelle V.
+
+Bayesian methods for rank and preference data - from recommendation systems to cancer genomics
+
+Ranking items is crucial for collecting information about preferences in many areas, from marketing to politics. The interest often lies both in producing estimates of the consensus ranking of the items, which is shared among users, and in learning individualized preferences of the users, useful for providing personalized recommendations. In the latter task it is particularly relevant to have posterior distributions of individual rankings, since these can provide an evaluation of the uncertainty associated to the estimates, and thus they can avoid unnecessarily spamming the users.
+
+I will present a statistical model which works well in these situations, and which is able of flexibly handling quite different kind of data. The Bayesian paradigm allows a fully probabilistic analysis, and it easily handles missing data and cluster estimation via augmentation procedures.
+Interestingly, this Bayesian framework has also proved to be useful for genomic data integration, since typically heterogeneous microarray data are available from different sources, and their combination allows both to gain statistical power and to strengthen the biological insight.
+
+Valeria Vitelli holds a PhD in statistics from Politecnico di Milano, Italy. She was a postdoc at Ecole Centrale Paris for a year, within a research group funded by Eléctricité de France working on big data problems in the energy sector. She then moved to the University of Oslo, where after a 5 years postdoc period funded from the Norwegian Cancer Society she became associate professor in September 2018. Her experience spans over several areas of mathematics and statistics, including functional data analysis with applications in physiology, machine learning (describing people mobility in dense urbanized areas from mobile phone data), and finally statistical genomics of cancer.
+
+- **Level**: beginner to intermediate
+- **When**: 18th March 2019
+- **Time**: 17:00-19:00
+- **Location**:   Teknologihuset, Pilestredet 56 · Oslo
+- **More information**: https://www.meetup.com/rladies-oslo/events/256566088/
