@@ -1,5 +1,5 @@
 ---
-title: use R! group, Workshop: Introduction to Automatic and Scalable Machine Learning with H2O in R 
+title: use R! group Workshop: Introduction to Automatic and Scalable Machine Learning with H2O in R 
 text: 
 location: Teknologihuset
 link: https://github.com/uio-carpentry/studyGroup/issues/40
