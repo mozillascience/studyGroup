@@ -1,0 +1,28 @@
+---
+title: use R! group, Workshop: Introduction to Automatic and Scalable Machine Learning with H2O in R 
+text: 
+location: Teknologihuset
+link: https://github.com/uio-carpentry/studyGroup/issues/40
+date: 2019-03-05
+startTime: '17:00'
+endTime: '19:00'
+
+---
+
+**Session leader**: Dmytro Perepolkin
+
+Choosing best model for your machine learning problem may be daunting task. H2O AutoML simplifies the process of setting up the complex machine learning modeling pipelines to just a few lines of code. You will learn how to make your own stacked ensemble in the first 30 min of the workshop. For those who want to stick around for the rest of the evening, we will go a bit deeper into specification of individual models (GLM, GBM, Neural Networks, etc) and understanding of model performance.
+
+After attending this workshop, learners will be able to set up their own machine learning pipeline in R from simple data preparation to specification of the classification or regression model, training, evaluation of the model using validation set, and prediction on the test data. Users will be also introduced to the concepts of ensembles and stacking and will be able to specify and run automatic machine learning models, analyze and pick best models and use them for predicting the outcomes.
+
+This workshop is repeating the session held at recent UiO Research Bazaar.
+
+About the speaker:
+Dmytro is a passionate data educator and data analyst at Equinor. He comes from econometrics and decision analysis background and has particular passion for spreading data literacy and probabilistic thinking in the society. Dmytro co-organizes Oslo UseR! Group and is frequently seen at Caprentry@UiO events at University of Oslo.
+
+
+- **When**: 05th March 2019
+- **Time**: 17:00-19:00
+- **Location**:   Teknologihuset, Pilestredet 56, Oslo
+- **More information**: https://www.meetup.com/Oslo-useR-Group/events/258988065/
+
