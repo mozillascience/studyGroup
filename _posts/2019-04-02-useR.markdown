@@ -1,0 +1,24 @@
+---
+title: use R! group Building websites in R: step-by-step introduction to {blogdown}
+text: 
+location: Teknologihuset
+link: https://github.com/uio-carpentry/studyGroup/issues/41
+date: 2019-04-02
+startTime: '17:30'
+endTime: '19:30'
+
+---
+
+**Session leader**: Dmytro Perepolkin and Andrea Chi Zhang
+
+A personal website or blog is a great place to record, share and communicate your thoughts and learning process, however the whole procedure might seem complex to those without relevant experience. An R package developed by Yihui Xie, blogdown, makes it easy to build a website using R Markdown and Hugo. Andrea will talk about what is blogdown and why you should use it, and walk you through the basic steps to publish (for free!) your website using Netlify and rbind.io.
+
+About the speaker:
+Andrea (Chi Zhang) is doing her PhD at Department of Biostatistics, University of Oslo, working on Electronic Health Record data. She is interested in time series data related to health, and is eager to learn new tricks in R and share what she has learnt in her newly built website using blogdown. Outside work she is an active supporter of non profit organisations.
+
+
+- **Level**: intermediate
+- **When**: 02nd April 2019
+- **Time**: 17:30-19:30
+- **Location**:   Teknologihuset, Pilestredet 56 · Oslo
+- **More information**: https://www.meetup.com/Oslo-useR-Group/events/258995744/
