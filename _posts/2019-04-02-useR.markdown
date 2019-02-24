@@ -1,5 +1,5 @@
 ---
-title: use R! group Building websites in R: step-by-step introduction to {blogdown}
+title: use R! group, Building websites in R, step-by-step introduction to blogdown
 text: 
 location: Teknologihuset
 link: https://github.com/uio-carpentry/studyGroup/issues/41
