@@ -12,9 +12,17 @@ Installation instructions for Git can be found on the
 
 # Installing Python
 
-Python can be managed through the Anaconda platform, which is [available for Linux, OSX and Windows](https://www.continuum.io/downloads). The default installation includes Python. The 64bit Python3 installer is a suitable download choice for most people.
+Python can be managed through the Anaconda platform, which is [available for
+Linux, OSX and Windows](https://www.continuum.io/downloads). The default
+installation includes Python. The 64bit Python3 installer is a suitable
+download choice for most people.
 
-After Anaconda has been installed on your system, you can use the command line `conda` package manager or the GUI-driven `anaconda-navigator` to install Python packages. For comprehensive instructions on both of these, refer to the [official documentation](https://docs.continuum.io/anaconda/#navigator-or-conda). Brief step-by-step instructions to get up and running with `conda` follow.
+After Anaconda has been installed on your system, you can use the command line
+`conda` package manager or the GUI-driven `anaconda-navigator` to install
+Python packages. For comprehensive instructions on both of these, refer to the
+[official
+documentation](https://docs.continuum.io/anaconda/#navigator-or-conda). Brief
+step-by-step instructions to get up and running with `conda` follow.
 
 ## Using Python
 
@@ -63,17 +71,19 @@ but is a simple way to just try things out:
 If you are only or mainly using R, this method is the official and most common
 way of installing R:
 
-1. Download R from the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/), 
-which is the official source for R and R packages. From this page you can find R
-for Windows, Mac, and Linux. Follow the instructions and get R installed on your
-computer.
-2. Download and install [RStudio](https://www.rstudio.com/products/rstudio/download/#download),
-which is the most commonly used and most powerful interface for using R. Since
-R, like most other programming languages, is just a way of communicating with 
-the computer, RStudio is a way for humans to communicate to R. RStudio is the 
-recommended program for using R and all our R tutorials use RStudio.
+1. Download R from the [Comprehensive R Archive Network
+   (CRAN)](https://cran.r-project.org/), which is the official source for R and
+   R packages. From this page you can find R for Windows, Mac, and Linux.
+   Follow the instructions and get R installed on your computer.
+2. Download and install
+   [RStudio](https://www.rstudio.com/products/rstudio/download/#download),
+   which is the most commonly used and most powerful interface for using R.
+   Since R, like most other programming languages, is just a way of
+   communicating with the computer, RStudio is a way for humans to communicate
+   to R. RStudio is the recommended program for using R and all our R tutorials
+   use RStudio.
 3. Installing R packages is done within RStudio, or through the R console via
-the `install.packages` command.
+   the `install.packages` command.
 
 To get an introduction on how to use R, please read the tutorial over at
 [Software Carpentry](https://swcarpentry.github.io/r-novice-inflammation/).
