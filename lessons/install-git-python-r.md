@@ -28,6 +28,22 @@ After Anaconda has been installed on your system, you can use the command line `
 
 Some packages are not available in the default Anaconda repositories. User contributed packaged are available in Anaconda "channels", use `anaconda search -t conda <package name>`, to find a channel with the desired package. To install this package, use `conda install -c <channel name> <package name>`. The [conda forge channel](https://conda-forge.github.io/) channel has many of the packages not in the default repositories, and the [bioconda](https://bioconda.github.io/) channel specifically targets bioconductor packages.
 
+## Trying Python without installing
+
+There are a few online services that provide solutions to run Python and Jupyter
+Notebooks without installing anything. These often come with some limitations
+but is a simple way to just try things out:
+
+-   https://notebooks.ai/ Optional to create account (but necessary for saving
+    progress). Most up to date version of `seaborn`.
+-   https://codeocean.com/ Account required. Sign up with institutional email
+    for extra storage and run time. Flexible but requires slight setup of
+    specifying which packages to install.
+-   https://colab.research.google.com/notebooks/welcome.ipynb Account required.
+    Google branded design.
+-   https://jupyter.org/try No account required. Not possible to save progress.
+    Lots of font-related warnings when plotting in our tests.
+
 # Installing R
 
 ## Official way
