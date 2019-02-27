@@ -55,14 +55,17 @@ Notebooks without installing anything. These often come with some limitations
 but is a simple way to just try things out:
 
 -   https://notebooks.ai/ Optional to create account (but necessary for saving
-    progress). Most up to date version of `seaborn`.
+    progress). Most up to date version of some commonly used packages at the
+    time of testing.
 -   https://codeocean.com/ Account required. Sign up with institutional email
     for extra storage and run time. Flexible but requires slight setup of
     specifying which packages to install.
 -   https://colab.research.google.com/notebooks/welcome.ipynb Account required.
     Google branded design.
 -   https://jupyter.org/try No account required. Not possible to save progress.
-    Lots of font-related warnings when plotting in our tests.
+    The Notebook runs fine in the classic Jupyter version, but when run from
+    JupyterLab our experience is that it outputs lots of font-related warnings
+    when plotting (non-critical, but annoying).
 
 # Installing R
 
