@@ -16,17 +16,29 @@ Python can be managed through the Anaconda platform, which is [available for Lin
 
 After Anaconda has been installed on your system, you can use the command line `conda` package manager or the GUI-driven `anaconda-navigator` to install Python packages. For comprehensive instructions on both of these, refer to the [official documentation](https://docs.continuum.io/anaconda/#navigator-or-conda). Brief step-by-step instructions to get up and running with `conda` follow.
 
-## Python
+## Using Python
+
 1. When the Anaconda installation has finished, Python is accessible by running
    `python` in a terminal (on Windows, use the `Anaconda Prompt`).
 2. Anaconda also includes graphical interfaces for interacting with Python,
-   which can be invoked by running `spyder` or `jupyter-lab` from the command line.
-3. To install a new python package from the Anaconda repositories, simply run `conda install <package name>` in a terminal. You can also use the `pip` package manager, but it will be easier to keep track of packages by sticking to one installation method.
-4. To get an introduction on how to use Python, please read the tutorial over at [Software Carpentry](https://swcarpentry.github.io/python-novice-inflammation/).
+   which can be invoked by running `spyder` or `jupyter-lab` from the command
+   line.
+3. To get an introduction on how to use Python, please read the tutorial over
+   at [Software
+   Carpentry](https://swcarpentry.github.io/python-novice-inflammation/).
 
-## User submitted packages
+### Installing packages
 
-Some packages are not available in the default Anaconda repositories. User contributed packaged are available in Anaconda "channels", use `anaconda search -t conda <package name>`, to find a channel with the desired package. To install this package, use `conda install -c <channel name> <package name>`. The [conda forge channel](https://conda-forge.github.io/) channel has many of the packages not in the default repositories, and the [bioconda](https://bioconda.github.io/) channel specifically targets bioconductor packages.
+1. To install a new Python package from the Anaconda repositories, simply run
+   `conda install <package name>` in a terminal. You can also use the `pip`
+   package manager, but it will be easier to keep track of packages by sticking
+   to one installation method.
+2. Some packages are not available in the default Anaconda repositories. User
+   contributed packaged are available in Anaconda "channels", use `anaconda
+   search -t conda <package name>`, to find a channel with the desired package.
+   To install this package, use `conda install -c <channel name> <package
+   name>`. The [conda forge channel](https://conda-forge.github.io/) channel
+   has many of the packages not in the default repositories.
 
 ## Trying Python without installing
 
