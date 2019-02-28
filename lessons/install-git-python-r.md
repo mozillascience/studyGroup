@@ -1,4 +1,4 @@
-## Installing Git
+# Installing Git
 
 Installation instructions for Git can be found on the
 [Git download site](http://git-scm.com/book/en/Getting-Started-Installing-Git)
@@ -13,9 +13,8 @@ Installation instructions for Git can be found on the
 # Installing Python
 
 Python can be managed through the Anaconda platform, which is [available for
-Linux, OSX and Windows](https://www.continuum.io/downloads). The default
-installation includes Python. The 64bit Python3 installer is a suitable
-download choice for most people.
+Linux, macOS and Windows](https://www.anaconda.com/distribution/#download-section).
+The Python3 installer is a suitable download choice for most people.
 
 ## Using Python
 
