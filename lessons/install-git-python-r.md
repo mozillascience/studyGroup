@@ -17,13 +17,6 @@ Linux, OSX and Windows](https://www.continuum.io/downloads). The default
 installation includes Python. The 64bit Python3 installer is a suitable
 download choice for most people.
 
-After Anaconda has been installed on your system, you can use the command line
-`conda` package manager or the GUI-driven `anaconda-navigator` to install
-Python packages. For comprehensive instructions on both of these, refer to the
-[official
-documentation](https://docs.continuum.io/anaconda/#navigator-or-conda). Brief
-step-by-step instructions to get up and running with `conda` follow.
-
 ## Using Python
 
 1. When the Anaconda installation has finished, Python is accessible by running
@@ -36,6 +29,13 @@ step-by-step instructions to get up and running with `conda` follow.
    Carpentry](https://swcarpentry.github.io/python-novice-inflammation/).
 
 ### Installing packages
+
+After Anaconda has been installed on your system, you can use the command line
+`conda` package manager or the GUI-driven `anaconda-navigator` to install
+Python packages. For comprehensive instructions on both of these, refer to the
+[official
+documentation](https://docs.continuum.io/anaconda/#navigator-or-conda). Brief
+step-by-step instructions to get up and running with `conda` follow.
 
 1. To install a new Python package from the Anaconda repositories, simply run
    `conda install <package name>` in a terminal. You can also use the `pip`
