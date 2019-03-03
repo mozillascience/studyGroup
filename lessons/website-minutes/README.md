@@ -15,7 +15,8 @@ tags:
 <!-- remove any tags listed above that are not relevant -->
 
  - **Session leader**: Annika Rockenberger
- - **Lesson Topic**: e
+ - **Minute from**: Anne Fouilloux
+ - **Lesson Topic**: Why and how writing your own website?
  - [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 # Minutes of the studyGroup@UiO discussion session 
