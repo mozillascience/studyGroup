@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Do I need my own website as a researcher?
-text: Open discussion on pros and cons
+text: "Open discussion on pros and cons"
 link: https://github.com/uio-carpentry/studyGroup/issues/6
 visible: true
 tags:
