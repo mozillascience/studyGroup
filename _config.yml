@@ -19,8 +19,8 @@ language: en
 # None of these things need to be changed - but feel free!
 
 
-baseurl: "/studyGroup"
-url: "https://resbazaz.github.io"
+baseurl: "/"
+url: "https://researchbazaar.arizona.edu"
 
 titleBackground: "/img/resbaz2017.jpg"
 headlineSmall: "Community - Skills Sharing - Digital Literacy"
