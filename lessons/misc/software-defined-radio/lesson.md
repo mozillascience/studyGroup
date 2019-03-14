@@ -1,17 +1,10 @@
 ---
 layout: page
 title: "Information from the Air: Software Defined Radio"
-visible: false
+visible: true
 tags:
-  # languages
-  - python
-  - r
-  - git
   - misc
-  # levels
-  - beginner
   - intermediate
-  - advanced
 ---
 <!-- change visible to true if you want it on the site -->
 <!-- remove any tags listed above that are not relevant -->
