@@ -20,12 +20,7 @@ The organising taskforce of CarpentryConnect Manchester, chaired by Aleks Nenadi
 We hope that the structure of the programme ([https://software.ac.uk/ccmcr19/programme](https://software.ac.uk/ccmcr19/programme)), with bursts of lightning talks to spark conversation, long breaks to create space for deeper discussion and networking, and an emphasis on workshops, tutorials and breakout sessions, reflects the importance placed on community building and professional development that I have been so inspired by at previous events of both the Research Software Engineers and Carpentries. The conference offers a chance to learn about and discuss the latest developments and challenges in computational teaching and research software development, to access training in relevant skills, tools, and resources, and to get to know other members of this warm and welcoming community. For more detail on the programme, keep an eye out as we announcement our keynote speakers over the coming weeks.
  
 We’d love to see plenty of new faces at the conference, as well as bringing together as many
-Instructors, Trainers, Mentors, and Maintainers, as possible from the UK, Europe, and across the world. So, if any of the above sounds interesting to you, we’d love for you to go ahead and register. If you do so before 10 April 2019, you’ll be able to take advantage of the Early Bird discount.
-
-**Our call for proposals is still open**
-([https://software.ac.uk/news/carpentryconnect-manchester-2019-call-proposals](https://software.ac.uk/news/carpentryconnect-manchester-2019-call-proposals)).
-
-You can submit an abstract or your suggestions using the submission form until 1 March 2019. The notification of the outcome of your application will be sent out by 1 April 2019.
+Instructors, Trainers, Mentors, and Maintainers, as possible from the UK, Europe, and across the world. So, if any of the above sounds interesting to you, we’d love for you to go ahead and register. If you do so before 18 April 2019, you’ll be able to take advantage of the Early Bird discount.
  
 **We look forward to seeing you in Manchester in June!**
 
