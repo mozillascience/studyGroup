@@ -1,0 +1,24 @@
+---
+title: use R! group, Investing with R
+text: 
+location: Teknologihuset
+link: https://github.com/uio-carpentry/studyGroup/issues/43
+date: 2019-05-08
+startTime: '17:30'
+endTime: '19:30'
+
+---
+
+**Session leader**: Dmytro Perepolkin and Lars Nygaard
+
+Most investors still invest through expensive traditional active funds although studies clearly show that cheap index funds do better over time and, modern Nobel-prize winning research shows there are fully automated strategies, or so-called factor-based strategies, that do even better.
+
+R is today one of the best languages to do prototyping for quantitative investment analysis. Lars will give an introduction on implementing a simple quantitative investing strategy using packages such as quantmod, xts. He will talk about where to get your data, how to import it, and how to generate a report with investment advice.
+
+Lars has a background in physics and started coding in R about two years ago. He has also been working on a startup company Norquant (www.norquant.no).
+
+- **Level**: intermediate
+- **When**: 08th May 2019
+- **Time**: 17:30-19:30
+- **Location**:   Microsoft Norge, Lysaker Torg 45, Lysaker
+- **More information**: https://www.meetup.com/Oslo-useR-Group/events/260172902/
