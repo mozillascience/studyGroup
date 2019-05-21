@@ -2,6 +2,9 @@
 layout: page-nonav
 title: 'ResBaz Tucson May 20-22, 2019'
 ---
+## Workshop/Course Descriptions!!!
+You can find them [here](https://docs.google.com/document/d/1BUXYq9KYHxaoHiU1F-dVTvXxKlqrcCs0NsEAMDCjzo8/edit?usp=sharing).
+
 ## What
 
 The Research Bazaar is a worldwide festival promoting the digital literacy emerging at the center of modern research. Throughout 2019, events are happening at university campuses around the globe.
