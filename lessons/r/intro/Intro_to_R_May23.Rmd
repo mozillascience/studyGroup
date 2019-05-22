@@ -1,0 +1,300 @@
+---
+title: "Introduction to R"
+author: "Margot Lautens"
+date: "May 23, 2019"
+output: html_document
+---
+
+ - **Authors**: Margot Lautens, adapted from original by Luke Johnston <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/intro>
+ - **Research field**: Molecular Genetics (Alternative metabolism)
+ - **Lesson topic**: Intro to R and data wrangling
+ - **Lesson content URL**: <>
+ - **Lesson video stream**: <>
+
+This is a brief introduction to R, focussing on data wrangling using
+`dplyr` and `tidyr` packages.
+
+You **don't need to read all of this** for the session.  It's more of
+a **resource and reference**.
+
+R is a statistical computing environment to analyze data and write
+programs.  The strength of R comes from:
+
+* Being developed by statisticians to do statistical analysis.
+* Publication-quality graphic capabilities.
+* Ability to make reproducible documents.
+* Its extensive and active community of users for doing statistical
+  work:
+    - R is the top tag (x20005) in the
+      [StackExchange CrossValidated site](https://stats.stackexchange.com/tags)
+      for statistical questions
+    - There are more than 14000 packages on
+      [CRAN](https://cran.r-project.org/web/packages/) that stores all
+      R packages (and installing these packages is straight-forward),
+      from the obscure and cutting-edge statistical techniques to
+      plotting to data wrangling.
+
+I should mention a quick caveat.  While R is a general-purpose
+programming language, it works a bit differently from other languages
+such as Python (it was developed by statisticians after all!).  As
+such, programming in R may not be as intuitive, powerful, or easy as
+it may be in Python (though it can be done), especially if you come
+from a computer science background.  If your work involves a lot of
+programming, I would recommend Python as your main tool.  *However*,
+it never hurts to learn more than one language, especially as R is
+great for data analysis and plotting.
+
+One of the most important differences is that R is base 1 (as opposed to 0). 
+This means that the first item in any object is noted by 1.
+
+Ok, firstly, I've made this session with some assumptions (see the
+[slides_20190523.html](../slides_20190523.html)) file.  Briefly I'm assuming you want to
+use R for statistical analysis, plotting, and/or writing up reports.
+I'm using R Markdown to show how to write up documents with R code and
+since getting the data into an analyzable form is the hardest part of
+an analysis, I'm using packages specific to that task.
+
+While you can create functions in R, I won't be going over them in this session.  A
+great resource for R functions is
+[this page from Hadley Wickham's 'Advanced R' book](http://adv-r.had.co.nz/Functions.html)
+If you'd be interested in writing functions in R, please let me know and we'll
+try and offer a session on them.
+
+# R Markdown #
+
+An `.Rmd` or [R Markdown](http://rmarkdown.rstudio.com/) file is a
+[markdown](https://en.wikipedia.org/wiki/Markdown) file that contains
+R code chunks that can be processed to output the results of the R
+code into a generated `.md` file.  This is an incredible (and recent)
+strength of using R, as this then allows you to create html, pdf, or
+Word doc files from the `.md` file using the `rmarkdown` package
+(which relies on [pandoc](https://pandoc.org)).
+
+On the top of each `.Rmd` file is the
+[YAML](https://en.wikipedia.org/wiki/YAML) front matter, which looks
+like:
+
+```
+---
+title: "Introduction to R"
+author: "Margot Lautens"
+date: "May 23, 2019"
+output: 
+  html_document
+
+    
+---
+```
+
+Note the starting and ending `---` 'tags'.  This starts the YAML
+block.
+
+Markdown syntax for formatting is used in `.Rmd`.  Check out the
+[R Markdown documentation](http://rmarkdown.rstudio.com/) for a quick
+tutorial on the syntax.
+
+# Import/export your data #
+
+You'll need to import your data into R to analyze it. If at any time
+you need help with a command, use the `?` command, appended with the
+command of interest (eg. `?write.csv`).  R comes with many internal
+datasets that you can practice on.  The one I'm going to use is the
+`CO2` dataset. 
+
+You can also import datasets in RStudio with Tools/Import Dataset.
+
+```{r importData}
+?write.csv
+
+write.csv(CO2, file = 'CO2.csv') # Export
+ds <- read.csv('CO2.csv') # Import
+```
+
+# Viewing your data #
+
+R has several very useful and easy tools for quickly viewing your
+data as does Rstudio. 
+
+To view the data in full use `View()` and a new window will open in RStudio.
+
+`head()` shows the first few rows of a data.frame/tibble (both structures 
+for storing data that can include numbers, integers, factors, strings, etc).  
+`names()` shows the column names.
+`summary()` shows a quick description of the summary statistics (means, 
+median, frequency)for each of your columns.    
+`str()` shows the structure,such as what the object is, and its contents.  
+
+`glimpse()` is a `dplyr` only function that ressembles `str` but unlike `str`
+it allows you to see all your columns.
+
+
+
+```{r viewData}
+head(ds)
+names(ds)
+summary(ds)
+str(ds)
+
+library(dplyr)
+glimpse(ds)
+```
+
+# Wrangling your data #
+
+Data wrangling is a bit tedious in base R.  So I'm using two packages
+designed to make this easier.  Load packages by using the `library()`
+function.  `dplyr` allows for easy manipulation of datasets.
+
+`select` does as it says: select the column from the dataset.
+
+The following three lines of code are all the same. Columns can be selected
+individually with `,`, in a series with `:` or removed with `-`.
+
+```{r wrangleSelect}
+library(dplyr)
+
+select(ds,Plant,Type,Treatment)
+select(ds,Plant:Treatment)
+select(ds,-conc,-uptake)
+```
+
+`dplyr` also comes with a `%>%` pipe function (via the
+`magrittr` package), which works similar to how the Bash shell `|`
+pipe works.  The command on the right-hand side takes the output from
+the command on the left-hand side, just like how a plumbing pipe works
+for water. The `.` object represents the output from the pipe, but it 
+doesn't have to be used as using `%>%` implies also using `.`.
+
+```{r wranglePipe}
+
+select(ds,Plant,Type,Treatment)
+
+ds %>% select(Plant,Type,Treatment)
+ds %>% select(.,Plant,Type,Treatment)
+ds %>% select(Plant,Type,Treatment,conc) %>% select(Plant,Type,Treatment)
+```
+
+You can rename columns either using `rename` or `select` (the new name
+is on the left hand side, so `newname = oldname`).  However, with the
+`select` command, only that column gets selected, while `rename`
+selects all columns.
+
+```{r wrangleRename}
+
+ds %>% rename(Concentration = conc)
+ds %>% select(Concentration = conc)
+```
+
+You can subset the dataset using `filter`.  Note the double equal sign
+`==` for testing if 'Examination' is equal to 15.  A single `=` is
+used for something else (assigning things to objects). Use `&` or `,`
+to apply multiple filters.
+
+```{r wrangleFilter}
+
+filter(ds,conc==95)
+ds %>% filter(uptake>20)
+ds %>% filter(Type=="Quebec")
+
+## These are all the same:
+ds %>% filter(conc==95) %>% filter(Type=="Quebec")
+ds %>% filter(conc==95 , Type=="Quebec")
+ds %>% filter(conc==95 & Type=="Quebec")
+```
+
+You can use filter so long as the test generates a logical output
+(ie TRUE, FALSE). This means you can `grepl` inside of `filter` to 
+search and find partial string matches.
+
+You input into `grepl` your desired pattern *first*.
+
+```{r wrangleSearch}
+
+grepl("Qn",ds$Plant) 
+
+ds %>% filter(grepl("Qn",Plant))
+
+ds %>% filter(grepl("chill",Treatment))
+```
+
+We can start chaining these commands together using the `%>%` command.
+There is no limit to how long a chain can be.  `arrange`
+sorts/orders/re-arranges the column uptake in ascending
+order. `mutate` creates a new column. `ifelse` performs a logical test 
+(just like `filter`), then fills the cell depending on the output of that test.
+
+```{r wrangleChain}
+ds %>%
+  filter(Treatment=="chilled") %>%
+  select(Plant, conc, uptake) 
+  
+ds %>%
+  filter(Treatment=="chilled") %>%
+  select(Plant, conc, uptake) %>%
+  arrange(uptake) %>%
+  mutate(Qn = ifelse(grepl("Qc",Plant),"Yes","No"),
+         testing = 'Yes' ## Create a testing column to show how mutate works.
+         )
+```
+
+R is very powerful at analyzing data but is biased. It prefers long datasets like `CO2`. 
+Compare `CO2` with how some of your datasets may be configured (ie wide). Check out 
+[Hadley Wickham's 2014 paper](http://vita.had.co.nz/papers/tidy-data.html) on analyzing 
+long vs wide data. In R talk we call these datasets 'tidy'.
+
+To get your data into a nicer and more analyable format, you can use the `tidyr` package.  
+See what `gather` does in the code below.  Then see what `spread` does.  
+
+```{r reorg}
+library(tidyr)
+## Compare this:
+ds
+## With this:
+ds %>%
+  spread(conc,uptake)
+## And back again:
+ds %>%
+  spread(conc,uptake) %>%
+  gather(conc, uptake,-Plant,-Type,-Treatment)
+```
+
+Combined with `dplyr`'s `group_by` and `summarise` you can quickly
+summarise data or do further, more complicated analyses. `group_by`
+makes it so further analyses or operations work on the groups.
+`summarise` transforms the data to only contain the new variable(s)
+created, in this case the mean. You can try out `max()`,`min()`,`median()` and `sd()`.
+
+```{r reorgChain}
+ds %>%
+  group_by(Treatment,conc) %>%
+  summarise(mean = mean(uptake))
+```
+
+# Generate this document #
+
+Check out the documentation on
+[`knitr`](https://yihui.name/knitr/options/) or
+[R Markdown](http://rmarkdown.rstudio.com/authoring_rcodechunks.html)
+for R code chunk options.  If you look at the raw `.Rmd` file for this
+[document](../main.Rmd), you can see that the below code chunk uses
+`eval = FALSE`, which tells knitr to not run this code chunk.
+
+These two commands generate either a html or a md file.
+
+```{r render, eval = FALSE}
+## into html
+library(rmarkdown)
+render('lesson.Rmd') ## or can use rmarkdown::render('main.Rmd')
+## into md
+library(knitr)
+knit('lesson.Rmd') ## or can use knitr::knit('main.Rmd')
+```
+
+# Challenge: Try this out for yourself! #
+
+Using the `swiss` make a tibble with the means + sd of Agriculture, Examination, Education,
+and Infant.Mortality for fertility above 50 vs below 50 when Catholic is less than 60.
+
+Investigate `distinct`, `drop_na`, `separate`/`unite` and the `join` family using `?` for more ways to manipulate your data!
+
+Check out stackechange if you have questions or bring them to our weekly coworking sessions.

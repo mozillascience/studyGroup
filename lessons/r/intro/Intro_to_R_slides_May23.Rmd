@@ -1,0 +1,29 @@
+---
+title: "Introduction to R: Initial comments"
+author: "Margot Lautens"
+date: "May 23, 2019"
+output: 
+  slidy_presentation
+
+---
+
+## Learning goals/expectations
+
+- How to interact with R in RStudio
+- How to import/export your data
+- How to view the structure of your data
+- How to work with the data
+- How to organize data into analyzable format (long vs wide)
+
+## 4-5 main concepts:
+
+- **Getting the data**: read.csv, write.csv
+- **View the data**: View, head, names, str, glimpse, summary
+- **Working the data (dplyr):** select, filter, grepl, mutate,
+  summarise, arrange, rename, group\_by, `%>%` pipe
+- **(Re)Organize the data (tidyr):** gather, spread
+
+## Generate these slides using: ##
+
+```{r render, eval = FALSE}
+rmarkdown::render('20190523_Intro_to_R_slides.Rmd')
