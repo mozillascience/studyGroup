@@ -9,7 +9,7 @@ endTime: '16:00'
 
 ---
 
-**Session leader**: Viviane Girardin
+**Session leader**: Ana Costa
 
 In this session you will learn image processing in R.
 
