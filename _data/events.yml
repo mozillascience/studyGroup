@@ -170,10 +170,10 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   youtube_link: ""
-  skill_level: 
+  skill_level: Beginner
   # Beginner Intermediate Advanced
   # R or Python
-  program_language: 
+  program_language: R
   # Only one label that will be put into the GitHub Issue
   gh_labels: co-working
     
@@ -263,10 +263,10 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   youtube_link: ""
-  skill_level: 
+  skill_level: Beginner
   # Beginner Intermediate Advanced
   # R or Python
-  program_language: 
+  program_language: R
   # Only one label that will be put into the GitHub Issue
   gh_labels: journal-club
   
@@ -294,10 +294,10 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   youtube_link: "https://www.youtube.com/watch?v=-_5yjm73c2A"
-  skill_level: 
+  skill_level: Beginner
   # Beginner Intermediate Advanced
   # R or Python
-  program_language: 
+  program_language: R
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
 
@@ -324,7 +324,7 @@
   skill_level: Intermediate
   # Beginner Intermediate Advanced
   # R or Python
-  program_language: 
+  program_language: Python
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
   
@@ -379,9 +379,9 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: ""
   youtube_link: ""
-  skill_level: 
+  skill_level: Beginner
   # Beginner Intermediate Advanced
   # R or Python
-  program_language: 
+  program_language: R
   # Only one label that will be put into the GitHub Issue
   gh_labels: co-working
