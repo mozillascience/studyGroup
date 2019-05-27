@@ -4,9 +4,7 @@
   title: "Data visualization in R with ggplot2"
   # Explanation of event as a paragraph form
   description: >
-    The basics of data visualization using the
-    programming language R with a
-    beginner-friendly participatory live-coding.
+    The fundamentals of visualizing data in R using the ggplot2 package.
   # Date of the event in YYYY-MM-DD format
   date: 2019-05-30
   # Start and end time for event in 24 hour HH:MM format
@@ -18,7 +16,7 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: "ggplot2"
+  packages: "ggplot2, dplyr"
   youtube_link: "https://www.youtube.com/watch?v=yHWYN0yUx7M"
   skill_level: Beginner
   # Beginner Intermediate Advanced
