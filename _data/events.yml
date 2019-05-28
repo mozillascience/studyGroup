@@ -24,20 +24,20 @@
   program_language: R
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
-  
+
 # Key is the part of the filename in _posts/
 - key: r-statistics
   # Title of event that will show up as the GH Issue title
   title: "Statistics in R"
   # Explanation of event as a paragraph form
   description: >
-    Building from our previous lesson, we will go over more 
-    advanced statistical analyses using the R programming language, 
-    and especially cases where your data may be a little bit messy 
-    or you might be working with repeated-measures data 
-    (also known as hierarchical data or within-subject data). 
-    We'll assume that you are familiar with basic linear regression 
-    (e.g. testing if x predicts y) and statistics basics (e.g. how to interpret a p-value), 
+    Building from our previous lesson, we will go over more
+    advanced statistical analyses using the R programming language,
+    and especially cases where your data may be a little bit messy
+    or you might be working with repeated-measures data
+    (also known as hierarchical data or within-subject data).
+    We'll assume that you are familiar with basic linear regression
+    (e.g. testing if x predicts y) and statistics basics (e.g. how to interpret a p-value),
     but we will do a brief review and explain everything else as we go!
   # Date of the event in YYYY-MM-DD format
   date: 2019-06-06
@@ -58,7 +58,7 @@
   program_language: R
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
-  
+
       # Key is the part of the filename in _posts/
 - key: intro-python
   # Title of event that will show up as the GH Issue title
@@ -87,7 +87,7 @@
   program_language: Python
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
- 
+
 # Key is the part of the filename in _posts/
 - key: data-analysis-workflow
   # Title of event that will show up as the GH Issue title
@@ -116,7 +116,7 @@
   program_language: Python
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
-  
+
 # Key is the part of the filename in _posts/
 - key: oop-python
   # Title of event that will show up as the GH Issue title
@@ -145,7 +145,7 @@
   program_language: Python
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
-  
+
   # Key is the part of the filename in _posts/
 - key: coworking
   # Title of event that will show up as the GH Issue title
@@ -153,7 +153,7 @@
   # Explanation of event as a paragraph form
   description: >
     Join us to work on some code in good company.
-    Bring something to work on, ask and discuss 
+    Bring something to work on, ask and discuss
     with your fellow coders.
   # Date of the event in YYYY-MM-DD format
   date: 2019-07-04
@@ -174,7 +174,7 @@
   program_language: R
   # Only one label that will be put into the GitHub Issue
   gh_labels: co-working
-    
+
   # Key is the part of the filename in _posts/
 - key: bash-intro
   # Title of event that will show up as the GH Issue title
@@ -207,17 +207,17 @@
   program_language: Bash
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
-  
+
   # Key is the part of the filename in _posts/
 - key: git-intro
   # Title of event that will show up as the GH Issue title
   title: "Intro to Git"
   # Explanation of event as a paragraph form
   description: >
-    Learn how to take advantage of version control for your projects 
-    and why it can be useful. We will be focusing on Git, a 
-    popular piece of software that does version control. 
-    This session is geared towards complete beginners - if 
+    Learn how to take advantage of version control for your projects
+    and why it can be useful. We will be focusing on Git, a
+    popular piece of software that does version control.
+    This session is geared towards complete beginners - if
     you've never touched Git before, this is for you!
   # Date of the event in YYYY-MM-DD format
   date: 2019-07-18
@@ -238,7 +238,7 @@
   program_language: Git
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
-  
+
   # Key is the part of the filename in _posts/
 - key: journal-club
   # Title of event that will show up as the GH Issue title
@@ -267,17 +267,17 @@
   program_language: R
   # Only one label that will be put into the GitHub Issue
   gh_labels: journal-club
-  
+
   # Key is the part of the filename in _posts/
 - key: collaborating-github
   # Title of event that will show up as the GH Issue title
   title: "Collaborating on GitHub"
   # Explanation of event as a paragraph form
   description: >
-    Git and Github are tools not only for version control 
-    of your own code, but are widely used for collaborative 
-    team coding! Learn more about how you can use Git 
-    collaboratively on a project, the genereal workflow as 
+    Git and Github are tools not only for version control
+    of your own code, but are widely used for collaborative
+    team coding! Learn more about how you can use Git
+    collaboratively on a project, the genereal workflow as
     well as details about the step-by-step process.
   # Date of the event in YYYY-MM-DD format
   date: 2019-08-01
@@ -325,15 +325,15 @@
   program_language: Python
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
-  
+
   # Key is the part of the filename in _posts/
 - key: image-processing-python
   # Title of event that will show up as the GH Issue title
   title: "Image processing in Python"
   # Explanation of event as a paragraph form
   description: >
-    This is an introductory tutorial on image processing 
-    using Python packages. We will understand image data types, 
+    This is an introductory tutorial on image processing
+    using Python packages. We will understand image data types,
     manipulate and prepare images for analysis such as image segmentation.
   # Date of the event in YYYY-MM-DD format
   date: 2019-08-15
@@ -354,7 +354,7 @@
   program_language: Python
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
-  
+
 # Key is the part of the filename in _posts/
 - key: coworking
   # Title of event that will show up as the GH Issue title
@@ -362,7 +362,7 @@
   # Explanation of event as a paragraph form
   description: >
     Join us to work on some code in good company.
-    Bring something to work on, ask and discuss 
+    Bring something to work on, ask and discuss
     with your fellow coders.
   # Date of the event in YYYY-MM-DD format
   date: 2019-08-22

@@ -101,7 +101,7 @@ post_gh_issue <- function(title, body, labels) {
     # Will need to set up a GitHub PAT via (I think) the function
     # usethis::browse_github_pat() in the console
     cat("\n\nPosting `", title, "`\n\n")
-    if (devtools::ui_yeah("Are you sure you want to post this event as an Issue?")) {
+    if (ui_yeah("Are you sure you want to post this event as an Issue?")) {
         gh::gh(
             "POST /repos/:owner/:repo/issues",
             owner = "uoftcoders",
