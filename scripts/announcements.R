@@ -99,9 +99,9 @@ day_month <- function(date_var, add_name = TRUE) {
 
 post_gh_issue <- function(title, body, labels) {
     # Will need to set up a GitHub PAT via (I think) the function
-    # devtools::github_pat() in the console.
+    # usethis::browse_github_pat() in the console
     cat("\n\nPosting `", title, "`\n\n")
-    if (!devtools:::yesno("Are you sure you want to post this event as an Issue?")) {
+    if (devtools::ui_yeah("Are you sure you want to post this event as an Issue?")) {
         gh::gh(
             "POST /repos/:owner/:repo/issues",
             owner = "uoftcoders",
@@ -111,7 +111,7 @@ post_gh_issue <- function(title, body, labels) {
 
             labels = array(c(labels))
         )
-        usethis:::done("Event posted as an Issue to UofTCoders/Events.")
+        usethis::ui_done("Event posted as an Issue to UofTCoders/Events.")
         return(invisible())
     } else {
         message("Event not posted to Issue.")
@@ -221,7 +221,7 @@ create_new_posts_with_content <- function(events) {
     # Save post content to file
     fs::dir_create(here::here("_posts"))
     map2(new_post_content, new_post_filenames, ~ readr::write_lines(x = .x, path = .y))
-    usethis:::done("Markdown posts created in _posts/ folder.")
+    usethis::ui_done("Markdown posts created in _posts/ folder.")
     return(invisible())
 }
 
