@@ -5,6 +5,7 @@
   interests:
     - R
     - Python
+    - LaTeX
 
 - name: Lina Tran
   position: Special Events Coordinator
@@ -22,18 +23,28 @@
     - R
 
 - name: James Santangelo
-  position: Course Coordinator
+  position: RQM Course Coordinator
   degree: PhD, Biology
   github: James-S-Santangelo
   interests:
     - R
 
+- name: Sara Mahallati
+  position: Graduate Course Coordinator
+  degree: PhD, Biomedical Engineering
+  github: SaraMati
+  interests:
+    - MATLAB
+    - LaTeX
+    - Python
+
 - name: Margot Lautens
-  position: Admin
+  position: Admin, Peer Mentorship Coordinator
   degree: PhD, Molecular Genetics
   github: margot-l
   interests:
     - R
+    - Python
 
 - name: Elliott Sales de Andrade
   position: Technical Admin
@@ -50,6 +61,7 @@
   github: ab2347
   interests:
     - Python
+    - R
     
 - name: Haidy Giratallah
   position: Peer Mentorship Coordinator
