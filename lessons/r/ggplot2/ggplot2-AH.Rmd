@@ -1,0 +1,353 @@
+---
+title: Data visualization in R with ggplot2
+author: Ahmed Hasan and James Santangelo
+output: pdf_document
+---
+  
+## Lesson preamble
+  
+> ### Learning Objectives
+>
+> - Produce scatter plots, line plots, histograms, bar plots,
+> and boxplots using ggplot.
+> - Plot model fits with `geom_smooth`.
+> - Set universal plot settings.
+> - Understand and apply faceting in ggplot.
+> - Customize plots with `theme`.
+> 
+> ### Setup/Required packages
+>
+> - `install.packages('dplyr')`
+> - `install.packages('ggplot2')`
+>
+
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(eval=FALSE)
+```
+-----
+  
+# Plotting with ggplot2
+
+## Introduction
+
+`ggplot2` is a plotting package that makes it simple to create complex plots
+from data frames. The name `ggplot2` comes from its inspiration, the book "A
+grammar of graphics", and the main goal is to allow coders to express their
+desired outcome on a high level instead of telling the computer every detail
+about what will happen. For example, you would say "color my data by species"
+instead of "go through this data frame and plot any observations of species1 in
+blue, any observations of species2 in red, and so on". Thanks to this
+functional way of interfacing with data, only minimal changes are required if
+the underlying data change. This helps in thinking about the data and creating
+publication quality plots with minimal amounts of adjustments and tweaking.
+
+`ggplot2` graphics are built step by step by adding new elements, or layers.
+Adding layers in this fashion allows for extensive flexibility and
+customization of plots. 
+
+```{r}
+library(ggplot2)
+```
+
+## The `diamonds` dataset
+
+We will be working with the `diamonds` dataset in this lesson. This is a large
+(~54,000 x 10) dataset containing measurements and prices of various diamonds.
+If you have an older computer and would like to just work with a subset of the
+data, you can create that subsetted data frame as follows:
+  
+```{r}
+d <- head(diamonds, n = 1000)
+```
+
+This will create a new data frame `d` containing just the first 1000 rows
+of the dataset.
+
+## Plotting with `ggplot2` - the geoms
+
+### Making our first scatter plot
+
+To build a ggplot, we need to:
+  
+1. Use the `ggplot()` function and bind the plot to a specific data frame using
+the `data` argument
+
+```{r}
+ggplot(data = diamonds)
+```
+
+If the arguments are provided in the right order then the
+names of the arguments can be omitted (as with `dplyr`)
+
+```{r}
+ggplot(diamonds)
+```
+
+2. Define aesthetics (`aes`), by selecting the variables to be plotted and the
+variables to define the presentation such as plotting size, shape color, etc.
+
+```{r}
+ggplot(diamonds, aes(x = carat, y = price))
+```
+
+3. Add `geoms` -- geometrical objects as a graphical representation of the data
+in the plot (points, lines, bars). `ggplot2` offers many different geoms; we
+will use a few common ones today, including:
+* `geom_point()` for scatter plots, dot plots, etc.
+* `geom_line()` for trend lines, time-series, etc.
+* `geom_histogram()` for histograms
+
+To add a geom to the plot, use the `+` operator. Because we have two continuous
+variables, let's use `geom_point()` first:
+
+```{r}
+ggplot(diamonds, aes(x = carat, y = price)) +
+geom_point()
+```
+
+The `+` in the `ggplot2` package is particularly useful because it allows you
+to modify existing `ggplot` objects. This means you can easily set up plot
+"templates" and conveniently explore different types of plots, so the above
+plot can also be generated with code like this:
+
+```{r, first-ggplot-with-plus}
+# assign plot to a variable
+diamonds_plot <- ggplot(diamonds, aes(x = carat, y = price))
+
+# draw the plot
+diamonds_plot + geom_point()
+```
+
+Notes:
+
+- Anything you put in the `ggplot()` function can be seen by any geom layers
+  that you add (i.e., these are universal plot settings). This includes the x
+and y axis you set up in `aes()`.
+- You can also specify aesthetics for a given geom independently of the
+  aesthetics defined globally in the `ggplot()` function.
+- The `+` sign used to add layers must be placed at the end of each line
+  containing a layer. If, instead, the `+` sign is added in the line before the
+other layer, `ggplot2` will not add the new layer and R will return an error
+message.
+
+```{r}
+# this will raise an error
+ggplot(diamonds, aes(x = carat, y = price)) 
++ geom_point()
+```
+
+
+### Building plots iteratively + scatter plots
+
+Building plots with `ggplot2` is typically an iterative process. We start by
+defining the dataset we'll use, lay the axes, and choose a geom:
+  
+```{r}
+ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_point()
+```
+
+Then, we start modifying this plot to extract more information from it. For
+instance, we can add transparency (`alpha`) to reduce overplotting:
+  
+  
+```{r}
+ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_point(alpha = 0.5)
+```
+
+From the eye test, we can see some evidence of clusters in this scatter plot.
+It's possible that one of the categorical variables we have in the data could
+explain this pattern. Coloring the data points according to a categorical
+variable is an easy way to assess if there seems to be correlation. Let's try
+this with `cut`.
+
+```{r}
+ggplot(diamonds, aes(x = carat, y = price, color = cut)) +
+  geom_point(alpha = 0.5)
+```
+
+While some clustering is visible here, the pattern is not especially clear.
+Perhaps something else in our dataset might be a better predictor. Let's try
+`clarity` instead:
+
+```{r}
+ggplot(diamonds, aes(x = carat, y = price, color = clarity)) +
+geom_point(alpha = 0.5)
+```
+
+Turns out clarity appears to be a strong predictor here after all.  Given that
+IF1 is the best possible clarity measurement, we see that even 1-2 carat IF1
+diamonds fetch equivalent prices to 4-5 carat I1 (lowest clarity) diamonds.
+
+### Histograms
+
+Similarly to scatter plots above, histograms in `ggplot2` can simply be tacked
+on as another geom. The difference is that histograms do not take in a y
+aesthetic, since that'll be 'count' by definition:
+
+```{r}
+ggplot(diamonds, aes(x = carat)) +
+  geom_histogram()
+```
+
+The binning of a given histogram can be modified by either specifying a
+binwidth or a fixed number of bins:
+
+```{r}
+ggplot(diamonds, aes(x = carat)) +
+  geom_histogram(binwidth = 0.05)
+```
+
+### Combining `dplyr` and `ggplot` - line plots
+
+What if we wanted to see how average carat varies by price?  We'd first have to
+calculate what the mean carat value is for each price before plotting.
+Fortunately for us, the `dplyr` package allows us to perform this operation in
+a similarly straightforward manner, and works quite nicely with `ggplot2` to
+boot. Let's have a look:
+
+```{r}
+diamonds %>% 
+  group_by(price) %>% 
+  summarise(mean_carat = mean(carat))
+```
+
+This transformed dataset can be piped right into a `ggplot` call, with which we
+can proceed to plot. Note that the data frame does not need to be specified
+within the `ggplot` function since it's being passed a data frame by the
+preceding pipe chain.
+
+```{r}
+diamonds %>% 
+  group_by(price) %>% 
+  summarise(mean_carat = mean(carat)) %>% 
+  ggplot(aes(x = price, y = mean_carat)) +
+  geom_line()
+```
+
+There's definitely a lot going on here -- let's just focus on the price range 0 - 5000:
+
+```{r}
+diamonds %>% 
+  group_by(price) %>% 
+  summarise(mean_carat = mean(carat)) %>% 
+  filter(price < 5000) %>% 
+  ggplot(aes(x = price, y = mean_carat)) +
+  geom_line()
+```
+
+
+### Boxplots
+
+Let's go back to the pattern we saw earlier, where `clarity` seemed to be related to `carat`.
+We might ask: what is the distribution of `carat` for each value of `clarity`? This is where
+a boxplot might be handy:
+
+```{r}
+ggplot(diamonds, aes(x = clarity, y = carat)) +
+  geom_boxplot()
+```
+
+## Model fits with `geom_smooth`
+
+Fitting models to data is a common means of investigating whether certain
+relationships are at play in a given dataset. `ggplot2` makes visualizing
+these easy by largely consolidating line-fitting into a single geom -
+`geom_smooth`.
+
+By default, `geom_smooth` will automatically select what it thinks is the best
+model for your dataset. However, rarely will it select a linear fit. To draw a
+linear fit (or any other sort of fit, i.e. LOESS, quadratic, etc.) we have to
+specify it:
+
+```{r}
+ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = 'lm')
+```
+
+Adding the color aesthetic we had previously will cause lines to be fit to each individual group:
+
+```{r}
+ggplot(diamonds, aes(x = carat, y = price, color = clarity)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = 'lm')
+```
+
+To still fit a line across the entire dataset, specify the color aesthetic _within_ `geom_point`, and not globally.
+
+```{r}
+ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_point(aes(color = clarity), alpha = 0.5) +
+  geom_smooth(method = 'lm')
+```
+
+## Intermediate `ggplot` 
+
+### Customizing plot appearance
+
+`ggplot2` also comes preloaded with a host of pre-made themes - try them out:
+
+```{r}
+p + theme_bw()
+p + theme_classic()
+```
+
+There are also ways to create your own custom themes using the `theme()`
+function, but that is a bit outside of the scope of this lesson for now.
+
+### Faceting
+
+Finally, `ggplot` has a special technique called *faceting* that allows the
+user to split one plot into multiple subplots based on a variable included in
+the dataset. We will use `facet_wrap` to make the same scatter plot as above
+(price by carat) but split it by clarity:
+
+```{r}
+ggplot(diamonds, aes(x = carat, y = price, color = clarity)) +
+  geom_point(alpha = 0.5) +
+  facet_wrap(~ clarity) +
+  theme_classic()
+```
+
+Alternatively, it may be useful to facet by two categorical variables. This is
+where `facet_grid` comes in:
+
+```{r}
+ggplot(diamonds, aes(x = carat, y = price, color = clarity)) +
+  geom_point(alpha = 0.5) +
+  facet_grid(cut ~ clarity) +
+  theme_classic()
+```
+
+# Wrapping up
+
+We've covered many of the core elements of `ggplot2` today:
+
+* Basic structure of a ggplot call
+* The `geom` family
+    * `geom_point`
+    * `geom_line`
+    * `geom_histogram`
+    * `geom_boxplot`
+* Model fits with `geom_smooth`
+* Customizing plots with `theme`
+* Faceting with `facet_wrap` and `facet_grid`
+
+## Further resources
+
+* EEB313 - [Introduction to `dplyr` and `ggplot2`][eeb313]
+* Data Carpentry's [Data visualization with `ggplot2`][dc-r]
+* The [data visualization][data-vis] chapter from Hadley Wickham and Garrett Grolemund's _R for Data Science_
+* Hadley Wickham's [_ggplot2_ book][ggplot-book]
+* Winston Chang's [_R Graphics Cookbook_][cookbook]
+
+[cookbook]: http://www.cookbook-r.com/Graphs/
+[data-vis]: https://r4ds.had.co.nz/data-visualisation.html
+[dc-r]: https://datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html
+[eeb313]: https://uoftcoders.github.io/rcourse/lec04-dplyr.html
+[ggplot-book]: https://www.amazon.com/dp/0387981403/ref=cm_sw_su_dp?tag=ggplot2-20
+
+
