@@ -8,7 +8,7 @@ output: pdf_document
   
 > ### Learning Objectives
 >
-> - Produce scatter plots, line plots, histograms, bar plots,
+> - Produce scatter plots, histograms, bar plots,
 > and boxplots using ggplot.
 > - Plot model fits with `geom_smooth`.
 > - Set universal plot settings.
@@ -200,45 +200,6 @@ ggplot(diamonds, aes(x = carat)) +
   geom_histogram(binwidth = 0.05)
 ```
 
-### Combining `dplyr` and `ggplot` - line plots
-
-What if we wanted to see how average carat varies by price?  We'd first have to
-calculate what the mean carat value is for each price before plotting.
-Fortunately for us, the `dplyr` package allows us to perform this operation in
-a similarly straightforward manner, and works quite nicely with `ggplot2` to
-boot. Let's have a look:
-
-```{r}
-diamonds %>% 
-  group_by(price) %>% 
-  summarise(mean_carat = mean(carat))
-```
-
-This transformed dataset can be piped right into a `ggplot` call, with which we
-can proceed to plot. Note that the data frame does not need to be specified
-within the `ggplot` function since it's being passed a data frame by the
-preceding pipe chain.
-
-```{r}
-diamonds %>% 
-  group_by(price) %>% 
-  summarise(mean_carat = mean(carat)) %>% 
-  ggplot(aes(x = price, y = mean_carat)) +
-  geom_line()
-```
-
-There's definitely a lot going on here -- let's just focus on the price range 0 - 5000:
-
-```{r}
-diamonds %>% 
-  group_by(price) %>% 
-  summarise(mean_carat = mean(carat)) %>% 
-  filter(price < 5000) %>% 
-  ggplot(aes(x = price, y = mean_carat)) +
-  geom_line()
-```
-
-
 ### Boxplots
 
 Let's go back to the pattern we saw earlier, where `clarity` seemed to be related to `carat`.
@@ -296,7 +257,9 @@ p + theme_classic()
 ```
 
 There are also ways to create your own custom themes using the `theme()`
-function, but that is a bit outside of the scope of this lesson for now.
+function, but that is a bit outside of the scope of this lesson. There are
+plenty of excellent resources available online though, some of which are linked
+at the end of this lesson! 
 
 ### Faceting
 
@@ -329,7 +292,6 @@ We've covered many of the core elements of `ggplot2` today:
 * Basic structure of a ggplot call
 * The `geom` family
     * `geom_point`
-    * `geom_line`
     * `geom_histogram`
     * `geom_boxplot`
 * Model fits with `geom_smooth`
