@@ -1,6 +1,6 @@
 ---
 title: Data visualization in R with ggplot2
-author: Ahmed Hasan and James Santangelo
+author: Ahmed Hasan and James Santangelo, borrowing heavily from Joel Ostblom
 output: pdf_document
 ---
   
