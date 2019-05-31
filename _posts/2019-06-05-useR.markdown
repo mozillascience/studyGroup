@@ -1,0 +1,27 @@
+---
+title: Oslo useR! Group, Workshop Straightforward introduction to mixed models
+text: 
+location: IFI Building, University of Oslo
+link: https://www.meetup.com/Oslo-useR-Group/events/260303778/
+date: 2019-06-05
+startTime: '17:00'
+endTime: '20:00'
+
+---
+
+**Session leader**: Dmytro P. and Athanasia Monika M.
+
+In this workshop we will be exploring how to use linear mixed models when we have data that repeats over time. These kinds of models are often used in longitudinal studies or with time series data. They are powerful as the used maximum likelihood approximations rather than least squares, meaning they can better handle missing data, and competing models can be compared directly. By the end of the workshop you should have a basic grasp of the linear mixed model, how to specify one, how to compare models and how to plot results.
+
+This workshop expects participants to have intermediate proficiency in R and is not fully suitable for beginners. The instructor may not have time to thoroughly explain code that is not directly related to mixed models, so if you have little or no experience with R, I think it will be tough to follow as a workshop.
+
+About the speaker
+The workshop is held by Athanasia Monika Mowinckel, or Mo for short, who is a staff scientist at the Center for Lifespan changes in brain and cognition (LCBC: www.oslobrains.no). She has a PhD in psychology, and loves plotting. And cats. She is a co-founder and current head of the R-Ladies Oslo chapter.
+
+This workshop is brought to you by Centre for Educational Measurement at University of Oslo (https://www.uv.uio.no/cemo/) and Cardo Partners (www.cardopartners.com) in cooperation of Oslo UseR! Group and R-Ladies Oslo
+
+- **Level**: beginner to intermediate
+- **When**: 05th June 2019
+- **Time**: 17:00-20:00
+- **Location**:   IFI Building, University of Oslo, Gaustadalléen 23B, Smalltalk Auditorium, Ole Johans Dahls Hus · Oslo
+- **More information**: https://www.meetup.com/Oslo-useR-Group/events/260303778/
