@@ -14,4 +14,4 @@ tags:
 The main part of the tutorial is present in form of a Jupyter notebook. You can
 run it locally or online using [binder](https://mybinder.org/) by following
 [![Binder
-Link](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/UofTCoders/studyGroup/gh-pages?filepath=lessons/python/snakemake_elephant_demo/Snakemake_Elephant_Tutorial.ipynb).
+Link](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/UofTCoders/snakemake_elephant_demo/master?filepath=Snakemake_Elephant_Tutorial.ipynb).
