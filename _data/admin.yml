@@ -1,4 +1,4 @@
-- name: Anne Fouilloux
+y- name: Anne Fouilloux
   affiliation: University of Oslo
   github: annefou
   role: President
@@ -20,7 +20,7 @@
     - Machine & Deep Learning
 
 - name: Annika Rockenberger 
-  affiliation: The National Library of Norway
+  affiliation: The University of Oslo Library
   github: arockenberger
   role: Marketing and Social Media Coordinator
   interests:
@@ -28,4 +28,5 @@
     - Python
     - The Carpentries
     - Physical Programming
+    - Digital Literacy
 
