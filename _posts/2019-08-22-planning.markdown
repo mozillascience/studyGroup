@@ -1,0 +1,21 @@
+---
+title: StudyGroup Planning
+text: 
+location: Niels Henrik Abels hus Room 209
+link: 
+date: 2019-08-22
+startTime: '16:00'
+endTime: '18:00'
+
+---
+
+**Session leader**: Annika Rockenberger
+
+We are having a meeting to plan all our future events for Autumn 2019.
+
+Come and tell us what events you would be interested to learn or to teach.
+
+- **Level**: all
+- **When**: 22nd August 2019
+- **Time**: 16:00-18:00
+- **Location**:  Niels Henrik Abels hus Room 209
