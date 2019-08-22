@@ -1,8 +1,8 @@
 ---
 title: StudyGroup Planning
-text: 
+text: Help us to plan all Autumn studyGroup events
 location: Niels Henrik Abels hus Room 209
-link: 
+link: https://github.com/uio-carpentry/studyGroup/issues/47
 date: 2019-08-22
 startTime: '16:00'
 endTime: '18:00'
