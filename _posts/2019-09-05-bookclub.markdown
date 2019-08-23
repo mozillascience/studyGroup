@@ -1,0 +1,29 @@
+---
+title: Book Club
+text: Good Enough Practices in Scientific Computing
+location: Niels Henrik Abels hus Room 209
+link: https://github.com/uio-carpentry/studyGroup/issues/42
+date: 2019-09-05
+startTime: '16:00'
+endTime: '18:00'
+
+---
+
+**Session leader**: Annika Rockenberger
+
+**Topic**: Good Enough Practices in Scientific Computing
+
+We are reading the article "Good Enough Practices in Scientific Computing" by Greg Wilson et al.
+
+[https://doi.org/10.1371/journal.pcbi.1005510](https://doi.org/10.1371/journal.pcbi.1005510)
+
+Come and discuss the article with us!
+
+We want to create a Carpentries-style, half-day workshop based on the article, to be piloted in the fall semester here at UiO.
+Please bring the text & your laptop: we will work together brainstorming how to develop a lesson based on the contents of the article,
+and start creating a repository for the workshop development using the Carpentries [lesson template](https://github.com/carpentries/styles).
+
+- **Level**: all
+- **When**: 5th September 2019
+- **Time**: 16:00-18:00
+- **Location**:  Niels Henrik Abels hus Room 209
