@@ -1,0 +1,27 @@
+---
+title: Voila python package
+text: From Jupyter notebooks to standalone web applications and dashboards
+location: Niels Henrik Abels hus Room 209
+link: https://github.com/uio-carpentry/studyGroup/issues/48
+date: 2019-09-26
+startTime: '16:00'
+endTime: '18:00'
+
+---
+
+**Session leader**: Anne Fouilloux
+
+Rendering of live Jupyter notebooks with interactive widgets.
+
+**Voila** serves live Jupyter notebook including Jupyter interactive widgets.
+
+Unlike the usual HTML-converted notebooks, each user connecting to the Voila tornado application gets a dedicated Jupyter kernel which can execute the callbacks to changes in Jupyter interactive widgets.
+
+During this two hour session, we plan to explore the **voila** package and learn how to use it. The idea is to understand if it is useful for our researchers.
+
+We will go through existing **voila** examples and learn to use it ourselves.
+
+
+- **When**: 26th September 2019
+- **Time**: 16:00-18:00
+- **Location**:  Niels Henrik Abels hus Room 209

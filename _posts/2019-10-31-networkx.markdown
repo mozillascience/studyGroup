@@ -1,0 +1,21 @@
+---
+title: Network Analysis with Python for Humanities Researchers
+text: Walk-through the lesson in order to prepare for a workshop in November
+location: Niels Henrik Abels hus Room 209
+link: https://github.com/uio-carpentry/studyGroup/issues/52
+date: 2019-10-31
+startTime: '16:00'
+endTime: '18:00'
+
+---
+
+**Session leader**: Annika Rockenberger
+
+Walk-through of the pre-prepared lesson from Programming Historian in order to prep the full workshop in November.
+
+Join if you want to be helper / co-instructor!
+
+- **Who**: anyone interested in teaching this lesson (or helping)
+- **When**: 31st October 2019
+- **Time**: 16:00-18:00
+- **Location**:  Niels Henrik Abels hus Room 209

@@ -1,0 +1,21 @@
+---
+title: Good Enough Practices in Scientific Computing
+text: Lesson development
+location: Niels Henrik Abels hus Room 209
+link: https://github.com/uio-carpentry/studyGroup/issues/
+date: 2019-09-19
+startTime: '16:00'
+endTime: '18:00'
+
+---
+
+**Session leader**: Annika Rockenberger
+
+Based on the article by Wilson et al. "Good Enough Practices in Scientific Computing" (2017) I would like to develop a lesson that could be taught Carpentries-style. It's not so much about computing but about general digital literacy and good routines, thus it is widely applicable.
+
+We will discuss the content of a new lesson based on the ideas in the article.
+
+- **Preparation**: read the paper mentioned.
+- **When**: 19th September 2019
+- **Time**: 16:00-18:00
+- **Location**:  Niels Henrik Abels hus Room 209

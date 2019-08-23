@@ -1,0 +1,26 @@
+---
+title: Preview lesson on Open Science
+text: Walk-through the lesson and give feedback
+location: Niels Henrik Abels hus Room 209
+link: https://github.com/uio-carpentry/studyGroup/issues/49
+date: 2019-08-29
+startTime: '16:00'
+endTime: '18:00'
+
+---
+
+**Session leader**: Anne Fouilloux
+
+Walk-through of the pre-prepared lesson (see [https://coderefinery.github.io/osip/](https://coderefinery.github.io/osip/)) to give feedback. 
+This lesson will be taught at the [2019 Eurotech Summer School OPEN SCIENCE IN PRACTICE](http://osip2019.epfl.ch/) as a two-hour workshop.
+
+The plan is also to teach it at UiO next semester or during the Research Bazaar.
+
+Come and discuss with us how we can improve the lesson.
+
+Feedback is welcome!
+
+- **Who**: anyone interested in Open Science
+- **When**: 29th August 2019
+- **Time**: 16:00-18:00
+- **Location**:  Niels Henrik Abels hus Room 209
