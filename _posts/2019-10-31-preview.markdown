@@ -11,6 +11,8 @@ endTime: '18:00'
 
 **Session leader**: Annika Rockenberger
 
+**Topic**: Exploring and Analysing Network Data with Python (for Humanities Researchers)
+
 Walk-through of the pre-prepared lesson on "Exploring and Analysing Network Data with Python"
 from [The Programming Historian](https://programminghistorian.org/en/lessons/exploring-and-analyzing-network-data-with-python) 
 in order to prepare for a full-day workshop in November or December.
