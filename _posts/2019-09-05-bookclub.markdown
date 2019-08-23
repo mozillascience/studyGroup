@@ -11,6 +11,8 @@ endTime: '18:00'
 
 **Session leader**: Annika Rockenberger
 
+**Topic**: Good Enough Practices in Scientific Computing
+
 We are reading the article "Good Enough Practices in Scientific Computing" by Greg Wilson et al.
 
 [https://doi.org/10.1371/journal.pcbi.1005510](https://doi.org/10.1371/journal.pcbi.1005510)
