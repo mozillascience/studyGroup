@@ -11,6 +11,8 @@ endTime: '18:00'
 
 **Session leader**: Annika Rockenberger
 
+**Topic**: Good Enough Practices in Scientific Computing
+
 Picking up from where we left on [5th September 2019](https://github.com/uio-carpentry/studyGroup/blob/gh-pages/_posts/2019-09-05-bookclub.markdown), 
 we continue developing a lesson for a half-day workshop based on the article by 
 Wilson et al. "Good Enough Practices in Scientific Computing" (2017).
