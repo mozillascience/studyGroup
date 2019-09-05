@@ -18,4 +18,4 @@ tags:
  - **Lesson Topic**: Lesson Development: Make "Good Enough Practices in Scientific Computing" (Wilsen et al. 2017) into a Carpentry-style workshop
  - [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
  
- [Image]: https://github.com/arockenberger/rdm-handson/blob/master/whiteboard_notes_rdm-handson-dev.JPG "Notes taken during discussion"
+ ![Notes taken during discussion](https://github.com/arockenberger/rdm-handson/blob/master/whiteboard_notes_rdm-handson-dev.JPG)
