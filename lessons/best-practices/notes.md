@@ -2,7 +2,7 @@
 layout: page
 title: Good Enough Practices in Scientific Computing - Lesson Development
 text: 
-link: https://github.com/uio-carpentry/studyGroup/issues/10
+link: https://github.com/uio-carpentry/studyGroup/issues/42
 visible: true
 tags:
   # languages
