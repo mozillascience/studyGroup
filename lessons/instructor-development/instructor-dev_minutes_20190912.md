@@ -1,0 +1,35 @@
+StudyGroup 2019-09-12 - Instructor Development
+
+Python - 1 episode
+- check for correct Python version with print statement - use sticky notes
+- explaining numpy can cause confusion
+- loadtxt can create issues
+  - spelling wrong
+  - learner in wrong directory
+  - installation guide information overflow
+  - alternatives to using numpy for the import?
+- explain data types --- clarify "expectations" for Python when dealing with variables
+- Indexes
+  - where are []
+  - why do we start from 0 not 1
+  - TASK for next instructor dev lesson: where to find character map on different OS (on screen keyboard)
+- Slicing
+  - could be skipped or omitted (keep up until "tripledata")
+- Numpy functions min / max / std
+  - usually create positive feedback in learners
+- Axes
+  - which axis is 0 and which is 1
+  - refer to "this is convention in Python" to not confuse learners
+- Matplotlib
+  - spelling can cause issues
+  - plot might have a different colour depending on version of Matplotlib
+  - reasoning behind the data and the plots is confusing (inflammation data)
+  - perhaps change data to something more relatable?
+  - making subplots in a row: use copy-and-paste with Etherpad to avoid lots of typing and spelling issues
+- Exercises
+  - instead of at the end of the episode, weave them in where they belong
+  - chose a couple, not all (too time consuming)
+  - perhaps make use of Mentimeter, Sokrativ, Kahoot or use screenshot on GooglePresentations and discuss in class
+  - TASK: share Sokrativ or similar within the Carpentry@UiO community to avoid double work; create exercise corpus
+  - libraries (numpy) --- call up documentation to have as reference for learners
+  - pick and chose exercises that fit the learning objectives and address typical learner misconceptions and mistakes
