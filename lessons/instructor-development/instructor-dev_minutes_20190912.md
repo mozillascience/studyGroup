@@ -1,4 +1,8 @@
-StudyGroup 2019-09-12 - Instructor Development
+# Instructor Development
+
+ - **Authors**: Annika Rockenberger (minutes), Karin Lagesen (session lead)
+ - **Research field**: Instructor Development
+ - **Lesson Topic**: Teaching
 
 Python - 1 episode
 - check for correct Python version with print statement - use sticky notes
