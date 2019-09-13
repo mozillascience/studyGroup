@@ -15,11 +15,13 @@ tags:
 <!-- remove any tags listed above that are not relevant -->
 
  - **Leader**: Karin Lagesen
- - **Lesson Topic**:  instructor development
+ - **Participants**: Anne Fouilloux, Annika Rockenberger, Eve Zeyl Fiskebeck, Eszter Agnes Papp
+ - **Notes**: Annika Rockenberger
+ - **Lesson Topic**: instructor development
  - [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 
-# Notes from Session 1 - Sep 12, 2019 (by Annika Rockenberger)
+# Notes from Session 1 - Sep 12, 2019
 
 We are going through the [Programming in Python](http://swcarpentry.github.io/python-novice-inflammation/index.html) lesson from the Software Carpentry core lessons to identify parts that will get the learners stuck or need extra explanation. We also discuss which parts could be skipped or omitted entirely.
 
