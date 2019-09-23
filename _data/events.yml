@@ -1,3 +1,288 @@
+  # Key is the part of the filename in _posts/
+- key: python-intro
+  # Title of event that will show up as the GH Issue title
+  title: "Intro to Python"
+  # Explanation of event as a paragraph form
+  description: >
+    Introduction to the
+    programming language Python with a
+    beginner-friendly participatory live-coding.
+  # Date of the event in YYYY-MM-DD format
+  date: 2019-09-26
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "19:00"
+  # Where the event will take place
+  location: MADLab
+  # The URL for the location
+  location_url: "https://goo.gl/maps/cfygtx94KL92"
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: ""
+  youtube_link: ""
+  skill_level: Beginner
+  # Beginner Intermediate Advanced
+  # R or Python
+  program_language: Python
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: code-along
+  
+  # Key is the part of the filename in _posts/
+- key: r-intro
+  # Title of event that will show up as the GH Issue title
+  title: "Intro to R"
+  # Explanation of event as a paragraph form
+  description: >
+    The basics of using R and the Tidyverse for working with data, specifically:
+- Intro to R/navigating RStudio
+- Intro to Tidyverse
+- pipe operators
+- Basic data wrangling with dplyr and tidyr packages
+  # Date of the event in YYYY-MM-DD format
+  date: 2019-10-03
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "19:00"
+  # Where the event will take place
+  location: MADLab
+  # The URL for the location
+  location_url: "https://goo.gl/maps/cfygtx94KL92"
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: "dplyr,tidyr"
+  youtube_link: ""
+  skill_level: Beginner
+  # Beginner Intermediate Advanced
+  # R or Python
+  program_language: R
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: code-along
+  
+ # Key is the part of the filename in _posts/
+- key: bash-intro
+  # Title of event that will show up as the GH Issue title
+  title: "Intro to Bash and shell scripting"
+  # Explanation of event as a paragraph form
+  description: >
+    This introduction to BASH aims to make participants
+    capable of working from the command line in Unix environments.
+    The focus of this lesson will be to learn common file system tasks
+    and to use built-in tools to make your work more efficient (and fun!).
+    This is a beginner level workshop, so no previous knowledge is required.
+    A few intermediate level concept will be introduced, but we will not go
+    into scripting in BASH.
+  # Date of the event in YYYY-MM-DD format
+  date: 2019-10-10
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "19:00"
+  # Where the event will take place
+  location: MADLab
+  # The URL for the location
+  location_url: "https://goo.gl/maps/cfygtx94KL92"
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: "Windows can use the [git BASH](https://gitforwindows.org) or [mobaxTerm](https://mobaxterm.mobatek.net), a good one for Mac is [iTerm2](https://www.iterm2.com)."
+  youtube_link: ""
+  skill_level: Beginnger
+  # Beginner Intermediate Advanced
+  # R or Python
+  program_language: Bash
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: code-along
+  
+  # Key is the part of the filename in _posts/
+- key: git-intro
+  # Title of event that will show up as the GH Issue title
+  title: "Intro to Git"
+  # Explanation of event as a paragraph form
+  description: >
+    Learn how to take advantage of version control for your projects
+    and why it can be useful. We will be focusing on Git, a
+    popular piece of software that does version control.
+    This session is geared towards complete beginners - if
+    you've never touched Git before, this is for you!
+  # Date of the event in YYYY-MM-DD format
+  date: 2019-10-17
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "19:00"
+  # Where the event will take place
+  location: MADLab
+  # The URL for the location
+  location_url: "https://goo.gl/maps/cfygtx94KL92"
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: "You will need a GitHub account and a supported web browser. For further details see [here](http://carpentries.github.io/workshop-template/#git)."
+  youtube_link: ""
+  skill_level: Beginnger
+  # Beginner Intermediate Advanced
+  # R or Python
+  program_language: Git
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: code-along
+  
+# Key is the part of the filename in _posts/
+- key: reproducible-programming-bp
+  # Title of event that will show up as the GH Issue title
+  title: "Best practices for reproducible programming"
+  # Explanation of event as a paragraph form
+  description: >
+    People are talking a lot these days about research being 
+    "open" and "reproducible". It all sounds great, but HOW do we do it? 
+    How can we apply these great ideals to our actual work?
+    This week we'll discuss reproducible computational research, 
+    guided by [Ten simple rules for computational research](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285) 
+    and Mozilla's [code review guidelines](http://mozillascience.github.io/codeReview/review.html)
+  # Date of the event in YYYY-MM-DD format
+  date: 2019-10-24
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "19:00"
+  # Where the event will take place
+  location: MADLab
+  # The URL for the location
+  location_url: "https://goo.gl/maps/cfygtx94KL92"
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: ""
+  youtube_link: ""
+  skill_level: Beginner
+  # Beginner Intermediate Advanced
+  # R or Python
+  program_language: R
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: code-along
+  
+  # Key is the part of the filename in _posts/
+- key: code-review
+  # Title of event that will show up as the GH Issue title
+  title: "Code Review"
+  # Explanation of event as a paragraph form
+  description: >
+    We will have a brief overview of code review (looking over code for mistakes, 
+    optimization etc. to increase the overall quality of the code), 
+    why you should do it, and how to do it. Then we will jump in and 
+    look at some of the attendees' code in pairs or groups. 
+    If you have some code that is currently being developed, 
+    we encourage you to bring it to the session for code review. 
+    Don't worry if you haven't fully optimized it yet, 
+    that's why we're holding this session :) 
+    Or if you'd prefer you can take part as just a reviewer 
+    instead and see how others write code and help them check for errors too!
+  # Date of the event in YYYY-MM-DD format
+  date: 2019-10-31
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "19:00"
+  # Where the event will take place
+  location: MADLab
+  # The URL for the location
+  location_url: "https://goo.gl/maps/cfygtx94KL92"
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: ""
+  youtube_link: ""
+  skill_level: Intermediate
+  # Beginner Intermediate Advanced
+  # R or Python
+  program_language: R
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: co-working
+  
+    # Key is the part of the filename in _posts/
+- key: python-unit-tests
+  # Title of event that will show up as the GH Issue title
+  title: "Python Unit Tests"
+  # Explanation of event as a paragraph form
+  description: >
+    Want to be sure your code works as intended? Say hello to unit testing!
+    Unit tests are an automated way to check your code for bugs.
+    Not only that but developing unit tests will improve your
+    code all on its own.
+  # Date of the event in YYYY-MM-DD format
+  date: 2019-11-07
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "19:00"
+  # Where the event will take place
+  location: MADLab
+  # The URL for the location
+  location_url: "https://goo.gl/maps/cfygtx94KL92"
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: ""
+  youtube_link: ""
+  skill_level: Intermediate
+  # Beginner Intermediate Advanced
+  # R or Python
+  program_language: Python
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: co-working
+  
+    # Key is the part of the filename in _posts/
+- key: python-statistics
+  # Title of event that will show up as the GH Issue title
+  title: "Intro to Statistics in Python"
+  # Explanation of event as a paragraph form
+  description: >
+    Statistics is an important cornerstone to data analysis.
+     Our introduction to doing statistics in Python lesson 
+     will go over basic descriptive and inferential statistics
+  # Date of the event in YYYY-MM-DD format
+  date: 2019-11-14
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "19:00"
+  # Where the event will take place
+  location: MADLab
+  # The URL for the location
+  location_url: "https://goo.gl/maps/cfygtx94KL92"
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: ""
+  youtube_link: ""
+  skill_level: Intermediate
+  # Beginner Intermediate Advanced
+  # R or Python
+  program_language: Python
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: co-working
+  
+# Key is the part of the filename in _posts/
+- key: r-statistics
+  # Title of event that will show up as the GH Issue title
+  title: "Statistics in R"
+  # Explanation of event as a paragraph form
+  description: >
+    Building from our previous lesson, we will go over more
+    advanced statistical analyses using the R programming language,
+    and especially cases where your data may be a little bit messy
+    or you might be working with repeated-measures data
+    (also known as hierarchical data or within-subject data).
+    We'll assume that you are familiar with basic linear regression
+    (e.g. testing if x predicts y) and statistics basics (e.g. how to interpret a p-value),
+    but we will do a brief review and explain everything else as we go!
+  # Date of the event in YYYY-MM-DD format
+  date: 2019-11-21
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:10"
+  end_time: "19:00"
+  # Where the event will take place
+  location: MADLab
+  # The URL for the location
+  location_url: "https://goo.gl/maps/cfygtx94KL92"
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: "scipy.stats"
+  youtube_link: ""
+  skill_level: Beginner
+  # Beginner Intermediate Advanced
+  # R or Python
+  program_language: Python
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: code-along
+
 # Key is the part of the filename in _posts/
 - key: r-ggplot
   # Title of event that will show up as the GH Issue title
@@ -17,369 +302,14 @@
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: "ggplot2, dplyr"
-  youtube_link: "https://www.youtube.com/watch?v=yHWYN0yUx7M"
-  skill_level: Beginner
-  # Beginner Intermediate Advanced
-  # R or Python
-  program_language: R
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
-
-# Key is the part of the filename in _posts/
-- key: r-statistics
-  # Title of event that will show up as the GH Issue title
-  title: "Statistics in R"
-  # Explanation of event as a paragraph form
-  description: >
-    Building from our previous lesson, we will go over more
-    advanced statistical analyses using the R programming language,
-    and especially cases where your data may be a little bit messy
-    or you might be working with repeated-measures data
-    (also known as hierarchical data or within-subject data).
-    We'll assume that you are familiar with basic linear regression
-    (e.g. testing if x predicts y) and statistics basics (e.g. how to interpret a p-value),
-    but we will do a brief review and explain everything else as we go!
-  # Date of the event in YYYY-MM-DD format
-  date: 2019-06-06
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab
-  # The URL for the location
-  location_url: "https://goo.gl/maps/cfygtx94KL92"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  youtube_link: "https://www.youtube.com/watch?v=uTuBoCPTwzA"
-  skill_level: Beginner
-  # Beginner Intermediate Advanced
-  # R or Python
-  program_language: R
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
-
-      # Key is the part of the filename in _posts/
-- key: intro-python
-  # Title of event that will show up as the GH Issue title
-  title: "Intro to Python"
-  # Explanation of event as a paragraph form
-  description: >
-    Introduction to the
-    programming language Python with a
-    beginner-friendly participatory live-coding.
-  # Date of the event in YYYY-MM-DD format
-  date: 2019-06-13
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab
-  # The URL for the location
-  location_url: "https://goo.gl/maps/cfygtx94KL92"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  youtube_link: "https://www.youtube.com/watch?v=xSOqFrrdQXw"
-  skill_level: Beginner
-  # Beginner Intermediate Advanced
-  # R or Python
-  program_language: Python
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
-
-# Key is the part of the filename in _posts/
-- key: data-analysis-workflow
-  # Title of event that will show up as the GH Issue title
-  title: "Designing data analysis workflows"
-  # Explanation of event as a paragraph form
-  description: >
-    How to make data analysis workflows in the
-    programming language Python with a
-    beginner-friendly participatory live-coding.
-  # Date of the event in YYYY-MM-DD format
-  date: 2019-06-20
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab
-  # The URL for the location
-  location_url: "https://goo.gl/maps/cfygtx94KL92"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  youtube_link: "https://www.youtube.com/watch?v=FZKQgGt0vwg"
-  skill_level: Intermediate
-  # Beginner Intermediate Advanced
-  # R or Python
-  program_language: Python
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
-
-# Key is the part of the filename in _posts/
-- key: oop-python
-  # Title of event that will show up as the GH Issue title
-  title: "Object-oriented programming in Python"
-  # Explanation of event as a paragraph form
-  description: >
-    Understanding and using object-oriented programming in the
-    programming language Python with a
-    beginner-friendly participatory live-coding.
-  # Date of the event in YYYY-MM-DD format
-  date: 2019-06-27
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab
-  # The URL for the location
-  location_url: "https://goo.gl/maps/cfygtx94KL92"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  youtube_link: "https://www.youtube.com/watch?v=7h4FRxrQG-4"
-  skill_level: Intermediate
-  # Beginner Intermediate Advanced
-  # R or Python
-  program_language: Python
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
-
-  # Key is the part of the filename in _posts/
-- key: coworking
-  # Title of event that will show up as the GH Issue title
-  title: "Co-working"
-  # Explanation of event as a paragraph form
-  description: >
-    Join us to work on some code in good company.
-    Bring something to work on, ask and discuss
-    with your fellow coders.
-  # Date of the event in YYYY-MM-DD format
-  date: 2019-07-04
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab
-  # The URL for the location
-  location_url: "https://goo.gl/maps/cfygtx94KL92"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
   youtube_link: ""
-  skill_level: Beginner
-  # Beginner Intermediate Advanced
-  # R or Python
-  program_language: R
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: co-working
-
-  # Key is the part of the filename in _posts/
-- key: bash-intro
-  # Title of event that will show up as the GH Issue title
-  title: "Intro to Bash and shell scripting"
-  # Explanation of event as a paragraph form
-  description: >
-    This introduction to BASH aims to make participants
-    capable of working from the command line in Unix environments.
-    The focus of this lesson will be to learn common file system tasks
-    and to use built-in tools to make your work more efficient (and fun!).
-    This is a beginner level workshop, so no previous knowledge is required.
-    A few intermediate level concept will be introduced, but we will not go
-    into scripting in BASH.
-  # Date of the event in YYYY-MM-DD format
-  date: 2019-07-11
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab
-  # The URL for the location
-  location_url: "https://goo.gl/maps/cfygtx94KL92"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  youtube_link: "https://www.youtube.com/watch?v=skaIm2kOMMk"
-  skill_level: Beginnger
-  # Beginner Intermediate Advanced
-  # R or Python
-  program_language: Bash
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
-
-  # Key is the part of the filename in _posts/
-- key: git-intro
-  # Title of event that will show up as the GH Issue title
-  title: "Intro to Git"
-  # Explanation of event as a paragraph form
-  description: >
-    Learn how to take advantage of version control for your projects
-    and why it can be useful. We will be focusing on Git, a
-    popular piece of software that does version control.
-    This session is geared towards complete beginners - if
-    you've never touched Git before, this is for you!
-  # Date of the event in YYYY-MM-DD format
-  date: 2019-07-18
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab
-  # The URL for the location
-  location_url: "https://goo.gl/maps/cfygtx94KL92"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  youtube_link: "https://www.youtube.com/watch?v=FK_4oKtmxEM"
-  skill_level: Beginnger
-  # Beginner Intermediate Advanced
-  # R or Python
-  program_language: Git
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
-
-  # Key is the part of the filename in _posts/
-- key: journal-club
-  # Title of event that will show up as the GH Issue title
-  title: "Journal Club - academic workflows"
-  # Explanation of event as a paragraph form
-  description: >
-    The basics of data analysis using the
-    programming language Python with a
-    beginner-friendly participatory live-coding.
-  # Date of the event in YYYY-MM-DD format
-  date: 2019-07-25
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab
-  # The URL for the location
-  location_url: "https://goo.gl/maps/cfygtx94KL92"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  youtube_link: ""
-  skill_level: Beginner
-  # Beginner Intermediate Advanced
-  # R or Python
-  program_language: R
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: journal-club
-
-  # Key is the part of the filename in _posts/
-- key: collaborating-github
-  # Title of event that will show up as the GH Issue title
-  title: "Collaborating on GitHub"
-  # Explanation of event as a paragraph form
-  description: >
-    Git and Github are tools not only for version control
-    of your own code, but are widely used for collaborative
-    team coding! Learn more about how you can use Git
-    collaboratively on a project, the genereal workflow as
-    well as details about the step-by-step process.
-  # Date of the event in YYYY-MM-DD format
-  date: 2019-08-01
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab
-  # The URL for the location
-  location_url: "https://goo.gl/maps/cfygtx94KL92"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  youtube_link: "https://www.youtube.com/watch?v=-_5yjm73c2A"
-  skill_level: Beginner
-  # Beginner Intermediate Advanced
-  # R or Python
-  program_language: R
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
-
-# Key is the part of the filename in _posts/
-- key: machine-learning
-  # Title of event that will show up as the GH Issue title
-  title: "Machine learning: introduction to topics"
-  # Explanation of event as a paragraph form
-  description: >
-    ""
-  # Date of the event in YYYY-MM-DD format
-  date: 2019-08-08
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab
-  # The URL for the location
-  location_url: "https://goo.gl/maps/cfygtx94KL92"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  youtube_link: "https://www.youtube.com/watch?v=MbgjvSIBOSI"
   skill_level: Intermediate
   # Beginner Intermediate Advanced
   # R or Python
-  program_language: Python
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
-
-  # Key is the part of the filename in _posts/
-- key: image-processing-python
-  # Title of event that will show up as the GH Issue title
-  title: "Image processing in Python"
-  # Explanation of event as a paragraph form
-  description: >
-    This is an introductory tutorial on image processing
-    using Python packages. We will understand image data types,
-    manipulate and prepare images for analysis such as image segmentation.
-  # Date of the event in YYYY-MM-DD format
-  date: 2019-08-15
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab
-  # The URL for the location
-  location_url: "https://goo.gl/maps/cfygtx94KL92"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  youtube_link: "https://www.youtube.com/watch?v=QFUVNZP0V9M"
-  skill_level: Intermediate
-  # Beginner Intermediate Advanced
-  # R or Python
-  program_language: Python
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
-
-# Key is the part of the filename in _posts/
-- key: coworking
-  # Title of event that will show up as the GH Issue title
-  title: "Co-working"
-  # Explanation of event as a paragraph form
-  description: >
-    Join us to work on some code in good company.
-    Bring something to work on, ask and discuss
-    with your fellow coders.
-  # Date of the event in YYYY-MM-DD format
-  date: 2019-08-22
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:10"
-  end_time: "19:00"
-  # Where the event will take place
-  location: MADLab
-  # The URL for the location
-  location_url: "https://goo.gl/maps/cfygtx94KL92"
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  youtube_link: ""
-  skill_level: Beginner
-  # Beginner Intermediate Advanced
-  # R or Python
   program_language: R
   # Only one label that will be put into the GitHub Issue
-  gh_labels: co-working
+  gh_labels: code-along
+
+
+
+
