@@ -84,7 +84,7 @@
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
   packages: "Windows can use the [git BASH](https://gitforwindows.org) or [mobaxTerm](https://mobaxterm.mobatek.net), a good one for Mac is [iTerm2](https://www.iterm2.com)."
   youtube_link: ""
-  skill_level: Beginnger
+  skill_level: Beginner
   # Beginner Intermediate Advanced
   # R or Python
   program_language: Bash
@@ -113,9 +113,9 @@
   location_url: "https://goo.gl/maps/cfygtx94KL92"
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: "You will need a GitHub account and a supported web browser. For further details see [here](http://carpentries.github.io/workshop-template/#git)."
+  packages: "You will need a GitHub account and a supported web browser. For further details see [here](https://carpentries.github.io/workshop-template/#git)."
   youtube_link: ""
-  skill_level: Beginnger
+  skill_level: Beginner
   # Beginner Intermediate Advanced
   # R or Python
   program_language: Git
@@ -132,8 +132,8 @@
     "open" and "reproducible". It all sounds great, but HOW do we do it? 
     How can we apply these great ideals to our actual work?
     This week we'll discuss reproducible computational research, 
-    guided by [Ten simple rules for computational research](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285) 
-    and Mozilla's [code review guidelines](http://mozillascience.github.io/codeReview/review.html)
+    guided by [Ten simple rules for computational research](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
+    and Mozilla's [code review guidelines](https://mozillascience.github.io/codeReview/review.html)
   # Date of the event in YYYY-MM-DD format
   date: 2019-10-24
   # Start and end time for event in 24 hour HH:MM format
@@ -291,7 +291,7 @@
   description: >
     The fundamentals of visualizing data in R using the ggplot2 package.
   # Date of the event in YYYY-MM-DD format
-  date: 2019-05-30
+  date: 2019-11-28
   # Start and end time for event in 24 hour HH:MM format
   start_time: "18:10"
   end_time: "19:00"
