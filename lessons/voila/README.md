@@ -27,6 +27,7 @@ Examples: [https://voila-gallery.org/services/gallery/]
 # How to use it
 
 ```conda install -c conda-forge voila```
+
 ```voila yournotebook.ipynb```
  
 To run the examples make sure all dependencies are installed. In particular ```bgplot``` (https://github.com/bloomberg/bqplot)
