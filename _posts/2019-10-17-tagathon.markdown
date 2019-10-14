@@ -1,0 +1,24 @@
+---
+title: Hackathon
+text: The Carpentries Tagathon - Our Hacktoberfest Initiative
+location: Niels Henrik Abels hus Room 209
+link: https://github.com/uio-carpentry/studyGroup/issues/64
+date: 2019-10-17
+startTime: '16:00'
+endTime: '18:00'
+
+---
+
+**Session leader**: Annika Rockenberger
+
+**Topic**: Preparing something cool for the Carpentries Tagathon in Week 44
+
+# Hackathon - Tagathon
+
+The Carpentries are inviting to a [community initative in week 44 called "Hacktoberfest"](https://carpentries.org/blog/2019/10/carpentries-tagathon/). It is about tagging the many blog posts on the three Carpentries websites: [Software Carpentry](https://software-carpentry.org/blog/), [Data Carpentry](https://datacarpentry.org/blog/), and [Library Carpentry](https://librarycarpentry.org/blog/). The aim is to make the posts more findable by assigning topics.
+
+Combining the skills taught in The Carpentries with the power of Digital Humanities, this StudyGroup will attempt to create a set of tags for the blog posts based on computational text analysis. How does one read 1 million blog posts? Not at all! A machine can do this much better (and faster)!
+
+We will use ```pandoc``` to convert the blog posts written in ```markdown``` to a format that the online topic explorer [VoyantTools](https://voyant-tools.org/) can ingest and see what it reveals about the content of the blogs. We will then take a look at the tag set that the Carpentries has prepared and compare the two. The Final product could be a semi-automatic tagger based on text analysis.
+
+In order to participate, you don't need to know any of the software and tools we are going to use. You should, however, bring your laptop and your curiosity and enthusiasm to experiment!
