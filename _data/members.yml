@@ -15,3 +15,28 @@
     - jupyterhub
     - repo2docker
 
+- name: Tobias Busch
+  affiliation: University of Oslo
+  github: teebusch
+  interests:
+    - R
+    - Visualizations
+
+- name: Evelyn Zeyl Fiskebeck
+  affiliation: The Norwegian Vetenary Institute
+  github: evezeyl
+  interests:
+    - Bioinformatics
+
+- name: Eszter A. Papp
+  affiliation: University of Oslo
+  github: eapapp
+  interests:
+    - Python
+    - Biomedical engineering
+
+- name: Tina Visnovska
+  affiliation: University of Oslo
+  github: tinavisnovska
+  interests:
+    - bioinformatics
