@@ -12,7 +12,6 @@ tags:
 <!-- change visible to true if you want it on the site -->
 
  - **Author**: [Dean Roos](https://www.researchgate.net/profile/Deon_Roos).
- - **Research field**: Bioinformatician working on analysis of Next Generation Sequencing Data
 
 # Linear Modelling Introduction
 
