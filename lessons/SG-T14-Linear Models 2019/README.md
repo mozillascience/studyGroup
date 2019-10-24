@@ -20,6 +20,6 @@ https://docs.google.com/presentation/d/1U0kqVHngWSR7zhjcrJZzHz04eebsxwCraC8G78Sm
 http://htmlpreview.github.com/?https://github.com/AberdeenStudyGroup/studyGroup/blob/gh-pages/lessons/SG-T14-Linear%20Models%202019/Linear_model.html
 
 
-* which you can share using:* 
+*which you can share using:* 
 
 https://tinyurl.com/y2yrw4zy
