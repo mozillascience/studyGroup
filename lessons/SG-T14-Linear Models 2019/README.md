@@ -17,4 +17,4 @@ https://docs.google.com/presentation/d/1U0kqVHngWSR7zhjcrJZzHz04eebsxwCraC8G78Sm
 
 ### To access the html version of the R script, click here: ###
 
-http://htmlpreview.github.com/?
+http://htmlpreview.github.com/?https://github.com/AberdeenStudyGroup/studyGroup/blob/gh-pages/lessons/SG-T14-Linear%20Models%202019/Linear_model.html
