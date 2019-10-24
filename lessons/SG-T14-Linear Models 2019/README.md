@@ -1,6 +1,19 @@
-# Linear Modelling Introduction
+---
+layout: page
+title: Introduction to Linear Models
+visible: true
+tags:
+  # languages
+  - R
+  # levels
+  - beginner
+---
+<!-- change visible to true if you want it on the site -->
 
-**Author:** Dean Roos (PhD Student - Zoology) 
+ - **Author**: [Dean Roos] https://www.researchgate.net/profile/Deon_Roos   
+ - **Research field**: Bioinformatician working on analysis of Next Generation Sequencing Data
+
+# Linear Modelling Introduction
 
 ## Overview
 This is part of our regular series of tutorials, giving a brief overview of the use of linear modelling with the main aim of understanding the process,(some theory) and output.
