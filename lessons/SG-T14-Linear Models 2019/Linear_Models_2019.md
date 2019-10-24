@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Introduction to Linear Models
+title: Introduction to Linear Models 2019
 author: Deon Roos
 visible: true
 tags:
