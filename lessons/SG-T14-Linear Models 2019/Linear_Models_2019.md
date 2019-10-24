@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Introduction to Linear Models
+author: Deon Roos
 visible: true
 tags:
   # languages
