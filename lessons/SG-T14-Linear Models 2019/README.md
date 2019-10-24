@@ -9,3 +9,12 @@ This is part of our regular series of tutorials, giving a brief overview of the 
 - Those who have a basic understanding of R and interest in implementing linear models
 - Those in need of a refresher
 - Anyone keen to learn! 
+
+
+### Access the presentation here: ###
+
+https://docs.google.com/presentation/d/1U0kqVHngWSR7zhjcrJZzHz04eebsxwCraC8G78Sm9w4/edit?usp=sharing 
+
+### To access the html version of the R script, click here: ###
+
+http://htmlpreview.github.com/?
