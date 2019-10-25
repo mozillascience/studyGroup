@@ -11,7 +11,7 @@ tags:
 ---
 <!-- change visible to true if you want it on the site -->
 
- - **Author**: [Dean Roos](https://www.researchgate.net/profile/Deon_Roos).
+ - **Author**: [Deon Roos](https://www.researchgate.net/profile/Deon_Roos).
 
 # Linear Modelling Introduction
 
