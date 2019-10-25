@@ -18,11 +18,12 @@ tags:
 
 
 ## Epicollect5 is 100% free and limitless*
-<img src="../images/image--000.jpg">
+<img src="../images/image--000.jpg" style="max-width:100%;">
 
-![logo](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--000.jpg)
-![logo](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--004.jpg#thumbnail)
-![logo](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--006.jpg#thumbnail)
+
+<img src="../images/image--004.jpg" style="max-width:50%;">
+<img src="../images/image--006.jpg" style="max-width:50%;">
+
 
 - Open Source
 - Uses Google accounts
