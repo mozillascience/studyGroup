@@ -5,7 +5,7 @@ author: Cristian D. Navarro Waggershauser
 visible: true
 tags:
   # languages
-  - Epicollect5, R
+  - MISC, R
   # levels
   - beginner
 ---
