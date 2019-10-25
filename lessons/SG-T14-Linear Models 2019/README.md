@@ -21,7 +21,7 @@ Anyone keen to learn!
 *This is the R script used for this tutorial*
 
 **Linear_model.html**
-*This is a `.html` version of the same R script*
+*This is a `.html` version of the same R script that can viewed* [here](http://htmlpreview.github.io/?https://github.com/AberdeenStudyGroup/studyGroup/blob/gh-pages/lessons/SG-T14-Linear%20Models%202019/Linear_model.html)
 
 ### Tutorial Presentation Slides
 
