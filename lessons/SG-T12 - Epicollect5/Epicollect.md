@@ -20,8 +20,8 @@ tags:
 ## Epicollect5 is 100% free and limitless*
 <img src="../images/image--000.jpg" style="max-width:100%;">
 
-
 <img src="../images/image--004.jpg" style="max-width:50%;">
+
 <img src="../images/image--006.jpg" style="max-width:50%;">
 
 
@@ -34,8 +34,7 @@ tags:
 
 *Within fair use policy
 
-
-![Pipeline](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--007.jpg)
+<img src="../images/image--007.jpg" style="max-width:100%;">
 
 
 ## Limitations
@@ -52,15 +51,15 @@ tags:
 
 - You can use it to login at Epicollect
 
-![login](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--012.jpg)
+<img src="../images/image--012.jpg" style="max-width:100%;">
 
 - Ready to create a new project
 
-![create](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--013.jpg)
+<img src="../images/image--013.jpg" style="max-width:100%;">
 
 - Add in your project’s details
 
-![details](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--014.jpg)
+<img src="../images/image--014.jpg" style="max-width:100%;">
 
 
 **Congratulations!**
@@ -73,16 +72,15 @@ OK, OPEN FORMBUILDER NOW
 
 The Form Builder is your friend
 
-![form](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--016.jpg)
+<img src="../images/image--016.jpg" style="max-width:100%;">
 
-![form2](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--017.jpg)
+<img src="../images/image--017.jpg" style="max-width:100%;">
 
-![form2.5](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--018.jpg#thumbnail)
+<img src="../images/image--018.jpg" style="max-width:50%;">
 
-![form3](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--019.jpg)
+<img src="../images/image--019.jpg" style="max-width:100%;">
 
-![form3.5](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--020.jpg#thumbnail)
-
+<img src="../images/image--020.jpg" style="max-width:50%;">
 
 **That’s it! Now go out there!**
 
@@ -90,31 +88,39 @@ The Form Builder is your friend
 
 1. Download the app 
 
-![form3.5](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--024.jpg)
-
+<img src="../images/image--024.jpg" style="max-width:100%;">
 2. Login
 
-![login](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--025.jpg#thumbnail)
+<img src="../images/image--025.jpg" style="max-width:100%;">
 
 3. `Add project`
 
-![project](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--027.jpg#thumbnail)
-![project2](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--028.jpg#thumbnail)
+<img src="../images/image--027.jpg" style="max-width:50%;">
+
+<img src="../images/image--028.jpg" style="max-width:50%;">
 
 
 4. Recording & Uploading data
 
 `Add Entry`:
 
-![rec](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--030.jpg#thumbnail)
-![rec2](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--031.jpg#thumbnail)
-![rec3](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--032.jpg#thumbnail)
-![rec4](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--033.jpg#thumbnail)
-![rec5](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--034.jpg#thumbnail)
-![rec](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--035.jpg#thumbnail)
-![rec](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--036.jpg#thumbnail)
-![rec](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--037.jpg#thumbnail)
-![rec](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--038.jpg#thumbnail)
+<img src="../images/image--030.jpg" style="max-width:50%;">
+
+<img src="../images/image--031.jpg" style="max-width:50%;">
+
+<img src="../images/image--032.jpg" style="max-width:50%;">
+
+<img src="../images/image--033.jpg" style="max-width:50%;">
+
+<img src="../images/image--034.jpg" style="max-width:50%;">
+
+<img src="../images/image--035.jpg" style="max-width:50%;">
+
+<img src="../images/image--036.jpg" style="max-width:50%;">
+
+<img src="../images/image--037.jpg" style="max-width:50%;">
+
+<img src="../images/image--038.jpg" style="max-width:50%;">
 
 `Upload Now` > `Upload Data`
 
@@ -125,8 +131,7 @@ The Form Builder is your friend
 
 `View Data` to download as `.csv`.
 
-![viewData](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--044.jpg)
-
+<img src="../images/image--044.jpg" style="max-width:100%;">
 
 **Unique Identifiers allow linking the two spreadsheets**
 
