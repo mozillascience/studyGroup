@@ -5,7 +5,7 @@ author: Cristian D. Navarro Waggershauser
 visible: true
 tags:
   # languages
-  - MISC, R
+  - misc, r
   # levels
   - beginner
 ---
