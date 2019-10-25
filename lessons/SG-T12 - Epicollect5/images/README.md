@@ -1,0 +1,1 @@
+Unedited images from presentation.
