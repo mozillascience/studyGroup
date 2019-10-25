@@ -21,7 +21,8 @@ tags:
 
 
 <img src="../images/image--000.jpg" style="max-width:100%;"> 
-<img src="../images/image--004.jpg" style="max-width:20%;"> <img src="../images/image--006.jpg" style="max-width:20%;">
+
+<img src="../images/image--004.jpg" style="max-width:5%;"> <img src="../images/image--006.jpg" style="max-width:20%;">
 
 
 - Open Source
@@ -71,17 +72,15 @@ You have now created your project website. Click on
 OK, OPEN FORMBUILDER NOW
 ```
 
-The Form Builder is your friend
+The Form Builder is your friend:
 
-<img src="../images/image--016.jpg" style="max-width:100%;">
 
-<img src="../images/image--017.jpg" style="max-width:100%;">
+<img src="../images/image--016.jpg" style="max-width:20%;">
+<img src="../images/image--017.jpg" style="max-width:20%;">
+<img src="../images/image--018.jpg" style="max-width:20%;">
+<img src="../images/image--019.jpg" style="max-width:20%;">
+<img src="../images/image--020.jpg" style="max-width:20%;">
 
-<img src="../images/image--018.jpg" style="max-width:50%;">
-
-<img src="../images/image--019.jpg" style="max-width:100%;">
-
-<img src="../images/image--020.jpg" style="max-width:50%;">
 
 **That’s it! Now go out there!**
 
@@ -102,7 +101,6 @@ The Form Builder is your friend
 ### 3. `Add project`
 
 <img src="../images/image--027.jpg" style="max-width:10%;">
-
 <img src="../images/image--028.jpg" style="max-width:10%;">
 
 
@@ -110,36 +108,32 @@ The Form Builder is your friend
 
 `Add Entry`:
 
+
 <img src="../images/image--030.jpg" style="max-width:10%;">
-
 <img src="../images/image--031.jpg" style="max-width:10%;">
-
 <img src="../images/image--032.jpg" style="max-width:10%;">
-
 <img src="../images/image--033.jpg" style="max-width:10%;">
-
 <img src="../images/image--034.jpg" style="max-width:10%;">
-
 <img src="../images/image--035.jpg" style="max-width:10%;">
-
 <img src="../images/image--036.jpg" style="max-width:10%;">
-
 <img src="../images/image--037.jpg" style="max-width:10%;">
-
 <img src="../images/image--038.jpg" style="max-width:10%;">
+
 
 `Upload Now` > `Upload Data`
 
 
 ## Utility with R
 
-### Downloading the data
+#### Downloading the data
 
 `View Data` to download as `.csv`.
 
+
 <img src="../images/image--044.jpg" style="max-width:50%;">
 
-### Unique Identifiers allow linking the two spreadsheets
+
+#### Unique Identifiers allow linking the two spreadsheets
 
 
 ec5_uuid | created_at | title | 1_Name | 2_Gender |
@@ -151,7 +145,7 @@ ec5_uuid | ec5_parent_uuid |created_at | title | 3_Weight_kg | 4_Height_cm |
 5d3e90c...| d541a4c6...|2019-01-12T19:47...|80177|80|177
 
 
-### Use R’s merge function to join forms
+#### Use R’s merge function to join forms
 
 ```
 parent <- read.csv(‘file_path’, check.names=F)
