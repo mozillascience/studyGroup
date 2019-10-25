@@ -20,9 +20,9 @@ tags:
 ## Epicollect5 is 100% free and limitless*
 <img src="../images/image--000.jpg" style="max-width:100%;">
 
-<img src="../images/image--004.jpg" style="max-width:50%;">
+<img src="../images/image--004.jpg" style="max-width:20%;">
 
-<img src="../images/image--006.jpg" style="max-width:50%;">
+<img src="../images/image--006.jpg" style="max-width:20%;">
 
 
 - Open Source
