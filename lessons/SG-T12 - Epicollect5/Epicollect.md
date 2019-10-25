@@ -14,10 +14,11 @@ tags:
  - **Author**: [Cristian D. Navarro Waggershauser](https://twitter.com/CWaggershauser)
 
 
-### Disclaimer: Based in user experience alone
+**Disclaimer: Based in user experience alone**
 
 
 ## Epicollect5 is 100% free and limitless*
+<img src="../images/image--000.jpg">
 
 ![logo](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--000.jpg)
 ![logo](https://github.com/AberdeenStudyGroup/studyGroup/new/gh-pages/lessons/SG-T12%20-%20Epicollect5/images/image--004.jpg#thumbnail)
@@ -128,15 +129,17 @@ The Form Builder is your friend
 
 **Unique Identifiers allow linking the two spreadsheets**
 
+---
 ec5_uuid | created_at | title | 1_Name | 2_Gender |
 :-------:|:----------:|:----------:|:----------:|:----------:|
 d541a4c6...| 2019-01-12T19:45...|Cristian|Cristian|Male
+---
 
-
+---
 ec5_uuid | ec5_parent_uuid |created_at | title | 3_Weight_kg | 4_Height_cm |
 :-------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 5d3e90c...| d541a4c6...|2019-01-12T19:47...|80177|80|177
-
+---
 
 **Use R’s merge function to join forms**
 
