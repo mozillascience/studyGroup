@@ -18,6 +18,8 @@ tags:
 
 
 ## Epicollect5 is 100% free and limitless*
+
+
 <img src="../images/image--000.jpg" style="max-width:100%;"> 
 <img src="../images/image--004.jpg" style="max-width:20%;"> <img src="../images/image--006.jpg" style="max-width:20%;">
 
@@ -31,8 +33,10 @@ tags:
 
 *Within fair use policy
 
-<img src="../images/image--007.jpg" style="max-width:100%;">
 
+## Data
+
+<img src="../images/image--007.jpg" style="max-width:100%;">
 
 ## Limitations
 
@@ -50,11 +54,11 @@ tags:
 
 <img src="../images/image--012.jpg" style="max-width:100%;">
 
-- Ready to create a new project
+**Ready to create a new project**
 
 <img src="../images/image--013.jpg" style="max-width:100%;">
 
-- Add in your project’s details
+**Add in your project’s details**
 
 <img src="../images/image--014.jpg" style="max-width:100%;">
 
@@ -81,70 +85,73 @@ The Form Builder is your friend
 
 **That’s it! Now go out there!**
 
+
+
 ## The Epicollect5 App
 
-1. Download the app 
+### 1. Download the app 
 
 <img src="../images/image--024.jpg" style="max-width:100%;">
-2. Login
-
-<img src="../images/image--025.jpg" style="max-width:100%;">
-
-3. `Add project`
-
-<img src="../images/image--027.jpg" style="max-width:50%;">
-
-<img src="../images/image--028.jpg" style="max-width:50%;">
 
 
-4. Recording & Uploading data
+### 2. Login
+
+<img src="../images/image--025.jpg" style="max-width:20%;">
+
+
+### 3. `Add project`
+
+<img src="../images/image--027.jpg" style="max-width:10%;">
+
+<img src="../images/image--028.jpg" style="max-width:10%;">
+
+
+### 4. Recording & Uploading data
 
 `Add Entry`:
 
-<img src="../images/image--030.jpg" style="max-width:50%;">
+<img src="../images/image--030.jpg" style="max-width:10%;">
 
-<img src="../images/image--031.jpg" style="max-width:50%;">
+<img src="../images/image--031.jpg" style="max-width:10%;">
 
-<img src="../images/image--032.jpg" style="max-width:50%;">
+<img src="../images/image--032.jpg" style="max-width:10%;">
 
-<img src="../images/image--033.jpg" style="max-width:50%;">
+<img src="../images/image--033.jpg" style="max-width:10%;">
 
-<img src="../images/image--034.jpg" style="max-width:50%;">
+<img src="../images/image--034.jpg" style="max-width:10%;">
 
-<img src="../images/image--035.jpg" style="max-width:50%;">
+<img src="../images/image--035.jpg" style="max-width:10%;">
 
-<img src="../images/image--036.jpg" style="max-width:50%;">
+<img src="../images/image--036.jpg" style="max-width:10%;">
 
-<img src="../images/image--037.jpg" style="max-width:50%;">
+<img src="../images/image--037.jpg" style="max-width:10%;">
 
-<img src="../images/image--038.jpg" style="max-width:50%;">
+<img src="../images/image--038.jpg" style="max-width:10%;">
 
 `Upload Now` > `Upload Data`
 
 
-### Utility with R
+## Utility with R
 
-**Downloading the data**
+### Downloading the data
 
 `View Data` to download as `.csv`.
 
-<img src="../images/image--044.jpg" style="max-width:100%;">
+<img src="../images/image--044.jpg" style="max-width:50%;">
 
-**Unique Identifiers allow linking the two spreadsheets**
+### Unique Identifiers allow linking the two spreadsheets
 
----
+
 ec5_uuid | created_at | title | 1_Name | 2_Gender |
 :-------:|:----------:|:----------:|:----------:|:----------:|
 d541a4c6...| 2019-01-12T19:45...|Cristian|Cristian|Male
----
 
----
 ec5_uuid | ec5_parent_uuid |created_at | title | 3_Weight_kg | 4_Height_cm |
 :-------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 5d3e90c...| d541a4c6...|2019-01-12T19:47...|80177|80|177
----
 
-**Use R’s merge function to join forms**
+
+### Use R’s merge function to join forms
 
 ```
 parent <- read.csv(‘file_path’, check.names=F)
