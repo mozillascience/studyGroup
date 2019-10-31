@@ -61,5 +61,6 @@ Code review is of course built on good version control. So, by now, you probably
 ## Resources
 https://mozillascience.github.io/codeReview/intro.html (and other links therein)  
 https://blog.fogcreek.com/effective-code-reviews-9-tips-from-a-converted-skeptic/
+
 https://the-turing-way.netlify.com/reviewing/reviewing.html
 
