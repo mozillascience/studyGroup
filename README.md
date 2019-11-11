@@ -1,3 +1,13 @@
+# UPDATE November 2019
+
+The Mozilla Science Lab was sunsetted in September of 2018.  While we had hoped to find a partnership with another organization to take the Study Group work forward, it did not take place.  Please feel free to use the materials hosted here to build your own Study Groups, though keep in mind that Mozilla is no longer actively supporting this program.
+
+Our heartfelt :sparkling_heart: and appreciation to all the Study Group Leads and participants who made this program the success that it was.
+
+Much of the work done by the Science Lab has moved on in some way under the Open Leadership & Events Team.  If you're interested in that work, you can see how that work is being continued on [their website](https://foundation.mozilla.org/en/initiatives/open-leadership-events/).
+
+---
+
 ### [इसे हिंदी में पढ़ें](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-hi.md)
 
 ### [Leia isto em Português](https://github.com/mozillascience/studyGroup/blob/gh-pages/README-pt.md)
