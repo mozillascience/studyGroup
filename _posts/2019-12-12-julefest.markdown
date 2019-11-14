@@ -2,7 +2,7 @@
 title:  Julefest - End of the Year Party
 text:  Socialize with the Carpentry@UiO Community
 location: Niels Henrik Abels hus Room 209
-link: https://github.com/uio-carpentry/studyGroup/issues/22
+link: https://github.com/uio-carpentry/studyGroup/issues/63
 date: 2019-12-12
 startTime: '16:00'
 endTime: '20:00'
