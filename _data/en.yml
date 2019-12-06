@@ -42,6 +42,12 @@ Those without projects come to discuss
 their research, brainstorm new ideas, try out new technologies, or chit chat about
 data science!"
     icon: fa-beer
+  - title: Shut-up and Write
+    description: "<strong>Where:</strong> BSRL 153 (N Cherry Ave)<br>
+<strong>When:</strong> 2PM - 4PM, every Friday<br>
+<strong>What:</strong> Supportive + Writing = Shut-up and Write! Need to get writing done?
+This is the event for you!"
+    icon: fa-feather-alt
   - title: Community Events
     description: "<p><strong>Tucson Python Meetup:</strong> The goal of this group is to encourage
      more mingling, learning, and sharing ideas within the Tucson Python community.
