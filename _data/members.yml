@@ -1,54 +1,54 @@
 - name: Emily Cain
   affiliation: Data Science and Infrastructure for Agriculture Group (DIAG)
   github: MagicMilly
-  interests: 
-    - I work as a scientific programmer for the Agricultural Data Science Team. My hobbies include contemplating the ways in which open data and open science can change the world, trying to guess people's Hogwarts House (Slytherin), and my cat.
+  bio: 
+    I work as a scientific programmer for the Agricultural Data Science Team. My hobbies include contemplating the ways in which open data and open science can change the world, trying to guess people's Hogwarts House (Slytherin), and my cat.
 
 - name: Ailene Yee
   affiliation: CyVerse
   github: yeea
-  interests: 
-    - I'm a software engineer with CyVerse who also studies the ancient Greco-Roman world. Making things accessible to others, reading, biking, eating and eating more, languages, and video games are my bread and butter.
+  bio: 
+    I'm a software engineer with CyVerse who also studies the ancient Greco-Roman world. Making things accessible to others, reading, biking, eating and eating more, languages, and video games are my bread and butter.
 
 - name: Drake Asberry
   affiliation: Second Language Acquisition and Teaching
   github: drakeasberry
-  interests: 
-    - I am a PhD Candidate in Second Language Acquisition and Teaching (SLAT). You can find me at Public, the University, climbing big rocks, or in the Slytherin Common Room.
+  bio: 
+    I am a PhD Candidate in Second Language Acquisition and Teaching (SLAT). You can find me at Public, the University, climbing big rocks, or in the Slytherin Common Room.
 
 - name: Rebecca Vanderpool
   affiliation: College of Medicine
   github: vanderpoolrr
-  interests: 
-    - I am an Assistant Professor in the College of Medicine. My research focuses on using CMR imaging and cardiopulmonary exercise testing to assess the pathophysiology of right ventricular function and to develop clinically useful biomarkers. 
+  bio: 
+    I am an Assistant Professor in the College of Medicine. My research focuses on using CMR imaging and cardiopulmonary exercise testing to assess the pathophysiology of right ventricular function and to develop clinically useful biomarkers. 
 
 - name: Alex Bigelow
   affiliation: Computer Science
   github: alex-r-bigelow
-  interests: 
-    - I'm a postdoc from Computer Science, studying how people think about, reshape, and visualize data. I build web-based tools to make these processes less painful, and more accessible to more diverse data workers. Slytherin.
+  bio: 
+    I'm a postdoc from Computer Science, studying how people think about, reshape, and visualize data. I build web-based tools to make these processes less painful, and more accessible to more diverse data workers. Slytherin.
 
 - name: Blake Joyce
   affiliation: UITS Research Computing
   github: bjoyce3
-  interests:
-    - I enjoy traveling, research computing, kendo, and deep-frying turkeys. Hufflepuff, of course.
+  bio:
+    I enjoy traveling, research computing, kendo, and deep-frying turkeys. Hufflepuff, of course.
 
 - name: Julian Pistorius
   affiliation: Data Science and Infrastructure for Agriculture Group (DIAG)
   github: julianpistorius
-  interests:
-    - I build software and infrastructure for researchers. I create software for fun. I like to talk about software. I don't understand what "work-life balance" means. I _do_ like to ride motorcycles and go hiking. Gryffindor.
+  bio:
+    I build software and infrastructure for researchers. I create software for fun. I like to talk about software. I don't understand what "work-life balance" means. I _do_ like to ride motorcycles and go hiking. Gryffindor.
 
 - name: Kelsey E Gonzalez
   affiliation: Sociology
   github: kelseygonzalez
-  interests: 
-    - As a PhD student in Sociology, I am an advocate for data science literacy and love experimenting with R.  Besides learning new methodologies, I enjoy baking pizza and hiking on Mt Lemmon with my dog.
+  bio: 
+    As a PhD student in Sociology, I am an advocate for data science literacy and love experimenting with R.  Besides learning new methodologies, I enjoy baking pizza and hiking on Mt Lemmon with my dog.
 
 - name: Jeff Oliver
   affiliation: UA Libraries
   github: jcoliver
-  interests: 
-    - As the UA Libraries Data Science Specialist, I agitate and advocate for campus data and computational literacy. I work mostly in R and retain a modicum of phylogenetics theory. As a graduate student, I chased butterflies and learned Java.
+  bio: 
+    As the UA Libraries Data Science Specialist, I agitate and advocate for campus data and computational literacy. I work mostly in R and retain a modicum of phylogenetics theory. As a graduate student, I chased butterflies and learned Java.
 
