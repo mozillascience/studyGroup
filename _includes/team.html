@@ -25,8 +25,10 @@
                 {% endif %}
                 <div class="col-sm-3">
                     <div class="team-member">
+                        {% if member.headshot %}
+                        <img class="img-circle img-responsive" width="96" src="img/team/{{ member.headshot }}" alt="{{ member.name }}">
+                        {% else %}
                         {% if member.github %}
-                        <img src="https://avatars.githubusercontent.com/{{ member.github }}?s=96" class="img-responsive img-circle" alt="">
                         <h4><a href="https://github.com/{{ member.github }}">{{ member.name }}</a></h4>
                         {% else %}
                         <i class="fa fa-user"></i>
