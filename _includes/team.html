@@ -27,9 +27,10 @@
                     <div class="team-member">
                         {% if member.headshot %}
                         <img class="img-circle img-responsive" width="96" src="img/team/{{ member.headshot }}" alt="{{ member.name }}">
-                        {% else %}
+                        {% endif %}
                         {% if member.github %}
                         <h4><a href="https://github.com/{{ member.github }}">{{ member.name }}</a></h4>
+                        {% endif %}
                         {% else %}
                         <i class="fa fa-user"></i>
                         <h4>{{ member.name }}</h4>
