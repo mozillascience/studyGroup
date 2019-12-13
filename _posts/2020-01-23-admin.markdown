@@ -2,7 +2,7 @@
 title: Planning Meeting for the Spring Term 2020
 text: We meet and plan the StudyGroup activities for the spring term
 location: Niels Henrik Abels hus Room 209
-link:
+link: https://github.com/uio-carpentry/studyGroup/issues/66
 date: 2020-01-23
 startTime: '16:00'
 endTime: '18:00'
