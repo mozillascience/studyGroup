@@ -22,11 +22,12 @@
     - R
     - Visualizations
 
-- name: Evelyn Zeyl Fiskebeck
-  affiliation: The Norwegian Vetenary Institute
+- name: Eve Zeyl Fiskebeck
+  affiliation: The Norwegian Veterinary Institute
   github: evezeyl
   interests:
     - Bioinformatics
+    - R
 
 - name: Eszter A. Papp
   affiliation: University of Oslo
@@ -39,4 +40,4 @@
   affiliation: University of Oslo
   github: tinavisnovska
   interests:
-    - bioinformatics
+    - Bioinformatics
