@@ -21,8 +21,8 @@
                   {% if postyear > nowyear or postday >= nowday and postyear >= nowyear %}
                     {% assign isEvent = 1 %}
                     <li>
-                      <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
-                      <div class='eventSub'><a href="https://mozillascience.github.io/study-group-orientation/3.4-add-event.html">{{ post.text }}</a></div>
+                       <a class='eventTitle' href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
+                      <div class='eventSub'>{{ post.text }}</div>
                     </li>
                   {% endif %}
                 {% endfor %}
@@ -59,7 +59,7 @@
                           {% assign nowday = nowday | minus: 2 %}
                           {% if postyear < nowyear or postday < nowday and postyear == nowyear %}
                             <li>
-                              <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
+                              <a class='eventTitle' href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
                               <div class='eventSub'>{{ post.text }}</div>
                             </li>
                           {% endif %}
