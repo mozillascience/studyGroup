@@ -2,7 +2,7 @@
 title: Workalong: Zotero – Add-Ons, Extensions, and Plugins to Explore
 text: Together, we take a look at a couple of additions to Zotero
 location: Niels Henrik Abels hus Room 209
-link: https://github.com/uio-carpentry/studyGroup/issues/70
+link: https://github.com/uio-carpentry/studyGroup/issues/69
 date: 2020-05-14
 startTime: '16:00'
 endTime: '18:00'
