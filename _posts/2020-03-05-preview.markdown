@@ -1,0 +1,22 @@
+---
+title: Preview of the Data Carpentry: Genomics curriculum
+text: Let's check out Data Carpentry: Genomics
+location: Niels Henrik Abels hus Room 209
+link: https://github.com/uio-carpentry/studyGroup/issues/66
+date: 2020-03-05
+startTime: '16:00'
+endTime: '18:00'
+
+---
+
+**Session leader**: Tina Visnovska
+
+
+- **Level**: beginner
+- **When**: 2020-03-05
+- **Time**: 16:00-18:00
+- **Location**:  Niels Henrik Abels hus Room 209
+
+**What's happening?**
+
+Preview of the Data Carpentry: Genomics Curriculum.
