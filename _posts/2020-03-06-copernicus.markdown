@@ -3,7 +3,7 @@ title: Copernicus Climate Data Store for professionals and students
 text: Two webinars and one day workshop for learning to develop a climate assessment study
 location: Oslo Science Park (top floor)
 link: https://climate.copernicus.eu/c3s-user-learning-services-training-event-norway-sweden
-date: 2020-06-03
+date: 2020-03-06
 startTime: '09:00'
 endTime: '17:00'
 

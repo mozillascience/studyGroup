@@ -1,6 +1,6 @@
 ---
-title: Preview of the Data Carpentry: Genomics curriculum
-text: Let's check out Data Carpentry: Genomics
+title: Preview of the Data Carpentry - Genomics curriculum
+text: Let's check out Data Carpentry - Genomics
 location: Niels Henrik Abels hus Room 209
 link: https://github.com/uio-carpentry/studyGroup/issues/71
 date: 2020-03-05
