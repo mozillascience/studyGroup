@@ -1,5 +1,5 @@
 ---
-title: Workalong: Creating Websites with Jekyll
+title: Workalong - Creating Websites with Jekyll
 text: Together, we create a website with Jekyll and find out how things work
 location: Niels Henrik Abels hus Room 209
 link: https://github.com/uio-carpentry/studyGroup/issues/70
