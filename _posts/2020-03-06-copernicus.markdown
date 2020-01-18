@@ -18,4 +18,15 @@ Self-paced study and further elaboration of the climate adaptation case study (8
 - **Final webinar**: 27th of March, 10:00-11:30h (local time) - Presentation of case studies, discussion, and questions and answers session
 
 
+The target audiences are
+
+- Sectoral end users (for example from agriculture, water and spatial planning) who will gain an understanding on how climate data is produced.
+
+- Consultant & researchers: who want to learn how to use climate data and identify opportunities offered by the CDS and main climate data sources and tools.
+
+- MSc and PhD Students in hydrology, environmental sciences, physical geography or related fields who want to acquire additional skills.
+
+- Climatologists & data experts: who want to acknowledge the full process of creating a climate service and want to gain skills on the CDS and its components
+	For more information and event registration, go to the [Learning Experience Platform](https://uls.climate.copernicus.eu/).
+
 [Registration to these events is required](https://climate.copernicus.eu/c3s-user-learning-services-training-event-norway-sweden)
