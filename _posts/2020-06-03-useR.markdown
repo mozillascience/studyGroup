@@ -1,0 +1,20 @@
+---
+title: Oslo useR! Mild introduction to Structural Equation Modeling
+text: A workshop on structural equation modeling
+location: IFI Building, University of Oslo
+link: https://www.meetup.com/en-AU/Oslo-useR-Group/events/265662967/
+date: 2020-06-03
+startTime: '17:00'
+endTime: '20:00'
+
+---
+
+- Date: Tuesday, 3rd June 2020
+- Time: 17:00
+- Place: IFI Building, University of Oslo
+
+### What we'll do
+
+When working with data, we often want to create models to predict future events, but we also want an even deeper understanding of how our data is connected or structured. In this workshop, we will explore the connectedness of data using using structural equation modeling (SEM) with {lavaan} package.
+
+Stay tuned for updates!

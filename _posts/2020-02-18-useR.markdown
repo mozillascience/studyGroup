@@ -1,0 +1,28 @@
+---
+title: Oslo useR! Geospatial data science with R
+text: A 10 km perspective
+location: Teknologihuset
+link: https://www.meetup.com/en-AU/Oslo-useR-Group/events/267986573/
+date: 2020-02-18
+startTime: '17:00'
+endTime: '20:00'
+
+---
+
+- Topic: Geospatial data with R
+- Speaker: Benno Dillinger works as data engineer at the Section for Environmental Data Science at the Norwegian Institute for Water Research.
+- Date: Tuesday, 18 February 2020
+- Time: 17:00
+- Place: Teknologihuset
+
+
+### What we'll do
+
+R has advanced capabilities for managing spatial data and it provides unparalleled opportunities for managing, visualizing and analyzing such data.
+
+In this meetup we will learn about R packages `{sf}` and `{stars}`, commonly used for manipulating feature and gridded data. The meetup will also include a brief introduction to the associated underlying theory, such as projections, DE-9IM, and spectral indices, as well as applied examples.
+
+### Packages
+- `{sf}` and `{stars}`
+
+

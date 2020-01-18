@@ -1,0 +1,29 @@
+---
+title: Oslo useR! Machine Learning in R? Easier than you think
+text: A walkthrough with Keras
+location: Teknologihuset
+link: https://www.meetup.com/en-AU/Oslo-useR-Group/events/267132894/
+date: 2020-01-21
+startTime: '17:00'
+endTime: '20:00'
+
+---
+
+- Topic: Machine Learning in R? Easier than you think!
+- Speaker: Bethan Cropp (Amesto NextBridge)
+- Date: Tuesday, 21 January 2020
+- Time: 17:00
+- Place: Teknologihuset
+
+### What we'll do
+
+We welcome the new year with an exciting presentation by Bethan Cropp, who will talk about her experience with Machine Learning and R!
+
+Make sure not to miss it!
+
+### Description
+
+Getting started with Keras in R is not difficult, but it has a few quirks. Bethan will discuss (1) the important points she has discovered in her time exploring Keras, (2) some problems she has run into, and (3) work through simple examples of different neural networks.
+
+
+
