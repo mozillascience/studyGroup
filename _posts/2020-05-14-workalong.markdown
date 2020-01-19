@@ -1,19 +1,18 @@
 ---
-title: Workalong: Zotero - Add-Ons, Extensions, and Plugins to Explore
+title: workalong: Zotero Add-Ons, Extensions, and Plugins to Explore
 text: Together, we take a look at a couple of additions to Zotero
 location: Niels Henrik Abels hus Room 209
 link: https://github.com/uio-carpentry/studyGroup/issues/69
 date: 2020-05-14
 startTime: '16:00'
 endTime: '18:00'
-
 ---
 
 **Session leader**: Annika Rockenberger
 
 
 - **Level**: beginner
-- **When**: 2020-05-14
+- **When**: Thursday, May 14
 - **Time**: 16:00-18:00
 - **Location**:  Niels Henrik Abels hus Room 209
 
