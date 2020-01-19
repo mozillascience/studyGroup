@@ -1,6 +1,6 @@
 ---
-title: Zotero Add-Ons, Extensions, and Plugins Workalong
-text: Together, we take a look at a couple of additions to Zotero
+title: Zotero Add-Ons, Extensions, and Plugins
+text: Together we take a look at a couple of additions to Zotero
 location: Niels Henrik Abels hus Room 209
 link: https://github.com/uio-carpentry/studyGroup/issues/69
 date: 2020-05-14
@@ -9,8 +9,9 @@ endTime: '18:00'
 
 ---
 
-**Session leader**: Annika Rockenberger
+### Workalong: Zotero Add-Ons, Extensions, and Plugins
 
+**Session leader**: Annika Rockenberger
 
 - **Level**: beginner
 - **When**: Thursday, May 14
