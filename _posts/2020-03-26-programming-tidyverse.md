@@ -4,7 +4,7 @@ text: "Exploring how to develop basic software for data wrangling with the Tidyv
 "
 location: "MADLab"
 link: "https://github.com/UofTCoders/Events/issues/282"
-date: "2020-03-06"
+date: "2020-03-26"
 startTime: "18:10"
 endTime: "20:00"
 ---
