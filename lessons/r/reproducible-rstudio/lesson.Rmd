@@ -1,0 +1,386 @@
+---
+title: "Reproducible Science with RStudio"
+author: "Frances Wong and Ahmed Hasan"
+output:
+  pdf_document: default
+  html_document: default
+always_allow_html: true
+---
+
+# Introduction
+
+This is an introduction to R and RStudio with an emphasis on project management
+and the various features RStudio has to make reproducible science easier. We'll
+be working through a simple project workflow using the various project management
+features RStudio provides, and pick up some basic R along the way. Although no
+prior experience is required, it may be helpful to read across the material from
+the UofT Coders [Intro to R][intro-r] lesson.
+
+## What does it mean to work reproducibly in RStudio?
+
+Reproducible computational science endeavours to make both the data used in
+analyses as well as the code used to process this data both available and
+reusable. However, ensuring reproducibility is difficult unless certain
+principles are adhered to early on; projects may branch off into various
+unplanned subtasks, certain scripts may undergo several major changes, leading
+to cluttered file directories, and files/scripts may not be named in a
+consistent manner, making retracing steps difficult. While these are important
+considerations when working with other scientists, it's worth noting that
+possibly your most frequent collaborator may be future you, going back to your
+older work to figure out how you proceeded with an analysis. It's therefore
+important to make sure projects are well managed and documented, and RStudio
+offers a suite of features to help facilitate this.
+
+## What is the difference between R and RStudio?
+
+**R** is a statistical programming language, designed primarily with data
+analysis and visualization in mind, while **RStudio** is an interface for
+working in R. Although it is possible to use R independently of RStudio,
+RStudio is widely considered the default platform for working in R due to
+its powerful features and ongoing community support. 
+
+## An overview of RStudio
+
+At its core, RStudio consists of four panes (one of which is often hidden upon
+startup):
+
+1. Source (text editor)
+2. Console (an R interpreter)
+3. Environment and history
+4. Miscellaneous (files, plots, packages, help docs, etc.)
+
+Most of the time, working in RStudio involves working in the Source pane. This
+pane can be opened up by opening either a new or an existing file, and consists
+of a text editor. Code in the source pane can be 'sent' to the console to be
+run, allowing a user to stay in Source for the most part while they work, but
+the Source pane can also be used to edit other text files; this very text is
+being written in the Source panel of RStudio! The console is the real engine 
+which carries out the commands. All your code is *"run"* through the console
+but a copy of the code is kept and organized in the script. 
+
+# R Projects
+
+In this lesson, we'll be making extensive use of yet another feature of RStudio:
+**RStudio Projects**. As the name implies, these are designed to keep all files
+and scripts associated with a given project, in addition to maintaining
+project-specific command history and other useful things.
+
+## Creating a project
+
+Projects can be created using the dropdown in the top right of RStudio. This
+menu should currently say `Project: (None)`, but will otherwise reflect the name
+of whatever project is open at a given time. Clicking on the dropdown and
+selecting `New Project` will open a dialog with three options:
+
+- New Directory
+- Existing Directory
+- Version Control
+
+We'll be selecting `New Directory` for now. This will create a new folder on your
+device that will act as the headquarters for the project. RStudio will ask us to name
+the project, and also offer to enable version control with Git for the project.
+Although we won't be using Git much in this lesson given time constraints, we
+will still check off this checkbox, as it enables a few extra features that are
+helpful to know about.
+
+Once the project has been created, RStudio will in fact appear to 'restart' --
+the project will now open in a new instance of RStudio. RStudio created a new 
+folder where you specified and also quietly performs a few other operations in the
+background:
+
+1. In the newly made project directory, RStudio creates an `.Rproj` file, which
+contains various project settings. This can be seen in the Files pane in the
+bottom right.
+  - This file is also used by certain packages to detect where the project root
+  is in the file tree.
+2. RStudio also creates a hidden directory in the same location called
+`.Rproj.user` containing various project-related temporary files.
+3. Since we enabled Git earlier, RStudio should also initialize this folder as a
+Git repository and create a `.gitignore` file. If you aren't familiar with Git, don't
+worry about this step -- what's essentially happening is that RStudio has primed this folder
+for use with Git.
+  - There should also be a new 'Git' tab added to the Environment & History pane. 
+  
+## Setting up our directory structure
+
+One of the most important steps when getting started with a project is deciding upon
+and setting up a coherent, understandable directory structure. It's very easy to make
+a series of 'temporary' directories that eventually lead to all manner of important
+files being scattered every which way -- we've all been there! To avoid this, let's start
+with a simple directory structure. 
+
+In the Files pane, use the `New Folder` button to create three directories:
+`data`, `analysis`, and `plots`. This directory structure may differ from how
+you prefer to do things; some scientists like to have `plots` as a subdirectory
+of `analysis`, while others split `data` into `data-raw` and `data-clean`. In
+your own work, be sure to experiment with what works for you, but above all: try
+to be consistent!
+
+The idea behind this structure is:
+
+- `data` will contain data, as the name implies; however, an important thing to
+keep in mind is that every file in this folder should be considered
+**read-only**. If data is modified in any way, say after you've filtered out a
+few columns in R, these modified datasets should be saved as new files within
+this folder.
+- `analysis` will contain scripts, notes to oneself (such as digital 'lab
+notebooks') and so on. We'll primarily be working from within this folder.
+- `plots` will contain any and all data visualizations.
+
+(Again, this is _just an example structure_; you don't have to adhere to this in your own work!)
+
+# Getting started with a sample project
+
+R Markdown is great for keeping your code and outputs organized together. This
+is done through code chunks. Text outside of the code chunks, such as this, is
+interpreted as plain text. Code needs to be within a code chunk, and the
+language said code is written in is specified in the header. They can be
+inserted with the green button on the top of this panel or with a keyboard
+shortcut (Ctrl/Cmd + Alt + i). Plain text can be added with code chunks by
+starting a line with a #.
+
+First step of any project: load in your libraries. It's a good habit to keep
+them all together at the start of your document for consistency. Think of
+libraries as apps for your phone: you need to download them once the first time
+you want to use it (in R, install new packages with `install.packages()` for
+base R) but you still need to open it (in R, `library()`) every time you want to
+use it. You'll only need to install a package once, but you'll need to load it
+in with every new session.
+
+```{r loadingPackages}
+# Packages may need to be installed with install.packages() the first time 
+library(tidyverse)
+library(ggplot2)
+library(here)
+library(knitr)
+library(plotly)
+```
+
+Now that we have our first code chunk, the whole segment can be executed using
+the green play button at the top right corner of each chunk or by pressing Shift
++ Ctrl/Cmd + Enter. To run a single line within the code chunk, either
+highlight it before pressing the green play button or place your cursor on the
+line and execute with Ctrl/Cmd + Enter.
+
+Let's start with some basics. R at its core can be used as a giant calculator to
+which we can feed variables and equations.
+
+```{r}
+2+2
+```
+
+Values can also be stored into objects. Notice how the object names and quick
+information are populated into the 'Environment' tab when created.
+
+```{r}
+bigNumber <- 239
+smlNumber <- 3
+
+bigNumber/smlNumber
+```
+
+We can start to explore the strength of R by working with more than one value at
+once. When an object holds a string of values, they are called vectors. There
+are multiple types depending on what kind of information they are holding.
+Notice how RStudio has a feature called "syntax highlighting" which will
+indicate when different data types are recognized. The actual colors depend on
+the theme selected in your settings.
+
+```{r}
+numericVec <- c(3, 1, 4, 1, 5)
+characterVec <- c("is", "it", "pi", "or", "pie") # character strings must be enclosed in quotations or else they will be interpreted as objects in the environment. 
+logicalVec <- c(FALSE, FALSE, TRUE, FALSE, F)
+```
+
+Note: logical booleans must be written with all caps (FALSE or TRUE) or by a single capital letter (F or T). 
+
+What happens if there are multiple data types within a vector? 
+
+```{r}
+mixedVec <- c("UofT", "Coders", 2020)
+mixedVec
+class(mixedVec)
+```
+
+All values will be coersed into a single data type. 
+
+Everything we've been working with so far has been one dimensional, a vector.
+Let's get a little more power with two dimensional data structures. Matrices can
+only hold one data type.
+
+```{r}
+matrix <- matrix(1:25, nrow = 5) # colon asks for values 1 "through" 25
+
+matrix[5, 3] # Row 5, column 3
+```
+
+Matrices can be acted on fully or column-wise:
+
+```{r}
+matrix[, 2]*2
+
+matrix[, 2] <- matrix[, 2]*2
+```
+
+A second complex data structure is the **data frame**. In contrast to matrices, which can 
+only hold one type of data, each column of a dataframe does not need to be the same data type. 
+
+```{r}
+df <- data.frame(numericVec, characterVec, logicalVec)
+str(df)
+```
+
+This allows more flexability in its usage. 
+
+Next, let's bring in a fun dataset to work with: 
+
+```{r readingDataset}
+nobel <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winners.csv")
+```
+
+This is a collection of metadata for almost all Nobel laureates in physics,
+chemistry, and physiology or medicine from 1900 to 2016.
+
+This data is brought in as a modified data.frame specific to tidyverse called a
+tibble.
+
+Let's first take a look at the data we have:
+
+```{r exploringDataset}
+dim(nobel)
+colnames(nobel)
+summary(nobel) # not the best for handling characters ... 
+```
+
+The most comprehensive one that is really useful for data frames, because
+they can hold multiple data types, is `str`, or structure:
+
+```{r}
+str(nobel)
+```
+
+Let's pretend we just finished data entry and we'd like to save our dataset.
+We'll keep a copy in our data folder:
+
+```{r saveSnapshot}
+# Using full path 
+#write_csv(nobel, "../../nobel_complete.csv")
+
+# or alternatively, using here to navigate from the root of the project folder 
+#write_csv(nobel, here("data/nobel_complete.csv"))
+```
+
+Using the `here()` function brings the path back to the root directory for the
+project. This is great to ensure reproducibility because relative paths are
+easily confused when moving between scripts.
+
+Another common practice is commenting out the `write_csv()` line after executing
+to prevent accidentally writing over your dataset when re-running code in future
+analysis. It is completely up to you if you'd like to adapt this into your
+practice!
+
+Looking at one column, for example `category`, we can see that there are a few
+possible discrete values. We can take a look at the values and distribution:
+
+```{r exploringCategory}
+head(nobel$category)
+table(nobel$category)
+```
+
+Factors are great, especially for graphing, because they turn values into
+discrete categorical data. The different categories are called levels. The
+`forcats` package is handy when manipulating factors and level, but that's for
+another day!
+
+```{r}
+head(nobel$category)
+
+nobel$category <- as.factor(nobel$category)
+head(nobel$category)
+levels(nobel$category)
+```
+
+Let's look at how the category of prize won varies by a laureate's date of birth:
+
+```{r startPlotting}
+ggplot(data = nobel, aes(x = birth_date, y = category)) + 
+  geom_point()
+```
+
+Add a color as a dimension:
+
+```{r}
+ggplot(data = nobel, aes(x = birth_date, y = category, color = gender)) + 
+  geom_point()
+```
+
+Let's look at a different comparison. How does the prize year relate to the
+awardee's birth date? We can use the same point plot but add a layer with a fit
+on top.
+
+```{r}
+ggplot(data = nobel, aes(x = prize_year, y = birth_date, color = category)) +
+  geom_point() + geom_smooth()
+```
+
+There's too much going on in this plot; let's just look at the data from one
+country. Most data in the dataset are from the United States, so let's focus on
+that. We'll also save the filtered dataset in case we need to reference it in
+the future.
+
+```{r}
+nobel_US <- filter(nobel, birth_country == "United States of America")
+
+#write_csv(nobel_US, here("data/nobel_USonly.csv"))
+
+ggplot(data = nobel_US, aes(x = prize_year, y = birth_date, color = category)) +
+  geom_point() + geom_smooth()
+```
+
+Now we can start to see some trends! 
+
+Let's compare the distribution between the five largest countries in North
+America by population.
+
+```{r}
+nobel_NA <- filter(nobel, birth_country %in% c("United States of America", "Mexico", "Canada","Guatemala", "Cuba"))
+
+ggplot(data = nobel_NA, aes(x = prize_year, y = birth_date, color = birth_country, shape = category)) +
+  geom_point() + 
+  theme_classic()
+```
+
+The last plot generated can be saved using `ggsave`. 
+
+```{r}
+ggsave(here("data/nobel_USonly.png"), width = 6, height = 4)
+```
+
+This complex plot can benefit from being intereactive. `ggplot` and `plotly` makes this very 
+simple: save the graph into an object and bring it into plotly! Voila! 
+
+```{r}
+plot <- ggplot(data = nobel_NA, aes(x = prize_year, y = birth_date, color = birth_country, shape = category)) +
+  geom_point() + 
+  theme_classic()
+
+ggplotly(plot)
+```
+
+Lastly, let's knit this document to have a static snapshot of what we did. The
+file (.Rmd) needs to be saved before getting started with the knitting process.
+The code also needs to be able to execute 100% perfectly without user input;
+errors will break the knitting process. Start knitting by clicking the cleverly
+labeld yarn ball at the top of the script console. You'll notice the console
+pane where the code was running switched to the R Markdown tab. Keep your eye on
+this: any errors and their associated line numbers will be displayed here.
+
+Note: Some devices require additional set up for compiling pdf documents. This may involve 
+downloading LaTeX outside of R. 
+
+[intro-r]: https://uoftcoders.github.io/studyGroup/lessons/r/intro/lesson/
+
+
+
+
+
