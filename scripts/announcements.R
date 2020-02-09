@@ -137,7 +137,7 @@ gh_issue_info_event <- function(events) {
             - **Instructor**: TBA
             - **Skill level**: {skill_level}
 
-            *Installation instructions*: You will need to install the appropriate programs. See the {program_language} section of the [installation instructions page](https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/install-python-r.md). {needs_packages}
+            *Installation instructions*: You will need to install the appropriate programs. See the {program_language} section of the [installation instructions page](https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/install-git-python-r.md). {needs_packages}
 
             *Watch*: This event will be [streamed live]({youtube_link}). If you have questions during the live stream (or just want to chat with us), please ask in our [Gitter lobby](https://gitter.im/UofTCoders/Lobby) and we will forward your questions to the instructor! (Although we aim to live stream each event, there are sometimes technical difficulties so it's best to attend in person if you can.)
 
