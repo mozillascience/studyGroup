@@ -3,7 +3,7 @@ title: Workalong - Creating Websites with Jekyll
 text: Together, we create a website with Jekyll and find out how things work
 location: Niels Henrik Abels hus Room 209
 link: https://github.com/uio-carpentry/studyGroup/issues/70
-date: 2020-04-02
+date: 2020-04-16
 startTime: '16:00'
 endTime: '18:00'
 
@@ -13,7 +13,7 @@ endTime: '18:00'
 
 
 - **Level**: beginner
-- **When**: 2020-04-02
+- **When**: 2020-04-16
 - **Time**: 16:00-18:00
 - **Location**:  Niels Henrik Abels hus Room 209
 
