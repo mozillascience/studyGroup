@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tutorial Menu
+title: ggplot2 refresher tutorial
 author: Alexandra Jebb
 visible: true
 tags: 
@@ -8,6 +8,8 @@ tags:
   - r
   # levels
   - beginner
+  - intermediate
+  - advanced
 ---
 
 ## Tutorial Menu 
