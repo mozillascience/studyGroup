@@ -8,22 +8,11 @@ tags:
   - r
   # levels
   - beginner
-  - intermediate
-  - advanced
-output: 
-  html_document:
-    toc_depth: 4
-    toc: true
-    toc_float: true
-    theme: cerulean
-    highlight: haddock
 ---
 
-## Tutorial Menu {.tabset .tabset-fade .tabset-pills} 
+## Tutorial Menu 
 
-Welcome to the class! The workshop format means you can choose your tutorial based on your comfort level with using ggplot2. For this reason I have divided the class into a menu of resources associated with starters (beginners), mains (middle level) & desserts (extended level). A summary list is provided in the image below and the tabs underneath will take you to the links belonging to each section (in addition to information on how to find relevent datasets and extra information on colour schemes etc).
-
-Don't forget to **email** (a.jebb@abdn.ac.uk) or **tweet** (@AHMJebb1, @abdnStudyGroup) your finished graphs by the end of the tutorial to share them with the class and be in for the chance to **win a mystery prize!**
+Welcome to the class! The workshop format means you can choose your tutorial based on your comfort level with using ggplot2. For this reason I have divided the class into a menu of resources associated with starters (beginners), mains (middle level) & desserts (extended level). A summary list is provided in the image below and the sections underneath will take you to the links belonging to each topic level (in addition to information on how to find relevent datasets and extra information on colour schemes etc).
 
 **Figure 1, Overview of tutorial options for the workshop.**
 
@@ -99,4 +88,4 @@ Overview of basic arguments: ggplot2  | https://ggplot2.tidyverse.org/reference/
 
 **Figure 2, Guide to linetypes and point shapes available for ggplot2 as well as the colour blind friendly pallettes available in the package viridis.**
 
-![](C:/Users/AHMJe/Desktop/Current Work/200224/ggplot2 tutorial/aesthetics guide.png) 
+<img src="../images/aesthetics guide.png">
