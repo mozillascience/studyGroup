@@ -1,8 +1,7 @@
 ---
 layout: page
-title: "Tutorial Menu"
-author: "Alexandra Jebb"
-date: "26/02/2020"
+title: Tutorial Menu
+author: Alexandra Jebb
 visible: true
 tags: 
   # languages
