@@ -26,7 +26,7 @@ https://vincentarelbundock.github.io/Rdatasets/datasets.html
 
 Each of these available datasets are built into a package, also listed on the left side of the page. For example, if I wanted to use the "acme" dataset (the first listed on the page) I would check that the package "boot" is installed, load it by using the library() function and assign it a name to save it to my environment.
 
-```{r, eval = FALSE}
+```
 #install package
 install.packages("boot")
 
