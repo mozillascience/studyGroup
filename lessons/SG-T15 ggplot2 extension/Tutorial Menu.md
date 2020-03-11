@@ -1,5 +1,6 @@
 ---
-title: "Tutorial Resources"
+layout: page
+title: "Tutorial Menu"
 author: "Alexandra Jebb"
 date: "26/02/2020"
 visible: true
