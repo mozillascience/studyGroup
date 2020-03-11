@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ggplot2 refresher tutorial
+title: ggplot2 Refresher Tutorial
 author: Alexandra Jebb
 visible: true
 tags: 
@@ -12,7 +12,7 @@ tags:
   - advanced
 ---
 
-## Tutorial Menu 
+## ggplot2 Refresher Tutorial
 
 Welcome to the class! The workshop format means you can choose your tutorial based on your comfort level with using ggplot2. For this reason I have divided the class into a menu of resources associated with starters (beginners), mains (middle level) & desserts (extended level). A summary list is provided in the image below and the sections underneath will take you to the links belonging to each topic level (in addition to information on how to find relevent datasets and extra information on colour schemes etc).
 
