@@ -24,7 +24,7 @@ Welcome to the class! The workshop format means you can choose your tutorial bas
 
 To access ready-made datasets to create graphical experiments, follow the link below. 
 
-https://vincentarelbundock.github.io/Rdatasets/datasets.html
+(https://vincentarelbundock.github.io/Rdatasets/datasets.html)
 
 Each of these available datasets are built into a package, also listed on the left side of the page. For example, if I wanted to use the "acme" dataset (the first listed on the page) I would check that the package "boot" is installed, load it by using the library() function and assign it a name to save it to my environment.
 
@@ -51,8 +51,8 @@ These resources are more appropriate for newcomers to using ggplot2 or individua
 
 Resource                      | Link
 ------------------------------|------------------------------------------------------------
-Basic Tutorial                | https://rpubs.com/alexandra_jebb/ggplot2_thebasics
-The R Graphics Cookbook       | https://r-graphics.org/
+Basic Tutorial                | <https://rpubs.com/alexandra_jebb/ggplot2_thebasics>
+The R Graphics Cookbook       | <https://r-graphics.org/>
 
 ### Mains
 
@@ -60,7 +60,7 @@ If you already know how to build some of the basic geoms (types of graph!) and c
 
 Resource                                 | Link
 -----------------------------------------|----------------------------------------------------------------------------------
-Combining figures into panel plots       | https://rpubs.com/alexandra_jebb/CB_Multi_Panel_Plots
+Combining figures into panel plots       | <https://rpubs.com/alexandra_jebb/CB_Multi_Panel_Plots>
 Varying tutorials with ggplot2           | https://www.r-graph-gallery.com/ggplot2-package.html
 Learn to highlight data                  | https://cran.r-project.org/web/packages/gghighlight/vignettes/gghighlight.html
 Handle overplotting of data points       | https://ggplot2.tidyverse.org/reference/geom_jitter.html
