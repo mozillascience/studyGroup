@@ -11,7 +11,7 @@ tags:
   - beginner
 ---
 
-# **How to Access the Microsoft Teams Community for the Aberdeen Study Group**
+### **How to Utilise the Microsoft Teams Community for the Aberdeen Study Group?**
 
 Due to the isolation measures that mean we can no longer work together within the University of Aberdeen, we, at the Aberdeen Study Group, wanted to offer you a chance to interact with your peers and get some support from your colleagues whilst trying to conduct your awesome research independently! If you have accessed this tutorial you should have been provided with the link to access our new community on Microsoft Teams, if not feel free to tweet us @abdnStudyGroup to get involved!
 
