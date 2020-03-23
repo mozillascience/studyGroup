@@ -22,10 +22,10 @@ Bear in mind before you start that we have a few rules of engagement that we wou
 
 That's enough from us! Follow the screenshots below for a whistlestop tour on how to get started with this software and the group: 
 
-<center><img src="..../Images/.Slide1.JPG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Images/Slide1.jpg" alt="Img" style="width: 800px;"/></center>
 
-<center><img src="..../Images/.Slide2.JPG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Images/Slide2.JPG" alt="Img" style="width: 800px;"/></center>
 
-<center><img src="..../Images/.Slide3.JPG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Images/Slide3.JPG" alt="Img" style="width: 800px;"/></center>
 
-<center><img src="..../Images/.Slide4.JPG" alt="Img" style="width: 800px;"/></center>
+<center><img src="../Images/Slide4.JPG" alt="Img" style="width: 800px;"/></center>
