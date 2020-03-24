@@ -29,3 +29,5 @@ That's enough from us! Follow the screenshots below for a whistlestop tour on ho
 <center><img src="../Images/Slide3.JPG" alt="Img" style="width: 800px;"/></center>
 
 <center><img src="../Images/Slide4.JPG" alt="Img" style="width: 800px;"/></center>
+
+<center><img src="../Images/Slide6.JPG" alt="Img" style="width: 800px;"/></center>
