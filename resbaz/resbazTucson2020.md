@@ -1,10 +1,10 @@
 ---
 layout: page-nonav
-title: 'ResBaz Tucson May 19-21, 2020'
+title: 'ResBaz Tucson May 18-29, 2020'
 ---
 ## Workshop/Course Descriptions
 
-Coming later this spring!
+This year's Research Bazaar has been moved totally online. In an effort to mitigate "Zoom fatigue", it will be spread over two weeks, instead of 3 days as originally planned. Details to follow!
 
 ## What
 
@@ -16,7 +16,7 @@ Who should attend? Researchers at ALL levels from ALL disciplines. PhD and resea
 
 ## When
 
-May 19-21, 2020
+May 18-29, 2020
 
 ## Schedule
 
@@ -24,7 +24,7 @@ Coming later this spring!
 
 ## Where
 
-University of Arizona
+~~University of Arizona~~ VIRTUAL
 
 
 ## Register
