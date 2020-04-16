@@ -71,7 +71,7 @@ Handle overplotting of data points       | <https://ggplot2.tidyverse.org/refere
 Resource                                 | Link
 -----------------------------------------|--------------------------------------------------------------------------
 Animating your plots                     | <https://gganimate.com/articles/gganimate.html OR https://gganimate.com/>
-Explore ggplot2 extension packages       | <http://www.ggplot2-exts.org/gallery/>
+Explore ggplot2 extension packages       | <https://exts.ggplot2.tidyverse.org/gallery/>
 Make an interactive ggplot               | <https://www.r-graph-gallery.com/bubble_chart_interactive_ggplotly.html>
 
 
