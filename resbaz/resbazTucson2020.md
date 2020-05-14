@@ -33,7 +33,7 @@ Note: Due to the "unconference" nature of ResBaz, you can opt to teach a worksho
 
 <a href="https://bit.ly/RezBazAZ20Reg" class="btn btn2020" target="_blank">Register your interest here!</a>
 
-<a href="https://docs.google.com/document/d/1VOabRFZ5bWt4JkD8dhCNaD9TV0cu1cEbdn3mviVeF0o" class="btn btn2020">Do-a-athon details</a>
+<a href="https://bit.ly/ResBazAZ20_DoAThon" class="btn btn2020">Do-a-Thon details</a>
 
 
 <style>
