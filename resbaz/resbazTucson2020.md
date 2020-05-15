@@ -28,7 +28,7 @@ Note: Due to the "unconference" nature of ResBaz, you can opt to teach a worksho
 
 ~~University of Arizona~~ VIRTUAL
 
-**IMPORTANT**: Links and passwords to the Zoom rooms for the sessions will be sent out by email. Therefore to receive these links, you must <u><a href="https://bit.ly/RezBazAZ20Reg">register</a></u>. Passwords will be changed daily so make sure to check your email. If you registered after May 15 and did receive the daily Zoom links/passwords, please contact us at resbazaz@gmail.com
+**IMPORTANT**: Links and passwords to the Zoom rooms for the sessions will be sent out by email. Therefore to receive these links, you must <u><a href="https://bit.ly/RezBazAZ20Reg">register</a></u>. Passwords will be changed daily so make sure to check your email. If you registered after May 15 and didn't receive the daily Zoom links/passwords, please contact us at resbazaz@gmail.com
 
 
 ## Register
