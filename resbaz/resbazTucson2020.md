@@ -51,7 +51,8 @@ Note: Due to the "unconference" nature of ResBaz, you can opt to teach a worksho
 
 ## Our Sponsors
 
-<a href="https://www.overleaf.com"><img src="/img/logos/overleaf.png" alt="Overleaf logo" width="150"></a>
+<a href="https://www.overleaf.com"><img src="/img/logos/overleaf.png" alt="Overleaf logo" width="200"></a>
+<a href="https://www.cyverse.org"><img src="/img/logos/cyverse.png" alt="CyVerse logo" width="200"></a>
 
 <br><br><br>
 **Last year:**
