@@ -53,7 +53,7 @@ Note: Due to the "unconference" nature of ResBaz, you can opt to teach a worksho
 
 <a href="https://www.overleaf.com"><img src="/img/logos/overleaf.png" alt="Overleaf logo" height="75"></a>&emsp;&emsp;&emsp;&emsp;<a href="https://hprc.tamu.edu/sweeter/"><img src="/img/logos/NSF_SWEETER.jpg" alt="SWEETER logo" height="75"></a>&emsp;&emsp;&emsp;&emsp;<a href="https://www.cyverse.org"><img src="/img/logos/cyverse.png" alt="CyVerse logo" height="75"></a>&emsp;&emsp;&emsp;&emsp;
 
-<a href="https://new.library.arizona.edu/"><img src="/img/logos/ua_libraries.png" alt="University of Arizona Libraries" height="50"></a>&emsp;&emsp;&emsp;&emsp;<a href="https://it.arizona.edu/research"><img src="/img/logos/ua_uits.png" alt="UITS Research Computing" height="50"></a>
+<a href="https://new.library.arizona.edu/"><img src="/img/logos/ua_libraries.png" alt="University of Arizona Libraries" height="65"></a>&emsp;&emsp;&emsp;&emsp;<a href="https://it.arizona.edu/research"><img src="/img/logos/ua_uits.png" alt="UITS Research Computing" height="65"></a>
 
 <br><br><br>
 **Last year:**
