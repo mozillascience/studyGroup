@@ -4,6 +4,8 @@ Research Bazaar events are community events intended for networking and collabor
 
 To make clear what is expected, everyone taking part in Research Bazaar events and discussions—instructors, helpers, organizers, and learners—is required to conform to the following Code of Conduct. Organizers will enforce this code throughout events, but you may also contact us privately; all communication will be treated as confidential.
 
+**To report a breach of the Code of Conduct, please email us at resbazaz[at]gmail.com**
+
 ### The Short Version
 
  - Research Bazaar is dedicated to providing a harassment-free learning experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, or choice of text editor. We do not tolerate harassment of participants in any form.
@@ -11,8 +13,6 @@ To make clear what is expected, everyone taking part in Research Bazaar events a
  - Be kind to others. Do not insult or put down other attendees.
  - Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate.
  - Attendees violating these rules may be asked to leave the event at the sole discretion of the event organizers without a refund of any charge that may have been levied.
-
-**To report a breach of the Code of Conduct, please email us at resbazaz[at]gmail.com**
 
 Thank you for helping make this a welcoming, friendly event for all.
 
