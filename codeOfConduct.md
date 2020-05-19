@@ -12,6 +12,8 @@ To make clear what is expected, everyone taking part in Research Bazaar events a
  - Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate.
  - Attendees violating these rules may be asked to leave the event at the sole discretion of the event organizers without a refund of any charge that may have been levied.
 
+**To report a breach of the Code of Conduct, please email us at resbazaz[at]gmail.com**
+
 Thank you for helping make this a welcoming, friendly event for all.
 
 ### The Longer Version
