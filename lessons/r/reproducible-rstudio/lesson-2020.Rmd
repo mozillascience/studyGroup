@@ -24,17 +24,17 @@ de-emphasizing the code-along sections.
 ## What does it mean to work reproducibly in RStudio?
 
 Reproducible computational science endeavours to make both the data used in
-analyses as well as the code used to process this data both available and
-reusable. However, ensuring reproducibility is difficult unless certain
-principles are adhered to early on; projects may branch off into various
-unplanned subtasks, certain scripts may undergo several major changes, leading
-to cluttered file directories, and files/scripts may not be named in a
-consistent manner, making retracing steps difficult. While these are important
-considerations when working with other scientists, it's worth noting that
-possibly your most frequent collaborator may be future you, going back to your
-older work to figure out how you proceeded with an analysis. It's therefore
-important to make sure projects are well managed and documented, and RStudio
-offers a suite of features to help facilitate this.
+analyses as well as the code used to process this data available and reusable.
+However, ensuring reproducibility is difficult unless certain principles are
+adhered to early on; projects may branch off into various unplanned subtasks,
+certain scripts may undergo several major changes, leading to cluttered file
+directories, and files/scripts may not be named in a consistent manner, making
+retracing steps difficult. While these are important considerations when
+working with other scientists, it's worth noting that possibly your most
+frequent collaborator may be future you, going back to your older work to
+figure out how you proceeded with an analysis. It's therefore important to make
+sure projects are well managed and documented, and RStudio offers a suite of
+features to help facilitate this.
 
 ## What is the difference between R and RStudio?
 
@@ -311,7 +311,7 @@ given package was used). More can be found [here][packrat].
 
 
 
-[happy-git-r]: happygitwithr.com
+[happy-git-r]: https://happygitwithr.com/
 [intro-git]: https://uoftcoders.github.io/studyGroup/lessons/git/intro/lesson/
 [intro-r]: https://uoftcoders.github.io/studyGroup/lessons/r/intro/lesson/
 [lesson-old]: https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/r/reproducible-rstudio/lesson.Rmd
