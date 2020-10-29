@@ -17,9 +17,9 @@ prior experience is required, it may be helpful to read across the material from
 the UofT Coders [Intro to R][intro-r] lesson.
 
 Note: material for an extended version of this lesson, delivered in the Spring
-2020 semester, can be found [here][lesson-old]. This version is truncated and
-intended to be delivered in 40-50 minutes online, thus de-emphasizing the
-code-along sections.
+2020 semester, can be found [here][lesson-old]. The version in this file is
+truncated and intended to be delivered in 40-50 minutes online, thus
+de-emphasizing the code-along sections.
 
 ## What does it mean to work reproducibly in RStudio?
 
