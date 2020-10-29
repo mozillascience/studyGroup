@@ -1,0 +1,320 @@
+---
+title: "Reproducible Science with RStudio"
+author: "Ahmed Hasan"
+output:
+  pdf_document: default
+  html_document: default
+always_allow_html: true
+---
+
+# Introduction
+
+This is an introduction to R and RStudio with an emphasis on project management
+and the various features RStudio has to make reproducible science easier. We'll
+be working through a simple project workflow using the various project management
+features RStudio provides, and pick up some basic R along the way. Although no
+prior experience is required, it may be helpful to read across the material from
+the UofT Coders [Intro to R][intro-r] lesson.
+
+Note: material for an extended version of this lesson, delivered in the Spring
+2020 semester, can be found [here][lesson-old]. The version in this file is
+truncated and intended to be delivered in 40-50 minutes online, thus
+de-emphasizing the code-along sections.
+
+## What does it mean to work reproducibly in RStudio?
+
+Reproducible computational science endeavours to make both the data used in
+analyses as well as the code used to process this data available and reusable.
+However, ensuring reproducibility is difficult unless certain principles are
+adhered to early on; projects may branch off into various unplanned subtasks,
+certain scripts may undergo several major changes, leading to cluttered file
+directories, and files/scripts may not be named in a consistent manner, making
+retracing steps difficult. While these are important considerations when
+working with other scientists, it's worth noting that possibly your most
+frequent collaborator may be future you, going back to your older work to
+figure out how you proceeded with an analysis. It's therefore important to make
+sure projects are well managed and documented, and RStudio offers a suite of
+features to help facilitate this.
+
+## What is the difference between R and RStudio?
+
+**R** is a statistical programming language, designed primarily with data
+analysis and visualization in mind, while **RStudio** is an interface for
+working in R. Although it is possible to use R independently of RStudio,
+RStudio is widely considered the default platform for working in R due to
+its powerful features and ongoing community support. 
+
+## An overview of RStudio
+
+At its core, RStudio consists of four panes (one of which is often hidden upon
+startup):
+
+1. Source (text editor)
+2. Console (an R interpreter)
+3. Environment and history
+4. Miscellaneous (files, plots, packages, help docs, etc.)
+
+Most of the time, working in RStudio involves working in the Source pane. This
+pane can be opened up by opening either a new or an existing file, and consists
+of a text editor. Code in the source pane can be 'sent' to the console to be
+run, allowing a user to stay in Source for the most part while they work, but
+the Source pane can also be used to edit other text files; this very text is
+being written in the Source panel of RStudio! The console is the real engine 
+which carries out the commands. All your code is *"run"* through the console
+but a copy of the code is kept and organized in the script. 
+
+# R Projects
+
+In this lesson, we'll be making extensive use of yet another feature of RStudio:
+**RStudio Projects**. As the name implies, these are designed to keep all files
+and scripts associated with a given project, in addition to maintaining
+project-specific command history and other useful things.
+
+## Creating a project
+
+Projects can be created using the dropdown in the top right of RStudio. This
+menu should currently say `Project: (None)`, but will otherwise reflect the name
+of whatever project is open at a given time. Clicking on the dropdown and
+selecting `New Project` will open a dialog with three options:
+
+- New Directory
+- Existing Directory
+- Version Control
+
+We'll be selecting `New Directory` for now. This will create a new folder on your
+device that will act as the headquarters for the project. RStudio will ask us to name
+the project, and also offer to enable version control with Git for the project.
+Although we won't be using Git much in this lesson given time constraints, we
+will still check off this checkbox, as it enables a few extra features that are
+helpful to know about.
+
+Once the project has been created, RStudio will in fact appear to 'restart' --
+the project will now open in a new instance of RStudio. RStudio creates a new 
+folder where you specified and also quietly performs a few other operations in the
+background:
+
+1. In the newly made project directory, RStudio creates an `.Rproj` file, which
+contains various project settings. This can be seen in the Files pane in the
+bottom right.
+  - This file is also used by certain packages to detect where the project root
+  is in the file tree.
+2. RStudio also creates a hidden directory in the same location called
+`.Rproj.user` containing various project-related temporary files.
+3. Since we enabled Git earlier, RStudio should also initialize this folder as a
+Git repository and create a `.gitignore` file. If you aren't familiar with Git, don't
+worry about this step -- what's essentially happening is that RStudio has primed this folder
+for use with Git.
+  - There should also be a new 'Git' tab added to the Environment & History pane. 
+  
+## Setting up our directory structure
+
+One of the most important steps when getting started with a project is deciding upon
+and setting up a coherent, understandable directory structure. It's very easy to make
+a series of 'temporary' directories that eventually lead to all manner of important
+files being scattered every which way -- we've all been there! To avoid this, let's start
+with a simple directory structure. 
+
+In the Files pane, use the `New Folder` button to create three directories:
+`data`, `analysis`, and `plots`. This directory structure may differ from how
+you prefer to do things; some scientists like to have `plots` as a subdirectory
+of `analysis`, while others split `data` into `data-raw` and `data-clean`. In
+your own work, be sure to experiment with what works for you, but above all: try
+to be consistent!
+
+The idea behind this structure is:
+
+- `data` will contain data, as the name implies; however, an important thing to
+keep in mind is that every file in this folder should be considered
+**read-only**. If data is modified in any way, say after you've filtered out a
+few columns in R, these modified datasets should be saved as new files within
+this folder.
+- `analysis` will contain scripts, notes to oneself (such as digital 'lab
+notebooks') and so on. We'll primarily be working from within this folder.
+- `plots` will contain any and all data visualizations.
+
+(Again, this is _just an example structure_; you don't have to adhere to this in your own work!)
+
+# Getting started with a sample project
+
+## R Scripts and R Notebooks
+
+Although RStudio is primarily designed to work with R code and scripts, it
+also supports a variety of other file formats. If we navigate to the `File`
+menu and look at the options under `New`, we can see file formats ranging
+from R Notebooks to Markdown files and Python scripts. Any of these file formats
+can be used and edited within RStudio (and more importantly for our purposes,
+within an R Project).
+
+You may notice that many of these seem to be variants of R scripts, such as
+R Markdown, R Notebooks, R Documentation, and more. Of these, perhaps the two
+to make note of are R Scripts and R Notebooks.
+
+An **R Script** is simply a plain text file with R code in it and nothing but.
+R scripts are very lightweight and perfectly usable for all sorts of R-related
+purposes.  They can also be easily run from the command line (e.g. run in their
+entirety outside of RStudio) although this is a more advanced technique. 
+
+An **R Notebook**, on the other hand, is a special RStudio-only format that
+allows users to easily document and organize code as they go along. R Notebooks
+are incredibly powerful and highly recommended for any sorts of analyses in
+RStudio, since they make it very easy to ensure that code is well annotated and
+presented in a logical manner.
+
+## Using R Notebooks
+
+How do R Notebooks do this? At their core, all R Notebooks are actually
+Markdown files. Markdown is a means of styling plain text files using simple
+text characters. This lesson material you are reading has actually been written
+in Markdown! Since R Notebooks are Markdown files, anything typed into an R
+Notebook will be interpreted as Markdown-styled text by RStudio instead of code
+(which would be the case with an R Script). 
+
+So that's all well and good, but where does the code come in? Well, R Notebooks
+feature the ability to intersperse _code chunks_, which are blocks within
+these files that RStudio knows to interpret as code. We can insert a code chunk
+in an R Notebook using either Shift + Option/Alt + I or the `Insert` dialog at
+the top of the screen.
+
+Let's add in a code chunk and write our first bit of R code -- some simple math:
+
+```{r}
+2 + 2
+```
+We can run the contents of a code chunk by either clicking on the `Run` button
+at the top of the screen or by pressing Ctrl/Cmd + Shift + Enter. RStudio will
+then execute the code in the console, but will *also* show the output directly
+underneath the code chunk. Since each code chunk's output is right next to the
+code itself, this means we can work entirely within the source panel if we so
+choose! 
+
+(Side note: the **R Markdown** format is effectively identical to R Notebooks,
+save for the fact that chunks of code in R Markdown files are run all at once,
+while R Notebooks allow for line-by-line running of code. This is why R Notebooks
+still have the `Rmd` extension.)
+
+## A sample workflow
+
+R features various object types to hold different kinds of information, such as
+numbers and text. We won't go in detail about these object types -- if you're
+interested in digging deeper into these topics, we recommend checking out
+our [Intro R][intro-r] material. 
+
+For this demo, we'll be working with a dataset on air quality in New York City.
+This is a dataset already built into R. The specifics of the code don't matter
+as much here; the point of this lesson is to better understand RStudio's
+features for reproducible science over working through R itself, so we'll gloss
+over some of the details for now.
+
+Opening a new R Notebook, the first thing we notice is the header at the top of
+the screen. This is referred to as a **YAML header**, and stores information
+about the file itself as well as other related metadata related to knitting. We
+will not worry too much about this today, but it's worth knowing what it is for
+more advanced R Notebook uses.
+
+The first thing to do in any notebook is *import the packages we are using*.
+Packages are extensions of R that provide new functionality. Packages only need
+to be installed once, and then loaded in every time they are used. They can
+almost be thought of as apps on your phone: you install an app once, but need
+to open it every time you use it. 
+
+The package we will be working with today is called `here`. `here` provides a
+single added feature that makes it very easy to navigate through the folders in
+our project.
+
+```{r}
+library(here)
+```
+
+We will revisit `here` shortly, but are importing it now because it is good
+practice to import packages at the start of a notebook or script. Instead,
+let's now look at the `airquality` dataset. This is already loaded into R,
+and can be viewed by simply typing in `airquality`:
+
+```{r}
+airquality
+```
+
+In this example workflow, we are interested in whether recorded wind speed
+correlates with the temperature on any given day. Let's plot the two variables
+against one another:
+
+```{r}
+plot(airquality$Wind, airquality$Temp)
+```
+
+We see that there seems to roughly be an inverse correlation. Let's add
+a regression line using a linear model:
+
+```{r}
+abline(lm(airquality$Temp ~ airquality$Wind))
+```
+
+Normally, we would of course do much more in depth statistical work -- for
+instance, creating a linear model and checking whether the assumptions of
+simple linear regression are met, among other things. For the sake of this
+lesson, however, we'll stop here.
+
+Let's say this is our final plot and we want to save it for publication.
+Let's first save our notebook to our `analysis` folder.
+
+Now, if we want to save this plot to the `plots` folder, we might be in a bit
+of trouble, since we'd need R to go back out one folder (from `analysis` to the
+project root) and then into `plots`. This is where the `here` package comes in.
+`here` lets us write file paths as if we were always in the project root.
+Let's save this plot:
+
+```{r}
+png('airquality_plot.png')
+plot(airquality$Wind, airquality$Temp)
+abline(lm(airquality$Temp ~ airquality$Wind))
+dev.off()
+```
+
+Checking our folders, it seems that this file has been saved into `analysis` and
+not `plots`. Changing the above to `plots/airquality_plot.png` raises an error.
+How do we fix this with `here`? 
+
+```{r}
+png(here('plots/airquality_plot.png'))
+plot(airquality$Wind, airquality$Temp)
+abline(lm(airquality$Temp ~ airquality$Wind))
+dev.off()
+```
+
+There we go -- the plot has now been saved to the `plots` folder! It's good
+practice to always use `here` when working with any kind of file paths in R,
+whether that involves reading in or saving files. 
+
+# Other, more advanced features
+
+That about does it for what we'll be covering in this lesson, but here's a quick rundown
+of a few other features/integrations RStudio offers to help with reproducibility.
+
+## Git integration
+
+RStudio projects are fully compatible with Git, and feature various GUI features to help
+facilitate Git usage. Git is a version control system that allows you to track changes in
+your files as well as preserve file history. Using Git with your projects means that past
+versions of files can be retrieved, and changes can be easily documented. Git alone
+could take up an entire lesson itself, however, which is why we haven't covered it today,
+but if you're interested in learning how to use it feel free to have a look at our
+[Intro Git][intro-git] lesson or check out [Happy Git with R][happy-git-r].
+
+## Packrat
+
+Packrat is a package management system for R that allows users to associate
+specific versions of packages with projects. This means that a project can
+contain its own self contained packages forever, which is especially useful if
+these packages eventually get updated in ways that break compatibility (since
+Packrat will specifically allow for the maintenance of whichever version of a
+given package was used). More can be found [here][packrat].
+
+
+
+[happy-git-r]: https://happygitwithr.com/
+[intro-git]: https://uoftcoders.github.io/studyGroup/lessons/git/intro/lesson/
+[intro-r]: https://uoftcoders.github.io/studyGroup/lessons/r/intro/lesson/
+[lesson-old]: https://github.com/UofTCoders/studyGroup/blob/gh-pages/lessons/r/reproducible-rstudio/lesson.Rmd
+[packrat]: https://rstudio.github.io/packrat/
+
+
