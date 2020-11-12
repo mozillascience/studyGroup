@@ -1,0 +1,129 @@
+---
+title: "Programming with Tidyverse"
+author: "Margot Lautens"
+date: "09/11/2020"
+output: html_document
+---
+
+The goal of this workshop is to learn how to write functions which include Tidyverse packages.
+
+Functions are a way to keep a useful workflow that you use a lot separate so that you can change variables and not accidentally miss one. In this example, the function is a simple addition. Yours can be a subtraction and you can also choose whichever numbers you'd like
+```{r}
+littleAddition <- function(number1,number2){
+  finalNumber=number1+number2
+  return(finalNumber)
+}
+
+littleAddition(1,2)
+```
+
+It's important for this workshop that you have the most recent version of tidyverse since until recently, programming in Tidyverse worked differently.
+
+```{r setup, include=FALSE}
+install.packages("tidyverse")
+library(tidyverse)
+```
+
+Tidyverse is a useful and easy way to manipulate and plot data in R. The normal workflow is import -> tidy -> transform -> visualize -> model and tidyverse has the tools to do all of that. Using the diamonds dataset, we'll go through a basic version of this workflow.
+
+```{r}
+#IMPORT#
+diamonds <- diamonds
+glimpse(diamonds)
+
+```
+
+As you can see, the diamonds dataset has both quantitative and qualitative data. Based on what you saw in glimpse, pick a color of diamond that you're interested in learning more about. I've chosen 'E'. Also for both group_by and colour in the ggplot call, choose between "cut", "clarity", "depth" or "table". I've chosen "cut".
+
+```{r}
+#BASIC WORKFLOW#
+normalizedDiamonds <- diamonds%>%
+    filter(color=="E")%>%
+    group_by(cut)%>%
+    mutate(normalizedPrice=(price-mean(price))/sd(price))
+
+ggplot(normalizedDiamonds,
+       aes(x=carat,y=normalizedPrice,colour=cut))+
+    geom_point()
+```
+
+But what if you wanted to make a series of graphs using this same simple workflow many times over? What if you wanted to easily switch between these options? The best option would be to make a function which contained your simple workflow.
+
+```{r}
+#TIDYING IN A FUNCTION, ATTEMPT 1#
+diamondsFunction <- function(diamondColor, diamondVar1, diamondVar2){
+  normalizedDiamonds <- diamonds%>%
+    filter(color==diamondColor)%>%
+    group_by(diamondVar1)%>%
+    mutate(normalizedPrice=(price-mean(price))/sd(price))
+
+  diamondPlot <- ggplot(normalizedDiamonds,
+                        aes(x=carat,y=normalizedPrice,colour=diamondVar2))+
+    geom_point()
+print(diamondPlot)
+return(normalizedDiamonds)
+}
+
+```
+
+Now repeat the variables you picked before when calling the function.
+```{r}
+#TIDYING IN A FUNCTION, ATTEMPT 1, RESULTS#
+diamondsFunction("E",cut,cut)
+```
+An error will pull up saying that 'diamondVar1' is not found in your group_by. That's because tidyverse scarifices ease of normal workflow for an extra step in programming contexts. What we need to do is *embrace* the variable for diamondVar1 as well as diamondVar2 in the function. The diamondColor variable is fine because in the context of filter, it's part of an expression which produces a logical value, not a variable (the variable is "color" itself).
+```{r}
+#TIDYING IN A FUNCTION, ATTEMPT 2#
+diamondsFunction <- function(diamondColor, diamondVar1,diamondVar2){
+  normalizedDiamonds <- diamonds%>%
+    filter(color==diamondColor)%>%
+    group_by({{diamondVar1}})%>%
+    mutate(normalizedPrice=(price-mean(price))/sd(price))
+
+  diamondPlot <- ggplot(normalizedDiamonds,
+                        aes(x=carat,y=normalizedPrice,colour={{diamondVar2}}))+
+    geom_point()
+print(diamondPlot)
+return(normalizedDiamonds)
+}
+
+diamondsFunction("E",cut,cut)
+```
+Now you should have a working function! If you want to allow for the possibility of several varaibles to be used, as is the case with diamondsVar1, instead of embracing we'll use "all_of".
+
+```{r}
+#TIDYING IN A FUNCTION, ATTEMPT 3#
+diamondsFunction <- function(diamondColor, diamondVar1,diamondVar2){
+  normalizedDiamonds <- diamonds%>%
+    filter(color==diamondColor)%>%
+    group_by(all_of(diamondVar1))%>%
+    mutate(normalizedPrice=(price-mean(price))/sd(price))
+
+  diamondPlot <- ggplot(normalizedDiamonds,
+                        aes(x=carat,y=normalizedPrice,colour={{diamondVar2}}))+
+    geom_point()
+print(diamondPlot)
+return(normalizedDiamonds)
+}
+vars <- c("cut","clarity")
+diamondsFunction("E",vars,cut)
+```
+You'll have gotten an error. The problem is that group_by is an action verb and not a selection verb so it needs a bit of help understanding inputs like all_of. Use group_by_at instead to fix the problem.
+```{r}
+#TIDYING IN A FUNCTION, ATTEMPT 4#
+diamondsFunction <- function(diamondColor, diamondVar1,diamondVar2){
+  normalizedDiamonds <- diamonds%>%
+    filter(color==diamondColor)%>%
+    group_by_at(all_of(diamondVar1))%>%
+    mutate(normalizedPrice=(price-mean(price))/sd(price))
+
+  diamondPlot <- ggplot(normalizedDiamonds,
+                        aes(x=carat,y=normalizedPrice,colour={{diamondVar2}}))+
+    geom_point()
+print(diamondPlot)
+return(normalizedDiamonds)
+}
+vars <- c("cut","clarity")
+diamondsFunction("E",vars,cut)
+```
+Hope this is helpful to you and your programming adventures! For further reading see: [https://dplyr.tidyverse.org/articles/programming.html]. If you're interested in replacing for-loops, look into purrr and this tutorial [https://emoriebeck.github.io/R-tutorials/purrr/].
