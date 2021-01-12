@@ -21,7 +21,7 @@
   skill_level: Beginner
   # Beginner Intermediate Advanced
   # R or Python
-  program_language: Any
+  program_language: Python
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
 
@@ -48,7 +48,7 @@
   skill_level: Beginner
   # Beginner Intermediate Advanced
   # R or Python
-  program_language: Any
+  program_language: R
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
 
@@ -96,7 +96,7 @@
   location_url: ""
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
+  packages: "scikit-learn"
   youtube_link: ""
   skill_level: Intermediate
   # Beginner Intermediate Advanced
