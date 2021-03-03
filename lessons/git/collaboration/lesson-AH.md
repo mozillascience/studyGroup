@@ -64,8 +64,15 @@ To accomplish this, it's common to have a local repo that one works on and
 commits changes in, after which those changes are pushed to GitHub using
 command line Git commands. 
 
-- **branches** can be used to keep commit histories separate - try out experimental changes, etc
-- **pull requests** are used to merge the changes in a branch to a different one (usually master/main)
+Let's quickly review a few core commands:
+
+```bash
+git init # initializing a repo at the command line
+git clone [url] # creating a copy of an existing repo
+git remote # checking on any remotes - e.g. other places the repo exists, like GitHub
+git add [file] # telling git to track changes in a file
+git commit # saving those changes
+```
 
 # Collaborative work flows
 
