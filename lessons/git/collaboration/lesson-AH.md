@@ -67,9 +67,15 @@ command line Git commands.
 Let's quickly review a few core commands:
 
 ```bash
+# getting started with a repo
 git init # initializing a repo at the command line
 git clone [url] # creating a copy of an existing repo
-git remote # checking on any remotes - e.g. other places the repo exists, like GitHub
+
+# linking a repo to GitHub
+git remote # listing any remotes - eg the repo on GitHub
+git remote add origin [url] # add link to repo at specific url
+
+# committing (saving) changes to files
 git add [file] # telling git to track changes in a file
 git commit # saving those changes
 ```
