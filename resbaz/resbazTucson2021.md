@@ -33,7 +33,8 @@ VIRTUAL
 
 ## Register
 
-Registration coming soon!
+<a href="https://forms.gle/WS8PTviQ2T9rfqcu9" class="btn btn2021" target="_blank">Register your interest here!</a>
+Zoom links and passwords for all the sessions will be sent to the email address you provide on the registration form.
 
 ## Our Sponsors
 
