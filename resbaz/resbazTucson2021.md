@@ -34,7 +34,19 @@ VIRTUAL
 ## Register
 
 <a href="https://forms.gle/WS8PTviQ2T9rfqcu9" class="btn btn2021" target="_blank">Register your interest here!</a>
+
 Zoom links and passwords for all the sessions will be sent to the email address you provide on the registration form.
+
+<style>
+  .btn2021 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #EA5A2A;
+    color: white;
+  }
+</style>
 
 ## Our Sponsors
 
