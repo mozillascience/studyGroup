@@ -48,7 +48,10 @@ body.sticky-footer footer {
   }
 }
 
+section#come-say-hi {
+ padding: 100px 0;
+}
 section#come-say-hi h3.section-subheading {
-    margin-bottom: 30px;
-    margin-top: 50px;
+ margin-bottom: 20px;
+ margin-top: 40px;
 }
