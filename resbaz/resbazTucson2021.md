@@ -20,7 +20,7 @@ May 17&ndash;21, 2021
 Note: Due to the "unconference" nature of ResBaz, you can opt to teach a workshop during the [registration](#register) process. Therefore, the schedule will not be final until the day of! Below represents the current schedule.
 
 <div style="width:100%;overflow-x:auto">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWGEQ4mW3sHPr8AgbN4e_WUQIAAgQc8uNhPE02ymaakRMnCXNo7zQVNwHafZDTxYJR_J2V8WWJ2G2T/pubhtml?widget=true&amp;headers=false" width="830" height="550" scrolling="no" frameborder="no"></iframe>
+<iframe src="https://kelseygonzalez.github.io/resbaz2021schedule/" width="830" height="550" frameborder="no"></iframe>
 </div>
 
 ## Where
