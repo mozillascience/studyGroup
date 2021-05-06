@@ -26,7 +26,7 @@ Note: Due to the "unconference" nature of ResBaz, you can opt to teach a worksho
 ## Where
 VIRTUAL
 
-**IMPORTANT**: Links and passwords to the Zoom rooms for the sessions will be sent out by email. Therefore to receive these links, you must <u><a href="#register">register</a></u>. Passwords will be changed daily so make sure to check your email.
+**IMPORTANT**: Links and passwords to the Zoom rooms for the sessions will be sent out by email. Therefore to receive these links, you must <u><a href="#register">register</a></u>.
 
 <!-- TODO: add this warning after we stop checking registrations: If you registered after May 15 and didn't receive the daily Zoom links/passwords, please contact us at resbazaz@gmail.com -->
 
