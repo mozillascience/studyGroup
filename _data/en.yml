@@ -1,26 +1,26 @@
 ---
-whatWeDo: What We Do
-events: Events
+whatWeDo: HLML
 contact: Contact
 tellMeMore: Tell Me More
 
-activitiesSubheading: 'And you can, too!'
+activitiesSubheading: Humans Learning Machine Learning
 activities:
-  - title: Skill Sharing
-    description: 'Share your favorite coding skills and tools with your friends and colleagues in friendly, no-pressure work-alongs.</p>'
-    icon: fa-comment
-  - title: Co-Working
-    description: 'Get together to work on your coding projects, help each other out and share your work.'
-    icon: fa-laptop
-  - title: Community Building
-    description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
+  - title: Group
+    description:  We are a group of physics trainees at the University of Toronto who meet on weekly basis to learn new techniques and discuss recent topics in machine learning. Members take turns to teach new topics to the group, making the learning and teaching a collective process.
+      If you're interested in joining, feel free to contact us at <a href="mailto:hlml.toronto@gmail.com">hlml.toronto@gmail.com</a>. The group is open to all interested members of the UofT community.
     icon: fa-group
+  - title: Learning
+    description: Since the inception of the group, we've aimed to apply as much of what we learn into projects. They're instructive, fun and oftentimes comical...
+    icon: fa-comments-o
+  - title: Projects
+    description: Take a look at our <a href="https://github.com/hlml-toronto">GitHub</a> to see the types of projects we've worked on.
+    icon: fa-code
 
-events: Events
+events: Schedule
 eventsSubheading: Our upcoming and recent events
-eventPlaceholder: Nothing yet! Propose an event here.
+eventPlaceholder: Nothing yet! Learn how to propose an event here.
 suggestEvent: Suggest an Event
-leadership: How to lead a Study Group session
+leadership: How To Schedule A Meeting
 pastEvents: See Our Past Events
 
 notification: Want to be notified of our upcoming events?

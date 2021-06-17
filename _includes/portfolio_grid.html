@@ -18,33 +18,43 @@
                   {% capture postday %}{{post.date | date: '%j'}}{% endcapture %}
                   {% assign postday = postday | plus: 0 %}
                   {% assign nowday = nowday | minus: 2 %}
+                  {% capture postfolder %}{{post.folder}}{% endcapture %}
+
                   {% if postyear > nowyear or postday >= nowday and postyear >= nowyear %}
-                    {% assign isEvent = 1 %}
-                    <li>
-                      <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
-                      <div class='eventSub'><a href="https://mozillascience.github.io/study-group-orientation/3.4-add-event.html">{{ post.text }}</a></div>
-                    </li>
+                      {% assign isEvent = 1 %}
+                      <li>
+                          {% if post.folder != "None" %}
+                                <a class='eventTitle' href="{{ site.github }}/lessons/{{ post.folder }}/lesson/">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
+                          {% else %}
+                                <p style="display:inline" class='eventTitle' >{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}}</p>
+                                <!-- <div class='eventSub'><a href="https://mozillascience.github.io/study-group-orientation/3.4-add-event.html">{{ post.text }}</a></div>
+                                JR : simply a 'how to post', which we won't do -->
+                          {% endif %}
+                          <div class='eventSub'><p>{{ post.text }} <a href="{{post.onlinemeeting}}">Meeting link</a></p></div>
+                      </li>
                   {% endif %}
                 {% endfor %}
                 {% if isEvent == 0 %}
-                  <a class='eventTitle' href="{{ site.github.issues_url }}">{{site.data[site.language].eventPlaceholder}}</a>
+                  <a class='eventTitle' href="{{ site.github }}/contribute/">{{site.data[site.language].eventPlaceholder}}</a>
                 {% else %}
                 <div class="row">
                       <div class="col-lg-12 text-center">
-                          <a href="http://mozillascience.github.io/studyGroupHandbook/event-types.html" class="btn btn-xl eventSuggest">{{site.data[site.language].suggestEvent}}</a>
-                          <a href="http://mozillascience.github.io/studyGroupHandbook/event-types.html#workalong" class="btn btn-xl eventSuggest">{{site.data[site.language].leadership}}</a>
+                          <!-- <a href="http://mozillascience.github.io/studyGroupHandbook/event-types.html" class="btn btn-xl eventSuggest">{{site.data[site.language].suggestEvent}}</a> -->
+                          <a href="{{ site.github }}/contribute/" class="btn btn-xl eventSuggest">{{site.data[site.language].leadership}}</a>
+                          <a class="btn btn-xl eventSuggest" href="{{ site.github.url | replace:'http:','https:' }}/past-events/">{{site.data[site.language].pastEvents}}
+                          </a>
                       </div>
                 </div>
                 {% endif %}
               </ul>
-              <!--past events-->
+              <!-- JR : past events accordion I didn't like
               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
                   <div class="panel-heading text-center" role="tab" id="headingOne">
                       <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class='btn btn-xl'>
                         {{site.data[site.language].pastEvents}}
                       </a>
-                    
+
                   </div>
                   <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
@@ -70,13 +80,13 @@
                   </div>
                 </div>
               </div>
+              -->
 
             </div>
-            {% if site.calendar_on %}
-            <div class="col-lg-6">
-            {% else %}
-            <div class="col-lg-12">
-            {% endif %}
+
+            <div class="col-lg-12 text-center">
+
+            <!-- JR : Mozilla Study Group no longer a thing
 	      <b><i>Let's feature your event on <a href="https://mozillascience.github.io/studyGroupEvents/">Mozilla Sudy Group Event</a>! Just fill the <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_YVyXIgxHleSLawwIzlnuM28oJ7phDLHT-SpUJVqVmE93qA/viewform?c=0&w=1">form</a> and let the world join your event!!</i><b>
               <h3 class="section-heading eventInstructions">{{site.data[site.language].notification}}</h3>
               <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].watching | replace: '%GITHUB_REPO_URL%', site.github.repository_url }}</h3>
@@ -85,13 +95,13 @@
                 <figcaption>{{site.data[site.language].watchingCaption | replace: '%GITHUB_REPO_URL%', site.github.repository_url}}</figcaption>
               </figure>
             </div>
+            -->
             {% if site.calendar_on %}
-            <div class="col-lg-6">
-              <h3 class="section-heading eventInstructions">{{site.data[site.language].calendar}}</h3>
-              <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].calendarSubheading | replace: '%CALENDAR_EMBED_URL%', site.calendar_embed_url}}</h3>
+            <!-- <div class="col-lg-6"> -->
+              <!-- <h3 class="section-heading eventInstructions">{{site.data[site.language].calendar}}</h3> -->
+              <!-- <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].calendarSubheading | replace: '%CALENDAR_EMBED_URL%', site.calendar_embed_url}}</h3> -->
               <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].googleCalendar | replace: '%CALENDAR_EMBED_URL%', site.calendar_embed_url}}</h3>
               <h3 class="section-subheading text-muted eventSubinstructions">{{site.data[site.language].iCal | replace: '%CALENDAR_ICAL_URL%', site.calendar_ical_url}}</h3>
-            </div>
             {% endif %}
         </div>
     </section>

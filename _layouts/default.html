@@ -3,14 +3,21 @@
 
   {% include head.html %}
 
+    <body id="page-top" class="index no-header sticky-footer">
 
-    <body id="page-top" class="index">
+    {% include navbar.html %}
 
+    {% comment %}
     {% include header.html %}
+    {% endcomment %}
+
     {% include services.html %}
     {% include portfolio_grid.html %}
+    {% comment %}
     {% include contact.html %}
     {% include team.html %}
+    {% endcomment %}
+    {% include project-page.html %}
     {% include footer.html %}
     {% include js.html %}
 

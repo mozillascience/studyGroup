@@ -6,7 +6,8 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+    /* font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif; */
     color: #{{ site.color.secondary-dark }};
 }
 
@@ -14,17 +15,14 @@ body {
     color: #777;
 }
 
-.text-primary {
-    color: #{{ site.color.primary }};
-}
 
 p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.75;
 }
 
 p.large {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 a,
@@ -55,6 +53,7 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    color: #{{ site.color.secondary-dark }}
 }
 
 ul.events{
@@ -185,13 +184,20 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
+nav
+{
+   position: fixed;
+   top: 0px;
+}
+
 .navbar-default {
     border-color: transparent;
     background-color: #222;
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Lobster","Helvetica Neue",Helvetica,Arial,cursive;
+    font-style: italic;
     color: #{{ site.color.primary }};
 }
 
@@ -212,7 +218,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: #222;
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -257,7 +263,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
-        font-size: 2em;
+        font-size: 5em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -273,7 +279,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
-        font-size: 1.5em;
+        font-size: 1.75em;
     }
 }
 
@@ -892,6 +898,6 @@ figcaption{
   margin-top:1em;
 }
 
-body {
+ {
     webkit-tap-highlight-color: #{{ site.color.primary }};
 }

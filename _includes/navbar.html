@@ -1,0 +1,39 @@
+<nav class="navbar navbar-default navbar-expand bg-primary navbar-dark fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header collapse navbar-collapse page-scroll">
+        <a href="{{ site.github.url | replace:'http:','https:' }}/"><img class="site-logo" src="{{ site.github.url | replace:'http:','https:' }}/{{ site.logo }}" ></a>
+        <a class="navbar-brand page-scroll" href="{{ site.github.url | replace:'http:','https:' }}/">{{site.title}}</a>
+    </div>
+    <!--
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    -->
+      <form class="d-flex">
+        <div class="collapse navbar-collapse" id="navbarColor05">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <!-- <a href="#page-top"></a> -->
+                    <a href="{{ site.github.url | replace:'http:','https:' }}/"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.github.url | replace:'http:','https:' }}/#services">{{site.data[site.language].whatWeDo}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.github.url | replace:'http:','https:' }}/#portfolio">{{site.data[site.language].events}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.github.url | replace:'http:','https:' }}/#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="{{ site.github.url | replace:'http:','https:' }}/lessons/">Lessons</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="{{ site.github.url | replace:'http:','https:' }}/people/">People</a>
+               </li>
+            </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>

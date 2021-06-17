@@ -1,43 +1,44 @@
 <!-- Team Section -->
     <section id="team" class="bg-light-gray">
         <div class="container">
-            <div class="row">
+            <div class="row" >
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">{{site.data[site.language].teamHeadline}}</h2>
+                    <!-- <h2 class="section-heading">{{site.data[site.language].teamHeadline}}</h2> -->
                     <h3 class="section-subheading text-muted">{{site.data[site.language].teamSubheading}}</h3>
                 </div>
             </div>
             <div class="row">
-                {% for member in site.data.members %}
-                {% assign loopindex = forloop.index0 | modulo: 4 %}
-                {% if loopindex == 0 %}
-                {% if forloop.first == false %}
-            </div>
-                {% if forloop.last == false %}
-            <div class="row">
-                {% endif %}
-                {% endif %}
-                {% endif %}
-                <div class="col-sm-3">
-                    <div class="team-member">
-                        {% if member.github %}
-                        <img src="https://avatars.githubusercontent.com/{{ member.github }}?s=96" class="img-responsive img-circle" alt="">
-                        <h4><a href="https://github.com/{{ member.github }}">{{ member.name }}</a></h4>
-                        {% else %}
-                        <i class="fa fa-user"></i>
-                        <h4>{{ member.name }}</h4>
-                        {% endif %}
-                        <p class="text-muted"><i>{{ member.affiliation }}</i></p>
-                        {% if member.interests %}
-                        {{site.data[site.language].interests}}:
-                        <ul class="list-inline text-muted">
-                            {% for interest in member.interests %}
-                            <li class="fa fa-angle-right">&nbsp;{{ interest }}</li>
-                            {% endfor %}
-                        </ul>
-                        {% endif %}
-                    </div>
-                </div>
+                {% for item in site.data.members %}
+                  {% assign member = item[1] %}
+                  {% assign loopindex = forloop.index0 | modulo: 4 %}
+                  {% if loopindex == 0 %}
+                    {% if forloop.first == false %}
+                  </div>
+                      {% if forloop.last == false %}
+                  <div class="row">
+                      {% endif %}
+                    {% endif %}
+                  {% endif %}
+                  <div class="col-sm-3">
+                      <div class="team-member">
+                          {% if member.github %}
+                          <img class="rounded-circle profile img-responsive img-circle" src="https://avatars.githubusercontent.com/{{ member.github }}?s=200" alt="">
+                          <h4><a href="https://github.com/{{ member.github }}">{{ member.display_name }}</a></h4>
+                          {% else %}
+                          <i class="fa fa-user"></i>
+                          <h4>{{ member.display_name }}</h4>
+                          {% endif %}
+                          <p class="text-muted"><i>{{ member.affiliation }}</i></p>
+                          {% if member.interests %}
+                            {{site.data[site.language].interests}}:
+                            <ul class="list-inline text-muted">
+                                {% for interest in member.interests %}
+                                  <li class="fa fa-angle-right">&nbsp;{{ interest }}</li>
+                                {% endfor %}
+                            </ul>
+                          {% endif %}
+                      </div>
+                  </div>
                 {% endfor %}
             </div>
         </div>

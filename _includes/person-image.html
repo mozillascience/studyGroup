@@ -1,0 +1,45 @@
+
+{% assign person = include.person %}
+
+{% comment %}
+
+Usage: {% include person-image.html person=person %}
+
+Sizing of the SVG is done in a viewBox, and it's resized later in CSS.
+
+text-decoration hack is for Safari. We don't SVGs to be underlined.
+
+{% endcomment %}
+
+{% if person.image %}
+    {% capture image %}
+      <img class="rounded-circle profile" alt="{{ person.display_name }}" onkeypress=" "title="{{ person.display_name }}" src="{{ site.base }}{{ person.image }}" />
+    {% endcapture %}
+{% else %}
+  {% capture image %}
+    {% if person.github %}
+        <img class="rounded-circle profile img-responsive img-circle" alt="{{ person.display_name }}" title="{{ person.display_name }}" src="https://avatars.githubusercontent.com/{{ person.github }}?s=150" />
+    {% else %}
+        <svg class="profile noprofile"
+             alt="{{ person.display_name }}"
+             viewBox="0 0 100 100">
+            <title>{{ person.display_name }}</title>
+            <circle r="50" cx="50" cy="50" />
+            <text x="50" y="50"
+                  font-size="70"
+                  text-anchor="middle" dominant-baseline="central" >
+                {{ person.display_name | slice: 0 }}
+            </text>
+        </svg>
+    {% endif %}
+  {% endcapture %}
+{% endif %}
+
+{% if person.github %}
+    <a href="https://github.com/{{ person.github }}"
+       style="text-decoration: none">
+        {{ image }}
+    </a>
+{% else %}
+    {{ image }}
+{% endif %}

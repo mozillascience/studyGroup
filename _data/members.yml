@@ -1,6 +1,163 @@
-- name: Bill Mills
-  affiliation: TRIUMF
-  github: BillMills
-  interests:
-    - Programming
-    - Open Science
+jeremy:
+    display_name: "Jeremy Rothschild"
+    role: present
+    affiliation: UofT Physics
+    #image:
+    github: jbRothschild
+    bio: Physics Ph.D.
+    interests:
+      - NLP
+      - Time series
+
+matt:
+    display_name: "Matthew Smart"
+    role: present
+    affiliation: UofT Physics
+    #image:
+    github: mattsmart
+    bio: Physics Ph.D.
+    interests:
+
+duncan:
+    display_name: "Duncan Kirby"
+    role: present
+    affiliation: UofT Physics
+    #image:
+    github: dakirby
+    bio: Physics Ph.D.
+    interests:
+
+tiantian:
+    display_name: "Tiantian Zheng"
+    role: present
+    affiliation: UofT Physics
+    #image:
+    github: tz545
+    bio: Physics Ph.D.
+    interests:
+
+fang:
+    display_name: "Fang Xi Lin"
+    role: present
+    affiliation: UofT Physics
+    #image:
+    github:
+    bio: Physics Ph.D.
+    interests:
+
+eugene:
+    display_name: "Eugene Klyshko"
+    role: present
+    affiliation: UofT Physics
+    #image:
+    github: klyshko
+    bio: Physics Ph.D.
+    interests:
+
+liam:
+    display_name: "Liam Haas-Neill"
+    role: present
+    affiliation: UofT Physics
+    #image:
+    github: liamhn
+    bio: Physics Ph.D.
+    interests:
+
+nava:
+    display_name: "Nava Leibovich"
+    role: present
+    affiliation: UofT Physics
+    #image:
+    github: NavaLeib
+    bio: Physics Postdoc
+    interests:
+
+raymond:
+    display_name: "Raymond Fan"
+    role: present
+    affiliation: UofT Physics
+    #image:
+    github: RaymondFangGit
+    bio: Physics Ph.D.
+    interests:
+
+maddy:
+    display_name: "Madeleine Bonsma-Fisher"
+    role: present
+    affiliation: UofT Physics
+    #image:
+    github: mbonsma
+    bio: Physics Ph.D.
+    interests:
+
+julie:
+    display_name: "Julie Midroni"
+    role: present
+    affiliation: UofT Physics
+    #image:
+    github: jui434
+    bio: Physics Ph.D.
+    interests:
+
+chris:
+    display_name: "Chris Nunn"
+    role: present
+    affiliation: UofT Physics
+    #image:
+    github: javathejhut
+    bio: Physics Ph.D.
+    interests:
+
+sam:
+    display_name: "Sam Lui"
+    role: present
+    affiliation: UofT Physics
+    #image:
+    github: gcslui
+    bio: Physics Ph.D.
+    interests:
+
+badali:
+    display_name: "Matthew Badali"
+    role: past
+    affiliation: ???
+    #image:
+    github: ma2canada
+    bio: Post Grad
+    interests:
+
+sabya:
+    display_name: "Sabyasachi Dasgupta"
+    role: past
+    affiliation: ???
+    #image:
+    github: sabyadg
+    bio: MLOps Expert
+    interests:
+
+andrei:
+    display_name: "Andrei Vovk"
+    role: past
+    affiliation: ???
+    #image:
+    github: aivovk
+    bio: Post Grad
+    interests:
+
+justin:
+    display_name: "Justin Kim"
+    role: past
+
+peihang:
+    display_name: "Peihang Xu"
+    role: past
+
+nickolas:
+    display_name: "Nickolas Field"
+    role: past
+
+kharchenko:
+    display_name: "Max Kharchenko"
+    role: speaker
+    webpage: https://www.denti.ai
+    bio: Co-Founder of Toronto based startup Denti.ai

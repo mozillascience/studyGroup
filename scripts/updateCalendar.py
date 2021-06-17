@@ -20,7 +20,6 @@
 #      python updateCalendar.py --noauth_local_webserver
 ########################################################################
 
-
 import httplib2
 import os
 import glob
@@ -41,18 +40,18 @@ except ImportError:
 
 # Modify these variables in step 2 above -------------------
 # APPLICATION_NAME: app name you created in step one above:
-APPLICATION_NAME = 'test'
+APPLICATION_NAME = 'HLML Calendar'
 # CALENDAR_ID: google account name you created for your calendar:
-CALENDAR_ID = 'USER@gmail.com'
+CALENDAR_ID = 'hlml.toronto@gmail.com'
 # TIME_ZONE_STR: check here:
 # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-TIME_ZONE_STR = 'America/Vancouver'
+TIME_ZONE_STR = 'America/Toronto'
 # -----------------------------------------------------------
 
 SCOPES = 'https://www.googleapis.com/auth/calendar'
-CLIENT_SECRET_FILE = 'client_secret.json'
-DEFAULT_START_TIME = "15:30"  # will be overridden by startTime in _posts
-DEFAULT_END_TIME = "16:30"  # will be overridden by endTime in _posts
+CLIENT_SECRET_FILE = 'NOTclient_secret_583542396120-iifaqfj0rv9jabkh0t7cir7pbple18jp.apps.googleusercontent.com.json'
+DEFAULT_START_TIME = "11:00"  # will be overridden by startTime in _posts
+DEFAULT_END_TIME = "13:00"  # will be overridden by endTime in _posts
 REQUIRED_FIELDS = ['title', 'location', 'text', 'link', 'date']
 POSTS_DIRECTORY = "../_posts"
 
@@ -175,8 +174,7 @@ def get_credentials():
     credential_dir = os.path.join(home_dir, '.credentials')
     if not os.path.exists(credential_dir):
         os.makedirs(credential_dir)
-    credential_path = os.path.join(credential_dir,
-                                   'google-sfuStudyGroupCalendar.json')
+    credential_path = os.path.join(credential_dir, CLIENT_SECRET_FILE)
 
     store = oauth2client.file.Storage(credential_path)
     credentials = store.get()

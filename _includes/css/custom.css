@@ -5,6 +5,14 @@
  font-size: 110px;
 }
 
+/* Ensure body is below navbar */
+body.no-header {
+ padding-top: 0px;
+}
+body.no-header nav.navbar {
+ background-color: #222;
+}
+
 @media(max-width: 991px) {
   ul.events {
     padding-left: 0;
@@ -15,4 +23,67 @@
   .btn {
     white-space: initial;
   }
+}
+
+.site-logo {
+  float: left;
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+}
+
+/* JR: Changing colours of bootstrap: Flatly */
+.bg-primary {
+  background-color: #{{ site.color.secondary-dark }} !important;
+}
+
+.bg-primary .navbar-nav .show > .nav-link,
+.bg-primary .navbar-nav .nav-link.active,
+.bg-primary .navbar-nav .nav-link:hover,
+.bg-primary .navbar-nav .nav-link:focus {
+  color: #{{ site.color.primary }} !important;
+}
+
+.text-primary {
+    color: #{{ site.color.primary }} !important;
+}
+
+/* JR: Ensures cards aren't split across a couple of columns */
+.card-columns .card {
+  display: inline-block
+}
+
+section h2.section-heading {
+    color: #{{ site.color.secondary-dark }} !important;
+}
+
+/* JR: Justify all text */
+div {
+ text-align: justify;
+ text-justify: inter-word;
+}
+
+footer {
+  width: 100%;
+  justify-content: center;
+}
+
+.below-nav {
+  height: 175px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  justify-content: center;
 }
