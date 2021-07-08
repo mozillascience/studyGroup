@@ -3,8 +3,8 @@
 
 #Step 1: give your study group a name and a short description,
 #and choose a language from the options in the _data directory:
-title: Our Study Group
-description: "A study group."
+title: Carpentry@UiO Study Group
+description: "Study group for the Carpentries community at University of Oslo."
 language: en
 
 #Step 2: press the green 'Commit Changes' button at the bottom of this page.
@@ -19,8 +19,9 @@ language: en
 # None of these things need to be changed - but feel free!
 
 titleBackground: "https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg"
-headlineSmall: "Welcome To Our Study Group!"
-headlineMain: "Let's Work Together"
+headlineSmall: "Welcome to UiO Carpentry Study Group!"
+headlineMain: "Let's Meet and Work Together"
+avatar: "img/logos/uio-carpentry-logo-small.png"
 
 # Setup Google Calendar
 # Usage:
@@ -32,14 +33,28 @@ calendar_on: False
 calendar_embed_url: "https://www.google.com/calendar/embed?src=USER@gmail.com"
 calendar_ical_url: "https://www.google.com/calendar/ical/USER@gmail.com/public/basic.ics"
 
+# ===============================
+# Categories for sorting lessons.
+# ===============================
+
+languages:
+  - python
+  - r
+  - git
+  - misc
+
+levels:
+  - beginner
+  - intermediate
+  - advanced
 
 #========================================
 # No touching anything below this line :)
 #========================================
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: fed136
-  secondary: fec503
+  primary: f42e3a
+  secondary: e30613
   secondary-dark: 333
 
 # Build settings

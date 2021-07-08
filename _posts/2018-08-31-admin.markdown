@@ -1,0 +1,17 @@
+---
+title: Planning of events for fall 2018
+text: Discuss on possible subjects to plan future events
+location: Science Library
+link: https://github.com/uio-carpentry/studyGroup/issues/3
+date: 2018-08-31
+startTime: '14:00'
+endTime: '15:00'
+
+---
+
+Meeting to plan events and activities for fall 2018.
+
+- **When**: Friday 31 August, 14-15h:
+- **Where**: Niels Henrik Abels hus, room 209
+- **Who**: _Everybody willing to be involved in the organization of the UiO@Carpentry StudyGroup is welcome._
+

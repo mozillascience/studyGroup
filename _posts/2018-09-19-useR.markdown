@@ -1,0 +1,24 @@
+---
+title: use R! group Functions, loops and list-columns - taking control of lists with purrr
+text: 
+location: Microsoft Norge
+link: https://github.com/uio-carpentry/studyGroup/issues/17
+date: 2018-09-19
+startTime: '17:30'
+endTime: '19:30'
+
+---
+
+**Session leader**: Dmytro Perepolkin
+
+Are you still writing `for` loops? What are some of the advantages of functional programming in R? What makes a good function? How to take control of nested lists and turn chaos into order? Come and explore a fun world of {purrr} and discover hidden gems in this awesome tidyverse package. Filled with practical examples from author's recently published packages, this talk may help you discover some of the new (and old) functions you may not have used before and encourage you on your journey to becoming a better R programmer.
+
+
+_Bring your laptop if you want to try it out!_
+
+- **Level**: beginner to intermediate
+- **When**: 19th September 2018
+- **Time**: 17:30-19:30
+- **Location**:   Microsoft Norge, Lysaker Torg 45 · Lysaker
+- **More information**: https://www.meetup.com/Oslo-useR-Group/events/254422876/
+

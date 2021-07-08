@@ -1,0 +1,21 @@
+---
+title: Oslo useR! Group, Making tidyverse-friendly packages
+text: 
+location: Teknologihuset
+link: https://www.meetup.com/Oslo-useR-Group/events/255931499/
+date: 2018-11-07
+startTime: '17:30'
+endTime: '19:30'
+
+---
+
+**Session leader**: Raoul Wolf
+
+Raoul will share his experience from simplifying a workflow by writing an R package; under the restriction of minimal dependencies, while maintaining full compatibility for tidyverse. In his own words: «I was working on a new project and I noticed I was sourcing dozens of functions from multiple scripts. I thought to myself: “I might as well do what everyone is doing and write a package!» Come and join us in learning how to identify the need for a package, strategically plan the process of writing the package, and to keep track on applicability and usability.
+
+- **Level**: beginner to intermediate
+- **When**: 07th November 2018
+- **Time**: 17:30-19:30
+- **Location**:   Teknologihuset, Pilestredet 56 · Oslo
+- **More information**: https://www.meetup.com/Oslo-useR-Group/events/255931499/
+

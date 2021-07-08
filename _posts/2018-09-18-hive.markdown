@@ -1,0 +1,23 @@
+---
+title: Arduino Workshop
+text: Learn about the UiO Hive initiative and how you can contribute
+location: Åpen Sone at IFI (room Ada 3407, Ole-Johan Dahls hus, Gaustadalléen 23b)
+link: https://github.com/UiOHive/Hive/issues/1
+register: https://docs.google.com/forms/d/e/1FAIpQLScT9qn-J43uDKjzckw4-Q9Jj5nlpeRwSo5rhriHa-EuSO9ttA/viewform?embedded=true
+date: 2018-09-18
+startTime: '14:00'
+endTime: '18:00'
+
+---
+
+
+At the kick-off event, we'll get to know each other, exchange our interests into either using some new technology like IoT, micro-electornics, or looking for interesting application and challenging settings for these technology. The goal is to come together and establish few key projects on which we can learn and collaborate across our own disciplines. 
+
+- When: Tuesday 18 September, 14-18h:
+	- 14-16h flash presentations (8 min)
+	- 16-18h hands-on workshop to learn about microcontroller and sensors
+	- past 18h Pizza and socializing
+- Where: Åpen Sone at IFI ([room Ada 3407, Ole-Johan Dahls hus, Gaustadalléen 23b](https://www.uio.no/om/finn-fram/omrader/gaustad/ga06/))
+- Who: students, PhDs, postdocs, researchers, technicians
+
+Register [here](https://docs.google.com/forms/d/e/1FAIpQLScT9qn-J43uDKjzckw4-Q9Jj5nlpeRwSo5rhriHa-EuSO9ttA/viewform?embedded=true) to join us for the workshop!

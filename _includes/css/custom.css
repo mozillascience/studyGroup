@@ -4,6 +4,73 @@
 .team-member i.fa {
  font-size: 110px;
 }
+/* * * * * * * * * * * * * * * 
+							 
+	UIO Events Styles 
+
+* * * * * * * * * * * * * * */
+.uio-event {
+	text-align: left; 
+}
+
+.uio-event-date {
+	margin-top: 24px; 
+}
+.uio-event-date > ul {
+	list-style: none;
+	line-height: 1;
+	text-align: center;
+}
+
+.uio-event-date > ul > li:first-child,
+.uio-event-date > ul > li:nth-child(3) {
+	font-size: 150%; 
+}
+
+.uio-event-date > ul > li:nth-child(2) {
+	font-size: 400%; 
+}
+
+.events, 
+.uio-event-date,
+.uio-event-date > ul {
+	padding: 0;
+}
+
+ul.events {
+	text-align: center; 
+	margin-top: 10px; 
+}
+
+.events > li {
+	margin: 30px 0;
+}
+
+.eventDesc > p {
+	font-size: 105%; 
+}
+
+section h3.section-subheading {
+	margin-bottom: 0px; 
+}
+
+
+.site-avatar {
+  float: left;
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+}
 
 @media(max-width: 991px) {
   ul.events {
@@ -16,3 +83,4 @@
     white-space: initial;
   }
 }
+

@@ -1,0 +1,25 @@
+---
+title: use R! group How analysing football data made me fall in love with football again
+text: 
+location: Teknologihuset
+link: https://www.meetup.com/Oslo-useR-Group/events/255853637/
+date: 2018-12-10
+startTime: '17:30'
+endTime: '19:30'
+
+---
+
+**Session leader**: Toju Idowu and Dmytro Perepolkin
+
+In this talk, I will show you how I’ve used `R` to delve deep into how football works. I’ll work through a simple GLM using some of the new tidymodels packages.
+
+About the speaker:
+Toju is an actuary originally from the UK, living in Oslo. He has been using `R` for about four years ever since he accidentally discovered it while searching for how to do linear regression in Excel. Now he use `R` for almost everything data related both at work and at home on side projects.
+
+
+- **Level**: beginner to intermediate
+- **When**: 10th December 2018
+- **Time**: 17:30-19:30
+- **Location**:   Teknologihuset, Pilestredet 56 · Oslo
+- **More information**: https://www.meetup.com/Oslo-useR-Group/events/255853637/
+
