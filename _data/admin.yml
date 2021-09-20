@@ -7,39 +7,24 @@
     - Python
     - LaTeX
 
-- name: Lina Tran
-  position: Special Events Coordinator
-  degree: PhD, Physiology
-  github: linamnt
-  interests:
-    - Python
-    - R
-
 - name: Frances Wong
-  position: Marketing and Social Media Coordinator
-  degree: PhD, Physiology
+  position: Special Events Coordinator, Marketing Coordinator
+  degree: Faculty, Biology
   github: FrancesWong
   interests:
     - R
+    - Git
+    - Markdown
 
-- name: James Santangelo
-  position: RQM Course Coordinator
-  degree: PhD, Biology
-  github: James-S-Santangelo
+- name: Haidy Giratallah
+  position: Peer Mentorship Coordinator
+  degree: PhD, Pharmacology
+  github: HaidyGiratallah
   interests:
-    - R
-
-- name: Sara Mahallati
-  position: Graduate Course Coordinator
-  degree: PhD, Biomedical Engineering
-  github: SaraMati
-  interests:
-    - MATLAB
-    - LaTeX
     - Python
 
 - name: Margot Lautens
-  position: Admin, Peer Mentorship Coordinator
+  position: Admin
   degree: PhD, Molecular Genetics
   github: margot-l
   interests:
@@ -63,9 +48,19 @@
     - Python
     - R
     
-- name: Haidy Giratallah
-  position: Peer Mentorship Coordinator
-  degree: PhD, Pharmacology
-  github: HaidyGiratallah
+- name: Vicki Zhang
+  position: Admin
+  degree: PhD, Ecology and Evolutionary Biology
+  github: vmzhang
   interests:
+    - R
     - Python
+
+- name: Tara Henechowicz
+  position: Peer Mentorship Coordinator
+  degree: PhD, Neuroscience
+  github: tarahenechowicz
+  interests:
+    - R
+    - Python
+
