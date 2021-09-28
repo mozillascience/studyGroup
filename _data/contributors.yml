@@ -1,7 +1,28 @@
 - name: Madeleine Bonsma
   degree: Physics
   github: mbonsma
-  
+
+- name: Lina Tran
+  degree: PhD, Physiology
+  github: linamnt
+  interests:
+    - Python
+    - R
+
+- name: Sara Mahallati
+  degree: PhD, Biomedical Engineering
+  github: SaraMati
+  interests:
+    - MATLAB
+    - LaTeX
+    - Python
+
+- name: James Santangelo
+  degree: PhD, Biology
+  github: James-S-Santangelo
+  interests:
+    - R
+
 - name: Lindsay Coome
   degree: Psychology
   github: lcoome
