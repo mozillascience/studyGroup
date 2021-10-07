@@ -6,12 +6,12 @@
   description: >
     A brief introduction to Python for beginners.
   # Date of the event in YYYY-MM-DD format
-  date: 2021-01-13
+  date: 2021-10-06
   # Start and end time for event in 24 hour HH:MM format
   start_time: "18:00"
   end_time: "19:00"
   # Where the event will take place
-  location: Zoom
+  location: UofT Coders Discord server
   # The URL for the location
   location_url: ""
   # Packages to install, a space separating each package
@@ -33,12 +33,12 @@
   description: >
     A brief introduction to R for beginners.
   # Date of the event in YYYY-MM-DD format
-  date: 2021-01-20
+  date: 2021-10-13
   # Start and end time for event in 24 hour HH:MM format
   start_time: "18:00"
   end_time: "19:00"
   # Where the event will take place
-  location: Zoom
+  location: UofT Coders Discord server
   # The URL for the location
   location_url: ""
   # Packages to install, a space separating each package
@@ -60,12 +60,12 @@
   description: >
     A brief introduction to version control with Git for beginners.
   # Date of the event in YYYY-MM-DD format
-  date: 2021-01-27
+  date: 2021-10-20
   # Start and end time for event in 24 hour HH:MM format
   start_time: "18:00"
   end_time: "19:00"
   # Where the event will take place
-  location: Zoom
+  location: UofT Coders Discord server
   # The URL for the location
   location_url: ""
   # Packages to install, a space separating each package
@@ -79,6 +79,32 @@
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
 
+- key: r-data-visualization
+  # Title of event that will show up as the GH Issue title
+  title: "R: Data visualization with ggplot2"
+  # Explanation of event as a paragraph form
+  description: >
+    A beginner-oriented overview of plotting in R with ggplot2.
+  # Date of the event in YYYY-MM-DD format
+  date: 2021-10-27
+  # Start and end time for event in 24 hour HH:MM format
+  start_time: "18:00"
+  end_time: "19:00"
+  # Where the event will take place
+  location: UofT Coders Discord server
+  # The URL for the location
+  location_url: ""
+  # Packages to install, a space separating each package
+  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
+  packages: "ggplot2 dplyr"
+  youtube_link: ""
+  skill_level: Beginner
+  # Beginner Intermediate Advanced
+  # R or Python
+  program_language: R
+  # Only one label that will be put into the GitHub Issue
+  gh_labels: code-along
+
 - key: python-scikit-learn
   # Title of event that will show up as the GH Issue title
   title: "Python: scikit-learn"
@@ -86,12 +112,12 @@
   description: >
     An introduction to using scikit-learn in Python.
   # Date of the event in YYYY-MM-DD format
-  date: 2021-02-03
+  date: 2021-11-03
   # Start and end time for event in 24 hour HH:MM format
   start_time: "18:00"
   end_time: "19:00"
   # Where the event will take place
-  location: Zoom
+  location: UofT Coders Discord server
   # The URL for the location
   location_url: ""
   # Packages to install, a space separating each package
@@ -105,33 +131,32 @@
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
 
-
-- key: r-stat-methods
+  # Key is the part of the filename in _posts/
+- key: pandoc-markdown
   # Title of event that will show up as the GH Issue title
-  title: "R: Statistical methods"
+  title: "Pandoc and Markdown"
   # Explanation of event as a paragraph form
   description: >
-    A beginner-oriented overview of implementing statistical tests and models in R.
+    An introduction to preparing documents with Pandoc and Markdown.
   # Date of the event in YYYY-MM-DD format
-  date: 2021-02-10
+  date: 2021-11-17
   # Start and end time for event in 24 hour HH:MM format
   start_time: "18:00"
   end_time: "19:00"
   # Where the event will take place
-  location: Zoom
+  location: UofT Coders Discord server
   # The URL for the location
   location_url: ""
   # Packages to install, a space separating each package
   # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
+  packages: "pandoc"
   youtube_link: ""
   skill_level: Beginner
   # Beginner Intermediate Advanced
   # R or Python
-  program_language: R
+  program_language: None
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
-
 
 - key: lightning-demos
   # Title of event that will show up as the GH Issue title
@@ -140,12 +165,12 @@
   description: >
     Short coding demos - anyone is welcome to present!
   # Date of the event in YYYY-MM-DD format
-  date: 2021-02-24
+  date: 2021-11-17
   # Start and end time for event in 24 hour HH:MM format
   start_time: "18:00"
   end_time: "19:00"
   # Where the event will take place
-  location: Zoom
+  location: UofT Coders Discord server
   # The URL for the location
   location_url: ""
   # Packages to install, a space separating each package
@@ -159,19 +184,19 @@
   # Only one label that will be put into the GitHub Issue
   gh_labels: lightning-demos
 
-- key: git-collab
+- key: r-blogdown
   # Title of event that will show up as the GH Issue title
-  title: "Collaborating with Git and GitHub"
+  title: "Creating websites with RStudio and blogdown"
   # Explanation of event as a paragraph form
   description: >
-    An overview of how to collaborate on projects using Git/GitHub.
+    An overview of how to create personal and professional websites using blogdown in RStudio.
   # Date of the event in YYYY-MM-DD format
-  date: 2021-03-03
+  date: 2021-12-01
   # Start and end time for event in 24 hour HH:MM format
   start_time: "18:00"
   end_time: "19:00"
   # Where the event will take place
-  location: Zoom
+  location: UofT Coders Discord server
   # The URL for the location
   location_url: ""
   # Packages to install, a space separating each package
@@ -181,62 +206,7 @@
   skill_level: Intermediate
   # Beginner Intermediate Advanced
   # R or Python
-  program_language: Git
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
-
-
-  # Key is the part of the filename in _posts/
-- key: intro-latex
-  # Title of event that will show up as the GH Issue title
-  title: "Introduction to LaTeX"
-  # Explanation of event as a paragraph form
-  description: >
-    An introduction to preparing documents with LaTeX.
-  # Date of the event in YYYY-MM-DD format
-  date: 2021-03-10
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:00"
-  end_time: "19:00"
-  # Where the event will take place
-  location: Zoom
-  # The URL for the location
-  location_url: ""
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  youtube_link: ""
-  skill_level: Beginner
-  # Beginner Intermediate Advanced
-  # R or Python
-  program_language: LaTeX
-  # Only one label that will be put into the GitHub Issue
-  gh_labels: code-along
-
-# Key is the part of the filename in _posts/
-- key: git-adv-topics
-  # Title of event that will show up as the GH Issue title
-  title: "Git: advanced topics"
-  # Explanation of event as a paragraph form
-  description: >
-    Advanced topics in Git - specific topics TBA.
-  # Date of the event in YYYY-MM-DD format
-  date: 2021-03-17
-  # Start and end time for event in 24 hour HH:MM format
-  start_time: "18:00"
-  end_time: "19:00"
-  # Where the event will take place
-  location: Zoom
-  # The URL for the location
-  location_url: ""
-  # Packages to install, a space separating each package
-  # (e.g. "dplyr tidyr" or "Pandas>=0.21 Seaborn")
-  packages: ""
-  youtube_link: ""
-  skill_level: Advanced
-  # Beginner Intermediate Advanced
-  # R or Python
-  program_language: Git
+  program_language: R
   # Only one label that will be put into the GitHub Issue
   gh_labels: code-along
 
