@@ -1,0 +1,96 @@
+---
+title: "Intro_R_Oct8_2021"
+author: "Tara"
+date: "10/8/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Welcome
+
+ - **Authors**: Tara Henechowicz
+ - **Research field**: Neuroscience (Music and Health)
+ - **Lesson topic**: Intro to R, some data wrangling, statistics, and some visualization
+ - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/intro>
+
+#Why should we use R? 
+- reproducible science 
+- wonderful packages to help you for working with your data (even datasets that are very big)!
+- packages specific to disciplines: biology, genetics, even neuroimaging
+- can customize and create reports with RMarkdown. 
+
+#What can we do with R? 
+- Organize: Tidy data
+- Analyze: statistics, machine learning, field-specific techniques
+- Visualize
+
+#Starting with R - the command line
+
+##Command Line
+
+The command line executes code like a calculator but does not keep a record of your work. 
+Try entering 2+2 in the commandline, what is the output? 
+
+Now lets save 4 as a variable a. The way we do this in R is typing `a <- 4` in the command line. Here the `<-` is acting as an = sign. 
+
+In summary, you can execute code in the command line, but you will need to scroll back to see the previous code you executed. To reproduce your code, you will need to create a script. 
+
+##Scripts
+The type of script we are working in is called and .Rmd file it is an R Markdown script. THis script is helpful for building reports which can later be rendered as a pdf or html file. 
+
+Below is a `code chunk`, where you keep a record of your code and you can execute that code. Anything outside of the code can be used as text to supplement your report or write notes about your process. You can open a code chunk using the `Insert` button or using the short cut for your device. 
+
+Try running the code chunk below by pressing the green play button. 
+```{r}
+#this is a comment, this will not run as code. 
+#Assign the value of 4 to variable "a"
+a<-4
+#return the value of a
+print(a)
+#Ask r if 2+2 is equal to "a"
+2+2==a
+```
+
+##Other windows in R
+- Environment: all the variables we have saved, our functions, and libraries we have loaded
+- History
+- Files
+- Help 
+
+#Starting your script
+1. Set our "working directory", this means we are telling R where to take files from and where to write them. 
+2. Load in the packages we need to use for our project. 
+If we don't have the package installed already, you will use the `install.packages` function.
+Whether you have the package or not, you will load the package using the `library` function.
+```{r}
+#Load in the tidyverse and Using Rlibrary
+library(tidyverse)
+library(UsingR)
+```
+
+3. Load in our data.
+We will be using a dataset that is already in R, so lets take a look at `babies` and try to store as variable `df` in our environment.
+```{r}
+#call the babies dataset
+babies
+#we still need to store this dataset in our R environment
+df <- babies
+```
+
+Now if we call df, we can see we have the babies dataset 
+```{r}
+#viewing df
+df
+```
+
+Lets use the function write.csv to take that data and save it as a .csv file in our current directory
+
+```{r}
+write.csv(babies, "babies.csv")
+```
+
+A few ways to lad data are to:
+- manually use the import dataset button in Rstudio (and copy the code from the output)
