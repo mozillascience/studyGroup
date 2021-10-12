@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #Welcome
 
- - **Authors**: Tara Henechowicz
+ - **Authors**: Tara Henechowicz adapted from plans by Margot Lautens and Luke Johnston
  - **Research field**: Neuroscience (Music and Health)
  - **Lesson topic**: Intro to R, some data wrangling, statistics, and some visualization
  - **Lesson content URL**: <https://github.com/UofTCoders/studyGroup/tree/gh-pages/lessons/r/intro>
@@ -137,7 +137,51 @@ row.names(df)
 
 #Summary statistics and exploring patterns
 
-```{r}
+1. `summary()` shows a quick description of the summary statistics (means, 
+median, frequency)for each of your columns.  
 
+This function is especially useful for finding issues in the data coding and in the data structure.
+For example, look at the variable sex - is there is something strange here?
+Are there any other variables that might have issues?
+These are all issues we can fix when we tidy the data, we will return to data tidying in the next section. 
+```{r}
+#give a summary of df
+summary(df)
 ```
+
+2. Plotting to explore the data
+
+Before we plot any of the columns, we need to know how to select columns from the dataset. 
+To call a column of the data we can use the $ operator: df$sex will give us the sex column. 
+With dataframes, we can call specific rows and collumns using the index. For example with df[1,6], will give us the 1st row and the 6th column. We can also select a range of columns or rows using `:` operator. 
+
+```{r}
+#Try calling the wt column using the `$`
+df$wt
+#Try another way to get the wt column
+df[,7]
+#Try to get the first ten rows of the weight column
+df[1:10,7]
+```
+
+
+2. There are some base functions that allow us to visualize our data:
+`hist()` will provide a historgram of a variable.
+`plot()` can allow you to compare two variables, x and y, in many different types of plots. 
+
+```{r}
+#Try plotting wt as a histogram
+hist(df$wt)
+#try plotting ht as the x variable and wt as the y variable
+plot(x=df$ht, y=df$wt)
+#Now lets use the help function ? to view the plot function
+?plot
+#Lets try changing the type argument
+plot(x=df$ht, y=df$wt, type = "p")
+```
+
+#Introduction to data tidying and tidyverse
+
+
+
 
