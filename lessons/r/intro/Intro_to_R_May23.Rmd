@@ -141,21 +141,24 @@ glimpse(ds)
 
 # Wrangling your data #
 
-Data wrangling is a bit tedious in base R.  So I'm using two packages
+Data wrangling is a bit tedious in base R. There are two great packages which we loaded in at the beginning of the session, `dplyr`and `tidyverse`.
+
 designed to make this easier.  Load packages by using the `library()`
 function.  `dplyr` allows for easy manipulation of datasets.
 
-`select` does as it says: select the column from the dataset.
+`select` is a `dplyr` function that lets us select columns from the dataset. 
 
-The following three lines of code are all the same. Columns can be selected
+Columns can be selected
 individually with `,`, in a series with `:` or removed with `-`.
 
 ```{r wrangleSelect}
 library(dplyr)
+#The first two  lines of code are the same. 
+select(df,id,pluralty,outcome,date)
+select(df,id:date)
 
-select(ds,Plant,Type,Treatment)
-select(ds,Plant:Treatment)
-select(ds,-conc,-uptake)
+#This line of code selects all columns except ht and wt.
+select(df,-ht, -wt)
 ```
 
 `dplyr` also comes with a `%>%` pipe function (via the
