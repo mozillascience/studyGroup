@@ -1,6 +1,6 @@
 ---
 title: Data visualization in R with ggplot2
-author: Vicki Zhang, borrowed from Ahmed Hasan and James Santangelo, who borrowed from Joel Ostblom
+author: Vicki Zhang, borrowed from Ahmed Hasan, James Santangelo, and Joel Ostblom
 output: pdf_document
 ---
   
