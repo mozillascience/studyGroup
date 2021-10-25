@@ -36,7 +36,7 @@ from data frames. The name `ggplot2` comes from its inspiration, the book [_A
 Grammar of Graphics_](https://www.springer.com/gp/book/9780387245447), and the
 main goal is to allow coders to distill complex data structure and express their
 desired graphical outcome in a concise manner instead of telling the computer
-every detail about what should happen. For example, you would say "color my data
+every detail about what should happen. For example, you would say "colour my data
 by species" instead of "go through this data frame and plot any observations of
 species1 in blue, any observations of species2 in red, and so on". Thanks to
 this functional way of interfacing with data, only minimal changes are required
@@ -86,7 +86,7 @@ ggplot(diamonds)
 ```
 
 2. Define aesthetics (`aes`), by selecting the variables to be plotted and the
-variables to define the presentation such as plotting size, shape color, etc.
+variables to define the presentation such as plotting size, shape colour, etc.
 
 ```{r}
 ggplot(diamonds, aes(x = carat, y = price))
@@ -160,12 +160,12 @@ ggplot(diamonds, aes(x = carat, y = price)) +
 
 From the eye test, we can see some evidence of clusters in this scatter plot.
 It's possible that one of the categorical variables we have in the data could
-explain this pattern. Coloring the data points according to a categorical
+explain this pattern. colouring the data points according to a categorical
 variable is an easy way to assess if there seems to be correlation. Let's try
 this with `cut`.
 
 ```{r}
-ggplot(diamonds, aes(x = carat, y = price, color = cut)) +
+ggplot(diamonds, aes(x = carat, y = price, colour = cut)) +
   geom_point(alpha = 0.5)
 ```
 
@@ -174,7 +174,7 @@ Perhaps something else in our dataset might be a better predictor. Let's try
 `clarity` instead:
 
 ```{r}
-ggplot(diamonds, aes(x = carat, y = price, color = clarity)) +
+ggplot(diamonds, aes(x = carat, y = price, colour = clarity)) +
   geom_point(alpha = 0.5)
 ```
 
@@ -230,19 +230,19 @@ ggplot(diamonds, aes(x = carat, y = price)) +
   geom_smooth(method = 'lm')
 ```
 
-Adding the color aesthetic we had previously will cause lines to be fit to each individual group:
+Adding the colour aesthetic we had previously will cause lines to be fit to each individual group:
 
 ```{r}
-ggplot(diamonds, aes(x = carat, y = price, color = clarity)) +
+ggplot(diamonds, aes(x = carat, y = price, colour = clarity)) +
   geom_point(alpha = 0.5) +
   geom_smooth(method = 'lm')
 ```
 
-To still fit a line across the entire dataset, specify the color aesthetic _within_ `geom_point`, and not globally.
+To still fit a line across the entire dataset, specify the colour aesthetic _within_ `geom_point`, and not globally.
 
 ```{r}
 ggplot(diamonds, aes(x = carat, y = price)) +
-  geom_point(aes(color = clarity), alpha = 0.5) +
+  geom_point(aes(colour = clarity), alpha = 0.5) +
   geom_smooth(method = 'lm')
 ```
 
@@ -250,14 +250,43 @@ ggplot(diamonds, aes(x = carat, y = price)) +
 
 ### Customizing plot appearance
 
-`ggplot2` also comes preloaded with a host of pre-made themes - try them out:
-
+Let's create a graph object with all of our variables plotted nicely, and then we can customize the non-data components of the plot.
 ```{r}
 # create graph object
-p <- ggplot(diamonds, aes(x = carat, y = price, color = clarity)) +
+p <- ggplot(diamonds, aes(x = carat, y = price, colour = clarity)) +
   geom_point(alpha = 0.5)
+```
 
+We can change the axis titles by scaling them.
 
+```{r}
+p +
+  labs(x = "Carat", y = "Price (USD)", colour = "Clarity", # capitalize axis labels, indicate currency
+  title = "Price of diamonds for different carats and clarity") # add title
+```
+
+We can customize the appearance more by passing some _theme_ statements[^theme] to `ggplot`.
+```{r}
+p + 
+  labs(x = "Carat", y = "Price (USD)", colour = "Clarity", title = "Price of diamonds for different carats and clarity") +
+  theme(plot.title = element_text(family = "Helvetica",
+                                  face = "bold",
+                                  hjust = 0.5, # [0,]
+                                  ),
+        axis.text.x = element_text(colour = "red"),
+        axis.line.y = element_line(size = 2),
+        axis.title.x = element_blank(), # remove the x-axis
+        axis.title.y = element_text(size = 7),
+        panel.background = element_rect(fill = "lightblue"), # only plot area
+        plot.background = element_rect(fill = "grey", # plot is for the entire plot (very confusing)
+                                       colour = "black"))
+```
+
+[^theme]: The amount of control over various plot elements in `ggplot` is truly astonishing. Check out the complete list of themes [here](https://ggplot2.tidyverse.org/reference/theme.html). Have fun!
+
+The above plot is probably the most atrocious figure I have ever made. Thankfully, `ggplot2` also comes preloaded with a host of pre-made themes - try them out below. I like to use the classic `theme_classic` because it also gets rid of grid lines - it looks so clean!
+
+```{r}
 p + theme_bw()
 p + theme_classic()
 ```
@@ -275,7 +304,7 @@ the dataset. We will use `facet_wrap` to make the same scatter plot as above
 (price by carat) but split it by clarity:
 
 ```{r}
-ggplot(diamonds, aes(x = carat, y = price, color = clarity)) +
+ggplot(diamonds, aes(x = carat, y = price, colour = clarity)) +
   geom_point(alpha = 0.5) +
   facet_wrap(~ clarity) +
   theme_classic()
@@ -285,9 +314,9 @@ Alternatively, it may be useful to facet by two categorical variables. This is
 where `facet_grid` comes in:
 
 ```{r}
-ggplot(diamonds, aes(x = carat, y = price, color = clarity)) +
+ggplot(diamonds, aes(x = carat, y = price, colour = clarity)) +
   geom_point(alpha = 0.5) +
-  facet_grid(color ~ cut) +
+  facet_grid(colour ~ cut) + # y2 ~ x2ß
   theme_classic()
 ```
 
