@@ -160,7 +160,7 @@ ggplot(diamonds, aes(x = carat, y = price)) +
 
 From the eye test, we can see some evidence of clusters in this scatter plot.
 It's possible that one of the categorical variables we have in the data could
-explain this pattern. colouring the data points according to a categorical
+explain this pattern. Colouring the data points according to a categorical
 variable is an easy way to assess if there seems to be correlation. Let's try
 this with `cut`.
 
@@ -316,7 +316,7 @@ where `facet_grid` comes in:
 ```{r}
 ggplot(diamonds, aes(x = carat, y = price, colour = clarity)) +
   geom_point(alpha = 0.5) +
-  facet_grid(colour ~ cut) + # y2 ~ x2ß
+  facet_grid(color ~ cut) + # y2 ~ x2ß
   theme_classic()
 ```
 
