@@ -35,9 +35,9 @@ Xie](https://yihui.org/en/), [Amber Thomas](https://amber.rbind.io/), [Alison
 Presmanes Hill](https://alison.rbind.io/). It allows users to generate a static
 website using R markdown files. Note that today, we won't have time to push
 everything to GitHub, which serves our website on the web. We will only be
-creating our site locally - please refer to the [Collaborating with
-GitHub](https://uoftcoders.github.io/studyGroup/lessons/git/collaboration/lesson-AH/)
-workshop for more on how to push your website to GitHub!
+creating our site locally - please refer to the [official blogdown
+guide](https://bookdown.org/yihui/blogdown/deployment.html) under 'Deployment'
+for more on getting a blogdown website live for the world to see.
 
 ## What is Hugo?
 
@@ -77,8 +77,6 @@ new_site(theme = "yihui/hugo-lithium") # an optional dir arg can be provided too
 Let's assume we are making a simple personal academic website. From this follows a structure
 when we consider the things we might want on there: for instance, a CV page, a blog posts page,
 and perhaps also a contact page. 
-
-Widgets are sections on your page that contain information, and different widgets have different layouts and can might be useful for different things. You can have separated pages with only a couple widgets or one page with a lot of widgets. 
 
 ### The `config.toml` file
 
@@ -132,9 +130,10 @@ instance of your website right here in RStudio. Let's give it a go:
 blogdown::serve_site()
 ```
 
-This local instance of your website will show up in the Viewer pane in the bottom right of your RStudio
-instance. Note that **this is live** - that means if you make any changes to your website, they will
-be immediately reflected in the viewer! This also means `serve_site()` only has to be run once, which
+This local instance of your website will show up in the Viewer pane in the
+bottom right of your RStudio instance. Note that **this is live** - that means
+if you make any changes to your website, they will be immediately reflected in
+the viewer! This also means `serve_site()` only has to be run once, which
 simplifies things a good bit. 
 
 ## Working with pages
@@ -238,9 +237,8 @@ great as this page now looks, we still do need to update the header to add a
 link! Here's where things get a little theme-dependent - different themes may
 have different approaches to `config.toml` files, and may require a bit of
 detective work to modify correctly. Usually, understanding how the existing
-template pages are organized is usually enough to understand how to add our own
-pages as needed (or even potentially remove some that are included in the
-theme).
+template pages are organized is enough to understand how to add our own pages
+as needed (or even potentially remove some that are included in the theme).
 
 Let's head back to `config.toml` and add a link to the CV page:
 
@@ -304,8 +302,9 @@ Categories and tags are user-defined and can be used to sort blog posts by topic
 and more. For now, however, we'll leave those blank and just modify the author
 field at most before we get writing.
 
-Let's add some content. Note that **this is a legitimate R Markdown file**,
-and that means that features like code chunks and inline output are all supported!
+Let's add some content. Note that **this is still a legitimate R Markdown
+file**, and that means that features like code chunks and inline output are all
+supported!
 
 Let's try that out and see for ourselves:
 
@@ -342,7 +341,7 @@ Once this file is saved, the website will render the full contents of the Rmd
 file and _also run each code chunk_, placing the output of each just below
 the corresponding lines of code. That includes plots! This right here is
 an especially powerful feature of blogdown - it's very amenable to writing
-programming tutorials and the like because of inline output rendering.
+programming tutorials and such because of inline output rendering.
 
 If rendering this on a machine that has Python installed, Python code can
 be run here as well:
