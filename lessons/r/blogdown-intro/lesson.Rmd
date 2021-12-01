@@ -1,0 +1,378 @@
+---
+title: Creating websites with RStudio and blogdown
+author: Vicki M. Zhang, Ahmed Hasan
+date: '2021-12-01'
+---
+
+-   **Authors**: Vicki M. Zhang, Ahmed Hasan
+-   **Lesson Topic**: Creating websites with RStudio and blogdown
+
+```{r include = FALSE}
+knitr::opts_chunk$set(eval = FALSE, echo = FALSE, collapse = TRUE, comment = NA, tidy = FALSE)
+```
+
+# Introduction
+
+## Why create a static site?
+
+With the multitude of website-building platforms touting a "website in less than
+5 minutes", there are plenty of ways to put up a personal site to showcase your
+research. However, there are several reasons to switch from something like Wix,
+WordPress or SquareSpace to your own static site.
+
+Firstly, **no ads**. Usually, website generations require you to upgrade your
+subscription to remove ads from your site. Secondly, **you can fix your own bugs**. 
+In contrast, the bugs that might plague your generated site - such as misbehaving
+widgets or inconsistent behaviours across platforms - might be
+subject to the developers to fix. But thirdly, and I think most importantly,
+**learning a new thing is fun**. Making your own static site using RStudio and
+`blogdown` is a very rewarding challenge.
+
+## What is blogdown?
+
+The package that we are using is `blogdown`, developed by [Yihui
+Xie](https://yihui.org/en/), [Amber Thomas](https://amber.rbind.io/), [Alison
+Presmanes Hill](https://alison.rbind.io/). It allows users to generate a static
+website using R markdown files. Note that today, we won't have time to push
+everything to GitHub, which serves our website on the web. We will only be
+creating our site locally - please refer to the [official blogdown
+guide](https://bookdown.org/yihui/blogdown/deployment.html) under 'Deployment'
+for more on getting a blogdown website live for the world to see.
+
+## What is Hugo?
+
+Hugo is a open-source static site generator. It comes with multiple themes, and
+it is fully customizable via **widgets**, which are content blocks on a webpage.
+The theme that we are using today is the [Hugo
+Lithium](https://github.com/yihui/hugo-lithium) theme, which is a relatively simple
+but flexible template to create a first website with. More themes can be found on
+the [Hugo themes gallery](https://themes.gohugo.io/). 
+
+# Installing 
+
+If you don't already have blogdown installed, make sure to do so:
+
+```{r}
+install.packages('blogdown')
+```
+
+You also need to create a project in R that will store all of your website's files. To do this, click:
+
+Click File > New Project > New Directory > New Project.
+
+Then, locate the folder and name the folder that will contain your files (make sure it's empty!).
+
+Click Create Project.
+
+```{r}
+library(blogdown)
+new_site(theme = "yihui/hugo-lithium") # an optional dir arg can be provided too
+```
+
+
+# Modifying your site
+
+## What do you want your site to look like?
+
+Let's assume we are making a simple personal academic website. From this follows a structure
+when we consider the things we might want on there: for instance, a CV page, a blog posts page,
+and perhaps also a contact page. 
+
+### The `config.toml` file
+
+No matter how we want our website to look, modifying any blogdown theme starts
+with the `config.toml` file. Every blogdown theme will have one of these (note
+that in rare instances, the file may be called `config.yaml` instead).
+
+In the Hugo Lithium theme, this file will be found in the root of the project (it may be
+in a `content` folder or something similar in other themes) and should look like a series
+of key-value pairs - something like this:
+
+```
+title = "A Hugo website"
+theme = "hugo-lithium"
+googleAnalytics = ""
+disqusShortname = ""
+```
+
+Don't worry if some of the keys/values there don't make a lot of sense right now -
+turns out a lot of these are set to sensible defaults and likely won't need to
+be modified. For now, let's modify the title and input our socials in the designated
+parts of the file:
+
+```
+title = "My Hugo website"
+theme = "hugo-lithium"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/UofTCoders"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/UofTCoders"
+```
+
+We'll be revisiting this file over the course of the lesson as we modify our website further.
+For now, however, let's save the `.toml` file and then get a live look at these changes.
+For this purpose, blogdown includes a function called `serve_site` that'll render a local
+instance of your website right here in RStudio. Let's give it a go:
+
+```{r}
+blogdown::serve_site()
+```
+
+This local instance of your website will show up in the Viewer pane in the
+bottom right of your RStudio instance. Note that **this is live** - that means
+if you make any changes to your website, they will be immediately reflected in
+the viewer! This also means `serve_site()` only has to be run once, which
+simplifies things a good bit. 
+
+## Working with pages
+
+### Updating an existing page
+
+We've now updated the GitHub and Twitter links seen on the top right of our website,
+but if we click on About, we see a brief blurb about the theme itself. Let's change that up!
+The About page (and all other pages for our websites) is rendered from the `content` folder -
+in this case, specifically in a file called `content/about.md`. Let's open that up and modify
+the text to something like:
+
+```
+This is my new About page. Interests of mine include R and blogdown.
+```
+
+After the file is saved, the About page should be updated live in the Viewer
+pane. Note that Markdown styling is fully supported here and blogdown will
+faithfully render text however it's been styled:
+
+```
+This is my new About page. Interests of mine include **R** and **blogdown**. They're _really_ neat.
+```
+
+### Creating a new page
+
+Of course, we might want to create pages beyond just the defaults that a theme provides us. Let's
+say we want to add a page containing a CV summary. 
+
+First off, we revisit `config.toml`. Remember the following section?
+
+```
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/UofTCoders"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/UofTCoders"
+```
+
+In the Lithium theme, this is where the page structure of our website has been
+defined. You might notice that the About page's url is simply `about`. It follows
+that if we want to create a new page, say one called 'CV':
+
+1. This part of the config file will need to be modified, and
+2. We'll need to make an `.md` file, much like `about.md`, containing the contents of the file.
+
+Fortunately, blogdown simplifies the second step in this process for us with a
+function called `new_content`. Let's try it out:
+
+```{r}
+new_content('content/cv.md')
+```
+
+This should immediately open a new Markdown file in RStudio for us to work with.
+
+Before we add content, you might notice that the top of the file looks something like this:
+
+```
+---
+title: ''
+date: ''
+---
+```
+
+This is referred to as a **YAML header** and is where we can store some metadata about the file
+(or in this case, the page). Let's update it:
+
+```
+---
+title: 'Curriculum Vitae'
+date: '2021-12-01'
+author: 'me!'
+---
+```
+
+We might notice that despite adding a date and author field, neither actually
+shows in the Viewer pane! This is because the parts of the YAML header that show
+on the page are governed by the theme. Modifying themes is beyond the scope of
+this lesson, but definitely something worth learning if you'd like to take your
+blogdown journey further and customize your site in detail.
+
+In either case, let's add some content underneath the header:
+
+```
+## Research Publications
+
+Me, My cat. (2021) The efficacy of giving cats pats on the head. _Nature_. 
+Me, My cat. (2020) Why treats for your cat are always a great idea. _Science_.
+
+## Other projects in progress
+
+Me. (2021) Earl Grey tea provides significant boost to mood. _Cell_.
+```
+
+The Viewer pane should continue to update live as soon as we save the file. As
+great as this page now looks, we still do need to update the header to add a
+link! Here's where things get a little theme-dependent - different themes may
+have different approaches to `config.toml` files, and may require a bit of
+detective work to modify correctly. Usually, understanding how the existing
+template pages are organized is enough to understand how to add our own pages
+as needed (or even potentially remove some that are included in the theme).
+
+Let's head back to `config.toml` and add a link to the CV page:
+
+```
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/UofTCoders"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/rstudio"
+[[menu.main]]
+    name = "CV"
+    url = "/cv/"
+```
+
+Here, we have to make sure the url field specifically points to our Markdown file,
+which was named `cv.md` (see how About is formatted at the top, for instance).
+Once `config.toml` is saved, there should now be a CV tab in the Viewer pane! 
+
+## Making new blog posts
+
+To round out the lesson, we'll have a look at how to make blog posts for your website.
+Most blogdown themes will have blogging functionality built in (it's in the name after all)
+which means that making new blog posts can be done entirely through a blogdown function
+once more.
+
+We make a new post by running:
+
+```{r}
+blogdown::new_post(title = "My first post", 
+                   ext = '.Rmd', 
+                   subdir = "post")
+```
+
+
+This creates a new .Rmd file in a new folder, all in `content/post`, and
+automatically navigates to it. Then, in your directory, you will be able to see
+the folder with the **slug**, or the unique part of the URL that identifies your
+post. In your folder, all of the files needed for this blog post will be
+bundled, including the main .Rmd post, as well as any images.
+
+As before, the Viewer should immediately update with our first post, and RStudio
+will be primed for editing it. Something that should immediately stick out is the
+increased number of fields in the YAML header for a blog post:
+
+```
+---
+title: My first post
+author: ''
+date: '2021-12-01'
+slug: my-first-post
+categories: []
+tags: []
+---
+```
+
+Categories and tags are user-defined and can be used to sort blog posts by topic
+and more. For now, however, we'll leave those blank and just modify the author
+field at most before we get writing.
+
+Let's add some content. Note that **this is still a legitimate R Markdown
+file**, and that means that features like code chunks and inline output are all
+supported!
+
+Let's try that out and see for ourselves:
+
+````
+---
+title: My first post
+author: 'Me'
+date: '2021-12-01'
+slug: my-first-post
+categories: []
+tags: []
+---
+
+This is my first blog post in blogdown. It essentially allows me to
+write an R Markdown file and have it rendered on a website.
+
+Here's some _styling_ using Markdown syntax.
+
+Here's a code chunk:
+
+```{r}`r ''`
+2 + 2
+```
+
+And a plot:
+
+```{r}`r ''`
+plot(iris$Sepal.Length, iris$Sepal.Width)
+```
+
+````
+
+Once this file is saved, the website will render the full contents of the Rmd
+file and _also run each code chunk_, placing the output of each just below
+the corresponding lines of code. That includes plots! This right here is
+an especially powerful feature of blogdown - it's very amenable to writing
+programming tutorials and such because of inline output rendering.
+
+If rendering this on a machine that has Python installed, Python code can
+be run here as well:
+
+````
+```{python}
+l = [1, 2, 3]
+for i in l:
+    print(i, i * 2)
+```
+````
+
+# Conclusion
+
+In today's lesson, we've covered:
+
+- Creating a blogdown site using a theme
+- Understanding the role of the `config.toml` file
+- Creating a new page and modifying existing pages
+- Creating a new blog post
+
+One important thing we did _not_ cover is how to push your website to a hosting
+service (e.g. GitHub, Netlify). This is a bit more involved - but not
+necessarily difficult - and a full guide on how to do so can be found in the
+[official blogdown guide](https://bookdown.org/yihui/blogdown/deployment.html)
+under 'Deployment'.
+
+## Further reading
+
+-   [What is hard about blogdown?](https://community.rstudio.com/t/what-is-hard-about-blogdown/8108)
+-   [Up and Running with blogdown](https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/)
+-   [Creating a website with the academic theme in blogdown](https://www.kevinzolea.com/post/blogdown/creating-a-website-with-the-academic-theme-in-blogdown/)
+-   [Overwhelmed by Hugo academic theme: a beginner's guide](https://andreaczhang.rbind.io/post/my-1st-blogpost/)
+-   [Fun blogdown in R to design a personal website](https://annielyu.com/2020/01/12/blogdown-website/)
