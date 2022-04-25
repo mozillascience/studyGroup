@@ -5,7 +5,7 @@ title: 'ResBaz Tucson May 23-26, 2022'
 
 ## What
 
-The Research Bazaar is a worldwide festival promoting the digital literacy emerging at the center of modern research. Throughout 2021, events are happening at university campuses around the globe.
+The Research Bazaar is a worldwide festival promoting the digital literacy emerging at the center of modern research. Throughout 2022, events are happening at university campuses around the globe.
 
 ResBaz Tucson is a free, multi-day intensive conference where researchers come together to up-skill in "next generation digital research tools and skills." In the spirit of a marketplace or bazaar, ResBaz is a highly participatory event where researchers from many different disciplines can learn, share knowledge and skills, and have fun!
 
@@ -19,32 +19,13 @@ May 23&ndash;26, 2022
 
 Coming soon
 
-Note: Due to the "unconference" nature of ResBaz, you can opt to teach a workshop during the [registration](#register) process. Therefore, the schedule will not be final until the day of! Below represents the current schedule. 
-
 ## Where
-Virtual with recordings.
 
-**IMPORTANT**: Links and passwords to the Zoom rooms for the sessions will be sent out by email. Therefore to receive these links, you must <u><a href="#register">register</a></u>.
-
-<!-- TODO: add this warning after we stop checking registrations: If you registered after May 15 and didn't receive the daily Zoom links/passwords, please contact us at resbazaz@gmail.com -->
-
+Hybrid online / in person; specific location TBD
 
 ## Register
 
-<a href="" class="btn btn2021" target="_blank">Registrtatiion Coming Soon</a>
-
-Zoom links and passwords for all the sessions will be sent to the email address you provide on the registration form.
-
-<style>
-  .btn2021 {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #EA5A2A;
-    color: white;
-  }
-</style>
+Registration link coming soon
 
 ## Our Sponsors
 
@@ -52,6 +33,6 @@ Zoom links and passwords for all the sessions will be sent to the email address 
 
 <br><br><br>
 **Previous years:**<br/>
-<a href="/resbaz/resbazTucson2020">ResBaz Tucson 2021</a><br/>
+<a href="/resbaz/resbazTucson2021">ResBaz Tucson 2021</a><br/>
 <a href="/resbaz/resbazTucson2020">ResBaz Tucson 2020</a><br/>
 <a href="/resbaz/resbazTucson2019">ResBaz Tucson 2019</a>
