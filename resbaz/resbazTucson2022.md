@@ -1,6 +1,6 @@
 ---
 layout: page-nonav
-title: 'ResBaz Tucson May, 2022'
+title: 'ResBaz Tucson May 23-26, 2022'
 ---
 
 ## What

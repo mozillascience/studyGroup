@@ -17,16 +17,16 @@ May 17&ndash;21, 2021
 
 ## Schedule
 
-Note: Due to the "unconference" nature of ResBaz, you can opt to teach a workshop during the [registration](#register) process. Therefore, the schedule will not be final until the day of! Below represents the current schedule.
+Note: Due to the "unconference" nature of ResBaz, you can opt to teach a workshop during the [registration](#register) process. Therefore, the schedule will not be final until the day of! Below represents the current schedule. Click [here](https://kelseygonzalez.github.io/resbaz2021schedule/) to view the schedule in a new window.
 
 <div style="width:100%;overflow-x:auto">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWGEQ4mW3sHPr8AgbN4e_WUQIAAgQc8uNhPE02ymaakRMnCXNo7zQVNwHafZDTxYJR_J2V8WWJ2G2T/pubhtml?widget=true&amp;headers=false" width="830" height="550" scrolling="no" frameborder="no"></iframe>
+<iframe src="https://kelseygonzalez.github.io/resbaz2021schedule/" width="830" height="650" scrolling="auto" frameborder="no"></iframe>
 </div>
 
 ## Where
 VIRTUAL
 
-**IMPORTANT**: Links and passwords to the Zoom rooms for the sessions will be sent out by email. Therefore to receive these links, you must <u><a href="#register">register</a></u>. Passwords will be changed daily so make sure to check your email.
+**IMPORTANT**: Links and passwords to the Zoom rooms for the sessions will be sent out by email. Therefore to receive these links, you must <u><a href="#register">register</a></u>.
 
 <!-- TODO: add this warning after we stop checking registrations: If you registered after May 15 and didn't receive the daily Zoom links/passwords, please contact us at resbazaz@gmail.com -->
 
