@@ -45,6 +45,7 @@ Zoom links and passwords for all the sessions will be sent to the email address 
 <div style="display: flex; width: 100%; justify-content: space-around">
   <a href="https://datascience.cals.arizona.edu/"><img src="https://datascience.cals.arizona.edu/sites/datascience.cals.arizona.edu/files/CCT%20logo-primary%402x.png" alt="University of Arizona Communications &amp; Cyber Technologies" height="65"></a>
   <a href="https://datascience.arizona.edu/"><img src="https://datascience.arizona.edu/sites/default/files/Data%20Science%20Institute_Webheader%20%281%29_0.svg" alt="University of Arizona Data Science Institute" height="65"></a>
+  <a href="https://new.library.arizona.edu/"><img src="/img/logos/ua_libraries.png" alt="University of Arizona Libraries" height="65"></a>
 </div>
 
 <br><br><br>
