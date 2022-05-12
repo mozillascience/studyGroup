@@ -27,7 +27,7 @@ Online, with an in-person Hacky Hour Event.
 
 Zoom links and passwords for all the sessions will be sent to the email address you provide on the registration form.
 
-<a href="https://docs.google.com/forms/d/1jOJsQiyddihbPyitRVteDthk_sp-PUleGhlMYWTg64U/edit" class="btn btn2022" target="_blank">Register</a>
+<a href="https://forms.gle/PToMz4TvfsVRUnVT9" class="btn btn2022" target="_blank">Register</a>
 
 <style>
   .btn2022 {
