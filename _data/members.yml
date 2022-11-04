@@ -1,4 +1,4 @@
-- name: Greg Chism
+	- name: Greg Chism
   affiliation: Data Science Institute, UArizona
   github: Gchism94
   headshot: gregchism.jpg
@@ -12,11 +12,11 @@
     I build software and infrastructure for researchers. I create software for fun. I like to talk about software. I don't understand what "work-life balance" means. I <em>do</em> like to ride motorcycles and go hiking. Gryffindor.
 
 - name: Alex Bigelow
-  affiliation: Department of Computer Science, UArizona
+  affiliation: [Stardog Union](https://www.stardog.com)
   github: alex-r-bigelow
   headshot: alex-r-bigelow.jpg
   bio: 
-    I'm a postdoc from Computer Science, studying how people think about, reshape, and visualize data. I build web-based tools to make these processes less painful, and more accessible to more diverse data workers. Slytherin.
+    I research how people think about, reshape, and visualize data—especially as network structures. I'm a Software Engineer on Stardog's Visual Experience Team, that builds visual tools to democratize these processes, making it easier for anyone to build knowledge graphs from data wherever it happens to live.
 
 - name: Jeff Oliver
   affiliation: University Libraries, UArizona
