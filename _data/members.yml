@@ -1,15 +1,15 @@
-	- name: Greg Chism
+- name: Greg Chism
   affiliation: Data Science Institute, UArizona
   github: Gchism94
   headshot: gregchism.jpg
   bio: 
 
 - name: Julian Pistorius
-  affiliation: Exosphere Project
+  affiliation: [The Exosphere Project](https://gitlab.com/exosphere/exosphere)
   github: julianpistorius
   headshot: julianpistorius.jpg
   bio:
-    I build software and infrastructure for researchers. I create software for fun. I like to talk about software. I don't understand what "work-life balance" means. I <em>do</em> like to ride motorcycles and go hiking. Gryffindor.
+    I grow software to help researchers improve our understanding of the world (and each other).
 
 - name: Alex Bigelow
   affiliation: [Stardog Union](https://www.stardog.com)
