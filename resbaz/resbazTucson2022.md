@@ -3,31 +3,6 @@ layout: page-nonav
 title: 'ResBaz Tucson May 23-26, 2022'
 ---
 
-<style>
-  @media (min-width:1280px) {
-    .container {
-      width: 1280px;
-    }
-  }
-  .calendar {
-    width: 100%;
-    overflow: auto;
-  }
-  .btn2022 {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #EA5A2A;
-    color: white;
-  }
-  .spread {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-  }
-</style>
-
 ## What
 
 The Research Bazaar is a worldwide festival promoting the digital literacy emerging at the center of modern research. Throughout 2022, events are happening at university campuses around the globe.
@@ -42,9 +17,7 @@ May 23&ndash;26, 2022
 
 ## Schedule
 
-<div class="calendar">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTtqfEpBb1m0xHr9urmr8tpFl8w7JQAxMoGG5CJ5y4B8-mrqT2vuU2_YJ25ismWQpdm_H74aYcjmZkQ/pubhtml?widget=true&amp;headers=false" width="1245" height="500"></iframe>
-</div>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTtqfEpBb1m0xHr9urmr8tpFl8w7JQAxMoGG5CJ5y4B8-mrqT2vuU2_YJ25ismWQpdm_H74aYcjmZkQ/pubhtml?widget=true&amp;headers=false" width="1200" height="490"></iframe>
 
 ## Where
 
@@ -53,6 +26,22 @@ Online, with an in-person Hacky Hour Event.
 Zoom links and passwords for all the sessions will be sent to the email address you provide on the registration form.
 
 <a href="https://forms.gle/PToMz4TvfsVRUnVT9" class="btn btn2022" target="_blank">Register</a>
+
+<style>
+  .btn2022 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #EA5A2A;
+    color: white;
+  }
+  .spread {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+</style>
 
 ## Our Sponsors
 
