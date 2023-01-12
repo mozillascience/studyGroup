@@ -25,8 +25,16 @@ If you want to contribute to the projects that are maintained on github, there a
 
 > 1. Identified one of the issues above that you feel you can contribute to, you're ready to make a change to the project repository!
 > 2. **[Fork] the repository**. This makes your own version of this project you can edit and use.
-> 3. **Make your changes**! You can do this in the GitHub interface on your own local machine. Once you're happy with your changes...
-> 3. **Submit a pull request**. This opens a discussion around your project and lets the project lead know you are proposing changes.
+> 3. **Make your changes**! You can do this in the GitHub interface on your own local machine\*. Once you're happy with your changes...
+> 4. **Submit a pull request**. This opens a discussion around your project and lets the project lead know you are proposing changes.
+
+\* To preview the website on your own machine, you will need to install [Jekyll](https://jekyllrb.com/) and:
+
+```
+git clone git@github.com:resbazaz/studyGroup.git
+cd studyGroup
+jekyll serve
+```
 
 > First time contributing to open source? Check out this *free* series, [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
 
