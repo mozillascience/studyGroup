@@ -23,9 +23,9 @@ When researchers from different fields collaborate, incredible things can happen
 
 
 ### What makes our project special and exciting?
-Our goal is to expand collaborations beyond a departmental level. Thanks to our community, researchers from entirely different backgrounds become aquaintace and learn from eachother! 
+Our goal is to expand collaborations beyond a departmental level. Thanks to our community, researchers from entirely different backgrounds become acquaintance and learn from each other! 
 
-* We have linguists helping engineers with MatLab.
+* We have linguists helping engineers with MATLAB.
 * We have population geneticists working with software developers to create new software. 
 * We have data scientists working with astronomers to create pipelines for data analysis. 
 * We have machine learning engineers helping biologists analyze evolutionary patterns in mosquitoes 
@@ -37,7 +37,7 @@ Overall, we strive to represent every background and every skill! So please join
 We want everyone to feel comfortable and welcome at ResBazAZ. Therefore, we abide by the [Mozilla Community Participation Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/)
 
 ### How to contribute?
-Check out our guildeliens for [contributing](https://github.com/resbazaz/studyGroup/blob/gh-pages/CONTRIBUTING.md)
+Check out our guidelines for [contributing](https://github.com/resbazaz/studyGroup/blob/gh-pages/CONTRIBUTING.md)
 
 
 ### Plans for the Mozilla Global Sprint?

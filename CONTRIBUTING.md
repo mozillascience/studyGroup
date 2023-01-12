@@ -2,13 +2,13 @@
 
 Thank you for your interest in contributing to Research Bazaar Arizona (ResBazAZ) :tada:! 
 
-ResBazAZ is a group of people with diverse backgrounds and expertise who come together to do research. We are students, post-docs, faculty, researchers, and more. Our goal is to expand collaborations beyond a departmental level. Thanks to our community, researchers from entirely different backgrounds become aquaintace and learn from eachother!
+ResBazAZ is a group of people with diverse backgrounds and expertise who come together to do research. We are students, post-docs, faculty, researchers, and more. Our goal is to expand collaborations beyond a departmental level. Thanks to our community, researchers from entirely different backgrounds become acquaintance and learn from each other!
 
 So how do you get involved? There are several ways!
 
 * Bring your research project to any ResBazAZ event and ask for help!
 * Offer to help others with their research project at any ResBazAZ event.
-* Help ResBazAZ develope our own resources and reach out to other researchers
+* Help ResBazAZ develop our own resources and reach out to other researchers
 
 ## Participation guidelines
 
