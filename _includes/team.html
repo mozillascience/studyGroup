@@ -1,66 +1,55 @@
 <!-- Team Section -->
-<section id="team">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">
-          {{site.data[site.language].teamHeadline}}
-        </h2>
-      </div>
-      <div class="col-lg-12 text-center">
-        <h3 class="section-subheading text-muted">
-          {{site.data[site.language].teamSubheading}}
-        </h3>
-      </div>
-      <div class="col-lg-12 text-center">
-        <a
-          href="https://gitter.im/resbaz/Arizona"
-          target="_blank"
-          class="btn btn-xl"
-          >{{site.data[site.language].contact}}</a
-        >
-      </div>
-    </div>
-    <div class="row">
-      {% for member in site.data.members %} {% assign loopindex = forloop.index0
-      | modulo: 4 %} {% if loopindex == 0 %} {% if forloop.first == false %}
-    </div>
-    {% if forloop.last == false %}
-    <div class="row">
-      {% endif %} {% endif %} {% endif %}
-      <div class="col-sm-3">
-        <div class="team-member">
-          {% if member.headshot %}
-          <img
-            class="img-circle img-responsive"
-            width="96"
-            src="img/team/{{ member.headshot }}"
-            alt="{{ member.name }}"
-          />
-          {% endif %} {% if member.github %}
-          <h4>
-            <a href="https://github.com/{{ member.github }}"
-              >{{ member.name }}</a
-            >
-          </h4>
-          {% else %}
-          <i class="fa fa-user"></i>
-          <h4>{{ member.name }}</h4>
-          {% endif %}
-          <p class="text-muted"><i>{{ member.affiliation }}</i></p>
-          {% if member.bio %} {{site.data[site.language].bio}}:
-          <p class="text-muted">{{ member.bio }}</p>
-          {% endif %} {% if member.interests %}
-          {{site.data[site.language].interests}}:
-          <ul class="list-inline text-muted">
-            {% for interest in member.interests %}
-            <li class="fa fa-angle-right">&nbsp;{{ interest }}</li>
-            {% endfor %}
-          </ul>
-          {% endif %}
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{site.data[site.language].teamHeadline}}</h2>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-subheading text-muted">{{site.data[site.language].teamSubheading}}</h3>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <a href="https://gitter.im/resbaz/Arizona" target="_blank" class="btn btn-xl">{{site.data[site.language].contact}}</a>
+                </div>
+            </div>
+            <div class="row">
+                {% for member in site.data.members %}
+                {% assign loopindex = forloop.index0 | modulo: 4 %}
+                {% if loopindex == 0 %}
+                {% if forloop.first == false %}
+            </div>
+                {% if forloop.last == false %}
+            <div class="row">
+                {% endif %}
+                {% endif %}
+                {% endif %}
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        {% if member.headshot %}
+                        <img class="img-circle img-responsive" width="96" src="img/team/{{ member.headshot }}" alt="{{ member.name }}">
+                        {% endif %}
+                        {% if member.github %}
+                        <h4><a href="https://github.com/{{ member.github }}">{{ member.name }}</a></h4>
+                        {% else %}
+                        <i class="fa fa-user"></i>
+                        <h4>{{ member.name }}</h4>
+                        {% endif %}
+                        <p class="text-muted"><i>{{ member.affiliation }}</i></p>
+                        {% if member.bio %}
+                        {{site.data[site.language].bio}}:
+                        <p class="text-muted">{{ member.bio }}</p>
+                        {% endif %}
+                        {% if member.interests %}
+                        {{site.data[site.language].interests}}:
+                        <ul class="list-inline text-muted">
+                            {% for interest in member.interests %}
+                            <li class="fa fa-angle-right">&nbsp;{{ interest }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
+    </section>
