@@ -8,35 +8,31 @@
   affiliation: The Exosphere Project
   github: julianpistorius
   headshot: julianpistorius.jpg
-  bio:
-    I grow software to help researchers improve our understanding of the world (and each other).
+  bio: I grow software to help researchers improve our understanding of the world (and each other).
 
 - name: Alex Bigelow
   affiliation: Stardog Union
   github: alex-r-bigelow
   headshot: alex-r-bigelow.jpg
-  bio:
-    I research how people think about, reshape, and visualize data—especially as network structures. I'm a Software Engineer on Stardog's Visual Experience Team, that builds visual tools to democratize these processes, making it easier for anyone to build knowledge graphs from data wherever it happens to live.
+  bio: I research how people think about, reshape, and visualize data—especially as network structures. I'm a Software Engineer on Stardog's Visual Experience Team, that builds visual tools to democratize these processes, making it easier for anyone to build knowledge graphs from data wherever it happens to live.
 
 - name: Jeff Oliver
   affiliation: University Libraries, UArizona
   github: jcoliver
   headshot: jcoliver.jpg
-  bio:
-    As the UA Libraries Data Science Specialist, I agitate and advocate for campus data and computational literacy. I work mostly in R and retain a modicum of phylogenetics theory. As a graduate student, I chased butterflies and learned Java.
+  bio: As the UA Libraries Data Science Specialist, I agitate and advocate for campus data and computational literacy. I work mostly in R and retain a modicum of phylogenetics theory. As a graduate student, I chased butterflies and learned Java.
 
 - name: Heidi Steiner
   affiliation: Data Science Institute, UArizona
   github: hidyverse
   headshot: heidisteiner.jpg
-  bio:
-    I love health sciences, human subjects research, and clinical data. As a data science educator, I encourage data managment and sharing through open science conversations geared towards Health Scientists. 
+  bio: I love health sciences, human subjects research, and clinical data. As a data science educator, I encourage data managment and sharing through open science conversations geared towards Health Scientists. 
 
 - name: Chris Reidy
   affiliation: Research Technologies, UArizona
   github: resbazaz
   headshot:
-  bio:
+  bio: I encourage services and tools that make it easier to engage with the HPC resources on campus.  High Performance Computing is free and powerful, and is designed for broad access to researchers.  Our most widely used tools and applications are Python / Anaconda / Jupyter, R / RStudio and Matlab. But we support over 100 other applications as well as BYO
 
 - name: Jessica Guo
   affiliation: CCT Data Science, UArizona
