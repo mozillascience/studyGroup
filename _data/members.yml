@@ -31,7 +31,7 @@
 - name: Chris Reidy
   affiliation: Research Technologies, UArizona
   github: resbazaz
-  headshot:
+  headshot: chrisreidy.jpg
   bio: I encourage services and tools that make it easier to engage with the HPC resources on campus.  High Performance Computing is free and powerful, and is designed for broad access to researchers.  Our most widely used tools and applications are Python / Anaconda / Jupyter, R / RStudio and Matlab. But we support over 100 other applications as well as BYO
 
 - name: Jessica Guo
