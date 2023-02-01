@@ -11,11 +11,13 @@ endTime: '14:00'
 
 **Session leader**: Kyrre Traavik Låberg
 
+**Topic**: Workalong
 
 - **Level**: beginner
 - **When**: 2023-02-28
 - **Time**: 13:00-14:00
 - **Location**:  Digital Scholarship Center - Oasen
+
 
 **What's happening?**
 
