@@ -1,5 +1,5 @@
 ---
-title: Workalong - Etherpad: How to set it up, how to use it in workshops
+title: Workalong - Etherpad. How to set it up, how to use it in workshops
 text: Together, set up and discuss how to best use Etherpad during our workshops
 location: Digital Scholarship Center - Oasen
 link: tba
