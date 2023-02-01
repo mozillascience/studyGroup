@@ -11,9 +11,11 @@ endTime: '14:00'
 
 **Session leader**: Annika Rockenberger
 
-**Topic**: Instructor development and discussion on how to teach: How to Open a Carpentries Workshop
+**Topic**: Instructor Development Session: How to Open a Carpentries Workshop?
 
 - **Who**: all Carpentries@UiO instructors
 - **When**: 14th February 2023
 - **Time**: 13:00-14:00
 - **Location**: Digital Scholarship Center - Oasen
+
+
