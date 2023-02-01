@@ -20,6 +20,6 @@ endTime:  '14:00'
 
 **What's happening?**
 
-The Carpentries use Etherpads for collaborative writing during workshops. But how are those Etherpads created? How can set up your own for a workshop you are teaching? And how can they be used in a smart and accessible way for learners and helpers?
+The Carpentries use Etherpads for collaborative writing during workshops. But how are those Etherpads created? How can you set up your own for a workshop you are teaching? And how can they be used in a smart and accessible way for learners and helpers?
 
 Join us in this hands-on session!
