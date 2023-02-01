@@ -1,21 +1,20 @@
 ---
-title: Workalong - Etherpad. How to set it up, how to use it in workshops
-text: Together, set up and discuss how to best use Etherpad during our workshops
-location: Digital Scholarship Center - Oasen
-link: tba
-date: 2023-02-28
-startTime: '13:00'
-endTime: '14:00'
-
+title:  Workalong - Etherpad. How to set it up, how to use it in workshops
+text:  Together, set up and discuss how to best use Etherpad during our workshops
+location:  Digital Scholarship Center - Oasen
+link:  tba
+date:  2023-02-28
+startTime:  '13:00'
+endTime:  '14:00'
 ---
 
 **Session leader**: Kyrre Traavik Låberg
 
-**Topic**: Workalong
+**Topic**: Workalong: Etherpad, how to set it up, how to use it in workshops
 
-- **Level**: beginner
-- **When**: 2023-02-28
-- **Time**: 13:00-14:00
+- **Level**:  beginner
+- **When**:  2023-02-28
+- **Time**:  13:00-14:00
 - **Location**:  Digital Scholarship Center - Oasen
 
 
