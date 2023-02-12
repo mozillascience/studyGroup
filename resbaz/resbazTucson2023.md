@@ -42,7 +42,7 @@ TBD
 
 ## Schedule
 
-TBD
+April 17th-19th 2023
 
 <!--
 <div class="calendar">
