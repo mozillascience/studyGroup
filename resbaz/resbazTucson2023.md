@@ -38,11 +38,11 @@ Who should attend? Researchers at ALL levels from ALL disciplines. PhD and resea
 
 ## When
 
-TBD
+April 17th-19th 2023
 
 ## Schedule
 
-April 17th-19th 2023
+TBD
 
 <!--
 <div class="calendar">
