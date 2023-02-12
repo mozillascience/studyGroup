@@ -1,5 +1,6 @@
 ---
 whatWeDo: What We Do
+meetUp: Join Us
 events: Events
 contact: Contact
 team: Who We Are
@@ -52,6 +53,9 @@ data science!"
      <a href='https://www.meetup.com/Tucson-Python-Meetup/' target='_blank'>https://www.meetup.com/Tucson-Python-Meetup/</a></p>"
     icon: fa-calendar
 
+meetUp: Meet up with us
+joinusSubheading: ''
+joinus: Join Us
 
 eventPlaceholder: Nothing yet! Propose an event here.
 eventsSubheading: '<p style="line-height: 1.25em;">Stay up to date on announcements at our Twitter: <a href="https://twitter.com/ResBazAZ" target="_blank">@ResBazAZ</a><br>
