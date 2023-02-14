@@ -1,3 +1,18 @@
+---
+layout: page
+title: instructor development
+text: How to Launch a Workshop
+visible: true
+tags:
+  # languages
+  - misc
+  # levels
+  - all
+---
+
+<!-- change visible to true if you want it on the site -->
+<!-- remove any tags listed above that are not relevant -->
+
 # How to Launch a Workshop
 
  - **Authors**: Annika Rockenberger
