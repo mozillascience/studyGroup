@@ -13,11 +13,11 @@ tags:
 <!-- change visible to true if you want it on the site -->
 <!-- remove any tags listed above that are not relevant -->
 
-# How to Launch a Workshop
-
  - **Authors**: Annika Rockenberger
  - **Research field**: Instructor Development
  - **Lesson Topic**: Introduction - How to Open/Start/Launch a Workshop
+
+# How to Launch a Workshop
 
 We have been looking into workshop introductions, or how to "launch" a workshop. The materials we used are from the Carpentries Instructor Training, [Chapter 23: Launches and Landings](https://preview.carpentries.org/instructor-training/23-introductions.html).
 
