@@ -1,7 +1,7 @@
 ---
 layout: page
-title: instructor development
-text: How to Launch a Workshop
+title: Launching a workshop
+text: Instructor Development - How to Launch a Workshop
 visible: true
 tags:
   # languages
