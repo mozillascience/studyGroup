@@ -1,6 +1,6 @@
 ---
 layout: page-nonav
-title: 'ResBaz Tucson 2023'
+title: 'ResBaz Arizona 2023'
 ---
 
 <style>
@@ -16,7 +16,7 @@ title: 'ResBaz Tucson 2023'
   .btn2022 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
     background-color: #EA5A2A;
     color: white;
@@ -30,9 +30,9 @@ title: 'ResBaz Tucson 2023'
 
 ## What
 
-The Research Bazaar is a worldwide festival promoting the digital literacy emerging at the center of modern research. Throughout 2022, events are happening at university campuses around the globe.
+The Research Bazaar is a worldwide festival promoting the digital literacy emerging at the center of modern research. Throughout 2023, events are happening at university campuses around the globe.
 
-ResBaz Tucson is a free, multi-day intensive conference where researchers come together to up-skill in "next generation digital research tools and skills." In the spirit of a marketplace or bazaar, ResBaz is a highly participatory event where researchers from many different disciplines can learn, share knowledge and skills, and have fun!
+ResBaz Arizona is a free, multi-day intensive conference where researchers come together to up-skill in "next generation digital research tools and skills." In the spirit of a marketplace or bazaar, ResBaz is a highly participatory event where researchers from many different disciplines can learn, share knowledge and skills, and have fun!
 
 Who should attend? Researchers at ALL levels from ALL disciplines. PhD and research master's students are especially encouraged to attend. Research technologists who support researchers to do their job should also come along!
 
@@ -43,6 +43,8 @@ April 17th-19th 2023
 ## Schedule
 
 TBD
+See a draft schedule here:
+<a href="http://resbaz.arizona.edu/festival2023/index.html">Draft Schedule</a><br/>
 
 <!--
 <div class="calendar">
@@ -52,7 +54,17 @@ TBD
 
 ## Where
 
+Hybrid event - join us on zoom (link TBD) or in person in one of our three locations!
+
+**UA/Tucson**
+In-Person meeting: University of Arizona Libraries, rooms 252 & 253
+
+**ASU/Phoenix**
+TBD, register here: http://researchacademy.asu.edu/events/2023-04-17/res
+
+**NAU/Flagstaff**
 TBD
+
 
 <!--
 Online, with an in-person Hacky Hour Event.
