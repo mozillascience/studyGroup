@@ -4,7 +4,7 @@
 #Step 1: give your study group a name and a short description,
 #and choose a language from the options in the _data directory:
 title: ResBaz Arizona
-description: "A community and a festival"
+description: 'A community and a festival'
 language: en
 
 #Step 2: press the green 'Commit Changes' button at the bottom of this page.
@@ -18,13 +18,12 @@ language: en
 # Optional Configuration
 # None of these things need to be changed - but feel free!
 
+baseurl: '/'
+url: 'https://researchbazaar.arizona.edu'
 
-baseurl: "/"
-url: "https://researchbazaar.arizona.edu"
-
-titleBackground: "/img/resbaz2017.jpg"
-headlineSmall: "Community - Skills Sharing - Digital Literacy"
-headlineMain: "Research Bazaar - Tucson, Arizona"
+titleBackground: '/img/resbaz2017.jpg'
+headlineSmall: 'Community - Skills Sharing - Digital Literacy'
+headlineMain: 'Research Bazaar - Arizona'
 
 # Setup Google Calendar
 # Usage:
@@ -33,9 +32,8 @@ headlineMain: "Research Bazaar - Tucson, Arizona"
 # 3. set calendar_on: True.
 
 calendar_on: True
-calendar_embed_url: "https://www.google.com/calendar/embed?src=resbazaz@gmail.com"
-calendar_ical_url: "https://www.google.com/calendar/ical/resbazaz@gmail.com/public/basic.ics"
-
+calendar_embed_url: 'https://www.google.com/calendar/embed?src=resbazaz@gmail.com'
+calendar_ical_url: 'https://www.google.com/calendar/ical/resbazaz@gmail.com/public/basic.ics'
 
 #========================================
 # No touching anything below this line :)
