@@ -13,7 +13,7 @@ title: 'ResBaz Arizona 2023'
     width: 100%;
     overflow: auto;
   }
-  .btn2022 {
+  .btn2023 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     font-size: 22px;
@@ -57,7 +57,7 @@ See a draft schedule here:
 Hybrid event - join us on zoom (link TBD) or in person in one of our three locations!
 
 ** UArizona / Tucson**
-In-Person meeting: University of Arizona Libraries CATalyst Studio, rooms 252 & 253
+In-Person meeting: University of Arizona Libraries CATalyst Studio, rooms 252 & 254
 
 **ASU / Phoenix**
 In-Person meeting: Mon, 17th & Tue, 18th:  GWC 487, Wed, 19th: ERC 490 check the location <a href="https://www.asu.edu/map/interactive/">here</a> <br/>
@@ -66,6 +66,7 @@ register here: <a href="http://researchacademy.asu.edu/events/2023-04-17/res" >R
 **NAU/Flagstaff**
 TBD
 
+<a href="https://forms.gle/V8DzzDXpoqZi2hay7" class="btn btn2023" target="_blank">Register</a>
 
 <!--
 Online, with an in-person Hacky Hour Event.
