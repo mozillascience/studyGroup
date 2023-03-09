@@ -56,7 +56,7 @@ See a draft schedule here:
 
 Hybrid event - join us on zoom (link TBD) or in person in one of our three locations!
 
-** UArizona / Tucson**
+**UArizona / Tucson**
 In-Person meeting: University of Arizona Libraries CATalyst Studio, rooms 252 & 254
 
 **ASU / Phoenix**
