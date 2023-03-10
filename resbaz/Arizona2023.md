@@ -60,7 +60,7 @@ Hybrid event - join us on zoom (link TBD) or in person in one of our three locat
 In-Person meeting: University of Arizona Libraries CATalyst Studio, rooms 252 & 254
 
 **ASU / Phoenix**
-In-Person meeting: Mon, 17th & Tue, 18th:  GWC 487, Wed, 19th: ERC 490 check the location <a href="https://www.asu.edu/map/interactive/">here</a> <br/>
+In-Person meeting: Mon, 17th & Tue, 18th: GWC 487, Wed, 19th: ERC 490 check the location <a href="https://www.asu.edu/map/interactive/">here</a> <br/>
 register here: <a href="http://researchacademy.asu.edu/events/2023-04-17/res" >ResBaz@ASU</a><br/>
 
 **NAU/Flagstaff**
@@ -75,17 +75,14 @@ Zoom links and passwords for all the sessions will be sent to the email address 
 
 <a href="https://forms.gle/PToMz4TvfsVRUnVT9" class="btn btn2022" target="_blank">Register</a>
 -->
+
 ## Our Sponsors
 
-<div class="spread">
-  <a href="https://datascience.cals.arizona.edu/"><img src="/img/logos/cctLogo.png" alt="University of Arizona Communications &amp; Cyber Technologies" height="65"></a>
-  <a href="https://datascience.arizona.edu/"><img src="https://datascience.arizona.edu/sites/default/files/Data%20Science%20Institute_Webheader%20%281%29_0.svg" alt="University of Arizona Data Science Institute" height="65"></a>
-  <a href="https://new.library.arizona.edu/"><img src="/img/logos/ua_libraries.png" alt="University of Arizona Libraries" height="65"></a>
-</div>
+Sponsored by the University of Arizona [Institute for Computation and Data-Enabled Insight](https://datainsight.arizona.edu), [Data Science Institute](https://datascience.arizona.edu/), [Data Cooperative (University Libraries\)](https://new.library.arizona.edu/), and [College of Science](https://science.arizona.edu/).
 
 <br><br><br>
 **Previous years:**<br/>
-<a href="/resbaz/resbazTucson2022">ResBaz AZ 2022</a><br/>
+<a href="/resbaz/resbazTucson2022">ResBaz Tucson 2022</a><br/>
 <a href="/resbaz/resbazTucson2021">ResBaz Tucson 2021</a><br/>
 <a href="/resbaz/resbazTucson2020">ResBaz Tucson 2020</a><br/>
 <a href="/resbaz/resbazTucson2019">ResBaz Tucson 2019</a>
