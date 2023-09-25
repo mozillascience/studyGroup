@@ -1,11 +1,12 @@
-- name: Ahmed Hasan
+---
+- name: Yeshoda Harry-Paul
   position: President
-  degree: PhD, Biology
-  github: aays
+  degree: PhD, Cell and Systems Biology
+  github: YeshodaHP
   interests:
     - R
     - Python
-    - LaTeX
+    - Bash
 
 - name: Margot Lautens
   position: Co-working Coordinator
@@ -16,7 +17,7 @@
     - Python
 
 - name: Sophie Breitbart
-  position: Co-working Coordinator
+  position: RGASC Liaison
   degree: PhD, Ecology and Evolutionary Biology
   github: sbreitbart
   interests:
@@ -54,11 +55,11 @@
     - Bioinformatic workflows
     - Machine learning
 
-- name: Yeshoda Harry-Paul
+- name: Denise (Denny) Maranga
   position: Marketing Coordinator
-  degree: MSc, Cell and Systems Biology
-  github: YeshodaHP
+  degree: PhD, Ecology and Evolutionary Biology
+  github: souceira
   interests:
     - R
     - Python
-    - Bash
+    - Git
