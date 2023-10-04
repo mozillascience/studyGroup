@@ -1,3 +1,4 @@
+---
 - name: Madeleine Bonsma
   degree: Physics
   github: mbonsma
@@ -8,6 +9,14 @@
   interests:
     - Python
     - R
+
+- name: Ahmed Hasan
+  degree: PhD, Biology
+  github: aays
+  interests:
+    - R
+    - Python
+    - LaTeX
 
 - name: Sara Mahallati
   degree: PhD, Biomedical Engineering
@@ -26,7 +35,7 @@
 - name: Lindsay Coome
   degree: Psychology
   github: lcoome
-  
+
 - name: Nil Sahin
   degree: Molecular Genetics
   github: nsahin
