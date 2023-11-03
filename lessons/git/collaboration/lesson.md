@@ -62,7 +62,7 @@ Kathy Chung, 2017-08-02
 - This is the model used by U of T Coders on its own website and repos.
 - The "owner"/"Project Leader" of the upstream repo assigns rights to "Collaborators"
 - Collaborators do not have push access to main (upstream) repo
-- Project Lead accepts Pull Requests (PRs) fro collaborators, reviews them, then merges them into main repo.
+- Project Lead accepts Pull Requests (PRs) from collaborators, reviews them, then merges them into main repo.
 
 
 #### Fork and Pull Workflow  
