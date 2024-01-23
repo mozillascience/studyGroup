@@ -44,6 +44,7 @@ def main(event_dir: pathlib.Path, failure_path: pathlib.Path) -> None:
     print(f'Found {MILESTONE!r} milestone {milestone.number}')
 
     failures = {}
+    event_summary = []
     for issue in repo.get_issues(milestone=milestone):
         try:
             event = parse_issue(issue)
@@ -51,9 +52,20 @@ def main(event_dir: pathlib.Path, failure_path: pathlib.Path) -> None:
             print(f'::error title=Failed to parse event {issue.title}::{e}')
             failures[issue.number] = str(e)
         else:
+            event_summary.append(
+                f'- {event["title"]} on {event["date"]} at {event["startTime"]}')
             print(f'Parsed event: {issue.title}')
             with (event_dir / post_to_filename(event)).open('wb') as f:
                 frontmatter.dump(event, f)
+
+    summary = f'Parsed **{len(event_summary)}** issue(s) into event posts:'
+    if 'GITHUB_STEP_SUMMARY' in os.environ:
+        with open(os.environ['GITHUB_STEP_SUMMARY'], 'w+') as f:
+            f.write('# Event publishing\n')
+            f.write(f'{summary}\n')
+            f.write('\n'.join(event_summary))
+    else:
+        print(summary)
 
     with open(failure_path, 'w') as f:
         json.dump(failures, f)
