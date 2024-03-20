@@ -13,7 +13,6 @@ cmarkgfm = "*"
 
 [requires]
 python_version = "3.12"
-python_full_version = "3.12.1"
 
 [scripts]
 publish_events = "python publish_events.py ../_posts/ failures.yml"
